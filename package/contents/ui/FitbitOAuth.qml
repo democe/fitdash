@@ -5,6 +5,8 @@ import org.kde.plasma.plasma5support as Plasma5Support
 Item {
     id: oauth
 
+    property int callbackPort: 19847
+
     signal authorized(var tokens)
     signal error(string message)
 
@@ -56,7 +58,7 @@ Item {
             oauth.error("Invalid client ID format");
             return;
         }
-        var cmd = "python3 " + shellEscape(scriptPath) + " --client-id=" + shellEscape(clientId);
+        var cmd = "python3 " + shellEscape(scriptPath) + " --client-id=" + shellEscape(clientId) + " --port=" + callbackPort;
         executable.connectSource(cmd);
     }
 

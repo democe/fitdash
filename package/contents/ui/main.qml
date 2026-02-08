@@ -116,6 +116,7 @@ PlasmoidItem {
 
     FitbitOAuth {
         id: fitbitOAuth
+        callbackPort: Plasmoid.configuration.callbackPort || 19847
 
         onAuthorized: function(tokens) {
             Plasmoid.configuration.accessToken = tokens.access_token;

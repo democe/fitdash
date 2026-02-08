@@ -41,6 +41,9 @@
         <entry name="showHeartRate" type="Bool">
             <default>true</default>
         </entry>
+        <entry name="callbackPort" type="Int">
+            <default>19847</default>
+        </entry>
         <entry name="lastRequestStatus" type="String">
             <default></default>
         </entry>

@@ -14,6 +14,7 @@ KCM.SimpleKCM {
     property string cfg_userId
     property int cfg_tokenExpiry
     property string cfg_distanceUnit: "km"
+    property alias cfg_callbackPort: callbackPortSpinBox.value
     property string cfg_lastRequestStatus
     property alias cfg_showSteps: showStepsCheckBox.checked
     property alias cfg_showCalories: showCaloriesCheckBox.checked
@@ -29,6 +30,7 @@ KCM.SimpleKCM {
     property string cfg_userIdDefault: ""
     property int cfg_tokenExpiryDefault: 0
     property string cfg_distanceUnitDefault: "km"
+    property int cfg_callbackPortDefault: 19847
     property string cfg_lastRequestStatusDefault: ""
     property bool cfg_showStepsDefault: true
     property bool cfg_showCaloriesDefault: true
@@ -50,6 +52,42 @@ KCM.SimpleKCM {
 
         QQC2.Label {
             text: i18n("OAuth 2.0 Client ID from your Fitbit app registration")
+            font.pointSize: Kirigami.Theme.smallFont.pointSize
+            opacity: 0.7
+        }
+
+        RowLayout {
+            Kirigami.FormData.label: i18n("Callback URL:")
+
+            QQC2.TextField {
+                id: callbackUrlField
+                text: "http://localhost:" + callbackPortSpinBox.value + "/callback"
+                readOnly: true
+                Layout.fillWidth: true
+            }
+
+            QQC2.Button {
+                icon.name: "edit-copy"
+                QQC2.ToolTip.text: i18n("Copy to clipboard")
+                QQC2.ToolTip.visible: hovered
+                onClicked: {
+                    callbackUrlField.selectAll();
+                    callbackUrlField.copy();
+                    callbackUrlField.deselect();
+                }
+            }
+        }
+
+        QQC2.SpinBox {
+            id: callbackPortSpinBox
+            Kirigami.FormData.label: i18n("Callback port:")
+            from: 1024
+            to: 65535
+            value: 19847
+        }
+
+        QQC2.Label {
+            text: i18n("Paste the callback URL into your Fitbit app settings at dev.fitbit.com")
             font.pointSize: Kirigami.Theme.smallFont.pointSize
             opacity: 0.7
         }
@@ -162,6 +200,7 @@ KCM.SimpleKCM {
 
     FitbitOAuth {
         id: authHelper
+        callbackPort: callbackPortSpinBox.value
 
         onAuthorized: function(tokens) {
             cfg_accessToken = tokens.access_token;

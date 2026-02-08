@@ -55,6 +55,7 @@ def exchange_token(code, code_verifier, client_id, redirect_uri):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--client-id", required=True)
+    parser.add_argument("--port", type=int, default=19847)
     args = parser.parse_args()
 
     code_verifier, code_challenge = generate_pkce()
@@ -93,7 +94,7 @@ def main():
         def log_message(self, format, *a):
             pass  # suppress request logging
 
-    port = 19847
+    port = args.port
     try:
         http.server.HTTPServer.allow_reuse_address = True
         server = http.server.HTTPServer(("127.0.0.1", port), Handler)
