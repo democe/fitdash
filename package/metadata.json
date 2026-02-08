@@ -2,7 +2,8 @@
     "KPlugin": {
         "Authors": [
             {
-                "Name": "democe@outlook.com"
+                "Email": "democe@outlook.com",
+                "Name": "democe"
             }
         ],
         "Category": "System Information",
