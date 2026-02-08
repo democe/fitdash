@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/2.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/2.0
+      http://www.kde.org/standards/kcfg/2.0/kcfg.xsd">
+    <kcfgfile name=""/>
+    <group name="General">
+        <entry name="accessToken" type="String">
+            <default></default>
+        </entry>
+        <entry name="refreshToken" type="String">
+            <default></default>
+        </entry>
+        <entry name="clientId" type="String">
+            <default></default>
+        </entry>
+        <entry name="userId" type="String">
+            <default></default>
+        </entry>
+        <entry name="refreshInterval" type="Int">
+            <default>15</default>
+        </entry>
+        <entry name="tokenExpiry" type="Int">
+            <default>0</default>
+        </entry>
+        <entry name="distanceUnit" type="String">
+            <default>km</default>
+        </entry>
+        <entry name="showSteps" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showCalories" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showDistance" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showActiveMinutes" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showHeartRate" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="lastRequestStatus" type="String">
+            <default></default>
+        </entry>
+    </group>
+</kcfg>

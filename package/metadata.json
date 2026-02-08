@@ -1,0 +1,19 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "democe@outlook.com"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Fitbit step counter and fitness data widget for KDE Plasma",
+        "Icon": "fitdash",
+        "Id": "com.democe.fitdash",
+        "License": "GPL-3.0-or-later",
+        "Name": "FitDash",
+        "Version": "1.0.0",
+        "Website": "https://github.com/democe/fitdash"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "KPackageStructure": "Plasma/Applet"
+}
