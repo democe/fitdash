@@ -181,12 +181,16 @@ KCM.SimpleKCM {
         QQC2.Button {
             id: authorizeButton
             text: configRoot.authInProgress
-                ? i18n("Authorizing…")
+                ? i18n("Cancel Authorization")
                 : (cfg_accessToken !== "" ? i18n("Re-authorize with Fitbit") : i18n("Authorize with Fitbit"))
             icon.name: "network-connect"
-            enabled: clientIdField.text !== "" && clientIdField.acceptableInput && !configRoot.authInProgress
+            enabled: configRoot.authInProgress || (clientIdField.text !== "" && clientIdField.acceptableInput)
 
             onClicked: {
+                if (configRoot.authInProgress) {
+                    authHelper.cancelAuthorization();
+                    return;
+                }
                 configRoot.authInProgress = true;
                 configRoot.authStatusMessage = "";
                 authHelper.authorize(clientIdField.text);

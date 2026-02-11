@@ -6,6 +6,7 @@ Item {
     id: oauth
 
     property int callbackPort: 19847
+    property string activeSource: ""
 
     signal authorized(var tokens)
     signal error(string message)
@@ -19,6 +20,9 @@ Item {
 
         onNewData: function(source, data) {
             disconnectSource(source);
+            if (source === oauth.activeSource) {
+                oauth.activeSource = "";
+            }
             var stdout = data["stdout"] || "";
             var stderr = data["stderr"] || "";
 
@@ -59,7 +63,17 @@ Item {
             return;
         }
         var cmd = "python3 " + shellEscape(scriptPath) + " --client-id=" + shellEscape(clientId) + " --port=" + callbackPort;
+        activeSource = cmd;
         executable.connectSource(cmd);
+    }
+
+    function cancelAuthorization() {
+        if (activeSource === "") {
+            return;
+        }
+        executable.disconnectSource(activeSource);
+        activeSource = "";
+        oauth.error(i18n("Authorization canceled"));
     }
 
     function refreshToken(clientId, refreshTok) {

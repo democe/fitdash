@@ -12,7 +12,7 @@
         "Id": "com.democe.fitdash",
         "License": "GPL-3.0-or-later",
         "Name": "FitDash",
-        "Version": "1.0.0",
+        "Version": "1.0.1",
         "Website": "https://github.com/democe/fitdash"
     },
     "X-Plasma-API-Minimum-Version": "6.0",
