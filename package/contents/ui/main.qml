@@ -75,7 +75,7 @@ PlasmoidItem {
         showHeartRate: Plasmoid.configuration.showHeartRate
     }
 
-    toolTipMainText: "FitDash"
+    toolTipMainText: i18n("FitDash")
     toolTipSubText: {
         if (fitbitApi.accessToken === "") return i18n("Not connected");
         var unit = Plasmoid.configuration.distanceUnit || "km";

@@ -161,7 +161,7 @@ KCM.SimpleKCM {
             Kirigami.FormData.label: i18n("Fitbit Account:")
 
             QQC2.Label {
-                text: cfg_accessToken !== "" ? i18n("Authorized (User: %1)", cfg_userId || "unknown") : i18n("Not authorized")
+                text: cfg_accessToken !== "" ? i18n("Authorized (User: %1)", cfg_userId || i18n("unknown")) : i18n("Not authorized")
                 color: cfg_accessToken !== "" ? Kirigami.Theme.positiveTextColor : Kirigami.Theme.negativeTextColor
             }
         }

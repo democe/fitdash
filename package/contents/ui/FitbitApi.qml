@@ -24,7 +24,7 @@ QtObject {
 
     function fetchData() {
         if (!accessToken) {
-            api.error("No access token");
+            api.error(i18n("No access token"));
             return;
         }
         if (isLoading) return;
@@ -42,7 +42,7 @@ QtObject {
     function handleHttpError(xhr, context) {
         var time = new Date().toLocaleTimeString();
         if (xhr.status === 0) {
-            api.errorMessage = "Network error — check your connection";
+            api.errorMessage = i18n("Network error — check your connection");
             api.lastRequestStatus = i18n("Network error at %1", time);
             api.error(api.errorMessage);
             return true;
@@ -53,19 +53,19 @@ QtObject {
             return true;
         }
         if (xhr.status === 429) {
-            api.errorMessage = "Rate limited — try again later";
+            api.errorMessage = i18n("Rate limited — try again later");
             api.lastRequestStatus = i18n("Rate limited at %1 — showing cached data", time);
             api.error(api.errorMessage);
             return true;
         }
         if (xhr.status >= 500) {
-            api.errorMessage = "Fitbit server error (HTTP " + xhr.status + ")";
+            api.errorMessage = i18n("Fitbit server error (HTTP %1)", xhr.status);
             api.lastRequestStatus = i18n("Server error (HTTP %1) at %2", xhr.status, time);
             api.error(api.errorMessage);
             return true;
         }
         if (xhr.status !== 200) {
-            api.errorMessage = context + " failed (HTTP " + xhr.status + ")";
+            api.errorMessage = i18n("%1 failed (HTTP %2)", context, xhr.status);
             api.lastRequestStatus = i18n("Error (HTTP %1) at %2", xhr.status, time);
             api.error(api.errorMessage);
             return true;
@@ -79,7 +79,7 @@ QtObject {
         xhr.setRequestHeader("Authorization", "Bearer " + accessToken);
         xhr.onreadystatechange = function() {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
-            if (handleHttpError(xhr, "Activity fetch")) {
+            if (handleHttpError(xhr, i18n("Activity fetch"))) {
                 isLoading = false;
                 return;
             }
@@ -108,7 +108,7 @@ QtObject {
                 api.isLoading = false;
                 api.dataUpdated();
             } catch(e) {
-                api.errorMessage = "Failed to parse activity data";
+                api.errorMessage = i18n("Failed to parse activity data");
                 api.lastRequestStatus = i18n("Parse error at %1", new Date().toLocaleTimeString());
                 api.error(api.errorMessage);
                 api.isLoading = false;

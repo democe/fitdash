@@ -26,9 +26,9 @@ ColumnLayout {
 
     function formatDistance(value, unit) {
         if (unit === "mi") {
-            return (value * 0.621371).toFixed(2) + " mi";
+            return i18nc("distance in miles", "%1 mi", (value * 0.621371).toFixed(2));
         }
-        return value.toFixed(2) + " km";
+        return i18nc("distance in kilometers", "%1 km", value.toFixed(2));
     }
 
     readonly property bool isStale: {
@@ -41,7 +41,7 @@ ColumnLayout {
     spacing: Kirigami.Units.largeSpacing
 
     PlasmaComponents.Label {
-        text: "FitDash"
+        text: i18n("FitDash")
         font.bold: true
         font.pointSize: Kirigami.Theme.defaultFont.pointSize * 1.4
         Layout.alignment: Qt.AlignHCenter
@@ -107,13 +107,15 @@ ColumnLayout {
 
             PlasmaComponents.Label { text: i18n("Active Min"); font.bold: true; visible: fullRoot.showActiveMinutes }
             PlasmaComponents.Label {
-                text: fullRoot.activeMinutes + " min"
+                text: i18nc("active minutes", "%1 min", fullRoot.activeMinutes)
                 visible: fullRoot.showActiveMinutes
             }
 
             PlasmaComponents.Label { text: i18n("Resting HR"); font.bold: true; visible: fullRoot.showHeartRate }
             PlasmaComponents.Label {
-                text: fullRoot.restingHeartRate > 0 ? fullRoot.restingHeartRate + " bpm" : "—"
+                text: fullRoot.restingHeartRate > 0
+                    ? i18nc("heart rate in beats per minute", "%1 bpm", fullRoot.restingHeartRate)
+                    : "—"
                 visible: fullRoot.showHeartRate
             }
         }

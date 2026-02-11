@@ -25,7 +25,7 @@ Item {
             if (stderr) {
                 try {
                     var err = JSON.parse(stderr);
-                    oauth.error(err.error || "Unknown error");
+                    oauth.error(err.error || i18n("Unknown error"));
                 } catch(e) {
                     oauth.error(stderr);
                 }
@@ -40,7 +40,7 @@ Item {
                     oauth.authorized(tokens);
                 }
             } catch(e) {
-                oauth.error("Failed to parse auth response");
+                oauth.error(i18n("Failed to parse auth response"));
             }
         }
     }
@@ -55,7 +55,7 @@ Item {
 
     function authorize(clientId) {
         if (!isValidClientId(clientId)) {
-            oauth.error("Invalid client ID format");
+            oauth.error(i18n("Invalid client ID format"));
             return;
         }
         var cmd = "python3 " + shellEscape(scriptPath) + " --client-id=" + shellEscape(clientId) + " --port=" + callbackPort;
@@ -67,28 +67,28 @@ Item {
         xhr.open("POST", "https://api.fitbit.com/oauth2/token");
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.onerror = function() {
-            oauth.error("Network error during token refresh");
+            oauth.error(i18n("Network error during token refresh"));
         };
         xhr.onreadystatechange = function() {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (xhr.status === 0) {
-                oauth.error("Network error during token refresh");
+                oauth.error(i18n("Network error during token refresh"));
                 return;
             }
             if (xhr.status === 401) {
-                oauth.error("Refresh token expired — please re-authorize");
+                oauth.error(i18n("Refresh token expired — please re-authorize"));
                 return;
             }
             if (xhr.status === 429) {
-                oauth.error("Rate limited — try again later");
+                oauth.error(i18n("Rate limited — try again later"));
                 return;
             }
             if (xhr.status >= 500) {
-                oauth.error("Fitbit server error (HTTP " + xhr.status + ")");
+                oauth.error(i18n("Fitbit server error (HTTP %1)", xhr.status));
                 return;
             }
             if (xhr.status !== 200) {
-                oauth.error("Token refresh failed (HTTP " + xhr.status + ")");
+                oauth.error(i18n("Token refresh failed (HTTP %1)", xhr.status));
                 return;
             }
             try {
@@ -96,10 +96,10 @@ Item {
                 if (resp.access_token && resp.refresh_token) {
                     oauth.authorized(resp);
                 } else {
-                    oauth.error(resp.errors ? resp.errors[0].message : "Refresh failed — missing tokens");
+                    oauth.error(resp.errors ? resp.errors[0].message : i18n("Refresh failed — missing tokens"));
                 }
             } catch(e) {
-                oauth.error("Token refresh failed — invalid response");
+                oauth.error(i18n("Token refresh failed — invalid response"));
             }
         };
         var body = "grant_type=refresh_token"
