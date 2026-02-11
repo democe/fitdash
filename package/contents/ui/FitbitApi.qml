@@ -17,6 +17,7 @@ QtObject {
     property bool isLoading: false
     property string errorMessage: ""
     property string lastRequestStatus: ""
+    property string lastRequestState: "unknown"
 
     signal dataUpdated()
     signal authError()
@@ -24,6 +25,7 @@ QtObject {
 
     function fetchData() {
         if (!accessToken) {
+            api.lastRequestState = "error";
             api.error(i18n("No access token"));
             return;
         }
@@ -44,29 +46,34 @@ QtObject {
         if (xhr.status === 0) {
             api.errorMessage = i18n("Network error — check your connection");
             api.lastRequestStatus = i18n("Network error at %1", time);
+            api.lastRequestState = "error";
             api.error(api.errorMessage);
             return true;
         }
         if (xhr.status === 401) {
             api.lastRequestStatus = i18n("Token expired at %1 — refreshing", time);
+            api.lastRequestState = "warn";
             api.authError();
             return true;
         }
         if (xhr.status === 429) {
             api.errorMessage = i18n("Rate limited — try again later");
             api.lastRequestStatus = i18n("Rate limited at %1 — showing cached data", time);
+            api.lastRequestState = "warn";
             api.error(api.errorMessage);
             return true;
         }
         if (xhr.status >= 500) {
             api.errorMessage = i18n("Fitbit server error (HTTP %1)", xhr.status);
             api.lastRequestStatus = i18n("Server error (HTTP %1) at %2", xhr.status, time);
+            api.lastRequestState = "error";
             api.error(api.errorMessage);
             return true;
         }
         if (xhr.status !== 200) {
             api.errorMessage = i18n("%1 failed (HTTP %2)", context, xhr.status);
             api.lastRequestStatus = i18n("Error (HTTP %1) at %2", xhr.status, time);
+            api.lastRequestState = "error";
             api.error(api.errorMessage);
             return true;
         }
@@ -105,11 +112,13 @@ QtObject {
                 api.lastUpdatedTimestamp = Date.now();
                 api.lastUpdated = new Date().toLocaleTimeString();
                 api.lastRequestStatus = i18n("OK — updated at %1", api.lastUpdated);
+                api.lastRequestState = "ok";
                 api.isLoading = false;
                 api.dataUpdated();
             } catch(e) {
                 api.errorMessage = i18n("Failed to parse activity data");
                 api.lastRequestStatus = i18n("Parse error at %1", new Date().toLocaleTimeString());
+                api.lastRequestState = "error";
                 api.error(api.errorMessage);
                 api.isLoading = false;
             }

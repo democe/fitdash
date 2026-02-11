@@ -97,6 +97,7 @@ PlasmoidItem {
         onDataUpdated: {
             console.log("FitDash: data updated");
             Plasmoid.configuration.lastRequestStatus = fitbitApi.lastRequestStatus;
+            Plasmoid.configuration.lastRequestState = fitbitApi.lastRequestState;
         }
 
         onAuthError: {
@@ -111,6 +112,7 @@ PlasmoidItem {
             console.warn("FitDash API error:", message);
             fitbitApi.errorMessage = message;
             Plasmoid.configuration.lastRequestStatus = fitbitApi.lastRequestStatus;
+            Plasmoid.configuration.lastRequestState = fitbitApi.lastRequestState;
         }
     }
 

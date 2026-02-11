@@ -16,6 +16,7 @@ KCM.SimpleKCM {
     property string cfg_distanceUnit: "km"
     property alias cfg_callbackPort: callbackPortSpinBox.value
     property string cfg_lastRequestStatus
+    property string cfg_lastRequestState
     property alias cfg_showSteps: showStepsCheckBox.checked
     property alias cfg_showCalories: showCaloriesCheckBox.checked
     property alias cfg_showDistance: showDistanceCheckBox.checked
@@ -32,6 +33,7 @@ KCM.SimpleKCM {
     property string cfg_distanceUnitDefault: "km"
     property int cfg_callbackPortDefault: 19847
     property string cfg_lastRequestStatusDefault: ""
+    property string cfg_lastRequestStateDefault: "unknown"
     property bool cfg_showStepsDefault: true
     property bool cfg_showCaloriesDefault: true
     property bool cfg_showDistanceDefault: true
@@ -169,9 +171,10 @@ KCM.SimpleKCM {
         QQC2.Label {
             Kirigami.FormData.label: i18n("Last request:")
             text: cfg_lastRequestStatus || i18n("No requests yet")
-            color: cfg_lastRequestStatus.indexOf("OK") === 0 ? Kirigami.Theme.positiveTextColor
-                 : cfg_lastRequestStatus === "" ? Kirigami.Theme.textColor
-                 : Kirigami.Theme.negativeTextColor
+            color: cfg_lastRequestState === "ok" ? Kirigami.Theme.positiveTextColor
+                 : cfg_lastRequestState === "warn" ? Kirigami.Theme.neutralTextColor
+                 : cfg_lastRequestState === "error" ? Kirigami.Theme.negativeTextColor
+                 : Kirigami.Theme.textColor
             visible: cfg_accessToken !== ""
         }
 

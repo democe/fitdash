@@ -47,5 +47,8 @@
         <entry name="lastRequestStatus" type="String">
             <default></default>
         </entry>
+        <entry name="lastRequestState" type="String">
+            <default>unknown</default>
+        </entry>
     </group>
 </kcfg>
