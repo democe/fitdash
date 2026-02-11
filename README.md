@@ -23,7 +23,7 @@ or
 
 ```bash
 git clone https://github.com/democe/fitdash.git
-cd git
+cd fitdash
 ./scripts/package.sh
 ```
 and install the plasmoid through plasma 'Add and Manage Widgets/Get New/Install Widget From Local File...'
