@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=FitDash
 Comment=Fitbit step counter and fitness data widget for KDE Plasma
-Exec=plasmawindowed org.kde.plasma.fitdash
+Exec=plasmawindowed com.democe.fitdash
 Icon=fitdash
 Type=Application
 Categories=Qt;KDE;System;

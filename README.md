@@ -37,7 +37,7 @@ and install the plasmoid through plasma 'Add and Manage Widgets/Get New/Install 
 Or if installed from a `.plasmoid` file:
 
 ```bash
-plasmapkg2 -r org.kde.plasma.fitdash
+plasmapkg2 -r com.democe.fitdash
 ```
 
 ## Development

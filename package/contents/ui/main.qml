@@ -4,6 +4,7 @@ import org.kde.plasma.plasmoid
 import org.kde.plasma.components as PlasmaComponents
 import org.kde.kirigami as Kirigami
 import org.kde.plasma.core as PlasmaCore
+import org.kde.plasma.plasma5support as Plasma5Support
 
 PlasmoidItem {
     id: root
@@ -90,6 +91,12 @@ PlasmoidItem {
 
     Plasmoid.icon: Qt.resolvedUrl("../icons/fitdash.svg")
 
+    Plasma5Support.DataSource {
+        id: desktopFileInstaller
+        engine: "executable"
+        connectedSources: []
+    }
+
     FitbitApi {
         id: fitbitApi
         accessToken: Plasmoid.configuration.accessToken || ""
@@ -171,6 +178,13 @@ PlasmoidItem {
     }
 
     Component.onCompleted: {
+        desktopFileInstaller.connectSource(
+            "test -f \"$HOME/.local/share/applications/com.democe.fitdash.desktop\" || " +
+            "(mkdir -p \"$HOME/.local/share/applications\" && " +
+            "printf '[Desktop Entry]\\nName=FitDash\\nComment=Fitbit step counter and fitness data widget for KDE Plasma\\nExec=plasmawindowed com.democe.fitdash\\nIcon=fitdash\\nType=Application\\nCategories=Qt;KDE;System;\\n' " +
+            "> \"$HOME/.local/share/applications/com.democe.fitdash.desktop\")"
+        );
+
         if (Plasmoid.configuration.accessToken) {
             fitbitApi.fetchData();
         }

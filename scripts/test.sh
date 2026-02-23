@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PLASMOID_ID="org.kde.plasma.fitdash"
+PLASMOID_ID="com.democe.fitdash"
 DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"
 INSTALL_DIR="$DATA_HOME/plasma/plasmoids/$PLASMOID_ID"
 
