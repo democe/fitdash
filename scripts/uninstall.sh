@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PLASMOID_ID="com.democe.fitdash"
+PLASMOID_ID="org.kde.plasma.fitdash"
 DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"
 INSTALL_DIR="$DATA_HOME/plasma/plasmoids/$PLASMOID_ID"
 
@@ -16,4 +16,11 @@ ICON_FILE="$DATA_HOME/icons/hicolor/scalable/apps/fitdash.svg"
 if [ -f "$ICON_FILE" ]; then
     rm "$ICON_FILE"
     echo "Removed $ICON_FILE"
+fi
+
+# Remove .desktop file
+DESKTOP_FILE="$DATA_HOME/applications/org.kde.plasma.fitdash.desktop"
+if [ -f "$DESKTOP_FILE" ]; then
+    rm "$DESKTOP_FILE"
+    echo "Removed $DESKTOP_FILE"
 fi

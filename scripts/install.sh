@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PLASMOID_ID="com.democe.fitdash"
+PLASMOID_ID="org.kde.plasma.fitdash"
 DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"
 INSTALL_DIR="$DATA_HOME/plasma/plasmoids/$PLASMOID_ID"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -24,5 +24,10 @@ chmod +x "$AUTH_SCRIPT_DST"
 ICON_DIR="$DATA_HOME/icons/hicolor/scalable/apps"
 mkdir -p "$ICON_DIR"
 cp "$INSTALL_DIR/contents/icons/fitdash.svg" "$ICON_DIR/fitdash.svg"
+
+# Install .desktop file so the XDG portal can resolve the app ID
+APPS_DIR="$DATA_HOME/applications"
+mkdir -p "$APPS_DIR"
+cp "$SCRIPT_DIR/org.kde.plasma.fitdash.desktop" "$APPS_DIR/org.kde.plasma.fitdash.desktop"
 
 echo "Installed to $INSTALL_DIR"
