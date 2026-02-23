@@ -25,4 +25,9 @@ ICON_DIR="$DATA_HOME/icons/hicolor/scalable/apps"
 mkdir -p "$ICON_DIR"
 cp "$INSTALL_DIR/contents/icons/fitdash.svg" "$ICON_DIR/fitdash.svg"
 
+# Install .desktop file so the XDG portal can resolve the app ID
+APPS_DIR="$DATA_HOME/applications"
+mkdir -p "$APPS_DIR"
+cp "$SCRIPT_DIR/../package/com.democe.fitdash.desktop" "$APPS_DIR/com.democe.fitdash.desktop"
+
 echo "Installed to $INSTALL_DIR"

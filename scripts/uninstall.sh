@@ -17,3 +17,10 @@ if [ -f "$ICON_FILE" ]; then
     rm "$ICON_FILE"
     echo "Removed $ICON_FILE"
 fi
+
+# Remove .desktop file
+DESKTOP_FILE="$DATA_HOME/applications/com.democe.fitdash.desktop"
+if [ -f "$DESKTOP_FILE" ]; then
+    rm "$DESKTOP_FILE"
+    echo "Removed $DESKTOP_FILE"
+fi
