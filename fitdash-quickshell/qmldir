@@ -1,0 +1,7 @@
+module FitDash
+FitDashWidget 1.0 FitDashWidget.qml
+FitDashPopup  1.0 FitDashPopup.qml
+FitDashConfig 1.0 FitDashConfig.qml
+FitbitApi     1.0 FitbitApi.qml
+FitbitOAuth   1.0 FitbitOAuth.qml
+Config        1.0 Config.qml
