@@ -44,7 +44,35 @@ KCM.SimpleKCM {
     property string authStatusMessage: ""
     property bool authStatusIsError: false
 
+    function accountStatusText() {
+        if (cfg_accessToken === "" && cfg_refreshToken === "") {
+            return i18n("Not authorized");
+        }
+        if (cfg_lastRequestState === "error") {
+            return i18n("Authorization problem — re-authorize");
+        }
+        if (cfg_tokenExpiry > 0 && Math.floor(Date.now() / 1000) >= cfg_tokenExpiry) {
+            return i18n("Token expired — refresh needed");
+        }
+        return i18n("Authorized (User: %1)", cfg_userId || i18n("unknown"));
+    }
+
+    function accountStatusColor() {
+        if (cfg_accessToken === "" && cfg_refreshToken === "") {
+            return Kirigami.Theme.negativeTextColor;
+        }
+        if (cfg_lastRequestState === "error" || (cfg_tokenExpiry > 0 && Math.floor(Date.now() / 1000) >= cfg_tokenExpiry)) {
+            return Kirigami.Theme.negativeTextColor;
+        }
+        if (cfg_lastRequestState === "warn") {
+            return Kirigami.Theme.neutralTextColor;
+        }
+        return Kirigami.Theme.positiveTextColor;
+    }
+
     Kirigami.FormLayout {
+        anchors.fill: parent
+
         QQC2.TextField {
             id: clientIdField
             Kirigami.FormData.label: i18n("Client ID:")
@@ -163,8 +191,8 @@ KCM.SimpleKCM {
             Kirigami.FormData.label: i18n("Fitbit Account:")
 
             QQC2.Label {
-                text: cfg_accessToken !== "" ? i18n("Authorized (User: %1)", cfg_userId || i18n("unknown")) : i18n("Not authorized")
-                color: cfg_accessToken !== "" ? Kirigami.Theme.positiveTextColor : Kirigami.Theme.negativeTextColor
+                text: configRoot.accountStatusText()
+                color: configRoot.accountStatusColor()
             }
         }
 
@@ -175,7 +203,7 @@ KCM.SimpleKCM {
                  : cfg_lastRequestState === "warn" ? Kirigami.Theme.neutralTextColor
                  : cfg_lastRequestState === "error" ? Kirigami.Theme.negativeTextColor
                  : Kirigami.Theme.textColor
-            visible: cfg_accessToken !== ""
+            visible: cfg_accessToken !== "" || cfg_refreshToken !== "" || cfg_lastRequestStatus !== ""
         }
 
         QQC2.Button {

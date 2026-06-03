@@ -91,6 +91,37 @@ PlasmoidItem {
 
     Plasmoid.icon: Qt.resolvedUrl("../icons/fitdash.svg")
 
+
+    function setLastRequest(status, state) {
+        Plasmoid.configuration.lastRequestStatus = status;
+        Plasmoid.configuration.lastRequestState = state;
+    }
+
+    function clearExpiredAuthorization(message) {
+        var time = new Date().toLocaleTimeString();
+        Plasmoid.configuration.accessToken = "";
+        Plasmoid.configuration.refreshToken = "";
+        Plasmoid.configuration.tokenExpiry = 0;
+        fitbitApi.accessToken = "";
+        fitbitApi.errorMessage = message;
+        fitbitApi.lastRequestStatus = i18n("Authorization expired at %1 — please re-authorize", time);
+        fitbitApi.lastRequestState = "error";
+        setLastRequest(fitbitApi.lastRequestStatus, fitbitApi.lastRequestState);
+    }
+
+    function recordRefreshError(message, requiresAuthorization) {
+        if (requiresAuthorization) {
+            clearExpiredAuthorization(message);
+            return;
+        }
+
+        var time = new Date().toLocaleTimeString();
+        fitbitApi.errorMessage = message;
+        fitbitApi.lastRequestStatus = i18n("Token refresh failed at %1 — %2", time, message);
+        fitbitApi.lastRequestState = "error";
+        setLastRequest(fitbitApi.lastRequestStatus, fitbitApi.lastRequestState);
+    }
+
     Plasma5Support.DataSource {
         id: desktopFileInstaller
         engine: "executable"
@@ -109,6 +140,10 @@ PlasmoidItem {
 
         onAuthError: {
             console.log("FitDash: auth error, refreshing token");
+            if (!Plasmoid.configuration.refreshToken) {
+                clearExpiredAuthorization(i18n("No refresh token available — please re-authorize"));
+                return;
+            }
             fitbitOAuth.refreshToken(
                 Plasmoid.configuration.clientId,
                 Plasmoid.configuration.refreshToken
@@ -133,11 +168,13 @@ PlasmoidItem {
             Plasmoid.configuration.userId = tokens.user_id || "";
             Plasmoid.configuration.tokenExpiry = Math.floor(Date.now() / 1000) + (tokens.expires_in || 28800);
             fitbitApi.accessToken = tokens.access_token;
+            setLastRequest(i18n("Token refreshed at %1", new Date().toLocaleTimeString()), "ok");
             fitbitApi.fetchData();
         }
 
         onError: function(message) {
             console.warn("FitDash OAuth error:", message);
+            recordRefreshError(message, fitbitOAuth.lastErrorRequiresAuthorization);
         }
     }
 
@@ -150,7 +187,7 @@ PlasmoidItem {
         onTriggered: {
             var now = Math.floor(Date.now() / 1000);
             var expiry = Plasmoid.configuration.tokenExpiry;
-            if (expiry > 0 && now >= expiry - 300) {
+            if (expiry > 0 && now >= expiry - 300 && Plasmoid.configuration.refreshToken !== "") {
                 fitbitOAuth.refreshToken(
                     Plasmoid.configuration.clientId,
                     Plasmoid.configuration.refreshToken
@@ -173,6 +210,8 @@ PlasmoidItem {
             if (Plasmoid.configuration.accessToken) {
                 fitbitApi.accessToken = Plasmoid.configuration.accessToken;
                 fitbitApi.fetchData();
+            } else {
+                fitbitApi.accessToken = "";
             }
         }
     }

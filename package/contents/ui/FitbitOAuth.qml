@@ -7,6 +7,7 @@ Item {
 
     property int callbackPort: 19847
     property string activeSource: ""
+    property bool lastErrorRequiresAuthorization: false
 
     signal authorized(var tokens)
     signal error(string message)
@@ -29,9 +30,9 @@ Item {
             if (stderr) {
                 try {
                     var err = JSON.parse(stderr);
-                    oauth.error(err.error || i18n("Unknown error"));
+                    reportError(err.error || i18n("Unknown error"), false);
                 } catch(e) {
-                    oauth.error(stderr);
+                    reportError(stderr, false);
                 }
                 return;
             }
@@ -39,12 +40,12 @@ Item {
             try {
                 var tokens = JSON.parse(stdout);
                 if (tokens.error) {
-                    oauth.error(tokens.error);
+                    reportError(tokens.error, false);
                 } else {
                     oauth.authorized(tokens);
                 }
             } catch(e) {
-                oauth.error(i18n("Failed to parse auth response"));
+                reportError(i18n("Failed to parse auth response"), false);
             }
         }
     }
@@ -57,9 +58,33 @@ Item {
         return "'" + s.replace(/'/g, "'\\''") + "'";
     }
 
+    function reportError(message, requiresAuthorization) {
+        lastErrorRequiresAuthorization = requiresAuthorization || false;
+        oauth.error(message);
+    }
+
+    function authorizationErrorMessage(xhr) {
+        try {
+            var resp = JSON.parse(xhr.responseText);
+            if (resp.errors && resp.errors.length > 0 && resp.errors[0].message) {
+                return resp.errors[0].message;
+            }
+            if (resp.error_description) {
+                return resp.error_description;
+            }
+            if (resp.error) {
+                return resp.error;
+            }
+        } catch(e) {
+            // Fall back to generic messages below.
+        }
+        return "";
+    }
+
     function authorize(clientId) {
+        lastErrorRequiresAuthorization = false;
         if (!isValidClientId(clientId)) {
-            oauth.error(i18n("Invalid client ID format"));
+            reportError(i18n("Invalid client ID format"), false);
             return;
         }
         var cmd = "python3 " + shellEscape(scriptPath) + " --client-id=" + shellEscape(clientId) + " --port=" + callbackPort;
@@ -73,36 +98,41 @@ Item {
         }
         executable.disconnectSource(activeSource);
         activeSource = "";
-        oauth.error(i18n("Authorization canceled"));
+        reportError(i18n("Authorization canceled"), false);
     }
 
     function refreshToken(clientId, refreshTok) {
+        lastErrorRequiresAuthorization = false;
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "https://api.fitbit.com/oauth2/token");
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.onerror = function() {
-            oauth.error(i18n("Network error during token refresh"));
+            reportError(i18n("Network error during token refresh"), false);
         };
         xhr.onreadystatechange = function() {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (xhr.status === 0) {
-                oauth.error(i18n("Network error during token refresh"));
+                reportError(i18n("Network error during token refresh"), false);
                 return;
             }
-            if (xhr.status === 401) {
-                oauth.error(i18n("Refresh token expired — please re-authorize"));
+            if (xhr.status === 400 || xhr.status === 401) {
+                var authMessage = authorizationErrorMessage(xhr);
+                reportError(authMessage
+                    ? i18n("Refresh token invalid — please re-authorize (%1)", authMessage)
+                    : i18n("Refresh token expired — please re-authorize"),
+                    true);
                 return;
             }
             if (xhr.status === 429) {
-                oauth.error(i18n("Rate limited — try again later"));
+                reportError(i18n("Rate limited — try again later"), false);
                 return;
             }
             if (xhr.status >= 500) {
-                oauth.error(i18n("Fitbit server error (HTTP %1)", xhr.status));
+                reportError(i18n("Fitbit server error (HTTP %1)", xhr.status), false);
                 return;
             }
             if (xhr.status !== 200) {
-                oauth.error(i18n("Token refresh failed (HTTP %1)", xhr.status));
+                reportError(i18n("Token refresh failed (HTTP %1)", xhr.status), false);
                 return;
             }
             try {
@@ -110,10 +140,10 @@ Item {
                 if (resp.access_token && resp.refresh_token) {
                     oauth.authorized(resp);
                 } else {
-                    oauth.error(resp.errors ? resp.errors[0].message : i18n("Refresh failed — missing tokens"));
+                    reportError(resp.errors ? resp.errors[0].message : i18n("Refresh failed — missing tokens"), true);
                 }
             } catch(e) {
-                oauth.error(i18n("Token refresh failed — invalid response"));
+                reportError(i18n("Token refresh failed — invalid response"), true);
             }
         };
         var body = "grant_type=refresh_token"
