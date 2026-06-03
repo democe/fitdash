@@ -89,7 +89,7 @@ PlasmoidItem {
             fitbitApi.lastUpdated || "—");
     }
 
-    Plasmoid.icon: Qt.resolvedUrl("../icons/fitdash.svg")
+    Plasmoid.icon: "fitdash"
 
 
     function setLastRequest(status, state) {

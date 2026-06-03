@@ -1,9 +1,11 @@
 import QtQuick
 import QtQuick.Layouts
+import org.kde.plasma.plasmoid
 import org.kde.plasma.components as PlasmaComponents
+import org.kde.plasma.extras as PlasmaExtras
 import org.kde.kirigami as Kirigami
 
-ColumnLayout {
+PlasmaExtras.Representation {
     id: fullRoot
 
     property int steps: 0
@@ -24,6 +26,15 @@ ColumnLayout {
     property bool showActiveMinutes: true
     property bool showHeartRate: true
 
+    Layout.minimumWidth: Kirigami.Units.gridUnit * 16
+    Layout.minimumHeight: Kirigami.Units.gridUnit * 6
+    Layout.preferredWidth: Kirigami.Units.gridUnit * 20
+    Layout.preferredHeight: {
+        var contentH = statsColumn.visible ? statsColumn.implicitHeight : Kirigami.Units.gridUnit * 8;
+        var headerH = header ? header.implicitHeight : 0;
+        return contentH + headerH + topPadding + bottomPadding;
+    }
+
     function formatDistance(value, unit) {
         if (unit === "mi") {
             return i18nc("distance in miles", "%1 mi", (value * 0.621371).toFixed(2));
@@ -31,110 +42,149 @@ ColumnLayout {
         return i18nc("distance in kilometers", "%1 km", value.toFixed(2));
     }
 
-    readonly property bool isStale: {
-        if (lastUpdatedTimestamp <= 0) return false;
-        return (Date.now() - lastUpdatedTimestamp) > 3600000;
-    }
+    readonly property bool isStale: lastUpdatedTimestamp > 0 && (Date.now() - lastUpdatedTimestamp) > 3600000
 
-    Layout.preferredWidth: Kirigami.Units.gridUnit * 18
-    Layout.preferredHeight: Kirigami.Units.gridUnit * 16
-    spacing: Kirigami.Units.largeSpacing
+    header: PlasmaExtras.PlasmoidHeading {
+        contentItem: RowLayout {
+            spacing: Kirigami.Units.smallSpacing
 
-    PlasmaComponents.Label {
-        text: i18n("FitDash")
-        font.bold: true
-        font.pointSize: Kirigami.Theme.defaultFont.pointSize * 1.4
-        Layout.alignment: Qt.AlignHCenter
-    }
+            PlasmaExtras.Heading {
+                level: 1
+                text: i18n("FitDash")
+                Layout.fillWidth: true
+            }
 
-    // Error message
-    RowLayout {
-        Layout.fillWidth: true
-        Layout.leftMargin: Kirigami.Units.largeSpacing
-        Layout.rightMargin: Kirigami.Units.largeSpacing
-        visible: fullRoot.errorMessage !== ""
-
-        Kirigami.Icon {
-            source: "dialog-warning-symbolic"
-            Layout.preferredWidth: Kirigami.Units.iconSizes.small
-            Layout.preferredHeight: Kirigami.Units.iconSizes.small
-            color: Kirigami.Theme.negativeTextColor
-        }
-
-        PlasmaComponents.Label {
-            text: fullRoot.errorMessage
-            color: Kirigami.Theme.negativeTextColor
-            wrapMode: Text.WordWrap
-            Layout.fillWidth: true
+            PlasmaComponents.BusyIndicator {
+                implicitWidth: Kirigami.Units.iconSizes.smallMedium
+                implicitHeight: Kirigami.Units.iconSizes.smallMedium
+                running: fullRoot.isLoading
+                visible: fullRoot.isLoading
+            }
         }
     }
 
-    // Loading indicator
-    PlasmaComponents.BusyIndicator {
-        Layout.alignment: Qt.AlignHCenter
-        running: fullRoot.isLoading
-        visible: fullRoot.isLoading
-    }
+    contentItem: Item {
+        implicitHeight: statsColumn.visible ? statsColumn.implicitHeight : Kirigami.Units.gridUnit * 8
 
-    ColumnLayout {
-        Layout.fillWidth: true
-        spacing: Kirigami.Units.smallSpacing
-        visible: fullRoot.hasToken
-
-        GridLayout {
-            columns: 2
-            columnSpacing: Kirigami.Units.largeSpacing
-            rowSpacing: Kirigami.Units.smallSpacing
-            Layout.fillWidth: true
-
-            PlasmaComponents.Label { text: i18n("Steps"); font.bold: true; visible: fullRoot.showSteps }
-            PlasmaComponents.Label {
-                text: fullRoot.steps.toLocaleString() + (fullRoot.stepsGoal > 0 ? " / " + fullRoot.stepsGoal.toLocaleString() : "")
-                visible: fullRoot.showSteps
-            }
-
-            PlasmaComponents.Label { text: i18n("Calories"); font.bold: true; visible: fullRoot.showCalories }
-            PlasmaComponents.Label {
-                text: fullRoot.calories.toLocaleString()
-                visible: fullRoot.showCalories
-            }
-
-            PlasmaComponents.Label { text: i18n("Distance"); font.bold: true; visible: fullRoot.showDistance }
-            PlasmaComponents.Label {
-                text: fullRoot.formatDistance(fullRoot.distance, fullRoot.distanceUnit)
-                visible: fullRoot.showDistance
-            }
-
-            PlasmaComponents.Label { text: i18n("Active Min"); font.bold: true; visible: fullRoot.showActiveMinutes }
-            PlasmaComponents.Label {
-                text: i18nc("active minutes", "%1 min", fullRoot.activeMinutes)
-                visible: fullRoot.showActiveMinutes
-            }
-
-            PlasmaComponents.Label { text: i18n("Resting HR"); font.bold: true; visible: fullRoot.showHeartRate }
-            PlasmaComponents.Label {
-                text: fullRoot.restingHeartRate > 0
-                    ? i18nc("heart rate in beats per minute", "%1 bpm", fullRoot.restingHeartRate)
-                    : "—"
-                visible: fullRoot.showHeartRate
+        // Not connected
+        Kirigami.PlaceholderMessage {
+            anchors.centerIn: parent
+            width: parent.width - Kirigami.Units.gridUnit * 4
+            visible: !fullRoot.hasToken
+            icon.name: "fitdash"
+            text: i18n("Not connected to Fitbit")
+            explanation: i18n("Authorize your Fitbit account in Settings to see your fitness data.")
+            helpfulAction: Kirigami.Action {
+                icon.name: "configure"
+                text: i18n("Open Settings")
+                onTriggered: {
+                    Plasmoid.expanded = false;
+                    Qt.callLater(function() {
+                        var action = Plasmoid.internalAction("configure");
+                        if (action) action.trigger();
+                    });
+                }
             }
         }
 
-        PlasmaComponents.Label {
-            text: fullRoot.lastUpdated ? i18n("Updated: %1", fullRoot.lastUpdated) : ""
-            font.pointSize: Kirigami.Theme.smallFont.pointSize
-            opacity: 0.7
-            Layout.alignment: Qt.AlignHCenter
-            visible: text !== ""
+        // Loading with no data yet
+        Kirigami.PlaceholderMessage {
+            anchors.centerIn: parent
+            width: parent.width - Kirigami.Units.gridUnit * 4
+            visible: fullRoot.hasToken && fullRoot.isLoading && fullRoot.steps === 0 && fullRoot.errorMessage === ""
+            icon.name: "view-refresh-symbolic"
+            text: i18n("Loading…")
         }
-    }
 
-    PlasmaComponents.Label {
-        text: i18n("Configure your Fitbit account in settings to get started.")
-        wrapMode: Text.WordWrap
-        Layout.fillWidth: true
-        Layout.alignment: Qt.AlignHCenter
-        horizontalAlignment: Text.AlignHCenter
-        visible: !fullRoot.hasToken
+        // Stats
+        ColumnLayout {
+            id: statsColumn
+            anchors.left: parent.left
+            anchors.right: parent.right
+            visible: fullRoot.hasToken && (!fullRoot.isLoading || fullRoot.steps > 0)
+            spacing: Kirigami.Units.smallSpacing
+
+            Kirigami.InlineMessage {
+                Layout.fillWidth: true
+                type: Kirigami.MessageType.Error
+                text: fullRoot.errorMessage
+                visible: fullRoot.errorMessage !== ""
+                showCloseButton: false
+            }
+
+            GridLayout {
+                Layout.fillWidth: true
+                columns: 2
+                columnSpacing: Kirigami.Units.largeSpacing
+                rowSpacing: Kirigami.Units.smallSpacing
+
+                PlasmaComponents.Label {
+                    text: i18n("Steps")
+                    opacity: 0.7
+                    visible: fullRoot.showSteps
+                }
+                PlasmaComponents.Label {
+                    text: fullRoot.steps.toLocaleString()
+                         + (fullRoot.stepsGoal > 0 ? " / " + fullRoot.stepsGoal.toLocaleString() : "")
+                    visible: fullRoot.showSteps
+                    Layout.fillWidth: true
+                }
+
+                PlasmaComponents.Label {
+                    text: i18n("Calories")
+                    opacity: 0.7
+                    visible: fullRoot.showCalories
+                }
+                PlasmaComponents.Label {
+                    text: fullRoot.calories.toLocaleString()
+                    visible: fullRoot.showCalories
+                    Layout.fillWidth: true
+                }
+
+                PlasmaComponents.Label {
+                    text: i18n("Distance")
+                    opacity: 0.7
+                    visible: fullRoot.showDistance
+                }
+                PlasmaComponents.Label {
+                    text: fullRoot.formatDistance(fullRoot.distance, fullRoot.distanceUnit)
+                    visible: fullRoot.showDistance
+                    Layout.fillWidth: true
+                }
+
+                PlasmaComponents.Label {
+                    text: i18n("Active minutes")
+                    opacity: 0.7
+                    visible: fullRoot.showActiveMinutes
+                }
+                PlasmaComponents.Label {
+                    text: i18nc("active minutes", "%1 min", fullRoot.activeMinutes)
+                    visible: fullRoot.showActiveMinutes
+                    Layout.fillWidth: true
+                }
+
+                PlasmaComponents.Label {
+                    text: i18n("Resting HR")
+                    opacity: 0.7
+                    visible: fullRoot.showHeartRate
+                }
+                PlasmaComponents.Label {
+                    text: fullRoot.restingHeartRate > 0
+                        ? i18nc("heart rate in beats per minute", "%1 bpm", fullRoot.restingHeartRate)
+                        : "—"
+                    visible: fullRoot.showHeartRate
+                    Layout.fillWidth: true
+                }
+
+                PlasmaComponents.Label {
+                    Layout.columnSpan: 2
+                    Layout.alignment: Qt.AlignHCenter
+                    text: fullRoot.lastUpdated ? i18n("Updated: %1", fullRoot.lastUpdated) : ""
+                    font.pointSize: Kirigami.Theme.smallFont.pointSize
+                    opacity: fullRoot.isStale ? 0.4 : 0.6
+                    visible: text !== ""
+                }
+            }
+        }
     }
 }
