@@ -67,17 +67,40 @@ PlasmaExtras.Representation {
         implicitHeight: statsColumn.visible ? statsColumn.implicitHeight : Kirigami.Units.gridUnit * 8
 
         // Not connected
-        Kirigami.PlaceholderMessage {
+        ColumnLayout {
             anchors.centerIn: parent
             width: parent.width - Kirigami.Units.gridUnit * 4
             visible: !fullRoot.hasToken
-            icon.name: "fitdash"
-            text: i18n("Not connected to Fitbit")
-            explanation: i18n("Authorize your Fitbit account in Settings to see your fitness data.")
-            helpfulAction: Kirigami.Action {
+            spacing: Kirigami.Units.largeSpacing
+
+            Kirigami.Icon {
+                source: Qt.resolvedUrl("../icons/fitdash.svg")
+                Layout.preferredWidth: Kirigami.Units.iconSizes.huge
+                Layout.preferredHeight: Kirigami.Units.iconSizes.huge
+                Layout.alignment: Qt.AlignHCenter
+                isMask: false
+            }
+
+            PlasmaComponents.Label {
+                Layout.fillWidth: true
+                horizontalAlignment: Text.AlignHCenter
+                text: i18n("Not connected to Fitbit")
+                font.pointSize: Kirigami.Theme.defaultFont.pointSize + 2
+            }
+
+            PlasmaComponents.Label {
+                Layout.fillWidth: true
+                horizontalAlignment: Text.AlignHCenter
+                text: i18n("Authorize your Fitbit account in Settings to see your fitness data.")
+                wrapMode: Text.WordWrap
+                opacity: 0.7
+            }
+
+            PlasmaComponents.Button {
+                Layout.alignment: Qt.AlignHCenter
                 icon.name: "configure"
                 text: i18n("Open Settings")
-                onTriggered: {
+                onClicked: {
                     Plasmoid.expanded = false;
                     Qt.callLater(function() {
                         var action = Plasmoid.internalAction("configure");
@@ -88,12 +111,25 @@ PlasmaExtras.Representation {
         }
 
         // Loading with no data yet
-        Kirigami.PlaceholderMessage {
+        ColumnLayout {
             anchors.centerIn: parent
             width: parent.width - Kirigami.Units.gridUnit * 4
             visible: fullRoot.hasToken && fullRoot.isLoading && fullRoot.steps === 0 && fullRoot.errorMessage === ""
-            icon.name: "view-refresh-symbolic"
-            text: i18n("Loading…")
+            spacing: Kirigami.Units.largeSpacing
+
+            PlasmaComponents.BusyIndicator {
+                Layout.alignment: Qt.AlignHCenter
+                implicitWidth: Kirigami.Units.iconSizes.huge
+                implicitHeight: Kirigami.Units.iconSizes.huge
+                running: true
+            }
+
+            PlasmaComponents.Label {
+                Layout.fillWidth: true
+                horizontalAlignment: Text.AlignHCenter
+                text: i18n("Loading…")
+                font.pointSize: Kirigami.Theme.defaultFont.pointSize + 2
+            }
         }
 
         // Stats
