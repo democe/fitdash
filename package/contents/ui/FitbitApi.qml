@@ -19,6 +19,10 @@ QtObject {
     property string lastRequestStatus: ""
     property string lastRequestState: "unknown"
 
+    property var activityXhr: null
+    property var heartRateXhr: null
+    property bool authErrorSignaled: false
+
     signal dataUpdated()
     signal authError()
     signal error(string message)
@@ -32,6 +36,7 @@ QtObject {
         if (isLoading) return;
         isLoading = true;
         errorMessage = "";
+        authErrorSignaled = false;
         fetchActivity();
         fetchHeartRate();
     }
@@ -80,12 +85,25 @@ QtObject {
         return false;
     }
 
+    function cleanup() {
+        if (api.activityXhr) {
+            api.activityXhr.abort();
+            api.activityXhr = null;
+        }
+        if (api.heartRateXhr) {
+            api.heartRateXhr.abort();
+            api.heartRateXhr = null;
+        }
+    }
+
     function fetchActivity() {
         var xhr = new XMLHttpRequest();
+        api.activityXhr = xhr;
         xhr.open("GET", "https://api.fitbit.com/1/user/-/activities/date/" + todayStr() + ".json");
         xhr.setRequestHeader("Authorization", "Bearer " + accessToken);
         xhr.timeout = 15000;
         xhr.ontimeout = function() {
+            api.activityXhr = null;
             api.errorMessage = i18n("Request timed out — check your connection");
             api.lastRequestStatus = i18n("Timed out at %1", new Date().toLocaleTimeString());
             api.lastRequestState = "error";
@@ -94,6 +112,7 @@ QtObject {
         };
         xhr.onreadystatechange = function() {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            api.activityXhr = null;
             if (handleHttpError(xhr, i18n("Activity fetch"))) {
                 isLoading = false;
                 return;
@@ -136,14 +155,26 @@ QtObject {
 
     function fetchHeartRate() {
         var xhr = new XMLHttpRequest();
+        api.heartRateXhr = xhr;
         xhr.open("GET", "https://api.fitbit.com/1/user/-/activities/heart/date/" + todayStr() + "/1d.json");
         xhr.setRequestHeader("Authorization", "Bearer " + accessToken);
         xhr.timeout = 15000;
-        // Heart rate is non-critical; a timeout here is silently ignored.
         xhr.onreadystatechange = function() {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
-            if (xhr.status === 401) return; // already handled by activity call
-            if (xhr.status !== 200) return;
+            api.heartRateXhr = null;
+            if (xhr.status === 401) {
+                if (!api.authErrorSignaled) {
+                    api.authErrorSignaled = true;
+                    api.authError();
+                }
+                return;
+            }
+            if (xhr.status !== 200) {
+                if (xhr.status !== 0) {
+                    console.warn("FitDash: heart rate fetch failed (HTTP " + xhr.status + ")");
+                }
+                return;
+            }
             try {
                 var data = JSON.parse(xhr.responseText);
                 var hearts = data["activities-heart"];
@@ -151,7 +182,7 @@ QtObject {
                     api.restingHeartRate = hearts[0].value.restingHeartRate || 0;
                 }
             } catch(e) {
-                // non-critical
+                console.warn("FitDash: failed to parse heart rate data");
             }
         };
         xhr.send();

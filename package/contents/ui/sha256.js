@@ -64,7 +64,7 @@ function sha256Bytes(bytes) {
     }
 
     var out = [];
-    for (i = 0; i < 8; i++) {
+    for (var i = 0; i < 8; i++) {
         out.push((h[i] >>> 24) & 0xff, (h[i] >>> 16) & 0xff, (h[i] >>> 8) & 0xff, h[i] & 0xff);
     }
     return out;

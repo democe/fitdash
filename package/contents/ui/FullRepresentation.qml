@@ -31,7 +31,7 @@ PlasmaExtras.Representation {
     Layout.preferredWidth: Kirigami.Units.gridUnit * 20
     Layout.preferredHeight: {
         var contentH = statsColumn.visible ? statsColumn.implicitHeight : Kirigami.Units.gridUnit * 8;
-        var headerH = header ? header.implicitHeight : 0;
+        var headerH = header.implicitHeight;
         return contentH + headerH + topPadding + bottomPadding;
     }
 

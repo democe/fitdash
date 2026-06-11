@@ -23,7 +23,7 @@ PlasmoidItem {
 
         Layout.preferredWidth: root.constrained
             ? compactRow.implicitWidth + Kirigami.Units.smallSpacing * 2
-            : -1
+            : undefined
         Layout.fillHeight: true
         Layout.fillWidth: !root.constrained
 
@@ -233,5 +233,6 @@ PlasmoidItem {
     Component.onDestruction: {
         tokenRefreshTimer.stop();
         dataRefreshTimer.stop();
+        fitbitApi.cleanup();
     }
 }
