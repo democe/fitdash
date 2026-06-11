@@ -9,6 +9,10 @@ Item {
     property int callbackPort: 19847
     property string activeSource: ""
     property bool lastErrorRequiresAuthorization: false
+    // Guards against the proactive timer and a reactive 401 both spending the
+    // refresh token at once — Fitbit rotates it on every use, so a concurrent
+    // double-use invalidates it and forces a full re-authorization.
+    property bool refreshing: false
 
     // State for the manual copy+paste fallback flow.
     property string manualVerifier: ""
@@ -68,6 +72,7 @@ Item {
     }
 
     function reportError(message, requiresAuthorization) {
+        refreshing = false;
         lastErrorRequiresAuthorization = requiresAuthorization || false;
         oauth.error(message);
     }
@@ -118,7 +123,11 @@ Item {
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "https://api.fitbit.com/oauth2/token");
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.timeout = 15000;
         xhr.onerror = function() {
+            reportError(messages.network, false);
+        };
+        xhr.ontimeout = function() {
             reportError(messages.network, false);
         };
         xhr.onreadystatechange = function() {
@@ -150,6 +159,7 @@ Item {
             try {
                 var resp = JSON.parse(xhr.responseText);
                 if (resp.access_token && resp.refresh_token) {
+                    refreshing = false;
                     oauth.authorized(resp);
                 } else {
                     reportError(resp.errors ? resp.errors[0].message : messages.missingTokens, invalidGrantRequiresAuth);
@@ -162,6 +172,8 @@ Item {
     }
 
     function refreshToken(clientId, refreshTok) {
+        if (refreshing) return;
+        refreshing = true;
         var body = "grant_type=refresh_token"
             + "&refresh_token=" + encodeURIComponent(refreshTok)
             + "&client_id=" + encodeURIComponent(clientId);

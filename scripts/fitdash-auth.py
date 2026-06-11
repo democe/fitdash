@@ -6,11 +6,8 @@ import base64
 import hashlib
 import http.server
 import json
-import os
 import secrets
-import socket
 import sys
-import threading
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -98,6 +95,7 @@ def main():
     try:
         http.server.HTTPServer.allow_reuse_address = True
         server = http.server.HTTPServer(("127.0.0.1", port), Handler)
+        server.timeout = 120  # handle_request() returns after this if no request arrives
     except OSError as e:
         json.dump({"error": f"Could not start auth server on port {port}: {e}"}, sys.stderr)
         sys.exit(1)
@@ -117,15 +115,11 @@ def main():
         })
     )
 
-    # Shut down server after timeout
-    timer = threading.Timer(120.0, server.shutdown)
-    timer.daemon = True
-    timer.start()
-
     webbrowser.open(authorize_url)
-    server.handle_request()  # serve exactly one request
+    # Serve exactly one request. server.timeout bounds the wait; if it elapses
+    # with no request, handle_request() returns and auth_code stays None.
+    server.handle_request()
     server.server_close()
-    timer.cancel()
 
     if error:
         json.dump({"error": error}, sys.stderr)

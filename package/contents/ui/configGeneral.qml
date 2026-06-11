@@ -6,8 +6,6 @@ import org.kde.kirigami as Kirigami
 Kirigami.ScrollablePage {
     id: configRoot
     title: i18n("General")
-    property bool cfg_expanding: false
-    property int cfg_length: 0
 
     property alias cfg_clientId: clientIdField.text
     property alias cfg_refreshInterval: refreshIntervalSpinBox.value

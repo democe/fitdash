@@ -51,7 +51,8 @@ PlasmoidItem {
                 id: stepLabel
                 text: fitbitApi.accessToken !== "" ? fitbitApi.steps.toLocaleString() : "—"
                 font.bold: false
-                font.pixelSize: root.constrained ? -1 : compactRoot.height * 0.3
+                // In a panel, leave the theme default; only scale to height when free-floating.
+                font.pixelSize: root.constrained ? undefined : compactRoot.height * 0.3
             }
         }
     }

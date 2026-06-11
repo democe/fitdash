@@ -84,6 +84,14 @@ QtObject {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "https://api.fitbit.com/1/user/-/activities/date/" + todayStr() + ".json");
         xhr.setRequestHeader("Authorization", "Bearer " + accessToken);
+        xhr.timeout = 15000;
+        xhr.ontimeout = function() {
+            api.errorMessage = i18n("Request timed out — check your connection");
+            api.lastRequestStatus = i18n("Timed out at %1", new Date().toLocaleTimeString());
+            api.lastRequestState = "error";
+            api.isLoading = false;
+            api.error(api.errorMessage);
+        };
         xhr.onreadystatechange = function() {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (handleHttpError(xhr, i18n("Activity fetch"))) {
@@ -130,6 +138,8 @@ QtObject {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "https://api.fitbit.com/1/user/-/activities/heart/date/" + todayStr() + "/1d.json");
         xhr.setRequestHeader("Authorization", "Bearer " + accessToken);
+        xhr.timeout = 15000;
+        // Heart rate is non-critical; a timeout here is silently ignored.
         xhr.onreadystatechange = function() {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (xhr.status === 401) return; // already handled by activity call
