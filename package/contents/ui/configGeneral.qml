@@ -75,22 +75,29 @@ Kirigami.ScrollablePage {
 
     ColumnLayout {
         width: parent.width
-        spacing: 0
+        spacing: Kirigami.Units.largeSpacing
 
         Kirigami.FormLayout {
             Layout.fillWidth: true
+            Layout.leftMargin: Kirigami.Units.largeSpacing
+            Layout.rightMargin: Kirigami.Units.largeSpacing
+            Layout.topMargin: Kirigami.Units.largeSpacing
+            Layout.bottomMargin: Kirigami.Units.smallSpacing
 
             QQC2.TextField {
                 id: clientIdField
                 Kirigami.FormData.label: i18n("Client ID:")
                 placeholderText: i18n("From dev.fitbit.com/apps")
                 validator: RegularExpressionValidator { regularExpression: /^[A-Za-z0-9]+$/ }
+                Layout.fillWidth: true
             }
 
             QQC2.Label {
+                Layout.fillWidth: true
                 text: i18n("OAuth 2.0 Client ID from your Fitbit app registration")
                 font.pointSize: Kirigami.Theme.smallFont.pointSize
                 opacity: 0.7
+                wrapMode: Text.WordWrap
             }
 
             RowLayout {
@@ -105,6 +112,8 @@ Kirigami.ScrollablePage {
 
                 QQC2.Button {
                     icon.name: "edit-copy"
+                    display: QQC2.AbstractButton.IconOnly
+                    implicitWidth: Kirigami.Units.gridUnit * 2
                     QQC2.ToolTip.text: i18n("Copy to clipboard")
                     QQC2.ToolTip.visible: hovered
                     QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
@@ -125,9 +134,11 @@ Kirigami.ScrollablePage {
             }
 
             QQC2.Label {
+                Layout.fillWidth: true
                 text: i18n("Paste the callback URL into your Fitbit app settings at dev.fitbit.com")
                 font.pointSize: Kirigami.Theme.smallFont.pointSize
                 opacity: 0.7
+                wrapMode: Text.WordWrap
             }
 
             QQC2.SpinBox {
@@ -139,9 +150,11 @@ Kirigami.ScrollablePage {
             }
 
             QQC2.Label {
+                Layout.fillWidth: true
                 text: i18n("Recommended: 15–30 minutes to stay within Fitbit rate limits")
                 font.pointSize: Kirigami.Theme.smallFont.pointSize
                 opacity: 0.7
+                wrapMode: Text.WordWrap
             }
 
             Kirigami.Separator {
@@ -170,31 +183,36 @@ Kirigami.ScrollablePage {
 
             QQC2.CheckBox {
                 id: showStepsCheckBox
-                Kirigami.FormData.label: i18n("Steps:")
+                Kirigami.FormData.label: ""
+                text: i18n("Steps")
                 checked: true
             }
 
             QQC2.CheckBox {
                 id: showCaloriesCheckBox
-                Kirigami.FormData.label: i18n("Calories:")
+                Kirigami.FormData.label: ""
+                text: i18n("Calories")
                 checked: true
             }
 
             QQC2.CheckBox {
                 id: showDistanceCheckBox
-                Kirigami.FormData.label: i18n("Distance:")
+                Kirigami.FormData.label: ""
+                text: i18n("Distance")
                 checked: true
             }
 
             QQC2.CheckBox {
                 id: showActiveMinutesCheckBox
-                Kirigami.FormData.label: i18n("Active minutes:")
+                Kirigami.FormData.label: ""
+                text: i18n("Active minutes")
                 checked: true
             }
 
             QQC2.CheckBox {
                 id: showHeartRateCheckBox
-                Kirigami.FormData.label: i18n("Resting heart rate:")
+                Kirigami.FormData.label: ""
+                text: i18n("Resting heart rate")
                 checked: true
             }
 
@@ -205,18 +223,22 @@ Kirigami.ScrollablePage {
 
             QQC2.Label {
                 Kirigami.FormData.label: i18n("Status:")
+                Layout.fillWidth: true
                 text: configRoot.accountStatusText()
                 color: configRoot.accountStatusColor()
+                wrapMode: Text.WordWrap
             }
 
             QQC2.Label {
                 Kirigami.FormData.label: i18n("Last request:")
+                Layout.fillWidth: true
                 text: cfg_lastRequestStatus || i18n("No requests yet")
                 color: cfg_lastRequestState === "ok" ? Kirigami.Theme.positiveTextColor
                      : cfg_lastRequestState === "warn" ? Kirigami.Theme.neutralTextColor
                      : cfg_lastRequestState === "error" ? Kirigami.Theme.negativeTextColor
                      : Kirigami.Theme.textColor
                 visible: cfg_accessToken !== "" || cfg_refreshToken !== "" || cfg_lastRequestStatus !== ""
+                wrapMode: Text.WordWrap
             }
 
             QQC2.Button {
@@ -241,6 +263,7 @@ Kirigami.ScrollablePage {
             QQC2.Button {
                 text: i18n("Authorize manually (copy & paste)")
                 icon.name: "edit-paste"
+                Layout.topMargin: Kirigami.Units.smallSpacing
                 visible: !configRoot.manualAuthActive
                 enabled: clientIdField.text !== "" && clientIdField.acceptableInput
                 QQC2.ToolTip.text: i18n("Use this if the browser can't reach localhost (sandboxed browser, remote session, or no Python)")
@@ -278,6 +301,8 @@ Kirigami.ScrollablePage {
 
                 QQC2.Button {
                     icon.name: "edit-copy"
+                    display: QQC2.AbstractButton.IconOnly
+                    implicitWidth: Kirigami.Units.gridUnit * 2
                     QQC2.ToolTip.text: i18n("Copy to clipboard")
                     QQC2.ToolTip.visible: hovered
                     QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
@@ -290,6 +315,8 @@ Kirigami.ScrollablePage {
 
                 QQC2.Button {
                     icon.name: "globe"
+                    display: QQC2.AbstractButton.IconOnly
+                    implicitWidth: Kirigami.Units.gridUnit * 2
                     QQC2.ToolTip.text: i18n("Open in browser")
                     QQC2.ToolTip.visible: hovered
                     QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
@@ -326,6 +353,8 @@ Kirigami.ScrollablePage {
 
                 QQC2.Button {
                     icon.name: "dialog-cancel"
+                    display: QQC2.AbstractButton.IconOnly
+                    implicitWidth: Kirigami.Units.gridUnit * 2
                     QQC2.ToolTip.text: i18n("Cancel manual authorization")
                     QQC2.ToolTip.visible: hovered
                     QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay

@@ -21,9 +21,7 @@ PlasmoidItem {
 
         property bool wasExpanded: false
 
-        Layout.preferredWidth: root.constrained
-            ? compactRow.implicitWidth + Kirigami.Units.smallSpacing * 2
-            : undefined
+        Layout.preferredWidth: compactRow.implicitWidth + Kirigami.Units.smallSpacing * 2
         Layout.fillHeight: true
         Layout.fillWidth: !root.constrained
 
@@ -51,8 +49,7 @@ PlasmoidItem {
                 id: stepLabel
                 text: fitbitApi.accessToken !== "" ? fitbitApi.steps.toLocaleString() : "—"
                 font.bold: false
-                // In a panel, leave the theme default; only scale to height when free-floating.
-                font.pixelSize: root.constrained ? undefined : compactRoot.height * 0.3
+                font.pixelSize: root.constrained ? Kirigami.Units.gridUnit * 0.75 : compactRoot.height * 0.3
             }
         }
     }
