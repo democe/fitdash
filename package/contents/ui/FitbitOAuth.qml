@@ -37,8 +37,26 @@ Item {
             if (source === oauth.activeSource) {
                 oauth.activeSource = "";
             }
-            var stdout = data["stdout"] || "";
-            var stderr = data["stderr"] || "";
+            var stdout = (data["stdout"] || "").trim();
+            var stderr = (data["stderr"] || "").trim();
+
+            // stdout is authoritative: the Python script writes tokens to stdout on
+            // success and errors to stderr. Check stdout first so that incidental
+            // stderr noise (e.g. Qt locale warnings from the browser launcher) cannot
+            // shadow a successful token response.
+            if (stdout) {
+                try {
+                    var tokens = JSON.parse(stdout);
+                    if (tokens.error) {
+                        reportError(tokens.error, false);
+                    } else {
+                        oauth.authorized(tokens);
+                    }
+                    return;
+                } catch(e) {
+                    // stdout was not valid JSON — fall through to check stderr
+                }
+            }
 
             if (stderr) {
                 try {
@@ -50,16 +68,7 @@ Item {
                 return;
             }
 
-            try {
-                var tokens = JSON.parse(stdout);
-                if (tokens.error) {
-                    reportError(tokens.error, false);
-                } else {
-                    oauth.authorized(tokens);
-                }
-            } catch(e) {
-                reportError(i18n("Failed to parse auth response"), false);
-            }
+            reportError(i18n("Failed to parse auth response"), false);
         }
     }
 

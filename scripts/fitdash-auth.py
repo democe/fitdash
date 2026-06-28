@@ -115,7 +115,18 @@ def main():
         })
     )
 
-    webbrowser.open(authorize_url)
+    # Launch the browser with stderr/stdout suppressed so that Qt locale
+    # warnings or other noise from the browser helper (xdg-open, kde-open5,
+    # etc.) do not leak into the stderr that Plasma captures from this process.
+    try:
+        subprocess.Popen(
+            ["xdg-open", authorize_url],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            start_new_session=True,
+        )
+    except OSError:
+        webbrowser.open(authorize_url)
     # Serve exactly one request. server.timeout bounds the wait; if it elapses
     # with no request, handle_request() returns and auth_code stays None.
     server.handle_request()
