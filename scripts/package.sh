@@ -26,6 +26,7 @@ cp -r "$PACKAGE_DIR" "$STAGE_PACKAGE_DIR"
 mkdir -p "$STAGE_PACKAGE_DIR/contents/scripts"
 cp "$AUTH_SCRIPT_SRC" "$STAGE_PACKAGE_DIR/contents/scripts/fitdash-auth.py"
 chmod +x "$STAGE_PACKAGE_DIR/contents/scripts/fitdash-auth.py"
+"$SCRIPT_DIR/compile-translations.sh" "$STAGE_PACKAGE_DIR"
 
 # A .plasmoid is a zip of the package/ directory contents
 cd "$STAGE_PACKAGE_DIR"

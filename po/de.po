@@ -1,0 +1,460 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FitDash 1.0.5\n"
+"Report-Msgid-Bugs-To: democe@outlook.com\n"
+"POT-Creation-Date: 2026-06-28 10:41-0600\n"
+"PO-Revision-Date: 2026-06-28 00:00+0000\n"
+"Last-Translator: FitDash contributors\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: package/contents/ui/FitbitApi.qml:33
+msgid "No access token"
+msgstr "Kein Zugriffstoken"
+
+#: package/contents/ui/FitbitApi.qml:52
+msgid "Network error — check your connection"
+msgstr "Netzwerkfehler — überprüfen Sie Ihre Verbindung"
+
+#: package/contents/ui/FitbitApi.qml:53
+msgid "Network error at %1"
+msgstr "Netzwerkfehler um %1"
+
+#: package/contents/ui/FitbitApi.qml:59
+msgid "Token expired at %1 — refreshing"
+msgstr "Token um %1 abgelaufen — wird aktualisiert"
+
+#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:148
+msgid "Rate limited — try again later"
+msgstr "Ratenlimit erreicht — versuchen Sie es später erneut"
+
+#: package/contents/ui/FitbitApi.qml:66
+msgid "Rate limited at %1 — showing cached data"
+msgstr "Ratenlimit um %1 erreicht — zwischengespeicherte Daten werden angezeigt"
+
+#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:152
+msgid "Fitbit server error (HTTP %1)"
+msgstr "Fitbit-Serverfehler (HTTP %1)"
+
+#: package/contents/ui/FitbitApi.qml:73
+msgid "Server error (HTTP %1) at %2"
+msgstr "Serverfehler (HTTP %1) um %2"
+
+#: package/contents/ui/FitbitApi.qml:79
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 fehlgeschlagen (HTTP %2)"
+
+#: package/contents/ui/FitbitApi.qml:80
+msgid "Error (HTTP %1) at %2"
+msgstr "Fehler (HTTP %1) um %2"
+
+#: package/contents/ui/FitbitApi.qml:107
+msgid "Request timed out — check your connection"
+msgstr "Zeitüberschreitung der Anfrage — überprüfen Sie Ihre Verbindung"
+
+#: package/contents/ui/FitbitApi.qml:108
+msgid "Timed out at %1"
+msgstr "Zeitüberschreitung um %1"
+
+#: package/contents/ui/FitbitApi.qml:116
+msgid "Activity fetch"
+msgstr "Aktivität abrufen"
+
+#: package/contents/ui/FitbitApi.qml:141
+msgid "OK — updated at %1"
+msgstr "OK — um %1 aktualisiert"
+
+#: package/contents/ui/FitbitApi.qml:146
+msgid "Failed to parse activity data"
+msgstr "Aktivitätsdaten konnten nicht verarbeitet werden"
+
+#: package/contents/ui/FitbitApi.qml:147
+msgid "Parse error at %1"
+msgstr "Verarbeitungsfehler um %1"
+
+#: package/contents/ui/FitbitOAuth.qml:46
+msgid "Unknown error"
+msgstr "Unbekannter Fehler"
+
+#: package/contents/ui/FitbitOAuth.qml:61
+msgid "Failed to parse auth response"
+msgstr "Autorisierungsantwort konnte nicht verarbeitet werden"
+
+#: package/contents/ui/FitbitOAuth.qml:101
+#: package/contents/ui/FitbitOAuth.qml:228
+msgid "Invalid client ID format"
+msgstr "Ungültiges Client-ID-Format"
+
+#: package/contents/ui/FitbitOAuth.qml:115
+msgid "Authorization canceled"
+msgstr "Autorisierung abgebrochen"
+
+#: package/contents/ui/FitbitOAuth.qml:142
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: package/contents/ui/FitbitOAuth.qml:156
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2)"
+
+#: package/contents/ui/FitbitOAuth.qml:181
+msgid "Network error during token refresh"
+msgstr "Netzwerkfehler beim Aktualisieren des Tokens"
+
+#: package/contents/ui/FitbitOAuth.qml:182
+msgid "Refresh token invalid — please re-authorize"
+msgstr "Aktualisierungstoken ungültig — bitte erneut autorisieren"
+
+#: package/contents/ui/FitbitOAuth.qml:183
+msgid "Token refresh failed"
+msgstr "Token-Aktualisierung fehlgeschlagen"
+
+#: package/contents/ui/FitbitOAuth.qml:184
+msgid "Refresh failed — missing tokens"
+msgstr "Aktualisierung fehlgeschlagen — Tokens fehlen"
+
+#: package/contents/ui/FitbitOAuth.qml:185
+msgid "Token refresh failed — invalid response"
+msgstr "Token-Aktualisierung fehlgeschlagen — ungültige Antwort"
+
+#: package/contents/ui/FitbitOAuth.qml:242
+msgid "Paste the redirect URL or authorization code first"
+msgstr "Fügen Sie zuerst die Weiterleitungs-URL oder den Autorisierungscode ein"
+
+#: package/contents/ui/FitbitOAuth.qml:246
+msgid "Start the manual authorization first"
+msgstr "Starten Sie zuerst die manuelle Autorisierung"
+
+#: package/contents/ui/FitbitOAuth.qml:266
+msgid "Authorization was denied"
+msgstr "Autorisierung wurde verweigert"
+
+#: package/contents/ui/FitbitOAuth.qml:273
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "Autorisierung fehlgeschlagen (Status stimmt nicht überein) — bitte erneut versuchen"
+
+#: package/contents/ui/FitbitOAuth.qml:277
+msgid "No authorization code found in the pasted text"
+msgstr "Im eingefügten Text wurde kein Autorisierungscode gefunden"
+
+#: package/contents/ui/FitbitOAuth.qml:287
+msgid "Network error during token exchange"
+msgstr "Netzwerkfehler beim Token-Austausch"
+
+#: package/contents/ui/FitbitOAuth.qml:288
+msgid "Authorization code invalid or expired — please try again"
+msgstr "Autorisierungscode ungültig oder abgelaufen — bitte erneut versuchen"
+
+#: package/contents/ui/FitbitOAuth.qml:289
+msgid "Token exchange failed"
+msgstr "Token-Austausch fehlgeschlagen"
+
+#: package/contents/ui/FitbitOAuth.qml:290
+msgid "Token exchange failed — missing tokens"
+msgstr "Token-Austausch fehlgeschlagen — Tokens fehlen"
+
+#: package/contents/ui/FitbitOAuth.qml:291
+msgid "Token exchange failed — invalid response"
+msgstr "Token-Austausch fehlgeschlagen — ungültige Antwort"
+
+#: package/contents/ui/FullRepresentation.qml:40
+msgctxt "distance in miles"
+msgid "%1 mi"
+msgstr "%1 mi"
+
+#: package/contents/ui/FullRepresentation.qml:42
+msgctxt "distance in kilometers"
+msgid "%1 km"
+msgstr "%1 km"
+
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:77
+msgid "FitDash"
+msgstr "FitDash"
+
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Stale"
+msgstr "Veraltet"
+
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Today"
+msgstr "Heute"
+
+#: package/contents/ui/FullRepresentation.qml:115
+msgid "Connect Fitbit"
+msgstr "Fitbit verbinden"
+
+#: package/contents/ui/FullRepresentation.qml:121
+msgid "Authorize your account in settings to show today's activity."
+msgstr ""
+"Autorisieren Sie Ihr Konto in den Einstellungen, um die heutige Aktivität "
+"anzuzeigen."
+
+#: package/contents/ui/FullRepresentation.qml:130
+msgid "Open Settings"
+msgstr "Einstellungen öffnen"
+
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Loading Fitbit data"
+msgstr "Fitbit-Daten werden geladen"
+
+#: package/contents/ui/FullRepresentation.qml:213
+#: package/contents/ui/configGeneral.qml:187
+msgid "Steps"
+msgstr "Schritte"
+
+#: package/contents/ui/FullRepresentation.qml:220
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:245
+msgid "%1 remaining of %2"
+msgstr "%1 verbleibend von %2"
+
+#: package/contents/ui/FullRepresentation.qml:246
+msgid "No step goal set"
+msgstr "Kein Schrittziel festgelegt"
+
+#: package/contents/ui/FullRepresentation.qml:263
+#: package/contents/ui/configGeneral.qml:194
+msgid "Calories"
+msgstr "Kalorien"
+
+#: package/contents/ui/FullRepresentation.qml:271
+#: package/contents/ui/configGeneral.qml:201
+msgid "Distance"
+msgstr "Distanz"
+
+#: package/contents/ui/FullRepresentation.qml:279
+msgid "Active"
+msgstr "Aktiv"
+
+#: package/contents/ui/FullRepresentation.qml:280
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 Min."
+
+#: package/contents/ui/FullRepresentation.qml:287
+msgid "Resting HR"
+msgstr "Ruhepuls"
+
+#: package/contents/ui/FullRepresentation.qml:289
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+
+#: package/contents/ui/FullRepresentation.qml:310
+msgid "Updated %1"
+msgstr "Aktualisiert %1"
+
+#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
+msgid "General"
+msgstr "Allgemein"
+
+#: package/contents/ui/configGeneral.qml:52
+msgid "Not authorized"
+msgstr "Nicht autorisiert"
+
+#: package/contents/ui/configGeneral.qml:55
+msgid "Authorization problem — re-authorize"
+msgstr "Autorisierungsproblem — erneut autorisieren"
+
+#: package/contents/ui/configGeneral.qml:58
+msgid "Token expired — refresh needed"
+msgstr "Token abgelaufen — Aktualisierung erforderlich"
+
+#: package/contents/ui/configGeneral.qml:60
+msgid "unknown"
+msgstr "unbekannt"
+
+#: package/contents/ui/configGeneral.qml:60
+msgid "Authorized (User: %1)"
+msgstr "Autorisiert (Benutzer: %1)"
+
+#: package/contents/ui/configGeneral.qml:89
+msgid "Client ID:"
+msgstr "Client-ID:"
+
+#: package/contents/ui/configGeneral.qml:90
+msgid "From dev.fitbit.com/apps"
+msgstr "Von dev.fitbit.com/apps"
+
+#: package/contents/ui/configGeneral.qml:97
+msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+msgstr "OAuth-2.0-Client-ID aus Ihrer Fitbit-App-Registrierung"
+
+#: package/contents/ui/configGeneral.qml:104
+msgid "Callback URL:"
+msgstr "Callback-URL:"
+
+#: package/contents/ui/configGeneral.qml:117
+#: package/contents/ui/configGeneral.qml:306
+msgid "Copy to clipboard"
+msgstr "In die Zwischenablage kopieren"
+
+#: package/contents/ui/configGeneral.qml:130
+msgid "Callback port:"
+msgstr "Callback-Port:"
+
+#: package/contents/ui/configGeneral.qml:138
+msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+msgstr "Fügen Sie die Callback-URL in den Einstellungen Ihrer Fitbit-App auf dev.fitbit.com ein"
+
+#: package/contents/ui/configGeneral.qml:146
+msgid "Refresh interval (minutes):"
+msgstr "Aktualisierungsintervall (Minuten):"
+
+#: package/contents/ui/configGeneral.qml:154
+msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+msgstr "Empfohlen: 15-30 Minuten, um innerhalb der Fitbit-Ratenlimits zu bleiben"
+
+#: package/contents/ui/configGeneral.qml:162
+msgid "Display"
+msgstr "Anzeige"
+
+#: package/contents/ui/configGeneral.qml:167
+msgid "Distance unit:"
+msgstr "Distanzeinheit:"
+
+#: package/contents/ui/configGeneral.qml:169
+msgid "Kilometers (km)"
+msgstr "Kilometer (km)"
+
+#: package/contents/ui/configGeneral.qml:170
+msgid "Miles (mi)"
+msgstr "Meilen (mi)"
+
+#: package/contents/ui/configGeneral.qml:181
+msgid "Visible Metrics"
+msgstr "Sichtbare Messwerte"
+
+#: package/contents/ui/configGeneral.qml:208
+msgid "Active minutes"
+msgstr "Aktive Minuten"
+
+#: package/contents/ui/configGeneral.qml:215
+msgid "Resting heart rate"
+msgstr "Ruhepuls"
+
+#: package/contents/ui/configGeneral.qml:221
+msgid "Fitbit Account"
+msgstr "Fitbit-Konto"
+
+#: package/contents/ui/configGeneral.qml:225
+msgid "Status:"
+msgstr "Status:"
+
+#: package/contents/ui/configGeneral.qml:233
+msgid "Last request:"
+msgstr "Letzte Anfrage:"
+
+#: package/contents/ui/configGeneral.qml:235
+msgid "No requests yet"
+msgstr "Noch keine Anfragen"
+
+#: package/contents/ui/configGeneral.qml:245
+msgid "Authorization:"
+msgstr "Autorisierung:"
+
+#: package/contents/ui/configGeneral.qml:247
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: package/contents/ui/configGeneral.qml:248
+msgid "Re-authorize with Fitbit"
+msgstr "Erneut mit Fitbit autorisieren"
+
+#: package/contents/ui/configGeneral.qml:248
+msgid "Authorize with Fitbit"
+msgstr "Mit Fitbit autorisieren"
+
+#: package/contents/ui/configGeneral.qml:264
+msgid "Authorize manually (copy & paste)"
+msgstr "Manuell autorisieren (kopieren und einfügen)"
+
+#: package/contents/ui/configGeneral.qml:269
+msgid ""
+"Use this if the browser can't reach localhost (sandboxed browser, remote "
+"session, or no Python)"
+msgstr ""
+"Verwenden Sie dies, wenn der Browser localhost nicht erreichen kann "
+"(Sandbox-Browser, entfernte Sitzung oder kein Python)"
+
+#: package/contents/ui/configGeneral.qml:285
+msgid "Step 1:"
+msgstr "Schritt 1:"
+
+#: package/contents/ui/configGeneral.qml:286
+msgid "Open this URL in a browser and approve access:"
+msgstr "Öffnen Sie diese URL in einem Browser und genehmigen Sie den Zugriff:"
+
+#: package/contents/ui/configGeneral.qml:293
+msgid "Authorization URL:"
+msgstr "Autorisierungs-URL:"
+
+#: package/contents/ui/configGeneral.qml:320
+msgid "Open in browser"
+msgstr "Im Browser öffnen"
+
+#: package/contents/ui/configGeneral.qml:329
+msgid "Step 2:"
+msgstr "Schritt 2:"
+
+#: package/contents/ui/configGeneral.qml:330
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr ""
+"Kopieren Sie nach der Genehmigung die URL aus der Adressleiste und fügen Sie "
+"sie unten ein:"
+
+#: package/contents/ui/configGeneral.qml:337
+msgid "Redirect URL or code:"
+msgstr "Weiterleitungs-URL oder Code:"
+
+#: package/contents/ui/configGeneral.qml:341
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/callback?code=…"
+
+#: package/contents/ui/configGeneral.qml:348
+msgid "Complete"
+msgstr "Abschließen"
+
+#: package/contents/ui/configGeneral.qml:358
+msgid "Cancel manual authorization"
+msgstr "Manuelle Autorisierung abbrechen"
+
+#: package/contents/ui/configGeneral.qml:397
+msgid "Authorization successful!"
+msgstr "Autorisierung erfolgreich."
+
+#: package/contents/ui/main.qml:79
+msgid "Not connected"
+msgstr "Nicht verbunden"
+
+#: package/contents/ui/main.qml:83
+msgid ""
+"Steps: %1 | Cal: %2 | Dist: %3\n"
+"Updated: %4"
+msgstr ""
+"Schritte: %1 | Kal.: %2 | Dist.: %3\n"
+"Aktualisiert: %4"
+
+#: package/contents/ui/main.qml:105
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "Autorisierung um %1 abgelaufen — bitte erneut autorisieren"
+
+#: package/contents/ui/main.qml:118
+msgid "Token refresh failed at %1 — %2"
+msgstr "Token-Aktualisierung um %1 fehlgeschlagen — %2"
+
+#: package/contents/ui/main.qml:142
+msgid "No refresh token available — please re-authorize"
+msgstr "Kein Aktualisierungstoken verfügbar — bitte erneut autorisieren"
+
+#: package/contents/ui/main.qml:169
+msgid "Token refreshed at %1"
+msgstr "Token um %1 aktualisiert"

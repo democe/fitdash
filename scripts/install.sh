@@ -19,6 +19,7 @@ fi
 
 cp "$AUTH_SCRIPT_SRC" "$AUTH_SCRIPT_DST"
 chmod +x "$AUTH_SCRIPT_DST"
+"$SCRIPT_DIR/compile-translations.sh" "$INSTALL_DIR"
 
 # Install icon into user icon theme so Plasma can resolve it by name
 ICON_DIR="$DATA_HOME/icons/hicolor/scalable/apps"

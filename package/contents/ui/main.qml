@@ -218,7 +218,7 @@ PlasmoidItem {
         desktopFileInstaller.connectSource(
             "test -f \"$HOME/.local/share/applications/com.democe.fitdash.desktop\" || " +
             "(mkdir -p \"$HOME/.local/share/applications\" && " +
-            "printf '[Desktop Entry]\\nName=FitDash\\nComment=Fitbit step counter and fitness data widget for KDE Plasma\\nExec=plasmawindowed com.democe.fitdash\\nIcon=fitdash\\nType=Application\\nCategories=Qt;KDE;System;\\n' " +
+            "printf '[Desktop Entry]\\nName=FitDash\\nName[fr]=FitDash\\nName[es]=FitDash\\nName[nl]=FitDash\\nName[de]=FitDash\\nComment=Fitbit step counter and fitness data widget for KDE Plasma\\nComment[fr]=Widget de compteur de pas Fitbit et de données fitness pour KDE Plasma\\nComment[es]=Widget de contador de pasos y datos de fitness de Fitbit para KDE Plasma\\nComment[nl]=Widget voor Fitbit-stappenteller en fitnessgegevens voor KDE Plasma\\nComment[de]=Widget für Fitbit-Schrittzähler und Fitnessdaten für KDE Plasma\\nExec=plasmawindowed com.democe.fitdash\\nIcon=fitdash\\nType=Application\\nCategories=Qt;KDE;System;\\n' " +
             "> \"$HOME/.local/share/applications/com.democe.fitdash.desktop\")"
         );
 

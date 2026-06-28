@@ -1,6 +1,14 @@
 [Desktop Entry]
 Name=FitDash
+Name[fr]=FitDash
+Name[es]=FitDash
+Name[nl]=FitDash
+Name[de]=FitDash
 Comment=Fitbit step counter and fitness data widget for KDE Plasma
+Comment[fr]=Widget de compteur de pas Fitbit et de données fitness pour KDE Plasma
+Comment[es]=Widget de contador de pasos y datos de fitness de Fitbit para KDE Plasma
+Comment[nl]=Widget voor Fitbit-stappenteller en fitnessgegevens voor KDE Plasma
+Comment[de]=Widget für Fitbit-Schrittzähler und Fitnessdaten für KDE Plasma
 Exec=plasmawindowed com.democe.fitdash
 Icon=fitdash
 Type=Application
