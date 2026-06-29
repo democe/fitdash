@@ -7,6 +7,7 @@ import hashlib
 import http.server
 import json
 import secrets
+import subprocess
 import sys
 import urllib.error
 import urllib.parse
