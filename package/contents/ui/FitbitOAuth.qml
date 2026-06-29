@@ -14,6 +14,15 @@ Item {
     // double-use invalidates it and forces a full re-authorization.
     property bool refreshing: false
 
+    // Retry state for transient token-endpoint failures (5xx, 429, network
+    // errors). Held across the retry delay so the `refreshing` guard stays
+    // asserted and the proactive timer can't double-spend the refresh token.
+    property int maxTokenRetries: 3
+    property var _retryBody: null
+    property var _retryMessages: null
+    property bool _retryInvalidGrantFlag: false
+    property int _retryAttempt: 0
+
     // State for the manual copy+paste fallback flow.
     property string manualVerifier: ""
     property string manualState: ""
@@ -26,6 +35,23 @@ Item {
 
     // OAuth scopes requested. Kept in sync with scripts/fitdash-auth.py.
     readonly property string scopes: "activity heartrate profile settings"
+
+    // Backoff timer for transient token-endpoint failures. On each fire it
+    // re-issues the same POST body that previously failed. Cleared on
+    // success, on a non-retryable error, or when retries are exhausted.
+    Timer {
+        id: tokenRetryTimer
+        repeat: false
+
+        onTriggered: {
+            if (!oauth.refreshing || oauth._retryBody === null) {
+                // State got cleared (success, abort, or user-driven
+                // re-authorization). Don't resurrect a stale attempt.
+                return;
+            }
+            postTokenRequest(oauth._retryBody, oauth._retryMessages, oauth._retryInvalidGrantFlag);
+        }
+    }
 
     Plasma5Support.DataSource {
         id: executable
@@ -127,57 +153,121 @@ Item {
     // Shared POST to Fitbit's token endpoint. `messages` lets each caller phrase
     // its own error text; `invalidGrantRequiresAuth` flags whether a 400/401 means
     // the user must re-authorize (true for refresh, false for a fresh exchange).
+    //
+    // Transient failures (5xx, 429, network errors, timeouts) are retried with
+    // exponential backoff up to `maxTokenRetries` times. The `refreshing` guard
+    // stays asserted across the delay so the proactive refresh timer can't
+    // double-spend the refresh token while a retry is pending. Non-retryable
+    // failures (400/401, malformed 200 responses, unexpected non-200 statuses)
+    // surface immediately via `reportError`.
     function postTokenRequest(body, messages, invalidGrantRequiresAuth) {
         lastErrorRequiresAuthorization = false;
+
+        // Persist the request context so the retry timer can replay it. These
+        // are overwritten (not appended) on every attempt, including retries.
+        _retryBody = body;
+        _retryMessages = messages;
+        _retryInvalidGrantFlag = invalidGrantRequiresAuth;
+
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "https://api.fitbit.com/oauth2/token");
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.timeout = 15000;
         xhr.onerror = function() {
-            reportError(messages.network, false);
+            scheduleRetryOrGiveUp(messages.network, false);
         };
         xhr.ontimeout = function() {
-            reportError(messages.network, false);
+            scheduleRetryOrGiveUp(messages.network, false);
         };
         xhr.onreadystatechange = function() {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
             if (xhr.status === 0) {
-                reportError(messages.network, false);
+                scheduleRetryOrGiveUp(messages.network, false);
                 return;
             }
             if (xhr.status === 400 || xhr.status === 401) {
                 var authMessage = authorizationErrorMessage(xhr);
-                reportError(authMessage
+                giveUp(authMessage
                     ? i18n("%1 (%2)", messages.invalidGrant, authMessage)
                     : messages.invalidGrant,
                     invalidGrantRequiresAuth);
                 return;
             }
             if (xhr.status === 429) {
-                reportError(i18n("Rate limited — try again later"), false);
+                // Honor Retry-After if Fitbit sends it (seconds). Fall back to
+                // the exponential schedule otherwise.
+                var retryAfter = 0;
+                var header = xhr.getResponseHeader("Retry-After");
+                if (header) {
+                    var parsed = parseInt(header, 10);
+                    if (!isNaN(parsed) && parsed > 0) retryAfter = parsed * 1000;
+                }
+                scheduleRetryOrGiveUp(i18n("Rate limited — try again later"), false, retryAfter);
                 return;
             }
             if (xhr.status >= 500) {
-                reportError(i18n("Fitbit server error (HTTP %1)", xhr.status), false);
+                scheduleRetryOrGiveUp(i18n("Fitbit server error (HTTP %1)", xhr.status), false);
                 return;
             }
             if (xhr.status !== 200) {
-                reportError(i18n("%1 (HTTP %2)", messages.generic, xhr.status), false);
+                giveUp(i18n("%1 (HTTP %2)", messages.generic, xhr.status), false);
                 return;
             }
             try {
                 var resp = JSON.parse(xhr.responseText);
                 if (resp.access_token && resp.refresh_token) {
+                    clearRetryState();
                     refreshing = false;
                     oauth.authorized(resp);
                 } else {
-                    reportError(resp.errors ? resp.errors[0].message : messages.missingTokens, invalidGrantRequiresAuth);
+                    giveUp(resp.errors ? resp.errors[0].message : messages.missingTokens, invalidGrantRequiresAuth);
                 }
             } catch(e) {
-                reportError(messages.invalidResponse, invalidGrantRequiresAuth);
+                giveUp(messages.invalidResponse, invalidGrantRequiresAuth);
             }
         };
         xhr.send(body);
+    }
+
+    // Reset retry bookkeeping. Called on success and on any non-retryable
+    // failure. Kept separate from `reportError` because `reportError` clears
+    // the `refreshing` guard — during a pending retry we want the guard to
+    // stay asserted, so retries go through this path instead.
+    function clearRetryState() {
+        _retryBody = null;
+        _retryMessages = null;
+        _retryInvalidGrantFlag = false;
+        _retryAttempt = 0;
+        if (tokenRetryTimer.running) tokenRetryTimer.stop();
+    }
+
+    // Surface a non-retryable failure: reset retry state and emit the error.
+    function giveUp(message, requiresAuthorization) {
+        clearRetryState();
+        reportError(message, requiresAuthorization);
+    }
+
+    // Decide whether to retry a transient failure or give up. `fixedDelay`
+    // overrides the exponential schedule (used for Retry-After). Messages are
+    // not emitted to the UI while a retry is pending — the plasmoid keeps its
+    // last-known-good status rather than flashing an error for a blip that
+    // may resolve within seconds.
+    function scheduleRetryOrGiveUp(message, requiresAuthorization, fixedDelay) {
+        if (_retryAttempt >= maxTokenRetries) {
+            giveUp(message, requiresAuthorization);
+            return;
+        }
+        _retryAttempt++;
+        var base = fixedDelay && fixedDelay > 0
+            ? fixedDelay
+            : Math.min(1000 * Math.pow(2, _retryAttempt - 1), 8000);
+        // ±25% jitter to avoid synchronizing retries with other clients.
+        var jitter = base * 0.25 * (Math.random() * 2 - 1);
+        tokenRetryTimer.interval = Math.max(500, Math.round(base + jitter));
+        console.log("FitDash: token request transient failure (" + message
+                    + "), retry " + _retryAttempt + "/" + maxTokenRetries
+                    + " in " + tokenRetryTimer.interval + "ms");
+        tokenRetryTimer.restart();
     }
 
     function refreshToken(clientId, refreshTok) {
