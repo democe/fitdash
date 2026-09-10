@@ -1,0 +1,343 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FitDash 1.0.5\n"
+"Report-Msgid-Bugs-To: democe@outlook.com\n"
+"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"PO-Revision-Date: 2026-06-29 00:00+0000\n"
+"Last-Translator: FitDash contributors\n"
+"Language-Team: Swedish\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
+msgid "General"
+msgstr "Allmän"
+#: package/contents/ui/configGeneral.qml:52
+msgid "Not authorized"
+msgstr "Ej auktoriserad"
+#: package/contents/ui/configGeneral.qml:55
+msgid "Authorization problem — re-authorize"
+msgstr "Auktoriseringsproblem — auktorisera på nytt"
+#: package/contents/ui/configGeneral.qml:58
+msgid "Token expired — refresh needed"
+msgstr "Token har löpt ut – uppdatering behövs"
+#: package/contents/ui/configGeneral.qml:60
+msgid "unknown"
+msgstr "okänd"
+#: package/contents/ui/configGeneral.qml:60
+msgid "Authorized (User: %1)"
+msgstr "Auktoriserad (användare: %1 )"
+#: package/contents/ui/configGeneral.qml:89
+msgid "Client ID:"
+msgstr "Klient-ID:"
+#: package/contents/ui/configGeneral.qml:90
+msgid "From dev.fitbit.com/apps"
+msgstr "Från dev.fitbit.com/apps"
+#: package/contents/ui/configGeneral.qml:97
+msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+msgstr "OAuth 2.0 Client ID från din Fitbit-appregistrering"
+#: package/contents/ui/configGeneral.qml:104
+msgid "Callback URL:"
+msgstr "Callback URL:"
+#: package/contents/ui/configGeneral.qml:117
+#: package/contents/ui/configGeneral.qml:306
+msgid "Copy to clipboard"
+msgstr "Kopiera till urklipp"
+#: package/contents/ui/configGeneral.qml:130
+msgid "Callback port:"
+msgstr "Återuppringningsport:"
+#: package/contents/ui/configGeneral.qml:138
+msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+msgstr "Klistra in återuppringningsadressen i dina Fitbit-appinställningar på dev.fitbit.com"
+#: package/contents/ui/configGeneral.qml:146
+msgid "Refresh interval (minutes):"
+msgstr "Uppdateringsintervall (minuter):"
+#: package/contents/ui/configGeneral.qml:154
+msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+msgstr "Rekommenderas: 15–30 minuter för att hålla sig inom Fitbit-hastighetsgränserna"
+#: package/contents/ui/configGeneral.qml:162
+msgid "Display"
+msgstr "Visa"
+#: package/contents/ui/configGeneral.qml:167
+msgid "Distance unit:"
+msgstr "Avståndsenhet:"
+#: package/contents/ui/configGeneral.qml:169
+msgid "Kilometers (km)"
+msgstr "Kilometer (km)"
+#: package/contents/ui/configGeneral.qml:170
+msgid "Miles (mi)"
+msgstr "Miles (mi)"
+#: package/contents/ui/configGeneral.qml:181
+msgid "Visible Metrics"
+msgstr "Synliga mätvärden"
+#: package/contents/ui/configGeneral.qml:187
+#: package/contents/ui/FullRepresentation.qml:213
+msgid "Steps"
+msgstr "Steg"
+#: package/contents/ui/configGeneral.qml:194
+#: package/contents/ui/FullRepresentation.qml:263
+msgid "Calories"
+msgstr "Kalorier"
+#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/FullRepresentation.qml:271
+msgid "Distance"
+msgstr "Avstånd"
+#: package/contents/ui/configGeneral.qml:208
+msgid "Active minutes"
+msgstr "Aktiva minuter"
+#: package/contents/ui/configGeneral.qml:215
+msgid "Resting heart rate"
+msgstr "Vilopuls"
+#: package/contents/ui/configGeneral.qml:221
+msgid "Fitbit Account"
+msgstr "Fitbit-konto"
+#: package/contents/ui/configGeneral.qml:225
+msgid "Status:"
+msgstr "Status:"
+#: package/contents/ui/configGeneral.qml:233
+msgid "Last request:"
+msgstr "Senaste begäran:"
+#: package/contents/ui/configGeneral.qml:235
+msgid "No requests yet"
+msgstr "Inga förfrågningar ännu"
+#: package/contents/ui/configGeneral.qml:245
+msgid "Authorization:"
+msgstr "Tillstånd:"
+#: package/contents/ui/configGeneral.qml:247
+msgid "Cancel"
+msgstr "Avboka"
+#: package/contents/ui/configGeneral.qml:248
+msgid "Re-authorize with Fitbit"
+msgstr "Återauktorisera med Fitbit"
+#: package/contents/ui/configGeneral.qml:248
+msgid "Authorize with Fitbit"
+msgstr "Auktorisera med Fitbit"
+#: package/contents/ui/configGeneral.qml:264
+msgid "Authorize manually (copy & paste)"
+msgstr "Auktorisera manuellt (kopiera och klistra in)"
+#: package/contents/ui/configGeneral.qml:269
+msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
+msgstr "Använd detta om webbläsaren inte kan nå localhost (sandlådewebbläsare, fjärrsession eller ingen Python)"
+#: package/contents/ui/configGeneral.qml:285
+msgid "Step 1:"
+msgstr "Steg 1:"
+#: package/contents/ui/configGeneral.qml:286
+msgid "Open this URL in a browser and approve access:"
+msgstr "Öppna den här webbadressen i en webbläsare och godkänn åtkomst:"
+#: package/contents/ui/configGeneral.qml:293
+msgid "Authorization URL:"
+msgstr "Auktoriserings-URL:"
+#: package/contents/ui/configGeneral.qml:320
+msgid "Open in browser"
+msgstr "Öppna i webbläsaren"
+#: package/contents/ui/configGeneral.qml:329
+msgid "Step 2:"
+msgstr "Steg 2:"
+#: package/contents/ui/configGeneral.qml:330
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr "Efter godkännande kopierar du adressfältets URL och klistra in den nedan:"
+#: package/contents/ui/configGeneral.qml:337
+msgid "Redirect URL or code:"
+msgstr "Omdirigeringsadress eller kod:"
+#: package/contents/ui/configGeneral.qml:341
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/callback?code=…"
+#: package/contents/ui/configGeneral.qml:348
+msgid "Complete"
+msgstr "Komplett"
+#: package/contents/ui/configGeneral.qml:358
+msgid "Cancel manual authorization"
+msgstr "Avbryt manuell auktorisering"
+#: package/contents/ui/configGeneral.qml:397
+msgid "Authorization successful!"
+msgstr "Auktoriseringen lyckades!"
+#: package/contents/ui/FitbitApi.qml:33
+msgid "No access token"
+msgstr "Ingen åtkomsttoken"
+#: package/contents/ui/FitbitApi.qml:52
+msgid "Network error — check your connection"
+msgstr "Nätverksfel – kontrollera din anslutning"
+#: package/contents/ui/FitbitApi.qml:53
+msgid "Network error at %1"
+msgstr "Nätverksfel på %1"
+#: package/contents/ui/FitbitApi.qml:59
+msgid "Token expired at %1 — refreshing"
+msgstr "Token gick ut vid %1 — uppdaterar"
+#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
+msgid "Rate limited — try again later"
+msgstr "Begränsat pris – försök igen senare"
+#: package/contents/ui/FitbitApi.qml:66
+msgid "Rate limited at %1 — showing cached data"
+msgstr "Hastighet begränsad vid %1 — visar cachad data"
+#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
+msgid "Fitbit server error (HTTP %1)"
+msgstr "Fitbit-serverfel (HTTP %1 )"
+#: package/contents/ui/FitbitApi.qml:73
+msgid "Server error (HTTP %1) at %2"
+msgstr "Serverfel (HTTP %1 ) vid %2"
+#: package/contents/ui/FitbitApi.qml:79
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 misslyckades (HTTP %2 )"
+#: package/contents/ui/FitbitApi.qml:80
+msgid "Error (HTTP %1) at %2"
+msgstr "Fel (HTTP %1 ) vid %2"
+#: package/contents/ui/FitbitApi.qml:107
+msgid "Request timed out — check your connection"
+msgstr "Begäran tog timeout – kontrollera din anslutning"
+#: package/contents/ui/FitbitApi.qml:108
+msgid "Timed out at %1"
+msgstr "Timeout vid %1"
+#: package/contents/ui/FitbitApi.qml:116
+msgid "Activity fetch"
+msgstr "Aktivitetshämtning"
+#: package/contents/ui/FitbitApi.qml:141
+msgid "OK — updated at %1"
+msgstr "OK — uppdaterad på %1"
+#: package/contents/ui/FitbitApi.qml:146
+msgid "Failed to parse activity data"
+msgstr "Det gick inte att analysera aktivitetsdata"
+#: package/contents/ui/FitbitApi.qml:147
+msgid "Parse error at %1"
+msgstr "Analysfel vid %1"
+#: package/contents/ui/FitbitOAuth.qml:90
+msgid "Unknown error"
+msgstr "Okänt fel"
+#: package/contents/ui/FitbitOAuth.qml:97
+msgid "Failed to parse auth response"
+msgstr "Det gick inte att analysera autentiseringssvar"
+#: package/contents/ui/FitbitOAuth.qml:136
+#: package/contents/ui/FitbitOAuth.qml:327
+msgid "Invalid client ID format"
+msgstr "Ogiltigt klient-ID-format"
+#: package/contents/ui/FitbitOAuth.qml:150
+msgid "Authorization canceled"
+msgstr "Auktoriseringen avbröts"
+#: package/contents/ui/FitbitOAuth.qml:191
+msgid "%1 (%2)"
+msgstr "%1 ( %2 )"
+#: package/contents/ui/FitbitOAuth.qml:213
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2 )"
+#: package/contents/ui/FitbitOAuth.qml:280
+msgid "Network error during token refresh"
+msgstr "Nätverksfel under tokenuppdatering"
+#: package/contents/ui/FitbitOAuth.qml:281
+msgid "Refresh token invalid — please re-authorize"
+msgstr "Ogiltig uppdateringstoken – godkänn igen"
+#: package/contents/ui/FitbitOAuth.qml:282
+msgid "Token refresh failed"
+msgstr "Tokenuppdatering misslyckades"
+#: package/contents/ui/FitbitOAuth.qml:283
+msgid "Refresh failed — missing tokens"
+msgstr "Uppdateringen misslyckades – tokens saknas"
+#: package/contents/ui/FitbitOAuth.qml:284
+msgid "Token refresh failed — invalid response"
+msgstr "Tokenuppdatering misslyckades – ogiltigt svar"
+#: package/contents/ui/FitbitOAuth.qml:341
+msgid "Paste the redirect URL or authorization code first"
+msgstr "Klistra in omdirigeringsadressen eller auktoriseringskoden först"
+#: package/contents/ui/FitbitOAuth.qml:345
+msgid "Start the manual authorization first"
+msgstr "Starta den manuella auktoriseringen först"
+#: package/contents/ui/FitbitOAuth.qml:365
+msgid "Authorization was denied"
+msgstr "Auktorisation nekades"
+#: package/contents/ui/FitbitOAuth.qml:372
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "Auktorisering misslyckades (tillståndsfel) – försök igen"
+#: package/contents/ui/FitbitOAuth.qml:376
+msgid "No authorization code found in the pasted text"
+msgstr "Ingen auktoriseringskod hittades i den inklistrade texten"
+#: package/contents/ui/FitbitOAuth.qml:386
+msgid "Network error during token exchange"
+msgstr "Nätverksfel under tokenutbyte"
+#: package/contents/ui/FitbitOAuth.qml:387
+msgid "Authorization code invalid or expired — please try again"
+msgstr "Auktoriseringskoden är ogiltig eller har löpt ut – försök igen"
+#: package/contents/ui/FitbitOAuth.qml:388
+msgid "Token exchange failed"
+msgstr "Tokenbyte misslyckades"
+#: package/contents/ui/FitbitOAuth.qml:389
+msgid "Token exchange failed — missing tokens"
+msgstr "Tokenbyte misslyckades – tokens saknas"
+#: package/contents/ui/FitbitOAuth.qml:390
+msgid "Token exchange failed — invalid response"
+msgstr "Tokenutbyte misslyckades – ogiltigt svar"
+#: package/contents/ui/FullRepresentation.qml:40
+msgctxt "distance in miles"
+msgid "%1 mi"
+msgstr "%1 mi"
+#: package/contents/ui/FullRepresentation.qml:42
+msgctxt "distance in kilometers"
+msgid "%1 km"
+msgstr "%1 km"
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:77
+msgid "FitDash"
+msgstr "FitDash"
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Stale"
+msgstr "Unken"
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Today"
+msgstr "I dag"
+#: package/contents/ui/FullRepresentation.qml:115
+msgid "Connect Fitbit"
+msgstr "Anslut Fitbit"
+#: package/contents/ui/FullRepresentation.qml:121
+msgid "Authorize your account in settings to show today's activity."
+msgstr "Auktorisera ditt konto i inställningarna för att visa dagens aktivitet."
+#: package/contents/ui/FullRepresentation.qml:130
+msgid "Open Settings"
+msgstr "Öppna Inställningar"
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Loading Fitbit data"
+msgstr "Laddar Fitbit-data"
+#: package/contents/ui/FullRepresentation.qml:220
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+#: package/contents/ui/FullRepresentation.qml:245
+msgid "%1 remaining of %2"
+msgstr "%1 kvar av %2"
+#: package/contents/ui/FullRepresentation.qml:246
+msgid "No step goal set"
+msgstr "Inget stegmål satt"
+#: package/contents/ui/FullRepresentation.qml:279
+msgid "Active"
+msgstr "Aktiv"
+#: package/contents/ui/FullRepresentation.qml:280
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 min"
+#: package/contents/ui/FullRepresentation.qml:287
+msgid "Resting HR"
+msgstr "Vilande HR"
+#: package/contents/ui/FullRepresentation.qml:289
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+#: package/contents/ui/FullRepresentation.qml:310
+msgid "Updated %1"
+msgstr "Uppdaterad %1"
+#: package/contents/ui/main.qml:79
+msgid "Not connected"
+msgstr "Ej ansluten"
+#: package/contents/ui/main.qml:83
+msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
+msgstr "Steg: %1 | Kal: %2 | Avstånd: %3\nUppdaterad: %4"
+#: package/contents/ui/main.qml:105
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "Auktoriseringen löpte ut på %1 — vänligen auktorisera på nytt"
+#: package/contents/ui/main.qml:118
+msgid "Token refresh failed at %1 — %2"
+msgstr "Tokenuppdatering misslyckades vid %1 — %2"
+#: package/contents/ui/main.qml:142
+msgid "No refresh token available — please re-authorize"
+msgstr "Ingen uppdateringstoken tillgänglig – godkänn igen"
+#: package/contents/ui/main.qml:169
+msgid "Token refreshed at %1"
+msgstr "Token uppdaterad på %1"

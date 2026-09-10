@@ -1,0 +1,343 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FitDash 1.0.5\n"
+"Report-Msgid-Bugs-To: democe@outlook.com\n"
+"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"PO-Revision-Date: 2026-06-29 00:00+0000\n"
+"Last-Translator: FitDash contributors\n"
+"Language-Team: Indonesian\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
+msgid "General"
+msgstr "Umum"
+#: package/contents/ui/configGeneral.qml:52
+msgid "Not authorized"
+msgstr "Tidak diizinkan"
+#: package/contents/ui/configGeneral.qml:55
+msgid "Authorization problem — re-authorize"
+msgstr "Masalah otorisasi — otorisasi ulang"
+#: package/contents/ui/configGeneral.qml:58
+msgid "Token expired — refresh needed"
+msgstr "Token kedaluwarsa — perlu penyegaran"
+#: package/contents/ui/configGeneral.qml:60
+msgid "unknown"
+msgstr "tidak dikenal"
+#: package/contents/ui/configGeneral.qml:60
+msgid "Authorized (User: %1)"
+msgstr "Resmi (Pengguna: %1 )"
+#: package/contents/ui/configGeneral.qml:89
+msgid "Client ID:"
+msgstr "ID Klien:"
+#: package/contents/ui/configGeneral.qml:90
+msgid "From dev.fitbit.com/apps"
+msgstr "Dari dev.fitbit.com/apps"
+#: package/contents/ui/configGeneral.qml:97
+msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+msgstr "ID Klien OAuth 2.0 dari pendaftaran aplikasi Fitbit Anda"
+#: package/contents/ui/configGeneral.qml:104
+msgid "Callback URL:"
+msgstr "URL panggilan balik:"
+#: package/contents/ui/configGeneral.qml:117
+#: package/contents/ui/configGeneral.qml:306
+msgid "Copy to clipboard"
+msgstr "Salin ke papan klip"
+#: package/contents/ui/configGeneral.qml:130
+msgid "Callback port:"
+msgstr "Port panggilan balik:"
+#: package/contents/ui/configGeneral.qml:138
+msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+msgstr "Tempelkan URL panggilan balik ke pengaturan aplikasi Fitbit Anda di dev.fitbit.com"
+#: package/contents/ui/configGeneral.qml:146
+msgid "Refresh interval (minutes):"
+msgstr "Interval penyegaran (menit):"
+#: package/contents/ui/configGeneral.qml:154
+msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+msgstr "Direkomendasikan: 15–30 menit agar tetap berada dalam batas kecepatan Fitbit"
+#: package/contents/ui/configGeneral.qml:162
+msgid "Display"
+msgstr "Menampilkan"
+#: package/contents/ui/configGeneral.qml:167
+msgid "Distance unit:"
+msgstr "Satuan jarak:"
+#: package/contents/ui/configGeneral.qml:169
+msgid "Kilometers (km)"
+msgstr "Kilometer (km)"
+#: package/contents/ui/configGeneral.qml:170
+msgid "Miles (mi)"
+msgstr "Mil (mil)"
+#: package/contents/ui/configGeneral.qml:181
+msgid "Visible Metrics"
+msgstr "Metrik yang Terlihat"
+#: package/contents/ui/configGeneral.qml:187
+#: package/contents/ui/FullRepresentation.qml:213
+msgid "Steps"
+msgstr "Tangga"
+#: package/contents/ui/configGeneral.qml:194
+#: package/contents/ui/FullRepresentation.qml:263
+msgid "Calories"
+msgstr "Kalori"
+#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/FullRepresentation.qml:271
+msgid "Distance"
+msgstr "Jarak"
+#: package/contents/ui/configGeneral.qml:208
+msgid "Active minutes"
+msgstr "Menit aktif"
+#: package/contents/ui/configGeneral.qml:215
+msgid "Resting heart rate"
+msgstr "Detak jantung istirahat"
+#: package/contents/ui/configGeneral.qml:221
+msgid "Fitbit Account"
+msgstr "Akun Fitbit"
+#: package/contents/ui/configGeneral.qml:225
+msgid "Status:"
+msgstr "Status:"
+#: package/contents/ui/configGeneral.qml:233
+msgid "Last request:"
+msgstr "Permintaan terakhir:"
+#: package/contents/ui/configGeneral.qml:235
+msgid "No requests yet"
+msgstr "Belum ada permintaan"
+#: package/contents/ui/configGeneral.qml:245
+msgid "Authorization:"
+msgstr "Otorisasi:"
+#: package/contents/ui/configGeneral.qml:247
+msgid "Cancel"
+msgstr "Membatalkan"
+#: package/contents/ui/configGeneral.qml:248
+msgid "Re-authorize with Fitbit"
+msgstr "Otorisasi ulang dengan Fitbit"
+#: package/contents/ui/configGeneral.qml:248
+msgid "Authorize with Fitbit"
+msgstr "Otorisasi dengan Fitbit"
+#: package/contents/ui/configGeneral.qml:264
+msgid "Authorize manually (copy & paste)"
+msgstr "Otorisasi secara manual (salin & tempel)"
+#: package/contents/ui/configGeneral.qml:269
+msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
+msgstr "Gunakan ini jika browser tidak dapat menjangkau localhost (browser dengan sandbox, sesi jarak jauh, atau tanpa Python)"
+#: package/contents/ui/configGeneral.qml:285
+msgid "Step 1:"
+msgstr "Langkah 1:"
+#: package/contents/ui/configGeneral.qml:286
+msgid "Open this URL in a browser and approve access:"
+msgstr "Buka URL ini di browser dan setujui akses:"
+#: package/contents/ui/configGeneral.qml:293
+msgid "Authorization URL:"
+msgstr "URL Otorisasi:"
+#: package/contents/ui/configGeneral.qml:320
+msgid "Open in browser"
+msgstr "Buka di peramban"
+#: package/contents/ui/configGeneral.qml:329
+msgid "Step 2:"
+msgstr "Langkah 2:"
+#: package/contents/ui/configGeneral.qml:330
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr "Setelah disetujui, salin URL bilah alamat dan tempel di bawah:"
+#: package/contents/ui/configGeneral.qml:337
+msgid "Redirect URL or code:"
+msgstr "URL atau kode pengalihan:"
+#: package/contents/ui/configGeneral.qml:341
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/callback?code=…"
+#: package/contents/ui/configGeneral.qml:348
+msgid "Complete"
+msgstr "Menyelesaikan"
+#: package/contents/ui/configGeneral.qml:358
+msgid "Cancel manual authorization"
+msgstr "Batalkan otorisasi manual"
+#: package/contents/ui/configGeneral.qml:397
+msgid "Authorization successful!"
+msgstr "Otorisasi berhasil!"
+#: package/contents/ui/FitbitApi.qml:33
+msgid "No access token"
+msgstr "Tidak ada token akses"
+#: package/contents/ui/FitbitApi.qml:52
+msgid "Network error — check your connection"
+msgstr "Kesalahan jaringan — periksa koneksi Anda"
+#: package/contents/ui/FitbitApi.qml:53
+msgid "Network error at %1"
+msgstr "Kesalahan jaringan di %1"
+#: package/contents/ui/FitbitApi.qml:59
+msgid "Token expired at %1 — refreshing"
+msgstr "Token kedaluwarsa di %1 — menyegarkan"
+#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
+msgid "Rate limited — try again later"
+msgstr "Tarif terbatas — coba lagi nanti"
+#: package/contents/ui/FitbitApi.qml:66
+msgid "Rate limited at %1 — showing cached data"
+msgstr "Nilai terbatas di %1 — menampilkan data cache"
+#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
+msgid "Fitbit server error (HTTP %1)"
+msgstr "Kesalahan server Fitbit (HTTP %1 )"
+#: package/contents/ui/FitbitApi.qml:73
+msgid "Server error (HTTP %1) at %2"
+msgstr "Kesalahan server (HTTP %1 ) di %2"
+#: package/contents/ui/FitbitApi.qml:79
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 gagal (HTTP %2 )"
+#: package/contents/ui/FitbitApi.qml:80
+msgid "Error (HTTP %1) at %2"
+msgstr "Kesalahan (HTTP %1 ) di %2"
+#: package/contents/ui/FitbitApi.qml:107
+msgid "Request timed out — check your connection"
+msgstr "Waktu permintaan habis — periksa koneksi Anda"
+#: package/contents/ui/FitbitApi.qml:108
+msgid "Timed out at %1"
+msgstr "Waktu habis di %1"
+#: package/contents/ui/FitbitApi.qml:116
+msgid "Activity fetch"
+msgstr "Pengambilan aktivitas"
+#: package/contents/ui/FitbitApi.qml:141
+msgid "OK — updated at %1"
+msgstr "Oke — diperbarui di %1"
+#: package/contents/ui/FitbitApi.qml:146
+msgid "Failed to parse activity data"
+msgstr "Gagal mengurai data aktivitas"
+#: package/contents/ui/FitbitApi.qml:147
+msgid "Parse error at %1"
+msgstr "Parsing kesalahan di %1"
+#: package/contents/ui/FitbitOAuth.qml:90
+msgid "Unknown error"
+msgstr "Kesalahan tidak diketahui"
+#: package/contents/ui/FitbitOAuth.qml:97
+msgid "Failed to parse auth response"
+msgstr "Gagal menguraikan respons autentikasi"
+#: package/contents/ui/FitbitOAuth.qml:136
+#: package/contents/ui/FitbitOAuth.qml:327
+msgid "Invalid client ID format"
+msgstr "Format ID klien tidak valid"
+#: package/contents/ui/FitbitOAuth.qml:150
+msgid "Authorization canceled"
+msgstr "Otorisasi dibatalkan"
+#: package/contents/ui/FitbitOAuth.qml:191
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+#: package/contents/ui/FitbitOAuth.qml:213
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2 )"
+#: package/contents/ui/FitbitOAuth.qml:280
+msgid "Network error during token refresh"
+msgstr "Kesalahan jaringan selama penyegaran token"
+#: package/contents/ui/FitbitOAuth.qml:281
+msgid "Refresh token invalid — please re-authorize"
+msgstr "Penyegaran token tidak valid — harap otorisasi ulang"
+#: package/contents/ui/FitbitOAuth.qml:282
+msgid "Token refresh failed"
+msgstr "Penyegaran token gagal"
+#: package/contents/ui/FitbitOAuth.qml:283
+msgid "Refresh failed — missing tokens"
+msgstr "Penyegaran gagal — token hilang"
+#: package/contents/ui/FitbitOAuth.qml:284
+msgid "Token refresh failed — invalid response"
+msgstr "Penyegaran token gagal — respons tidak valid"
+#: package/contents/ui/FitbitOAuth.qml:341
+msgid "Paste the redirect URL or authorization code first"
+msgstr "Tempelkan URL pengalihan atau kode otorisasi terlebih dahulu"
+#: package/contents/ui/FitbitOAuth.qml:345
+msgid "Start the manual authorization first"
+msgstr "Mulai otorisasi manual terlebih dahulu"
+#: package/contents/ui/FitbitOAuth.qml:365
+msgid "Authorization was denied"
+msgstr "Otorisasi ditolak"
+#: package/contents/ui/FitbitOAuth.qml:372
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "Otorisasi gagal (ketidakcocokan status) — silakan coba lagi"
+#: package/contents/ui/FitbitOAuth.qml:376
+msgid "No authorization code found in the pasted text"
+msgstr "Tidak ada kode otorisasi yang ditemukan dalam teks yang ditempel"
+#: package/contents/ui/FitbitOAuth.qml:386
+msgid "Network error during token exchange"
+msgstr "Kesalahan jaringan selama pertukaran token"
+#: package/contents/ui/FitbitOAuth.qml:387
+msgid "Authorization code invalid or expired — please try again"
+msgstr "Kode otorisasi tidak valid atau kedaluwarsa — silakan coba lagi"
+#: package/contents/ui/FitbitOAuth.qml:388
+msgid "Token exchange failed"
+msgstr "Pertukaran token gagal"
+#: package/contents/ui/FitbitOAuth.qml:389
+msgid "Token exchange failed — missing tokens"
+msgstr "Pertukaran token gagal — token hilang"
+#: package/contents/ui/FitbitOAuth.qml:390
+msgid "Token exchange failed — invalid response"
+msgstr "Pertukaran token gagal — respons tidak valid"
+#: package/contents/ui/FullRepresentation.qml:40
+msgctxt "distance in miles"
+msgid "%1 mi"
+msgstr "%1 mi"
+#: package/contents/ui/FullRepresentation.qml:42
+msgctxt "distance in kilometers"
+msgid "%1 km"
+msgstr "%1 km"
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:77
+msgid "FitDash"
+msgstr "FitDash"
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Stale"
+msgstr "Basi"
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Today"
+msgstr "Hari ini"
+#: package/contents/ui/FullRepresentation.qml:115
+msgid "Connect Fitbit"
+msgstr "Hubungkan Fitbit"
+#: package/contents/ui/FullRepresentation.qml:121
+msgid "Authorize your account in settings to show today's activity."
+msgstr "Otorisasi akun Anda di pengaturan untuk menampilkan aktivitas hari ini."
+#: package/contents/ui/FullRepresentation.qml:130
+msgid "Open Settings"
+msgstr "Buka Pengaturan"
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Loading Fitbit data"
+msgstr "Memuat data Fitbit"
+#: package/contents/ui/FullRepresentation.qml:220
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+#: package/contents/ui/FullRepresentation.qml:245
+msgid "%1 remaining of %2"
+msgstr "%1 sisa dari %2"
+#: package/contents/ui/FullRepresentation.qml:246
+msgid "No step goal set"
+msgstr "Tidak ada sasaran langkah yang ditetapkan"
+#: package/contents/ui/FullRepresentation.qml:279
+msgid "Active"
+msgstr "Aktif"
+#: package/contents/ui/FullRepresentation.qml:280
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 menit"
+#: package/contents/ui/FullRepresentation.qml:287
+msgid "Resting HR"
+msgstr "SDM istirahat"
+#: package/contents/ui/FullRepresentation.qml:289
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+#: package/contents/ui/FullRepresentation.qml:310
+msgid "Updated %1"
+msgstr "%1 yang diperbarui"
+#: package/contents/ui/main.qml:79
+msgid "Not connected"
+msgstr "Tidak terhubung"
+#: package/contents/ui/main.qml:83
+msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
+msgstr "Langkah-langkah: %1 | Kal: %2 | Lokasi: %3\nDiperbarui: %4"
+#: package/contents/ui/main.qml:105
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "Otorisasi telah habis masa berlakunya di %1 — harap otorisasi ulang"
+#: package/contents/ui/main.qml:118
+msgid "Token refresh failed at %1 — %2"
+msgstr "Penyegaran token gagal di %1 — %2"
+#: package/contents/ui/main.qml:142
+msgid "No refresh token available — please re-authorize"
+msgstr "Tidak ada token penyegaran yang tersedia — harap otorisasi ulang"
+#: package/contents/ui/main.qml:169
+msgid "Token refreshed at %1"
+msgstr "Token disegarkan di %1"

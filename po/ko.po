@@ -1,0 +1,343 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FitDash 1.0.5\n"
+"Report-Msgid-Bugs-To: democe@outlook.com\n"
+"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"PO-Revision-Date: 2026-06-29 00:00+0000\n"
+"Last-Translator: FitDash contributors\n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
+msgid "General"
+msgstr "일반적인"
+#: package/contents/ui/configGeneral.qml:52
+msgid "Not authorized"
+msgstr "승인되지 않음"
+#: package/contents/ui/configGeneral.qml:55
+msgid "Authorization problem — re-authorize"
+msgstr "승인 문제 - 재승인"
+#: package/contents/ui/configGeneral.qml:58
+msgid "Token expired — refresh needed"
+msgstr "토큰 만료됨 - 새로 고침 필요"
+#: package/contents/ui/configGeneral.qml:60
+msgid "unknown"
+msgstr "알려지지 않은"
+#: package/contents/ui/configGeneral.qml:60
+msgid "Authorized (User: %1)"
+msgstr "승인됨 (사용자: %1 )"
+#: package/contents/ui/configGeneral.qml:89
+msgid "Client ID:"
+msgstr "클라이언트 ID:"
+#: package/contents/ui/configGeneral.qml:90
+msgid "From dev.fitbit.com/apps"
+msgstr "dev.fitbit.com/apps에서"
+#: package/contents/ui/configGeneral.qml:97
+msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+msgstr "Fitbit 앱 등록의 OAuth 2.0 클라이언트 ID"
+#: package/contents/ui/configGeneral.qml:104
+msgid "Callback URL:"
+msgstr "콜백 URL:"
+#: package/contents/ui/configGeneral.qml:117
+#: package/contents/ui/configGeneral.qml:306
+msgid "Copy to clipboard"
+msgstr "클립보드에 복사"
+#: package/contents/ui/configGeneral.qml:130
+msgid "Callback port:"
+msgstr "콜백 포트:"
+#: package/contents/ui/configGeneral.qml:138
+msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+msgstr "콜백 URL을 dev.fitbit.com의 Fitbit 앱 설정에 붙여넣으세요."
+#: package/contents/ui/configGeneral.qml:146
+msgid "Refresh interval (minutes):"
+msgstr "새로 고침 간격(분):"
+#: package/contents/ui/configGeneral.qml:154
+msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+msgstr "권장 사항: Fitbit 속도 제한 내에서 15~30분 정도 유지하세요."
+#: package/contents/ui/configGeneral.qml:162
+msgid "Display"
+msgstr "표시하다"
+#: package/contents/ui/configGeneral.qml:167
+msgid "Distance unit:"
+msgstr "거리 단위:"
+#: package/contents/ui/configGeneral.qml:169
+msgid "Kilometers (km)"
+msgstr "킬로미터(km)"
+#: package/contents/ui/configGeneral.qml:170
+msgid "Miles (mi)"
+msgstr "마일(mi)"
+#: package/contents/ui/configGeneral.qml:181
+msgid "Visible Metrics"
+msgstr "가시적 측정항목"
+#: package/contents/ui/configGeneral.qml:187
+#: package/contents/ui/FullRepresentation.qml:213
+msgid "Steps"
+msgstr "단계"
+#: package/contents/ui/configGeneral.qml:194
+#: package/contents/ui/FullRepresentation.qml:263
+msgid "Calories"
+msgstr "칼로리"
+#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/FullRepresentation.qml:271
+msgid "Distance"
+msgstr "거리"
+#: package/contents/ui/configGeneral.qml:208
+msgid "Active minutes"
+msgstr "활동적 시간(분)"
+#: package/contents/ui/configGeneral.qml:215
+msgid "Resting heart rate"
+msgstr "안정시 심박수"
+#: package/contents/ui/configGeneral.qml:221
+msgid "Fitbit Account"
+msgstr "Fitbit 계정"
+#: package/contents/ui/configGeneral.qml:225
+msgid "Status:"
+msgstr "상태:"
+#: package/contents/ui/configGeneral.qml:233
+msgid "Last request:"
+msgstr "마지막 요청:"
+#: package/contents/ui/configGeneral.qml:235
+msgid "No requests yet"
+msgstr "아직 요청이 없습니다."
+#: package/contents/ui/configGeneral.qml:245
+msgid "Authorization:"
+msgstr "권한 부여:"
+#: package/contents/ui/configGeneral.qml:247
+msgid "Cancel"
+msgstr "취소"
+#: package/contents/ui/configGeneral.qml:248
+msgid "Re-authorize with Fitbit"
+msgstr "Fitbit으로 재승인"
+#: package/contents/ui/configGeneral.qml:248
+msgid "Authorize with Fitbit"
+msgstr "Fitbit으로 승인"
+#: package/contents/ui/configGeneral.qml:264
+msgid "Authorize manually (copy & paste)"
+msgstr "수동으로 승인(복사하여 붙여넣기)"
+#: package/contents/ui/configGeneral.qml:269
+msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
+msgstr "브라우저가 로컬 호스트에 연결할 수 없는 경우(샌드박스 브라우저, 원격 세션 또는 Python 없음)를 사용하십시오."
+#: package/contents/ui/configGeneral.qml:285
+msgid "Step 1:"
+msgstr "1단계:"
+#: package/contents/ui/configGeneral.qml:286
+msgid "Open this URL in a browser and approve access:"
+msgstr "브라우저에서 다음 URL을 열고 액세스를 승인하세요."
+#: package/contents/ui/configGeneral.qml:293
+msgid "Authorization URL:"
+msgstr "승인 URL:"
+#: package/contents/ui/configGeneral.qml:320
+msgid "Open in browser"
+msgstr "브라우저에서 열기"
+#: package/contents/ui/configGeneral.qml:329
+msgid "Step 2:"
+msgstr "2단계:"
+#: package/contents/ui/configGeneral.qml:330
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr "승인 후 주소 표시줄 URL을 복사하여 아래에 붙여넣으세요."
+#: package/contents/ui/configGeneral.qml:337
+msgid "Redirect URL or code:"
+msgstr "리디렉션 URL 또는 코드:"
+#: package/contents/ui/configGeneral.qml:341
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/콜백?코드=…"
+#: package/contents/ui/configGeneral.qml:348
+msgid "Complete"
+msgstr "완벽한"
+#: package/contents/ui/configGeneral.qml:358
+msgid "Cancel manual authorization"
+msgstr "수동 승인 취소"
+#: package/contents/ui/configGeneral.qml:397
+msgid "Authorization successful!"
+msgstr "승인이 완료되었습니다."
+#: package/contents/ui/FitbitApi.qml:33
+msgid "No access token"
+msgstr "액세스 토큰 없음"
+#: package/contents/ui/FitbitApi.qml:52
+msgid "Network error — check your connection"
+msgstr "네트워크 오류 - 연결을 확인하세요"
+#: package/contents/ui/FitbitApi.qml:53
+msgid "Network error at %1"
+msgstr "%1 의 네트워크 오류"
+#: package/contents/ui/FitbitApi.qml:59
+msgid "Token expired at %1 — refreshing"
+msgstr "토큰이 %1 에서 만료되었습니다 — 새로고침"
+#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
+msgid "Rate limited — try again later"
+msgstr "속도 제한됨 - 나중에 다시 시도하세요"
+#: package/contents/ui/FitbitApi.qml:66
+msgid "Rate limited at %1 — showing cached data"
+msgstr "%1 에서 속도 제한 — 캐시된 데이터 표시"
+#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
+msgid "Fitbit server error (HTTP %1)"
+msgstr "Fitbit 서버 오류(HTTP %1 )"
+#: package/contents/ui/FitbitApi.qml:73
+msgid "Server error (HTTP %1) at %2"
+msgstr "%2 의 서버 오류(HTTP %1 )"
+#: package/contents/ui/FitbitApi.qml:79
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 실패(HTTP %2 )"
+#: package/contents/ui/FitbitApi.qml:80
+msgid "Error (HTTP %1) at %2"
+msgstr "%2 의 오류(HTTP %1 )"
+#: package/contents/ui/FitbitApi.qml:107
+msgid "Request timed out — check your connection"
+msgstr "요청 시간이 초과되었습니다. 연결을 확인하세요."
+#: package/contents/ui/FitbitApi.qml:108
+msgid "Timed out at %1"
+msgstr "%1 에서 시간 초과됨"
+#: package/contents/ui/FitbitApi.qml:116
+msgid "Activity fetch"
+msgstr "활동 가져오기"
+#: package/contents/ui/FitbitApi.qml:141
+msgid "OK — updated at %1"
+msgstr "확인 — %1 에서 업데이트됨"
+#: package/contents/ui/FitbitApi.qml:146
+msgid "Failed to parse activity data"
+msgstr "활동 데이터를 구문 분석하지 못했습니다."
+#: package/contents/ui/FitbitApi.qml:147
+msgid "Parse error at %1"
+msgstr "%1 의 구문 분석 오류"
+#: package/contents/ui/FitbitOAuth.qml:90
+msgid "Unknown error"
+msgstr "알 수 없는 오류"
+#: package/contents/ui/FitbitOAuth.qml:97
+msgid "Failed to parse auth response"
+msgstr "인증 응답을 파싱하지 못했습니다."
+#: package/contents/ui/FitbitOAuth.qml:136
+#: package/contents/ui/FitbitOAuth.qml:327
+msgid "Invalid client ID format"
+msgstr "잘못된 클라이언트 ID 형식"
+#: package/contents/ui/FitbitOAuth.qml:150
+msgid "Authorization canceled"
+msgstr "승인이 취소되었습니다."
+#: package/contents/ui/FitbitOAuth.qml:191
+msgid "%1 (%2)"
+msgstr "%1 ( %2 )"
+#: package/contents/ui/FitbitOAuth.qml:213
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2 )"
+#: package/contents/ui/FitbitOAuth.qml:280
+msgid "Network error during token refresh"
+msgstr "토큰 새로 고침 중 네트워크 오류"
+#: package/contents/ui/FitbitOAuth.qml:281
+msgid "Refresh token invalid — please re-authorize"
+msgstr "새로 고침 토큰이 잘못되었습니다. 다시 승인하세요."
+#: package/contents/ui/FitbitOAuth.qml:282
+msgid "Token refresh failed"
+msgstr "토큰 새로고침 실패"
+#: package/contents/ui/FitbitOAuth.qml:283
+msgid "Refresh failed — missing tokens"
+msgstr "새로 고침 실패 - 토큰 누락"
+#: package/contents/ui/FitbitOAuth.qml:284
+msgid "Token refresh failed — invalid response"
+msgstr "토큰 새로 고침 실패 - 잘못된 응답"
+#: package/contents/ui/FitbitOAuth.qml:341
+msgid "Paste the redirect URL or authorization code first"
+msgstr "리디렉션 URL 또는 인증 코드를 먼저 붙여넣으세요."
+#: package/contents/ui/FitbitOAuth.qml:345
+msgid "Start the manual authorization first"
+msgstr "먼저 수동 승인을 시작하세요"
+#: package/contents/ui/FitbitOAuth.qml:365
+msgid "Authorization was denied"
+msgstr "승인이 거부되었습니다."
+#: package/contents/ui/FitbitOAuth.qml:372
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "승인 실패(상태 불일치) - 다시 시도해 주세요."
+#: package/contents/ui/FitbitOAuth.qml:376
+msgid "No authorization code found in the pasted text"
+msgstr "붙여넣은 텍스트에서 인증 코드를 찾을 수 없습니다."
+#: package/contents/ui/FitbitOAuth.qml:386
+msgid "Network error during token exchange"
+msgstr "토큰 교환 중 네트워크 오류"
+#: package/contents/ui/FitbitOAuth.qml:387
+msgid "Authorization code invalid or expired — please try again"
+msgstr "인증 코드가 유효하지 않거나 만료되었습니다. 다시 시도해 주세요."
+#: package/contents/ui/FitbitOAuth.qml:388
+msgid "Token exchange failed"
+msgstr "토큰 교환 실패"
+#: package/contents/ui/FitbitOAuth.qml:389
+msgid "Token exchange failed — missing tokens"
+msgstr "토큰 교환 실패 — 토큰 누락"
+#: package/contents/ui/FitbitOAuth.qml:390
+msgid "Token exchange failed — invalid response"
+msgstr "토큰 교환 실패 — 잘못된 응답"
+#: package/contents/ui/FullRepresentation.qml:40
+msgctxt "distance in miles"
+msgid "%1 mi"
+msgstr "%1 mi"
+#: package/contents/ui/FullRepresentation.qml:42
+msgctxt "distance in kilometers"
+msgid "%1 km"
+msgstr "%1 km"
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:77
+msgid "FitDash"
+msgstr "핏대시"
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Stale"
+msgstr "탁한"
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Today"
+msgstr "오늘"
+#: package/contents/ui/FullRepresentation.qml:115
+msgid "Connect Fitbit"
+msgstr "Fitbit 연결"
+#: package/contents/ui/FullRepresentation.qml:121
+msgid "Authorize your account in settings to show today's activity."
+msgstr "오늘의 활동을 표시하려면 설정에서 계정을 승인하세요."
+#: package/contents/ui/FullRepresentation.qml:130
+msgid "Open Settings"
+msgstr "설정 열기"
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Loading Fitbit data"
+msgstr "Fitbit 데이터 로드 중"
+#: package/contents/ui/FullRepresentation.qml:220
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+#: package/contents/ui/FullRepresentation.qml:245
+msgid "%1 remaining of %2"
+msgstr "%2 중 남은 %1"
+#: package/contents/ui/FullRepresentation.qml:246
+msgid "No step goal set"
+msgstr "걸음 수 목표가 설정되지 않았습니다."
+#: package/contents/ui/FullRepresentation.qml:279
+msgid "Active"
+msgstr "활동적인"
+#: package/contents/ui/FullRepresentation.qml:280
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1분"
+#: package/contents/ui/FullRepresentation.qml:287
+msgid "Resting HR"
+msgstr "휴식 HR"
+#: package/contents/ui/FullRepresentation.qml:289
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+#: package/contents/ui/FullRepresentation.qml:310
+msgid "Updated %1"
+msgstr "업데이트된 %1"
+#: package/contents/ui/main.qml:79
+msgid "Not connected"
+msgstr "연결되지 않음"
+#: package/contents/ui/main.qml:83
+msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
+msgstr "단계: %1 | 칼: %2 | 거리: %3\n업데이트됨: %4"
+#: package/contents/ui/main.qml:105
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "%1 에서 승인이 만료되었습니다 — 다시 승인하세요"
+#: package/contents/ui/main.qml:118
+msgid "Token refresh failed at %1 — %2"
+msgstr "%1 에서 토큰 새로 고침 실패 — %2"
+#: package/contents/ui/main.qml:142
+msgid "No refresh token available — please re-authorize"
+msgstr "사용 가능한 새로 고침 토큰이 없습니다. 다시 승인하세요."
+#: package/contents/ui/main.qml:169
+msgid "Token refreshed at %1"
+msgstr "%1 에서 토큰 새로고침"

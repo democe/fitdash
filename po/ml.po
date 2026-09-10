@@ -1,0 +1,343 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FitDash 1.0.5\n"
+"Report-Msgid-Bugs-To: democe@outlook.com\n"
+"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"PO-Revision-Date: 2026-06-29 00:00+0000\n"
+"Last-Translator: FitDash contributors\n"
+"Language-Team: Malayalam\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
+msgid "General"
+msgstr "ജനറൽ"
+#: package/contents/ui/configGeneral.qml:52
+msgid "Not authorized"
+msgstr "അധികാരപ്പെടുത്തിയിട്ടില്ല"
+#: package/contents/ui/configGeneral.qml:55
+msgid "Authorization problem — re-authorize"
+msgstr "അംഗീകാര പ്രശ്നം - വീണ്ടും അധികാരപ്പെടുത്തൽ"
+#: package/contents/ui/configGeneral.qml:58
+msgid "Token expired — refresh needed"
+msgstr "ടോക്കൺ കാലഹരണപ്പെട്ടു - പുതുക്കേണ്ടതുണ്ട്"
+#: package/contents/ui/configGeneral.qml:60
+msgid "unknown"
+msgstr "അജ്ഞാതം"
+#: package/contents/ui/configGeneral.qml:60
+msgid "Authorized (User: %1)"
+msgstr "അംഗീകൃത (ഉപയോക്താവ്: %1 )"
+#: package/contents/ui/configGeneral.qml:89
+msgid "Client ID:"
+msgstr "ക്ലയൻ്റ് ഐഡി:"
+#: package/contents/ui/configGeneral.qml:90
+msgid "From dev.fitbit.com/apps"
+msgstr "dev.fitbit.com/apps-ൽ നിന്ന്"
+#: package/contents/ui/configGeneral.qml:97
+msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+msgstr "നിങ്ങളുടെ Fitbit ആപ്പ് രജിസ്ട്രേഷനിൽ നിന്നുള്ള OAuth 2.0 ക്ലയൻ്റ് ഐഡി"
+#: package/contents/ui/configGeneral.qml:104
+msgid "Callback URL:"
+msgstr "തിരികെ വിളിക്കാനുള്ള URL:"
+#: package/contents/ui/configGeneral.qml:117
+#: package/contents/ui/configGeneral.qml:306
+msgid "Copy to clipboard"
+msgstr "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുക"
+#: package/contents/ui/configGeneral.qml:130
+msgid "Callback port:"
+msgstr "കോൾബാക്ക് പോർട്ട്:"
+#: package/contents/ui/configGeneral.qml:138
+msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+msgstr "dev.fitbit.com-ൽ നിങ്ങളുടെ Fitbit ആപ്പ് ക്രമീകരണത്തിലേക്ക് കോൾബാക്ക് URL ഒട്ടിക്കുക"
+#: package/contents/ui/configGeneral.qml:146
+msgid "Refresh interval (minutes):"
+msgstr "പുതുക്കിയ ഇടവേള (മിനിറ്റുകൾ):"
+#: package/contents/ui/configGeneral.qml:154
+msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+msgstr "ശുപാർശ ചെയ്യുന്നത്: Fitbit നിരക്ക് പരിധിക്കുള്ളിൽ തുടരാൻ 15-30 മിനിറ്റ്"
+#: package/contents/ui/configGeneral.qml:162
+msgid "Display"
+msgstr "പ്രദർശിപ്പിക്കുക"
+#: package/contents/ui/configGeneral.qml:167
+msgid "Distance unit:"
+msgstr "ദൂര യൂണിറ്റ്:"
+#: package/contents/ui/configGeneral.qml:169
+msgid "Kilometers (km)"
+msgstr "കിലോമീറ്റർ (കി.മീ.)"
+#: package/contents/ui/configGeneral.qml:170
+msgid "Miles (mi)"
+msgstr "മൈൽ (മൈൽ)"
+#: package/contents/ui/configGeneral.qml:181
+msgid "Visible Metrics"
+msgstr "ദൃശ്യമായ അളവുകൾ"
+#: package/contents/ui/configGeneral.qml:187
+#: package/contents/ui/FullRepresentation.qml:213
+msgid "Steps"
+msgstr "പടികൾ"
+#: package/contents/ui/configGeneral.qml:194
+#: package/contents/ui/FullRepresentation.qml:263
+msgid "Calories"
+msgstr "കലോറികൾ"
+#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/FullRepresentation.qml:271
+msgid "Distance"
+msgstr "ദൂരം"
+#: package/contents/ui/configGeneral.qml:208
+msgid "Active minutes"
+msgstr "സജീവ മിനിറ്റ്"
+#: package/contents/ui/configGeneral.qml:215
+msgid "Resting heart rate"
+msgstr "വിശ്രമിക്കുന്ന ഹൃദയമിടിപ്പ്"
+#: package/contents/ui/configGeneral.qml:221
+msgid "Fitbit Account"
+msgstr "ഫിറ്റ്ബിറ്റ് അക്കൗണ്ട്"
+#: package/contents/ui/configGeneral.qml:225
+msgid "Status:"
+msgstr "നില:"
+#: package/contents/ui/configGeneral.qml:233
+msgid "Last request:"
+msgstr "അവസാന അഭ്യർത്ഥന:"
+#: package/contents/ui/configGeneral.qml:235
+msgid "No requests yet"
+msgstr "ഇതുവരെ അഭ്യർത്ഥനകളൊന്നുമില്ല"
+#: package/contents/ui/configGeneral.qml:245
+msgid "Authorization:"
+msgstr "അംഗീകാരം:"
+#: package/contents/ui/configGeneral.qml:247
+msgid "Cancel"
+msgstr "റദ്ദാക്കുക"
+#: package/contents/ui/configGeneral.qml:248
+msgid "Re-authorize with Fitbit"
+msgstr "Fitbit ഉപയോഗിച്ച് വീണ്ടും അംഗീകരിക്കുക"
+#: package/contents/ui/configGeneral.qml:248
+msgid "Authorize with Fitbit"
+msgstr "Fitbit ഉപയോഗിച്ച് അംഗീകരിക്കുക"
+#: package/contents/ui/configGeneral.qml:264
+msgid "Authorize manually (copy & paste)"
+msgstr "സ്വമേധയാ അംഗീകരിക്കുക (പകർത്തി ഒട്ടിക്കുക)"
+#: package/contents/ui/configGeneral.qml:269
+msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
+msgstr "ബ്രൗസറിന് ലോക്കൽ ഹോസ്‌റ്റിൽ (സാൻഡ്‌ബോക്‌സ് ചെയ്‌ത ബ്രൗസർ, റിമോട്ട് സെഷൻ അല്ലെങ്കിൽ പൈത്തൺ ഇല്ല) എത്താൻ കഴിയുന്നില്ലെങ്കിൽ ഇത് ഉപയോഗിക്കുക."
+#: package/contents/ui/configGeneral.qml:285
+msgid "Step 1:"
+msgstr "ഘട്ടം 1:"
+#: package/contents/ui/configGeneral.qml:286
+msgid "Open this URL in a browser and approve access:"
+msgstr "ഒരു ബ്രൗസറിൽ ഈ URL തുറന്ന് ആക്സസ് അംഗീകരിക്കുക:"
+#: package/contents/ui/configGeneral.qml:293
+msgid "Authorization URL:"
+msgstr "അംഗീകാര URL:"
+#: package/contents/ui/configGeneral.qml:320
+msgid "Open in browser"
+msgstr "ബ്രൗസറിൽ തുറക്കുക"
+#: package/contents/ui/configGeneral.qml:329
+msgid "Step 2:"
+msgstr "ഘട്ടം 2:"
+#: package/contents/ui/configGeneral.qml:330
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr "അംഗീകരിച്ച ശേഷം, വിലാസ ബാർ URL പകർത്തി താഴെ ഒട്ടിക്കുക:"
+#: package/contents/ui/configGeneral.qml:337
+msgid "Redirect URL or code:"
+msgstr "റീഡയറക്‌ട് URL അല്ലെങ്കിൽ കോഡ്:"
+#: package/contents/ui/configGeneral.qml:341
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:.../callback?code=..."
+#: package/contents/ui/configGeneral.qml:348
+msgid "Complete"
+msgstr "പൂർത്തിയാക്കുക"
+#: package/contents/ui/configGeneral.qml:358
+msgid "Cancel manual authorization"
+msgstr "സ്വമേധയാലുള്ള അംഗീകാരം റദ്ദാക്കുക"
+#: package/contents/ui/configGeneral.qml:397
+msgid "Authorization successful!"
+msgstr "അംഗീകാരം വിജയിച്ചു!"
+#: package/contents/ui/FitbitApi.qml:33
+msgid "No access token"
+msgstr "പ്രവേശന ടോക്കൺ ഇല്ല"
+#: package/contents/ui/FitbitApi.qml:52
+msgid "Network error — check your connection"
+msgstr "നെറ്റ്‌വർക്ക് പിശക് - നിങ്ങളുടെ കണക്ഷൻ പരിശോധിക്കുക"
+#: package/contents/ui/FitbitApi.qml:53
+msgid "Network error at %1"
+msgstr "%1 -ൽ നെറ്റ്‌വർക്ക് പിശക്"
+#: package/contents/ui/FitbitApi.qml:59
+msgid "Token expired at %1 — refreshing"
+msgstr "%1 -ൽ ടോക്കൺ കാലഹരണപ്പെട്ടു - പുതുക്കുന്നു"
+#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
+msgid "Rate limited — try again later"
+msgstr "നിരക്ക് പരിമിതമാണ് - പിന്നീട് വീണ്ടും ശ്രമിക്കുക"
+#: package/contents/ui/FitbitApi.qml:66
+msgid "Rate limited at %1 — showing cached data"
+msgstr "%1 -ൽ നിരക്ക് പരിമിതപ്പെടുത്തിയിരിക്കുന്നു - കാഷെ ചെയ്ത ഡാറ്റ കാണിക്കുന്നു"
+#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
+msgid "Fitbit server error (HTTP %1)"
+msgstr "Fitbit സെർവർ പിശക് (HTTP %1 )"
+#: package/contents/ui/FitbitApi.qml:73
+msgid "Server error (HTTP %1) at %2"
+msgstr "%2 -ൽ സെർവർ പിശക് (HTTP %1 )."
+#: package/contents/ui/FitbitApi.qml:79
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 പരാജയപ്പെട്ടു (HTTP %2 )"
+#: package/contents/ui/FitbitApi.qml:80
+msgid "Error (HTTP %1) at %2"
+msgstr "%2 -ൽ പിശക് (HTTP %1 )."
+#: package/contents/ui/FitbitApi.qml:107
+msgid "Request timed out — check your connection"
+msgstr "അഭ്യർത്ഥന സമയം കഴിഞ്ഞു - നിങ്ങളുടെ കണക്ഷൻ പരിശോധിക്കുക"
+#: package/contents/ui/FitbitApi.qml:108
+msgid "Timed out at %1"
+msgstr "%1 -ൽ സമയം കഴിഞ്ഞു"
+#: package/contents/ui/FitbitApi.qml:116
+msgid "Activity fetch"
+msgstr "പ്രവർത്തനം ലഭ്യമാക്കുന്നു"
+#: package/contents/ui/FitbitApi.qml:141
+msgid "OK — updated at %1"
+msgstr "ശരി — %1 -ൽ അപ്ഡേറ്റ് ചെയ്തു"
+#: package/contents/ui/FitbitApi.qml:146
+msgid "Failed to parse activity data"
+msgstr "പ്രവർത്തന ഡാറ്റ പാഴ്‌സ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു"
+#: package/contents/ui/FitbitApi.qml:147
+msgid "Parse error at %1"
+msgstr "%1 -ൽ പാഴ്‌സ് പിശക്"
+#: package/contents/ui/FitbitOAuth.qml:90
+msgid "Unknown error"
+msgstr "അജ്ഞാത പിശക്"
+#: package/contents/ui/FitbitOAuth.qml:97
+msgid "Failed to parse auth response"
+msgstr "ഓത്ത് പ്രതികരണം പാഴ്‌സ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു"
+#: package/contents/ui/FitbitOAuth.qml:136
+#: package/contents/ui/FitbitOAuth.qml:327
+msgid "Invalid client ID format"
+msgstr "അസാധുവായ ക്ലയൻ്റ് ഐഡി ഫോർമാറ്റ്"
+#: package/contents/ui/FitbitOAuth.qml:150
+msgid "Authorization canceled"
+msgstr "അംഗീകാരം റദ്ദാക്കി"
+#: package/contents/ui/FitbitOAuth.qml:191
+msgid "%1 (%2)"
+msgstr "%1 ( %2 )"
+#: package/contents/ui/FitbitOAuth.qml:213
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2 )"
+#: package/contents/ui/FitbitOAuth.qml:280
+msgid "Network error during token refresh"
+msgstr "ടോക്കൺ പുതുക്കുന്നതിനിടയിൽ നെറ്റ്‌വർക്ക് പിശക്"
+#: package/contents/ui/FitbitOAuth.qml:281
+msgid "Refresh token invalid — please re-authorize"
+msgstr "പുതുക്കിയ ടോക്കൺ അസാധുവാണ് - ദയവായി വീണ്ടും അംഗീകരിക്കുക"
+#: package/contents/ui/FitbitOAuth.qml:282
+msgid "Token refresh failed"
+msgstr "ടോക്കൺ പുതുക്കൽ പരാജയപ്പെട്ടു"
+#: package/contents/ui/FitbitOAuth.qml:283
+msgid "Refresh failed — missing tokens"
+msgstr "പുതുക്കൽ പരാജയപ്പെട്ടു - ടോക്കണുകൾ വിട്ടുപോയിരിക്കുന്നു"
+#: package/contents/ui/FitbitOAuth.qml:284
+msgid "Token refresh failed — invalid response"
+msgstr "ടോക്കൺ പുതുക്കൽ പരാജയപ്പെട്ടു - അസാധുവായ പ്രതികരണം"
+#: package/contents/ui/FitbitOAuth.qml:341
+msgid "Paste the redirect URL or authorization code first"
+msgstr "ആദ്യം റീഡയറക്‌ട് URL അല്ലെങ്കിൽ അംഗീകാര കോഡ് ഒട്ടിക്കുക"
+#: package/contents/ui/FitbitOAuth.qml:345
+msgid "Start the manual authorization first"
+msgstr "മാനുവൽ അംഗീകാരം ആദ്യം ആരംഭിക്കുക"
+#: package/contents/ui/FitbitOAuth.qml:365
+msgid "Authorization was denied"
+msgstr "അംഗീകാരം നിഷേധിക്കപ്പെട്ടു"
+#: package/contents/ui/FitbitOAuth.qml:372
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "അംഗീകാരം പരാജയപ്പെട്ടു (സംസ്ഥാന പൊരുത്തക്കേട്) — വീണ്ടും ശ്രമിക്കുക"
+#: package/contents/ui/FitbitOAuth.qml:376
+msgid "No authorization code found in the pasted text"
+msgstr "ഒട്ടിച്ച വാചകത്തിൽ അംഗീകാര കോഡുകളൊന്നും കണ്ടെത്തിയില്ല"
+#: package/contents/ui/FitbitOAuth.qml:386
+msgid "Network error during token exchange"
+msgstr "ടോക്കൺ എക്സ്ചേഞ്ച് സമയത്ത് നെറ്റ്‌വർക്ക് പിശക്"
+#: package/contents/ui/FitbitOAuth.qml:387
+msgid "Authorization code invalid or expired — please try again"
+msgstr "അംഗീകാര കോഡ് അസാധുവാണ് അല്ലെങ്കിൽ കാലഹരണപ്പെട്ടു - ദയവായി വീണ്ടും ശ്രമിക്കുക"
+#: package/contents/ui/FitbitOAuth.qml:388
+msgid "Token exchange failed"
+msgstr "ടോക്കൺ കൈമാറ്റം പരാജയപ്പെട്ടു"
+#: package/contents/ui/FitbitOAuth.qml:389
+msgid "Token exchange failed — missing tokens"
+msgstr "ടോക്കൺ കൈമാറ്റം പരാജയപ്പെട്ടു - ടോക്കണുകൾ കാണുന്നില്ല"
+#: package/contents/ui/FitbitOAuth.qml:390
+msgid "Token exchange failed — invalid response"
+msgstr "ടോക്കൺ കൈമാറ്റം പരാജയപ്പെട്ടു - അസാധുവായ പ്രതികരണം"
+#: package/contents/ui/FullRepresentation.qml:40
+msgctxt "distance in miles"
+msgid "%1 mi"
+msgstr "%1 മൈൽ"
+#: package/contents/ui/FullRepresentation.qml:42
+msgctxt "distance in kilometers"
+msgid "%1 km"
+msgstr "%1 കി.മീ"
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:77
+msgid "FitDash"
+msgstr "ഫിറ്റ്ഡാഷ്"
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Stale"
+msgstr "പഴകിയ"
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Today"
+msgstr "ഇന്ന്"
+#: package/contents/ui/FullRepresentation.qml:115
+msgid "Connect Fitbit"
+msgstr "Fitbit ബന്ധിപ്പിക്കുക"
+#: package/contents/ui/FullRepresentation.qml:121
+msgid "Authorize your account in settings to show today's activity."
+msgstr "ഇന്നത്തെ പ്രവർത്തനം കാണിക്കാൻ ക്രമീകരണത്തിൽ നിങ്ങളുടെ അക്കൗണ്ടിന് അംഗീകാരം നൽകുക."
+#: package/contents/ui/FullRepresentation.qml:130
+msgid "Open Settings"
+msgstr "ക്രമീകരണങ്ങൾ തുറക്കുക"
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Loading Fitbit data"
+msgstr "Fitbit ഡാറ്റ ലോഡുചെയ്യുന്നു"
+#: package/contents/ui/FullRepresentation.qml:220
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+#: package/contents/ui/FullRepresentation.qml:245
+msgid "%1 remaining of %2"
+msgstr "%2 -ൽ ശേഷിക്കുന്ന %1"
+#: package/contents/ui/FullRepresentation.qml:246
+msgid "No step goal set"
+msgstr "സ്റ്റെപ്പ് ലക്ഷ്യമില്ല"
+#: package/contents/ui/FullRepresentation.qml:279
+msgid "Active"
+msgstr "സജീവമാണ്"
+#: package/contents/ui/FullRepresentation.qml:280
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 മിനിറ്റ്"
+#: package/contents/ui/FullRepresentation.qml:287
+msgid "Resting HR"
+msgstr "വിശ്രമിക്കുന്ന എച്ച്ആർ"
+#: package/contents/ui/FullRepresentation.qml:289
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 ബിപിഎം"
+#: package/contents/ui/FullRepresentation.qml:310
+msgid "Updated %1"
+msgstr "%1 അപ്‌ഡേറ്റ് ചെയ്‌തു"
+#: package/contents/ui/main.qml:79
+msgid "Not connected"
+msgstr "ബന്ധിപ്പിച്ചിട്ടില്ല"
+#: package/contents/ui/main.qml:83
+msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
+msgstr "ഘട്ടങ്ങൾ: %1 | Cal: %2 | ജില്ല: %3\nഅപ്ഡേറ്റ് ചെയ്തത്: %4"
+#: package/contents/ui/main.qml:105
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "%1 -ൽ അംഗീകാരം കാലഹരണപ്പെട്ടു - ദയവായി വീണ്ടും അംഗീകരിക്കുക"
+#: package/contents/ui/main.qml:118
+msgid "Token refresh failed at %1 — %2"
+msgstr "%1 - %2 -ൽ ടോക്കൺ പുതുക്കൽ പരാജയപ്പെട്ടു"
+#: package/contents/ui/main.qml:142
+msgid "No refresh token available — please re-authorize"
+msgstr "പുതുക്കിയ ടോക്കണൊന്നും ലഭ്യമല്ല - ദയവായി വീണ്ടും അംഗീകരിക്കുക"
+#: package/contents/ui/main.qml:169
+msgid "Token refreshed at %1"
+msgstr "%1 -ൽ ടോക്കൺ പുതുക്കി"

@@ -1,0 +1,343 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FitDash 1.0.5\n"
+"Report-Msgid-Bugs-To: democe@outlook.com\n"
+"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"PO-Revision-Date: 2026-06-29 00:00+0000\n"
+"Last-Translator: FitDash contributors\n"
+"Language-Team: Telugu\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
+msgid "General"
+msgstr "జనరల్"
+#: package/contents/ui/configGeneral.qml:52
+msgid "Not authorized"
+msgstr "అధికారం లేదు"
+#: package/contents/ui/configGeneral.qml:55
+msgid "Authorization problem — re-authorize"
+msgstr "ఆథరైజేషన్ సమస్య - తిరిగి అధికారం"
+#: package/contents/ui/configGeneral.qml:58
+msgid "Token expired — refresh needed"
+msgstr "టోకెన్ గడువు ముగిసింది - రిఫ్రెష్ అవసరం"
+#: package/contents/ui/configGeneral.qml:60
+msgid "unknown"
+msgstr "తెలియని"
+#: package/contents/ui/configGeneral.qml:60
+msgid "Authorized (User: %1)"
+msgstr "అధీకృత (యూజర్: %1 )"
+#: package/contents/ui/configGeneral.qml:89
+msgid "Client ID:"
+msgstr "క్లయింట్ ID:"
+#: package/contents/ui/configGeneral.qml:90
+msgid "From dev.fitbit.com/apps"
+msgstr "dev.fitbit.com/apps నుండి"
+#: package/contents/ui/configGeneral.qml:97
+msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+msgstr "మీ Fitbit యాప్ రిజిస్ట్రేషన్ నుండి OAuth 2.0 క్లయింట్ ID"
+#: package/contents/ui/configGeneral.qml:104
+msgid "Callback URL:"
+msgstr "కాల్ బ్యాక్ URL:"
+#: package/contents/ui/configGeneral.qml:117
+#: package/contents/ui/configGeneral.qml:306
+msgid "Copy to clipboard"
+msgstr "క్లిప్‌బోర్డ్‌కి కాపీ చేయండి"
+#: package/contents/ui/configGeneral.qml:130
+msgid "Callback port:"
+msgstr "బ్యాక్ పోర్ట్:"
+#: package/contents/ui/configGeneral.qml:138
+msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+msgstr "కాల్‌బ్యాక్ URLని dev.fitbit.comలో మీ Fitbit యాప్ సెట్టింగ్‌లలో అతికించండి"
+#: package/contents/ui/configGeneral.qml:146
+msgid "Refresh interval (minutes):"
+msgstr "రిఫ్రెష్ విరామం (నిమిషాలు):"
+#: package/contents/ui/configGeneral.qml:154
+msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+msgstr "సిఫార్సు చేయబడింది: Fitbit రేట్ పరిమితుల్లో ఉండటానికి 15-30 నిమిషాలు"
+#: package/contents/ui/configGeneral.qml:162
+msgid "Display"
+msgstr "ప్రదర్శించు"
+#: package/contents/ui/configGeneral.qml:167
+msgid "Distance unit:"
+msgstr "దూర యూనిట్:"
+#: package/contents/ui/configGeneral.qml:169
+msgid "Kilometers (km)"
+msgstr "కిలోమీటర్లు (కిమీ)"
+#: package/contents/ui/configGeneral.qml:170
+msgid "Miles (mi)"
+msgstr "మైళ్లు (మై)"
+#: package/contents/ui/configGeneral.qml:181
+msgid "Visible Metrics"
+msgstr "కనిపించే కొలమానాలు"
+#: package/contents/ui/configGeneral.qml:187
+#: package/contents/ui/FullRepresentation.qml:213
+msgid "Steps"
+msgstr "దశలు"
+#: package/contents/ui/configGeneral.qml:194
+#: package/contents/ui/FullRepresentation.qml:263
+msgid "Calories"
+msgstr "కేలరీలు"
+#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/FullRepresentation.qml:271
+msgid "Distance"
+msgstr "దూరం"
+#: package/contents/ui/configGeneral.qml:208
+msgid "Active minutes"
+msgstr "క్రియాశీల నిమిషాలు"
+#: package/contents/ui/configGeneral.qml:215
+msgid "Resting heart rate"
+msgstr "విశ్రాంతి హృదయ స్పందన రేటు"
+#: package/contents/ui/configGeneral.qml:221
+msgid "Fitbit Account"
+msgstr "Fitbit ఖాతా"
+#: package/contents/ui/configGeneral.qml:225
+msgid "Status:"
+msgstr "స్థితి:"
+#: package/contents/ui/configGeneral.qml:233
+msgid "Last request:"
+msgstr "చివరి అభ్యర్థన:"
+#: package/contents/ui/configGeneral.qml:235
+msgid "No requests yet"
+msgstr "ఇంకా అభ్యర్థనలు లేవు"
+#: package/contents/ui/configGeneral.qml:245
+msgid "Authorization:"
+msgstr "ఆథరైజేషన్:"
+#: package/contents/ui/configGeneral.qml:247
+msgid "Cancel"
+msgstr "రద్దు చేయి"
+#: package/contents/ui/configGeneral.qml:248
+msgid "Re-authorize with Fitbit"
+msgstr "Fitbitతో మళ్లీ ఆథరైజ్ చేయండి"
+#: package/contents/ui/configGeneral.qml:248
+msgid "Authorize with Fitbit"
+msgstr "Fitbitతో ఆథరైజ్ చేయండి"
+#: package/contents/ui/configGeneral.qml:264
+msgid "Authorize manually (copy & paste)"
+msgstr "మాన్యువల్‌గా ఆథరైజ్ చేయండి (కాపీ & పేస్ట్)"
+#: package/contents/ui/configGeneral.qml:269
+msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
+msgstr "బ్రౌజర్ లోకల్ హోస్ట్‌ను చేరుకోలేకపోతే (శాండ్‌బాక్స్డ్ బ్రౌజర్, రిమోట్ సెషన్ లేదా పైథాన్ లేదు) దీన్ని ఉపయోగించండి"
+#: package/contents/ui/configGeneral.qml:285
+msgid "Step 1:"
+msgstr "దశ 1:"
+#: package/contents/ui/configGeneral.qml:286
+msgid "Open this URL in a browser and approve access:"
+msgstr "బ్రౌజర్‌లో ఈ URLని తెరిచి, యాక్సెస్‌ని ఆమోదించండి:"
+#: package/contents/ui/configGeneral.qml:293
+msgid "Authorization URL:"
+msgstr "అధికార URL:"
+#: package/contents/ui/configGeneral.qml:320
+msgid "Open in browser"
+msgstr "బ్రౌజర్‌లో తెరవండి"
+#: package/contents/ui/configGeneral.qml:329
+msgid "Step 2:"
+msgstr "దశ 2:"
+#: package/contents/ui/configGeneral.qml:330
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr "ఆమోదించిన తర్వాత, అడ్రస్ బార్ URLని కాపీ చేసి, దిగువన అతికించండి:"
+#: package/contents/ui/configGeneral.qml:337
+msgid "Redirect URL or code:"
+msgstr "దారి మళ్లింపు URL లేదా కోడ్:"
+#: package/contents/ui/configGeneral.qml:341
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:.../callback?code=..."
+#: package/contents/ui/configGeneral.qml:348
+msgid "Complete"
+msgstr "పూర్తి"
+#: package/contents/ui/configGeneral.qml:358
+msgid "Cancel manual authorization"
+msgstr "మాన్యువల్ అధికారాన్ని రద్దు చేయండి"
+#: package/contents/ui/configGeneral.qml:397
+msgid "Authorization successful!"
+msgstr "ఆథరైజేషన్ విజయవంతమైంది!"
+#: package/contents/ui/FitbitApi.qml:33
+msgid "No access token"
+msgstr "యాక్సెస్ టోకెన్ లేదు"
+#: package/contents/ui/FitbitApi.qml:52
+msgid "Network error — check your connection"
+msgstr "నెట్‌వర్క్ లోపం — మీ కనెక్షన్‌ని తనిఖీ చేయండి"
+#: package/contents/ui/FitbitApi.qml:53
+msgid "Network error at %1"
+msgstr "%1 వద్ద నెట్‌వర్క్ లోపం"
+#: package/contents/ui/FitbitApi.qml:59
+msgid "Token expired at %1 — refreshing"
+msgstr "%1 వద్ద టోకెన్ గడువు ముగిసింది - రిఫ్రెష్"
+#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
+msgid "Rate limited — try again later"
+msgstr "రేట్ పరిమితం - తర్వాత మళ్లీ ప్రయత్నించండి"
+#: package/contents/ui/FitbitApi.qml:66
+msgid "Rate limited at %1 — showing cached data"
+msgstr "%1 వద్ద రేట్ పరిమితం చేయబడింది — కాష్ చేయబడిన డేటాను చూపుతోంది"
+#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
+msgid "Fitbit server error (HTTP %1)"
+msgstr "Fitbit సర్వర్ లోపం (HTTP %1 )"
+#: package/contents/ui/FitbitApi.qml:73
+msgid "Server error (HTTP %1) at %2"
+msgstr "%2 వద్ద సర్వర్ లోపం (HTTP %1 )."
+#: package/contents/ui/FitbitApi.qml:79
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 విఫలమైంది (HTTP %2 )"
+#: package/contents/ui/FitbitApi.qml:80
+msgid "Error (HTTP %1) at %2"
+msgstr "%2 వద్ద లోపం (HTTP %1 )."
+#: package/contents/ui/FitbitApi.qml:107
+msgid "Request timed out — check your connection"
+msgstr "అభ్యర్థన సమయం ముగిసింది - మీ కనెక్షన్‌ని తనిఖీ చేయండి"
+#: package/contents/ui/FitbitApi.qml:108
+msgid "Timed out at %1"
+msgstr "%1 కి సమయం ముగిసింది"
+#: package/contents/ui/FitbitApi.qml:116
+msgid "Activity fetch"
+msgstr "కార్యాచరణ పొందడం"
+#: package/contents/ui/FitbitApi.qml:141
+msgid "OK — updated at %1"
+msgstr "సరే — %1 లో నవీకరించబడింది"
+#: package/contents/ui/FitbitApi.qml:146
+msgid "Failed to parse activity data"
+msgstr "కార్యాచరణ డేటాను అన్వయించడంలో విఫలమైంది"
+#: package/contents/ui/FitbitApi.qml:147
+msgid "Parse error at %1"
+msgstr "%1 వద్ద అన్వయ లోపం"
+#: package/contents/ui/FitbitOAuth.qml:90
+msgid "Unknown error"
+msgstr "తెలియని లోపం"
+#: package/contents/ui/FitbitOAuth.qml:97
+msgid "Failed to parse auth response"
+msgstr "ప్రామాణీకరణ ప్రతిస్పందనను అన్వయించడం విఫలమైంది"
+#: package/contents/ui/FitbitOAuth.qml:136
+#: package/contents/ui/FitbitOAuth.qml:327
+msgid "Invalid client ID format"
+msgstr "చెల్లని క్లయింట్ ID ఫార్మాట్"
+#: package/contents/ui/FitbitOAuth.qml:150
+msgid "Authorization canceled"
+msgstr "అధికారం రద్దు చేయబడింది"
+#: package/contents/ui/FitbitOAuth.qml:191
+msgid "%1 (%2)"
+msgstr "%1 ( %2 )"
+#: package/contents/ui/FitbitOAuth.qml:213
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2 )"
+#: package/contents/ui/FitbitOAuth.qml:280
+msgid "Network error during token refresh"
+msgstr "టోకెన్ రిఫ్రెష్ సమయంలో నెట్‌వర్క్ లోపం"
+#: package/contents/ui/FitbitOAuth.qml:281
+msgid "Refresh token invalid — please re-authorize"
+msgstr "రిఫ్రెష్ టోకెన్ చెల్లదు — దయచేసి మళ్లీ అధికారం ఇవ్వండి"
+#: package/contents/ui/FitbitOAuth.qml:282
+msgid "Token refresh failed"
+msgstr "టోకెన్ రిఫ్రెష్ విఫలమైంది"
+#: package/contents/ui/FitbitOAuth.qml:283
+msgid "Refresh failed — missing tokens"
+msgstr "రిఫ్రెష్ విఫలమైంది — టోకెన్‌లు లేవు"
+#: package/contents/ui/FitbitOAuth.qml:284
+msgid "Token refresh failed — invalid response"
+msgstr "టోకెన్ రిఫ్రెష్ విఫలమైంది — చెల్లని ప్రతిస్పందన"
+#: package/contents/ui/FitbitOAuth.qml:341
+msgid "Paste the redirect URL or authorization code first"
+msgstr "ముందుగా దారి మళ్లింపు URL లేదా అధికార కోడ్‌ను అతికించండి"
+#: package/contents/ui/FitbitOAuth.qml:345
+msgid "Start the manual authorization first"
+msgstr "ముందుగా మాన్యువల్ అధికారాన్ని ప్రారంభించండి"
+#: package/contents/ui/FitbitOAuth.qml:365
+msgid "Authorization was denied"
+msgstr "అధికారాన్ని తిరస్కరించారు"
+#: package/contents/ui/FitbitOAuth.qml:372
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "ఆథరైజేషన్ విఫలమైంది (రాష్ట్రం సరిపోలలేదు) — దయచేసి మళ్లీ ప్రయత్నించండి"
+#: package/contents/ui/FitbitOAuth.qml:376
+msgid "No authorization code found in the pasted text"
+msgstr "అతికించిన వచనంలో అధికార కోడ్ కనుగొనబడలేదు"
+#: package/contents/ui/FitbitOAuth.qml:386
+msgid "Network error during token exchange"
+msgstr "టోకెన్ మార్పిడి సమయంలో నెట్‌వర్క్ లోపం"
+#: package/contents/ui/FitbitOAuth.qml:387
+msgid "Authorization code invalid or expired — please try again"
+msgstr "అధికార కోడ్ చెల్లదు లేదా గడువు ముగిసింది — దయచేసి మళ్లీ ప్రయత్నించండి"
+#: package/contents/ui/FitbitOAuth.qml:388
+msgid "Token exchange failed"
+msgstr "టోకెన్ మార్పిడి విఫలమైంది"
+#: package/contents/ui/FitbitOAuth.qml:389
+msgid "Token exchange failed — missing tokens"
+msgstr "టోకెన్ మార్పిడి విఫలమైంది — టోకెన్లు లేవు"
+#: package/contents/ui/FitbitOAuth.qml:390
+msgid "Token exchange failed — invalid response"
+msgstr "టోకెన్ మార్పిడి విఫలమైంది — చెల్లని ప్రతిస్పందన"
+#: package/contents/ui/FullRepresentation.qml:40
+msgctxt "distance in miles"
+msgid "%1 mi"
+msgstr "%1 మై"
+#: package/contents/ui/FullRepresentation.qml:42
+msgctxt "distance in kilometers"
+msgid "%1 km"
+msgstr "%1 కి.మీ"
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:77
+msgid "FitDash"
+msgstr "FitDash"
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Stale"
+msgstr "పాతది"
+#: package/contents/ui/FullRepresentation.qml:73
+msgid "Today"
+msgstr "ఈరోజు"
+#: package/contents/ui/FullRepresentation.qml:115
+msgid "Connect Fitbit"
+msgstr "Fitbitని కనెక్ట్ చేయండి"
+#: package/contents/ui/FullRepresentation.qml:121
+msgid "Authorize your account in settings to show today's activity."
+msgstr "నేటి కార్యాచరణను చూపడానికి సెట్టింగ్‌లలో మీ ఖాతాను ప్రామాణీకరించండి."
+#: package/contents/ui/FullRepresentation.qml:130
+msgid "Open Settings"
+msgstr "సెట్టింగ్‌లను తెరవండి"
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Loading Fitbit data"
+msgstr "Fitbit డేటా లోడ్ అవుతోంది"
+#: package/contents/ui/FullRepresentation.qml:220
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+#: package/contents/ui/FullRepresentation.qml:245
+msgid "%1 remaining of %2"
+msgstr "%2 లో %1 మిగిలి ఉంది"
+#: package/contents/ui/FullRepresentation.qml:246
+msgid "No step goal set"
+msgstr "ఏ దశ లక్ష్యం నిర్దేశించబడలేదు"
+#: package/contents/ui/FullRepresentation.qml:279
+msgid "Active"
+msgstr "చురుకుగా"
+#: package/contents/ui/FullRepresentation.qml:280
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 నిమి"
+#: package/contents/ui/FullRepresentation.qml:287
+msgid "Resting HR"
+msgstr "విశ్రాంతి HR"
+#: package/contents/ui/FullRepresentation.qml:289
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+#: package/contents/ui/FullRepresentation.qml:310
+msgid "Updated %1"
+msgstr "%1 నవీకరించబడింది"
+#: package/contents/ui/main.qml:79
+msgid "Not connected"
+msgstr "కనెక్ట్ కాలేదు"
+#: package/contents/ui/main.qml:83
+msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
+msgstr "దశలు: %1 | కాల్: %2 | జిల్లా: %3\nనవీకరించబడింది: %4"
+#: package/contents/ui/main.qml:105
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "%1 వద్ద ఆథరైజేషన్ గడువు ముగిసింది — దయచేసి మళ్లీ అధికారం ఇవ్వండి"
+#: package/contents/ui/main.qml:118
+msgid "Token refresh failed at %1 — %2"
+msgstr "%1 — %2 వద్ద టోకెన్ రిఫ్రెష్ విఫలమైంది"
+#: package/contents/ui/main.qml:142
+msgid "No refresh token available — please re-authorize"
+msgstr "రిఫ్రెష్ టోకెన్ అందుబాటులో లేదు - దయచేసి మళ్లీ ఆథరైజ్ చేయండి"
+#: package/contents/ui/main.qml:169
+msgid "Token refreshed at %1"
+msgstr "%1 లో టోకెన్ రిఫ్రెష్ చేయబడింది"
