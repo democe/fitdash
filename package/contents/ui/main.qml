@@ -78,8 +78,8 @@ PlasmoidItem {
     toolTipSubText: {
         if (fitbitApi.accessToken === "") return i18n("Not connected");
         var unit = Plasmoid.configuration.distanceUnit || "km";
-        var dist = unit === "mi" ? (fitbitApi.distance * 0.621371).toFixed(2) + " mi"
-                                 : fitbitApi.distance.toFixed(2) + " km";
+        var dist = unit === "mi" ? i18nc("distance in miles", "%1 mi", (fitbitApi.distance * 0.621371).toLocaleString(Qt.locale(), "f", 2))
+                                 : i18nc("distance in kilometers", "%1 km", fitbitApi.distance.toLocaleString(Qt.locale(), "f", 2));
         return i18n("Steps: %1 | Cal: %2 | Dist: %3\nUpdated: %4",
             fitbitApi.steps.toLocaleString(),
             fitbitApi.calories.toLocaleString(),

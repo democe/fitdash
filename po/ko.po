@@ -341,3 +341,15 @@ msgstr "사용 가능한 새로 고침 토큰이 없습니다. 다시 승인하�
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
 msgstr "토큰 새로 고침됨(%1)"
+
+#: scripts/fitdash-auth.py
+msgid "You can close this tab."
+msgstr ""
+
+#: scripts/fitdash-auth.py
+msgid "Could not start authorization server on port %1"
+msgstr ""
+
+#: scripts/fitdash-auth.py
+msgid "Authorization timed out — please try again"
+msgstr ""

@@ -22,3 +22,13 @@ cd "$PROJECT_DIR"
     -o "$PODIR/plasma_applet_com.democe.fitdash.pot" \
     package/contents/ui/*.qml \
     package/contents/config/*.qml
+
+# Python uses the same message IDs and catalog as QML.
+"$XGETTEXT_BIN" \
+    --join-existing \
+    --from-code=UTF-8 \
+    --language=Python \
+    --keyword=_ \
+    --add-comments=TRANSLATORS \
+    -o "$PODIR/plasma_applet_com.democe.fitdash.pot" \
+    scripts/fitdash-auth.py

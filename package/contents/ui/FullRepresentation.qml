@@ -37,9 +37,9 @@ PlasmaExtras.Representation {
 
     function formatDistance(value, unit) {
         if (unit === "mi") {
-            return i18nc("distance in miles", "%1 mi", (value * 0.621371).toFixed(2));
+            return i18nc("distance in miles", "%1 mi", (value * 0.621371).toLocaleString(Qt.locale(), "f", 2));
         }
-        return i18nc("distance in kilometers", "%1 km", value.toFixed(2));
+        return i18nc("distance in kilometers", "%1 km", value.toLocaleString(Qt.locale(), "f", 2));
     }
 
     function visibleMetricCount() {

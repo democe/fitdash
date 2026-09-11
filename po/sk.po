@@ -341,3 +341,15 @@ msgstr "Nie je k dispozícii žiadny obnovovací token – znova ho autorizujte"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
 msgstr "Token bol obnovený o %1"
+
+#: scripts/fitdash-auth.py
+msgid "You can close this tab."
+msgstr ""
+
+#: scripts/fitdash-auth.py
+msgid "Could not start authorization server on port %1"
+msgstr ""
+
+#: scripts/fitdash-auth.py
+msgid "Authorization timed out — please try again"
+msgstr ""

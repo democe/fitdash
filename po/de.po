@@ -465,3 +465,15 @@ msgstr "Kein Aktualisierungstoken verfügbar — bitte erneut autorisieren"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
 msgstr "Token um %1 aktualisiert"
+
+#: scripts/fitdash-auth.py
+msgid "You can close this tab."
+msgstr ""
+
+#: scripts/fitdash-auth.py
+msgid "Could not start authorization server on port %1"
+msgstr ""
+
+#: scripts/fitdash-auth.py
+msgid "Authorization timed out — please try again"
+msgstr ""

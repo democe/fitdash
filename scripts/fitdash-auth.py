@@ -4,6 +4,9 @@
 import argparse
 import base64
 import hashlib
+import gettext
+import html
+from pathlib import Path
 import http.server
 import json
 import secrets
@@ -13,6 +16,22 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import webbrowser
+
+
+# Installed beside contents/locale; use the same catalog and LANGUAGE preference
+# as the widget. Running from the source tree falls back to English.
+_translation = gettext.translation(
+    "plasma_applet_com.democe.fitdash",
+    localedir=Path(__file__).resolve().parent.parent / "locale",
+    fallback=True,
+)
+_ = _translation.gettext
+
+
+def callback_page(message, detail=""):
+    return ("<!doctype html><html><head><meta charset=\"utf-8\"></head>"
+            "<body dir=\"auto\"><h1>" + html.escape(message) + "</h1><p>"
+            + html.escape(detail) + "</p></body></html>").encode("utf-8")
 
 
 def generate_pkce():
@@ -39,14 +58,13 @@ def exchange_token(code, code_verifier, client_id, redirect_uri):
         with urllib.request.urlopen(req, timeout=30) as resp:
             tokens = json.loads(resp.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"Token exchange failed (HTTP {e.code}): {body}") from None
+        raise RuntimeError(_("%1 (HTTP %2)").replace("%1", _("Token exchange failed")).replace("%2", str(e.code))) from None
     except urllib.error.URLError as e:
-        raise RuntimeError(f"Network error during token exchange: {e.reason}") from None
+        raise RuntimeError(_("Network error during token exchange")) from None
 
     for field in ("access_token", "refresh_token"):
         if field not in tokens:
-            raise RuntimeError(f"Token response missing required field: {field}")
+            raise RuntimeError(_("Token exchange failed — missing tokens"))
     return tokens
 
 
@@ -68,26 +86,25 @@ def main():
 
             returned_state = params.get("state", [None])[0]
             if returned_state != oauth_state:
-                error = "state_mismatch"
+                error = _("Authorization failed (state mismatch) — please try again")
                 self.send_response(400)
-                self.send_header("Content-Type", "text/html")
+                self.send_header("Content-Type", "text/html; charset=utf-8")
                 self.end_headers()
-                self.wfile.write(b"<html><body><h1>Authorization failed (state mismatch).</h1></body></html>")
+                self.wfile.write(callback_page(error))
                 return
 
             if "code" in params:
                 auth_code = params["code"][0]
                 self.send_response(200)
-                self.send_header("Content-Type", "text/html")
+                self.send_header("Content-Type", "text/html; charset=utf-8")
                 self.end_headers()
-                self.wfile.write(b"<html><body><h1>Authorization successful!</h1>"
-                                 b"<p>You can close this tab.</p></body></html>")
+                self.wfile.write(callback_page(_("Authorization successful!"), _("You can close this tab.")))
             else:
-                error = params.get("error", ["unknown"])[0]
+                error = _("Authorization was denied")
                 self.send_response(400)
-                self.send_header("Content-Type", "text/html")
+                self.send_header("Content-Type", "text/html; charset=utf-8")
                 self.end_headers()
-                self.wfile.write(b"<html><body><h1>Authorization failed.</h1></body></html>")
+                self.wfile.write(callback_page(error))
 
         def log_message(self, format, *a):
             pass  # suppress request logging
@@ -98,7 +115,7 @@ def main():
         server = http.server.HTTPServer(("127.0.0.1", port), Handler)
         server.timeout = 120  # handle_request() returns after this if no request arrives
     except OSError as e:
-        json.dump({"error": f"Could not start auth server on port {port}: {e}"}, sys.stderr)
+        json.dump({"error": _("Could not start authorization server on port %1").replace("%1", str(port))}, sys.stderr)
         sys.exit(1)
     redirect_uri = f"http://localhost:{port}/callback"
 
@@ -138,7 +155,7 @@ def main():
         sys.exit(1)
 
     if not auth_code:
-        json.dump({"error": "timeout"}, sys.stderr)
+        json.dump({"error": _("Authorization timed out — please try again")}, sys.stderr)
         sys.exit(1)
 
     try:
@@ -150,7 +167,8 @@ def main():
             "user_id": tokens.get("user_id", ""),
         }, sys.stdout)
     except Exception as e:
-        json.dump({"error": str(e)}, sys.stderr)
+        message = str(e) if isinstance(e, RuntimeError) else _("Token exchange failed — invalid response")
+        json.dump({"error": message}, sys.stderr)
         sys.exit(1)
 
 
