@@ -22,13 +22,13 @@ msgid "Authorization problem — re-authorize"
 msgstr "Magtigingsprobleem — hermagtig"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
-msgstr "Token het verval – herlaai benodig"
+msgstr "Token het verval — verfris nodig"
 #: package/contents/ui/configGeneral.qml:60
 msgid "unknown"
 msgstr "onbekend"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Gemagtig (gebruiker: %1 )"
+msgstr "Gemagtig (gebruiker: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "Kliënt-ID:"
@@ -37,7 +37,7 @@ msgid "From dev.fitbit.com/apps"
 msgstr "Van dev.fitbit.com/apps"
 #: package/contents/ui/configGeneral.qml:97
 msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "OAuth 2.0-kliënt-ID vanaf jou Fitbit-programregistrasie"
+msgstr "OAuth 2.0-kliënt-ID van jou Fitbit-toepassingregistrasie"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
 msgstr "Terugbel-URL:"
@@ -53,16 +53,16 @@ msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
 msgstr "Plak die terugbel-URL in jou Fitbit-toepassinginstellings by dev.fitbit.com"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
-msgstr "Herlaai interval (minute):"
+msgstr "Verfrisinterval (minute):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Aanbeveel: 15–30 minute om binne Fitbit-tempolimiete te bly"
+msgstr "Aanbeveel: 15–30 minute om binne Fitbit se versoeklimiete te bly"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Vertoon"
+msgstr "Vertoning"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
-msgstr "Afstand eenheid:"
+msgstr "Afstandeenheid:"
 #: package/contents/ui/configGeneral.qml:169
 msgid "Kilometers (km)"
 msgstr "Kilometers (km)"
@@ -75,7 +75,7 @@ msgstr "Sigbare maatstawwe"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "Trappe"
+msgstr "Treë"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
@@ -119,7 +119,7 @@ msgid "Authorize manually (copy & paste)"
 msgstr "Magtig handmatig (kopieer en plak)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Gebruik dit as die blaaier nie plaaslike gasheer kan bereik nie (sandboxblaaier, afgeleë sessie of geen Python nie)"
+msgstr "Gebruik dit as die blaaier nie localhost kan bereik nie (sandboxblaaier, afgeleë sessie of geen Python nie)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "Stap 1:"
@@ -137,70 +137,70 @@ msgid "Step 2:"
 msgstr "Stap 2:"
 #: package/contents/ui/configGeneral.qml:330
 msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "Nadat u dit goedgekeur het, kopieer die adresbalk-URL en plak dit hieronder:"
+msgstr "Nadat jy dit goedgekeur het, kopieer die URL in die adresbalk en plak dit hieronder:"
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
-msgstr "Herlei URL of kode:"
+msgstr "Aanstuur-URL of kode:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:.../callback?code=..."
+msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
 msgstr "Voltooi"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
-msgstr "Kanselleer handmagtiging"
+msgstr "Kanselleer handmatige magtiging"
 #: package/contents/ui/configGeneral.qml:397
 msgid "Authorization successful!"
 msgstr "Magtiging suksesvol!"
 #: package/contents/ui/FitbitApi.qml:33
 msgid "No access token"
-msgstr "Geen toegangsteken nie"
+msgstr "Geen toegangstoken nie"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
 msgstr "Netwerkfout – gaan jou verbinding na"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "Netwerkfout by %1"
+msgstr "Netwerkfout om %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "Token het verval by %1 — verfrissend"
+msgstr "Token het om %1 verval — verfris tans"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Tarief beperk — probeer later weer"
+msgstr "Versoeklimiet bereik — probeer later weer"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Koers beperk by %1 — wys gekasdata"
+msgstr "Versoeklimiet bereik om %1 — wys gekasde data"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit-bedienerfout (HTTP %1 )"
+msgstr "Fitbit-bedienerfout (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Bedienerfout (HTTP %1 ) by %2"
+msgstr "Bedienerfout (HTTP %1) om %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 het misluk (HTTP %2 )"
+msgstr "%1 het misluk (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Fout (HTTP %1 ) by %2"
+msgstr "Fout (HTTP %1) om %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "Versoek het uitgetel – gaan jou verbinding na"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Uitteltyd by %1"
+msgstr "Uitteltyd om %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
-msgstr "Aktiwiteit haal"
+msgstr "Aktiwiteitdata ophaal"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "OK — opgedateer by %1"
+msgstr "OK — opgedateer om %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "Kon nie aktiwiteitdata ontleed nie"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "Ontleedfout by %1"
+msgstr "Ontleedfout om %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Onbekende fout"
@@ -216,31 +216,31 @@ msgid "Authorization canceled"
 msgstr "Magtiging gekanselleer"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
-msgstr "Netwerkfout tydens tekenherlaai"
+msgstr "Netwerkfout tydens tokenverfrissing"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "Herlaai-token ongeldig — magtig asseblief weer"
+msgstr "Verfris-token ongeldig — magtig asseblief weer"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
-msgstr "Tekenherlaai het misluk"
+msgstr "Tokenverfrissing het misluk"
 #: package/contents/ui/FitbitOAuth.qml:283
 msgid "Refresh failed — missing tokens"
-msgstr "Herlaai het misluk – ontbrekende tokens"
+msgstr "Verfrissing het misluk — tokens ontbreek"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
-msgstr "Tekenherlaai het misluk – ongeldige antwoord"
+msgstr "Tokenverfrissing het misluk — ongeldige antwoord"
 #: package/contents/ui/FitbitOAuth.qml:341
 msgid "Paste the redirect URL or authorization code first"
 msgstr "Plak eers die aanstuur-URL of magtigingskode"
 #: package/contents/ui/FitbitOAuth.qml:345
 msgid "Start the manual authorization first"
-msgstr "Begin eers die handmagtiging"
+msgstr "Begin eers die handmatige magtiging"
 #: package/contents/ui/FitbitOAuth.qml:365
 msgid "Authorization was denied"
 msgstr "Magtiging is geweier"
@@ -268,7 +268,7 @@ msgstr "Tokenuitruiling het misluk – ongeldige antwoord"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
-msgstr "%1 my"
+msgstr "%1 mi"
 #: package/contents/ui/FullRepresentation.qml:42
 msgctxt "distance in kilometers"
 msgid "%1 km"
@@ -279,7 +279,7 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Ou"
+msgstr "Verouderd"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Vandag"
@@ -291,10 +291,10 @@ msgid "Authorize your account in settings to show today's activity."
 msgstr "Magtig jou rekening in instellings om vandag se aktiwiteit te wys."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Maak Instellings oop"
+msgstr "Maak instellings oop"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
-msgstr "Laai Fitbit-data"
+msgstr "Laai tans Fitbit-data"
 #: package/contents/ui/FullRepresentation.qml:220
 #, javascript-format
 msgctxt "step goal progress"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 oorblywende van %2"
+msgstr "%1 oor van %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "Geen stapdoelwit gestel nie"
+msgstr "Geen treëdoelwit gestel nie"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Aktief"
+msgstr "Aktiwiteit"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 min"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "Rustende HR"
+msgstr "Rushartklop"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Opgedateer %1"
+msgstr "Opgedateer om %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Nie gekoppel nie"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Stappe: %1 | Kal: %2 | Afstand: %3\nOpgedateer: %4"
+msgstr "Treë: %1 | Kal: %2 | Afstand: %3\nOpgedateer: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Magtiging het by %1 verval – herbemagtig asseblief"
+msgstr "Magtiging het om %1 verval — magtig asseblief weer"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Token-verversing het misluk by %1 — %2"
+msgstr "Tokenverfrissing het om %1 misluk — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
-msgstr "Geen herlaai-token beskikbaar nie – magtig asseblief weer"
+msgstr "Geen verfris-token beskikbaar nie — magtig asseblief weer"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Token is by %1 verfris"
+msgstr "Token is om %1 verfris"

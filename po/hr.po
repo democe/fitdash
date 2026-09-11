@@ -13,10 +13,10 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "General"
+msgstr "Općenito"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
-msgstr "Nije ovlašten"
+msgstr "Nije autorizirano"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
 msgstr "Problem s autorizacijom — ponovno autoriziraj"
@@ -28,7 +28,7 @@ msgid "unknown"
 msgstr "nepoznato"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Ovlašteni (korisnik: %1 )"
+msgstr "Autorizirano (korisnik: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "ID klijenta:"
@@ -56,7 +56,7 @@ msgid "Refresh interval (minutes):"
 msgstr "Interval osvježavanja (minute):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Preporučeno: 15–30 minuta da ostanete unutar ograničenja brzine Fitbita"
+msgstr "Preporučeno: 15–30 minuta kako ne biste prekoračili Fitbitova ograničenja zahtjeva"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
 msgstr "Prikaz"
@@ -65,13 +65,13 @@ msgid "Distance unit:"
 msgstr "Jedinica udaljenosti:"
 #: package/contents/ui/configGeneral.qml:169
 msgid "Kilometers (km)"
-msgstr "kilometri (km)"
+msgstr "Kilometri (km)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "milje (mi)"
+msgstr "Milje (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
-msgstr "Vidljiva metrika"
+msgstr "Vidljive metrike"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
@@ -107,19 +107,19 @@ msgid "Authorization:"
 msgstr "Autorizacija:"
 #: package/contents/ui/configGeneral.qml:247
 msgid "Cancel"
-msgstr "Otkazati"
+msgstr "Odustani"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
-msgstr "Ponovno autorizirajte s Fitbitom"
+msgstr "Ponovno autoriziraj putem Fitbita"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Authorize with Fitbit"
-msgstr "Autorizirajte s Fitbitom"
+msgstr "Autoriziraj putem Fitbita"
 #: package/contents/ui/configGeneral.qml:264
 msgid "Authorize manually (copy & paste)"
 msgstr "Autoriziraj ručno (kopiraj i zalijepi)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Koristite ovo ako preglednik ne može doći do lokalnog hosta (preglednik u testnom okruženju, udaljena sesija ili bez Pythona)"
+msgstr "Koristite ovo ako preglednik ne može pristupiti localhostu (izolirani preglednik, udaljena sesija ili nema Pythona)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "Korak 1:"
@@ -146,13 +146,13 @@ msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "Kompletan"
+msgstr "Završi"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "Otkaži ručnu autorizaciju"
 #: package/contents/ui/configGeneral.qml:397
 msgid "Authorization successful!"
-msgstr "Autorizacija uspjela!"
+msgstr "Autorizacija uspješna!"
 #: package/contents/ui/FitbitApi.qml:33
 msgid "No access token"
 msgstr "Nema pristupnog tokena"
@@ -161,52 +161,52 @@ msgid "Network error — check your connection"
 msgstr "Mrežna pogreška — provjerite vezu"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "Mrežna pogreška na %1"
+msgstr "Mrežna pogreška u %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "Token je istekao u %1 — osvježava se"
+msgstr "Token je istekao u %1 — osvježavanje"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Stopa ograničena — pokušajte ponovno kasnije"
+msgstr "Prekoračeno ograničenje zahtjeva — pokušajte ponovno kasnije"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Brzina ograničena na %1 — prikazuju se podaci u predmemoriji"
+msgstr "Prekoračeno ograničenje zahtjeva u %1 — prikazuju se spremljeni podaci"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Pogreška Fitbit poslužitelja (HTTP %1 )"
+msgstr "Pogreška Fitbit poslužitelja (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Pogreška poslužitelja (HTTP %1 ) na %2"
+msgstr "Pogreška poslužitelja (HTTP %1) u %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 nije uspio (HTTP %2 )"
+msgstr "%1 nije uspjelo (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Pogreška (HTTP %1 ) na %2"
+msgstr "Pogreška (HTTP %1) u %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "Zahtjev je istekao — provjerite vezu"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Isteklo vrijeme na %1"
+msgstr "Isteklo vrijeme u %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "Dohvaćanje aktivnosti"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "OK — ažurirano na %1"
+msgstr "OK — ažurirano u %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
-msgstr "Analiza podataka o aktivnosti nije uspjela"
+msgstr "Raščlamba podataka o aktivnosti nije uspjela"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "Pogreška raščlambe na %1"
+msgstr "Pogreška raščlambe u %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Nepoznata greška"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "Nije uspjelo analiziranje odgovora autorizacije"
+msgstr "Raščlamba odgovora autorizacije nije uspjela"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
@@ -216,16 +216,16 @@ msgid "Authorization canceled"
 msgstr "Autorizacija poništena"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "Mrežna pogreška tijekom osvježavanja tokena"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "Oznaka za osvježavanje nije važeća — ponovno autorizirajte"
+msgstr "Token za osvježavanje nije valjan — ponovno autorizirajte"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
 msgstr "Osvježavanje tokena nije uspjelo"
@@ -279,19 +279,19 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Mokraća"
+msgstr "Zastarjelo"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Danas"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "Spojite Fitbit"
+msgstr "Poveži Fitbit"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
 msgstr "Autorizirajte svoj račun u postavkama za prikaz današnje aktivnosti."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Otvorite postavke"
+msgstr "Otvori postavke"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "Učitavanje Fitbit podataka"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 preostali od %2"
+msgstr "Preostalo %1 od %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
 msgstr "Nije postavljen cilj koraka"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Aktivan"
+msgstr "Aktivnost"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 min"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "HR u mirovanju"
+msgstr "Puls u mirovanju"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
-msgstr "%1 otkucaja u minuti"
+msgstr "%1 otk./min"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Ažurirano %1"
+msgstr "Ažurirano u %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Nije povezano"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Koraci: %1 | Cal: %2 | Dist: %3\nAžurirano: %4"
+msgstr "Koraci: %1 | Kal: %2 | Udalj.: %3\nAžurirano: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Autorizacija je istekla u %1 — molimo ponovno autorizirajte"
+msgstr "Autorizacija je istekla u %1 — ponovno autorizirajte"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Osvježavanje tokena nije uspjelo na %1 — %2"
+msgstr "Osvježavanje tokena nije uspjelo u %1 — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "Nema dostupnog tokena za osvježavanje — ponovno autorizirajte"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Token osvježen na %1"
+msgstr "Token osvježen u %1"

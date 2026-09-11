@@ -13,13 +13,13 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "Tổng quan"
+msgstr "Chung"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
 msgstr "Không được ủy quyền"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "Vấn đề về ủy quyền - ủy quyền lại"
+msgstr "Vấn đề ủy quyền — hãy ủy quyền lại"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
 msgstr "Mã thông báo đã hết hạn - cần làm mới"
@@ -28,16 +28,16 @@ msgid "unknown"
 msgstr "không rõ"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Được ủy quyền (Người dùng: %1 )"
+msgstr "Đã ủy quyền (Người dùng: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
-msgstr "ID khách hàng:"
+msgstr "ID máy khách:"
 #: package/contents/ui/configGeneral.qml:90
 msgid "From dev.fitbit.com/apps"
 msgstr "Từ dev.fitbit.com/apps"
 #: package/contents/ui/configGeneral.qml:97
 msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "ID khách hàng OAuth 2.0 từ đăng ký ứng dụng Fitbit của bạn"
+msgstr "ID máy khách OAuth 2.0 từ đăng ký ứng dụng Fitbit của bạn"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
 msgstr "URL gọi lại:"
@@ -56,26 +56,26 @@ msgid "Refresh interval (minutes):"
 msgstr "Khoảng thời gian làm mới (phút):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Khuyến nghị: 15–30 phút để duy trì trong giới hạn tốc độ của Fitbit"
+msgstr "Khuyến nghị: 15–30 phút để không vượt quá giới hạn yêu cầu của Fitbit"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Trưng bày"
+msgstr "Hiển thị"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "Đơn vị khoảng cách:"
 #: package/contents/ui/configGeneral.qml:169
 msgid "Kilometers (km)"
-msgstr "Km (km)"
+msgstr "Kilômét (km)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "Dặm (dặm)"
+msgstr "Dặm (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
 msgstr "Số liệu hiển thị"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "bước"
+msgstr "Số bước"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
@@ -107,7 +107,7 @@ msgid "Authorization:"
 msgstr "Ủy quyền:"
 #: package/contents/ui/configGeneral.qml:247
 msgid "Cancel"
-msgstr "Hủy bỏ"
+msgstr "Hủy"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
 msgstr "Ủy quyền lại với Fitbit"
@@ -146,7 +146,7 @@ msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "Hoàn thành"
+msgstr "Hoàn tất"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "Hủy ủy quyền thủ công"
@@ -161,62 +161,62 @@ msgid "Network error — check your connection"
 msgstr "Lỗi mạng - kiểm tra kết nối của bạn"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "Lỗi mạng tại %1"
+msgstr "Lỗi mạng lúc %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "Mã thông báo đã hết hạn tại %1 — đang làm mới"
+msgstr "Mã thông báo đã hết hạn lúc %1 — đang làm mới"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Tỷ lệ bị giới hạn - thử lại sau"
+msgstr "Đã đạt giới hạn yêu cầu — hãy thử lại sau"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Tốc độ giới hạn ở %1 - hiển thị dữ liệu được lưu trong bộ nhớ cache"
+msgstr "Đã đạt giới hạn yêu cầu lúc %1 — đang hiển thị dữ liệu đã lưu trong bộ nhớ đệm"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Lỗi máy chủ Fitbit (HTTP %1 )"
+msgstr "Lỗi máy chủ Fitbit (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Lỗi máy chủ (HTTP %1 ) tại %2"
+msgstr "Lỗi máy chủ (HTTP %1) lúc %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 không thành công (HTTP %2 )"
+msgstr "%1 không thành công (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Lỗi (HTTP %1 ) tại %2"
+msgstr "Lỗi (HTTP %1) lúc %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "Yêu cầu đã hết thời gian chờ - hãy kiểm tra kết nối của bạn"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Đã hết thời gian ở %1"
+msgstr "Hết thời gian chờ lúc %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "Tìm nạp hoạt động"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "OK — được cập nhật tại %1"
+msgstr "OK — đã cập nhật lúc %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "Không thể phân tích cú pháp dữ liệu hoạt động"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "Lỗi phân tích cú pháp tại %1"
+msgstr "Lỗi phân tích cú pháp lúc %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Lỗi không xác định"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "Không thể phân tích cú pháp phản hồi xác thực"
+msgstr "Không thể phân tích cú pháp phản hồi ủy quyền"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
-msgstr "Định dạng ID khách hàng không hợp lệ"
+msgstr "Định dạng ID máy khách không hợp lệ"
 #: package/contents/ui/FitbitOAuth.qml:150
 msgid "Authorization canceled"
 msgstr "Đã hủy ủy quyền"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
 msgstr "%1 (HTTP %2)"
@@ -225,7 +225,7 @@ msgid "Network error during token refresh"
 msgstr "Lỗi mạng trong quá trình làm mới mã thông báo"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "Làm mới mã thông báo không hợp lệ - vui lòng ủy quyền lại"
+msgstr "Mã thông báo làm mới không hợp lệ — vui lòng ủy quyền lại"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
 msgstr "Làm mới mã thông báo không thành công"
@@ -268,7 +268,7 @@ msgstr "Trao đổi mã thông báo không thành công - phản hồi không h�
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
-msgstr "%1 của tôi"
+msgstr "%1 mi"
 #: package/contents/ui/FullRepresentation.qml:42
 msgctxt "distance in kilometers"
 msgid "%1 km"
@@ -279,7 +279,7 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Cũ"
+msgstr "Chưa cập nhật"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Hôm nay"
@@ -288,10 +288,10 @@ msgid "Connect Fitbit"
 msgstr "Kết nối Fitbit"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
-msgstr "Cho phép tài khoản của bạn trong cài đặt hiển thị hoạt động ngày hôm nay."
+msgstr "Hãy ủy quyền tài khoản của bạn trong cài đặt để hiển thị hoạt động hôm nay."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Mở Cài đặt"
+msgstr "Mở cài đặt"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "Đang tải dữ liệu Fitbit"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 còn lại của %2"
+msgstr "Còn lại %1 trên %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
 msgstr "Chưa đặt mục tiêu số bước"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Tích cực"
+msgstr "Hoạt động"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 phút"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "Nhân sự nghỉ ngơi"
+msgstr "Nhịp tim nghỉ"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
-msgstr "%1 bpm"
+msgstr "%1 nhịp/phút"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Đã cập nhật %1"
+msgstr "Đã cập nhật lúc %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Không được kết nối"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Các bước: %1 | Cal: %2 | Quận: %3\nĐã cập nhật: %4"
+msgstr "Số bước: %1 | Calo: %2 | Quãng đường: %3\nĐã cập nhật: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Ủy quyền đã hết hạn tại %1 - vui lòng ủy quyền lại"
+msgstr "Ủy quyền đã hết hạn lúc %1 — vui lòng ủy quyền lại"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Làm mới mã thông báo không thành công tại %1 — %2"
+msgstr "Làm mới mã thông báo không thành công lúc %1 — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "Không có mã thông báo làm mới - vui lòng ủy quyền lại"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Mã thông báo được làm mới tại %1"
+msgstr "Đã làm mới mã thông báo lúc %1"

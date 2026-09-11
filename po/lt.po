@@ -13,13 +13,13 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "Generolas"
+msgstr "Bendra"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
-msgstr "Neįgaliotas"
+msgstr "Neautorizuota"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "Autorizacijos problema – autorizuoti iš naujo"
+msgstr "Autorizacijos problema – autorizuokite iš naujo"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
 msgstr "Baigėsi prieigos raktas – reikia atnaujinti"
@@ -28,7 +28,7 @@ msgid "unknown"
 msgstr "nežinomas"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Įgaliotas (naudotojas: %1 )"
+msgstr "Autorizuota (naudotojas: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "Kliento ID:"
@@ -40,26 +40,26 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "„OAuth 2.0“ kliento ID iš „Fitbit“ programos registracijos"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "Atgalinio skambinimo URL:"
+msgstr "Grįžtamojo iškvietimo URL:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
 msgstr "Kopijuoti į mainų sritį"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "Atgalinio skambinimo prievadas:"
+msgstr "Grįžtamojo iškvietimo prievadas:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "Įklijuokite atgalinio skambinimo URL į „Fitbit“ programos nustatymus adresu dev.fitbit.com"
+msgstr "Įklijuokite grįžtamojo iškvietimo URL į „Fitbit“ programos nustatymus adresu dev.fitbit.com"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
 msgstr "Atnaujinimo intervalas (minutės):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Rekomenduojama: 15–30 minučių, kad neviršytumėte „Fitbit“ greičio ribų"
+msgstr "Rekomenduojama: 15–30 minučių, kad neviršytumėte „Fitbit“ užklausų ribų"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Ekranas"
+msgstr "Rodymas"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "Atstumo vienetas:"
@@ -68,10 +68,10 @@ msgid "Kilometers (km)"
 msgstr "Kilometrai (km)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "mylios (mi)"
+msgstr "Mylios (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
-msgstr "Matoma metrika"
+msgstr "Rodomi rodikliai"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
@@ -92,16 +92,16 @@ msgid "Resting heart rate"
 msgstr "Širdies ritmas ramybės būsenoje"
 #: package/contents/ui/configGeneral.qml:221
 msgid "Fitbit Account"
-msgstr "Fitbit paskyra"
+msgstr "„Fitbit“ paskyra"
 #: package/contents/ui/configGeneral.qml:225
 msgid "Status:"
 msgstr "Būsena:"
 #: package/contents/ui/configGeneral.qml:233
 msgid "Last request:"
-msgstr "Paskutinis prašymas:"
+msgstr "Paskutinė užklausa:"
 #: package/contents/ui/configGeneral.qml:235
 msgid "No requests yet"
-msgstr "Prašymų dar nėra"
+msgstr "Užklausų dar nėra"
 #: package/contents/ui/configGeneral.qml:245
 msgid "Authorization:"
 msgstr "Autorizacija:"
@@ -110,37 +110,37 @@ msgid "Cancel"
 msgstr "Atšaukti"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
-msgstr "Iš naujo autorizuokite naudodami „Fitbit“."
+msgstr "Autorizuoti iš naujo per „Fitbit“"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Authorize with Fitbit"
-msgstr "Autorizuokite naudodami „Fitbit“."
+msgstr "Autorizuoti per „Fitbit“"
 #: package/contents/ui/configGeneral.qml:264
 msgid "Authorize manually (copy & paste)"
 msgstr "Autorizuoti rankiniu būdu (nukopijuoti ir įklijuoti)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Naudokite tai, jei naršyklė negali pasiekti „localhost“ (smėlio dėžės naršyklė, nuotolinė sesija arba be Python)"
+msgstr "Naudokite, jei naršyklė negali pasiekti „localhost“ (izoliuota naršyklė, nuotolinis seansas arba nėra Python)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
-msgstr "1 veiksmas:"
+msgstr "1 žingsnis:"
 #: package/contents/ui/configGeneral.qml:286
 msgid "Open this URL in a browser and approve access:"
 msgstr "Atidarykite šį URL naršyklėje ir patvirtinkite prieigą:"
 #: package/contents/ui/configGeneral.qml:293
 msgid "Authorization URL:"
-msgstr "Prieigos URL:"
+msgstr "Autorizacijos URL:"
 #: package/contents/ui/configGeneral.qml:320
 msgid "Open in browser"
 msgstr "Atidaryti naršyklėje"
 #: package/contents/ui/configGeneral.qml:329
 msgid "Step 2:"
-msgstr "2 veiksmas:"
+msgstr "2 žingsnis:"
 #: package/contents/ui/configGeneral.qml:330
 msgid "After approving, copy the address bar URL and paste it below:"
 msgstr "Patvirtinę nukopijuokite adreso juostos URL ir įklijuokite jį toliau:"
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
-msgstr "Peradresuoti URL arba kodas:"
+msgstr "Peradresavimo URL arba kodas:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
@@ -164,31 +164,31 @@ msgid "Network error at %1"
 msgstr "Tinklo klaida %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "Žetonas baigėsi %1 – atnaujinama"
+msgstr "Prieigos raktas baigė galioti %1 – atnaujinama"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Kaina ribota – bandykite dar kartą vėliau"
+msgstr "Viršyta užklausų riba – bandykite vėliau"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Greitis apribotas %1 – rodomi talpyklos duomenys"
+msgstr "Viršyta užklausų riba %1 – rodomi talpyklos duomenys"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "„Fitbit“ serverio klaida (HTTP %1 )"
+msgstr "„Fitbit“ serverio klaida (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Serverio klaida (HTTP %1 ) %2"
+msgstr "Serverio klaida (HTTP %1) %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 nepavyko (HTTP %2 )"
+msgstr "%1 nepavyko (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Klaida (HTTP %1 ) %2"
+msgstr "Klaida (HTTP %1) %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "Baigėsi užklausos skirtasis laikas – patikrinkite ryšį"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Baigėsi %1 skirtasis laikas"
+msgstr "Baigėsi skirtasis laikas %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "Veiklos gavimas"
@@ -206,7 +206,7 @@ msgid "Unknown error"
 msgstr "Nežinoma klaida"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "Nepavyko išanalizuoti autentifikavimo atsakymo"
+msgstr "Nepavyko išanalizuoti autorizacijos atsakymo"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
@@ -216,34 +216,34 @@ msgid "Authorization canceled"
 msgstr "Autorizacija atšaukta"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "Tinklo klaida atnaujinant prieigos raktą"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "Neteisingas atnaujinimo prieigos raktas – iš naujo suteikite teisę"
+msgstr "Neteisingas atnaujinimo prieigos raktas – autorizuokite iš naujo"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
 msgstr "Nepavyko atnaujinti prieigos rakto"
 #: package/contents/ui/FitbitOAuth.qml:283
 msgid "Refresh failed — missing tokens"
-msgstr "Nepavyko atnaujinti – trūksta žetonų"
+msgstr "Nepavyko atnaujinti – trūksta prieigos raktų"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
-msgstr "Ženklo atnaujinimas nepavyko – neteisingas atsakymas"
+msgstr "Nepavyko atnaujinti prieigos rakto – neteisingas atsakymas"
 #: package/contents/ui/FitbitOAuth.qml:341
 msgid "Paste the redirect URL or authorization code first"
-msgstr "Pirmiausia įklijuokite peradresavimo URL arba prieigos kodą"
+msgstr "Pirmiausia įklijuokite peradresavimo URL arba autorizacijos kodą"
 #: package/contents/ui/FitbitOAuth.qml:345
 msgid "Start the manual authorization first"
 msgstr "Pirmiausia pradėkite rankinį autorizavimą"
 #: package/contents/ui/FitbitOAuth.qml:365
 msgid "Authorization was denied"
-msgstr "Leidimas buvo atmestas"
+msgstr "Autorizacija atmesta"
 #: package/contents/ui/FitbitOAuth.qml:372
 msgid "Authorization failed (state mismatch) — please try again"
 msgstr "Autorizacija nepavyko (būsenos neatitikimas) – bandykite dar kartą"
@@ -255,20 +255,20 @@ msgid "Network error during token exchange"
 msgstr "Tinklo klaida keičiantis prieigos raktams"
 #: package/contents/ui/FitbitOAuth.qml:387
 msgid "Authorization code invalid or expired — please try again"
-msgstr "Prieigos kodas neteisingas arba pasibaigęs – bandykite dar kartą"
+msgstr "Autorizacijos kodas neteisingas arba nebegalioja – bandykite dar kartą"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
-msgstr "Žetonų keitimas nepavyko"
+msgstr "Nepavyko apsikeisti prieigos raktais"
 #: package/contents/ui/FitbitOAuth.qml:389
 msgid "Token exchange failed — missing tokens"
-msgstr "Žetonų keitimas nepavyko – trūksta žetonų"
+msgstr "Nepavyko apsikeisti prieigos raktais – trūksta raktų"
 #: package/contents/ui/FitbitOAuth.qml:390
 msgid "Token exchange failed — invalid response"
-msgstr "Žetonų keitimas nepavyko – neteisingas atsakymas"
+msgstr "Nepavyko apsikeisti prieigos raktais – neteisingas atsakymas"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
-msgstr "%1 my"
+msgstr "%1 mi"
 #: package/contents/ui/FullRepresentation.qml:42
 msgctxt "distance in kilometers"
 msgid "%1 km"
@@ -279,19 +279,19 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Pasenęs"
+msgstr "Pasenę duomenys"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Šiandien"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "Prijunkite „Fitbit“."
+msgstr "Prijungti „Fitbit“"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
-msgstr "Įgaliokite paskyrą nustatymuose, kad būtų rodoma šios dienos veikla."
+msgstr "Autorizuokite paskyrą nustatymuose, kad būtų rodoma šiandienos veikla."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Atidarykite Nustatymai"
+msgstr "Atverti nustatymus"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "Įkeliami „Fitbit“ duomenys"
@@ -305,39 +305,39 @@ msgid "%1 remaining of %2"
 msgstr "Iš %2 liko %1"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "Jokio žingsnio tikslas nenustatytas"
+msgstr "Žingsnių tikslas nenustatytas"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Aktyvus"
+msgstr "Aktyvumas"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 min"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "Poilsio HR"
+msgstr "Ramybės pulsas"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Atnaujintas %1"
+msgstr "Atnaujinta %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Neprisijungęs"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Žingsniai: %1 | Cal: %2 | Dist: %3\nAtnaujinta: %4"
+msgstr "Žingsniai: %1 | Kal: %2 | Atst.: %3\nAtnaujinta: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Prieigos galiojimo laikas baigėsi %1 – suteikite įgaliojimą iš naujo"
+msgstr "Autorizacija baigė galioti %1 – autorizuokite iš naujo"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Ženklo atnaujinimas nepavyko %1 – %2"
+msgstr "Nepavyko atnaujinti prieigos rakto %1 – %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
-msgstr "Atnaujinimo prieigos raktas nepasiekiamas – iš naujo įgalioti"
+msgstr "Atnaujinimo prieigos rakto nėra – autorizuokite iš naujo"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Žetonas atnaujintas %1"
+msgstr "Prieigos raktas atnaujintas %1"

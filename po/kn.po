@@ -19,7 +19,7 @@ msgid "Not authorized"
 msgstr "ಅಧಿಕೃತವಾಗಿಲ್ಲ"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "ದೃಢೀಕರಣ ಸಮಸ್ಯೆ - ಮರು-ಅಧಿಕಾರ"
+msgstr "ದೃಢೀಕರಣ ಸಮಸ್ಯೆ — ಮರು-ದೃಢೀಕರಿಸಿ"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
 msgstr "ಟೋಕನ್ ಅವಧಿ ಮೀರಿದೆ - ರಿಫ್ರೆಶ್ ಅಗತ್ಯವಿದೆ"
@@ -28,10 +28,10 @@ msgid "unknown"
 msgstr "ಅಜ್ಞಾತ"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "ಅಧಿಕೃತ (ಬಳಕೆದಾರ: %1 )"
+msgstr "ಅಧಿಕೃತ (ಬಳಕೆದಾರ: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
-msgstr "ಗ್ರಾಹಕ ID:"
+msgstr "ಕ್ಲೈಂಟ್ ID:"
 #: package/contents/ui/configGeneral.qml:90
 msgid "From dev.fitbit.com/apps"
 msgstr "dev.fitbit.com/apps ನಿಂದ"
@@ -56,7 +56,7 @@ msgid "Refresh interval (minutes):"
 msgstr "ರಿಫ್ರೆಶ್ ಮಧ್ಯಂತರ (ನಿಮಿಷಗಳು):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ: Fitbit ದರ ಮಿತಿಗಳಲ್ಲಿ ಉಳಿಯಲು 15-30 ನಿಮಿಷಗಳು"
+msgstr "ಶಿಫಾರಸು: 15–30 ನಿಮಿಷಗಳು, Fitbit ವಿನಂತಿ ಮಿತಿಗಳನ್ನು ಮೀರದಂತೆ"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
 msgstr "ಪ್ರದರ್ಶನ"
@@ -68,14 +68,14 @@ msgid "Kilometers (km)"
 msgstr "ಕಿಲೋಮೀಟರ್‌ಗಳು (ಕಿಮೀ)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "ಮೈಲಿಗಳು (ಮೈಲಿ)"
+msgstr "ಮೈಲಿಗಳು (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
 msgstr "ಗೋಚರಿಸುವ ಮೆಟ್ರಿಕ್‌ಗಳು"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "ಹಂತಗಳು"
+msgstr "ಹೆಜ್ಜೆಗಳು"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
@@ -107,7 +107,7 @@ msgid "Authorization:"
 msgstr "ಅಧಿಕಾರ:"
 #: package/contents/ui/configGeneral.qml:247
 msgid "Cancel"
-msgstr "ರದ್ದುಮಾಡು"
+msgstr "ರದ್ದುಮಾಡಿ"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
 msgstr "Fitbit ನೊಂದಿಗೆ ಮರು-ಅಧಿಕಾರ ನೀಡಿ"
@@ -119,7 +119,7 @@ msgid "Authorize manually (copy & paste)"
 msgstr "ಹಸ್ತಚಾಲಿತವಾಗಿ ದೃಢೀಕರಿಸಿ (ನಕಲಿಸಿ ಮತ್ತು ಅಂಟಿಸಿ)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "ಬ್ರೌಸರ್ ಸ್ಥಳೀಯ ಹೋಸ್ಟ್ ಅನ್ನು ತಲುಪಲು ಸಾಧ್ಯವಾಗದಿದ್ದರೆ ಇದನ್ನು ಬಳಸಿ (ಸ್ಯಾಂಡ್‌ಬಾಕ್ಸ್ ಮಾಡಿದ ಬ್ರೌಸರ್, ರಿಮೋಟ್ ಸೆಷನ್, ಅಥವಾ ಪೈಥಾನ್ ಇಲ್ಲ)"
+msgstr "ಬ್ರೌಸರ್ localhost ಅನ್ನು ತಲುಪಲು ಸಾಧ್ಯವಾಗದಿದ್ದರೆ ಇದನ್ನು ಬಳಸಿ (ಸ್ಯಾಂಡ್‌ಬಾಕ್ಸ್ ಮಾಡಿದ ಬ್ರೌಸರ್, ರಿಮೋಟ್ ಸೆಷನ್, ಅಥವಾ Python ಇಲ್ಲ)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "ಹಂತ 1:"
@@ -143,10 +143,10 @@ msgid "Redirect URL or code:"
 msgstr "ಮರುನಿರ್ದೇಶನ URL ಅಥವಾ ಕೋಡ್:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:.../callback?code=..."
+msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "ಸಂಪೂರ್ಣ"
+msgstr "ಪೂರ್ಣಗೊಳಿಸಿ"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "ಹಸ್ತಚಾಲಿತ ಅಧಿಕಾರವನ್ನು ರದ್ದುಗೊಳಿಸಿ"
@@ -158,49 +158,49 @@ msgid "No access token"
 msgstr "ಪ್ರವೇಶ ಟೋಕನ್ ಇಲ್ಲ"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
-msgstr "ನೆಟ್‌ವರ್ಕ್ ದೋಷ - ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ"
+msgstr "ನೆಟ್‌ವರ್ಕ್ ದೋಷ — ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "%1 ನಲ್ಲಿ ನೆಟ್‌ವರ್ಕ್ ದೋಷ"
+msgstr "%1 ಕ್ಕೆ ನೆಟ್‌ವರ್ಕ್ ದೋಷ"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "%1 ನಲ್ಲಿ ಟೋಕನ್ ಅವಧಿ ಮುಗಿದಿದೆ - ರಿಫ್ರೆಶ್"
+msgstr "%1 ಕ್ಕೆ ಟೋಕನ್ ಅವಧಿ ಮುಗಿದಿದೆ — ರಿಫ್ರೆಶ್ ಆಗುತ್ತಿದೆ"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "ದರ ಸೀಮಿತವಾಗಿದೆ - ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+msgstr "ವಿನಂತಿ ಮಿತಿ ಮೀರಿದೆ — ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "%1 ನಲ್ಲಿ ದರ ಸೀಮಿತವಾಗಿದೆ - ಕ್ಯಾಶ್ ಮಾಡಲಾದ ಡೇಟಾವನ್ನು ತೋರಿಸುತ್ತದೆ"
+msgstr "%1 ಕ್ಕೆ ವಿನಂತಿ ಮಿತಿ ಮೀರಿದೆ — ಕ್ಯಾಶ್ ಮಾಡಲಾದ ಡೇಟಾವನ್ನು ತೋರಿಸಲಾಗುತ್ತಿದೆ"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit ಸರ್ವರ್ ದೋಷ (HTTP %1 )"
+msgstr "Fitbit ಸರ್ವರ್ ದೋಷ (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "%2 ನಲ್ಲಿ ಸರ್ವರ್ ದೋಷ (HTTP %1 )."
+msgstr "%2 ಕ್ಕೆ ಸರ್ವರ್ ದೋಷ (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 ವಿಫಲವಾಗಿದೆ (HTTP %2 )"
+msgstr "%1 ವಿಫಲವಾಗಿದೆ (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "%2 ನಲ್ಲಿ ದೋಷ (HTTP %1 )."
+msgstr "%2 ಕ್ಕೆ ದೋಷ (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "ವಿನಂತಿಯ ಸಮಯ ಮೀರಿದೆ - ನಿಮ್ಮ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "%1 ನಲ್ಲಿ ಸಮಯ ಮೀರಿದೆ"
+msgstr "%1 ಕ್ಕೆ ಸಮಯ ಮೀರಿದೆ"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "ಚಟುವಟಿಕೆಯನ್ನು ಪಡೆಯುವುದು"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "ಸರಿ — %1 ನಲ್ಲಿ ನವೀಕರಿಸಲಾಗಿದೆ"
+msgstr "ಸರಿ — %1 ಕ್ಕೆ ನವೀಕರಿಸಲಾಗಿದೆ"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "ಚಟುವಟಿಕೆ ಡೇಟಾವನ್ನು ಪಾರ್ಸ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "%1 ನಲ್ಲಿ ಪಾರ್ಸ್ ದೋಷ"
+msgstr "%1 ಕ್ಕೆ ಪಾರ್ಸ್ ದೋಷ"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "ಅಜ್ಞಾತ ದೋಷ"
@@ -216,10 +216,10 @@ msgid "Authorization canceled"
 msgstr "ಅಧಿಕಾರ ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "ಟೋಕನ್ ರಿಫ್ರೆಶ್ ಸಮಯದಲ್ಲಿ ನೆಟ್‌ವರ್ಕ್ ದೋಷ"
@@ -246,7 +246,7 @@ msgid "Authorization was denied"
 msgstr "ಅಧಿಕಾರ ನಿರಾಕರಿಸಲಾಗಿದೆ"
 #: package/contents/ui/FitbitOAuth.qml:372
 msgid "Authorization failed (state mismatch) — please try again"
-msgstr "ದೃಢೀಕರಣ ವಿಫಲವಾಗಿದೆ (ಸ್ಟೇಟ್ ಅಸಾಮರಸ್ಯ) — ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+msgstr "ದೃಢೀಕರಣ ವಿಫಲವಾಗಿದೆ (state ಹೊಂದಾಣಿಕೆಯಾಗಿಲ್ಲ) — ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
 #: package/contents/ui/FitbitOAuth.qml:376
 msgid "No authorization code found in the pasted text"
 msgstr "ಅಂಟಿಸಿದ ಪಠ್ಯದಲ್ಲಿ ಯಾವುದೇ ದೃಢೀಕರಣ ಕೋಡ್ ಕಂಡುಬಂದಿಲ್ಲ"
@@ -268,7 +268,7 @@ msgstr "ಟೋಕನ್ ವಿನಿಮಯ ವಿಫಲವಾಗಿದೆ - ಅ�
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
-msgstr "%1 ಮೈ"
+msgstr "%1 mi"
 #: package/contents/ui/FullRepresentation.qml:42
 msgctxt "distance in kilometers"
 msgid "%1 km"
@@ -279,7 +279,7 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "ಹಳಸಿದ"
+msgstr "ಹಳೆಯ ಡೇಟಾ"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "ಇಂದು"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%2 ನಲ್ಲಿ %1 ಉಳಿದಿದೆ"
+msgstr "%2 ರಲ್ಲಿ %1 ಉಳಿದಿದೆ"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "ಯಾವುದೇ ಹಂತದ ಗುರಿಯನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ"
+msgstr "ಹೆಜ್ಜೆ ಗುರಿಯನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "ಸಕ್ರಿಯ"
+msgstr "ಸಕ್ರಿಯತೆ"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 ನಿಮಿಷ"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "ವಿಶ್ರಾಂತಿ HR"
+msgstr "ವಿಶ್ರಾಂತಿ ಹೃದಯ ಬಡಿತ"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
-msgstr "%1 ಬಿಪಿಎಂ"
+msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "%1 ನವೀಕರಿಸಲಾಗಿದೆ"
+msgstr "%1 ಕ್ಕೆ ನವೀಕರಿಸಲಾಗಿದೆ"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "ಸಂಪರ್ಕಗೊಂಡಿಲ್ಲ"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "ಹಂತಗಳು: %1 | ಕ್ಯಾಲ್: %2 | ಜಿಲ್ಲೆ: %3\nನವೀಕರಿಸಲಾಗಿದೆ: %4"
+msgstr "ಹೆಜ್ಜೆಗಳು: %1 | ಕ್ಯಾಲೊರಿ: %2 | ದೂರ: %3\nನವೀಕರಿಸಲಾಗಿದೆ: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "%1 ನಲ್ಲಿ ಅಧಿಕಾರದ ಅವಧಿ ಮುಗಿದಿದೆ - ದಯವಿಟ್ಟು ಮರು-ಅಧಿಕಾರ ನೀಡಿ"
+msgstr "%1 ಕ್ಕೆ ಅಧಿಕಾರದ ಅವಧಿ ಮುಗಿದಿದೆ — ದಯವಿಟ್ಟು ಮರು-ಅಧಿಕಾರ ನೀಡಿ"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "%1 - %2 ನಲ್ಲಿ ಟೋಕನ್ ರಿಫ್ರೆಶ್ ವಿಫಲವಾಗಿದೆ"
+msgstr "%1 ಕ್ಕೆ ಟೋಕನ್ ರಿಫ್ರೆಶ್ ವಿಫಲವಾಗಿದೆ — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "ಯಾವುದೇ ರಿಫ್ರೆಶ್ ಟೋಕನ್ ಲಭ್ಯವಿಲ್ಲ - ದಯವಿಟ್ಟು ಮರು-ಅಧಿಕಾರ ನೀಡಿ"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "%1 ನಲ್ಲಿ ಟೋಕನ್ ರಿಫ್ರೆಶ್ ಮಾಡಲಾಗಿದೆ"
+msgstr "%1 ಕ್ಕೆ ಟೋಕನ್ ರಿಫ್ರೆಶ್ ಮಾಡಲಾಗಿದೆ"

@@ -259,7 +259,7 @@ msgstr "Zeitüberschreitung um %1"
 
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
-msgstr "Aktivität abrufen"
+msgstr "Abruf der Aktivitätsdaten"
 
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"

@@ -13,22 +13,22 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "כְּלָלִי"
+msgstr "כללי"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
 msgstr "לא מורשה"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "בעיית הרשאה - אישור מחדש"
+msgstr "בעיית הרשאה — יש לאשר מחדש"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
 msgstr "פג תוקף האסימון - נדרש רענון"
 #: package/contents/ui/configGeneral.qml:60
 msgid "unknown"
-msgstr "לֹא יְדוּעַ"
+msgstr "לא ידוע"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "מורשה (משתמש: %1 )"
+msgstr "מורשה (משתמש: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "מזהה לקוח:"
@@ -40,26 +40,26 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "מזהה לקוח OAuth 2.0 מהרישום של אפליקציית Fitbit"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "כתובת אתר להתקשרות חוזרת:"
+msgstr "כתובת Callback:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
 msgstr "העתק ללוח"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "יציאת התקשרות חוזרת:"
+msgstr "פורט Callback:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "הדבק את כתובת האתר להתקשרות חזרה בהגדרות אפליקציית Fitbit שלך בכתובת dev.fitbit.com"
+msgstr "הדבק את כתובת ה-Callback בהגדרות אפליקציית Fitbit שלך ב-dev.fitbit.com"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
 msgstr "מרווח רענון (דקות):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "מומלץ: 15-30 דקות להישאר בגבולות קצב Fitbit"
+msgstr "מומלץ: 15–30 דקות כדי לא לחרוג ממגבלות הבקשות של Fitbit"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "לְהַצִיג"
+msgstr "תצוגה"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "יחידת מרחק:"
@@ -68,14 +68,14 @@ msgid "Kilometers (km)"
 msgstr "קילומטרים (ק\"מ)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "מיילים (מייל)"
+msgstr "מיילים (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
 msgstr "מדדים גלויים"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "שלבים"
+msgstr "צעדים"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
@@ -83,7 +83,7 @@ msgstr "קלוריות"
 #: package/contents/ui/configGeneral.qml:201
 #: package/contents/ui/FullRepresentation.qml:271
 msgid "Distance"
-msgstr "מֶרְחָק"
+msgstr "מרחק"
 #: package/contents/ui/configGeneral.qml:208
 msgid "Active minutes"
 msgstr "דקות פעילות"
@@ -95,7 +95,7 @@ msgid "Fitbit Account"
 msgstr "חשבון Fitbit"
 #: package/contents/ui/configGeneral.qml:225
 msgid "Status:"
-msgstr "סטָטוּס:"
+msgstr "מצב:"
 #: package/contents/ui/configGeneral.qml:233
 msgid "Last request:"
 msgstr "בקשה אחרונה:"
@@ -104,10 +104,10 @@ msgid "No requests yet"
 msgstr "עדיין אין בקשות"
 #: package/contents/ui/configGeneral.qml:245
 msgid "Authorization:"
-msgstr "הַרשָׁאָה:"
+msgstr "הרשאה:"
 #: package/contents/ui/configGeneral.qml:247
 msgid "Cancel"
-msgstr "לְבַטֵל"
+msgstr "ביטול"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
 msgstr "הרשאה מחדש באמצעות Fitbit"
@@ -125,10 +125,10 @@ msgid "Step 1:"
 msgstr "שלב 1:"
 #: package/contents/ui/configGeneral.qml:286
 msgid "Open this URL in a browser and approve access:"
-msgstr "פתח את כתובת האתר הזו בדפדפן ואשר גישה:"
+msgstr "פתח את כתובת ה-URL הזו בדפדפן ואשר גישה:"
 #: package/contents/ui/configGeneral.qml:293
 msgid "Authorization URL:"
-msgstr "כתובת אתר הרשאה:"
+msgstr "כתובת URL להרשאה:"
 #: package/contents/ui/configGeneral.qml:320
 msgid "Open in browser"
 msgstr "פתח בדפדפן"
@@ -137,16 +137,16 @@ msgid "Step 2:"
 msgstr "שלב 2:"
 #: package/contents/ui/configGeneral.qml:330
 msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "לאחר האישור, העתק את כתובת האתר של שורת הכתובת והדבק אותה למטה:"
+msgstr "לאחר האישור, העתק את הכתובת משורת הכתובת והדבק אותה למטה:"
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
-msgstr "כתובת אתר או קוד להפניה מחדש:"
+msgstr "כתובת URL להפניה או קוד:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "לְהַשְׁלִים"
+msgstr "סיום"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "בטל הרשאה ידנית"
@@ -161,46 +161,46 @@ msgid "Network error — check your connection"
 msgstr "שגיאת רשת - בדוק את החיבור שלך"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "שגיאת רשת ב- %1"
+msgstr "שגיאת רשת ב-%1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "תוקף האסימון פג ב- %1 - מרענן"
+msgstr "תוקף האסימון פג ב-%1 — מרענן"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "שיעור מוגבל - נסה שוב מאוחר יותר"
+msgstr "חריגה ממגבלת הבקשות — נסה שוב מאוחר יותר"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "שיעור מוגבל ב- %1 — מציג נתונים במטמון"
+msgstr "חריגה ממגבלת הבקשות ב-%1 — מוצגים נתונים מהמטמון"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "שגיאת שרת Fitbit (HTTP %1 )"
+msgstr "שגיאת שרת Fitbit (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "שגיאת שרת (HTTP %1 ) ב- %2"
+msgstr "שגיאת שרת (HTTP %1) ב-%2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 נכשל (HTTP %2 )"
+msgstr "%1 נכשל (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "שגיאה (HTTP %1 ) ב- %2"
+msgstr "שגיאה (HTTP %1) ב-%2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "תם הזמן הקצוב לבקשה - בדוק את החיבור שלך"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "תם הזמן הקצוב ב- %1"
+msgstr "תם הזמן הקצוב ב-%1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "אחזור פעילות"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "בסדר - עודכן ב- %1"
+msgstr "OK — עודכן ב-%1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "ניתוח נתוני הפעילות נכשל"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "שגיאת ניתוח ב- %1"
+msgstr "שגיאת ניתוח ב-%1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "שגיאה לא ידועה"
@@ -216,10 +216,10 @@ msgid "Authorization canceled"
 msgstr "ההרשאה בוטלה"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "שגיאת רשת במהלך רענון אסימון"
@@ -237,7 +237,7 @@ msgid "Token refresh failed — invalid response"
 msgstr "רענון האסימון נכשל - תגובה לא חוקית"
 #: package/contents/ui/FitbitOAuth.qml:341
 msgid "Paste the redirect URL or authorization code first"
-msgstr "הדבק תחילה את כתובת האתר להפניה מחדש או את קוד ההרשאה"
+msgstr "הדבק תחילה את כתובת ההפניה או את קוד ההרשאה"
 #: package/contents/ui/FitbitOAuth.qml:345
 msgid "Start the manual authorization first"
 msgstr "התחל תחילה את ההרשאה הידנית"
@@ -279,10 +279,10 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "לֹא טָרִי"
+msgstr "לא עדכני"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
-msgstr "הַיוֹם"
+msgstr "היום"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
 msgstr "חבר את Fitbit"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 שנותר מ- %2"
+msgstr "נותרו %1 מתוך %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "לא נקבעה יעד צעד"
+msgstr "לא הוגדר יעד צעדים"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "פָּעִיל"
+msgstr "פעילות"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 דקות"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "משאבי אנוש במנוחה"
+msgstr "דופק במנוחה"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "מעודכן %1"
+msgstr "עודכן ב-%1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "לא מחובר"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "שלבים: %1 | Cal: %2 | מרחק: %3\nעודכן: %4"
+msgstr "צעדים: %1 | קלוריות: %2 | מרחק: %3\nעודכן: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "תוקף ההרשאה פג ב- %1 - אנא אשר מחדש"
+msgstr "תוקף ההרשאה פג ב-%1 — יש לאשר מחדש"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "רענון האסימון נכשל ב- %1 — %2"
+msgstr "רענון האסימון נכשל ב-%1 — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "אין אסימון רענון זמין - אנא אשר מחדש"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "טוקן רענן ב- %1"
+msgstr "האסימון רוענן ב-%1"

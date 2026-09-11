@@ -16,10 +16,10 @@ msgid "General"
 msgstr "አጠቃላይ"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
-msgstr "አልተፈቀደም።"
+msgstr "አልተፈቀደም"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "የፈቃድ ችግር - እንደገና መፍቀድ"
+msgstr "የፈቃድ ችግር — እንደገና ይፍቀዱ"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
 msgstr "ማስመሰያ ጊዜው አልፎበታል - ማደስ ያስፈልጋል"
@@ -28,10 +28,10 @@ msgid "unknown"
 msgstr "የማይታወቅ"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "የተፈቀደ (ተጠቃሚ፡ %1 )"
+msgstr "ተፈቅዷል (ተጠቃሚ፡ %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
-msgstr "የደንበኛ መታወቂያ፡-"
+msgstr "የደንበኛ መታወቂያ፡"
 #: package/contents/ui/configGeneral.qml:90
 msgid "From dev.fitbit.com/apps"
 msgstr "ከ dev.fitbit.com/apps"
@@ -53,10 +53,10 @@ msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
 msgstr "የመልሶ መደወል ዩአርኤልን ወደ Fitbit መተግበሪያዎ ቅንብሮች በdev.fitbit.com ላይ ይለጥፉ"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
-msgstr "የአድስ ክፍተት (ደቂቃዎች)"
+msgstr "የማደሻ ክፍተት (ደቂቃዎች)፡"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "የሚመከር፡ በ Fitbit ተመን ገደብ ውስጥ ለመቆየት ከ15-30 ደቂቃዎች"
+msgstr "የሚመከር፡ የFitbit የጥያቄ ገደቦችን ላለማለፍ 15–30 ደቂቃዎች"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
 msgstr "ማሳያ"
@@ -68,7 +68,7 @@ msgid "Kilometers (km)"
 msgstr "ኪሎሜትሮች (ኪሜ)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "ማይል (ማይ)"
+msgstr "ማይል (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
 msgstr "የሚታዩ መለኪያዎች"
@@ -98,7 +98,7 @@ msgid "Status:"
 msgstr "ሁኔታ፡"
 #: package/contents/ui/configGeneral.qml:233
 msgid "Last request:"
-msgstr "የመጨረሻ ጥያቄ፡-"
+msgstr "የመጨረሻ ጥያቄ፡"
 #: package/contents/ui/configGeneral.qml:235
 msgid "No requests yet"
 msgstr "እስካሁን ምንም ጥያቄዎች የሉም"
@@ -119,7 +119,7 @@ msgid "Authorize manually (copy & paste)"
 msgstr "በእጅ ፍቀድ (ቅዳ እና ለጥፍ)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "አሳሹ localhost (ማጠሪያ ያለው አሳሽ፣ የርቀት ክፍለ ጊዜ ወይም ፓይዘን የለም) መድረስ ካልቻለ ይህንን ይጠቀሙ።"
+msgstr "አሳሹ localhostን መድረስ ካልቻለ ይህንን ይጠቀሙ (የተገደበ አሳሽ፣ የርቀት ክፍለ ጊዜ ወይም Python የለም)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "ደረጃ 1፡"
@@ -137,16 +137,16 @@ msgid "Step 2:"
 msgstr "ደረጃ 2፡"
 #: package/contents/ui/configGeneral.qml:330
 msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "ካጸደቁ በኋላ የአድራሻ አሞሌውን ዩአርኤል ይቅዱ እና ከታች ይለጥፉት፡-"
+msgstr "ካጸደቁ በኋላ የአድራሻ አሞሌውን ዩአርኤል ይቅዱ እና ከታች ይለጥፉት፡"
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
-msgstr "URL ወይም ኮድ አዙር፡"
+msgstr "የማዞሪያ ዩአርኤል ወይም ኮድ፡"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "ተጠናቀቀ"
+msgstr "አጠናቅቅ"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "በእጅ ፈቃድ ሰርዝ"
@@ -155,71 +155,71 @@ msgid "Authorization successful!"
 msgstr "ፈቃድ ተሳክቷል!"
 #: package/contents/ui/FitbitApi.qml:33
 msgid "No access token"
-msgstr "የመዳረሻ ማስመሰያ የለም።"
+msgstr "የመዳረሻ ማስመሰያ የለም"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
 msgstr "የአውታረ መረብ ስህተት - ግንኙነትዎን ያረጋግጡ"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "የአውታረ መረብ ስህተት በ %1"
+msgstr "የአውታረ መረብ ስህተት (%1)"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "ማስመሰያ በ %1 ላይ ጊዜው አልፎበታል - የሚያድስ"
+msgstr "ማስመሰያው ጊዜው አልፎበታል (%1) — በማደስ ላይ"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "ደረጃ ተገድቧል - ቆይተው እንደገና ይሞክሩ"
+msgstr "የጥያቄ ገደብ ታልፏል — ቆይተው እንደገና ይሞክሩ"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "በ %1 ላይ የተገደበ መጠን - የተሸጎጠ ውሂብ በማሳየት ላይ"
+msgstr "የጥያቄ ገደብ ታልፏል (%1) — የተሸጎጠ ውሂብ በማሳየት ላይ"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "የ Fitbit አገልጋይ ስህተት (HTTP %1 )"
+msgstr "የFitbit አገልጋይ ስህተት (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "የአገልጋይ ስህተት (HTTP %1 ) በ %2"
+msgstr "የአገልጋይ ስህተት (HTTP %1፣ %2)"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 አልተሳካም (HTTP %2 )"
+msgstr "%1 አልተሳካም (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "በ %2 ላይ ስህተት (HTTP %1 )"
+msgstr "ስህተት (HTTP %1፣ %2)"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "ጥያቄው ጊዜው አልፎበታል - ግንኙነትዎን ያረጋግጡ"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "በ %1 ጊዜው አልፎበታል።"
+msgstr "ጊዜው አልፎበታል (%1)"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "የእንቅስቃሴ ማምጣት"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "እሺ - በ %1 ተዘምኗል"
+msgstr "እሺ — በ%1 ተዘምኗል"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
-msgstr "የእንቅስቃሴ ውሂብን መተንተን አልተሳካም።"
+msgstr "የእንቅስቃሴ ውሂብን መተንተን አልተሳካም"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "በ %1 ላይ ስህተትን ይንኩ።"
+msgstr "የመተንተን ስህተት (%1)"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "ያልታወቀ ስህተት"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "ምላሽን ማረጋገጥ አልተሳካም።"
+msgstr "የፈቃድ ምላሹን መተንተን አልተሳካም"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
 msgstr "ልክ ያልሆነ የደንበኛ መታወቂያ ቅርጸት"
 #: package/contents/ui/FitbitOAuth.qml:150
 msgid "Authorization canceled"
-msgstr "ፍቃድ ተሰርዟል።"
+msgstr "ፍቃድ ተሰርዟል"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (ኤችቲቲፒ %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "የማስመሰያ እድሳት ጊዜ የአውታረ መረብ ስህተት"
@@ -228,10 +228,10 @@ msgid "Refresh token invalid — please re-authorize"
 msgstr "የማደስ ማስመሰያ ልክ ያልሆነ - እባክዎን እንደገና ይፍቀዱ"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
-msgstr "ማስመሰያ ማደስ አልተሳካም።"
+msgstr "ማስመሰያ ማደስ አልተሳካም"
 #: package/contents/ui/FitbitOAuth.qml:283
 msgid "Refresh failed — missing tokens"
-msgstr "ማደስ አልተሳካም - የጎደሉ ምልክቶች"
+msgstr "ማደስ አልተሳካም — ማስመሰያዎች የሉም"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
 msgstr "ማስመሰያ ማደስ አልተሳካም - ልክ ያልሆነ ምላሽ"
@@ -243,32 +243,32 @@ msgid "Start the manual authorization first"
 msgstr "መጀመሪያ የእጅ ፈቃድን ጀምር"
 #: package/contents/ui/FitbitOAuth.qml:365
 msgid "Authorization was denied"
-msgstr "ፍቃድ ተከልክሏል።"
+msgstr "ፍቃድ ተከልክሏል"
 #: package/contents/ui/FitbitOAuth.qml:372
 msgid "Authorization failed (state mismatch) — please try again"
-msgstr "ፈቃድ አልተሳካም (የግዛቱ አለመመጣጠን) - እባክዎ እንደገና ይሞክሩ"
+msgstr "ፈቃድ አልተሳካም (state አይዛመድም) — እባክዎ እንደገና ይሞክሩ"
 #: package/contents/ui/FitbitOAuth.qml:376
 msgid "No authorization code found in the pasted text"
-msgstr "በተለጠፈው ጽሑፍ ውስጥ ምንም የፍቃድ ኮድ አልተገኘም።"
+msgstr "በተለጠፈው ጽሑፍ ውስጥ ምንም የፍቃድ ኮድ አልተገኘም"
 #: package/contents/ui/FitbitOAuth.qml:386
 msgid "Network error during token exchange"
-msgstr "በቶከን ልውውጥ ወቅት የአውታረ መረብ ስህተት"
+msgstr "በማስመሰያ ልውውጥ ወቅት የአውታረ መረብ ስህተት"
 #: package/contents/ui/FitbitOAuth.qml:387
 msgid "Authorization code invalid or expired — please try again"
 msgstr "የፈቀዳ ኮድ ልክ ያልሆነ ወይም ጊዜው አልፎበታል - እባክዎ እንደገና ይሞክሩ"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
-msgstr "የማስመሰያ ልውውጥ አልተሳካም።"
+msgstr "የማስመሰያ ልውውጥ አልተሳካም"
 #: package/contents/ui/FitbitOAuth.qml:389
 msgid "Token exchange failed — missing tokens"
-msgstr "የማስመሰያ ልውውጥ አልተሳካም - የጠፉ ቶከኖች"
+msgstr "የማስመሰያ ልውውጥ አልተሳካም — ማስመሰያዎች የሉም"
 #: package/contents/ui/FitbitOAuth.qml:390
 msgid "Token exchange failed — invalid response"
 msgstr "የማስመሰያ ልውውጥ አልተሳካም - ልክ ያልሆነ ምላሽ"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
-msgstr "%1 ማ"
+msgstr "%1 mi"
 #: package/contents/ui/FullRepresentation.qml:42
 msgctxt "distance in kilometers"
 msgid "%1 km"
@@ -279,7 +279,7 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "የቆየ"
+msgstr "ያልተዘመነ"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "ዛሬ"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 ከ %2 ይቀራል"
+msgstr "%1 ከ%2 ይቀራል"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "ምንም የእርምጃ ግብ አልተቀመጠም።"
+msgstr "ምንም የእርምጃ ግብ አልተቀመጠም"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "ንቁ"
+msgstr "እንቅስቃሴ"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 ደቂቃ"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "የማረፊያ HR"
+msgstr "የእረፍት ልብ ምት"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
-msgstr "%1 ቢፒኤም"
+msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "%1 ተዘምኗል"
+msgstr "በ%1 ተዘምኗል"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
-msgstr "አልተገናኘም።"
+msgstr "አልተገናኘም"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "ደረጃዎች፡ %1 | ካል፡ %2 | Dist: %3\nየዘመነ፡ %4"
+msgstr "እርምጃዎች፡ %1 | ካሎሪ፡ %2 | ርቀት፡ %3\nየዘመነ፡ %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "ፍቃድ በ %1 ላይ አብቅቷል - እባክዎን እንደገና ይፍቀዱ"
+msgstr "ፍቃድ በ%1 አብቅቷል — እባክዎን እንደገና ይፍቀዱ"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "የማስመሰያ ማደስ በ %1 - %2 አልተሳካም።"
+msgstr "ማስመሰያ ማደስ አልተሳካም (%1) — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "ምንም የማደስ ማስመሰያ የለም - እባክዎን እንደገና ይፍቀዱ"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "ማስመሰያ በ %1 ታድሷል"
+msgstr "ማስመሰያ በ%1 ታድሷል"

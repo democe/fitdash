@@ -13,22 +13,22 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "Mkuu"
+msgstr "Jumla"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
 msgstr "Haijaidhinishwa"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "Tatizo la uidhinishaji - ruhusu tena"
+msgstr "Tatizo la uidhinishaji — idhinisha tena"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
-msgstr "Tokeni imeisha muda wake - uonyeshaji upya unahitajika"
+msgstr "Tokeni imeisha muda — inahitaji kusasishwa"
 #: package/contents/ui/configGeneral.qml:60
 msgid "unknown"
 msgstr "haijulikani"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Imeidhinishwa (Mtumiaji: %1 )"
+msgstr "Imeidhinishwa (Mtumiaji: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "Kitambulisho cha Mteja:"
@@ -40,23 +40,23 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "Kitambulisho cha Mteja cha OAuth 2.0 kutoka kwa usajili wako wa programu ya Fitbit"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "URL ya kupiga simu:"
+msgstr "URL ya callback:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
 msgstr "Nakili kwenye ubao wa kunakili"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "Mlango wa kupiga simu:"
+msgstr "Mlango wa callback:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "Bandika URL ya kupiga simu kwenye mipangilio ya programu yako ya Fitbit kwenye dev.fitbit.com"
+msgstr "Bandika URL ya callback kwenye mipangilio ya programu yako ya Fitbit kwenye dev.fitbit.com"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
-msgstr "Muda wa kuonyesha upya (dakika):"
+msgstr "Muda wa kusasisha (dakika):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Imependekezwa: Dakika 15–30 ili usalie ndani ya viwango vya viwango vya Fitbit"
+msgstr "Inapendekezwa: dakika 15–30 ili usizidi vikomo vya maombi vya Fitbit"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
 msgstr "Onyesho"
@@ -89,7 +89,7 @@ msgid "Active minutes"
 msgstr "Dakika amilifu"
 #: package/contents/ui/configGeneral.qml:215
 msgid "Resting heart rate"
-msgstr "Kiwango cha moyo cha kupumzika"
+msgstr "Mapigo ya moyo ukiwa umepumzika"
 #: package/contents/ui/configGeneral.qml:221
 msgid "Fitbit Account"
 msgstr "Akaunti ya Fitbit"
@@ -116,7 +116,7 @@ msgid "Authorize with Fitbit"
 msgstr "Idhinisha na Fitbit"
 #: package/contents/ui/configGeneral.qml:264
 msgid "Authorize manually (copy & paste)"
-msgstr "Idhinisha wewe mwenyewe (nakili na ubandike)"
+msgstr "Idhinisha mwenyewe (nakili na ubandike)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
 msgstr "Tumia hii ikiwa kivinjari hakiwezi kufikia localhost (kivinjari cha sandbox, kikao cha mbali, au hakuna Python)"
@@ -140,7 +140,7 @@ msgid "After approving, copy the address bar URL and paste it below:"
 msgstr "Baada ya kuidhinisha, nakili URL ya upau wa anwani na ubandike hapa chini:"
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
-msgstr "Elekeza upya URL au msimbo:"
+msgstr "URL ya kuelekeza upya au msimbo:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
@@ -158,31 +158,31 @@ msgid "No access token"
 msgstr "Hakuna tokeni ya ufikiaji"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
-msgstr "Hitilafu ya mtandao - angalia muunganisho wako"
+msgstr "Hitilafu ya mtandao — angalia muunganisho wako"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "Hitilafu ya mtandao katika %1"
+msgstr "Hitilafu ya mtandao saa %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "Tokeni imeisha muda saa %1 — inaonyeshwa upya"
+msgstr "Tokeni imeisha muda saa %1 — inasasishwa"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Kiwango kikomo - jaribu tena baadaye"
+msgstr "Kikomo cha maombi kimefikiwa — jaribu tena baadaye"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Kiwango kikomo katika %1 — inaonyesha data iliyohifadhiwa"
+msgstr "Kikomo cha maombi kimefikiwa saa %1 — inaonyesha data iliyohifadhiwa"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Hitilafu ya seva ya Fitbit (HTTP %1 )"
+msgstr "Hitilafu ya seva ya Fitbit (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Hitilafu ya seva (HTTP %1 ) kwa %2"
+msgstr "Hitilafu ya seva (HTTP %1) saa %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 imeshindwa (HTTP %2 )"
+msgstr "%1 imeshindwa (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Hitilafu (HTTP %1 ) katika %2"
+msgstr "Hitilafu (HTTP %1) saa %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "Muda wa ombi umekwisha - angalia muunganisho wako"
@@ -194,13 +194,13 @@ msgid "Activity fetch"
 msgstr "Kuleta shughuli"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "SAWA - imesasishwa katika %1"
+msgstr "SAWA — imesasishwa saa %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "Imeshindwa kuchanganua data ya shughuli"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "Changanua hitilafu katika %1"
+msgstr "Hitilafu ya uchanganuzi saa %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Hitilafu isiyojulikana"
@@ -216,25 +216,25 @@ msgid "Authorization canceled"
 msgstr "Uidhinishaji umeghairiwa"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
-msgstr "Hitilafu ya mtandao wakati wa kuonyesha upya tokeni"
+msgstr "Hitilafu ya mtandao wakati wa kusasisha tokeni"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "Tokeni ya kuonyesha upya ni batili - tafadhali ruhusu tena"
+msgstr "Tokeni ya kusasisha ni batili — tafadhali idhinisha tena"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
-msgstr "Imeshindwa kuonyesha upya ishara"
+msgstr "Imeshindwa kusasisha tokeni"
 #: package/contents/ui/FitbitOAuth.qml:283
 msgid "Refresh failed — missing tokens"
-msgstr "Imeshindwa kuonyesha upya - hakuna tokeni"
+msgstr "Imeshindwa kusasisha — tokeni hazipo"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
-msgstr "Imeshindwa kuonyesha upya ishara - jibu batili"
+msgstr "Imeshindwa kusasisha tokeni — jibu batili"
 #: package/contents/ui/FitbitOAuth.qml:341
 msgid "Paste the redirect URL or authorization code first"
 msgstr "Bandika URL iliyoelekezwa kwingine au msimbo wa uidhinishaji kwanza"
@@ -249,7 +249,7 @@ msgid "Authorization failed (state mismatch) — please try again"
 msgstr "Uidhinishaji haukufaulu (hali hailingani) — tafadhali jaribu tena"
 #: package/contents/ui/FitbitOAuth.qml:376
 msgid "No authorization code found in the pasted text"
-msgstr "Hakuna nambari ya kuthibitisha iliyopatikana katika maandishi yaliyobandikwa"
+msgstr "Hakuna msimbo wa uidhinishaji uliopatikana katika maandishi yaliyobandikwa"
 #: package/contents/ui/FitbitOAuth.qml:386
 msgid "Network error during token exchange"
 msgstr "Hitilafu ya mtandao wakati wa kubadilishana tokeni"
@@ -258,13 +258,13 @@ msgid "Authorization code invalid or expired — please try again"
 msgstr "Msimbo wa uidhinishaji ni batili au umekwisha muda wake - tafadhali jaribu tena"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
-msgstr "Ubadilishanaji wa ishara umeshindwa"
+msgstr "Ubadilishanaji wa tokeni umeshindwa"
 #: package/contents/ui/FitbitOAuth.qml:389
 msgid "Token exchange failed — missing tokens"
-msgstr "Ubadilishanaji wa ishara umeshindwa - kukosa tokeni"
+msgstr "Ubadilishanaji wa tokeni umeshindwa — tokeni hazipo"
 #: package/contents/ui/FitbitOAuth.qml:390
 msgid "Token exchange failed — invalid response"
-msgstr "Ubadilishanaji wa tokeni umeshindwa - jibu batili"
+msgstr "Ubadilishanaji wa tokeni umeshindwa — jibu batili"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
@@ -279,7 +279,7 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Imechakaa"
+msgstr "Imepitwa na wakati"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Leo"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 iliyosalia kati ya %2"
+msgstr "Zimesalia %1 kati ya %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
 msgstr "Hakuna lengo la hatua lililowekwa"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Inayotumika"
+msgstr "Amilifu"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
-msgstr "dak %1"
+msgstr "Dak %1"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "HR kupumzika"
+msgstr "Mapigo ya kupumzika"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Ilisasishwa %1"
+msgstr "Ilisasishwa saa %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Haijaunganishwa"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Hatua: %1 | Kal: %2 | Wilaya: %3\nImesasishwa: %4"
+msgstr "Hatua: %1 | Kal: %2 | Umbali: %3\nImesasishwa: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Uidhinishaji umekwisha saa %1 — tafadhali ruhusu tena"
+msgstr "Uidhinishaji umekwisha saa %1 — tafadhali idhinisha tena"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Kuonyesha upya ishara kumeshindwa katika %1 — %2"
+msgstr "Kusasisha tokeni kumeshindwa saa %1 — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
-msgstr "Hakuna tokeni ya kuonyesha upya inayopatikana - tafadhali ruhusu tena"
+msgstr "Hakuna tokeni ya kusasisha inayopatikana — tafadhali idhinisha tena"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Tokeni imeonyeshwa upya katika %1"
+msgstr "Tokeni imesasishwa saa %1"

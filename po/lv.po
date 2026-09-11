@@ -13,13 +13,13 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "Ģenerālis"
+msgstr "Vispārīgi"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
 msgstr "Nav autorizēts"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "Autorizācijas problēma — atkārtoti autorizēt"
+msgstr "Autorizācijas problēma — autorizējiet atkārtoti"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
 msgstr "Marķiera derīguma termiņš beidzies — nepieciešams atsvaidzināt"
@@ -28,7 +28,7 @@ msgid "unknown"
 msgstr "nezināms"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Autorizēts (lietotājs: %1 )"
+msgstr "Autorizēts (lietotājs: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "Klienta ID:"
@@ -40,26 +40,26 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "OAuth 2.0 klienta ID no jūsu Fitbit lietotnes reģistrācijas"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "Atzvanīšanas URL:"
+msgstr "Atzvanes URL:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
 msgstr "Kopēt starpliktuvē"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "Atzvanīšanas ports:"
+msgstr "Atzvanes ports:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "Ielīmējiet atzvanīšanas URL savas Fitbit lietotnes iestatījumos vietnē dev.fitbit.com"
+msgstr "Ielīmējiet atzvanes URL savas Fitbit lietotnes iestatījumos vietnē dev.fitbit.com"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
 msgstr "Atsvaidzināšanas intervāls (minūtes):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Ieteicams: 15–30 minūtes, lai ievērotu Fitbit ātruma ierobežojumus"
+msgstr "Ieteicams: 15–30 minūtes, lai nepārsniegtu Fitbit pieprasījumu ierobežojumus"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Displejs"
+msgstr "Attēlojums"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "Attāluma mērvienība:"
@@ -68,10 +68,10 @@ msgid "Kilometers (km)"
 msgstr "Kilometri (km)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "Jūdzes (jūdzes)"
+msgstr "Jūdzes (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
-msgstr "Redzama metrika"
+msgstr "Redzamie rādītāji"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
@@ -110,19 +110,19 @@ msgid "Cancel"
 msgstr "Atcelt"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
-msgstr "Atkārtoti autorizējiet, izmantojot Fitbit"
+msgstr "Autorizēt atkārtoti ar Fitbit"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Authorize with Fitbit"
-msgstr "Autorizācija ar Fitbit"
+msgstr "Autorizēt ar Fitbit"
 #: package/contents/ui/configGeneral.qml:264
 msgid "Authorize manually (copy & paste)"
 msgstr "Autorizēt manuāli (kopēt un ielīmēt)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Izmantojiet šo, ja pārlūkprogramma nevar sasniegt lokālo resursdatoru (smilškastes pārlūkprogramma, attālā sesija vai bez Python)"
+msgstr "Izmantojiet šo, ja pārlūks nevar piekļūt localhost (izolēts pārlūks, attālā sesija vai nav Python)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
-msgstr "1. darbība:"
+msgstr "1. solis:"
 #: package/contents/ui/configGeneral.qml:286
 msgid "Open this URL in a browser and approve access:"
 msgstr "Atveriet šo URL pārlūkprogrammā un apstipriniet piekļuvi:"
@@ -134,19 +134,19 @@ msgid "Open in browser"
 msgstr "Atvērt pārlūkprogrammā"
 #: package/contents/ui/configGeneral.qml:329
 msgid "Step 2:"
-msgstr "2. darbība:"
+msgstr "2. solis:"
 #: package/contents/ui/configGeneral.qml:330
 msgid "After approving, copy the address bar URL and paste it below:"
 msgstr "Pēc apstiprināšanas nokopējiet adreses joslas URL un ielīmējiet to tālāk:"
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
-msgstr "Novirzīt URL vai kodu:"
+msgstr "Novirzīšanas URL vai kods:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "Pabeigts"
+msgstr "Pabeigt"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "Atcelt manuālo autorizāciju"
@@ -155,52 +155,52 @@ msgid "Authorization successful!"
 msgstr "Autorizācija ir veiksmīga!"
 #: package/contents/ui/FitbitApi.qml:33
 msgid "No access token"
-msgstr "Nav piekļuves pilnvaras"
+msgstr "Nav piekļuves marķiera"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
 msgstr "Tīkla kļūda — pārbaudiet savienojumu"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "Tīkla kļūda %1"
+msgstr "Tīkla kļūda plkst. %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "Token beidzās %1 — atsvaidzina"
+msgstr "Marķiera derīgums beidzās plkst. %1 — atsvaidzina"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Likme ierobežota — vēlāk mēģiniet vēlreiz"
+msgstr "Pārsniegts pieprasījumu ierobežojums — mēģiniet vēlreiz vēlāk"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Ātrums ierobežots %1 — tiek rādīti kešatmiņā saglabātie dati"
+msgstr "Pārsniegts pieprasījumu ierobežojums plkst. %1 — tiek rādīti kešatmiņā saglabātie dati"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit servera kļūda (HTTP %1 )"
+msgstr "Fitbit servera kļūda (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Servera kļūda (HTTP %1 ) pie %2"
+msgstr "Servera kļūda (HTTP %1) plkst. %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 neizdevās (HTTP %2 )"
+msgstr "%1 neizdevās (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Kļūda (HTTP %1 ) pie %2"
+msgstr "Kļūda (HTTP %1) plkst. %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "Pieprasījuma noildze — pārbaudiet savienojumu"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Iestājās %1 taimauts"
+msgstr "Noildze plkst. %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "Aktivitātes ielāde"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "Labi — atjaunināts %1"
+msgstr "Labi — atjaunināts plkst. %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
-msgstr "Neizdevās parsēt darbības datus"
+msgstr "Neizdevās parsēt aktivitātes datus"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "Parsēšanas kļūda %1"
+msgstr "Parsēšanas kļūda plkst. %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Nezināma kļūda"
@@ -216,25 +216,25 @@ msgid "Authorization canceled"
 msgstr "Autorizācija atcelta"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
-msgstr "Tīkla kļūda pilnvaras atsvaidzināšanas laikā"
+msgstr "Tīkla kļūda marķiera atsvaidzināšanas laikā"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "Atsvaidzināšanas pilnvara nav derīga — lūdzu, atkārtoti autorizējieties"
+msgstr "Atsvaidzināšanas marķieris nav derīgs — autorizējiet atkārtoti"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
-msgstr "Tokena atsvaidzināšana neizdevās"
+msgstr "Marķiera atsvaidzināšana neizdevās"
 #: package/contents/ui/FitbitOAuth.qml:283
 msgid "Refresh failed — missing tokens"
-msgstr "Atsvaidzināšana neizdevās — trūkst žetonu"
+msgstr "Atsvaidzināšana neizdevās — trūkst marķieru"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
-msgstr "Tokena atsvaidzināšana neizdevās — nederīga atbilde"
+msgstr "Marķiera atsvaidzināšana neizdevās — nederīga atbilde"
 #: package/contents/ui/FitbitOAuth.qml:341
 msgid "Paste the redirect URL or authorization code first"
 msgstr "Vispirms ielīmējiet novirzīšanas URL vai autorizācijas kodu"
@@ -246,7 +246,7 @@ msgid "Authorization was denied"
 msgstr "Autorizācija tika liegta"
 #: package/contents/ui/FitbitOAuth.qml:372
 msgid "Authorization failed (state mismatch) — please try again"
-msgstr "Autorizācija neizdevās (stāvokļa neatbilstība) — lūdzu, mēģiniet vēlreiz"
+msgstr "Autorizācija neizdevās (stāvokļa neatbilstība) — mēģiniet vēlreiz"
 #: package/contents/ui/FitbitOAuth.qml:376
 msgid "No authorization code found in the pasted text"
 msgstr "Ielīmētajā tekstā nav atrasts neviens autorizācijas kods"
@@ -255,16 +255,16 @@ msgid "Network error during token exchange"
 msgstr "Tīkla kļūda marķiera apmaiņas laikā"
 #: package/contents/ui/FitbitOAuth.qml:387
 msgid "Authorization code invalid or expired — please try again"
-msgstr "Autorizācijas kods nav derīgs vai beidzies derīguma termiņš — lūdzu, mēģiniet vēlreiz"
+msgstr "Autorizācijas kods nav derīgs vai ir beidzies — mēģiniet vēlreiz"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
-msgstr "Žetonu apmaiņa neizdevās"
+msgstr "Marķieru apmaiņa neizdevās"
 #: package/contents/ui/FitbitOAuth.qml:389
 msgid "Token exchange failed — missing tokens"
-msgstr "Žetonu apmaiņa neizdevās — trūkst marķieru"
+msgstr "Marķieru apmaiņa neizdevās — trūkst marķieru"
 #: package/contents/ui/FitbitOAuth.qml:390
 msgid "Token exchange failed — invalid response"
-msgstr "Žetonu apmaiņa neizdevās — nederīga atbilde"
+msgstr "Marķieru apmaiņa neizdevās — nederīga atbilde"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
@@ -279,19 +279,19 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Novecojis"
+msgstr "Novecojuši dati"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Šodien"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "Pievienojiet Fitbit"
+msgstr "Savienot ar Fitbit"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
-msgstr "Autorizējiet savu kontu iestatījumos, lai parādītu šodienas darbības."
+msgstr "Autorizējiet savu kontu iestatījumos, lai redzētu šodienas aktivitāti."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Atveriet iestatījumus"
+msgstr "Atvērt iestatījumus"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "Notiek Fitbit datu ielāde"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "Atlikušais %1 no %2"
+msgstr "Atlikuši %1 no %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "Nav uzstādīts neviens solis"
+msgstr "Soļu mērķis nav iestatīts"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Aktīvs"
+msgstr "Aktivitāte"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 min"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "Atpūtas HR"
+msgstr "Miera pulss"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Atjaunināts %1"
+msgstr "Atjaunināts plkst. %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Nav savienots"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Darbības: %1 | Cal: %2 | Attālums: %3\nAtjaunināts: %4"
+msgstr "Soļi: %1 | Kal: %2 | Att.: %3\nAtjaunināts: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Autorizācija beidzās %1 — lūdzu, atkārtoti autorizējieties"
+msgstr "Autorizācija beidzās plkst. %1 — autorizējiet atkārtoti"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Tokena atsvaidzināšana neizdevās %1 — %2"
+msgstr "Marķiera atsvaidzināšana neizdevās plkst. %1 — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
-msgstr "Atsvaidzināšanas pilnvara nav pieejama — lūdzu, atkārtoti autorizējieties"
+msgstr "Atsvaidzināšanas marķieris nav pieejams — autorizējiet atkārtoti"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Tokens ir atsvaidzināts %1"
+msgstr "Marķieris atsvaidzināts plkst. %1"

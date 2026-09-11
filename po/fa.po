@@ -13,69 +13,69 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "ژنرال"
+msgstr "عمومی"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
 msgstr "مجاز نیست"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "مشکل مجوز - مجوز مجدد"
+msgstr "مشکل در مجوز — دوباره مجوز دهید"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
-msgstr "رمز منقضی شده است - نیاز به بازخوانی است"
+msgstr "توکن منقضی شده — نیاز به تازه‌سازی"
 #: package/contents/ui/configGeneral.qml:60
 msgid "unknown"
 msgstr "ناشناخته"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "مجاز (کاربر: %1 )"
+msgstr "مجاز (کاربر: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
-msgstr "شناسه مشتری:"
+msgstr "شناسه کلاینت:"
 #: package/contents/ui/configGeneral.qml:90
 msgid "From dev.fitbit.com/apps"
 msgstr "از dev.fitbit.com/apps"
 #: package/contents/ui/configGeneral.qml:97
 msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "شناسه مشتری OAuth 2.0 از ثبت نام برنامه Fitbit شما"
+msgstr "شناسه کلاینت OAuth 2.0 از ثبت برنامه Fitbit شما"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "URL برگشت به تماس:"
+msgstr "نشانی Callback:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
-msgstr "در کلیپ بورد کپی کنید"
+msgstr "کپی در کلیپ‌بورد"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "درگاه برگشت به تماس:"
+msgstr "درگاه Callback:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "URL بازگشت به تماس را در تنظیمات برنامه Fitbit خود در dev.fitbit.com جای‌گذاری کنید"
+msgstr "نشانی Callback را در تنظیمات برنامه Fitbit خود در dev.fitbit.com جای‌گذاری کنید"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
-msgstr "فاصله بازخوانی (دقیقه):"
+msgstr "بازه تازه‌سازی (دقیقه):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "توصیه می شود: 15 تا 30 دقیقه برای ماندن در محدوده نرخ Fitbit"
+msgstr "توصیه‌شده: 15 تا 30 دقیقه تا از محدودیت درخواست‌های Fitbit فراتر نروید"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
 msgstr "نمایش"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
-msgstr "واحد فاصله:"
+msgstr "واحد مسافت:"
 #: package/contents/ui/configGeneral.qml:169
 msgid "Kilometers (km)"
-msgstr "کیلومتر (کیلومتر)"
+msgstr "کیلومتر (km)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "مایل (مایل)"
+msgstr "مایل (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
 msgstr "معیارهای قابل مشاهده"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "مراحل"
+msgstr "قدم‌ها"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
@@ -83,13 +83,13 @@ msgstr "کالری"
 #: package/contents/ui/configGeneral.qml:201
 #: package/contents/ui/FullRepresentation.qml:271
 msgid "Distance"
-msgstr "فاصله"
+msgstr "مسافت"
 #: package/contents/ui/configGeneral.qml:208
 msgid "Active minutes"
 msgstr "دقایق فعال"
 #: package/contents/ui/configGeneral.qml:215
 msgid "Resting heart rate"
-msgstr "ضربان قلب در حال استراحت"
+msgstr "ضربان قلب در حالت استراحت"
 #: package/contents/ui/configGeneral.qml:221
 msgid "Fitbit Account"
 msgstr "حساب Fitbit"
@@ -107,7 +107,7 @@ msgid "Authorization:"
 msgstr "مجوز:"
 #: package/contents/ui/configGeneral.qml:247
 msgid "Cancel"
-msgstr "لغو کنید"
+msgstr "لغو"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
 msgstr "با Fitbit مجدداً مجوز دهید"
@@ -119,7 +119,7 @@ msgid "Authorize manually (copy & paste)"
 msgstr "مجوز دستی (کپی و جایگذاری)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "اگر مرورگر نمی تواند به لوکال هاست (مرورگر جعبه ایمنی، جلسه راه دور یا بدون پایتون) دسترسی پیدا کند، از این استفاده کنید."
+msgstr "اگر مرورگر نمی‌تواند به localhost دسترسی پیدا کند (مرورگر ایزوله، نشست راه دور یا نبود Python) از این گزینه استفاده کنید"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "مرحله 1:"
@@ -131,10 +131,10 @@ msgid "Authorization URL:"
 msgstr "URL مجوز:"
 #: package/contents/ui/configGeneral.qml:320
 msgid "Open in browser"
-msgstr "در مرورگر باز کنید"
+msgstr "باز کردن در مرورگر"
 #: package/contents/ui/configGeneral.qml:329
 msgid "Step 2:"
-msgstr "مرحله ۲:"
+msgstr "مرحله 2:"
 #: package/contents/ui/configGeneral.qml:330
 msgid "After approving, copy the address bar URL and paste it below:"
 msgstr "پس از تایید، آدرس نوار آدرس را کپی کرده و در زیر قرار دهید:"
@@ -146,7 +146,7 @@ msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "کامل شود"
+msgstr "تکمیل"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "لغو مجوز دستی"
@@ -155,52 +155,52 @@ msgid "Authorization successful!"
 msgstr "مجوز موفقیت آمیز بود!"
 #: package/contents/ui/FitbitApi.qml:33
 msgid "No access token"
-msgstr "نشانه دسترسی وجود ندارد"
+msgstr "توکن دسترسی وجود ندارد"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
 msgstr "خطای شبکه - اتصال خود را بررسی کنید"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "خطای شبکه در %1"
+msgstr "خطای شبکه در ساعت %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "توکن در %1 منقضی شد - در حال تازه کردن"
+msgstr "توکن در ساعت %1 منقضی شد — در حال تازه‌سازی"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "نرخ محدود - بعداً دوباره امتحان کنید"
+msgstr "از حد مجاز درخواست‌ها فراتر رفت — بعداً دوباره امتحان کنید"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "نرخ محدود در %1 - نمایش داده‌های حافظه پنهان"
+msgstr "از حد مجاز درخواست‌ها فراتر رفت (ساعت %1) — نمایش داده‌های ذخیره‌شده"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "خطای سرور Fitbit (HTTP %1 )"
+msgstr "خطای سرور Fitbit (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "خطای سرور (HTTP %1 ) در %2"
+msgstr "خطای سرور (HTTP %1) در ساعت %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 ناموفق (HTTP %2 )"
+msgstr "%1 ناموفق بود (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "خطا (HTTP %1 ) در %2"
+msgstr "خطا (HTTP %1) در ساعت %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "زمان درخواست تمام شد - اتصال خود را بررسی کنید"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "زمان در %1 تمام شد"
+msgstr "مهلت در ساعت %1 به پایان رسید"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "واکشی فعالیت"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "خوب - در %1 به روز شد"
+msgstr "OK — به‌روزرسانی در ساعت %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "تجزیه اطلاعات فعالیت انجام نشد"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "خطای تجزیه در %1"
+msgstr "خطای تجزیه در ساعت %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "خطای ناشناخته"
@@ -210,31 +210,31 @@ msgstr "پاسخ احراز هویت تجزیه نشد"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
-msgstr "قالب شناسه مشتری نامعتبر است"
+msgstr "قالب شناسه کلاینت نامعتبر است"
 #: package/contents/ui/FitbitOAuth.qml:150
 msgid "Authorization canceled"
 msgstr "مجوز لغو شد"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
-msgstr "خطای شبکه در حین به‌روزرسانی رمز"
+msgstr "خطای شبکه هنگام تازه‌سازی توکن"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "رمز بازخوانی نامعتبر است - لطفاً مجدداً مجوز دهید"
+msgstr "توکن تازه‌سازی نامعتبر است — لطفاً دوباره مجوز دهید"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
-msgstr "بازخوانی رمز انجام نشد"
+msgstr "تازه‌سازی توکن ناموفق بود"
 #: package/contents/ui/FitbitOAuth.qml:283
 msgid "Refresh failed — missing tokens"
-msgstr "بازخوانی انجام نشد - نشانه‌های گمشده"
+msgstr "تازه‌سازی ناموفق بود — توکن‌ها موجود نیستند"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
-msgstr "بازخوانی رمز انجام نشد - پاسخ نامعتبر است"
+msgstr "تازه‌سازی توکن ناموفق بود — پاسخ نامعتبر"
 #: package/contents/ui/FitbitOAuth.qml:341
 msgid "Paste the redirect URL or authorization code first"
 msgstr "ابتدا URL تغییر مسیر یا کد مجوز را جایگذاری کنید"
@@ -258,13 +258,13 @@ msgid "Authorization code invalid or expired — please try again"
 msgstr "کد مجوز نامعتبر یا منقضی شده است — لطفاً دوباره امتحان کنید"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
-msgstr "تبادل توکن انجام نشد"
+msgstr "تبادل توکن ناموفق بود"
 #: package/contents/ui/FitbitOAuth.qml:389
 msgid "Token exchange failed — missing tokens"
-msgstr "مبادله رمز انجام نشد - نشانه‌های گمشده"
+msgstr "تبادل توکن ناموفق بود — توکن‌ها موجود نیستند"
 #: package/contents/ui/FitbitOAuth.qml:390
 msgid "Token exchange failed — invalid response"
-msgstr "تبادل رمز انجام نشد - پاسخ نامعتبر است"
+msgstr "تبادل توکن ناموفق بود — پاسخ نامعتبر"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
@@ -279,19 +279,19 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "کهنه"
+msgstr "قدیمی"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "امروز"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "فیت بیت را وصل کنید"
+msgstr "اتصال به Fitbit"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
 msgstr "برای نمایش فعالیت امروز، حساب خود را در تنظیمات مجاز کنید."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "تنظیمات را باز کنید"
+msgstr "باز کردن تنظیمات"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "در حال بارگیری داده های Fitbit"
@@ -302,10 +302,10 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 باقی مانده از %2"
+msgstr "%1 باقی‌مانده از %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "هدف گامی تعیین نشده است"
+msgstr "هدف قدم تعیین نشده است"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
 msgstr "فعال"
@@ -315,29 +315,29 @@ msgid "%1 min"
 msgstr "%1 دقیقه"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "HR در حال استراحت"
+msgstr "ضربان استراحت"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 ضربان در دقیقه"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "%1 به روز شد"
+msgstr "به‌روزرسانی در ساعت %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "متصل نیست"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "مراحل: %1 | Cal: %2 | منطقه: %3\nبه روز شده: %4"
+msgstr "قدم‌ها: %1 | کالری: %2 | مسافت: %3\nبه‌روزرسانی: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "مجوز در %1 منقضی شده است — لطفاً مجدداً مجوز دهید"
+msgstr "مجوز در ساعت %1 منقضی شد — لطفاً دوباره مجوز دهید"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "بازخوانی رمز در %1 — %2 انجام نشد"
+msgstr "تازه‌سازی توکن در ساعت %1 ناموفق بود — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
-msgstr "نشانه بازخوانی موجود نیست — لطفاً مجدداً مجوز دهید"
+msgstr "توکن تازه‌سازی موجود نیست — لطفاً دوباره مجوز دهید"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "توکن در %1 به روز شد"
+msgstr "توکن در ساعت %1 تازه‌سازی شد"

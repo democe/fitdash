@@ -28,10 +28,10 @@ msgid "unknown"
 msgstr "ismeretlen"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Engedélyezett (Felhasználó: %1 )"
+msgstr "Engedélyezve (felhasználó: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
-msgstr "Ügyfél azonosító:"
+msgstr "Ügyfél-azonosító:"
 #: package/contents/ui/configGeneral.qml:90
 msgid "From dev.fitbit.com/apps"
 msgstr "A dev.fitbit.com/apps webhelyről"
@@ -56,10 +56,10 @@ msgid "Refresh interval (minutes):"
 msgstr "Frissítési időköz (perc):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Javasolt: 15–30 perc, hogy a Fitbit sebességhatárain belül maradjon"
+msgstr "Javasolt: 15–30 perc, hogy ne lépje túl a Fitbit kéréskorlátait"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Kijelző"
+msgstr "Megjelenítés"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "Távolság mértékegysége:"
@@ -110,16 +110,16 @@ msgid "Cancel"
 msgstr "Mégse"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
-msgstr "Engedélyezze újra a Fitbit segítségével"
+msgstr "Újraengedélyezés a Fitbittel"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Authorize with Fitbit"
-msgstr "Engedélyezze a Fitbit segítségével"
+msgstr "Engedélyezés a Fitbittel"
 #: package/contents/ui/configGeneral.qml:264
 msgid "Authorize manually (copy & paste)"
 msgstr "Kézi engedélyezés (másolás és beillesztés)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Használja ezt, ha a böngésző nem tudja elérni a localhost (sandbox böngésző, távoli munkamenet vagy Python nélküli)"
+msgstr "Akkor használja, ha a böngésző nem éri el a localhostot (elszigetelt böngésző, távoli munkamenet vagy nincs Python)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "1. lépés:"
@@ -131,7 +131,7 @@ msgid "Authorization URL:"
 msgstr "Engedélyezési URL:"
 #: package/contents/ui/configGeneral.qml:320
 msgid "Open in browser"
-msgstr "Nyissa meg a böngészőben"
+msgstr "Megnyitás böngészőben"
 #: package/contents/ui/configGeneral.qml:329
 msgid "Step 2:"
 msgstr "2. lépés:"
@@ -146,10 +146,10 @@ msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "Teljes"
+msgstr "Befejezés"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
-msgstr "Törölje a kézi engedélyezést"
+msgstr "Kézi engedélyezés megszakítása"
 #: package/contents/ui/configGeneral.qml:397
 msgid "Authorization successful!"
 msgstr "Az engedélyezés sikeres!"
@@ -161,65 +161,65 @@ msgid "Network error — check your connection"
 msgstr "Hálózati hiba – ellenőrizze a kapcsolatot"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "Hálózati hiba az %1 -nál"
+msgstr "Hálózati hiba ekkor: %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "A token lejárt a következő időpontban: %1 – frissítés"
+msgstr "A token lejárt ekkor: %1 – frissítés"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "A díj korlátozott – próbálja újra később"
+msgstr "Kéréskorlát túllépve – próbálja újra később"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "A sebesség korlátozott az %1 -nál – a gyorsítótárazott adatok megjelenítése"
+msgstr "Kéréskorlát túllépve ekkor: %1 – gyorsítótárazott adatok megjelenítése"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit szerverhiba (HTTP %1 )"
+msgstr "Fitbit-kiszolgálóhiba (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Szerverhiba (HTTP %1 ) az %2 -nál"
+msgstr "Kiszolgálóhiba (HTTP %1) ekkor: %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "Az %1 nem sikerült (HTTP %2 )"
+msgstr "Sikertelen: %1 (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Hiba (HTTP %1 ) az %2 -nál"
+msgstr "Hiba (HTTP %1) ekkor: %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "A kérés időtúllépése – ellenőrizze a kapcsolatot"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Időtúllépés az %1 -nál"
+msgstr "Időtúllépés ekkor: %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "Tevékenység lekérése"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "OK – frissítve az %1 -nál"
+msgstr "OK – frissítve ekkor: %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
-msgstr "Nem sikerült elemezni a tevékenységi adatokat"
+msgstr "Nem sikerült feldolgozni a tevékenységi adatokat"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "Elemzési hiba az %1 -nál"
+msgstr "Feldolgozási hiba ekkor: %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Ismeretlen hiba"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "Nem sikerült elemezni a hitelesítési választ"
+msgstr "Nem sikerült feldolgozni az engedélyezési választ"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
 msgstr "Érvénytelen ügyfél-azonosító formátum"
 #: package/contents/ui/FitbitOAuth.qml:150
 msgid "Authorization canceled"
-msgstr "Az engedélyezés törölve"
+msgstr "Engedélyezés megszakítva"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "Hálózati hiba a token frissítése közben"
@@ -240,10 +240,10 @@ msgid "Paste the redirect URL or authorization code first"
 msgstr "Először illessze be az átirányítási URL-t vagy az engedélyezési kódot"
 #: package/contents/ui/FitbitOAuth.qml:345
 msgid "Start the manual authorization first"
-msgstr "Először indítsa el a kézi hitelesítést"
+msgstr "Először indítsa el a kézi engedélyezést"
 #: package/contents/ui/FitbitOAuth.qml:365
 msgid "Authorization was denied"
-msgstr "Az engedélyt megtagadták"
+msgstr "Az engedélyezést elutasították"
 #: package/contents/ui/FitbitOAuth.qml:372
 msgid "Authorization failed (state mismatch) — please try again"
 msgstr "Az engedélyezés nem sikerült (állapoteltérés) – próbálja újra"
@@ -279,19 +279,19 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Állott"
+msgstr "Elavult"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Ma"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "Csatlakoztassa a Fitbitet"
+msgstr "Fitbit csatlakoztatása"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
 msgstr "Engedélyezze fiókját a beállításokban a mai tevékenység megjelenítéséhez."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Nyissa meg a Beállítások lehetőséget"
+msgstr "Beállítások megnyitása"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "Fitbit adatok betöltése"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 maradt az %2 -ból"
+msgstr "Még %1 van hátra (cél: %2)"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "Nincs lépés cél kitűzve"
+msgstr "Nincs lépéscél beállítva"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Aktív"
+msgstr "Aktivitás"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 min"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "Pihenő HR"
+msgstr "Nyugalmi pulzus"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Frissített %1"
+msgstr "Frissítve: %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Nincs csatlakoztatva"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Lépések: %1 | Cal: %2 | Elhelyezkedés: %3\nFrissítve: %4"
+msgstr "Lépések: %1 | Kal: %2 | Táv: %3\nFrissítve: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Az engedély lejárt %1 -nál – kérjük, engedélyezze újra"
+msgstr "Az engedély lejárt ekkor: %1 – engedélyezze újra"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "A token frissítése meghiúsult %1 – %2"
+msgstr "A token frissítése sikertelen ekkor: %1 – %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "Nem áll rendelkezésre frissítési token – kérjük, engedélyezze újra"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "A token frissítve az %1 -nál"
+msgstr "Token frissítve ekkor: %1"

@@ -19,7 +19,7 @@ msgid "Not authorized"
 msgstr "அங்கீகரிக்கப்படவில்லை"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "அங்கீகாரச் சிக்கல் - மறு அங்கீகாரம்"
+msgstr "அங்கீகாரச் சிக்கல் — மீண்டும் அங்கீகரிக்கவும்"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
 msgstr "டோக்கன் காலாவதியானது - புதுப்பித்தல் தேவை"
@@ -28,7 +28,7 @@ msgid "unknown"
 msgstr "தெரியவில்லை"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "அங்கீகரிக்கப்பட்ட (பயனர்: %1 )"
+msgstr "அங்கீகரிக்கப்பட்டது (பயனர்: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "கிளையண்ட் ஐடி:"
@@ -40,23 +40,23 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "OAuth 2.0 கிளையண்ட் ஐடி உங்கள் Fitbit பயன்பாட்டுப் பதிவிலிருந்து"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "திரும்ப அழைப்பதற்கான URL:"
+msgstr "கால்பேக் URL:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
 msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "திரும்ப திரும்ப திரும்ப போர்ட்:"
+msgstr "கால்பேக் போர்ட்:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "dev.fitbit.com இல் உங்கள் ஃபிட்பிட் பயன்பாட்டு அமைப்புகளில் கால்பேக் URLஐ ஒட்டவும்"
+msgstr "dev.fitbit.com இல் உங்கள் Fitbit பயன்பாட்டு அமைப்புகளில் கால்பேக் URL-ஐ ஒட்டவும்"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
 msgstr "புதுப்பிப்பு இடைவெளி (நிமிடங்கள்):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "பரிந்துரைக்கப்படுகிறது: ஃபிட்பிட் வீத வரம்புகளுக்குள் இருக்க 15-30 நிமிடங்கள்"
+msgstr "பரிந்துரை: Fitbit கோரிக்கை வரம்புகளை மீறாமல் இருக்க 15–30 நிமிடங்கள்"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
 msgstr "காட்சி"
@@ -68,14 +68,14 @@ msgid "Kilometers (km)"
 msgstr "கிலோமீட்டர்கள் (கிமீ)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "மைல்கள் (மைல்)"
+msgstr "மைல்கள் (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
 msgstr "காணக்கூடிய அளவீடுகள்"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "படிகள்"
+msgstr "அடிகள்"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
@@ -110,16 +110,16 @@ msgid "Cancel"
 msgstr "ரத்து செய்"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
-msgstr "ஃபிட்பிட் மூலம் மீண்டும் அங்கீகரிக்கவும்"
+msgstr "Fitbit மூலம் மீண்டும் அங்கீகரிக்கவும்"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Authorize with Fitbit"
-msgstr "ஃபிட்பிட் மூலம் அங்கீகரிக்கவும்"
+msgstr "Fitbit மூலம் அங்கீகரிக்கவும்"
 #: package/contents/ui/configGeneral.qml:264
 msgid "Authorize manually (copy & paste)"
 msgstr "கைமுறையாக அங்கீகரிக்கவும் (நகல் & பேஸ்ட்)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "உலாவி லோக்கல் ஹோஸ்ட்டை (சாண்ட்பாக்ஸ் செய்யப்பட்ட உலாவி, ரிமோட் அமர்வு அல்லது பைதான் இல்லை) அடைய முடியாவிட்டால் இதைப் பயன்படுத்தவும்."
+msgstr "உலாவியால் localhost-ஐ அணுக முடியாவிட்டால் இதைப் பயன்படுத்தவும் (சாண்ட்பாக்ஸ் செய்யப்பட்ட உலாவி, ரிமோட் அமர்வு அல்லது Python இல்லை)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "படி 1:"
@@ -143,10 +143,10 @@ msgid "Redirect URL or code:"
 msgstr "வழிமாற்று URL அல்லது குறியீடு:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:.../callback?code=..."
+msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "நிறைவு"
+msgstr "நிறைவுசெய்"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "கைமுறை அங்கீகாரத்தை ரத்துசெய்"
@@ -161,46 +161,46 @@ msgid "Network error — check your connection"
 msgstr "நெட்வொர்க் பிழை - உங்கள் இணைப்பைச் சரிபார்க்கவும்"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "%1 இல் நெட்வொர்க் பிழை"
+msgstr "%1 மணிக்கு நெட்வொர்க் பிழை"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "%1 இல் டோக்கன் காலாவதியானது - புத்துணர்ச்சி அளிக்கிறது"
+msgstr "%1 மணிக்கு டோக்கன் காலாவதியானது — புதுப்பிக்கிறது"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "வரம்புக்குட்பட்ட விலை — பிறகு முயலவும்"
+msgstr "கோரிக்கை வரம்பு மீறப்பட்டது — பிறகு முயலவும்"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "%1 இல் வரம்புக்குட்பட்ட விகிதம் — தற்காலிகச் சேமிப்புத் தரவைக் காட்டுகிறது"
+msgstr "%1 மணிக்கு கோரிக்கை வரம்பு மீறப்பட்டது — தற்காலிகச் சேமிப்புத் தரவைக் காட்டுகிறது"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "ஃபிட்பிட் சர்வர் பிழை (HTTP %1 )"
+msgstr "Fitbit சர்வர் பிழை (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "%2 இல் சர்வர் பிழை (HTTP %1 )."
+msgstr "%2 மணிக்கு சர்வர் பிழை (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 தோல்வியடைந்தது (HTTP %2 )"
+msgstr "%1 தோல்வியடைந்தது (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "%2 இல் பிழை (HTTP %1 )."
+msgstr "%2 மணிக்கு பிழை (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "கோரிக்கை நேரம் முடிந்தது - உங்கள் இணைப்பைச் சரிபார்க்கவும்"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "%1 இல் நேரம் முடிந்தது"
+msgstr "%1 மணிக்கு நேரம் முடிந்தது"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "செயல்பாடு பெறுதல்"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "சரி — %1 இல் புதுப்பிக்கப்பட்டது"
+msgstr "சரி — %1 மணிக்கு புதுப்பிக்கப்பட்டது"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "செயல்பாட்டுத் தரவை அலசுவதில் தோல்வி"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "%1 இல் பாகுபடுத்தும் பிழை"
+msgstr "%1 மணிக்கு பாகுபடுத்தும் பிழை"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "அறியப்படாத பிழை"
@@ -216,16 +216,16 @@ msgid "Authorization canceled"
 msgstr "அங்கீகாரம் ரத்து செய்யப்பட்டது"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "டோக்கன் புதுப்பிப்பின் போது நெட்வொர்க் பிழை"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "புதுப்பிக்கப்பட்ட டோக்கன் தவறானது - தயவுசெய்து மீண்டும் அங்கீகரிக்கவும்"
+msgstr "புதுப்பிப்பு டோக்கன் தவறானது — தயவுசெய்து மீண்டும் அங்கீகரிக்கவும்"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
 msgstr "டோக்கன் புதுப்பித்தல் தோல்வியடைந்தது"
@@ -246,7 +246,7 @@ msgid "Authorization was denied"
 msgstr "அங்கீகாரம் மறுக்கப்பட்டது"
 #: package/contents/ui/FitbitOAuth.qml:372
 msgid "Authorization failed (state mismatch) — please try again"
-msgstr "அங்கீகாரம் தோல்வியடைந்தது (நிலை பொருந்தவில்லை) — மீண்டும் முயற்சிக்கவும்"
+msgstr "அங்கீகாரம் தோல்வியடைந்தது (state பொருந்தவில்லை) — மீண்டும் முயற்சிக்கவும்"
 #: package/contents/ui/FitbitOAuth.qml:376
 msgid "No authorization code found in the pasted text"
 msgstr "ஒட்டப்பட்ட உரையில் அங்கீகாரக் குறியீடு இல்லை"
@@ -268,7 +268,7 @@ msgstr "டோக்கன் பரிமாற்றம் தோல்வி 
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
-msgstr "%1 மை"
+msgstr "%1 mi"
 #: package/contents/ui/FullRepresentation.qml:42
 msgctxt "distance in kilometers"
 msgid "%1 km"
@@ -279,13 +279,13 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "பழுதடைந்தது"
+msgstr "பழைய தரவு"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "இன்று"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "ஃபிட்பிட்டை இணைக்கவும்"
+msgstr "Fitbit-ஐ இணைக்கவும்"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
 msgstr "இன்றைய செயல்பாட்டைக் காட்ட, அமைப்புகளில் உங்கள் கணக்கை அங்கீகரிக்கவும்."
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%2 இல் மீதமுள்ள %1"
+msgstr "%2 இல் %1 மீதமுள்ளது"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "படி இலக்கை நிர்ணயிக்கவில்லை"
+msgstr "அடி இலக்கு அமைக்கப்படவில்லை"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "செயலில்"
+msgstr "செயல்பாடு"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 நிமி"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "ஓய்வு HR"
+msgstr "ஓய்வு இதயத் துடிப்பு"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "%1 புதுப்பிக்கப்பட்டது"
+msgstr "%1 மணிக்கு புதுப்பிக்கப்பட்டது"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "இணைக்கப்படவில்லை"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "படிகள்: % 1 | கால்: % 2 | மாவட்டம்:% 3\nபுதுப்பிக்கப்பட்டது: %4"
+msgstr "அடிகள்: %1 | கலோரி: %2 | தூரம்: %3\nபுதுப்பிக்கப்பட்டது: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "%1 இல் அங்கீகாரம் காலாவதியானது - தயவுசெய்து மீண்டும் அங்கீகரிக்கவும்"
+msgstr "%1 மணிக்கு அங்கீகாரம் காலாவதியானது — தயவுசெய்து மீண்டும் அங்கீகரிக்கவும்"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "%1 - %2 இல் டோக்கன் புதுப்பிப்பு தோல்வியடைந்தது"
+msgstr "%1 மணிக்கு டோக்கன் புதுப்பிப்பு தோல்வியடைந்தது — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "புதுப்பிப்பு டோக்கன் இல்லை - தயவுசெய்து மீண்டும் அங்கீகரிக்கவும்"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "%1 இல் டோக்கன் புதுப்பிக்கப்பட்டது"
+msgstr "%1 மணிக்கு டோக்கன் புதுப்பிக்கப்பட்டது"

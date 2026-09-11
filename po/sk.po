@@ -13,10 +13,10 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "generál"
+msgstr "Všeobecné"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
-msgstr "Neoprávnené"
+msgstr "Neautorizované"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
 msgstr "Problém s autorizáciou — znovu autorizujte"
@@ -28,7 +28,7 @@ msgid "unknown"
 msgstr "neznámy"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Autorizovaný (používateľ: %1 )"
+msgstr "Autorizované (používateľ: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "ID klienta:"
@@ -40,7 +40,7 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "ID klienta OAuth 2.0 z vašej registrácie aplikácie Fitbit"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "Webová adresa spätného volania:"
+msgstr "URL spätného volania:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
@@ -56,10 +56,10 @@ msgid "Refresh interval (minutes):"
 msgstr "Interval obnovenia (minúty):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Odporúčané: 15–30 minút, aby ste zostali v rámci limitov rýchlosti Fitbit"
+msgstr "Odporúčané: 15–30 minút, aby ste neprekročili limity požiadaviek Fitbit"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Displej"
+msgstr "Zobrazenie"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "Jednotka vzdialenosti:"
@@ -101,7 +101,7 @@ msgid "Last request:"
 msgstr "Posledná požiadavka:"
 #: package/contents/ui/configGeneral.qml:235
 msgid "No requests yet"
-msgstr "Zatiaľ žiadne žiadosti"
+msgstr "Zatiaľ žiadne požiadavky"
 #: package/contents/ui/configGeneral.qml:245
 msgid "Authorization:"
 msgstr "Autorizácia:"
@@ -110,16 +110,16 @@ msgid "Cancel"
 msgstr "Zrušiť"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
-msgstr "Znova autorizujte pomocou Fitbit"
+msgstr "Znova autorizovať pomocou Fitbit"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Authorize with Fitbit"
-msgstr "Autorizujte pomocou Fitbit"
+msgstr "Autorizovať pomocou Fitbit"
 #: package/contents/ui/configGeneral.qml:264
 msgid "Authorize manually (copy & paste)"
 msgstr "Autorizovať manuálne (kopírovať a prilepiť)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Použite to, ak prehliadač nemôže dosiahnuť localhost (prehliadač v karanténe, vzdialená relácia alebo žiadny Python)"
+msgstr "Použite, ak sa prehliadač nemôže pripojiť k localhost (prehliadač v sandboxe, vzdialená relácia alebo chýba Python)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "Krok 1:"
@@ -140,7 +140,7 @@ msgid "After approving, copy the address bar URL and paste it below:"
 msgstr "Po schválení skopírujte adresu URL panela s adresou a prilepte ju nižšie:"
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
-msgstr "Presmerovanie URL alebo kód:"
+msgstr "URL presmerovania alebo kód:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
@@ -149,7 +149,7 @@ msgid "Complete"
 msgstr "Dokončiť"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
-msgstr "Zrušte manuálnu autorizáciu"
+msgstr "Zrušiť manuálnu autorizáciu"
 #: package/contents/ui/configGeneral.qml:397
 msgid "Authorization successful!"
 msgstr "Autorizácia bola úspešná!"
@@ -161,52 +161,52 @@ msgid "Network error — check your connection"
 msgstr "Chyba siete – skontrolujte pripojenie"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "Chyba siete na %1"
+msgstr "Chyba siete o %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "Platnosť tokenu vypršala v %1 – obnovuje sa"
+msgstr "Platnosť tokenu vypršala o %1 – obnovuje sa"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Obmedzená cena – skúste to znova neskôr"
+msgstr "Prekročený limit požiadaviek – skúste to znova neskôr"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Obmedzená rýchlosť na %1 – zobrazujú sa údaje uložené vo vyrovnávacej pamäti"
+msgstr "Prekročený limit požiadaviek o %1 – zobrazujú sa údaje z vyrovnávacej pamäte"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Chyba servera Fitbit (HTTP %1 )"
+msgstr "Chyba servera Fitbit (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Chyba servera (HTTP %1 ) na %2"
+msgstr "Chyba servera (HTTP %1) o %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 zlyhal (HTTP %2 )"
+msgstr "%1 zlyhalo (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Chyba (HTTP %1 ) na %2"
+msgstr "Chyba (HTTP %1) o %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "Časový limit žiadosti vypršal — skontrolujte pripojenie"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Časový limit vypršal na %1"
+msgstr "Časový limit vypršal o %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "Načítanie aktivity"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "OK – aktualizované na %1"
+msgstr "OK – aktualizované o %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
-msgstr "Nepodarilo sa analyzovať údaje o aktivite"
+msgstr "Nepodarilo sa spracovať údaje o aktivite"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "Chyba analýzy na %1"
+msgstr "Chyba spracovania o %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Neznáma chyba"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "Nepodarilo sa analyzovať autorizačnú odpoveď"
+msgstr "Nepodarilo sa spracovať autorizačnú odpoveď"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
@@ -216,10 +216,10 @@ msgid "Authorization canceled"
 msgstr "Autorizácia bola zrušená"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "Chyba siete počas obnovy tokenu"
@@ -279,19 +279,19 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Zatuchnutý"
+msgstr "Zastarané"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Dnes"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "Pripojte Fitbit"
+msgstr "Pripojiť Fitbit"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
 msgstr "Autorizujte svoj účet v nastaveniach, aby sa vám zobrazovala dnešná aktivita."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Otvorte Nastavenia"
+msgstr "Otvoriť nastavenia"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "Načítavajú sa údaje Fitbit"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "Zostávajúci %1 z %2"
+msgstr "Zostáva %1 z %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "Nie je stanovený žiadny krokový cieľ"
+msgstr "Nie je nastavený cieľ krokov"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Aktívne"
+msgstr "Aktivita"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 min"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "Odpočinkové HR"
+msgstr "Pokojový tep"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Aktualizovaný %1"
+msgstr "Aktualizované o %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Nepripojené"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Kroky: %1 | Cal: %2 | Vzdialenosť: %3\nAktualizované: %4"
+msgstr "Kroky: %1 | Kal: %2 | Vzd.: %3\nAktualizované: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Platnosť autorizácie vypršala v %1 – autorizujte ju znova"
+msgstr "Platnosť autorizácie vypršala o %1 – autorizujte znova"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Obnovenie tokenu zlyhalo v %1 — %2"
+msgstr "Obnovenie tokenu zlyhalo o %1 – %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "Nie je k dispozícii žiadny obnovovací token – znova ho autorizujte"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Token bol obnovený na %1"
+msgstr "Token bol obnovený o %1"

@@ -13,7 +13,7 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "જનરલ"
+msgstr "સામાન્ય"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
 msgstr "અધિકૃત નથી"
@@ -22,16 +22,16 @@ msgid "Authorization problem — re-authorize"
 msgstr "અધિકૃતતા સમસ્યા — ફરીથી અધિકૃત કરો"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
-msgstr "ટોકનની સમયસીમા સમાપ્ત થઈ ગઈ છે - તાજું કરવું જરૂરી છે"
+msgstr "ટોકનની સમયસીમા સમાપ્ત — રિફ્રેશ કરવું જરૂરી છે"
 #: package/contents/ui/configGeneral.qml:60
 msgid "unknown"
 msgstr "અજ્ઞાત"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "અધિકૃત (વપરાશકર્તા: %1 )"
+msgstr "અધિકૃત (વપરાશકર્તા: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
-msgstr "ગ્રાહક ID:"
+msgstr "ક્લાયન્ટ ID:"
 #: package/contents/ui/configGeneral.qml:90
 msgid "From dev.fitbit.com/apps"
 msgstr "dev.fitbit.com/apps તરફથી"
@@ -53,10 +53,10 @@ msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
 msgstr "dev.fitbit.com પર તમારી Fitbit એપ્લિકેશન સેટિંગ્સમાં કૉલબેક URL પેસ્ટ કરો"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
-msgstr "તાજું અંતરાલ (મિનિટ):"
+msgstr "રિફ્રેશ અંતરાલ (મિનિટ):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "ભલામણ કરેલ: Fitbit દર મર્યાદામાં રહેવા માટે 15-30 મિનિટ"
+msgstr "ભલામણ કરેલ: 15–30 મિનિટ, જેથી Fitbit ની વિનંતી મર્યાદા ઓળંગાય નહીં"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
 msgstr "ડિસ્પ્લે"
@@ -89,7 +89,7 @@ msgid "Active minutes"
 msgstr "સક્રિય મિનિટ"
 #: package/contents/ui/configGeneral.qml:215
 msgid "Resting heart rate"
-msgstr "આરામ હૃદય દર"
+msgstr "આરામ સમયના હૃદય ધબકારા"
 #: package/contents/ui/configGeneral.qml:221
 msgid "Fitbit Account"
 msgstr "Fitbit એકાઉન્ટ"
@@ -119,7 +119,7 @@ msgid "Authorize manually (copy & paste)"
 msgstr "મેન્યુઅલી અધિકૃત કરો (કોપી અને પેસ્ટ કરો)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "જો બ્રાઉઝર લોકલહોસ્ટ (સેન્ડબોક્સ્ડ બ્રાઉઝર, રિમોટ સેશન અથવા પાયથોન નહીં) સુધી પહોંચી ન શકે તો આનો ઉપયોગ કરો."
+msgstr "જો બ્રાઉઝર localhost સુધી પહોંચી ન શકે તો આનો ઉપયોગ કરો (સેન્ડબોક્સ્ડ બ્રાઉઝર, રિમોટ સેશન અથવા Python નથી)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "પગલું 1:"
@@ -140,13 +140,13 @@ msgid "After approving, copy the address bar URL and paste it below:"
 msgstr "મંજૂર કર્યા પછી, સરનામાં બાર URL ને કૉપિ કરો અને તેને નીચે પેસ્ટ કરો:"
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
-msgstr "URL અથવા કોડ રીડાયરેક્ટ કરો:"
+msgstr "રીડાયરેક્ટ URL અથવા કોડ:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "પૂર્ણ"
+msgstr "પૂર્ણ કરો"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "મેન્યુઅલ અધિકૃતતા રદ કરો"
@@ -161,52 +161,52 @@ msgid "Network error — check your connection"
 msgstr "નેટવર્ક ભૂલ — તમારું કનેક્શન તપાસો"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "%1 પર નેટવર્ક ભૂલ"
+msgstr "%1 વાગ્યે નેટવર્ક ભૂલ"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "%1 પર ટોકનની સમયસીમા સમાપ્ત થઈ ગઈ — રિફ્રેશ થઈ રહ્યું છે"
+msgstr "%1 વાગ્યે ટોકનની સમયસીમા સમાપ્ત — રિફ્રેશ થઈ રહ્યું છે"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "રેટ મર્યાદિત — પછીથી ફરી પ્રયાસ કરો"
+msgstr "વિનંતી મર્યાદા ઓળંગાઈ — પછીથી ફરી પ્રયાસ કરો"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "%1 પર મર્યાદિત દર - કેશ્ડ ડેટા દર્શાવે છે"
+msgstr "%1 વાગ્યે વિનંતી મર્યાદા ઓળંગાઈ — કેશ કરેલો ડેટા બતાવી રહ્યું છે"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit સર્વર ભૂલ (HTTP %1 )"
+msgstr "Fitbit સર્વર ભૂલ (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "%2 પર સર્વર ભૂલ (HTTP %1 )"
+msgstr "%2 વાગ્યે સર્વર ભૂલ (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 નિષ્ફળ (HTTP %2 )"
+msgstr "%1 નિષ્ફળ (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "%2 પર ભૂલ (HTTP %1 )"
+msgstr "%2 વાગ્યે ભૂલ (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "વિનંતીનો સમય સમાપ્ત થયો — તમારું કનેક્શન તપાસો"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "%1 પર સમય સમાપ્ત થયો"
+msgstr "%1 વાગ્યે સમય સમાપ્ત"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
-msgstr "પ્રવૃત્તિ આનયન"
+msgstr "પ્રવૃત્તિ ડેટા મેળવવો"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "ઓકે — %1 પર અપડેટ"
+msgstr "ઓકે — %1 વાગ્યે અપડેટ થયું"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "પ્રવૃત્તિ ડેટાનું વિશ્લેષણ કરવામાં નિષ્ફળ"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "%1 પર પાર્સ ભૂલ"
+msgstr "%1 વાગ્યે પાર્સ ભૂલ"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "અજાણી ભૂલ"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "પ્રમાણીકરણ પ્રતિસાદનું વિશ્લેષણ કરવામાં નિષ્ફળ"
+msgstr "અધિકૃતતા પ્રતિસાદનું વિશ્લેષણ કરવામાં નિષ્ફળ"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
@@ -216,16 +216,16 @@ msgid "Authorization canceled"
 msgstr "અધિકૃતતા રદ કરી"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "ટોકન રિફ્રેશ દરમિયાન નેટવર્ક ભૂલ"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "તાજું કરો ટોકન અમાન્ય — કૃપા કરીને ફરીથી અધિકૃત કરો"
+msgstr "રિફ્રેશ ટોકન અમાન્ય — કૃપા કરીને ફરીથી અધિકૃત કરો"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
 msgstr "ટોકન રિફ્રેશ નિષ્ફળ થયું"
@@ -246,7 +246,7 @@ msgid "Authorization was denied"
 msgstr "અધિકૃતતા નકારી હતી"
 #: package/contents/ui/FitbitOAuth.qml:372
 msgid "Authorization failed (state mismatch) — please try again"
-msgstr "અધિકૃતતા નિષ્ફળ થઈ (રાજ્ય મેળ ખાતું નથી) — કૃપા કરીને ફરી પ્રયાસ કરો"
+msgstr "અધિકૃતતા નિષ્ફળ (state મેળ ખાતું નથી) — કૃપા કરીને ફરી પ્રયાસ કરો"
 #: package/contents/ui/FitbitOAuth.qml:376
 msgid "No authorization code found in the pasted text"
 msgstr "પેસ્ટ કરેલા ટેક્સ્ટમાં કોઈ અધિકૃતતા કોડ મળ્યો નથી"
@@ -279,7 +279,7 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "વાસી"
+msgstr "જૂનો ડેટા"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "આજે"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%2 ના %1 બાકી"
+msgstr "%2 માંથી %1 બાકી"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "કોઈ સ્ટેપ ગોલ સેટ નથી"
+msgstr "પગલાંનું કોઈ લક્ષ્ય સેટ નથી"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "સક્રિય"
+msgstr "સક્રિયતા"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 મિનિટ"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "એચઆર આરામ"
+msgstr "આરામ સમયના ધબકારા"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "અપડેટ કરેલ %1"
+msgstr "%1 વાગ્યે અપડેટ થયું"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "જોડાયેલ નથી"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "પગલાં: %1 | Cal: %2 | જિલ્લો: %3\nઅપડેટ કરેલ: %4"
+msgstr "પગલાં: %1 | કેલરી: %2 | અંતર: %3\nઅપડેટ: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "%1 પર અધિકૃતતા સમાપ્ત થઈ ગઈ — કૃપા કરીને ફરીથી અધિકૃત કરો"
+msgstr "%1 વાગ્યે અધિકૃતતા સમાપ્ત થઈ — કૃપા કરીને ફરીથી અધિકૃત કરો"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "%1 — %2 પર ટોકન રિફ્રેશ નિષ્ફળ થયું"
+msgstr "%1 વાગ્યે ટોકન રિફ્રેશ નિષ્ફળ — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "કોઈ રિફ્રેશ ટોકન ઉપલબ્ધ નથી — કૃપા કરીને ફરીથી અધિકૃત કરો"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "%1 પર ટોકન રિફ્રેશ થયું"
+msgstr "%1 વાગ્યે ટોકન રિફ્રેશ થયું"

@@ -22,13 +22,13 @@ msgid "Authorization problem — re-authorize"
 msgstr "Problemă de autorizare — reautorizați"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
-msgstr "Tokenul a expirat - este necesară reîmprospătarea"
+msgstr "Tokenul a expirat — este necesară reîmprospătarea"
 #: package/contents/ui/configGeneral.qml:60
 msgid "unknown"
 msgstr "necunoscut"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Autorizat (utilizator: %1 )"
+msgstr "Autorizat (utilizator: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "ID client:"
@@ -40,29 +40,29 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "ID de client OAuth 2.0 de la înregistrarea aplicației Fitbit"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "Adresa URL de apel invers:"
+msgstr "URL de callback:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
 msgstr "Copiați în clipboard"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "Port de apel invers:"
+msgstr "Port de callback:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "Inserați adresa URL de apel invers în setările aplicației Fitbit la dev.fitbit.com"
+msgstr "Lipiți URL-ul de callback în setările aplicației Fitbit pe dev.fitbit.com"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
 msgstr "Interval de reîmprospătare (minute):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Recomandat: 15-30 de minute pentru a rămâne în limitele ratei Fitbit"
+msgstr "Recomandat: 15–30 de minute pentru a respecta limitele de solicitări Fitbit"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Afişa"
+msgstr "Afișare"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
-msgstr "unitate de distanta:"
+msgstr "Unitate de distanță:"
 #: package/contents/ui/configGeneral.qml:169
 msgid "Kilometers (km)"
 msgstr "Kilometri (km)"
@@ -83,7 +83,7 @@ msgstr "Calorii"
 #: package/contents/ui/configGeneral.qml:201
 #: package/contents/ui/FullRepresentation.qml:271
 msgid "Distance"
-msgstr "Distanţă"
+msgstr "Distanță"
 #: package/contents/ui/configGeneral.qml:208
 msgid "Active minutes"
 msgstr "Minute active"
@@ -107,7 +107,7 @@ msgid "Authorization:"
 msgstr "Autorizare:"
 #: package/contents/ui/configGeneral.qml:247
 msgid "Cancel"
-msgstr "Anula"
+msgstr "Anulează"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
 msgstr "Reautorizați cu Fitbit"
@@ -131,7 +131,7 @@ msgid "Authorization URL:"
 msgstr "Adresa URL de autorizare:"
 #: package/contents/ui/configGeneral.qml:320
 msgid "Open in browser"
-msgstr "Deschideți în browser"
+msgstr "Deschide în browser"
 #: package/contents/ui/configGeneral.qml:329
 msgid "Step 2:"
 msgstr "Pasul 2:"
@@ -146,16 +146,16 @@ msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "Complet"
+msgstr "Finalizează"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "Anulați autorizarea manuală"
 #: package/contents/ui/configGeneral.qml:397
 msgid "Authorization successful!"
-msgstr "Autorizarea reușită!"
+msgstr "Autorizare reușită!"
 #: package/contents/ui/FitbitApi.qml:33
 msgid "No access token"
-msgstr "Fără simbol de acces"
+msgstr "Niciun token de acces"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
 msgstr "Eroare de rețea — verificați-vă conexiunea"
@@ -167,28 +167,28 @@ msgid "Token expired at %1 — refreshing"
 msgstr "Tokenul a expirat la %1 — în curs de reîmprospătare"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Rata limitată — încercați din nou mai târziu"
+msgstr "Limită de solicitări atinsă — încercați din nou mai târziu"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Rată limitată la %1 — afișează datele din cache"
+msgstr "Limită de solicitări atinsă la %1 — se afișează datele din cache"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Eroare de server Fitbit (HTTP %1 )"
+msgstr "Eroare de server Fitbit (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Eroare de server (HTTP %1 ) la %2"
+msgstr "Eroare de server (HTTP %1) la %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 a eșuat (HTTP %2 )"
+msgstr "%1 a eșuat (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Eroare (HTTP %1 ) la %2"
+msgstr "Eroare (HTTP %1) la %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
-msgstr "Solicitare a expirat — verificați-vă conexiunea"
+msgstr "Solicitarea a expirat — verificați conexiunea"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Timpul expirat la %1"
+msgstr "Timp expirat la %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "Preluare activitate"
@@ -206,35 +206,35 @@ msgid "Unknown error"
 msgstr "Eroare necunoscută"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "Nu s-a putut analiza răspunsul de autentificare"
+msgstr "Nu s-a putut analiza răspunsul de autorizare"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
 msgstr "Format de ID client nevalid"
 #: package/contents/ui/FitbitOAuth.qml:150
 msgid "Authorization canceled"
-msgstr "Autorizația anulată"
+msgstr "Autorizare anulată"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
-msgstr "Eroare de rețea în timpul reîmprospătării simbolului"
+msgstr "Eroare de rețea în timpul reîmprospătării tokenului"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "Indicatorul de reîmprospătare nu este valid - vă rugăm să reautorizați"
+msgstr "Token de reîmprospătare nevalid — reautorizați"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
-msgstr "Actualizarea simbolului nu a reușit"
+msgstr "Reîmprospătarea tokenului a eșuat"
 #: package/contents/ui/FitbitOAuth.qml:283
 msgid "Refresh failed — missing tokens"
-msgstr "Reîmprospătarea a eșuat — jetoane lipsă"
+msgstr "Reîmprospătarea a eșuat — lipsesc tokenurile"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
-msgstr "Actualizarea simbolului nu a reușit - răspuns nevalid"
+msgstr "Reîmprospătarea tokenului a eșuat — răspuns nevalid"
 #: package/contents/ui/FitbitOAuth.qml:341
 msgid "Paste the redirect URL or authorization code first"
 msgstr "Lipiți mai întâi adresa URL de redirecționare sau codul de autorizare"
@@ -246,25 +246,25 @@ msgid "Authorization was denied"
 msgstr "Autorizarea a fost refuzată"
 #: package/contents/ui/FitbitOAuth.qml:372
 msgid "Authorization failed (state mismatch) — please try again"
-msgstr "Autorizarea a eșuat (nepotrivire de stare) — vă rugăm să încercați din nou"
+msgstr "Autorizarea a eșuat (nepotrivire de stare) — încercați din nou"
 #: package/contents/ui/FitbitOAuth.qml:376
 msgid "No authorization code found in the pasted text"
 msgstr "Nu s-a găsit niciun cod de autorizare în textul lipit"
 #: package/contents/ui/FitbitOAuth.qml:386
 msgid "Network error during token exchange"
-msgstr "Eroare de rețea în timpul schimbului de simboluri"
+msgstr "Eroare de rețea în timpul schimbului de tokenuri"
 #: package/contents/ui/FitbitOAuth.qml:387
 msgid "Authorization code invalid or expired — please try again"
-msgstr "Cod de autorizare invalid sau expirat — vă rugăm să încercați din nou"
+msgstr "Cod de autorizare nevalid sau expirat — încercați din nou"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
-msgstr "Schimbul de jetoane a eșuat"
+msgstr "Schimbul de tokenuri a eșuat"
 #: package/contents/ui/FitbitOAuth.qml:389
 msgid "Token exchange failed — missing tokens"
-msgstr "Schimbul de jetoane a eșuat - jetoane lipsă"
+msgstr "Schimbul de tokenuri a eșuat — lipsesc tokenurile"
 #: package/contents/ui/FitbitOAuth.qml:390
 msgid "Token exchange failed — invalid response"
-msgstr "Schimbul de simboluri a eșuat — răspuns nevalid"
+msgstr "Schimbul de tokenuri a eșuat — răspuns nevalid"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
@@ -279,7 +279,7 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Stătut"
+msgstr "Neactualizat"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Astăzi"
@@ -291,7 +291,7 @@ msgid "Authorize your account in settings to show today's activity."
 msgstr "Autorizați-vă contul în setări pentru a afișa activitatea de astăzi."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Deschide Setări"
+msgstr "Deschide setările"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "Se încarcă datele Fitbit"
@@ -302,10 +302,10 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 rămas din %2"
+msgstr "%1 rămași din %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "Niciun obiectiv pas stabilit"
+msgstr "Niciun obiectiv de pași setat"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
 msgstr "Activ"
@@ -315,14 +315,14 @@ msgid "%1 min"
 msgstr "%1 min"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "HR de odihnă"
+msgstr "Puls în repaus"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Actualizat %1"
+msgstr "Actualizat la %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Nu este conectat"
@@ -331,13 +331,13 @@ msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
 msgstr "Pași: %1 | Cal: %2 | Dist: %3\nActualizat: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Autorizarea a expirat la %1 — vă rugăm să reautorizați"
+msgstr "Autorizarea a expirat la %1 — reautorizați"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Actualizarea simbolului a eșuat la %1 — %2"
+msgstr "Reîmprospătarea tokenului a eșuat la %1 — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
-msgstr "Nu este disponibil niciun simbol de reîmprospătare - vă rugăm să reautorizați"
+msgstr "Niciun token de reîmprospătare disponibil — reautorizați"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
 msgstr "Token reîmprospătat la %1"

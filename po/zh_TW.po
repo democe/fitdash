@@ -13,25 +13,25 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "一般的"
+msgstr "一般"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
 msgstr "未授權"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "授權問題—重新授權"
+msgstr "授權發生問題 — 請重新授權"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
-msgstr "令牌已過期 - 需要刷新"
+msgstr "權杖已過期 — 需要重新整理"
 #: package/contents/ui/configGeneral.qml:60
 msgid "unknown"
 msgstr "未知"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "已授權（使用者： %1 ）"
+msgstr "已授權（使用者：%1）"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
-msgstr "客戶編號："
+msgstr "用戶端 ID："
 #: package/contents/ui/configGeneral.qml:90
 msgid "From dev.fitbit.com/apps"
 msgstr "來自 dev.fitbit.com/apps"
@@ -40,42 +40,42 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "來自 Fitbit 應用程式註冊的 OAuth 2.0 用戶端 ID"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "回呼網址："
+msgstr "回呼 URL："
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
 msgstr "複製到剪貼簿"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "回調埠："
+msgstr "回呼連接埠："
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "將回呼 URL 貼到 dev.fitbit.com 上的 Fitbit 應用程式設定中"
+msgstr "將回呼 URL 貼到 dev.fitbit.com 上 Fitbit 應用程式的設定中"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
-msgstr "刷新間隔（分鐘）："
+msgstr "重新整理間隔（分鐘）："
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "建議：15-30 分鐘維持在 Fitbit 頻率限制範圍內"
+msgstr "建議：15–30 分鐘，以免超出 Fitbit 請求頻率限制"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "展示"
+msgstr "顯示"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "距離單位："
 #: package/contents/ui/configGeneral.qml:169
 msgid "Kilometers (km)"
-msgstr "公里（公里）"
+msgstr "公里 (km)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "英哩 (mi)"
+msgstr "英里 (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
-msgstr "可見指標"
+msgstr "顯示的指標"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "步驟"
+msgstr "步數"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
@@ -95,13 +95,13 @@ msgid "Fitbit Account"
 msgstr "Fitbit 帳戶"
 #: package/contents/ui/configGeneral.qml:225
 msgid "Status:"
-msgstr "地位："
+msgstr "狀態："
 #: package/contents/ui/configGeneral.qml:233
 msgid "Last request:"
-msgstr "最後請求："
+msgstr "上次請求："
 #: package/contents/ui/configGeneral.qml:235
 msgid "No requests yet"
-msgstr "還沒有請求"
+msgstr "尚無請求"
 #: package/contents/ui/configGeneral.qml:245
 msgid "Authorization:"
 msgstr "授權："
@@ -119,34 +119,34 @@ msgid "Authorize manually (copy & paste)"
 msgstr "手動授權（複製和貼上）"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "如果瀏覽器無法存取本機主機（沙盒瀏覽器、遠端會話或沒有 Python），請使用此選項"
+msgstr "如果瀏覽器無法存取 localhost（沙盒瀏覽器、遠端工作階段或未安裝 Python），請使用此方式"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
-msgstr "步驟一："
+msgstr "第 1 步："
 #: package/contents/ui/configGeneral.qml:286
 msgid "Open this URL in a browser and approve access:"
 msgstr "在瀏覽器中開啟此 URL 並批准存取："
 #: package/contents/ui/configGeneral.qml:293
 msgid "Authorization URL:"
-msgstr "授權網址："
+msgstr "授權 URL："
 #: package/contents/ui/configGeneral.qml:320
 msgid "Open in browser"
 msgstr "在瀏覽器中開啟"
 #: package/contents/ui/configGeneral.qml:329
 msgid "Step 2:"
-msgstr "步驟2："
+msgstr "第 2 步："
 #: package/contents/ui/configGeneral.qml:330
 msgid "After approving, copy the address bar URL and paste it below:"
 msgstr "批准後，複製網址列 URL 並將其貼到下面："
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
-msgstr "重定向 URL 或程式碼："
+msgstr "重新導向 URL 或授權碼："
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:.../callback?code=..."
+msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "完全的"
+msgstr "完成"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "取消手動授權"
@@ -155,120 +155,120 @@ msgid "Authorization successful!"
 msgstr "授權成功！"
 #: package/contents/ui/FitbitApi.qml:33
 msgid "No access token"
-msgstr "沒有訪問令牌"
+msgstr "沒有存取權杖"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
-msgstr "網路錯誤 — 檢查您的連接"
+msgstr "網路錯誤 — 請檢查網路連線"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "%1 網路錯誤"
+msgstr "網路錯誤（%1）"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "%1 令牌已過期 — 刷新"
+msgstr "權杖已於 %1 過期 — 正在重新整理"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "速率有限 — 稍後再試"
+msgstr "請求過於頻繁 — 請稍後再試"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "%1 的速率限制 — 顯示快取數據"
+msgstr "請求過於頻繁（%1）— 顯示快取資料"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit 伺服器錯誤（HTTP %1 ）"
+msgstr "Fitbit 伺服器錯誤（HTTP %1）"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "%2 處的伺服器錯誤 (HTTP %1 )"
+msgstr "伺服器錯誤（HTTP %1，%2）"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 失敗 (HTTP %2 )"
+msgstr "%1失敗（HTTP %2）"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "%2 出現錯誤 (HTTP %1 )"
+msgstr "錯誤（HTTP %1，%2）"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
-msgstr "請求逾時 — 檢查您的連接"
+msgstr "請求逾時 — 請檢查網路連線"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "%1 逾時"
+msgstr "逾時（%1）"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
-msgstr "活動獲取"
+msgstr "擷取活動資料"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "好的 — 在 %1 更新"
+msgstr "OK — 更新於 %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
-msgstr "無法解析活動數據"
+msgstr "無法解析活動資料"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "%1 解析錯誤"
+msgstr "解析錯誤（%1）"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "未知錯誤"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "無法解析身份驗證回應"
+msgstr "無法解析授權回應"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
-msgstr "客戶端 ID 格式無效"
+msgstr "用戶端 ID 格式無效"
 #: package/contents/ui/FitbitOAuth.qml:150
 msgid "Authorization canceled"
 msgstr "授權已取消"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1（%2）"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1（HTTP %2）"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
-msgstr "令牌刷新期間網路錯誤"
+msgstr "重新整理權杖時發生網路錯誤"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "刷新令牌無效 - 請重新授權"
+msgstr "重新整理權杖無效 — 請重新授權"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
-msgstr "令牌刷新失敗"
+msgstr "權杖重新整理失敗"
 #: package/contents/ui/FitbitOAuth.qml:283
 msgid "Refresh failed — missing tokens"
-msgstr "刷新失敗——缺少令牌"
+msgstr "重新整理失敗 — 缺少權杖"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
-msgstr "令牌刷新失敗 - 無效回應"
+msgstr "權杖重新整理失敗 — 回應無效"
 #: package/contents/ui/FitbitOAuth.qml:341
 msgid "Paste the redirect URL or authorization code first"
-msgstr "首先貼上重新導向 URL 或授權程式碼"
+msgstr "請先貼上重新導向 URL 或授權碼"
 #: package/contents/ui/FitbitOAuth.qml:345
 msgid "Start the manual authorization first"
-msgstr "首先啟動手動授權"
+msgstr "請先開始手動授權"
 #: package/contents/ui/FitbitOAuth.qml:365
 msgid "Authorization was denied"
 msgstr "授權被拒絕"
 #: package/contents/ui/FitbitOAuth.qml:372
 msgid "Authorization failed (state mismatch) — please try again"
-msgstr "授權失敗（狀態不符）－請重試"
+msgstr "授權失敗（state 不符）— 請重試"
 #: package/contents/ui/FitbitOAuth.qml:376
 msgid "No authorization code found in the pasted text"
 msgstr "在貼上的文字中找不到授權碼"
 #: package/contents/ui/FitbitOAuth.qml:386
 msgid "Network error during token exchange"
-msgstr "代幣交換期間網路錯誤"
+msgstr "交換權杖時發生網路錯誤"
 #: package/contents/ui/FitbitOAuth.qml:387
 msgid "Authorization code invalid or expired — please try again"
-msgstr "授權碼無效或過期 - 請重試"
+msgstr "授權碼無效或已過期 — 請重試"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
-msgstr "代幣兌換失敗"
+msgstr "權杖交換失敗"
 #: package/contents/ui/FitbitOAuth.qml:389
 msgid "Token exchange failed — missing tokens"
-msgstr "代幣交換失敗－缺少代幣"
+msgstr "權杖交換失敗 — 缺少權杖"
 #: package/contents/ui/FitbitOAuth.qml:390
 msgid "Token exchange failed — invalid response"
-msgstr "令牌交換失敗 - 無效回應"
+msgstr "權杖交換失敗 — 回應無效"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
-msgstr "%1 米"
+msgstr "%1 英里"
 #: package/contents/ui/FullRepresentation.qml:42
 msgctxt "distance in kilometers"
 msgid "%1 km"
@@ -276,25 +276,25 @@ msgstr "%1 公里"
 #: package/contents/ui/FullRepresentation.qml:68
 #: package/contents/ui/main.qml:77
 msgid "FitDash"
-msgstr "健身衝刺"
+msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "陳舊"
+msgstr "未更新"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "今天"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "連線 Fitbit"
+msgstr "連結 Fitbit"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
-msgstr "在設定中授權您的帳戶顯示今天的活動。"
+msgstr "請在設定中授權您的帳戶以顯示今日活動。"
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
 msgstr "開啟設定"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
-msgstr "加載 Fitbit 數據"
+msgstr "正在載入 Fitbit 資料"
 #: package/contents/ui/FullRepresentation.qml:220
 #, javascript-format
 msgctxt "step goal progress"
@@ -302,13 +302,13 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%2 剩餘的 %1"
+msgstr "剩餘 %1（共 %2）"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
 msgstr "未設定步數目標"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "積極的"
+msgstr "活動"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
@@ -319,25 +319,25 @@ msgstr "靜止心率"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
-msgstr "%1 節拍次數"
+msgstr "%1 次/分"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "更新 %1"
+msgstr "更新於 %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "未連接"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "步驟： %1 |卡爾： %2 |地區： %3\n更新： %4"
+msgstr "步數：%1 | 卡路里：%2 | 距離：%3\n更新：%4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "%1 授權已過期 — 請重新授權"
+msgstr "授權已於 %1 過期 — 請重新授權"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "%1 上的令牌刷新失敗 — %2"
+msgstr "權杖重新整理失敗（%1）— %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
-msgstr "沒有可用的刷新令牌 - 請重新授權"
+msgstr "沒有可用的重新整理權杖 — 請重新授權"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "%1 上的令牌已刷新"
+msgstr "權杖已於 %1 重新整理"

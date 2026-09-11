@@ -13,25 +13,25 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "一般的な"
+msgstr "全般"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
-msgstr "許可されていません"
+msgstr "未認証"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "認証の問題 - 再認証"
+msgstr "認証に問題があります — 再認証してください"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
-msgstr "トークンの有効期限が切れました - 更新が必要です"
+msgstr "トークンの有効期限切れ — 更新が必要です"
 #: package/contents/ui/configGeneral.qml:60
 msgid "unknown"
-msgstr "未知"
+msgstr "不明"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "承認済み (ユーザー: %1 )"
+msgstr "認証済み (ユーザー: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
-msgstr "クライアントID:"
+msgstr "クライアント ID:"
 #: package/contents/ui/configGeneral.qml:90
 msgid "From dev.fitbit.com/apps"
 msgstr "dev.fitbit.com/apps より"
@@ -50,16 +50,16 @@ msgid "Callback port:"
 msgstr "コールバックポート:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "dev.fitbit.com にある Fitbit アプリの設定にコールバック URL を貼り付けます。"
+msgstr "dev.fitbit.com の Fitbit アプリ設定にコールバック URL を貼り付けてください"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
 msgstr "更新間隔 (分):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "推奨: Fitbit のレート制限内にとどまるには 15 ～ 30 分"
+msgstr "推奨: Fitbit のレート制限を超えないよう 15～30 分"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "画面"
+msgstr "表示"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "距離単位:"
@@ -71,11 +71,11 @@ msgid "Miles (mi)"
 msgstr "マイル (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
-msgstr "目に見える指標"
+msgstr "表示する項目"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "ステップ"
+msgstr "歩数"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
@@ -86,7 +86,7 @@ msgid "Distance"
 msgstr "距離"
 #: package/contents/ui/configGeneral.qml:208
 msgid "Active minutes"
-msgstr "アクティブな時間（分）"
+msgstr "アクティブ時間 (分)"
 #: package/contents/ui/configGeneral.qml:215
 msgid "Resting heart rate"
 msgstr "安静時の心拍数"
@@ -95,16 +95,16 @@ msgid "Fitbit Account"
 msgstr "Fitbit アカウント"
 #: package/contents/ui/configGeneral.qml:225
 msgid "Status:"
-msgstr "状態："
+msgstr "状態:"
 #: package/contents/ui/configGeneral.qml:233
 msgid "Last request:"
-msgstr "最後のリクエスト:"
+msgstr "最終リクエスト:"
 #: package/contents/ui/configGeneral.qml:235
 msgid "No requests yet"
-msgstr "まだリクエストはありません"
+msgstr "リクエストはまだありません"
 #: package/contents/ui/configGeneral.qml:245
 msgid "Authorization:"
-msgstr "認可:"
+msgstr "認証:"
 #: package/contents/ui/configGeneral.qml:247
 msgid "Cancel"
 msgstr "キャンセル"
@@ -119,25 +119,25 @@ msgid "Authorize manually (copy & paste)"
 msgstr "手動で認証する（コピー＆ペースト）"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "ブラウザがローカルホストにアクセスできない場合 (サンドボックス ブラウザ、リモート セッション、または Python がない場合) にこれを使用します。"
+msgstr "ブラウザが localhost にアクセスできない場合 (サンドボックス化されたブラウザ、リモートセッション、Python がない場合など) に使用します"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
-msgstr "ステップ 1:"
+msgstr "手順 1:"
 #: package/contents/ui/configGeneral.qml:286
 msgid "Open this URL in a browser and approve access:"
-msgstr "ブラウザでこの URL を開き、アクセスを承認します。"
+msgstr "この URL をブラウザで開き、アクセスを承認してください:"
 #: package/contents/ui/configGeneral.qml:293
 msgid "Authorization URL:"
-msgstr "認証URL:"
+msgstr "認証 URL:"
 #: package/contents/ui/configGeneral.qml:320
 msgid "Open in browser"
 msgstr "ブラウザで開く"
 #: package/contents/ui/configGeneral.qml:329
 msgid "Step 2:"
-msgstr "ステップ 2:"
+msgstr "手順 2:"
 #: package/contents/ui/configGeneral.qml:330
 msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "承認したら、アドレス バーの URL をコピーして以下に貼り付けます。"
+msgstr "承認後、アドレスバーの URL をコピーして下に貼り付けてください:"
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
 msgstr "リダイレクト URL またはコード:"
@@ -149,58 +149,58 @@ msgid "Complete"
 msgstr "完了"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
-msgstr "手動認証をキャンセルする"
+msgstr "手動認証をキャンセル"
 #: package/contents/ui/configGeneral.qml:397
 msgid "Authorization successful!"
-msgstr "認証が成功しました!"
+msgstr "認証に成功しました！"
 #: package/contents/ui/FitbitApi.qml:33
 msgid "No access token"
 msgstr "アクセストークンがありません"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
-msgstr "ネットワーク エラー - 接続を確認してください"
+msgstr "ネットワークエラー — 接続を確認してください"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "%1 でのネットワーク エラー"
+msgstr "ネットワークエラー (%1)"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "%1 でトークンの有効期限が切れました - リフレッシュ"
+msgstr "トークンの有効期限が切れました (%1) — 更新中"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "レートが制限されています - 後でもう一度お試しください"
+msgstr "レート制限中 — しばらくしてから再試行してください"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "%1 でレート制限 — キャッシュされたデータを表示"
+msgstr "レート制限中 (%1) — キャッシュされたデータを表示しています"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit サーバー エラー (HTTP %1 )"
+msgstr "Fitbit サーバーエラー (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "%2 でのサーバー エラー (HTTP %1 )"
+msgstr "サーバーエラー (HTTP %1、%2)"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 が失敗しました (HTTP %2 )"
+msgstr "%1に失敗しました (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "%2 でのエラー (HTTP %1 )"
+msgstr "エラー (HTTP %1、%2)"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
-msgstr "リクエストがタイムアウトしました - 接続を確認してください"
+msgstr "リクエストがタイムアウトしました — 接続を確認してください"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "%1 でタイムアウトになりました"
+msgstr "タイムアウト (%1)"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "アクティビティの取得"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "OK — %1 で更新されました"
+msgstr "OK — %1 に更新"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "アクティビティデータの解析に失敗しました"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "%1 での解析エラー"
+msgstr "解析エラー (%1)"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "不明なエラー"
@@ -213,58 +213,58 @@ msgid "Invalid client ID format"
 msgstr "無効なクライアント ID 形式"
 #: package/contents/ui/FitbitOAuth.qml:150
 msgid "Authorization canceled"
-msgstr "認可が取り消されました"
+msgstr "認証がキャンセルされました"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
-msgstr "トークン更新中のネットワークエラー"
+msgstr "トークン更新中にネットワークエラーが発生しました"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "リフレッシュトークンが無効です - 再認証してください"
+msgstr "リフレッシュトークンが無効です — 再認証してください"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
 msgstr "トークンの更新に失敗しました"
 #: package/contents/ui/FitbitOAuth.qml:283
 msgid "Refresh failed — missing tokens"
-msgstr "更新に失敗しました - トークンがありません"
+msgstr "更新に失敗しました — トークンがありません"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
-msgstr "トークンの更新に失敗しました - 無効な応答"
+msgstr "トークンの更新に失敗しました — 無効な応答"
 #: package/contents/ui/FitbitOAuth.qml:341
 msgid "Paste the redirect URL or authorization code first"
-msgstr "最初にリダイレクト URL または認証コードを貼り付けます"
+msgstr "先にリダイレクト URL または認証コードを貼り付けてください"
 #: package/contents/ui/FitbitOAuth.qml:345
 msgid "Start the manual authorization first"
-msgstr "最初に手動認証を開始してください"
+msgstr "先に手動認証を開始してください"
 #: package/contents/ui/FitbitOAuth.qml:365
 msgid "Authorization was denied"
-msgstr "承認が拒否されました"
+msgstr "認証が拒否されました"
 #: package/contents/ui/FitbitOAuth.qml:372
 msgid "Authorization failed (state mismatch) — please try again"
-msgstr "認証に失敗しました (状態が一致しません) - もう一度試してください"
+msgstr "認証に失敗しました (state が一致しません) — もう一度お試しください"
 #: package/contents/ui/FitbitOAuth.qml:376
 msgid "No authorization code found in the pasted text"
 msgstr "貼り付けられたテキストに認証コードが見つかりませんでした"
 #: package/contents/ui/FitbitOAuth.qml:386
 msgid "Network error during token exchange"
-msgstr "トークン交換中のネットワークエラー"
+msgstr "トークン交換中にネットワークエラーが発生しました"
 #: package/contents/ui/FitbitOAuth.qml:387
 msgid "Authorization code invalid or expired — please try again"
-msgstr "認証コードが無効か期限切れです - もう一度試してください"
+msgstr "認証コードが無効か期限切れです — もう一度お試しください"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
 msgstr "トークン交換に失敗しました"
 #: package/contents/ui/FitbitOAuth.qml:389
 msgid "Token exchange failed — missing tokens"
-msgstr "トークン交換に失敗しました - トークンがありません"
+msgstr "トークン交換に失敗しました — トークンがありません"
 #: package/contents/ui/FitbitOAuth.qml:390
 msgid "Token exchange failed — invalid response"
-msgstr "トークン交換に失敗しました - 無効な応答"
+msgstr "トークン交換に失敗しました — 無効な応答"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
@@ -276,16 +276,16 @@ msgstr "%1 km"
 #: package/contents/ui/FullRepresentation.qml:68
 #: package/contents/ui/main.qml:77
 msgid "FitDash"
-msgstr "フィットダッシュ"
+msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "古い"
+msgstr "未更新"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "今日"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "Fitbit に接続する"
+msgstr "Fitbit に接続"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
 msgstr "今日のアクティビティを表示するには、設定でアカウントを承認してください。"
@@ -294,7 +294,7 @@ msgid "Open Settings"
 msgstr "設定を開く"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
-msgstr "Fitbit データの読み込み"
+msgstr "Fitbit データを読み込み中"
 #: package/contents/ui/FullRepresentation.qml:220
 #, javascript-format
 msgctxt "step goal progress"
@@ -302,7 +302,7 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%2 の残りの %1"
+msgstr "残り %1 / %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
 msgstr "歩数目標が設定されていません"
@@ -315,29 +315,29 @@ msgid "%1 min"
 msgstr "%1 分"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "安静時の心拍数"
+msgstr "安静時心拍数"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
-msgstr "%1 の bpm"
+msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "%1 を更新しました"
+msgstr "%1 に更新"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "接続されていません"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "手順: %1 |校正: %2 |距離: %3\n更新: %4"
+msgstr "歩数: %1 | カロリー: %2 | 距離: %3\n更新: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "%1 で認証が期限切れになりました - 再認証してください"
+msgstr "認証の有効期限が切れました (%1) — 再認証してください"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "%1 でトークンの更新に失敗しました — %2"
+msgstr "トークンの更新に失敗しました (%1) — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
-msgstr "利用可能なリフレッシュ トークンがありません - 再認証してください"
+msgstr "リフレッシュトークンがありません — 再認証してください"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "%1 でトークンが更新されました"
+msgstr "トークンを更新しました (%1)"

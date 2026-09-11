@@ -13,22 +13,22 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "Γενικός"
+msgstr "Γενικά"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
 msgstr "Μη εξουσιοδοτημένο"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "Πρόβλημα εξουσιοδότησης — εκ νέου εξουσιοδότηση"
+msgstr "Πρόβλημα εξουσιοδότησης — εξουσιοδοτήστε ξανά"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
 msgstr "Το διακριτικό έληξε — απαιτείται ανανέωση"
 #: package/contents/ui/configGeneral.qml:60
 msgid "unknown"
-msgstr "άγνωστος"
+msgstr "άγνωστο"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Εξουσιοδοτημένος (Χρήστης: %1 )"
+msgstr "Εξουσιοδοτημένο (χρήστης: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "Αναγνωριστικό πελάτη:"
@@ -40,7 +40,7 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "Αναγνωριστικό πελάτη OAuth 2.0 από την εγγραφή σας στην εφαρμογή Fitbit"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "URL επιστροφής κλήσης:"
+msgstr "URL επανάκλησης:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
@@ -50,16 +50,16 @@ msgid "Callback port:"
 msgstr "Θύρα επανάκλησης:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "Επικολλήστε τη διεύθυνση URL επιστροφής κλήσης στις ρυθμίσεις της εφαρμογής Fitbit στη διεύθυνση dev.fitbit.com"
+msgstr "Επικολλήστε το URL επανάκλησης στις ρυθμίσεις της εφαρμογής σας Fitbit στο dev.fitbit.com"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
 msgstr "Διάστημα ανανέωσης (λεπτά):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Συνιστάται: 15–30 λεπτά για να παραμείνετε εντός των ορίων ρυθμού Fitbit"
+msgstr "Συνιστάται: 15–30 λεπτά ώστε να μην ξεπερνάτε τα όρια αιτημάτων του Fitbit"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Επίδειξη"
+msgstr "Εμφάνιση"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "Μονάδα απόστασης:"
@@ -68,7 +68,7 @@ msgid "Kilometers (km)"
 msgstr "Χιλιόμετρα (χλμ)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "Μίλια (μίλια)"
+msgstr "Μίλια (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
 msgstr "Ορατές μετρήσεις"
@@ -107,7 +107,7 @@ msgid "Authorization:"
 msgstr "Εξουσιοδότηση:"
 #: package/contents/ui/configGeneral.qml:247
 msgid "Cancel"
-msgstr "Ματαίωση"
+msgstr "Ακύρωση"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
 msgstr "Εκ νέου εξουσιοδότηση με το Fitbit"
@@ -119,7 +119,7 @@ msgid "Authorize manually (copy & paste)"
 msgstr "Εξουσιοδότηση μη αυτόματα (αντιγραφή και επικόλληση)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Χρησιμοποιήστε το εάν το πρόγραμμα περιήγησης δεν μπορεί να προσεγγίσει τον localhost (πρόγραμμα περιήγησης σε περιβάλλον δοκιμών, απομακρυσμένη περίοδος λειτουργίας ή χωρίς Python)"
+msgstr "Χρησιμοποιήστε το αν το πρόγραμμα περιήγησης δεν μπορεί να συνδεθεί στο localhost (απομονωμένο πρόγραμμα περιήγησης, απομακρυσμένη συνεδρία ή χωρίς Python)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "Βήμα 1:"
@@ -146,7 +146,7 @@ msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "Πλήρης"
+msgstr "Ολοκλήρωση"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "Ακύρωση μη αυτόματης εξουσιοδότησης"
@@ -161,52 +161,52 @@ msgid "Network error — check your connection"
 msgstr "Σφάλμα δικτύου — ελέγξτε τη σύνδεσή σας"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "Σφάλμα δικτύου στο %1"
+msgstr "Σφάλμα δικτύου στις %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "Το διακριτικό έληξε στο %1 — ανανέωση"
+msgstr "Το διακριτικό έληξε στις %1 — ανανέωση"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Περιορισμένη τιμή — δοκιμάστε ξανά αργότερα"
+msgstr "Υπέρβαση ορίου αιτημάτων — δοκιμάστε ξανά αργότερα"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Η τιμή περιορίζεται σε %1 — εμφανίζει δεδομένα προσωρινής αποθήκευσης"
+msgstr "Υπέρβαση ορίου αιτημάτων στις %1 — εμφάνιση αποθηκευμένων δεδομένων"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Σφάλμα διακομιστή Fitbit (HTTP %1 )"
+msgstr "Σφάλμα διακομιστή Fitbit (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Σφάλμα διακομιστή (HTTP %1 ) στο %2"
+msgstr "Σφάλμα διακομιστή (HTTP %1) στις %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "Το %1 απέτυχε (HTTP %2 )"
+msgstr "Αποτυχία: %1 (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Σφάλμα (HTTP %1 ) στο %2"
+msgstr "Σφάλμα (HTTP %1) στις %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "Το χρονικό όριο του αιτήματος έληξε — ελέγξτε τη σύνδεσή σας"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Το χρονικό όριο έληξε στο %1"
+msgstr "Λήξη χρονικού ορίου στις %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "Λήψη δραστηριότητας"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "OK — ενημερώθηκε στο %1"
+msgstr "OK — ενημερώθηκε στις %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "Αποτυχία ανάλυσης δεδομένων δραστηριότητας"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "Σφάλμα ανάλυσης στο %1"
+msgstr "Σφάλμα ανάλυσης στις %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Άγνωστο σφάλμα"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "Απέτυχε η ανάλυση της απάντησης ταυτότητας"
+msgstr "Αποτυχία ανάλυσης της απάντησης εξουσιοδότησης"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
@@ -216,10 +216,10 @@ msgid "Authorization canceled"
 msgstr "Η εξουσιοδότηση ακυρώθηκε"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "Σφάλμα δικτύου κατά την ανανέωση διακριτικού"
@@ -234,7 +234,7 @@ msgid "Refresh failed — missing tokens"
 msgstr "Η ανανέωση απέτυχε — λείπουν διακριτικά"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
-msgstr "Η ανανέωση διακριτικού απέτυχε — Μη έγκυρη απάντηση"
+msgstr "Η ανανέωση διακριτικού απέτυχε — μη έγκυρη απάντηση"
 #: package/contents/ui/FitbitOAuth.qml:341
 msgid "Paste the redirect URL or authorization code first"
 msgstr "Επικολλήστε πρώτα τη διεύθυνση URL ανακατεύθυνσης ή τον κωδικό εξουσιοδότησης"
@@ -279,19 +279,19 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Μπαγιάτικος"
+msgstr "Μη ενημερωμένο"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Σήμερα"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "Συνδέστε το Fitbit"
+msgstr "Σύνδεση με Fitbit"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
 msgstr "Εξουσιοδοτήστε τον λογαριασμό σας στις ρυθμίσεις για εμφάνιση της σημερινής δραστηριότητας."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Ανοίξτε τις Ρυθμίσεις"
+msgstr "Άνοιγμα ρυθμίσεων"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "Φόρτωση δεδομένων Fitbit"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 που απομένει από το %2"
+msgstr "Απομένουν %1 από %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "Δεν έχει οριστεί στόχος βήματος"
+msgstr "Δεν έχει οριστεί στόχος βημάτων"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Ενεργός"
+msgstr "Δραστηριότητα"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
-msgstr "%1 ελάχ"
+msgstr "%1 λεπ."
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "HR ανάπαυσης"
+msgstr "Παλμοί ηρεμίας"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Ενημερώθηκε το %1"
+msgstr "Ενημερώθηκε στις %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Δεν είναι συνδεδεμένο"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Βήματα: %1 | Υπολογισμός: %2 | Dist: %3\nΕνημερώθηκε: %4"
+msgstr "Βήματα: %1 | Θερμ.: %2 | Απόστ.: %3\nΕνημερώθηκε: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Η εξουσιοδότηση έληξε στο %1 — εξουσιοδοτήστε εκ νέου"
+msgstr "Η εξουσιοδότηση έληξε στις %1 — εξουσιοδοτήστε ξανά"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Η ανανέωση διακριτικού απέτυχε στο %1 — %2"
+msgstr "Η ανανέωση διακριτικού απέτυχε στις %1 — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "Δεν υπάρχει διαθέσιμο διακριτικό ανανέωσης — εξουσιοδοτήστε εκ νέου"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Το διακριτικό ανανεώθηκε στο %1"
+msgstr "Το διακριτικό ανανεώθηκε στις %1"

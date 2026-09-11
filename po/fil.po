@@ -13,7 +13,7 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "Heneral"
+msgstr "Pangkalahatan"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
 msgstr "Hindi awtorisado"
@@ -28,7 +28,7 @@ msgid "unknown"
 msgstr "hindi kilala"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Pinahintulutan (User: %1 )"
+msgstr "Awtorisado (User: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "Client ID:"
@@ -56,10 +56,10 @@ msgid "Refresh interval (minutes):"
 msgstr "Refresh interval (minuto):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Inirerekomenda: 15–30 minuto upang manatili sa loob ng mga limitasyon sa rate ng Fitbit"
+msgstr "Inirerekomenda: 15–30 minuto para hindi lumampas sa mga limitasyon ng request ng Fitbit"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Pagpapakita"
+msgstr "Display"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "Unit ng distansya:"
@@ -89,7 +89,7 @@ msgid "Active minutes"
 msgstr "Mga aktibong minuto"
 #: package/contents/ui/configGeneral.qml:215
 msgid "Resting heart rate"
-msgstr "Ang rate ng puso sa pagpapahinga"
+msgstr "Tibok ng puso habang nagpapahinga"
 #: package/contents/ui/configGeneral.qml:221
 msgid "Fitbit Account"
 msgstr "Fitbit Account"
@@ -146,7 +146,7 @@ msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "Kumpleto"
+msgstr "Kumpletuhin"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "Kanselahin ang manu-manong awtorisasyon"
@@ -161,46 +161,46 @@ msgid "Network error — check your connection"
 msgstr "Error sa network — tingnan ang iyong koneksyon"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "Error sa network sa %1"
+msgstr "Error sa network nang %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "Nag-expire ang token sa %1 — nagre-refresh"
+msgstr "Nag-expire ang token nang %1 — nagre-refresh"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Limitado ang rate — subukang muli sa ibang pagkakataon"
+msgstr "Naabot ang limitasyon ng request — subukang muli mamaya"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Limitado ang rate sa %1 — nagpapakita ng naka-cache na data"
+msgstr "Naabot ang limitasyon ng request nang %1 — ipinapakita ang naka-cache na data"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Error sa server ng Fitbit (HTTP %1 )"
+msgstr "Error sa server ng Fitbit (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Error sa server (HTTP %1 ) sa %2"
+msgstr "Error sa server (HTTP %1) nang %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "Nabigo ang %1 (HTTP %2 )"
+msgstr "Nabigo ang %1 (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Error (HTTP %1 ) sa %2"
+msgstr "Error (HTTP %1) nang %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "Nag-time out ang kahilingan — tingnan ang iyong koneksyon"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Nag-time out sa %1"
+msgstr "Nag-time out nang %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "Pagkuha ng aktibidad"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "OK — na-update sa %1"
+msgstr "OK — na-update nang %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "Nabigong i-parse ang data ng aktibidad"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "Error sa pag-parse sa %1"
+msgstr "Error sa pag-parse nang %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Hindi kilalang error"
@@ -216,10 +216,10 @@ msgid "Authorization canceled"
 msgstr "Kinansela ang awtorisasyon"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "Error sa network habang nagre-refresh ng token"
@@ -279,7 +279,7 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "lipas na"
+msgstr "Luma na"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Ngayong araw"
@@ -305,7 +305,7 @@ msgid "%1 remaining of %2"
 msgstr "%1 ang natitira sa %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "Walang nakatakdang hakbang na layunin"
+msgstr "Walang nakatakdang layunin sa hakbang"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
 msgstr "Aktibo"
@@ -315,29 +315,29 @@ msgid "%1 min"
 msgstr "%1 min"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "Nagpapahinga ang HR"
+msgstr "HR habang nagpapahinga"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Na-update ang %1"
+msgstr "Na-update nang %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Hindi konektado"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Mga Hakbang: %1 | Cal: %2 | Dist: %3\nNa-update: %4"
+msgstr "Hakbang: %1 | Cal: %2 | Distansya: %3\nNa-update: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Nag-expire ang pahintulot sa %1 — mangyaring muling pahintulutan"
+msgstr "Nag-expire ang awtorisasyon nang %1 — pakipahintulutang muli"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Nabigo ang pag-refresh ng token sa %1 — %2"
+msgstr "Nabigo ang pag-refresh ng token nang %1 — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "Walang available na refresh token — mangyaring muling pahintulutan"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Na-refresh ang token sa %1"
+msgstr "Na-refresh ang token nang %1"

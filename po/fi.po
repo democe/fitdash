@@ -13,7 +13,7 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "Kenraali"
+msgstr "Yleiset"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
 msgstr "Ei valtuutettu"
@@ -22,13 +22,13 @@ msgid "Authorization problem — re-authorize"
 msgstr "Valtuutusongelma – valtuuta uudelleen"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
-msgstr "Tunnus on vanhentunut – päivitys tarvitaan"
+msgstr "Tunniste vanhentunut – päivitys tarvitaan"
 #: package/contents/ui/configGeneral.qml:60
 msgid "unknown"
 msgstr "tuntematon"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Valtuutettu (käyttäjä: %1 )"
+msgstr "Valtuutettu (käyttäjä: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "Asiakastunnus:"
@@ -40,29 +40,29 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "OAuth 2.0 -asiakastunnus Fitbit-sovelluksesi rekisteröinnistä"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "Takaisinsoitto-URL-osoite:"
+msgstr "Paluu-URL:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
 msgstr "Kopioi leikepöydälle"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "Takaisinsoittoportti:"
+msgstr "Paluuportti:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "Liitä takaisinsoitto-URL-osoite Fitbit-sovelluksesi asetuksiin osoitteessa dev.fitbit.com"
+msgstr "Liitä paluu-URL Fitbit-sovelluksesi asetuksiin osoitteessa dev.fitbit.com"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
 msgstr "Päivitysväli (minuutteja):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Suositus: 15–30 minuuttia pysyäksesi Fitbitin nopeusrajojen sisällä"
+msgstr "Suositus: 15–30 minuuttia, jotta Fitbitin pyyntörajat eivät ylity"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Näyttö"
+msgstr "Näkymä"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
-msgstr "Etäisyysyksikkö:"
+msgstr "Matkan yksikkö:"
 #: package/contents/ui/configGeneral.qml:169
 msgid "Kilometers (km)"
 msgstr "Kilometrit (km)"
@@ -75,7 +75,7 @@ msgstr "Näkyvät mittarit"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "Vaiheet"
+msgstr "Askeleet"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
@@ -83,7 +83,7 @@ msgstr "Kalorit"
 #: package/contents/ui/configGeneral.qml:201
 #: package/contents/ui/FullRepresentation.qml:271
 msgid "Distance"
-msgstr "Etäisyys"
+msgstr "Matka"
 #: package/contents/ui/configGeneral.qml:208
 msgid "Active minutes"
 msgstr "Aktiiviset minuutit"
@@ -95,7 +95,7 @@ msgid "Fitbit Account"
 msgstr "Fitbit-tili"
 #: package/contents/ui/configGeneral.qml:225
 msgid "Status:"
-msgstr "Status:"
+msgstr "Tila:"
 #: package/contents/ui/configGeneral.qml:233
 msgid "Last request:"
 msgstr "Viimeisin pyyntö:"
@@ -107,7 +107,7 @@ msgid "Authorization:"
 msgstr "Valtuutus:"
 #: package/contents/ui/configGeneral.qml:247
 msgid "Cancel"
-msgstr "Peruuttaa"
+msgstr "Peru"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
 msgstr "Valtuuta uudelleen Fitbitillä"
@@ -146,7 +146,7 @@ msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "Täydellinen"
+msgstr "Valmis"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "Peruuta manuaalinen valtuutus"
@@ -155,58 +155,58 @@ msgid "Authorization successful!"
 msgstr "Valtuutus onnistui!"
 #: package/contents/ui/FitbitApi.qml:33
 msgid "No access token"
-msgstr "Ei käyttöoikeustunnusta"
+msgstr "Ei käyttöoikeustunnistetta"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
 msgstr "Verkkovirhe – tarkista yhteys"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "Verkkovirhe %1 ssa"
+msgstr "Verkkovirhe klo %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "Tunnus vanhentui %1 ssa – päivitetään"
+msgstr "Tunniste vanhentui klo %1 – päivitetään"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Hinta rajoitettu – yritä myöhemmin uudelleen"
+msgstr "Pyyntöraja ylitetty – yritä myöhemmin uudelleen"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Nopeus rajoitettu %1 ssa — näyttää välimuistissa olevat tiedot"
+msgstr "Pyyntöraja ylitetty klo %1 – näytetään välimuistissa olevat tiedot"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit-palvelinvirhe (HTTP %1 )"
+msgstr "Fitbit-palvelinvirhe (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Palvelinvirhe (HTTP %1 ) %2 :ssa"
+msgstr "Palvelinvirhe (HTTP %1) klo %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 epäonnistui (HTTP %2 )"
+msgstr "%1 epäonnistui (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Virhe (HTTP %1 ) %2 :ssa"
+msgstr "Virhe (HTTP %1) klo %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "Pyyntö aikakatkaistiin – tarkista yhteys"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Aikakatkaisu %1 ssa"
+msgstr "Aikakatkaisu klo %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
-msgstr "Toimintojen haku"
+msgstr "Aktiivisuustietojen haku"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "OK – päivitetty %1 ssa"
+msgstr "OK – päivitetty klo %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
-msgstr "Toimintatietojen jäsentäminen epäonnistui"
+msgstr "Aktiivisuustietojen jäsentäminen epäonnistui"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "Jäsennysvirhe %1 :ssa"
+msgstr "Jäsennysvirhe klo %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Tuntematon virhe"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "Todennusvastauksen jäsentäminen epäonnistui"
+msgstr "Valtuutusvastauksen jäsentäminen epäonnistui"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
@@ -216,25 +216,25 @@ msgid "Authorization canceled"
 msgstr "Valtuutus peruutettu"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
-msgstr "Verkkovirhe tunnuksen päivityksen aikana"
+msgstr "Verkkovirhe tunnisteen päivityksen aikana"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "Päivitystunnus on virheellinen – valtuuta uudelleen"
+msgstr "Päivitystunniste on virheellinen – valtuuta uudelleen"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
-msgstr "Tokenin päivitys epäonnistui"
+msgstr "Tunnisteen päivitys epäonnistui"
 #: package/contents/ui/FitbitOAuth.qml:283
 msgid "Refresh failed — missing tokens"
-msgstr "Päivitys epäonnistui – tunnuksia puuttuu"
+msgstr "Päivitys epäonnistui – tunnisteita puuttuu"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
-msgstr "Tokenin päivitys epäonnistui – virheellinen vastaus"
+msgstr "Tunnisteen päivitys epäonnistui – virheellinen vastaus"
 #: package/contents/ui/FitbitOAuth.qml:341
 msgid "Paste the redirect URL or authorization code first"
 msgstr "Liitä ensin uudelleenohjaus-URL-osoite tai valtuutuskoodi"
@@ -252,19 +252,19 @@ msgid "No authorization code found in the pasted text"
 msgstr "Liitetystä tekstistä ei löytynyt valtuutuskoodia"
 #: package/contents/ui/FitbitOAuth.qml:386
 msgid "Network error during token exchange"
-msgstr "Verkkovirhe tunnuksen vaihdon aikana"
+msgstr "Verkkovirhe tunnisteen vaihdon aikana"
 #: package/contents/ui/FitbitOAuth.qml:387
 msgid "Authorization code invalid or expired — please try again"
 msgstr "Valtuutuskoodi on virheellinen tai vanhentunut – yritä uudelleen"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
-msgstr "Tokenin vaihto epäonnistui"
+msgstr "Tunnisteen vaihto epäonnistui"
 #: package/contents/ui/FitbitOAuth.qml:389
 msgid "Token exchange failed — missing tokens"
-msgstr "Tokenin vaihto epäonnistui – tokeneita puuttuu"
+msgstr "Tunnisteen vaihto epäonnistui – tunnisteita puuttuu"
 #: package/contents/ui/FitbitOAuth.qml:390
 msgid "Token exchange failed — invalid response"
-msgstr "Tokenin vaihto epäonnistui – virheellinen vastaus"
+msgstr "Tunnisteen vaihto epäonnistui – virheellinen vastaus"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
@@ -279,7 +279,7 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Tunkkainen"
+msgstr "Vanhentunut"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Tänään"
@@ -288,10 +288,10 @@ msgid "Connect Fitbit"
 msgstr "Yhdistä Fitbit"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
-msgstr "Valtuuta tilisi asetuksista näyttääksesi tämän päivän tapahtumat."
+msgstr "Valtuuta tilisi asetuksissa, niin tämän päivän aktiivisuus näytetään."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Avaa Asetukset"
+msgstr "Avaa asetukset"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "Ladataan Fitbit-tietoja"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 jäljellä %2 :sta"
+msgstr "%1 jäljellä tavoitteesta %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "Ei askeltavoitetta asetettu"
+msgstr "Askeltavoitetta ei ole asetettu"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Aktiivinen"
+msgstr "Aktiivisuus"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 min"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "Lepo HR"
+msgstr "Leposyke"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Päivitetty %1"
+msgstr "Päivitetty klo %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Ei yhdistetty"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Vaiheet: %1 | Cal: %2 | Etäisyys: %3\nPäivitetty: %4"
+msgstr "Askeleet: %1 | Kal: %2 | Matka: %3\nPäivitetty: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Valtuutus vanhentui %1 ssa – valtuuta uudelleen"
+msgstr "Valtuutus vanhentui klo %1 – valtuuta uudelleen"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Tunnusteen päivitys epäonnistui %1 ssa – %2"
+msgstr "Tunnisteen päivitys epäonnistui klo %1 – %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
-msgstr "Päivitystunnusta ei ole saatavilla – valtuuta uudelleen"
+msgstr "Päivitystunnistetta ei ole saatavilla – valtuuta uudelleen"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Tunnus päivitetty %1 ssa"
+msgstr "Tunniste päivitetty klo %1"

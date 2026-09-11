@@ -19,7 +19,7 @@ msgid "Not authorized"
 msgstr "অনুমোদিত নয়"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "অনুমোদন সমস্যা — পুনরায় অনুমোদন"
+msgstr "অনুমোদনে সমস্যা — পুনরায় অনুমোদন করুন"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
 msgstr "টোকেনের মেয়াদ শেষ হয়েছে — রিফ্রেশ প্রয়োজন"
@@ -28,7 +28,7 @@ msgid "unknown"
 msgstr "অজানা"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "অনুমোদিত (ব্যবহারকারী: %1 )"
+msgstr "অনুমোদিত (ব্যবহারকারী: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "ক্লায়েন্ট আইডি:"
@@ -56,7 +56,7 @@ msgid "Refresh interval (minutes):"
 msgstr "রিফ্রেশ ব্যবধান (মিনিট):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "প্রস্তাবিত: Fitbit হার সীমার মধ্যে থাকতে 15-30 মিনিট"
+msgstr "প্রস্তাবিত: 15–30 মিনিট, যাতে Fitbit-এর অনুরোধ সীমা অতিক্রম না হয়"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
 msgstr "প্রদর্শন"
@@ -68,14 +68,14 @@ msgid "Kilometers (km)"
 msgstr "কিলোমিটার (কিমি)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "মাইলস (মাই)"
+msgstr "মাইল (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
-msgstr "দৃশ্যমান মেট্রিক্স"
+msgstr "দৃশ্যমান মেট্রিক"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "ধাপ"
+msgstr "পদক্ষেপ"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
@@ -92,7 +92,7 @@ msgid "Resting heart rate"
 msgstr "বিশ্রামের হৃদস্পন্দন"
 #: package/contents/ui/configGeneral.qml:221
 msgid "Fitbit Account"
-msgstr "ফিটবিট অ্যাকাউন্ট"
+msgstr "Fitbit অ্যাকাউন্ট"
 #: package/contents/ui/configGeneral.qml:225
 msgid "Status:"
 msgstr "অবস্থা:"
@@ -119,7 +119,7 @@ msgid "Authorize manually (copy & paste)"
 msgstr "ম্যানুয়ালি অনুমোদন (কপি এবং পেস্ট)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "ব্রাউজার লোকালহোস্টে পৌঁছাতে না পারলে এটি ব্যবহার করুন (স্যান্ডবক্সড ব্রাউজার, রিমোট সেশন, বা পাইথন নেই)"
+msgstr "ব্রাউজার localhost-এ পৌঁছাতে না পারলে এটি ব্যবহার করুন (স্যান্ডবক্সড ব্রাউজার, রিমোট সেশন, বা Python নেই)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "ধাপ 1:"
@@ -140,13 +140,13 @@ msgid "After approving, copy the address bar URL and paste it below:"
 msgstr "অনুমোদন করার পরে, ঠিকানা বারের URLটি অনুলিপি করুন এবং নীচে পেস্ট করুন:"
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
-msgstr "URL বা কোড পুনঃনির্দেশ করুন:"
+msgstr "রিডাইরেক্ট URL বা কোড:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "সম্পূর্ণ"
+msgstr "সম্পূর্ণ করুন"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "ম্যানুয়াল অনুমোদন বাতিল করুন"
@@ -158,55 +158,55 @@ msgid "No access token"
 msgstr "কোনো অ্যাক্সেস টোকেন নেই"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
-msgstr "নেটওয়ার্ক ত্রুটি - আপনার সংযোগ পরীক্ষা করুন"
+msgstr "নেটওয়ার্ক ত্রুটি — আপনার সংযোগ পরীক্ষা করুন"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "%1 -এ নেটওয়ার্ক ত্রুটি৷"
+msgstr "%1-এ নেটওয়ার্ক ত্রুটি"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "%1 -এ টোকেনের মেয়াদ শেষ হয়েছে — রিফ্রেশ হচ্ছে"
+msgstr "%1-এ টোকেনের মেয়াদ শেষ হয়েছে — রিফ্রেশ হচ্ছে"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "রেট সীমিত — পরে আবার চেষ্টা করুন"
+msgstr "অনুরোধের সীমা অতিক্রম হয়েছে — পরে আবার চেষ্টা করুন"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "%1 -এ হার সীমিত — ক্যাশে করা ডেটা দেখাচ্ছে"
+msgstr "%1-এ অনুরোধের সীমা অতিক্রম হয়েছে — ক্যাশে করা ডেটা দেখানো হচ্ছে"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "ফিটবিট সার্ভার ত্রুটি (HTTP %1 )"
+msgstr "Fitbit সার্ভার ত্রুটি (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "%2 এ সার্ভার ত্রুটি (HTTP %1 )"
+msgstr "%2-এ সার্ভার ত্রুটি (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 ব্যর্থ হয়েছে (HTTP %2 )"
+msgstr "%1 ব্যর্থ হয়েছে (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "%2 এ ত্রুটি (HTTP %1 )"
+msgstr "%2-এ ত্রুটি (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "অনুরোধের সময় শেষ হয়েছে — আপনার সংযোগ পরীক্ষা করুন"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "%1 -এ সময় শেষ হয়েছে৷"
+msgstr "%1-এ সময় শেষ হয়েছে"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "কার্যকলাপ আনা"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "ঠিক আছে — %1 -এ আপডেট করা হয়েছে"
+msgstr "ঠিক আছে — %1-এ আপডেট করা হয়েছে"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "কার্যকলাপ ডেটা পার্স করতে ব্যর্থ হয়েছে"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "%1 -এ পার্স ত্রুটি৷"
+msgstr "%1-এ পার্স ত্রুটি"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "অজানা ত্রুটি"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "প্রমাণীকরণ প্রতিক্রিয়া পার্স করতে ব্যর্থ হয়েছে৷"
+msgstr "অনুমোদনের প্রতিক্রিয়া পার্স করতে ব্যর্থ হয়েছে"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
@@ -216,13 +216,13 @@ msgid "Authorization canceled"
 msgstr "অনুমোদন বাতিল করা হয়েছে"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
-msgstr "টোকেন রিফ্রেশ করার সময় নেটওয়ার্ক ত্রুটি৷"
+msgstr "টোকেন রিফ্রেশ করার সময় নেটওয়ার্ক ত্রুটি"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
 msgstr "রিফ্রেশ টোকেন অবৈধ — অনুগ্রহ করে পুনরায় অনুমোদন করুন"
@@ -246,10 +246,10 @@ msgid "Authorization was denied"
 msgstr "অনুমোদন অস্বীকার করা হয়েছে"
 #: package/contents/ui/FitbitOAuth.qml:372
 msgid "Authorization failed (state mismatch) — please try again"
-msgstr "অনুমোদন ব্যর্থ হয়েছে (রাষ্ট্রের মিল নেই) — অনুগ্রহ করে আবার চেষ্টা করুন"
+msgstr "অনুমোদন ব্যর্থ হয়েছে (state মেলেনি) — অনুগ্রহ করে আবার চেষ্টা করুন"
 #: package/contents/ui/FitbitOAuth.qml:376
 msgid "No authorization code found in the pasted text"
-msgstr "আটকানো টেক্সটে কোনো অনুমোদন কোড পাওয়া যায়নি"
+msgstr "পেস্ট করা টেক্সটে কোনো অনুমোদন কোড পাওয়া যায়নি"
 #: package/contents/ui/FitbitOAuth.qml:386
 msgid "Network error during token exchange"
 msgstr "টোকেন বিনিময়ের সময় নেটওয়ার্ক ত্রুটি"
@@ -276,10 +276,10 @@ msgstr "%1 কিমি"
 #: package/contents/ui/FullRepresentation.qml:68
 #: package/contents/ui/main.qml:77
 msgid "FitDash"
-msgstr "ফিটড্যাশ"
+msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "বাসি"
+msgstr "পুরনো ডেটা"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "আজ"
@@ -288,7 +288,7 @@ msgid "Connect Fitbit"
 msgstr "Fitbit সংযোগ করুন"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
-msgstr "আজকের কার্যকলাপ দেখানোর জন্য সেটিংসে আপনার অ্যাকাউন্ট অনুমোদন করুন৷"
+msgstr "আজকের কার্যকলাপ দেখাতে সেটিংসে আপনার অ্যাকাউন্ট অনুমোদন করুন।"
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
 msgstr "সেটিংস খুলুন"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%2 এর %1 অবশিষ্ট"
+msgstr "%2-এর মধ্যে %1 বাকি"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "কোনো ধাপ লক্ষ্য সেট করা হয়নি"
+msgstr "পদক্ষেপের কোনো লক্ষ্য সেট করা হয়নি"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "সক্রিয়"
+msgstr "সক্রিয়তা"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 মিনিট"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "বিশ্রাম এইচআর"
+msgstr "বিশ্রামকালীন হৃদস্পন্দন"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "%1 আপডেট করা হয়েছে"
+msgstr "%1-এ আপডেট হয়েছে"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "সংযুক্ত নয়"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "ধাপ: %1 | ক্যাল: %2 | জেলা: %3\nআপডেট করা হয়েছে: %4"
+msgstr "পদক্ষেপ: %1 | ক্যালোরি: %2 | দূরত্ব: %3\nআপডেট: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "%1 -এ অনুমোদনের মেয়াদ শেষ হয়েছে — অনুগ্রহ করে পুনরায় অনুমোদন করুন"
+msgstr "%1-এ অনুমোদনের মেয়াদ শেষ হয়েছে — অনুগ্রহ করে পুনরায় অনুমোদন করুন"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "%1 — %2 -এ টোকেন রিফ্রেশ ব্যর্থ হয়েছে৷"
+msgstr "%1-এ টোকেন রিফ্রেশ ব্যর্থ হয়েছে — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "কোন রিফ্রেশ টোকেন উপলব্ধ নেই — অনুগ্রহ করে পুনরায় অনুমোদন করুন"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "%1 এ টোকেন রিফ্রেশ করা হয়েছে"
+msgstr "%1-এ টোকেন রিফ্রেশ করা হয়েছে"

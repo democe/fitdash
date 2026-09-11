@@ -19,16 +19,16 @@ msgid "Not authorized"
 msgstr "غير مصرح به"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "مشكلة في التفويض - إعادة التفويض"
+msgstr "مشكلة في التفويض — أعد التفويض"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
 msgstr "انتهت صلاحية الرمز المميز — يلزم التحديث"
 #: package/contents/ui/configGeneral.qml:60
 msgid "unknown"
-msgstr "مجهول"
+msgstr "غير معروف"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "معتمد (المستخدم: %1 )"
+msgstr "مفوَّض (المستخدم: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "معرف العميل:"
@@ -40,23 +40,23 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "معرف عميل OAuth 2.0 من تسجيل تطبيق Fitbit الخاص بك"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "عنوان URL لرد الاتصال:"
+msgstr "عنوان URL لرد النداء:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
 msgstr "نسخ إلى الحافظة"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "منفذ رد الاتصال:"
+msgstr "منفذ رد النداء:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "الصق عنوان URL لرد الاتصال في إعدادات تطبيق Fitbit على dev.fitbit.com"
+msgstr "الصق عنوان URL لرد النداء في إعدادات تطبيق Fitbit على dev.fitbit.com"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
 msgstr "الفاصل الزمني للتحديث (بالدقائق):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "موصى به: من 15 إلى 30 دقيقة للبقاء ضمن حدود معدل Fitbit"
+msgstr "موصى به: 15–30 دقيقة لتجنّب تجاوز حدود طلبات Fitbit"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
 msgstr "عرض"
@@ -68,34 +68,34 @@ msgid "Kilometers (km)"
 msgstr "كيلومترات (كم)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "الأميال (ميل)"
+msgstr "أميال (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
 msgstr "المقاييس المرئية"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "خطوات"
+msgstr "الخطوات"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
-msgstr "سعرات حرارية"
+msgstr "السعرات الحرارية"
 #: package/contents/ui/configGeneral.qml:201
 #: package/contents/ui/FullRepresentation.qml:271
 msgid "Distance"
-msgstr "مسافة"
+msgstr "المسافة"
 #: package/contents/ui/configGeneral.qml:208
 msgid "Active minutes"
-msgstr "دقائق نشطة"
+msgstr "الدقائق النشطة"
 #: package/contents/ui/configGeneral.qml:215
 msgid "Resting heart rate"
-msgstr "يستريح معدل ضربات القلب"
+msgstr "معدل ضربات القلب أثناء الراحة"
 #: package/contents/ui/configGeneral.qml:221
 msgid "Fitbit Account"
-msgstr "حساب فيتبيت"
+msgstr "حساب Fitbit"
 #: package/contents/ui/configGeneral.qml:225
 msgid "Status:"
-msgstr "حالة:"
+msgstr "الحالة:"
 #: package/contents/ui/configGeneral.qml:233
 msgid "Last request:"
 msgstr "الطلب الأخير:"
@@ -107,19 +107,19 @@ msgid "Authorization:"
 msgstr "التفويض:"
 #: package/contents/ui/configGeneral.qml:247
 msgid "Cancel"
-msgstr "يلغي"
+msgstr "إلغاء"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
-msgstr "إعادة التفويض باستخدام Fitbit"
+msgstr "إعادة التفويض عبر Fitbit"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Authorize with Fitbit"
-msgstr "التفويض مع فيتبيت"
+msgstr "التفويض عبر Fitbit"
 #: package/contents/ui/configGeneral.qml:264
 msgid "Authorize manually (copy & paste)"
 msgstr "التفويض يدويًا (النسخ واللصق)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "استخدم هذا إذا لم يتمكن المتصفح من الوصول إلى المضيف المحلي (متصفح وضع الحماية، أو الجلسة البعيدة، أو لا يوجد Python)"
+msgstr "استخدم هذا الخيار إذا تعذّر على المتصفح الوصول إلى localhost (متصفح معزول، أو جلسة بعيدة، أو عدم وجود Python)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "الخطوة 1:"
@@ -140,73 +140,73 @@ msgid "After approving, copy the address bar URL and paste it below:"
 msgstr "بعد الموافقة، انسخ عنوان URL لشريط العناوين والصقه أدناه:"
 #: package/contents/ui/configGeneral.qml:337
 msgid "Redirect URL or code:"
-msgstr "إعادة توجيه عنوان URL أو الرمز:"
+msgstr "عنوان URL لإعادة التوجيه أو الرمز:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "مكتمل"
+msgstr "إكمال"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
-msgstr "إلغاء الترخيص اليدوي"
+msgstr "إلغاء التفويض اليدوي"
 #: package/contents/ui/configGeneral.qml:397
 msgid "Authorization successful!"
 msgstr "تم التفويض بنجاح!"
 #: package/contents/ui/FitbitApi.qml:33
 msgid "No access token"
-msgstr "لا يوجد رمز الوصول"
+msgstr "لا يوجد رمز وصول"
 #: package/contents/ui/FitbitApi.qml:52
 msgid "Network error — check your connection"
-msgstr "خطأ في الشبكة - تحقق من اتصالك"
+msgstr "خطأ في الشبكة — تحقق من اتصالك"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "خطأ في الشبكة في %1"
+msgstr "خطأ في الشبكة عند %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "انتهت صلاحية الرمز المميز في %1 — منعش"
+msgstr "انتهت صلاحية الرمز المميز عند %1 — جارٍ التحديث"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "السعر محدود - حاول مرة أخرى لاحقًا"
+msgstr "تم تجاوز حد الطلبات — حاول مرة أخرى لاحقًا"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "السعر محدود في %1 — يعرض البيانات المخزنة مؤقتًا"
+msgstr "تم تجاوز حد الطلبات عند %1 — تُعرض البيانات المخزنة مؤقتًا"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "خطأ في خادم Fitbit (HTTP %1 )"
+msgstr "خطأ في خادم Fitbit (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "خطأ في الخادم (HTTP %1 ) في %2"
+msgstr "خطأ في الخادم (HTTP %1) عند %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "فشل %1 (HTTP %2 )"
+msgstr "فشل %1 (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "خطأ (HTTP %1 ) في %2"
+msgstr "خطأ (HTTP %1) عند %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "انتهت مهلة الطلب — تحقق من اتصالك"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "انتهت المهلة في %1"
+msgstr "انتهت المهلة عند %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "جلب النشاط"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "حسنًا - تم التحديث في %1"
+msgstr "حسنًا — تم التحديث عند %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "فشل في تحليل بيانات النشاط"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "خطأ في التحليل في %1"
+msgstr "خطأ في التحليل عند %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "خطأ غير معروف"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "فشل في تحليل استجابة المصادقة"
+msgstr "فشل في تحليل استجابة التفويض"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
@@ -219,13 +219,13 @@ msgid "%1 (%2)"
 msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "حدث خطأ في الشبكة أثناء تحديث الرمز المميز"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "رمز التحديث غير صالح - يرجى إعادة التفويض"
+msgstr "رمز التحديث غير صالح — يرجى إعادة التفويض"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
 msgstr "فشل تحديث الرمز المميز"
@@ -255,7 +255,7 @@ msgid "Network error during token exchange"
 msgstr "خطأ في الشبكة أثناء تبادل الرمز المميز"
 #: package/contents/ui/FitbitOAuth.qml:387
 msgid "Authorization code invalid or expired — please try again"
-msgstr "رمز التفويض غير صالح أو منتهي الصلاحية - يرجى المحاولة مرة أخرى"
+msgstr "رمز التفويض غير صالح أو منتهي الصلاحية — يرجى المحاولة مرة أخرى"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
 msgstr "فشل تبادل الرمز المميز"
@@ -268,7 +268,7 @@ msgstr "فشل تبادل الرمز المميز — استجابة غير صا
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
-msgstr "%1 مي"
+msgstr "%1 ميل"
 #: package/contents/ui/FullRepresentation.qml:42
 msgctxt "distance in kilometers"
 msgid "%1 km"
@@ -279,22 +279,22 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "قديمة"
+msgstr "غير محدَّثة"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "اليوم"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "قم بتوصيل فيتبيت"
+msgstr "ربط Fitbit"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
 msgstr "قم بتفويض حسابك في الإعدادات لإظهار نشاط اليوم."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "افتح الإعدادات"
+msgstr "فتح الإعدادات"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
-msgstr "جارٍ تحميل بيانات فيتبيت"
+msgstr "جارٍ تحميل بيانات Fitbit"
 #: package/contents/ui/FullRepresentation.qml:220
 #, javascript-format
 msgctxt "step goal progress"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 المتبقي من %2"
+msgstr "المتبقي %1 من %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "لم يتم تحديد هدف الخطوة"
+msgstr "لم يتم تحديد هدف للخطوات"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "نشيط"
+msgstr "النشاط"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
 msgstr "%1 دقيقة"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "استراحة الموارد البشرية"
+msgstr "نبض الراحة"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
-msgstr "%1 نبضة في الدقيقة"
+msgstr "%1 نبضة/د"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "تم تحديث %1"
+msgstr "تم التحديث عند %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "غير متصل"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "الخطوات: %1 | كال: %2 | المنطقة: %3\nتم التحديث: %4"
+msgstr "الخطوات: %1 | السعرات: %2 | المسافة: %3\nآخر تحديث: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "انتهت صلاحية التفويض في %1 - يرجى إعادة التفويض"
+msgstr "انتهت صلاحية التفويض عند %1 — يرجى إعادة التفويض"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "فشل تحديث الرمز المميز في %1 — %2"
+msgstr "فشل تحديث الرمز المميز عند %1 — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
-msgstr "لا يتوفر رمز مميز للتحديث - يرجى إعادة التفويض"
+msgstr "لا يتوفر رمز مميز للتحديث — يرجى إعادة التفويض"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "تم تحديث الرمز المميز في %1"
+msgstr "تم تحديث الرمز المميز عند %1"

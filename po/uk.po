@@ -13,7 +13,7 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
 msgid "General"
-msgstr "Загальний"
+msgstr "Загальне"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
 msgstr "Не авторизовано"
@@ -28,7 +28,7 @@ msgid "unknown"
 msgstr "невідомий"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Авторизований (Користувач: %1 )"
+msgstr "Авторизовано (користувач: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
 msgstr "ID клієнта:"
@@ -56,10 +56,10 @@ msgid "Refresh interval (minutes):"
 msgstr "Інтервал оновлення (хвилин):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Рекомендовано: 15–30 хвилин, щоб залишатися в межах швидкості Fitbit"
+msgstr "Рекомендовано: 15–30 хвилин, щоб не перевищувати обмеження Fitbit на кількість запитів"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Дисплей"
+msgstr "Показ"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "Одиниця вимірювання відстані:"
@@ -68,7 +68,7 @@ msgid "Kilometers (km)"
 msgstr "Кілометри (км)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "Милі (милі)"
+msgstr "Милі (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
 msgstr "Видимі показники"
@@ -95,7 +95,7 @@ msgid "Fitbit Account"
 msgstr "Обліковий запис Fitbit"
 #: package/contents/ui/configGeneral.qml:225
 msgid "Status:"
-msgstr "Статус:"
+msgstr "Стан:"
 #: package/contents/ui/configGeneral.qml:233
 msgid "Last request:"
 msgstr "Останній запит:"
@@ -110,19 +110,19 @@ msgid "Cancel"
 msgstr "Скасувати"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
-msgstr "Повторно авторизуйтесь у Fitbit"
+msgstr "Повторно авторизуватися у Fitbit"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Authorize with Fitbit"
-msgstr "Авторизуйтеся за допомогою Fitbit"
+msgstr "Авторизуватися через Fitbit"
 #: package/contents/ui/configGeneral.qml:264
 msgid "Authorize manually (copy & paste)"
 msgstr "Авторизуватися вручну (скопіювати та вставити)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Використовуйте це, якщо браузер не може отримати доступ до локального хосту (переглядач ізольованого програмного середовища, віддалений сеанс або відсутність Python)"
+msgstr "Використовуйте цей спосіб, якщо браузер не може під’єднатися до localhost (браузер у пісочниці, віддалений сеанс або немає Python)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
-msgstr "крок 1:"
+msgstr "Крок 1:"
 #: package/contents/ui/configGeneral.qml:286
 msgid "Open this URL in a browser and approve access:"
 msgstr "Відкрийте цю URL-адресу в браузері та підтвердьте доступ:"
@@ -146,7 +146,7 @@ msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "Повний"
+msgstr "Завершити"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "Скасувати ручну авторизацію"
@@ -161,52 +161,52 @@ msgid "Network error — check your connection"
 msgstr "Помилка мережі — перевірте підключення"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "Помилка мережі на %1"
+msgstr "Помилка мережі о %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "Термін дії маркера закінчився %1 — оновлення"
+msgstr "Термін дії маркера минув о %1 — оновлення"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Швидкість обмежена — спробуйте пізніше"
+msgstr "Перевищено ліміт запитів — спробуйте пізніше"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "Швидкість обмежена %1 — відображаються кешовані дані"
+msgstr "Перевищено ліміт запитів о %1 — показано кешовані дані"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Помилка сервера Fitbit (HTTP %1 )"
+msgstr "Помилка сервера Fitbit (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "Помилка сервера (HTTP %1 ) на %2"
+msgstr "Помилка сервера (HTTP %1) о %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 не вдалося (HTTP %2 )"
+msgstr "%1: помилка (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "Помилка (HTTP %1 ) на %2"
+msgstr "Помилка (HTTP %1) о %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "Час очікування запиту минув — перевірте з’єднання"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "Час очікування закінчився на %1"
+msgstr "Час очікування минув о %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "Отримання активності"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "OK — оновлено на %1"
+msgstr "OK — оновлено о %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
-msgstr "Не вдалося проаналізувати дані про діяльність"
+msgstr "Не вдалося обробити дані про активність"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "Помилка аналізу на %1"
+msgstr "Помилка обробки о %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Невідома помилка"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "Не вдалося проаналізувати відповідь авторизації"
+msgstr "Не вдалося обробити відповідь авторизації"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
@@ -216,10 +216,10 @@ msgid "Authorization canceled"
 msgstr "Авторизацію скасовано"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "Помилка мережі під час оновлення маркера"
@@ -258,17 +258,17 @@ msgid "Authorization code invalid or expired — please try again"
 msgstr "Код авторизації недійсний або минув — спробуйте ще раз"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
-msgstr "Не вдалося обміняти токени"
+msgstr "Не вдалося обміняти маркери"
 #: package/contents/ui/FitbitOAuth.qml:389
 msgid "Token exchange failed — missing tokens"
-msgstr "Помилка обміну токенів — відсутні токени"
+msgstr "Помилка обміну маркерами — відсутні маркери"
 #: package/contents/ui/FitbitOAuth.qml:390
 msgid "Token exchange failed — invalid response"
-msgstr "Помилка обміну токеном — недійсна відповідь"
+msgstr "Помилка обміну маркерами — недійсна відповідь"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
-msgstr "%1 миль"
+msgstr "%1 mi"
 #: package/contents/ui/FullRepresentation.qml:42
 msgctxt "distance in kilometers"
 msgid "%1 km"
@@ -279,19 +279,19 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Несвіжий"
+msgstr "Застаріло"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Сьогодні"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "Підключіть Fitbit"
+msgstr "Підключити Fitbit"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
 msgstr "Авторизуйте свій обліковий запис у налаштуваннях, щоб відображати сьогоднішню активність."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Відкрийте налаштування"
+msgstr "Відкрити налаштування"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "Завантаження даних Fitbit"
@@ -305,10 +305,10 @@ msgid "%1 remaining of %2"
 msgstr "Залишилося %1 із %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "Без поставленої мети"
+msgstr "Мету кроків не встановлено"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Активний"
+msgstr "Активність"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
@@ -322,22 +322,22 @@ msgid "%1 bpm"
 msgstr "%1 уд/хв"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "Оновлено %1"
+msgstr "Оновлено о %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Не підключено"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Кроки: %1 | Cal: %2 | Відстань: %3\nОновлено: %4"
+msgstr "Кроки: %1 | Кал: %2 | Відст.: %3\nОновлено: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Термін дії авторизації закінчився в %1 — авторизуйтеся повторно"
+msgstr "Термін дії авторизації минув о %1 — авторизуйтеся повторно"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Не вдалося оновити маркер на %1 — %2"
+msgstr "Не вдалося оновити маркер о %1 — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "Немає доступного маркера оновлення — повторіть авторизацію"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Токен оновлено на %1"
+msgstr "Маркер оновлено о %1"

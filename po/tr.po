@@ -16,10 +16,10 @@ msgid "General"
 msgstr "Genel"
 #: package/contents/ui/configGeneral.qml:52
 msgid "Not authorized"
-msgstr "Yetkili değil"
+msgstr "Yetkilendirilmedi"
 #: package/contents/ui/configGeneral.qml:55
 msgid "Authorization problem — re-authorize"
-msgstr "Yetkilendirme sorunu — yeniden yetkilendirme"
+msgstr "Yetkilendirme sorunu — yeniden yetkilendirin"
 #: package/contents/ui/configGeneral.qml:58
 msgid "Token expired — refresh needed"
 msgstr "Belirtecin süresi doldu — yenileme gerekli"
@@ -28,10 +28,10 @@ msgid "unknown"
 msgstr "bilinmiyor"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "Yetkili (Kullanıcı: %1 )"
+msgstr "Yetkilendirildi (Kullanıcı: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
-msgstr "Müşteri Kimliği:"
+msgstr "İstemci Kimliği:"
 #: package/contents/ui/configGeneral.qml:90
 msgid "From dev.fitbit.com/apps"
 msgstr "dev.fitbit.com/apps adresinden"
@@ -40,26 +40,26 @@ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
 msgstr "Fitbit uygulama kaydınızdaki OAuth 2.0 İstemci Kimliği"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "Geri arama URL'si:"
+msgstr "Geri çağırma URL'si:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
 msgstr "Panoya kopyala"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "Geri arama bağlantı noktası:"
+msgstr "Geri çağırma bağlantı noktası:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "Geri arama URL'sini dev.fitbit.com adresindeki Fitbit uygulama ayarlarınıza yapıştırın"
+msgstr "Geri çağırma URL'sini dev.fitbit.com adresindeki Fitbit uygulama ayarlarınıza yapıştırın"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
 msgstr "Yenileme aralığı (dakika):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Önerilen: Fitbit oran limitleri dahilinde kalmak için 15–30 dakika"
+msgstr "Önerilen: Fitbit istek sınırlarını aşmamak için 15–30 dakika"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Görüntülemek"
+msgstr "Görünüm"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "Mesafe birimi:"
@@ -68,10 +68,10 @@ msgid "Kilometers (km)"
 msgstr "Kilometre (km)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "Mil (mil)"
+msgstr "Mil (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
-msgstr "Görünür Metrikler"
+msgstr "Görünür ölçümler"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
@@ -89,7 +89,7 @@ msgid "Active minutes"
 msgstr "Aktif dakikalar"
 #: package/contents/ui/configGeneral.qml:215
 msgid "Resting heart rate"
-msgstr "Dinlenme kalp atış hızı"
+msgstr "Dinlenik kalp atış hızı"
 #: package/contents/ui/configGeneral.qml:221
 msgid "Fitbit Account"
 msgstr "Fitbit Hesabı"
@@ -107,19 +107,19 @@ msgid "Authorization:"
 msgstr "Yetkilendirme:"
 #: package/contents/ui/configGeneral.qml:247
 msgid "Cancel"
-msgstr "İptal etmek"
+msgstr "İptal"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Re-authorize with Fitbit"
-msgstr "Fitbit ile yeniden yetkilendirin"
+msgstr "Fitbit ile yeniden yetkilendir"
 #: package/contents/ui/configGeneral.qml:248
 msgid "Authorize with Fitbit"
 msgstr "Fitbit ile yetkilendir"
 #: package/contents/ui/configGeneral.qml:264
 msgid "Authorize manually (copy & paste)"
-msgstr "Manuel olarak yetkilendirin (kopyala ve yapıştır)"
+msgstr "Elle yetkilendir (kopyala ve yapıştır)"
 #: package/contents/ui/configGeneral.qml:269
 msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Tarayıcı localhost'a ulaşamıyorsa (korumalı alan tarayıcısı, uzak oturum veya Python yok) bunu kullanın."
+msgstr "Tarayıcı localhost'a erişemiyorsa bunu kullanın (korumalı alan tarayıcısı, uzak oturum veya Python yok)"
 #: package/contents/ui/configGeneral.qml:285
 msgid "Step 1:"
 msgstr "Adım 1:"
@@ -143,13 +143,13 @@ msgid "Redirect URL or code:"
 msgstr "Yönlendirme URL'si veya kodu:"
 #: package/contents/ui/configGeneral.qml:341
 msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:…/geri arama?kod=…"
+msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "Tamamlamak"
+msgstr "Tamamla"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
-msgstr "Manuel yetkilendirmeyi iptal et"
+msgstr "Elle yetkilendirmeyi iptal et"
 #: package/contents/ui/configGeneral.qml:397
 msgid "Authorization successful!"
 msgstr "Yetkilendirme başarılı!"
@@ -161,52 +161,52 @@ msgid "Network error — check your connection"
 msgstr "Ağ hatası — bağlantınızı kontrol edin"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "%1 'da ağ hatası"
+msgstr "Ağ hatası (saat %1)"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
-msgstr "%1 'da jetonun süresi doldu — yenileniyor"
+msgstr "Belirtecin süresi doldu (saat %1) — yenileniyor"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "Hız sınırlı — daha sonra tekrar deneyin"
+msgstr "İstek sınırına ulaşıldı — daha sonra tekrar deneyin"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "%1 'da hız sınırlı — önbelleğe alınmış verileri gösteriyor"
+msgstr "İstek sınırına ulaşıldı (saat %1) — önbellekteki veriler gösteriliyor"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit sunucu hatası (HTTP %1 )"
+msgstr "Fitbit sunucu hatası (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "%2 'da sunucu hatası (HTTP %1 )"
+msgstr "Sunucu hatası (HTTP %1, saat %2)"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 başarısız oldu (HTTP %2 )"
+msgstr "%1 başarısız oldu (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "%2 'da Hata (HTTP %1 )"
+msgstr "Hata (HTTP %1, saat %2)"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "İstek zaman aşımına uğradı — bağlantınızı kontrol edin"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "%1 'da zaman aşımına uğradı"
+msgstr "Zaman aşımı (saat %1)"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
-msgstr "Etkinlik getirme"
+msgstr "Etkinlik verisi alma"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "Tamam — %1 'da güncellendi"
+msgstr "Tamam — saat %1 itibarıyla güncellendi"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "Etkinlik verileri ayrıştırılamadı"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "%1 'da ayrıştırma hatası"
+msgstr "Ayrıştırma hatası (saat %1)"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "Bilinmeyen hata"
 #: package/contents/ui/FitbitOAuth.qml:97
 msgid "Failed to parse auth response"
-msgstr "Kimlik doğrulama yanıtı ayrıştırılamadı"
+msgstr "Yetkilendirme yanıtı ayrıştırılamadı"
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
@@ -216,7 +216,7 @@ msgid "Authorization canceled"
 msgstr "Yetkilendirme iptal edildi"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
 msgstr "%1 (HTTP %2)"
@@ -225,13 +225,13 @@ msgid "Network error during token refresh"
 msgstr "Belirteç yenileme sırasında ağ hatası"
 #: package/contents/ui/FitbitOAuth.qml:281
 msgid "Refresh token invalid — please re-authorize"
-msgstr "Yenileme jetonu geçersiz — lütfen yeniden yetkilendirin"
+msgstr "Yenileme belirteci geçersiz — lütfen yeniden yetkilendirin"
 #: package/contents/ui/FitbitOAuth.qml:282
 msgid "Token refresh failed"
-msgstr "Jeton yenileme başarısız oldu"
+msgstr "Belirteç yenileme başarısız oldu"
 #: package/contents/ui/FitbitOAuth.qml:283
 msgid "Refresh failed — missing tokens"
-msgstr "Yenileme başarısız oldu; jetonlar eksik"
+msgstr "Yenileme başarısız oldu — belirteçler eksik"
 #: package/contents/ui/FitbitOAuth.qml:284
 msgid "Token refresh failed — invalid response"
 msgstr "Belirteç yenileme başarısız oldu — geçersiz yanıt"
@@ -240,7 +240,7 @@ msgid "Paste the redirect URL or authorization code first"
 msgstr "Önce yönlendirme URL'sini veya yetkilendirme kodunu yapıştırın"
 #: package/contents/ui/FitbitOAuth.qml:345
 msgid "Start the manual authorization first"
-msgstr "Önce manuel yetkilendirmeyi başlatın"
+msgstr "Önce elle yetkilendirmeyi başlatın"
 #: package/contents/ui/FitbitOAuth.qml:365
 msgid "Authorization was denied"
 msgstr "Yetki reddedildi"
@@ -258,17 +258,17 @@ msgid "Authorization code invalid or expired — please try again"
 msgstr "Yetkilendirme kodu geçersiz veya süresi dolmuş — lütfen tekrar deneyin"
 #: package/contents/ui/FitbitOAuth.qml:388
 msgid "Token exchange failed"
-msgstr "Jeton değişimi başarısız oldu"
+msgstr "Belirteç değişimi başarısız oldu"
 #: package/contents/ui/FitbitOAuth.qml:389
 msgid "Token exchange failed — missing tokens"
-msgstr "Jeton değişimi başarısız oldu; jetonlar eksik"
+msgstr "Belirteç değişimi başarısız oldu — belirteçler eksik"
 #: package/contents/ui/FitbitOAuth.qml:390
 msgid "Token exchange failed — invalid response"
-msgstr "Jeton değişimi başarısız oldu — geçersiz yanıt"
+msgstr "Belirteç değişimi başarısız oldu — geçersiz yanıt"
 #: package/contents/ui/FullRepresentation.qml:40
 msgctxt "distance in miles"
 msgid "%1 mi"
-msgstr "%1 mil"
+msgstr "%1 mi"
 #: package/contents/ui/FullRepresentation.qml:42
 msgctxt "distance in kilometers"
 msgid "%1 km"
@@ -279,19 +279,19 @@ msgid "FitDash"
 msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "Bayat"
+msgstr "Güncel değil"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "Bugün"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "Fitbit'i bağlayın"
+msgstr "Fitbit'e bağlan"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
 msgstr "Bugünün etkinliğini göstermek için ayarlardan hesabınızı yetkilendirin."
 #: package/contents/ui/FullRepresentation.qml:130
 msgid "Open Settings"
-msgstr "Ayarları Aç"
+msgstr "Ayarları aç"
 #: package/contents/ui/FullRepresentation.qml:160
 msgid "Loading Fitbit data"
 msgstr "Fitbit verileri yükleniyor"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%2 'dan kalan %1"
+msgstr "%2 hedefinden %1 kaldı"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
 msgstr "Adım hedefi belirlenmedi"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "Aktif"
+msgstr "Aktif süre"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
-msgstr "%1 dk."
+msgstr "%1 dk"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "Dinlenme HR"
+msgstr "Dinlenik nabız"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 bpm"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "%1 güncellendi"
+msgstr "Güncellendi: %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "Bağlı değil"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Adımlar: %1 | Cal: %2 | Uzaklık: %3\nGüncellendi: %4"
+msgstr "Adım: %1 | Kal: %2 | Mesafe: %3\nGüncellendi: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "%1 'da yetkilendirmenin süresi doldu — lütfen yeniden yetkilendirin"
+msgstr "Yetkilendirmenin süresi doldu (saat %1) — lütfen yeniden yetkilendirin"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "Belirteç yenileme %1 — %2'de başarısız oldu"
+msgstr "Belirteç yenileme başarısız oldu (saat %1) — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
-msgstr "Yenileme jetonu yok — lütfen yeniden yetkilendirin"
+msgstr "Yenileme belirteci yok — lütfen yeniden yetkilendirin"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "Token %1 'da yenilendi"
+msgstr "Belirteç yenilendi (saat %1)"

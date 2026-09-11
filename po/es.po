@@ -78,7 +78,7 @@ msgstr ""
 
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "Pantalla"
+msgstr "Visualización"
 
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"

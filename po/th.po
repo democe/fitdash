@@ -28,38 +28,38 @@ msgid "unknown"
 msgstr "ไม่ทราบ"
 #: package/contents/ui/configGeneral.qml:60
 msgid "Authorized (User: %1)"
-msgstr "ได้รับอนุญาต (ผู้ใช้: %1 )"
+msgstr "ได้รับอนุญาตแล้ว (ผู้ใช้: %1)"
 #: package/contents/ui/configGeneral.qml:89
 msgid "Client ID:"
-msgstr "รหัสลูกค้า:"
+msgstr "รหัสไคลเอ็นต์:"
 #: package/contents/ui/configGeneral.qml:90
 msgid "From dev.fitbit.com/apps"
 msgstr "จาก dev.fitbit.com/apps"
 #: package/contents/ui/configGeneral.qml:97
 msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "OAuth 2.0 Client ID จากการลงทะเบียนแอป Fitbit ของคุณ"
+msgstr "รหัสไคลเอ็นต์ OAuth 2.0 จากการลงทะเบียนแอป Fitbit ของคุณ"
 #: package/contents/ui/configGeneral.qml:104
 msgid "Callback URL:"
-msgstr "URL โทรกลับ:"
+msgstr "URL สำหรับ Callback:"
 #: package/contents/ui/configGeneral.qml:117
 #: package/contents/ui/configGeneral.qml:306
 msgid "Copy to clipboard"
 msgstr "คัดลอกไปยังคลิปบอร์ด"
 #: package/contents/ui/configGeneral.qml:130
 msgid "Callback port:"
-msgstr "พอร์ตโทรกลับ:"
+msgstr "พอร์ต Callback:"
 #: package/contents/ui/configGeneral.qml:138
 msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "วาง URL โทรกลับลงในการตั้งค่าแอป Fitbit ของคุณที่ dev.fitbit.com"
+msgstr "วาง URL สำหรับ Callback ลงในการตั้งค่าแอป Fitbit ของคุณที่ dev.fitbit.com"
 #: package/contents/ui/configGeneral.qml:146
 msgid "Refresh interval (minutes):"
 msgstr "ช่วงเวลารีเฟรช (นาที):"
 #: package/contents/ui/configGeneral.qml:154
 msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "แนะนำ: 15–30 นาทีเพื่อให้อยู่ภายในขีดจำกัดอัตรา Fitbit"
+msgstr "แนะนำ: 15–30 นาที เพื่อไม่ให้เกินขีดจำกัดจำนวนคำขอของ Fitbit"
 #: package/contents/ui/configGeneral.qml:162
 msgid "Display"
-msgstr "แสดง"
+msgstr "การแสดงผล"
 #: package/contents/ui/configGeneral.qml:167
 msgid "Distance unit:"
 msgstr "หน่วยระยะทาง:"
@@ -68,14 +68,14 @@ msgid "Kilometers (km)"
 msgstr "กิโลเมตร (กม.)"
 #: package/contents/ui/configGeneral.qml:170
 msgid "Miles (mi)"
-msgstr "ไมล์ (ไมล์)"
+msgstr "ไมล์ (mi)"
 #: package/contents/ui/configGeneral.qml:181
 msgid "Visible Metrics"
 msgstr "ตัวชี้วัดที่มองเห็นได้"
 #: package/contents/ui/configGeneral.qml:187
 #: package/contents/ui/FullRepresentation.qml:213
 msgid "Steps"
-msgstr "ขั้นตอน"
+msgstr "ก้าว"
 #: package/contents/ui/configGeneral.qml:194
 #: package/contents/ui/FullRepresentation.qml:263
 msgid "Calories"
@@ -86,13 +86,13 @@ msgid "Distance"
 msgstr "ระยะทาง"
 #: package/contents/ui/configGeneral.qml:208
 msgid "Active minutes"
-msgstr "นาทีที่ใช้งานอยู่"
+msgstr "นาทีที่แอคทีฟ"
 #: package/contents/ui/configGeneral.qml:215
 msgid "Resting heart rate"
 msgstr "อัตราการเต้นของหัวใจขณะพัก"
 #: package/contents/ui/configGeneral.qml:221
 msgid "Fitbit Account"
-msgstr "บัญชีฟิตบิท"
+msgstr "บัญชี Fitbit"
 #: package/contents/ui/configGeneral.qml:225
 msgid "Status:"
 msgstr "สถานะ:"
@@ -146,7 +146,7 @@ msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 #: package/contents/ui/configGeneral.qml:348
 msgid "Complete"
-msgstr "สมบูรณ์"
+msgstr "เสร็จสิ้น"
 #: package/contents/ui/configGeneral.qml:358
 msgid "Cancel manual authorization"
 msgstr "ยกเลิกการให้สิทธิ์ด้วยตนเอง"
@@ -161,46 +161,46 @@ msgid "Network error — check your connection"
 msgstr "ข้อผิดพลาดของเครือข่าย — ตรวจสอบการเชื่อมต่อของคุณ"
 #: package/contents/ui/FitbitApi.qml:53
 msgid "Network error at %1"
-msgstr "ข้อผิดพลาดเครือข่ายที่ %1"
+msgstr "ข้อผิดพลาดเครือข่ายเมื่อ %1"
 #: package/contents/ui/FitbitApi.qml:59
 msgid "Token expired at %1 — refreshing"
 msgstr "โทเค็นหมดอายุเมื่อ %1 — กำลังรีเฟรช"
 #: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
 msgid "Rate limited — try again later"
-msgstr "จำกัดอัตรา — ลองอีกครั้งในภายหลัง"
+msgstr "คำขอเกินขีดจำกัด — โปรดลองอีกครั้งในภายหลัง"
 #: package/contents/ui/FitbitApi.qml:66
 msgid "Rate limited at %1 — showing cached data"
-msgstr "อัตราจำกัดที่ %1 — แสดงข้อมูลที่แคชไว้"
+msgstr "คำขอเกินขีดจำกัดเมื่อ %1 — แสดงข้อมูลที่แคชไว้"
 #: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
 msgid "Fitbit server error (HTTP %1)"
-msgstr "ข้อผิดพลาดเซิร์ฟเวอร์ Fitbit (HTTP %1 )"
+msgstr "ข้อผิดพลาดเซิร์ฟเวอร์ Fitbit (HTTP %1)"
 #: package/contents/ui/FitbitApi.qml:73
 msgid "Server error (HTTP %1) at %2"
-msgstr "ข้อผิดพลาดของเซิร์ฟเวอร์ (HTTP %1 ) ที่ %2"
+msgstr "ข้อผิดพลาดของเซิร์ฟเวอร์ (HTTP %1) เมื่อ %2"
 #: package/contents/ui/FitbitApi.qml:79
 msgid "%1 failed (HTTP %2)"
-msgstr "%1 ล้มเหลว (HTTP %2 )"
+msgstr "%1 ล้มเหลว (HTTP %2)"
 #: package/contents/ui/FitbitApi.qml:80
 msgid "Error (HTTP %1) at %2"
-msgstr "ข้อผิดพลาด (HTTP %1 ) ที่ %2"
+msgstr "ข้อผิดพลาด (HTTP %1) เมื่อ %2"
 #: package/contents/ui/FitbitApi.qml:107
 msgid "Request timed out — check your connection"
 msgstr "คำขอหมดเวลา — ตรวจสอบการเชื่อมต่อของคุณ"
 #: package/contents/ui/FitbitApi.qml:108
 msgid "Timed out at %1"
-msgstr "หมดเวลาแล้วที่ %1"
+msgstr "หมดเวลาเมื่อ %1"
 #: package/contents/ui/FitbitApi.qml:116
 msgid "Activity fetch"
 msgstr "ดึงข้อมูลกิจกรรม"
 #: package/contents/ui/FitbitApi.qml:141
 msgid "OK — updated at %1"
-msgstr "ตกลง — อัปเดตที่ %1"
+msgstr "ตกลง — อัปเดตเมื่อ %1"
 #: package/contents/ui/FitbitApi.qml:146
 msgid "Failed to parse activity data"
 msgstr "ไม่สามารถแยกวิเคราะห์ข้อมูลกิจกรรม"
 #: package/contents/ui/FitbitApi.qml:147
 msgid "Parse error at %1"
-msgstr "ข้อผิดพลาดในการแยกวิเคราะห์ที่ %1"
+msgstr "ข้อผิดพลาดในการแยกวิเคราะห์เมื่อ %1"
 #: package/contents/ui/FitbitOAuth.qml:90
 msgid "Unknown error"
 msgstr "ข้อผิดพลาดที่ไม่รู้จัก"
@@ -210,16 +210,16 @@ msgstr "ไม่สามารถแยกวิเคราะห์การ
 #: package/contents/ui/FitbitOAuth.qml:136
 #: package/contents/ui/FitbitOAuth.qml:327
 msgid "Invalid client ID format"
-msgstr "รูปแบบรหัสลูกค้าไม่ถูกต้อง"
+msgstr "รูปแบบรหัสไคลเอ็นต์ไม่ถูกต้อง"
 #: package/contents/ui/FitbitOAuth.qml:150
 msgid "Authorization canceled"
 msgstr "ยกเลิกการอนุญาตแล้ว"
 #: package/contents/ui/FitbitOAuth.qml:191
 msgid "%1 (%2)"
-msgstr "%1 ( %2 )"
+msgstr "%1 (%2)"
 #: package/contents/ui/FitbitOAuth.qml:213
 msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2 )"
+msgstr "%1 (HTTP %2)"
 #: package/contents/ui/FitbitOAuth.qml:280
 msgid "Network error during token refresh"
 msgstr "เครือข่ายเกิดข้อผิดพลาดระหว่างการรีเฟรชโทเค็น"
@@ -272,20 +272,20 @@ msgstr "%1 ไมล์"
 #: package/contents/ui/FullRepresentation.qml:42
 msgctxt "distance in kilometers"
 msgid "%1 km"
-msgstr "%1 กม"
+msgstr "%1 กม."
 #: package/contents/ui/FullRepresentation.qml:68
 #: package/contents/ui/main.qml:77
 msgid "FitDash"
-msgstr "ฟิตแดช"
+msgstr "FitDash"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Stale"
-msgstr "ค้าง"
+msgstr "ข้อมูลไม่เป็นปัจจุบัน"
 #: package/contents/ui/FullRepresentation.qml:73
 msgid "Today"
 msgstr "วันนี้"
 #: package/contents/ui/FullRepresentation.qml:115
 msgid "Connect Fitbit"
-msgstr "เชื่อมต่อฟิตบิท"
+msgstr "เชื่อมต่อ Fitbit"
 #: package/contents/ui/FullRepresentation.qml:121
 msgid "Authorize your account in settings to show today's activity."
 msgstr "อนุญาตบัญชีของคุณในการตั้งค่าเพื่อแสดงกิจกรรมของวันนี้"
@@ -302,42 +302,42 @@ msgid "%1%"
 msgstr "%1%"
 #: package/contents/ui/FullRepresentation.qml:245
 msgid "%1 remaining of %2"
-msgstr "%1 เหลือ %2"
+msgstr "เหลืออีก %1 จาก %2"
 #: package/contents/ui/FullRepresentation.qml:246
 msgid "No step goal set"
-msgstr "ไม่ได้ตั้งเป้าหมายก้าวไว้"
+msgstr "ไม่ได้ตั้งเป้าหมายจำนวนก้าว"
 #: package/contents/ui/FullRepresentation.qml:279
 msgid "Active"
-msgstr "คล่องแคล่ว"
+msgstr "แอคทีฟ"
 #: package/contents/ui/FullRepresentation.qml:280
 msgctxt "active minutes"
 msgid "%1 min"
-msgstr "%1 ขั้นต่ำ"
+msgstr "%1 นาที"
 #: package/contents/ui/FullRepresentation.qml:287
 msgid "Resting HR"
-msgstr "พักผ่อน HR"
+msgstr "ชีพจรขณะพัก"
 #: package/contents/ui/FullRepresentation.qml:289
 msgctxt "heart rate in beats per minute"
 msgid "%1 bpm"
 msgstr "%1 ครั้งต่อนาที"
 #: package/contents/ui/FullRepresentation.qml:310
 msgid "Updated %1"
-msgstr "อัปเดต %1"
+msgstr "อัปเดตเมื่อ %1"
 #: package/contents/ui/main.qml:79
 msgid "Not connected"
 msgstr "ไม่ได้เชื่อมต่อ"
 #: package/contents/ui/main.qml:83
 msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "ขั้นตอน: %1 | แคล: %2 | เขต: %3\nอัปเดต: %4"
+msgstr "ก้าว: %1 | แคลอรี่: %2 | ระยะทาง: %3\nอัปเดต: %4"
 #: package/contents/ui/main.qml:105
 msgid "Authorization expired at %1 — please re-authorize"
-msgstr "การอนุญาตหมดอายุที่ %1 — โปรดให้สิทธิ์อีกครั้ง"
+msgstr "การอนุญาตหมดอายุเมื่อ %1 — โปรดให้สิทธิ์อีกครั้ง"
 #: package/contents/ui/main.qml:118
 msgid "Token refresh failed at %1 — %2"
-msgstr "การรีเฟรชโทเค็นล้มเหลวที่ %1 — %2"
+msgstr "การรีเฟรชโทเค็นล้มเหลวเมื่อ %1 — %2"
 #: package/contents/ui/main.qml:142
 msgid "No refresh token available — please re-authorize"
 msgstr "ไม่มีโทเค็นการรีเฟรช — โปรดให้สิทธิ์อีกครั้ง"
 #: package/contents/ui/main.qml:169
 msgid "Token refreshed at %1"
-msgstr "โทเค็นรีเฟรชที่ %1"
+msgstr "รีเฟรชโทเค็นแล้วเมื่อ %1"
