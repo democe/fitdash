@@ -1,5 +1,9 @@
 # FitDash
 
+the API is changing from fitbit -> google health api 2026/09/30. this project will be archived then
+
+---
+
 Fitbit step counter and fitness data widget for KDE Plasma.
 
 
