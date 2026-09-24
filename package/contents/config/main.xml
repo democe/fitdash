@@ -29,6 +29,9 @@
         <entry name="distanceUnit" type="String">
             <default>km</default>
         </entry>
+        <entry name="stepsGoal" type="Int">
+            <default>10000</default>
+        </entry>
         <entry name="showSteps" type="Bool">
             <default>true</default>
         </entry>

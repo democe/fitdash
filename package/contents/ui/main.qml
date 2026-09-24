@@ -60,7 +60,7 @@ PlasmoidItem {
         distance: healthApi.distance
         activeMinutes: healthApi.activeMinutes
         restingHeartRate: healthApi.restingHeartRate
-        stepsGoal: healthApi.stepsGoal
+        stepsGoal: Plasmoid.configuration.stepsGoal || 0
         lastUpdated: healthApi.lastUpdated
         lastUpdatedTimestamp: healthApi.lastUpdatedTimestamp
         hasToken: healthApi.accessToken !== ""

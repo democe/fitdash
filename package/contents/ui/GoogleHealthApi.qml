@@ -10,7 +10,6 @@ QtObject {
     property real distance: 0.0
     property int activeMinutes: 0
     property int restingHeartRate: 0
-    property int stepsGoal: 0
     property string lastUpdated: ""
     property real lastUpdatedTimestamp: 0
 

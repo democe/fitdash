@@ -15,6 +15,7 @@ Kirigami.ScrollablePage {
     property string cfg_userId
     property int cfg_tokenExpiry
     property string cfg_distanceUnit: "km"
+    property alias cfg_stepsGoal: stepsGoalSpinBox.value
     property alias cfg_callbackPort: callbackPortSpinBox.value
     property string cfg_lastRequestStatus
     property string cfg_lastRequestState
@@ -32,6 +33,7 @@ Kirigami.ScrollablePage {
     property string cfg_userIdDefault: ""
     property int cfg_tokenExpiryDefault: 0
     property string cfg_distanceUnitDefault: "km"
+    property int cfg_stepsGoalDefault: 10000
     property int cfg_callbackPortDefault: 19847
     property string cfg_lastRequestStatusDefault: ""
     property string cfg_lastRequestStateDefault: "unknown"
@@ -184,6 +186,29 @@ Kirigami.ScrollablePage {
                 onActivated: function(index) {
                     cfg_distanceUnit = model[index].value;
                 }
+            }
+
+            QQC2.SpinBox {
+                id: stepsGoalSpinBox
+                Kirigami.FormData.label: i18n("Step goal:")
+                from: 0
+                to: 100000
+                stepSize: 500
+                value: 10000
+                textFromValue: function(value) {
+                    return value === 0 ? i18n("None") : value.toLocaleString();
+                }
+                valueFromText: function(text) {
+                    return parseInt(text.replace(/[^0-9]/g, ""), 10) || 0;
+                }
+            }
+
+            QQC2.Label {
+                Layout.fillWidth: true
+                text: i18n("The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead")
+                font.pointSize: Kirigami.Theme.smallFont.pointSize
+                opacity: 0.7
+                wrapMode: Text.WordWrap
             }
 
             Kirigami.Separator {
