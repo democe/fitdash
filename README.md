@@ -1,10 +1,13 @@
 # FitDash
 
-the API is changing from fitbit -> google health api 2026/09/30. this project will be archived then
+Fitbit's Web API shuts down 2026-09-30. This release migrates FitDash to the
+**Google Health API**, its official replacement (`health.googleapis.com`), which now
+serves the same activity, calorie, distance, and heart rate data for Fitbit and Pixel
+Watch devices.
 
 ---
 
-Fitbit step counter and fitness data widget for KDE Plasma.
+Step counter and fitness data widget for KDE Plasma, backed by the Google Health API.
 
 
 ![FitDash Screenshot](screenshot.png)
@@ -14,7 +17,25 @@ Fitbit step counter and fitness data widget for KDE Plasma.
 
 - KDE Plasma 6
 - Python 3
-- A [Fitbit developer account](https://dev.fitbit.com/) (free)
+- A Google Cloud project with the Google Health API enabled (free) — see below
+
+## Google Cloud setup
+
+1. Create a project (or use an existing one) at [console.cloud.google.com](https://console.cloud.google.com/).
+2. Enable the **Google Health API** for that project.
+3. Configure the OAuth consent screen. Under **Data Access**, add these scopes:
+   - `https://www.googleapis.com/auth/googlehealth.activity_and_fitness.readonly`
+   - `https://www.googleapis.com/auth/googlehealth.health_metrics_and_measurements.readonly`
+
+   While the consent screen is in **Testing** status, add your own Google account as a
+   test user, and note that refresh tokens expire after 7 days — you'll need to
+   re-authorize the widget weekly. Publishing the app removes that limit but requires
+   Google's OAuth verification review for these scopes.
+4. Create an OAuth 2.0 Client ID of type **Desktop app** and download its credentials.
+   Google allows any `http://localhost` port for this client type automatically, so no
+   redirect URI needs to be registered — FitDash's local callback (port 19847 by
+   default) works out of the box.
+5. Copy the Client ID and Client Secret into FitDash's settings (General tab).
 
 ## Installation
 

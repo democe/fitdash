@@ -8,6 +8,7 @@ Kirigami.ScrollablePage {
     title: i18n("General")
 
     property alias cfg_clientId: clientIdField.text
+    property alias cfg_clientSecret: clientSecretField.text
     property alias cfg_refreshInterval: refreshIntervalSpinBox.value
     property string cfg_accessToken
     property string cfg_refreshToken
@@ -24,6 +25,7 @@ Kirigami.ScrollablePage {
     property alias cfg_showHeartRate: showHeartRateCheckBox.checked
 
     property string cfg_clientIdDefault: ""
+    property string cfg_clientSecretDefault: ""
     property int cfg_refreshIntervalDefault: 15
     property string cfg_accessTokenDefault: ""
     property string cfg_refreshTokenDefault: ""
@@ -87,14 +89,22 @@ Kirigami.ScrollablePage {
             QQC2.TextField {
                 id: clientIdField
                 Kirigami.FormData.label: i18n("Client ID:")
-                placeholderText: i18n("From dev.fitbit.com/apps")
-                validator: RegularExpressionValidator { regularExpression: /^[A-Za-z0-9]+$/ }
+                placeholderText: i18n("From Google Cloud Console")
+                validator: RegularExpressionValidator { regularExpression: /^[A-Za-z0-9.-]+$/ }
+                Layout.fillWidth: true
+            }
+
+            QQC2.TextField {
+                id: clientSecretField
+                Kirigami.FormData.label: i18n("Client Secret:")
+                placeholderText: i18n("From the same OAuth client")
+                echoMode: TextInput.Password
                 Layout.fillWidth: true
             }
 
             QQC2.Label {
                 Layout.fillWidth: true
-                text: i18n("OAuth 2.0 Client ID from your Fitbit app registration")
+                text: i18n("OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled")
                 font.pointSize: Kirigami.Theme.smallFont.pointSize
                 opacity: 0.7
                 wrapMode: Text.WordWrap
@@ -135,7 +145,7 @@ Kirigami.ScrollablePage {
 
             QQC2.Label {
                 Layout.fillWidth: true
-                text: i18n("Paste the callback URL into your Fitbit app settings at dev.fitbit.com")
+                text: i18n("Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL")
                 font.pointSize: Kirigami.Theme.smallFont.pointSize
                 opacity: 0.7
                 wrapMode: Text.WordWrap
@@ -151,7 +161,7 @@ Kirigami.ScrollablePage {
 
             QQC2.Label {
                 Layout.fillWidth: true
-                text: i18n("Recommended: 15–30 minutes to stay within Fitbit rate limits")
+                text: i18n("Recommended: 15–30 minutes to stay within API rate limits")
                 font.pointSize: Kirigami.Theme.smallFont.pointSize
                 opacity: 0.7
                 wrapMode: Text.WordWrap
@@ -218,7 +228,7 @@ Kirigami.ScrollablePage {
 
             Kirigami.Separator {
                 Kirigami.FormData.isSection: true
-                Kirigami.FormData.label: i18n("Fitbit Account")
+                Kirigami.FormData.label: i18n("Google Health Account")
             }
 
             QQC2.Label {
@@ -245,9 +255,9 @@ Kirigami.ScrollablePage {
                 Kirigami.FormData.label: i18n("Authorization:")
                 text: configRoot.authInProgress
                     ? i18n("Cancel")
-                    : (cfg_accessToken !== "" ? i18n("Re-authorize with Fitbit") : i18n("Authorize with Fitbit"))
+                    : (cfg_accessToken !== "" ? i18n("Re-authorize with Google") : i18n("Authorize with Google"))
                 icon.name: configRoot.authInProgress ? "dialog-cancel" : "network-connect"
-                enabled: configRoot.authInProgress || (clientIdField.text !== "" && clientIdField.acceptableInput)
+                enabled: configRoot.authInProgress || (clientIdField.text !== "" && clientIdField.acceptableInput && clientSecretField.text !== "")
 
                 onClicked: {
                     if (configRoot.authInProgress) {
@@ -256,7 +266,7 @@ Kirigami.ScrollablePage {
                     }
                     configRoot.authInProgress = true;
                     configRoot.authStatusMessage = "";
-                    authHelper.authorize(clientIdField.text);
+                    authHelper.authorize(clientIdField.text, clientSecretField.text);
                 }
             }
 
@@ -265,7 +275,7 @@ Kirigami.ScrollablePage {
                 icon.name: "edit-paste"
                 Layout.topMargin: Kirigami.Units.smallSpacing
                 visible: !configRoot.manualAuthActive
-                enabled: clientIdField.text !== "" && clientIdField.acceptableInput
+                enabled: clientIdField.text !== "" && clientIdField.acceptableInput && clientSecretField.text !== ""
                 QQC2.ToolTip.text: i18n("Use this if the browser can't reach localhost (sandboxed browser, remote session, or no Python)")
                 QQC2.ToolTip.visible: hovered
                 QQC2.ToolTip.delay: Kirigami.Units.toolTipDelay
@@ -348,7 +358,7 @@ Kirigami.ScrollablePage {
                     text: i18n("Complete")
                     icon.name: "dialog-ok-apply"
                     enabled: manualCodeField.text !== ""
-                    onClicked: authHelper.completeManualAuthorization(clientIdField.text, manualCodeField.text)
+                    onClicked: authHelper.completeManualAuthorization(clientIdField.text, clientSecretField.text, manualCodeField.text)
                 }
 
                 QQC2.Button {
@@ -382,7 +392,7 @@ Kirigami.ScrollablePage {
         }
     }
 
-    FitbitOAuth {
+    GoogleHealthOAuth {
         id: authHelper
         callbackPort: callbackPortSpinBox.value
 

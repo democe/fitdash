@@ -47,7 +47,7 @@ PlasmoidItem {
 
             PlasmaComponents.Label {
                 id: stepLabel
-                text: fitbitApi.accessToken !== "" ? fitbitApi.steps.toLocaleString() : "—"
+                text: healthApi.accessToken !== "" ? healthApi.steps.toLocaleString() : "—"
                 font.bold: false
                 font.pixelSize: root.constrained ? Kirigami.Units.gridUnit * 0.75 : compactRoot.height * 0.3
             }
@@ -55,17 +55,17 @@ PlasmoidItem {
     }
 
     fullRepresentation: FullRepresentation {
-        steps: fitbitApi.steps
-        calories: fitbitApi.calories
-        distance: fitbitApi.distance
-        activeMinutes: fitbitApi.activeMinutes
-        restingHeartRate: fitbitApi.restingHeartRate
-        stepsGoal: fitbitApi.stepsGoal
-        lastUpdated: fitbitApi.lastUpdated
-        lastUpdatedTimestamp: fitbitApi.lastUpdatedTimestamp
-        hasToken: fitbitApi.accessToken !== ""
-        isLoading: fitbitApi.isLoading
-        errorMessage: fitbitApi.errorMessage
+        steps: healthApi.steps
+        calories: healthApi.calories
+        distance: healthApi.distance
+        activeMinutes: healthApi.activeMinutes
+        restingHeartRate: healthApi.restingHeartRate
+        stepsGoal: healthApi.stepsGoal
+        lastUpdated: healthApi.lastUpdated
+        lastUpdatedTimestamp: healthApi.lastUpdatedTimestamp
+        hasToken: healthApi.accessToken !== ""
+        isLoading: healthApi.isLoading
+        errorMessage: healthApi.errorMessage
         distanceUnit: Plasmoid.configuration.distanceUnit || "km"
         showSteps: Plasmoid.configuration.showSteps
         showCalories: Plasmoid.configuration.showCalories
@@ -76,15 +76,15 @@ PlasmoidItem {
 
     toolTipMainText: i18n("FitDash")
     toolTipSubText: {
-        if (fitbitApi.accessToken === "") return i18n("Not connected");
+        if (healthApi.accessToken === "") return i18n("Not connected");
         var unit = Plasmoid.configuration.distanceUnit || "km";
-        var dist = unit === "mi" ? i18nc("distance in miles", "%1 mi", (fitbitApi.distance * 0.621371).toLocaleString(Qt.locale(), "f", 2))
-                                 : i18nc("distance in kilometers", "%1 km", fitbitApi.distance.toLocaleString(Qt.locale(), "f", 2));
+        var dist = unit === "mi" ? i18nc("distance in miles", "%1 mi", (healthApi.distance * 0.621371).toLocaleString(Qt.locale(), "f", 2))
+                                 : i18nc("distance in kilometers", "%1 km", healthApi.distance.toLocaleString(Qt.locale(), "f", 2));
         return i18n("Steps: %1 | Cal: %2 | Dist: %3\nUpdated: %4",
-            fitbitApi.steps.toLocaleString(),
-            fitbitApi.calories.toLocaleString(),
+            healthApi.steps.toLocaleString(),
+            healthApi.calories.toLocaleString(),
             dist,
-            fitbitApi.lastUpdated || "—");
+            healthApi.lastUpdated || "—");
     }
 
     Plasmoid.icon: "fitdash"
@@ -100,11 +100,11 @@ PlasmoidItem {
         Plasmoid.configuration.accessToken = "";
         Plasmoid.configuration.refreshToken = "";
         Plasmoid.configuration.tokenExpiry = 0;
-        fitbitApi.accessToken = "";
-        fitbitApi.errorMessage = message;
-        fitbitApi.lastRequestStatus = i18n("Authorization expired at %1 — please re-authorize", time);
-        fitbitApi.lastRequestState = "error";
-        setLastRequest(fitbitApi.lastRequestStatus, fitbitApi.lastRequestState);
+        healthApi.accessToken = "";
+        healthApi.errorMessage = message;
+        healthApi.lastRequestStatus = i18n("Authorization expired at %1 — please re-authorize", time);
+        healthApi.lastRequestState = "error";
+        setLastRequest(healthApi.lastRequestStatus, healthApi.lastRequestState);
     }
 
     function recordRefreshError(message, requiresAuthorization) {
@@ -114,10 +114,10 @@ PlasmoidItem {
         }
 
         var time = new Date().toLocaleTimeString();
-        fitbitApi.errorMessage = message;
-        fitbitApi.lastRequestStatus = i18n("Token refresh failed at %1 — %2", time, message);
-        fitbitApi.lastRequestState = "error";
-        setLastRequest(fitbitApi.lastRequestStatus, fitbitApi.lastRequestState);
+        healthApi.errorMessage = message;
+        healthApi.lastRequestStatus = i18n("Token refresh failed at %1 — %2", time, message);
+        healthApi.lastRequestState = "error";
+        setLastRequest(healthApi.lastRequestStatus, healthApi.lastRequestState);
     }
 
     Plasma5Support.DataSource {
@@ -126,14 +126,14 @@ PlasmoidItem {
         connectedSources: []
     }
 
-    FitbitApi {
-        id: fitbitApi
+    GoogleHealthApi {
+        id: healthApi
         accessToken: Plasmoid.configuration.accessToken || ""
 
         onDataUpdated: {
             console.log("FitDash: data updated");
-            Plasmoid.configuration.lastRequestStatus = fitbitApi.lastRequestStatus;
-            Plasmoid.configuration.lastRequestState = fitbitApi.lastRequestState;
+            Plasmoid.configuration.lastRequestStatus = healthApi.lastRequestStatus;
+            Plasmoid.configuration.lastRequestState = healthApi.lastRequestState;
         }
 
         onAuthError: {
@@ -142,37 +142,42 @@ PlasmoidItem {
                 clearExpiredAuthorization(i18n("No refresh token available — please re-authorize"));
                 return;
             }
-            fitbitOAuth.refreshToken(
+            healthOAuth.refreshToken(
                 Plasmoid.configuration.clientId,
+                Plasmoid.configuration.clientSecret,
                 Plasmoid.configuration.refreshToken
             );
         }
 
         onError: function(message) {
             console.warn("FitDash API error:", message);
-            fitbitApi.errorMessage = message;
-            Plasmoid.configuration.lastRequestStatus = fitbitApi.lastRequestStatus;
-            Plasmoid.configuration.lastRequestState = fitbitApi.lastRequestState;
+            healthApi.errorMessage = message;
+            Plasmoid.configuration.lastRequestStatus = healthApi.lastRequestStatus;
+            Plasmoid.configuration.lastRequestState = healthApi.lastRequestState;
         }
     }
 
-    FitbitOAuth {
-        id: fitbitOAuth
+    GoogleHealthOAuth {
+        id: healthOAuth
         callbackPort: Plasmoid.configuration.callbackPort || 19847
 
         onAuthorized: function(tokens) {
             Plasmoid.configuration.accessToken = tokens.access_token;
-            Plasmoid.configuration.refreshToken = tokens.refresh_token;
-            Plasmoid.configuration.userId = tokens.user_id || "";
-            Plasmoid.configuration.tokenExpiry = Math.floor(Date.now() / 1000) + (tokens.expires_in || 28800);
-            fitbitApi.accessToken = tokens.access_token;
+            if (tokens.refresh_token) {
+                Plasmoid.configuration.refreshToken = tokens.refresh_token;
+            }
+            if (tokens.user_id) {
+                Plasmoid.configuration.userId = tokens.user_id;
+            }
+            Plasmoid.configuration.tokenExpiry = Math.floor(Date.now() / 1000) + (tokens.expires_in || 3600);
+            healthApi.accessToken = tokens.access_token;
             setLastRequest(i18n("Token refreshed at %1", new Date().toLocaleTimeString()), "ok");
-            fitbitApi.fetchData();
+            healthApi.fetchData();
         }
 
         onError: function(message) {
             console.warn("FitDash OAuth error:", message);
-            recordRefreshError(message, fitbitOAuth.lastErrorRequiresAuthorization);
+            recordRefreshError(message, healthOAuth.lastErrorRequiresAuthorization);
         }
     }
 
@@ -186,8 +191,9 @@ PlasmoidItem {
             var now = Math.floor(Date.now() / 1000);
             var expiry = Plasmoid.configuration.tokenExpiry;
             if (expiry > 0 && now >= expiry - 300 && Plasmoid.configuration.refreshToken !== "") {
-                fitbitOAuth.refreshToken(
+                healthOAuth.refreshToken(
                     Plasmoid.configuration.clientId,
+                    Plasmoid.configuration.clientSecret,
                     Plasmoid.configuration.refreshToken
                 );
             }
@@ -199,17 +205,17 @@ PlasmoidItem {
         interval: (Plasmoid.configuration.refreshInterval || 15) * 60000
         repeat: true
         running: Plasmoid.configuration.accessToken !== ""
-        onTriggered: fitbitApi.fetchData()
+        onTriggered: healthApi.fetchData()
     }
 
     Connections {
         target: Plasmoid.configuration
         function onAccessTokenChanged() {
             if (Plasmoid.configuration.accessToken) {
-                fitbitApi.accessToken = Plasmoid.configuration.accessToken;
-                fitbitApi.fetchData();
+                healthApi.accessToken = Plasmoid.configuration.accessToken;
+                healthApi.fetchData();
             } else {
-                fitbitApi.accessToken = "";
+                healthApi.accessToken = "";
             }
         }
     }
@@ -218,18 +224,18 @@ PlasmoidItem {
         desktopFileInstaller.connectSource(
             "test -f \"$HOME/.local/share/applications/com.democe.fitdash.desktop\" || " +
             "(mkdir -p \"$HOME/.local/share/applications\" && " +
-            "printf '[Desktop Entry]\\nName=FitDash\\nName[fr]=FitDash\\nName[es]=FitDash\\nName[nl]=FitDash\\nName[de]=FitDash\\nComment=Fitbit step counter and fitness data widget for KDE Plasma\\nComment[fr]=Widget de compteur de pas Fitbit et de données fitness pour KDE Plasma\\nComment[es]=Widget de contador de pasos y datos de fitness de Fitbit para KDE Plasma\\nComment[nl]=Widget voor Fitbit-stappenteller en fitnessgegevens voor KDE Plasma\\nComment[de]=Widget für Fitbit-Schrittzähler und Fitnessdaten für KDE Plasma\\nExec=plasmawindowed com.democe.fitdash\\nIcon=fitdash\\nType=Application\\nCategories=Qt;KDE;System;\\n' " +
+            "printf '[Desktop Entry]\\nName=FitDash\\nName[fr]=FitDash\\nName[es]=FitDash\\nName[nl]=FitDash\\nName[de]=FitDash\\nComment=Step counter and fitness data widget for KDE Plasma (Google Health)\\nComment[fr]=Widget de compteur de pas et de données fitness pour KDE Plasma (Google Health)\\nComment[es]=Widget de contador de pasos y datos de fitness para KDE Plasma (Google Health)\\nComment[nl]=Widget voor stappenteller en fitnessgegevens voor KDE Plasma (Google Health)\\nComment[de]=Widget für Schrittzähler und Fitnessdaten für KDE Plasma (Google Health)\\nExec=plasmawindowed com.democe.fitdash\\nIcon=fitdash\\nType=Application\\nCategories=Qt;KDE;System;\\n' " +
             "> \"$HOME/.local/share/applications/com.democe.fitdash.desktop\")"
         );
 
         if (Plasmoid.configuration.accessToken) {
-            fitbitApi.fetchData();
+            healthApi.fetchData();
         }
     }
 
     Component.onDestruction: {
         tokenRefreshTimer.stop();
         dataRefreshTimer.stop();
-        fitbitApi.cleanup();
+        healthApi.cleanup();
     }
 }

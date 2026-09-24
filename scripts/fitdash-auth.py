@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
-"""OAuth 2.0 PKCE helper for FitDash. Outputs tokens JSON to stdout."""
+"""OAuth 2.0 PKCE helper for FitDash. Outputs tokens JSON to stdout.
+
+The client secret is read from the FITDASH_CLIENT_SECRET environment variable
+rather than an argv flag, so it doesn't show up in `ps` output for other users
+on the system.
+"""
 
 import argparse
 import base64
 import hashlib
 import gettext
 import html
+import os
 from pathlib import Path
 import http.server
 import json
@@ -41,16 +47,17 @@ def generate_pkce():
     return code_verifier, code_challenge
 
 
-def exchange_token(code, code_verifier, client_id, redirect_uri):
+def exchange_token(code, code_verifier, client_id, client_secret, redirect_uri):
     data = urllib.parse.urlencode({
         "grant_type": "authorization_code",
         "code": code,
         "code_verifier": code_verifier,
         "client_id": client_id,
+        "client_secret": client_secret,
         "redirect_uri": redirect_uri,
     }).encode("ascii")
     req = urllib.request.Request(
-        "https://api.fitbit.com/oauth2/token",
+        "https://oauth2.googleapis.com/token",
         data=data,
         headers={"Content-Type": "application/x-www-form-urlencoded"},
     )
@@ -68,11 +75,31 @@ def exchange_token(code, code_verifier, client_id, redirect_uri):
     return tokens
 
 
+def fetch_identity(access_token):
+    """Best-effort lookup of the legacy (short) user id for display; returns
+    "" rather than failing the whole authorization if this call has trouble."""
+    req = urllib.request.Request(
+        "https://health.googleapis.com/v4/users/me/identity",
+        headers={"Authorization": "Bearer " + access_token},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            identity = json.loads(resp.read().decode("utf-8"))
+    except (urllib.error.HTTPError, urllib.error.URLError, ValueError):
+        return ""
+    return identity.get("legacyUserId") or identity.get("healthUserId") or ""
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--client-id", required=True)
     parser.add_argument("--port", type=int, default=19847)
     args = parser.parse_args()
+
+    client_secret = os.environ.get("FITDASH_CLIENT_SECRET", "")
+    if not client_secret:
+        json.dump({"error": _("Missing client secret")}, sys.stderr)
+        sys.exit(1)
 
     code_verifier, code_challenge = generate_pkce()
     oauth_state = secrets.token_urlsafe(32)
@@ -119,14 +146,20 @@ def main():
         sys.exit(1)
     redirect_uri = f"http://localhost:{port}/callback"
 
-    scopes = "activity heartrate profile settings"
+    # Kept in sync with the `scopes` property in GoogleHealthOAuth.qml.
+    scopes = (
+        "https://www.googleapis.com/auth/googlehealth.activity_and_fitness.readonly "
+        "https://www.googleapis.com/auth/googlehealth.health_metrics_and_measurements.readonly"
+    )
     authorize_url = (
-        "https://www.fitbit.com/oauth2/authorize?"
+        "https://accounts.google.com/o/oauth2/v2/auth?"
         + urllib.parse.urlencode({
             "response_type": "code",
             "client_id": args.client_id,
             "redirect_uri": redirect_uri,
             "scope": scopes,
+            "access_type": "offline",
+            "prompt": "consent",
             "code_challenge": code_challenge,
             "code_challenge_method": "S256",
             "state": oauth_state,
@@ -159,12 +192,12 @@ def main():
         sys.exit(1)
 
     try:
-        tokens = exchange_token(auth_code, code_verifier, args.client_id, redirect_uri)
+        tokens = exchange_token(auth_code, code_verifier, args.client_id, client_secret, redirect_uri)
         json.dump({
             "access_token": tokens["access_token"],
             "refresh_token": tokens["refresh_token"],
-            "expires_in": tokens.get("expires_in", 28800),
-            "user_id": tokens.get("user_id", ""),
+            "expires_in": tokens.get("expires_in", 3600),
+            "user_id": fetch_identity(tokens["access_token"]),
         }, sys.stdout)
     except Exception as e:
         message = str(e) if isinstance(e, RuntimeError) else _("Token exchange failed — invalid response")

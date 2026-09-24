@@ -56,6 +56,8 @@ class CallbackTests(unittest.TestCase):
                 patch.object(auth, "exchange_token", return_value={
                     "access_token": "test", "refresh_token": "test"
                 }) as exchange, \
+                patch.object(auth, "fetch_identity", return_value="test-user"), \
+                patch.dict(auth.os.environ, {"FITDASH_CLIENT_SECRET": "shh"}), \
                 patch("sys.argv", ["fitdash-auth.py", "--client-id", "ABC"]), \
                 patch("sys.stdout", stdout), patch("sys.stderr", stderr):
             if result == "success":

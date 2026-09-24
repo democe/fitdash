@@ -9,18 +9,19 @@ Item {
     property int callbackPort: 19847
     property string activeSource: ""
     property bool lastErrorRequiresAuthorization: false
-    // Guards against the proactive timer and a reactive 401 both spending the
-    // refresh token at once — Fitbit rotates it on every use, so a concurrent
-    // double-use invalidates it and forces a full re-authorization.
+    // Guards against the proactive timer and a reactive 401 both requesting a
+    // refresh at once — harmless either way (Google doesn't rotate refresh
+    // tokens), but avoids firing two redundant network requests.
     property bool refreshing: false
 
     // Retry state for transient token-endpoint failures (5xx, 429, network
     // errors). Held across the retry delay so the `refreshing` guard stays
-    // asserted and the proactive timer can't double-spend the refresh token.
+    // asserted and the proactive timer can't fire a concurrent request.
     property int maxTokenRetries: 3
     property var _retryBody: null
     property var _retryMessages: null
     property bool _retryInvalidGrantFlag: false
+    property bool _retryRequireRefreshToken: false
     property int _retryAttempt: 0
 
     // State for the manual copy+paste fallback flow.
@@ -34,7 +35,7 @@ Item {
     readonly property string scriptPath: Qt.resolvedUrl("../scripts/fitdash-auth.py").toString().replace("file://", "")
 
     // OAuth scopes requested. Kept in sync with scripts/fitdash-auth.py.
-    readonly property string scopes: "activity heartrate profile settings"
+    readonly property string scopes: "https://www.googleapis.com/auth/googlehealth.activity_and_fitness.readonly https://www.googleapis.com/auth/googlehealth.health_metrics_and_measurements.readonly"
 
     // Backoff timer for transient token-endpoint failures. On each fire it
     // re-issues the same POST body that previously failed. Cleared on
@@ -49,7 +50,7 @@ Item {
                 // re-authorization). Don't resurrect a stale attempt.
                 return;
             }
-            postTokenRequest(oauth._retryBody, oauth._retryMessages, oauth._retryInvalidGrantFlag);
+            postTokenRequest(oauth._retryBody, oauth._retryMessages, oauth._retryInvalidGrantFlag, oauth._retryRequireRefreshToken);
         }
     }
 
@@ -99,7 +100,7 @@ Item {
     }
 
     function isValidClientId(clientId) {
-        return (/^[A-Za-z0-9]+$/).test(clientId);
+        return (/^[A-Za-z0-9.-]+$/).test(clientId);
     }
 
     function shellEscape(s) {
@@ -115,9 +116,6 @@ Item {
     function authorizationErrorMessage(xhr) {
         try {
             var resp = JSON.parse(xhr.responseText);
-            if (resp.errors && resp.errors.length > 0 && resp.errors[0].message) {
-                return resp.errors[0].message;
-            }
             if (resp.error_description) {
                 return resp.error_description;
             }
@@ -130,13 +128,21 @@ Item {
         return "";
     }
 
-    function authorize(clientId) {
+    // Launches the Python helper, which opens the browser, runs a loopback
+    // server to catch the redirect, and does the full code-for-token exchange
+    // itself (it needs the client secret to do that — see the env var below).
+    function authorize(clientId, clientSecret) {
         lastErrorRequiresAuthorization = false;
         if (!isValidClientId(clientId)) {
             reportError(i18n("Invalid client ID format"), false);
             return;
         }
-        var cmd = "python3 " + shellEscape(scriptPath) + " --client-id=" + shellEscape(clientId) + " --port=" + callbackPort;
+        // Passed via environment rather than an argv flag so the secret doesn't
+        // show up in `ps` output for other users on the system.
+        var cmd = "FITDASH_CLIENT_SECRET=" + shellEscape(clientSecret || "")
+            + " python3 " + shellEscape(scriptPath)
+            + " --client-id=" + shellEscape(clientId)
+            + " --port=" + callbackPort;
         activeSource = cmd;
         executable.connectSource(cmd);
     }
@@ -150,17 +156,17 @@ Item {
         reportError(i18n("Authorization canceled"), false);
     }
 
-    // Shared POST to Fitbit's token endpoint. `messages` lets each caller phrase
+    // Shared POST to Google's token endpoint. `messages` lets each caller phrase
     // its own error text; `invalidGrantRequiresAuth` flags whether a 400/401 means
     // the user must re-authorize (true for refresh, false for a fresh exchange).
     //
     // Transient failures (5xx, 429, network errors, timeouts) are retried with
     // exponential backoff up to `maxTokenRetries` times. The `refreshing` guard
-    // stays asserted across the delay so the proactive refresh timer can't
-    // double-spend the refresh token while a retry is pending. Non-retryable
-    // failures (400/401, malformed 200 responses, unexpected non-200 statuses)
-    // surface immediately via `reportError`.
-    function postTokenRequest(body, messages, invalidGrantRequiresAuth) {
+    // stays asserted across the delay so the proactive refresh timer can't fire
+    // a concurrent request while a retry is pending. Non-retryable failures
+    // (400/401, malformed 200 responses, unexpected non-200 statuses) surface
+    // immediately via `reportError`.
+    function postTokenRequest(body, messages, invalidGrantRequiresAuth, requireRefreshToken) {
         lastErrorRequiresAuthorization = false;
 
         // Persist the request context so the retry timer can replay it. These
@@ -168,9 +174,10 @@ Item {
         _retryBody = body;
         _retryMessages = messages;
         _retryInvalidGrantFlag = invalidGrantRequiresAuth;
+        _retryRequireRefreshToken = requireRefreshToken;
 
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://api.fitbit.com/oauth2/token");
+        xhr.open("POST", "https://oauth2.googleapis.com/token");
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.timeout = 15000;
         xhr.onerror = function() {
@@ -194,7 +201,7 @@ Item {
                 return;
             }
             if (xhr.status === 429) {
-                // Honor Retry-After if Fitbit sends it (seconds). Fall back to
+                // Honor Retry-After if Google sends it (seconds). Fall back to
                 // the exponential schedule otherwise.
                 var retryAfter = 0;
                 var header = xhr.getResponseHeader("Retry-After");
@@ -206,7 +213,7 @@ Item {
                 return;
             }
             if (xhr.status >= 500) {
-                scheduleRetryOrGiveUp(i18n("Fitbit server error (HTTP %1)", xhr.status), false);
+                scheduleRetryOrGiveUp(i18n("Google server error (HTTP %1)", xhr.status), false);
                 return;
             }
             if (xhr.status !== 200) {
@@ -215,12 +222,15 @@ Item {
             }
             try {
                 var resp = JSON.parse(xhr.responseText);
-                if (resp.access_token && resp.refresh_token) {
+                if (resp.access_token && (!requireRefreshToken || resp.refresh_token)) {
                     clearRetryState();
                     refreshing = false;
+                    // Google only returns a refresh_token on the initial consent
+                    // (or when prompt=consent forces it); a refresh response
+                    // reuses the refresh token already on file.
                     oauth.authorized(resp);
                 } else {
-                    giveUp(resp.errors ? resp.errors[0].message : messages.missingTokens, invalidGrantRequiresAuth);
+                    giveUp(resp.error ? resp.error : messages.missingTokens, invalidGrantRequiresAuth);
                 }
             } catch(e) {
                 giveUp(messages.invalidResponse, invalidGrantRequiresAuth);
@@ -237,6 +247,7 @@ Item {
         _retryBody = null;
         _retryMessages = null;
         _retryInvalidGrantFlag = false;
+        _retryRequireRefreshToken = false;
         _retryAttempt = 0;
         if (tokenRetryTimer.running) tokenRetryTimer.stop();
     }
@@ -270,29 +281,32 @@ Item {
         tokenRetryTimer.restart();
     }
 
-    function refreshToken(clientId, refreshTok) {
+    function refreshToken(clientId, clientSecret, refreshTok) {
         if (refreshing) return;
         refreshing = true;
         var body = "grant_type=refresh_token"
             + "&refresh_token=" + encodeURIComponent(refreshTok)
-            + "&client_id=" + encodeURIComponent(clientId);
+            + "&client_id=" + encodeURIComponent(clientId)
+            + "&client_secret=" + encodeURIComponent(clientSecret);
         postTokenRequest(body, {
             network: i18n("Network error during token refresh"),
             invalidGrant: i18n("Refresh token invalid — please re-authorize"),
             generic: i18n("Token refresh failed"),
             missingTokens: i18n("Refresh failed — missing tokens"),
             invalidResponse: i18n("Token refresh failed — invalid response")
-        }, true);
+        }, true, false);
     }
 
     // --- Manual copy+paste fallback (no loopback server / no python) ---
 
     function buildAuthorizeUrl(clientId, challenge, state, redirectUri) {
-        return "https://www.fitbit.com/oauth2/authorize"
+        return "https://accounts.google.com/o/oauth2/v2/auth"
             + "?response_type=code"
             + "&client_id=" + encodeURIComponent(clientId)
             + "&redirect_uri=" + encodeURIComponent(redirectUri)
             + "&scope=" + encodeURIComponent(scopes)
+            + "&access_type=offline"
+            + "&prompt=consent"
             + "&code_challenge=" + encodeURIComponent(challenge)
             + "&code_challenge_method=S256"
             + "&state=" + encodeURIComponent(state);
@@ -335,7 +349,9 @@ Item {
     }
 
     // Complete the manual flow from the redirect URL (or a bare code) the user pastes.
-    function completeManualAuthorization(clientId, pastedText) {
+    // Google redirects to the (unreachable) localhost callback URL, so the user
+    // copies it from the browser's address bar after the "can't connect" page.
+    function completeManualAuthorization(clientId, clientSecret, pastedText) {
         var text = (pastedText || "").trim();
         if (text === "") {
             reportError(i18n("Paste the redirect URL or authorization code first"), false);
@@ -346,7 +362,7 @@ Item {
             return;
         }
 
-        // Strip any URL fragment (Fitbit appends "#_=_" to the redirect).
+        // Strip any URL fragment.
         text = text.split("#")[0];
 
         var code = text;
@@ -381,6 +397,7 @@ Item {
             + "&code=" + encodeURIComponent(code)
             + "&code_verifier=" + encodeURIComponent(manualVerifier)
             + "&client_id=" + encodeURIComponent(clientId)
+            + "&client_secret=" + encodeURIComponent(clientSecret)
             + "&redirect_uri=" + encodeURIComponent(manualRedirectUri);
         postTokenRequest(body, {
             network: i18n("Network error during token exchange"),
@@ -388,6 +405,6 @@ Item {
             generic: i18n("Token exchange failed"),
             missingTokens: i18n("Token exchange failed — missing tokens"),
             invalidResponse: i18n("Token exchange failed — invalid response")
-        }, false);
+        }, false, true);
     }
 }

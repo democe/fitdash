@@ -14,6 +14,9 @@
         <entry name="clientId" type="String">
             <default></default>
         </entry>
+        <entry name="clientSecret" type="Password">
+            <default></default>
+        </entry>
         <entry name="userId" type="String">
             <default></default>
         </entry>

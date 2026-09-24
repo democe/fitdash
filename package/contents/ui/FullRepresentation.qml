@@ -112,7 +112,7 @@ PlasmaExtras.Representation {
                     Layout.fillWidth: true
                     horizontalAlignment: Text.AlignHCenter
                     level: 2
-                    text: i18n("Connect Fitbit")
+                    text: i18n("Connect Google Health")
                 }
 
                 PlasmaComponents.Label {
@@ -157,7 +157,7 @@ PlasmaExtras.Representation {
 
                 PlasmaComponents.Label {
                     Layout.alignment: Qt.AlignHCenter
-                    text: i18n("Loading Fitbit data")
+                    text: i18n("Loading Google Health data")
                     opacity: 0.72
                 }
             }
