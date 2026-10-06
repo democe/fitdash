@@ -577,7 +577,7 @@ msgstr "Google autorise automatiquement n'importe quel port localhost pour les c
 
 #: package/contents/ui/configGeneral.qml:174
 msgid "Recommended: 15–30 minutes to stay within API rate limits"
-msgstr "Recommandé : 15 à 30 minutes pour rester dans les limites de débit de API"
+msgstr "Recommandé : 15 à 30 minutes pour rester dans les limites de débit de l’API"
 
 #: package/contents/ui/configGeneral.qml:201
 msgid "Step goal:"
