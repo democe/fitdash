@@ -17,8 +17,8 @@ cd "$PROJECT_DIR"
     --keyword=i18nc:1c,2 \
     --add-comments=TRANSLATORS \
     --package-name=FitDash \
-    --package-version=1.0.5 \
-    --msgid-bugs-address=democe@outlook.com \
+    --package-version=1.0.8 \
+    --msgid-bugs-address=democe@democe.com \
     -o "$PODIR/plasma_applet_com.democe.fitdash.pot" \
     package/contents/ui/*.qml \
     package/contents/config/*.qml

@@ -2,7 +2,7 @@
     "KPlugin": {
         "Authors": [
             {
-                "Email": "democe@outlook.com",
+                "Email": "democe@democe.com",
                 "Name": "democe"
             }
         ],
@@ -12,8 +12,8 @@
         "Id": "com.democe.fitdash",
         "License": "GPL-3.0-or-later",
         "Name": "FitDash",
-        "Version": "1.0.7",
-        "Website": "https://github.com/democe/fitdash",
+        "Version": "1.0.8",
+        "Website": "https://www.democe.com/projects/fitdash",
         "Name[af]": "FitDash",
         "Description[af]": "Google Health-stapteller en fiksheidsdatalegstuk vir KDE Plasma",
         "Name[am]": "FitDash",

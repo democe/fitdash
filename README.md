@@ -88,6 +88,11 @@ No build step required — QML is interpreted at runtime. After modifying QML fi
 
 [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0.html)
 
+## Legal
+
+- [Privacy Policy](https://www.democe.com/projects/fitdash/privacy/)
+- [Terms of Service](https://www.democe.com/projects/fitdash/terms/)
+
 ## Author
 
-democe — [democe@outlook.com](mailto:democe@outlook.com)
+democe — [democe@democe.com](mailto:democe@democe.com)
