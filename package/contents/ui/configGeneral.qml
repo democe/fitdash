@@ -24,6 +24,10 @@ Kirigami.ScrollablePage {
     property alias cfg_showDistance: showDistanceCheckBox.checked
     property alias cfg_showActiveMinutes: showActiveMinutesCheckBox.checked
     property alias cfg_showHeartRate: showHeartRateCheckBox.checked
+    property alias cfg_showSleep: showSleepCheckBox.checked
+    property alias cfg_showOxygenSaturation: showOxygenSaturationCheckBox.checked
+    property alias cfg_showHeartRateVariability: showHeartRateVariabilityCheckBox.checked
+    property alias cfg_showRespiratoryRate: showRespiratoryRateCheckBox.checked
 
     property string cfg_clientIdDefault: ""
     property string cfg_clientSecretDefault: ""
@@ -42,6 +46,10 @@ Kirigami.ScrollablePage {
     property bool cfg_showDistanceDefault: true
     property bool cfg_showActiveMinutesDefault: true
     property bool cfg_showHeartRateDefault: true
+    property bool cfg_showSleepDefault: true
+    property bool cfg_showOxygenSaturationDefault: true
+    property bool cfg_showHeartRateVariabilityDefault: true
+    property bool cfg_showRespiratoryRateDefault: true
 
     property bool authInProgress: false
     property string authStatusMessage: ""
@@ -248,6 +256,34 @@ Kirigami.ScrollablePage {
                 id: showHeartRateCheckBox
                 Kirigami.FormData.label: ""
                 text: i18n("Resting heart rate")
+                checked: true
+            }
+
+            QQC2.CheckBox {
+                id: showSleepCheckBox
+                Kirigami.FormData.label: ""
+                text: i18n("Sleep")
+                checked: true
+            }
+
+            QQC2.CheckBox {
+                id: showOxygenSaturationCheckBox
+                Kirigami.FormData.label: ""
+                text: i18n("Blood oxygen (SpO2)")
+                checked: true
+            }
+
+            QQC2.CheckBox {
+                id: showHeartRateVariabilityCheckBox
+                Kirigami.FormData.label: ""
+                text: i18n("Heart rate variability")
+                checked: true
+            }
+
+            QQC2.CheckBox {
+                id: showRespiratoryRateCheckBox
+                Kirigami.FormData.label: ""
+                text: i18n("Breathing rate")
                 checked: true
             }
 

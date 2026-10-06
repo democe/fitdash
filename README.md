@@ -26,6 +26,7 @@ Step counter and fitness data widget for KDE Plasma, backed by the Google Health
 3. Configure the OAuth consent screen. Under **Data Access**, add these scopes:
    - `https://www.googleapis.com/auth/googlehealth.activity_and_fitness.readonly`
    - `https://www.googleapis.com/auth/googlehealth.health_metrics_and_measurements.readonly`
+   - `https://www.googleapis.com/auth/googlehealth.sleep.readonly` (sleep duration)
 
    While the consent screen is in **Testing** status, add your own Google account as a
    test user, and note that refresh tokens expire after 7 days — you'll need to

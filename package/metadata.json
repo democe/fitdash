@@ -8,7 +8,7 @@
         ],
         "Category": "System Information",
         "Description": "Step counter and fitness data widget for KDE Plasma (Google Health)",
-        "Icon": "fitdash",
+        "Icon": "love-symbolic",
         "Id": "com.democe.fitdash",
         "License": "GPL-3.0-or-later",
         "Name": "FitDash",

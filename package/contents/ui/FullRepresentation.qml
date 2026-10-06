@@ -8,11 +8,15 @@ import org.kde.kirigami as Kirigami
 PlasmaExtras.Representation {
     id: fullRoot
 
-    property int steps: 0
-    property int calories: 0
-    property real distance: 0.0
-    property int activeMinutes: 0
-    property int restingHeartRate: 0
+    property real steps: NaN
+    property real calories: NaN
+    property real distance: NaN
+    property real activeMinutes: NaN
+    property real restingHeartRate: NaN
+    property real sleepMinutes: NaN
+    property real oxygenSaturation: NaN
+    property real heartRateVariability: NaN
+    property real respiratoryRate: NaN
     property int stepsGoal: 0
     property string lastUpdated: ""
     property real lastUpdatedTimestamp: 0
@@ -25,21 +29,48 @@ PlasmaExtras.Representation {
     property bool showDistance: true
     property bool showActiveMinutes: true
     property bool showHeartRate: true
+    property bool showSleep: true
+    property bool showOxygenSaturation: true
+    property bool showHeartRateVariability: true
+    property bool showRespiratoryRate: true
 
-    readonly property bool isStale: lastUpdatedTimestamp > 0 && (Date.now() - lastUpdatedTimestamp) > 3600000
+    readonly property bool anyVitalsVisible: showHeartRate || showSleep || showOxygenSaturation
+        || showHeartRateVariability || showRespiratoryRate
+
+    // Bindings don't re-evaluate as time passes, so tick a clock for isStale.
+    property real now: Date.now()
+    readonly property bool isStale: lastUpdatedTimestamp > 0 && (now - lastUpdatedTimestamp) > 3600000
+
+    Timer {
+        interval: 60000
+        repeat: true
+        running: true
+        onTriggered: fullRoot.now = Date.now()
+    }
     readonly property int contentPadding: Kirigami.Units.gridUnit
-    readonly property real stepsProgress: stepsGoal > 0 ? Math.min(1, steps / stepsGoal) : 0
+    readonly property bool hasSteps: !isNaN(steps)
+    readonly property real stepsProgress: stepsGoal > 0 && hasSteps ? Math.min(1, steps / stepsGoal) : 0
 
     Layout.minimumWidth: Kirigami.Units.gridUnit * 18
-    Layout.minimumHeight: Kirigami.Units.gridUnit * 12
     Layout.preferredWidth: Kirigami.Units.gridUnit * 22
-    Layout.preferredHeight: Math.max(Kirigami.Units.gridUnit * 14, contentColumn.implicitHeight + topPadding + bottomPadding)
+    // Pin the popup height to its content so it grows/shrinks as tiles toggle.
+    readonly property real fittedHeight: (header ? header.implicitHeight : 0)
+        + contentColumn.implicitHeight + topPadding + bottomPadding
+    Layout.minimumHeight: fittedHeight
+    Layout.preferredHeight: fittedHeight
+    Layout.maximumHeight: fittedHeight
 
     function formatDistance(value, unit) {
+        if (isNaN(value)) return "—";
         if (unit === "mi") {
             return i18nc("distance in miles", "%1 mi", (value * 0.621371).toLocaleString(Qt.locale(), "f", 2));
         }
         return i18nc("distance in kilometers", "%1 km", value.toLocaleString(Qt.locale(), "f", 2));
+    }
+
+    function formatSleep(minutes) {
+        if (isNaN(minutes)) return "—";
+        return i18nc("sleep duration in hours and minutes", "%1h %2m", Math.floor(minutes / 60), minutes % 60);
     }
 
     function visibleMetricCount() {
@@ -48,7 +79,6 @@ PlasmaExtras.Representation {
         if (showCalories) count++;
         if (showDistance) count++;
         if (showActiveMinutes) count++;
-        if (showHeartRate) count++;
         return count;
     }
 
@@ -142,7 +172,7 @@ PlasmaExtras.Representation {
         Item {
             Layout.fillWidth: true
             Layout.preferredHeight: Kirigami.Units.gridUnit * 8
-            visible: fullRoot.hasToken && fullRoot.isLoading && fullRoot.steps === 0 && fullRoot.errorMessage === ""
+            visible: fullRoot.hasToken && fullRoot.isLoading && !fullRoot.hasSteps && fullRoot.errorMessage === ""
 
             ColumnLayout {
                 anchors.centerIn: parent
@@ -172,7 +202,7 @@ PlasmaExtras.Representation {
             Layout.topMargin: Kirigami.Units.largeSpacing
             Layout.bottomMargin: Kirigami.Units.largeSpacing
             spacing: Kirigami.Units.smallSpacing
-            visible: fullRoot.hasToken && (!fullRoot.isLoading || fullRoot.steps > 0)
+            visible: fullRoot.hasToken && (!fullRoot.isLoading || fullRoot.hasSteps)
 
             Kirigami.InlineMessage {
                 Layout.fillWidth: true
@@ -216,11 +246,10 @@ PlasmaExtras.Representation {
                         }
 
                         PlasmaComponents.Label {
-                            text: fullRoot.stepsGoal > 0
+                            text: fullRoot.stepsGoal > 0 && fullRoot.hasSteps
                                 ? i18nc("step goal progress", "%1%", Math.round(fullRoot.stepsProgress * 100))
                                 : ""
                             visible: text !== ""
-                            color: Kirigami.Theme.positiveTextColor
                             font.pointSize: Kirigami.Theme.smallFont.pointSize
                         }
                     }
@@ -228,20 +257,21 @@ PlasmaExtras.Representation {
                     PlasmaExtras.Heading {
                         Layout.fillWidth: true
                         level: 1
-                        text: fullRoot.steps.toLocaleString()
+                        text: fullRoot.hasSteps ? fullRoot.steps.toLocaleString() : "—"
                     }
 
                     PlasmaComponents.ProgressBar {
                         Layout.fillWidth: true
                         from: 0
-                        to: Math.max(fullRoot.stepsGoal, fullRoot.steps, 1)
-                        value: fullRoot.steps
+                        to: Math.max(fullRoot.stepsGoal, fullRoot.hasSteps ? fullRoot.steps : 0, 1)
+                        value: fullRoot.hasSteps ? fullRoot.steps : 0
                         visible: fullRoot.stepsGoal > 0
                     }
 
                     PlasmaComponents.Label {
                         Layout.fillWidth: true
-                        text: fullRoot.stepsGoal > 0
+                        text: !fullRoot.hasSteps ? i18n("No data yet")
+                            : fullRoot.stepsGoal > 0
                             ? i18n("%1 remaining of %2", Math.max(0, fullRoot.stepsGoal - fullRoot.steps).toLocaleString(), fullRoot.stepsGoal.toLocaleString())
                             : i18n("No step goal set")
                         font.pointSize: Kirigami.Theme.smallFont.pointSize
@@ -261,7 +291,7 @@ PlasmaExtras.Representation {
                     visible: fullRoot.showCalories
                     Layout.fillWidth: true
                     title: i18n("Calories")
-                    value: fullRoot.calories.toLocaleString()
+                    value: isNaN(fullRoot.calories) ? "—" : fullRoot.calories.toLocaleString()
                     iconName: "speedometer"
                 }
 
@@ -270,25 +300,80 @@ PlasmaExtras.Representation {
                     Layout.fillWidth: true
                     title: i18n("Distance")
                     value: fullRoot.formatDistance(fullRoot.distance, fullRoot.distanceUnit)
-                    iconName: "map"
+                    iconName: Qt.resolvedUrl("../icons/metric-distance.svg")
                 }
 
                 MetricTile {
                     visible: fullRoot.showActiveMinutes
                     Layout.fillWidth: true
                     title: i18n("Active")
-                    value: i18nc("active minutes", "%1 min", fullRoot.activeMinutes)
+                    value: isNaN(fullRoot.activeMinutes) ? "—" : i18nc("active minutes", "%1 min", fullRoot.activeMinutes)
                     iconName: "chronometer"
+                }
+            }
+
+            PlasmaComponents.Label {
+                Layout.fillWidth: true
+                Layout.topMargin: Kirigami.Units.smallSpacing
+                text: i18n("Vitals")
+                font.pointSize: Kirigami.Theme.smallFont.pointSize
+                opacity: 0.65
+                visible: fullRoot.anyVitalsVisible
+            }
+
+            GridLayout {
+                Layout.fillWidth: true
+                columns: 2
+                columnSpacing: Kirigami.Units.smallSpacing
+                rowSpacing: Kirigami.Units.smallSpacing
+                visible: fullRoot.anyVitalsVisible
+
+                MetricTile {
+                    visible: fullRoot.showSleep
+                    Layout.fillWidth: true
+                    title: i18n("Sleep")
+                    value: fullRoot.formatSleep(fullRoot.sleepMinutes)
+                    iconName: "weather-clear-night"
                 }
 
                 MetricTile {
                     visible: fullRoot.showHeartRate
                     Layout.fillWidth: true
                     title: i18n("Resting HR")
-                    value: fullRoot.restingHeartRate > 0
+                    value: !isNaN(fullRoot.restingHeartRate)
                         ? i18nc("heart rate in beats per minute", "%1 bpm", fullRoot.restingHeartRate)
                         : "—"
-                    iconName: "heart"
+                    iconName: Qt.resolvedUrl("../icons/metric-heart.svg")
+                }
+
+                MetricTile {
+                    visible: fullRoot.showOxygenSaturation
+                    Layout.fillWidth: true
+                    title: i18n("SpO2")
+                    value: !isNaN(fullRoot.oxygenSaturation)
+                        ? i18nc("blood oxygen saturation percentage", "%1%", fullRoot.oxygenSaturation.toLocaleString(Qt.locale(), "f", 1))
+                        : "—"
+                    iconName: Qt.resolvedUrl("../icons/metric-oxygen.svg")
+                }
+
+                MetricTile {
+                    visible: fullRoot.showHeartRateVariability
+                    Layout.fillWidth: true
+                    title: i18n("HRV")
+                    value: !isNaN(fullRoot.heartRateVariability)
+                        ? i18nc("heart rate variability in milliseconds", "%1 ms", Math.round(fullRoot.heartRateVariability))
+                        : "—"
+                    iconName: "office-chart-line"
+                }
+
+                MetricTile {
+                    visible: fullRoot.showRespiratoryRate
+                    Layout.fillWidth: true
+                    title: i18n("Breathing")
+                    value: !isNaN(fullRoot.respiratoryRate)
+                        ? i18nc("respiratory rate in breaths per minute", "%1 br/min", fullRoot.respiratoryRate.toLocaleString(Qt.locale(), "f", 1))
+                        : "—"
+                    iconName: Qt.resolvedUrl("../icons/metric-breathing.svg")
                 }
             }
 
@@ -321,7 +406,7 @@ PlasmaExtras.Representation {
 
         property string title
         property string value
-        property string iconName
+        property var iconName
 
         Layout.preferredHeight: Kirigami.Units.gridUnit * 3.6
         radius: Kirigami.Units.smallSpacing
@@ -336,6 +421,8 @@ PlasmaExtras.Representation {
 
             Kirigami.Icon {
                 source: tile.iconName
+                // Bundled SVGs are monochrome; tint them with the theme text color.
+                isMask: tile.iconName.toString().endsWith(".svg")
                 Layout.preferredWidth: Kirigami.Units.iconSizes.smallMedium
                 Layout.preferredHeight: Kirigami.Units.iconSizes.smallMedium
                 opacity: 0.75

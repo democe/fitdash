@@ -35,7 +35,7 @@ Item {
     readonly property string scriptPath: Qt.resolvedUrl("../scripts/fitdash-auth.py").toString().replace("file://", "")
 
     // OAuth scopes requested. Kept in sync with scripts/fitdash-auth.py.
-    readonly property string scopes: "https://www.googleapis.com/auth/googlehealth.activity_and_fitness.readonly https://www.googleapis.com/auth/googlehealth.health_metrics_and_measurements.readonly"
+    readonly property string scopes: "https://www.googleapis.com/auth/googlehealth.activity_and_fitness.readonly https://www.googleapis.com/auth/googlehealth.health_metrics_and_measurements.readonly https://www.googleapis.com/auth/googlehealth.sleep.readonly"
 
     // Backoff timer for transient token-endpoint failures. On each fire it
     // re-issues the same POST body that previously failed. Cleared on

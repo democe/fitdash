@@ -47,8 +47,23 @@
         <entry name="showHeartRate" type="Bool">
             <default>true</default>
         </entry>
+        <entry name="showSleep" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showOxygenSaturation" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showHeartRateVariability" type="Bool">
+            <default>true</default>
+        </entry>
+        <entry name="showRespiratoryRate" type="Bool">
+            <default>true</default>
+        </entry>
         <entry name="callbackPort" type="Int">
             <default>19847</default>
+        </entry>
+        <entry name="cachedData" type="String">
+            <default></default>
         </entry>
         <entry name="lastRequestStatus" type="String">
             <default></default>

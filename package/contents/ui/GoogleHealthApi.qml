@@ -5,11 +5,17 @@ QtObject {
 
     property string accessToken: ""
 
-    property int steps: 0
-    property int calories: 0
-    property real distance: 0.0
-    property int activeMinutes: 0
-    property int restingHeartRate: 0
+    // NaN means "no data" so the UI can show an em-dash instead of a fake 0.
+    property real steps: NaN
+    property real calories: NaN
+    property real distance: NaN
+    property real activeMinutes: NaN
+    property real sleepMinutes: NaN
+    // Latest daily summaries, which can be from an earlier day.
+    property real restingHeartRate: NaN
+    property real oxygenSaturation: NaN
+    property real heartRateVariability: NaN
+    property real respiratoryRate: NaN
     property string lastUpdated: ""
     property real lastUpdatedTimestamp: 0
 
@@ -21,6 +27,11 @@ QtObject {
     property var pendingXhrs: []
     property int pendingCount: 0
     property bool authErrorSignaled: false
+    property bool anySucceeded: false
+
+    // Metrics that describe today and must not carry over past midnight.
+    readonly property var todayMetrics: ["steps", "calories", "distance", "activeMinutes", "sleepMinutes"]
+    readonly property var latestMetrics: ["restingHeartRate", "oxygenSaturation", "heartRateVariability", "respiratoryRate"]
 
     signal dataUpdated()
     signal authError()
@@ -38,13 +49,54 @@ QtObject {
         isLoading = true;
         errorMessage = "";
         authErrorSignaled = false;
+        anySucceeded = false;
+        if (lastUpdatedTimestamp > 0 && !isToday(lastUpdatedTimestamp)) {
+            clearMetrics(todayMetrics);
+        }
         pendingXhrs = [];
-        pendingCount = 5;
+        pendingCount = 9;
         fetchStepsRollup();
         fetchTotalCaloriesRollup();
         fetchDistanceRollup();
         fetchActiveMinutesRollup();
         fetchRestingHeartRate();
+        fetchOxygenSaturation();
+        fetchHeartRateVariability();
+        fetchRespiratoryRate();
+        fetchSleep();
+    }
+
+    function isToday(timestamp) {
+        return new Date(timestamp).toDateString() === new Date().toDateString();
+    }
+
+    function clearMetrics(keys) {
+        for (var i = 0; i < keys.length; i++) api[keys[i]] = NaN;
+    }
+
+    // Serializable copy of the last known values, persisted by main.qml so the
+    // widget can show them after a restart while offline.
+    function snapshot() {
+        var values = {};
+        var keys = todayMetrics.concat(latestMetrics);
+        for (var i = 0; i < keys.length; i++) {
+            if (!isNaN(api[keys[i]])) values[keys[i]] = api[keys[i]];
+        }
+        return { timestamp: lastUpdatedTimestamp, values: values };
+    }
+
+    function restore(json) {
+        var snap;
+        try { snap = JSON.parse(json); } catch (e) { return; }
+        if (!snap || !snap.timestamp || !snap.values) return;
+        var keys = isToday(snap.timestamp) ? todayMetrics.concat(latestMetrics) : latestMetrics;
+        for (var i = 0; i < keys.length; i++) {
+            var v = snap.values[keys[i]];
+            if (typeof v === "number") api[keys[i]] = v;
+        }
+        lastUpdatedTimestamp = snap.timestamp;
+        var when = new Date(snap.timestamp);
+        lastUpdated = isToday(snap.timestamp) ? when.toLocaleTimeString() : when.toLocaleString();
     }
 
     // Civil (local-calendar) date range covering "today" for a dailyRollUp request.
@@ -111,20 +163,22 @@ QtObject {
         pendingXhrs = [];
     }
 
-    // Every dailyRollUp call shares this shape: one civil day, one source family.
-    // Called once per successful (non-auth-error) response so the "all requests
-    // settled" bookkeeping (isLoading, dataUpdated) only fires once per fetchData().
+    // Called once per response so the "all requests settled" bookkeeping
+    // (isLoading, dataUpdated) only fires once per fetchData(). Data counts as
+    // updated if any request succeeded; status is OK only if none set an error.
     function requestSettled(ok) {
+        if (ok) anySucceeded = true;
         pendingCount--;
         if (pendingCount > 0) return;
         isLoading = false;
-        if (ok) {
-            api.lastUpdatedTimestamp = Date.now();
-            api.lastUpdated = new Date().toLocaleTimeString();
+        if (!anySucceeded) return;
+        api.lastUpdatedTimestamp = Date.now();
+        api.lastUpdated = new Date().toLocaleTimeString();
+        if (api.errorMessage === "") {
             api.lastRequestStatus = i18n("OK — updated at %1", api.lastUpdated);
             api.lastRequestState = "ok";
-            api.dataUpdated();
         }
+        api.dataUpdated();
     }
 
     function dailyRollUp(dataType, onSuccess) {
@@ -150,9 +204,8 @@ QtObject {
             try {
                 var data = JSON.parse(xhr.responseText);
                 var points = data.rollupDataPoints;
-                if (points && points.length > 0) {
-                    onSuccess(points[0]);
-                }
+                // No rollup point for today means no activity yet: a real zero.
+                onSuccess(points && points.length > 0 ? points[0] : {});
                 requestSettled(true);
             } catch(e) {
                 api.errorMessage = i18n("Failed to parse %1 data", dataType);
@@ -172,34 +225,28 @@ QtObject {
 
     function fetchStepsRollup() {
         dailyRollUp("steps", function(point) {
-            if (point.steps && point.steps.countSum !== undefined) {
-                api.steps = parseInt(point.steps.countSum, 10) || 0;
-            }
+            api.steps = point.steps ? parseInt(point.steps.countSum, 10) || 0 : 0;
         });
     }
 
     function fetchTotalCaloriesRollup() {
         dailyRollUp("total-calories", function(point) {
-            if (point.totalCalories && point.totalCalories.kcalSum !== undefined) {
-                api.calories = Math.round(point.totalCalories.kcalSum) || 0;
-            }
+            api.calories = point.totalCalories ? Math.round(point.totalCalories.kcalSum) || 0 : 0;
         });
     }
 
     function fetchDistanceRollup() {
         dailyRollUp("distance", function(point) {
-            if (point.distance && point.distance.millimetersSum !== undefined) {
-                // API reports distance in millimeters; the UI works in kilometers.
-                api.distance = (parseInt(point.distance.millimetersSum, 10) || 0) / 1000000;
-            }
+            // API reports distance in millimeters; the UI works in kilometers.
+            api.distance = point.distance ? (parseInt(point.distance.millimetersSum, 10) || 0) / 1000000 : 0;
         });
     }
 
     function fetchActiveMinutesRollup() {
         dailyRollUp("active-minutes", function(point) {
             var byLevel = point.activeMinutes && point.activeMinutes.activeMinutesRollupByActivityLevel;
-            if (!byLevel) return;
             var total = 0;
+            if (!byLevel) byLevel = [];
             for (var i = 0; i < byLevel.length; i++) {
                 // MODERATE + VIGOROUS mirrors the old Fitbit metric (fairly + very
                 // active minutes); LIGHT activity is intentionally excluded.
@@ -212,10 +259,13 @@ QtObject {
         });
     }
 
-    function fetchRestingHeartRate() {
+    // GET a dataPoints list. Vitals are optional extras: a missing scope or a
+    // device that doesn't record a metric must not put the widget into an error
+    // state, so failures other than 401 are only logged.
+    function listDataPoints(dataType, query, onSuccess) {
         var xhr = new XMLHttpRequest();
         pendingXhrs.push(xhr);
-        xhr.open("GET", apiBase + "/dataTypes/daily-resting-heart-rate/dataPoints?pageSize=1");
+        xhr.open("GET", apiBase + "/dataTypes/" + dataType + "/dataPoints?" + query);
         xhr.setRequestHeader("Authorization", "Bearer " + accessToken);
         xhr.timeout = 15000;
         xhr.onreadystatechange = function() {
@@ -230,23 +280,74 @@ QtObject {
             }
             if (xhr.status !== 200) {
                 if (xhr.status !== 0) {
-                    console.warn("FitDash: resting heart rate fetch failed (HTTP " + xhr.status + ")");
+                    console.warn("FitDash: " + dataType + " fetch failed (HTTP " + xhr.status + ")");
                 }
                 requestSettled(false);
                 return;
             }
             try {
                 var data = JSON.parse(xhr.responseText);
-                var points = data.dataPoints;
-                if (points && points.length > 0 && points[0].dailyRestingHeartRate) {
-                    api.restingHeartRate = parseInt(points[0].dailyRestingHeartRate.beatsPerMinute, 10) || 0;
-                }
+                onSuccess(data.dataPoints || []);
                 requestSettled(true);
             } catch(e) {
-                console.warn("FitDash: failed to parse resting heart rate data");
+                console.warn("FitDash: failed to parse " + dataType + " data");
                 requestSettled(false);
             }
         };
         xhr.send();
+    }
+
+    // Results are ordered newest first, so pageSize=1 yields the latest daily summary.
+    function latestDaily(dataType, field, onSuccess) {
+        listDataPoints(dataType, "pageSize=1", function(points) {
+            if (points.length > 0 && points[0][field]) {
+                onSuccess(points[0][field]);
+            }
+        });
+    }
+
+    function fetchRestingHeartRate() {
+        latestDaily("daily-resting-heart-rate", "dailyRestingHeartRate", function(v) {
+            api.restingHeartRate = parseInt(v.beatsPerMinute, 10) || 0;
+        });
+    }
+
+    function fetchOxygenSaturation() {
+        latestDaily("daily-oxygen-saturation", "dailyOxygenSaturation", function(v) {
+            api.oxygenSaturation = Number(v.averagePercentage) || 0;
+        });
+    }
+
+    function fetchHeartRateVariability() {
+        latestDaily("daily-heart-rate-variability", "dailyHeartRateVariability", function(v) {
+            api.heartRateVariability = Number(v.averageHeartRateVariabilityMilliseconds) || 0;
+        });
+    }
+
+    function fetchRespiratoryRate() {
+        latestDaily("daily-respiratory-rate", "dailyRespiratoryRate", function(v) {
+            api.respiratoryRate = Number(v.breathsPerMinute) || 0;
+        });
+    }
+
+    // Last night's sleep: sessions that ended today (local calendar). Naps are
+    // excluded unless they're all there is.
+    function fetchSleep() {
+        var d = new Date();
+        var pad = function(n) { return (n < 10 ? "0" : "") + n; };
+        var today = d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
+        var filter = 'sleep.interval.civil_end_time >= "' + today + '"';
+        listDataPoints("sleep", "filter=" + encodeURIComponent(filter), function(points) {
+            var main = 0, all = 0;
+            for (var i = 0; i < points.length; i++) {
+                var sleep = points[i].sleep;
+                if (!sleep || !sleep.summary) continue;
+                var mins = parseInt(sleep.summary.minutesAsleep, 10) || 0;
+                all += mins;
+                if (!(sleep.metadata && sleep.metadata.nap)) main += mins;
+            }
+            // No session ending today yet means unknown, not zero sleep.
+            api.sleepMinutes = points.length > 0 ? (main > 0 ? main : all) : NaN;
+        });
     }
 }

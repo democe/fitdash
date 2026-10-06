@@ -47,7 +47,7 @@ PlasmoidItem {
 
             PlasmaComponents.Label {
                 id: stepLabel
-                text: healthApi.accessToken !== "" ? healthApi.steps.toLocaleString() : "—"
+                text: healthApi.accessToken !== "" && !isNaN(healthApi.steps) ? healthApi.steps.toLocaleString() : "—"
                 font.bold: false
                 font.pixelSize: root.constrained ? Kirigami.Units.gridUnit * 0.75 : compactRoot.height * 0.3
             }
@@ -60,6 +60,10 @@ PlasmoidItem {
         distance: healthApi.distance
         activeMinutes: healthApi.activeMinutes
         restingHeartRate: healthApi.restingHeartRate
+        sleepMinutes: healthApi.sleepMinutes
+        oxygenSaturation: healthApi.oxygenSaturation
+        heartRateVariability: healthApi.heartRateVariability
+        respiratoryRate: healthApi.respiratoryRate
         stepsGoal: Plasmoid.configuration.stepsGoal || 0
         lastUpdated: healthApi.lastUpdated
         lastUpdatedTimestamp: healthApi.lastUpdatedTimestamp
@@ -72,22 +76,27 @@ PlasmoidItem {
         showDistance: Plasmoid.configuration.showDistance
         showActiveMinutes: Plasmoid.configuration.showActiveMinutes
         showHeartRate: Plasmoid.configuration.showHeartRate
+        showSleep: Plasmoid.configuration.showSleep
+        showOxygenSaturation: Plasmoid.configuration.showOxygenSaturation
+        showHeartRateVariability: Plasmoid.configuration.showHeartRateVariability
+        showRespiratoryRate: Plasmoid.configuration.showRespiratoryRate
     }
 
     toolTipMainText: i18n("FitDash")
     toolTipSubText: {
         if (healthApi.accessToken === "") return i18n("Not connected");
         var unit = Plasmoid.configuration.distanceUnit || "km";
-        var dist = unit === "mi" ? i18nc("distance in miles", "%1 mi", (healthApi.distance * 0.621371).toLocaleString(Qt.locale(), "f", 2))
-                                 : i18nc("distance in kilometers", "%1 km", healthApi.distance.toLocaleString(Qt.locale(), "f", 2));
+        var dist = isNaN(healthApi.distance) ? "—"
+            : unit === "mi" ? i18nc("distance in miles", "%1 mi", (healthApi.distance * 0.621371).toLocaleString(Qt.locale(), "f", 2))
+                            : i18nc("distance in kilometers", "%1 km", healthApi.distance.toLocaleString(Qt.locale(), "f", 2));
         return i18n("Steps: %1 | Cal: %2 | Dist: %3\nUpdated: %4",
-            healthApi.steps.toLocaleString(),
-            healthApi.calories.toLocaleString(),
+            isNaN(healthApi.steps) ? "—" : healthApi.steps.toLocaleString(),
+            isNaN(healthApi.calories) ? "—" : healthApi.calories.toLocaleString(),
             dist,
             healthApi.lastUpdated || "—");
     }
 
-    Plasmoid.icon: "fitdash"
+    Plasmoid.icon: Qt.resolvedUrl("../icons/fitdash.svg")
 
 
     function setLastRequest(status, state) {
@@ -132,6 +141,7 @@ PlasmoidItem {
 
         onDataUpdated: {
             console.log("FitDash: data updated");
+            Plasmoid.configuration.cachedData = JSON.stringify(healthApi.snapshot());
             Plasmoid.configuration.lastRequestStatus = healthApi.lastRequestStatus;
             Plasmoid.configuration.lastRequestState = healthApi.lastRequestState;
         }
@@ -227,6 +237,9 @@ PlasmoidItem {
             "printf '[Desktop Entry]\\nName=FitDash\\nName[fr]=FitDash\\nName[es]=FitDash\\nName[nl]=FitDash\\nName[de]=FitDash\\nComment=Step counter and fitness data widget for KDE Plasma (Google Health)\\nComment[fr]=Widget de compteur de pas et de données fitness pour KDE Plasma (Google Health)\\nComment[es]=Widget de contador de pasos y datos de fitness para KDE Plasma (Google Health)\\nComment[nl]=Widget voor stappenteller en fitnessgegevens voor KDE Plasma (Google Health)\\nComment[de]=Widget für Schrittzähler und Fitnessdaten für KDE Plasma (Google Health)\\nExec=plasmawindowed com.democe.fitdash\\nIcon=fitdash\\nType=Application\\nCategories=Qt;KDE;System;\\n' " +
             "> \"$HOME/.local/share/applications/com.democe.fitdash.desktop\")"
         );
+
+        // Show the last known values (offline, or while the first fetch runs).
+        healthApi.restore(Plasmoid.configuration.cachedData || "");
 
         if (Plasmoid.configuration.accessToken) {
             healthApi.fetchData();

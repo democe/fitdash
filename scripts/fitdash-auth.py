@@ -149,7 +149,8 @@ def main():
     # Kept in sync with the `scopes` property in GoogleHealthOAuth.qml.
     scopes = (
         "https://www.googleapis.com/auth/googlehealth.activity_and_fitness.readonly "
-        "https://www.googleapis.com/auth/googlehealth.health_metrics_and_measurements.readonly"
+        "https://www.googleapis.com/auth/googlehealth.health_metrics_and_measurements.readonly "
+        "https://www.googleapis.com/auth/googlehealth.sleep.readonly"
     )
     authorize_url = (
         "https://accounts.google.com/o/oauth2/v2/auth?"
