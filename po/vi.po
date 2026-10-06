@@ -353,3 +353,133 @@ msgstr ""
 #: scripts/fitdash-auth.py
 msgid "Authorization timed out — please try again"
 msgstr ""
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "Chỉ số sinh tồn"
+
+#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
+msgid "Sleep"
+msgstr "Giấc ngủ"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "HRV"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "Hơi thở"
+
+#: package/contents/ui/FullRepresentation.qml:73
+msgctxt "sleep duration in hours and minutes"
+msgid "%1h %2m"
+msgstr "%1 giờ %2 phút"
+
+#: package/contents/ui/FullRepresentation.qml:364
+msgctxt "heart rate variability in milliseconds"
+msgid "%1 ms"
+msgstr "%1 ms"
+
+#: package/contents/ui/FullRepresentation.qml:374
+msgctxt "respiratory rate in breaths per minute"
+msgid "%1 br/min"
+msgstr "%1 nhịp/phút"
+
+#: package/contents/ui/configGeneral.qml:272
+msgid "Blood oxygen (SpO2)"
+msgstr "Oxy trong máu (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:279
+msgid "Heart rate variability"
+msgstr "Biến thiên nhịp tim"
+
+#: package/contents/ui/configGeneral.qml:286
+msgid "Breathing rate"
+msgstr "Nhịp thở"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Kết nối Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "Đang tải dữ liệu Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "Chưa có dữ liệu"
+
+#: package/contents/ui/FullRepresentation.qml:354
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/GoogleHealthApi.qml:143
+msgid "Google Health server error (HTTP %1)"
+msgstr "Lỗi máy chủ Google Health (HTTP %1)"
+
+#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:200
+msgid "%1 fetch"
+msgstr "Tải %1"
+
+#. TRANSLATORS: %1 is a metric name such as Steps
+#: package/contents/ui/GoogleHealthApi.qml:211
+msgid "Failed to parse %1 data"
+msgstr "Không thể phân tích dữ liệu %1"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:216
+msgid "Google server error (HTTP %1)"
+msgstr "Lỗi máy chủ Google (HTTP %1)"
+
+#: package/contents/ui/configGeneral.qml:102
+msgid "From Google Cloud Console"
+msgstr "Từ Google Cloud Console"
+
+#: package/contents/ui/configGeneral.qml:109
+msgid "Client Secret:"
+msgstr "Mã bí mật ứng dụng khách:"
+
+#: package/contents/ui/configGeneral.qml:110
+msgid "From the same OAuth client"
+msgstr "Từ cùng ứng dụng khách OAuth"
+
+#: package/contents/ui/configGeneral.qml:117
+msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
+msgstr "Thông tin xác thực OAuth 2.0 từ một dự án Google Cloud đã bật Google Health API"
+
+#: package/contents/ui/configGeneral.qml:158
+msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
+msgstr "Google tự động cho phép mọi cổng localhost đối với ứng dụng khách OAuth loại ứng dụng máy tính — không cần đăng ký URL này"
+
+#: package/contents/ui/configGeneral.qml:174
+msgid "Recommended: 15–30 minutes to stay within API rate limits"
+msgstr "Khuyến nghị: 15–30 phút để không vượt quá giới hạn yêu cầu của API"
+
+#: package/contents/ui/configGeneral.qml:201
+msgid "Step goal:"
+msgstr "Mục tiêu bước:"
+
+#: package/contents/ui/configGeneral.qml:207
+msgid "None"
+msgstr "Không có"
+
+#: package/contents/ui/configGeneral.qml:216
+msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
+msgstr "Google Health API không cung cấp mục tiêu, vì vậy mục tiêu được đặt ở đây. 0 sẽ hiển thị “Chưa đặt mục tiêu số bước” thay thế"
+
+#: package/contents/ui/configGeneral.qml:292
+msgid "Google Health Account"
+msgstr "Tài khoản Google Health"
+
+#: package/contents/ui/configGeneral.qml:319
+msgid "Re-authorize with Google"
+msgstr "Ủy quyền lại với Google"
+
+#: package/contents/ui/configGeneral.qml:319
+msgid "Authorize with Google"
+msgstr "Ủy quyền với Google"

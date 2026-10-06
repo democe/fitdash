@@ -353,3 +353,133 @@ msgstr ""
 #: scripts/fitdash-auth.py
 msgid "Authorization timed out — please try again"
 msgstr ""
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "महत्वपूर्ण संकेत"
+
+#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
+msgid "Sleep"
+msgstr "नींद"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "HRV"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "सांस"
+
+#: package/contents/ui/FullRepresentation.qml:73
+msgctxt "sleep duration in hours and minutes"
+msgid "%1h %2m"
+msgstr "%1घं %2मि"
+
+#: package/contents/ui/FullRepresentation.qml:364
+msgctxt "heart rate variability in milliseconds"
+msgid "%1 ms"
+msgstr "%1 मिसे"
+
+#: package/contents/ui/FullRepresentation.qml:374
+msgctxt "respiratory rate in breaths per minute"
+msgid "%1 br/min"
+msgstr "%1 सांस/मिनट"
+
+#: package/contents/ui/configGeneral.qml:272
+msgid "Blood oxygen (SpO2)"
+msgstr "रक्त ऑक्सीजन (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:279
+msgid "Heart rate variability"
+msgstr "हृदय गति परिवर्तनशीलता"
+
+#: package/contents/ui/configGeneral.qml:286
+msgid "Breathing rate"
+msgstr "सांस लेने की दर"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Google Health कनेक्ट करें"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "Google Health डेटा लोड हो रहा है"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "अभी तक कोई डेटा नहीं"
+
+#: package/contents/ui/FullRepresentation.qml:354
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/GoogleHealthApi.qml:143
+msgid "Google Health server error (HTTP %1)"
+msgstr "Google Health सर्वर त्रुटि (HTTP %1)"
+
+#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:200
+msgid "%1 fetch"
+msgstr "%1 प्राप्त करना"
+
+#. TRANSLATORS: %1 is a metric name such as Steps
+#: package/contents/ui/GoogleHealthApi.qml:211
+msgid "Failed to parse %1 data"
+msgstr "%1 डेटा पार्स नहीं हो सका"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:216
+msgid "Google server error (HTTP %1)"
+msgstr "Google सर्वर त्रुटि (HTTP %1)"
+
+#: package/contents/ui/configGeneral.qml:102
+msgid "From Google Cloud Console"
+msgstr "Google Cloud Console से"
+
+#: package/contents/ui/configGeneral.qml:109
+msgid "Client Secret:"
+msgstr "क्लाइंट सीक्रेट:"
+
+#: package/contents/ui/configGeneral.qml:110
+msgid "From the same OAuth client"
+msgstr "उसी OAuth क्लाइंट से"
+
+#: package/contents/ui/configGeneral.qml:117
+msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
+msgstr "Google Health API सक्षम Google Cloud प्रोजेक्ट के OAuth 2.0 क्रेडेंशियल"
+
+#: package/contents/ui/configGeneral.qml:158
+msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
+msgstr "Google डेस्कटॉप ऐप OAuth क्लाइंट के लिए कोई भी localhost पोर्ट स्वचालित रूप से अनुमति देता है — इस URL को पंजीकृत करने की आवश्यकता नहीं है"
+
+#: package/contents/ui/configGeneral.qml:174
+msgid "Recommended: 15–30 minutes to stay within API rate limits"
+msgstr "अनुशंसित: 15–30 मिनट, ताकि API की अनुरोध सीमा पार न हो"
+
+#: package/contents/ui/configGeneral.qml:201
+msgid "Step goal:"
+msgstr "कदम लक्ष्य:"
+
+#: package/contents/ui/configGeneral.qml:207
+msgid "None"
+msgstr "कोई नहीं"
+
+#: package/contents/ui/configGeneral.qml:216
+msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
+msgstr "Google Health API कोई लक्ष्य नहीं बताता, इसलिए इसे यहाँ सेट किया जाता है। 0 पर इसके बजाय “कोई कदम लक्ष्य निर्धारित नहीं” दिखता है"
+
+#: package/contents/ui/configGeneral.qml:292
+msgid "Google Health Account"
+msgstr "Google Health खाता"
+
+#: package/contents/ui/configGeneral.qml:319
+msgid "Re-authorize with Google"
+msgstr "Google के साथ फिर से अधिकृत करें"
+
+#: package/contents/ui/configGeneral.qml:319
+msgid "Authorize with Google"
+msgstr "Google के साथ अधिकृत करें"

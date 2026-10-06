@@ -353,3 +353,133 @@ msgstr ""
 #: scripts/fitdash-auth.py
 msgid "Authorization timed out — please try again"
 msgstr ""
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "প্রাণবন্ত লক্ষণ"
+
+#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
+msgid "Sleep"
+msgstr "ঘুম"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "HRV"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "শ্বাসপ্রশ্বাস"
+
+#: package/contents/ui/FullRepresentation.qml:73
+msgctxt "sleep duration in hours and minutes"
+msgid "%1h %2m"
+msgstr "%1ঘ %2মি"
+
+#: package/contents/ui/FullRepresentation.qml:364
+msgctxt "heart rate variability in milliseconds"
+msgid "%1 ms"
+msgstr "%1 মিসে"
+
+#: package/contents/ui/FullRepresentation.qml:374
+msgctxt "respiratory rate in breaths per minute"
+msgid "%1 br/min"
+msgstr "%1 শ্বাস/মিনিট"
+
+#: package/contents/ui/configGeneral.qml:272
+msgid "Blood oxygen (SpO2)"
+msgstr "রক্তে অক্সিজেন (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:279
+msgid "Heart rate variability"
+msgstr "হৃদস্পন্দনের পরিবর্তনশীলতা"
+
+#: package/contents/ui/configGeneral.qml:286
+msgid "Breathing rate"
+msgstr "শ্বাসপ্রশ্বাসের হার"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Google Health সংযোগ করুন"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "Google Health ডেটা লোড হচ্ছে"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "এখনও কোনো ডেটা নেই"
+
+#: package/contents/ui/FullRepresentation.qml:354
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/GoogleHealthApi.qml:143
+msgid "Google Health server error (HTTP %1)"
+msgstr "Google Health সার্ভার ত্রুটি (HTTP %1)"
+
+#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:200
+msgid "%1 fetch"
+msgstr "%1 আনা"
+
+#. TRANSLATORS: %1 is a metric name such as Steps
+#: package/contents/ui/GoogleHealthApi.qml:211
+msgid "Failed to parse %1 data"
+msgstr "%1 ডেটা পার্স করা যায়নি"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:216
+msgid "Google server error (HTTP %1)"
+msgstr "Google সার্ভার ত্রুটি (HTTP %1)"
+
+#: package/contents/ui/configGeneral.qml:102
+msgid "From Google Cloud Console"
+msgstr "Google Cloud Console থেকে"
+
+#: package/contents/ui/configGeneral.qml:109
+msgid "Client Secret:"
+msgstr "ক্লায়েন্ট সিক্রেট:"
+
+#: package/contents/ui/configGeneral.qml:110
+msgid "From the same OAuth client"
+msgstr "একই OAuth ক্লায়েন্ট থেকে"
+
+#: package/contents/ui/configGeneral.qml:117
+msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
+msgstr "Google Health API সক্রিয় থাকা Google Cloud প্রকল্পের OAuth 2.0 শংসাপত্র"
+
+#: package/contents/ui/configGeneral.qml:158
+msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
+msgstr "Google ডেস্কটপ অ্যাপ OAuth ক্লায়েন্টের জন্য যেকোনো localhost পোর্ট স্বয়ংক্রিয়ভাবে অনুমোদন করে — এই URL নিবন্ধন করার প্রয়োজন নেই"
+
+#: package/contents/ui/configGeneral.qml:174
+msgid "Recommended: 15–30 minutes to stay within API rate limits"
+msgstr "প্রস্তাবিত: 15–30 মিনিট, যাতে API-এর অনুরোধ সীমা অতিক্রম না হয়"
+
+#: package/contents/ui/configGeneral.qml:201
+msgid "Step goal:"
+msgstr "পদক্ষেপ লক্ষ্য:"
+
+#: package/contents/ui/configGeneral.qml:207
+msgid "None"
+msgstr "কোনোটি নয়"
+
+#: package/contents/ui/configGeneral.qml:216
+msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
+msgstr "Google Health API কোনো লক্ষ্য জানায় না, তাই এটি এখানে সেট করা হয়। 0 দিলে এর পরিবর্তে “পদক্ষেপের কোনো লক্ষ্য সেট করা হয়নি” দেখায়"
+
+#: package/contents/ui/configGeneral.qml:292
+msgid "Google Health Account"
+msgstr "Google Health অ্যাকাউন্ট"
+
+#: package/contents/ui/configGeneral.qml:319
+msgid "Re-authorize with Google"
+msgstr "Google এর সাথে পুনরায় অনুমোদন করুন"
+
+#: package/contents/ui/configGeneral.qml:319
+msgid "Authorize with Google"
+msgstr "Google দিয়ে অনুমোদন করুন"

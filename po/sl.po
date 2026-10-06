@@ -353,3 +353,133 @@ msgstr ""
 #: scripts/fitdash-auth.py
 msgid "Authorization timed out — please try again"
 msgstr ""
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "Vitalni znaki"
+
+#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
+msgid "Sleep"
+msgstr "Spanje"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "HRV"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "Dihanje"
+
+#: package/contents/ui/FullRepresentation.qml:73
+msgctxt "sleep duration in hours and minutes"
+msgid "%1h %2m"
+msgstr "%1 h %2 min"
+
+#: package/contents/ui/FullRepresentation.qml:364
+msgctxt "heart rate variability in milliseconds"
+msgid "%1 ms"
+msgstr "%1 ms"
+
+#: package/contents/ui/FullRepresentation.qml:374
+msgctxt "respiratory rate in breaths per minute"
+msgid "%1 br/min"
+msgstr "%1 vdihov/min"
+
+#: package/contents/ui/configGeneral.qml:272
+msgid "Blood oxygen (SpO2)"
+msgstr "Kisik v krvi (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:279
+msgid "Heart rate variability"
+msgstr "Variabilnost srčnega utripa"
+
+#: package/contents/ui/configGeneral.qml:286
+msgid "Breathing rate"
+msgstr "Frekvenca dihanja"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Poveži Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "Nalaganje podatkov Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "Še ni podatkov"
+
+#: package/contents/ui/FullRepresentation.qml:354
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/GoogleHealthApi.qml:143
+msgid "Google Health server error (HTTP %1)"
+msgstr "Napaka strežnika Google Health (HTTP %1)"
+
+#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:200
+msgid "%1 fetch"
+msgstr "Pridobivanje: %1"
+
+#. TRANSLATORS: %1 is a metric name such as Steps
+#: package/contents/ui/GoogleHealthApi.qml:211
+msgid "Failed to parse %1 data"
+msgstr "Podatkov ni bilo mogoče razčleniti: %1"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:216
+msgid "Google server error (HTTP %1)"
+msgstr "Napaka strežnika Google (HTTP %1)"
+
+#: package/contents/ui/configGeneral.qml:102
+msgid "From Google Cloud Console"
+msgstr "Iz Google Cloud Console"
+
+#: package/contents/ui/configGeneral.qml:109
+msgid "Client Secret:"
+msgstr "Skrivnost odjemalca:"
+
+#: package/contents/ui/configGeneral.qml:110
+msgid "From the same OAuth client"
+msgstr "Iz istega odjemalca OAuth"
+
+#: package/contents/ui/configGeneral.qml:117
+msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
+msgstr "Poverilnice OAuth 2.0 iz projekta Google Cloud z omogočenim Google Health API"
+
+#: package/contents/ui/configGeneral.qml:158
+msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
+msgstr "Google samodejno dovoli katera koli vrata localhost za odjemalce OAuth namiznih aplikacij — tega URL-ja ni treba registrirati"
+
+#: package/contents/ui/configGeneral.qml:174
+msgid "Recommended: 15–30 minutes to stay within API rate limits"
+msgstr "Priporočeno: 15–30 minut, da ne presežete APIovih omejitev zahtev"
+
+#: package/contents/ui/configGeneral.qml:201
+msgid "Step goal:"
+msgstr "Cilj korakov:"
+
+#: package/contents/ui/configGeneral.qml:207
+msgid "None"
+msgstr "Brez"
+
+#: package/contents/ui/configGeneral.qml:216
+msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
+msgstr "Google Health API ne poroča cilja, zato se nastavi tukaj. 0 namesto tega prikaže »Cilj korakov ni nastavljen«"
+
+#: package/contents/ui/configGeneral.qml:292
+msgid "Google Health Account"
+msgstr "Račun Google Health"
+
+#: package/contents/ui/configGeneral.qml:319
+msgid "Re-authorize with Google"
+msgstr "Ponovno avtoriziraj s Googleom"
+
+#: package/contents/ui/configGeneral.qml:319
+msgid "Authorize with Google"
+msgstr "Avtoriziraj s Googleom"

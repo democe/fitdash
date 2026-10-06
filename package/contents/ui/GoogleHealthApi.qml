@@ -181,7 +181,7 @@ QtObject {
         api.dataUpdated();
     }
 
-    function dailyRollUp(dataType, onSuccess) {
+    function dailyRollUp(dataType, label, onSuccess) {
         var xhr = new XMLHttpRequest();
         pendingXhrs.push(xhr);
         xhr.open("POST", apiBase + "/dataTypes/" + dataType + "/dataPoints:dailyRollUp");
@@ -197,7 +197,7 @@ QtObject {
         };
         xhr.onreadystatechange = function() {
             if (xhr.readyState !== XMLHttpRequest.DONE) return;
-            if (handleHttpError(xhr, i18n("%1 fetch", dataType))) {
+            if (handleHttpError(xhr, i18n("%1 fetch", label))) {
                 requestSettled(false);
                 return;
             }
@@ -208,7 +208,7 @@ QtObject {
                 onSuccess(points && points.length > 0 ? points[0] : {});
                 requestSettled(true);
             } catch(e) {
-                api.errorMessage = i18n("Failed to parse %1 data", dataType);
+                api.errorMessage = i18n("Failed to parse %1 data", label);
                 api.lastRequestStatus = i18n("Parse error at %1", new Date().toLocaleTimeString());
                 api.lastRequestState = "error";
                 api.error(api.errorMessage);
@@ -224,26 +224,26 @@ QtObject {
     }
 
     function fetchStepsRollup() {
-        dailyRollUp("steps", function(point) {
+        dailyRollUp("steps", i18n("Steps"), function(point) {
             api.steps = point.steps ? parseInt(point.steps.countSum, 10) || 0 : 0;
         });
     }
 
     function fetchTotalCaloriesRollup() {
-        dailyRollUp("total-calories", function(point) {
+        dailyRollUp("total-calories", i18n("Calories"), function(point) {
             api.calories = point.totalCalories ? Math.round(point.totalCalories.kcalSum) || 0 : 0;
         });
     }
 
     function fetchDistanceRollup() {
-        dailyRollUp("distance", function(point) {
+        dailyRollUp("distance", i18n("Distance"), function(point) {
             // API reports distance in millimeters; the UI works in kilometers.
             api.distance = point.distance ? (parseInt(point.distance.millimetersSum, 10) || 0) / 1000000 : 0;
         });
     }
 
     function fetchActiveMinutesRollup() {
-        dailyRollUp("active-minutes", function(point) {
+        dailyRollUp("active-minutes", i18n("Active minutes"), function(point) {
             var byLevel = point.activeMinutes && point.activeMinutes.activeMinutesRollupByActivityLevel;
             var total = 0;
             if (!byLevel) byLevel = [];

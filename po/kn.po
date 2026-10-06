@@ -353,3 +353,133 @@ msgstr ""
 #: scripts/fitdash-auth.py
 msgid "Authorization timed out — please try again"
 msgstr ""
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "ಪ್ರಮುಖ ಚಿಹ್ನೆಗಳು"
+
+#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
+msgid "Sleep"
+msgstr "ನಿದ್ರೆ"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "HRV"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "ಉಸಿರಾಟ"
+
+#: package/contents/ui/FullRepresentation.qml:73
+msgctxt "sleep duration in hours and minutes"
+msgid "%1h %2m"
+msgstr "%1ಗಂ %2ನಿ"
+
+#: package/contents/ui/FullRepresentation.qml:364
+msgctxt "heart rate variability in milliseconds"
+msgid "%1 ms"
+msgstr "%1 ಮಿಸೆ"
+
+#: package/contents/ui/FullRepresentation.qml:374
+msgctxt "respiratory rate in breaths per minute"
+msgid "%1 br/min"
+msgstr "%1 ಉಸಿರು/ನಿಮಿಷ"
+
+#: package/contents/ui/configGeneral.qml:272
+msgid "Blood oxygen (SpO2)"
+msgstr "ರಕ್ತದ ಆಮ್ಲಜನಕ (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:279
+msgid "Heart rate variability"
+msgstr "ಹೃದಯ ಬಡಿತದ ವ್ಯತ್ಯಾಸ"
+
+#: package/contents/ui/configGeneral.qml:286
+msgid "Breathing rate"
+msgstr "ಉಸಿರಾಟದ ದರ"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Google Health ಅನ್ನು ಸಂಪರ್ಕಿಸಿ"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "Google Health ಡೇಟಾವನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "ಇನ್ನೂ ಯಾವುದೇ ಡೇಟಾ ಇಲ್ಲ"
+
+#: package/contents/ui/FullRepresentation.qml:354
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/GoogleHealthApi.qml:143
+msgid "Google Health server error (HTTP %1)"
+msgstr "Google Health ಸರ್ವರ್ ದೋಷ (HTTP %1)"
+
+#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:200
+msgid "%1 fetch"
+msgstr "%1 ಪಡೆಯುವಿಕೆ"
+
+#. TRANSLATORS: %1 is a metric name such as Steps
+#: package/contents/ui/GoogleHealthApi.qml:211
+msgid "Failed to parse %1 data"
+msgstr "%1 ಡೇಟಾವನ್ನು ಪಾರ್ಸ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:216
+msgid "Google server error (HTTP %1)"
+msgstr "Google ಸರ್ವರ್ ದೋಷ (HTTP %1)"
+
+#: package/contents/ui/configGeneral.qml:102
+msgid "From Google Cloud Console"
+msgstr "Google Cloud Console ನಿಂದ"
+
+#: package/contents/ui/configGeneral.qml:109
+msgid "Client Secret:"
+msgstr "ಕ್ಲೈಂಟ್ ಸೀಕ್ರೆಟ್:"
+
+#: package/contents/ui/configGeneral.qml:110
+msgid "From the same OAuth client"
+msgstr "ಅದೇ OAuth ಕ್ಲೈಂಟ್‌ನಿಂದ"
+
+#: package/contents/ui/configGeneral.qml:117
+msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
+msgstr "Google Health API ಸಕ್ರಿಯಗೊಳಿಸಿದ Google Cloud ಪ್ರಾಜೆಕ್ಟ್‌ನ OAuth 2.0 ರುಜುವಾತುಗಳು"
+
+#: package/contents/ui/configGeneral.qml:158
+msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
+msgstr "Google ಡೆಸ್ಕ್‌ಟಾಪ್ ಆ್ಯಪ್ OAuth ಕ್ಲೈಂಟ್‌ಗಳಿಗೆ ಯಾವುದೇ localhost ಪೋರ್ಟ್ ಅನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅನುಮತಿಸುತ್ತದೆ — ಈ URL ಅನ್ನು ನೋಂದಾಯಿಸುವ ಅಗತ್ಯವಿಲ್ಲ"
+
+#: package/contents/ui/configGeneral.qml:174
+msgid "Recommended: 15–30 minutes to stay within API rate limits"
+msgstr "ಶಿಫಾರಸು: 15–30 ನಿಮಿಷಗಳು, API ವಿನಂತಿ ಮಿತಿಗಳನ್ನು ಮೀರದಂತೆ"
+
+#: package/contents/ui/configGeneral.qml:201
+msgid "Step goal:"
+msgstr "ಹೆಜ್ಜೆ ಗುರಿ:"
+
+#: package/contents/ui/configGeneral.qml:207
+msgid "None"
+msgstr "ಯಾವುದೂ ಇಲ್ಲ"
+
+#: package/contents/ui/configGeneral.qml:216
+msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
+msgstr "Google Health API ಗುರಿಯನ್ನು ವರದಿ ಮಾಡುವುದಿಲ್ಲ, ಆದ್ದರಿಂದ ಅದನ್ನು ಇಲ್ಲಿ ಹೊಂದಿಸಲಾಗುತ್ತದೆ. 0 ಬದಲಿಗೆ “ಹೆಜ್ಜೆ ಗುರಿಯನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ” ತೋರಿಸುತ್ತದೆ"
+
+#: package/contents/ui/configGeneral.qml:292
+msgid "Google Health Account"
+msgstr "Google Health ಖಾತೆ"
+
+#: package/contents/ui/configGeneral.qml:319
+msgid "Re-authorize with Google"
+msgstr "Google ನೊಂದಿಗೆ ಮರು-ಅಧಿಕಾರ ನೀಡಿ"
+
+#: package/contents/ui/configGeneral.qml:319
+msgid "Authorize with Google"
+msgstr "Google ನೊಂದಿಗೆ ದೃಢೀಕರಿಸಿ"
