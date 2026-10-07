@@ -10,7 +10,7 @@ Watch devices.
 Step counter and fitness data widget for KDE Plasma, backed by the Google Health API.
 
 
-![FitDash Screenshot](screenshot.png)
+![FitDash Screenshot](https://assets.democe.com/www-assets/Screenshot_20261007_144530.png)
 
 
 ## Requirements
