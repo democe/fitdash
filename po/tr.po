@@ -1,8 +1,9 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: FitDash 1.0.8\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
-"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
 "Last-Translator: FitDash contributors\n"
 "Language-Team: Turkish\n"
@@ -11,475 +12,634 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
-msgid "General"
-msgstr "Genel"
-#: package/contents/ui/configGeneral.qml:52
-msgid "Not authorized"
-msgstr "Yetkilendirilmedi"
-#: package/contents/ui/configGeneral.qml:55
-msgid "Authorization problem — re-authorize"
-msgstr "Yetkilendirme sorunu — yeniden yetkilendirin"
-#: package/contents/ui/configGeneral.qml:58
-msgid "Token expired — refresh needed"
-msgstr "Belirtecin süresi doldu — yenileme gerekli"
-#: package/contents/ui/configGeneral.qml:60
-msgid "unknown"
-msgstr "bilinmiyor"
-#: package/contents/ui/configGeneral.qml:60
-msgid "Authorized (User: %1)"
-msgstr "Yetkilendirildi (Kullanıcı: %1)"
-#: package/contents/ui/configGeneral.qml:89
-msgid "Client ID:"
-msgstr "İstemci Kimliği:"
-#: package/contents/ui/configGeneral.qml:90
-msgid "From dev.fitbit.com/apps"
-msgstr "dev.fitbit.com/apps adresinden"
-#: package/contents/ui/configGeneral.qml:97
-msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "Fitbit uygulama kaydınızdaki OAuth 2.0 İstemci Kimliği"
-#: package/contents/ui/configGeneral.qml:104
-msgid "Callback URL:"
-msgstr "Geri çağırma URL'si:"
-#: package/contents/ui/configGeneral.qml:117
-#: package/contents/ui/configGeneral.qml:306
-msgid "Copy to clipboard"
-msgstr "Panoya kopyala"
-#: package/contents/ui/configGeneral.qml:130
-msgid "Callback port:"
-msgstr "Geri çağırma bağlantı noktası:"
-#: package/contents/ui/configGeneral.qml:138
-msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "Geri çağırma URL'sini dev.fitbit.com adresindeki Fitbit uygulama ayarlarınıza yapıştırın"
-#: package/contents/ui/configGeneral.qml:146
-msgid "Refresh interval (minutes):"
-msgstr "Yenileme aralığı (dakika):"
-#: package/contents/ui/configGeneral.qml:154
-msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Önerilen: Fitbit istek sınırlarını aşmamak için 15–30 dakika"
-#: package/contents/ui/configGeneral.qml:162
-msgid "Display"
-msgstr "Görünüm"
-#: package/contents/ui/configGeneral.qml:167
-msgid "Distance unit:"
-msgstr "Mesafe birimi:"
-#: package/contents/ui/configGeneral.qml:169
-msgid "Kilometers (km)"
-msgstr "Kilometre (km)"
-#: package/contents/ui/configGeneral.qml:170
-msgid "Miles (mi)"
-msgstr "Mil (mi)"
-#: package/contents/ui/configGeneral.qml:181
-msgid "Visible Metrics"
-msgstr "Görünür ölçümler"
-#: package/contents/ui/configGeneral.qml:187
-#: package/contents/ui/FullRepresentation.qml:213
-msgid "Steps"
-msgstr "Adımlar"
-#: package/contents/ui/configGeneral.qml:194
-#: package/contents/ui/FullRepresentation.qml:263
-msgid "Calories"
-msgstr "Kalori"
-#: package/contents/ui/configGeneral.qml:201
-#: package/contents/ui/FullRepresentation.qml:271
-msgid "Distance"
-msgstr "Mesafe"
-#: package/contents/ui/configGeneral.qml:208
-msgid "Active minutes"
-msgstr "Aktif dakikalar"
-#: package/contents/ui/configGeneral.qml:215
-msgid "Resting heart rate"
-msgstr "Dinlenik kalp atış hızı"
-#: package/contents/ui/configGeneral.qml:221
-msgid "Fitbit Account"
-msgstr "Fitbit Hesabı"
-#: package/contents/ui/configGeneral.qml:225
-msgid "Status:"
-msgstr "Durum:"
-#: package/contents/ui/configGeneral.qml:233
-msgid "Last request:"
-msgstr "Son istek:"
-#: package/contents/ui/configGeneral.qml:235
-msgid "No requests yet"
-msgstr "Henüz istek yok"
-#: package/contents/ui/configGeneral.qml:245
-msgid "Authorization:"
-msgstr "Yetkilendirme:"
-#: package/contents/ui/configGeneral.qml:247
-msgid "Cancel"
-msgstr "İptal"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Re-authorize with Fitbit"
-msgstr "Fitbit ile yeniden yetkilendir"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Authorize with Fitbit"
-msgstr "Fitbit ile yetkilendir"
-#: package/contents/ui/configGeneral.qml:264
-msgid "Authorize manually (copy & paste)"
-msgstr "Elle yetkilendir (kopyala ve yapıştır)"
-#: package/contents/ui/configGeneral.qml:269
-msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Tarayıcı localhost'a erişemiyorsa bunu kullanın (korumalı alan tarayıcısı, uzak oturum veya Python yok)"
-#: package/contents/ui/configGeneral.qml:285
-msgid "Step 1:"
-msgstr "Adım 1:"
-#: package/contents/ui/configGeneral.qml:286
-msgid "Open this URL in a browser and approve access:"
-msgstr "Bu URL'yi bir tarayıcıda açın ve erişimi onaylayın:"
-#: package/contents/ui/configGeneral.qml:293
-msgid "Authorization URL:"
-msgstr "Yetkilendirme URL'si:"
-#: package/contents/ui/configGeneral.qml:320
-msgid "Open in browser"
-msgstr "Tarayıcıda aç"
-#: package/contents/ui/configGeneral.qml:329
-msgid "Step 2:"
-msgstr "Adım 2:"
-#: package/contents/ui/configGeneral.qml:330
-msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "Onayladıktan sonra adres çubuğu URL'sini kopyalayıp aşağıya yapıştırın:"
-#: package/contents/ui/configGeneral.qml:337
-msgid "Redirect URL or code:"
-msgstr "Yönlendirme URL'si veya kodu:"
-#: package/contents/ui/configGeneral.qml:341
-msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:…/callback?code=…"
-#: package/contents/ui/configGeneral.qml:348
-msgid "Complete"
-msgstr "Tamamla"
-#: package/contents/ui/configGeneral.qml:358
-msgid "Cancel manual authorization"
-msgstr "Elle yetkilendirmeyi iptal et"
-#: package/contents/ui/configGeneral.qml:397
-msgid "Authorization successful!"
-msgstr "Yetkilendirme başarılı!"
-#: package/contents/ui/FitbitApi.qml:33
-msgid "No access token"
-msgstr "Erişim belirteci yok"
-#: package/contents/ui/FitbitApi.qml:52
-msgid "Network error — check your connection"
-msgstr "Ağ hatası — bağlantınızı kontrol edin"
-#: package/contents/ui/FitbitApi.qml:53
-msgid "Network error at %1"
-msgstr "Ağ hatası (saat %1)"
-#: package/contents/ui/FitbitApi.qml:59
-msgid "Token expired at %1 — refreshing"
-msgstr "Belirtecin süresi doldu (saat %1) — yenileniyor"
-#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
-msgid "Rate limited — try again later"
-msgstr "İstek sınırına ulaşıldı — daha sonra tekrar deneyin"
-#: package/contents/ui/FitbitApi.qml:66
-msgid "Rate limited at %1 — showing cached data"
-msgstr "İstek sınırına ulaşıldı (saat %1) — önbellekteki veriler gösteriliyor"
-#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
-msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit sunucu hatası (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:73
-msgid "Server error (HTTP %1) at %2"
-msgstr "Sunucu hatası (HTTP %1, saat %2)"
-#: package/contents/ui/FitbitApi.qml:79
-msgid "%1 failed (HTTP %2)"
-msgstr "%1 başarısız oldu (HTTP %2)"
-#: package/contents/ui/FitbitApi.qml:80
-msgid "Error (HTTP %1) at %2"
-msgstr "Hata (HTTP %1, saat %2)"
-#: package/contents/ui/FitbitApi.qml:107
-msgid "Request timed out — check your connection"
-msgstr "İstek zaman aşımına uğradı — bağlantınızı kontrol edin"
-#: package/contents/ui/FitbitApi.qml:108
-msgid "Timed out at %1"
-msgstr "Zaman aşımı (saat %1)"
-#: package/contents/ui/FitbitApi.qml:116
-msgid "Activity fetch"
-msgstr "Etkinlik verisi alma"
-#: package/contents/ui/FitbitApi.qml:141
-msgid "OK — updated at %1"
-msgstr "Tamam — saat %1 itibarıyla güncellendi"
-#: package/contents/ui/FitbitApi.qml:146
-msgid "Failed to parse activity data"
-msgstr "Etkinlik verileri ayrıştırılamadı"
-#: package/contents/ui/FitbitApi.qml:147
-msgid "Parse error at %1"
-msgstr "Ayrıştırma hatası (saat %1)"
-#: package/contents/ui/FitbitOAuth.qml:90
-msgid "Unknown error"
-msgstr "Bilinmeyen hata"
-#: package/contents/ui/FitbitOAuth.qml:97
-msgid "Failed to parse auth response"
-msgstr "Yetkilendirme yanıtı ayrıştırılamadı"
-#: package/contents/ui/FitbitOAuth.qml:136
-#: package/contents/ui/FitbitOAuth.qml:327
-msgid "Invalid client ID format"
-msgstr "Geçersiz istemci kimliği biçimi"
-#: package/contents/ui/FitbitOAuth.qml:150
-msgid "Authorization canceled"
-msgstr "Yetkilendirme iptal edildi"
-#: package/contents/ui/FitbitOAuth.qml:191
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-#: package/contents/ui/FitbitOAuth.qml:213
-msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2)"
-#: package/contents/ui/FitbitOAuth.qml:280
-msgid "Network error during token refresh"
-msgstr "Belirteç yenileme sırasında ağ hatası"
-#: package/contents/ui/FitbitOAuth.qml:281
-msgid "Refresh token invalid — please re-authorize"
-msgstr "Yenileme belirteci geçersiz — lütfen yeniden yetkilendirin"
-#: package/contents/ui/FitbitOAuth.qml:282
-msgid "Token refresh failed"
-msgstr "Belirteç yenileme başarısız oldu"
-#: package/contents/ui/FitbitOAuth.qml:283
-msgid "Refresh failed — missing tokens"
-msgstr "Yenileme başarısız oldu — belirteçler eksik"
-#: package/contents/ui/FitbitOAuth.qml:284
-msgid "Token refresh failed — invalid response"
-msgstr "Belirteç yenileme başarısız oldu — geçersiz yanıt"
-#: package/contents/ui/FitbitOAuth.qml:341
-msgid "Paste the redirect URL or authorization code first"
-msgstr "Önce yönlendirme URL'sini veya yetkilendirme kodunu yapıştırın"
-#: package/contents/ui/FitbitOAuth.qml:345
-msgid "Start the manual authorization first"
-msgstr "Önce elle yetkilendirmeyi başlatın"
-#: package/contents/ui/FitbitOAuth.qml:365
-msgid "Authorization was denied"
-msgstr "Yetki reddedildi"
-#: package/contents/ui/FitbitOAuth.qml:372
-msgid "Authorization failed (state mismatch) — please try again"
-msgstr "Yetkilendirme başarısız oldu (durum uyuşmazlığı) — lütfen tekrar deneyin"
-#: package/contents/ui/FitbitOAuth.qml:376
-msgid "No authorization code found in the pasted text"
-msgstr "Yapıştırılan metinde yetkilendirme kodu bulunamadı"
-#: package/contents/ui/FitbitOAuth.qml:386
-msgid "Network error during token exchange"
-msgstr "Belirteç değişimi sırasında ağ hatası"
-#: package/contents/ui/FitbitOAuth.qml:387
-msgid "Authorization code invalid or expired — please try again"
-msgstr "Yetkilendirme kodu geçersiz veya süresi dolmuş — lütfen tekrar deneyin"
-#: package/contents/ui/FitbitOAuth.qml:388
-msgid "Token exchange failed"
-msgstr "Belirteç değişimi başarısız oldu"
-#: package/contents/ui/FitbitOAuth.qml:389
-msgid "Token exchange failed — missing tokens"
-msgstr "Belirteç değişimi başarısız oldu — belirteçler eksik"
-#: package/contents/ui/FitbitOAuth.qml:390
-msgid "Token exchange failed — invalid response"
-msgstr "Belirteç değişimi başarısız oldu — geçersiz yanıt"
-#: package/contents/ui/FullRepresentation.qml:40
+#: package/contents/ui/FullRepresentation.qml:66
+#: package/contents/ui/main.qml:90
 msgctxt "distance in miles"
 msgid "%1 mi"
 msgstr "%1 mi"
-#: package/contents/ui/FullRepresentation.qml:42
+
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:91
 msgctxt "distance in kilometers"
 msgid "%1 km"
 msgstr "%1 km"
-#: package/contents/ui/FullRepresentation.qml:68
-#: package/contents/ui/main.qml:77
-msgid "FitDash"
-msgstr "FitDash"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Stale"
-msgstr "Güncel değil"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Today"
-msgstr "Bugün"
-#: package/contents/ui/FullRepresentation.qml:115
-msgid "Connect Fitbit"
-msgstr "Fitbit'e bağlan"
-#: package/contents/ui/FullRepresentation.qml:121
-msgid "Authorize your account in settings to show today's activity."
-msgstr "Bugünün etkinliğini göstermek için ayarlardan hesabınızı yetkilendirin."
-#: package/contents/ui/FullRepresentation.qml:130
-msgid "Open Settings"
-msgstr "Ayarları aç"
-#: package/contents/ui/FullRepresentation.qml:160
-msgid "Loading Fitbit data"
-msgstr "Fitbit verileri yükleniyor"
-#: package/contents/ui/FullRepresentation.qml:220
-#, javascript-format
-msgctxt "step goal progress"
-msgid "%1%"
-msgstr "%1%"
-#: package/contents/ui/FullRepresentation.qml:245
-msgid "%1 remaining of %2"
-msgstr "%2 hedefinden %1 kaldı"
-#: package/contents/ui/FullRepresentation.qml:246
-msgid "No step goal set"
-msgstr "Adım hedefi belirlenmedi"
-#: package/contents/ui/FullRepresentation.qml:279
-msgid "Active"
-msgstr "Aktif süre"
-#: package/contents/ui/FullRepresentation.qml:280
-msgctxt "active minutes"
-msgid "%1 min"
-msgstr "%1 dk"
-#: package/contents/ui/FullRepresentation.qml:287
-msgid "Resting HR"
-msgstr "Dinlenik nabız"
-#: package/contents/ui/FullRepresentation.qml:289
-msgctxt "heart rate in beats per minute"
-msgid "%1 bpm"
-msgstr "%1 bpm"
-#: package/contents/ui/FullRepresentation.qml:310
-msgid "Updated %1"
-msgstr "Güncellendi: %1"
-#: package/contents/ui/main.qml:79
-msgid "Not connected"
-msgstr "Bağlı değil"
-#: package/contents/ui/main.qml:83
-msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Adım: %1 | Kal: %2 | Mesafe: %3\nGüncellendi: %4"
-#: package/contents/ui/main.qml:105
-msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Yetkilendirmenin süresi doldu (saat %1) — lütfen yeniden yetkilendirin"
-#: package/contents/ui/main.qml:118
-msgid "Token refresh failed at %1 — %2"
-msgstr "Belirteç yenileme başarısız oldu (saat %1) — %2"
-#: package/contents/ui/main.qml:142
-msgid "No refresh token available — please re-authorize"
-msgstr "Yenileme belirteci yok — lütfen yeniden yetkilendirin"
-#: package/contents/ui/main.qml:169
-msgid "Token refreshed at %1"
-msgstr "Belirteç yenilendi (saat %1)"
-
-#: scripts/fitdash-auth.py
-msgid "You can close this tab."
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Could not start authorization server on port %1"
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Authorization timed out — please try again"
-msgstr ""
-
-#: package/contents/ui/FullRepresentation.qml:318
-msgid "Vitals"
-msgstr "Yaşamsal bulgular"
-
-#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
-msgid "Sleep"
-msgstr "Uyku"
-
-#: package/contents/ui/FullRepresentation.qml:352
-msgid "SpO2"
-msgstr "SpO2"
-
-#: package/contents/ui/FullRepresentation.qml:362
-msgid "HRV"
-msgstr "KAH"
-
-#: package/contents/ui/FullRepresentation.qml:372
-msgid "Breathing"
-msgstr "Solunum"
 
 #: package/contents/ui/FullRepresentation.qml:73
 msgctxt "sleep duration in hours and minutes"
 msgid "%1h %2m"
 msgstr "%1 sa %2 dk"
 
+#: package/contents/ui/FullRepresentation.qml:98
+#: package/contents/ui/main.qml:85
+msgid "FitDash"
+msgstr "FitDash"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Stale"
+msgstr "Güncel değil"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Today"
+msgstr "Bugün"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Google Health'e bağlan"
+
+#: package/contents/ui/FullRepresentation.qml:151
+msgid "Authorize your account in settings to show today's activity."
+msgstr ""
+"Bugünün etkinliğini göstermek için ayarlardan hesabınızı yetkilendirin."
+
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Open Settings"
+msgstr "Ayarları aç"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "Google Health verileri yükleniyor"
+
+#: package/contents/ui/FullRepresentation.qml:243
+#: package/contents/ui/GoogleHealthApi.qml:227
+#: package/contents/ui/configGeneral.qml:240
+msgid "Steps"
+msgstr "Adımlar"
+
+#: package/contents/ui/FullRepresentation.qml:250
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "Henüz veri yok"
+
+#: package/contents/ui/FullRepresentation.qml:275
+msgid "%1 remaining of %2"
+msgstr "%2 hedefinden %1 kaldı"
+
+#: package/contents/ui/FullRepresentation.qml:276
+msgid "No step goal set"
+msgstr "Adım hedefi belirlenmedi"
+
+#: package/contents/ui/FullRepresentation.qml:293
+#: package/contents/ui/GoogleHealthApi.qml:233
+#: package/contents/ui/configGeneral.qml:247
+msgid "Calories"
+msgstr "Kalori"
+
+#: package/contents/ui/FullRepresentation.qml:301
+#: package/contents/ui/GoogleHealthApi.qml:239
+#: package/contents/ui/configGeneral.qml:254
+msgid "Distance"
+msgstr "Mesafe"
+
+#: package/contents/ui/FullRepresentation.qml:309
+msgid "Active"
+msgstr "Aktif süre"
+
+#: package/contents/ui/FullRepresentation.qml:310
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 dk"
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "Yaşamsal bulgular"
+
+#: package/contents/ui/FullRepresentation.qml:334
+#: package/contents/ui/configGeneral.qml:275
+msgid "Sleep"
+msgstr "Uyku"
+
+#: package/contents/ui/FullRepresentation.qml:342
+msgid "Resting HR"
+msgstr "Dinlenik nabız"
+
+#: package/contents/ui/FullRepresentation.qml:344
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:354
+#, javascript-format
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "KAH"
+
 #: package/contents/ui/FullRepresentation.qml:364
 msgctxt "heart rate variability in milliseconds"
 msgid "%1 ms"
 msgstr "%1 ms"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "Solunum"
 
 #: package/contents/ui/FullRepresentation.qml:374
 msgctxt "respiratory rate in breaths per minute"
 msgid "%1 br/min"
 msgstr "%1 nefes/dk"
 
-#: package/contents/ui/configGeneral.qml:272
-msgid "Blood oxygen (SpO2)"
-msgstr "Kan oksijeni (SpO2)"
+#: package/contents/ui/FullRepresentation.qml:395
+msgid "Updated %1"
+msgstr "Güncellendi: %1"
 
-#: package/contents/ui/configGeneral.qml:279
-msgid "Heart rate variability"
-msgstr "Kalp atış hızı değişkenliği"
+#: package/contents/ui/GoogleHealthApi.qml:45
+msgid "No access token"
+msgstr "Erişim belirteci yok"
 
-#: package/contents/ui/configGeneral.qml:286
-msgid "Breathing rate"
-msgstr "Solunum hızı"
+#: package/contents/ui/GoogleHealthApi.qml:118
+msgid "Network error — check your connection"
+msgstr "Ağ hatası — bağlantınızı kontrol edin"
 
-#: package/contents/ui/FullRepresentation.qml:145
-msgid "Connect Google Health"
-msgstr "Google Health'e bağlan"
+#: package/contents/ui/GoogleHealthApi.qml:119
+msgid "Network error at %1"
+msgstr "Ağ hatası (saat %1)"
 
-#: package/contents/ui/FullRepresentation.qml:190
-msgid "Loading Google Health data"
-msgstr "Google Health verileri yükleniyor"
+#: package/contents/ui/GoogleHealthApi.qml:125
+msgid "Token expired at %1 — refreshing"
+msgstr "Belirtecin süresi doldu (saat %1) — yenileniyor"
 
-#: package/contents/ui/FullRepresentation.qml:273
-msgid "No data yet"
-msgstr "Henüz veri yok"
+#: package/contents/ui/GoogleHealthApi.qml:136
+#: package/contents/ui/GoogleHealthOAuth.qml:212
+msgid "Rate limited — try again later"
+msgstr "İstek sınırına ulaşıldı — daha sonra tekrar deneyin"
 
-#: package/contents/ui/FullRepresentation.qml:354
-msgctxt "blood oxygen saturation percentage"
-msgid "%1%"
-msgstr "%1%"
+#: package/contents/ui/GoogleHealthApi.qml:137
+msgid "Rate limited at %1 — showing cached data"
+msgstr "İstek sınırına ulaşıldı (saat %1) — önbellekteki veriler gösteriliyor"
 
 #: package/contents/ui/GoogleHealthApi.qml:143
 msgid "Google Health server error (HTTP %1)"
 msgstr "Google Health sunucu hatası (HTTP %1)"
 
-#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:144
+msgid "Server error (HTTP %1) at %2"
+msgstr "Sunucu hatası (HTTP %1, saat %2)"
+
+#: package/contents/ui/GoogleHealthApi.qml:150
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 başarısız oldu (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthApi.qml:151
+msgid "Error (HTTP %1) at %2"
+msgstr "Hata (HTTP %1, saat %2)"
+
+#: package/contents/ui/GoogleHealthApi.qml:178
+msgid "OK — updated at %1"
+msgstr "Tamam — saat %1 itibarıyla güncellendi"
+
+#: package/contents/ui/GoogleHealthApi.qml:192
+msgid "Request timed out — check your connection"
+msgstr "İstek zaman aşımına uğradı — bağlantınızı kontrol edin"
+
+#: package/contents/ui/GoogleHealthApi.qml:193
+msgid "Timed out at %1"
+msgstr "Zaman aşımı (saat %1)"
+
 #: package/contents/ui/GoogleHealthApi.qml:200
 msgid "%1 fetch"
 msgstr "%1 alma"
 
-#. TRANSLATORS: %1 is a metric name such as Steps
 #: package/contents/ui/GoogleHealthApi.qml:211
 msgid "Failed to parse %1 data"
 msgstr "%1 verileri ayrıştırılamadı"
+
+#: package/contents/ui/GoogleHealthApi.qml:212
+msgid "Parse error at %1"
+msgstr "Ayrıştırma hatası (saat %1)"
+
+#: package/contents/ui/GoogleHealthApi.qml:246
+#: package/contents/ui/configGeneral.qml:261
+msgid "Active minutes"
+msgstr "Aktif dakikalar"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:91
+msgid "Unknown error"
+msgstr "Bilinmeyen hata"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:98
+msgid "Failed to parse auth response"
+msgstr "Yetkilendirme yanıtı ayrıştırılamadı"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:137
+#: package/contents/ui/GoogleHealthOAuth.qml:341
+msgid "Invalid client ID format"
+msgstr "Geçersiz istemci kimliği biçimi"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:156
+msgid "Authorization canceled"
+msgstr "Yetkilendirme iptal edildi"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:198
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
 
 #: package/contents/ui/GoogleHealthOAuth.qml:216
 msgid "Google server error (HTTP %1)"
 msgstr "Google sunucu hatası (HTTP %1)"
 
-#: package/contents/ui/configGeneral.qml:102
+#: package/contents/ui/GoogleHealthOAuth.qml:220 scripts/fitdash-auth.py:68
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:292
+msgid "Network error during token refresh"
+msgstr "Belirteç yenileme sırasında ağ hatası"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:293
+msgid "Refresh token invalid — please re-authorize"
+msgstr "Yenileme belirteci geçersiz — lütfen yeniden yetkilendirin"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:294
+msgid "Token refresh failed"
+msgstr "Belirteç yenileme başarısız oldu"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:295
+msgid "Refresh failed — missing tokens"
+msgstr "Yenileme başarısız oldu — belirteçler eksik"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:296
+msgid "Token refresh failed — invalid response"
+msgstr "Belirteç yenileme başarısız oldu — geçersiz yanıt"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:357
+msgid "Paste the redirect URL or authorization code first"
+msgstr "Önce yönlendirme URL'sini veya yetkilendirme kodunu yapıştırın"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:361
+msgid "Start the manual authorization first"
+msgstr "Önce elle yetkilendirmeyi başlatın"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:381 scripts/fitdash-auth.py:130
+msgid "Authorization was denied"
+msgstr "Yetki reddedildi"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:388 scripts/fitdash-auth.py:116
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr ""
+"Yetkilendirme başarısız oldu (durum uyuşmazlığı) — lütfen tekrar deneyin"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:392
+msgid "No authorization code found in the pasted text"
+msgstr "Yapıştırılan metinde yetkilendirme kodu bulunamadı"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:403 scripts/fitdash-auth.py:70
+msgid "Network error during token exchange"
+msgstr "Belirteç değişimi sırasında ağ hatası"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:404
+msgid "Authorization code invalid or expired — please try again"
+msgstr "Yetkilendirme kodu geçersiz veya süresi dolmuş — lütfen tekrar deneyin"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:405 scripts/fitdash-auth.py:68
+msgid "Token exchange failed"
+msgstr "Belirteç değişimi başarısız oldu"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:406 scripts/fitdash-auth.py:74
+msgid "Token exchange failed — missing tokens"
+msgstr "Belirteç değişimi başarısız oldu — belirteçler eksik"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:407 scripts/fitdash-auth.py:204
+msgid "Token exchange failed — invalid response"
+msgstr "Belirteç değişimi başarısız oldu — geçersiz yanıt"
+
+#: package/contents/ui/configGeneral.qml:9 package/contents/config/config.qml:6
+msgid "General"
+msgstr "Genel"
+
+#: package/contents/ui/configGeneral.qml:65
+msgid "Not authorized"
+msgstr "Yetkilendirilmedi"
+
+#: package/contents/ui/configGeneral.qml:68
+msgid "Authorization problem — re-authorize"
+msgstr "Yetkilendirme sorunu — yeniden yetkilendirin"
+
+#: package/contents/ui/configGeneral.qml:71
+msgid "Token expired — refresh needed"
+msgstr "Belirtecin süresi doldu — yenileme gerekli"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "unknown"
+msgstr "bilinmiyor"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "Authorized (User: %1)"
+msgstr "Yetkilendirildi (Kullanıcı: %1)"
+
+#: package/contents/ui/configGeneral.qml:103
+msgid "Client ID:"
+msgstr "İstemci Kimliği:"
+
+#: package/contents/ui/configGeneral.qml:104
 msgid "From Google Cloud Console"
 msgstr "Google Cloud Console'dan"
 
-#: package/contents/ui/configGeneral.qml:109
+#: package/contents/ui/configGeneral.qml:111
 msgid "Client Secret:"
 msgstr "İstemci Gizli Anahtarı:"
 
-#: package/contents/ui/configGeneral.qml:110
+#: package/contents/ui/configGeneral.qml:112
 msgid "From the same OAuth client"
 msgstr "Aynı OAuth istemcisinden"
 
-#: package/contents/ui/configGeneral.qml:117
-msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
-msgstr "Google Health API'nin etkin olduğu bir Google Cloud projesinden OAuth 2.0 kimlik bilgileri"
+#: package/contents/ui/configGeneral.qml:119
+msgid ""
+"OAuth 2.0 credentials from a Google Cloud project with the Google Health API "
+"enabled"
+msgstr ""
+"Google Health API'nin etkin olduğu bir Google Cloud projesinden OAuth 2.0 "
+"kimlik bilgileri"
 
-#: package/contents/ui/configGeneral.qml:158
-msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
-msgstr "Google, masaüstü uygulaması OAuth istemcileri için herhangi bir localhost bağlantı noktasına otomatik olarak izin verir — bu URL'yi kaydetmeniz gerekmez"
+#: package/contents/ui/configGeneral.qml:127
+msgid ""
+"You can also drop the downloaded client_secret.json file onto this window to "
+"fill them in."
+msgstr ""
+"Bunları doldurmak için indirilen client_secret.json dosyasını bu pencereye "
+"de bırakabilirsiniz."
 
-#: package/contents/ui/configGeneral.qml:174
+#: package/contents/ui/configGeneral.qml:134
+msgid "Callback URL:"
+msgstr "Geri çağırma URL'si:"
+
+#: package/contents/ui/configGeneral.qml:147
+#: package/contents/ui/configGeneral.qml:387
+msgid "Copy to clipboard"
+msgstr "Panoya kopyala"
+
+#: package/contents/ui/configGeneral.qml:160
+msgid "Callback port:"
+msgstr "Geri çağırma bağlantı noktası:"
+
+#: package/contents/ui/configGeneral.qml:168
+msgid ""
+"Google allows any localhost port for Desktop app OAuth clients automatically "
+"— no need to register this URL"
+msgstr ""
+"Google, masaüstü uygulaması OAuth istemcileri için herhangi bir localhost "
+"bağlantı noktasına otomatik olarak izin verir — bu URL'yi kaydetmeniz "
+"gerekmez"
+
+#: package/contents/ui/configGeneral.qml:176
+msgid "Refresh interval (minutes):"
+msgstr "Yenileme aralığı (dakika):"
+
+#: package/contents/ui/configGeneral.qml:184
 msgid "Recommended: 15–30 minutes to stay within API rate limits"
 msgstr "Önerilen: API istek sınırlarını aşmamak için 15–30 dakika"
 
-#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/configGeneral.qml:192
+msgid "Display"
+msgstr "Görünüm"
+
+#: package/contents/ui/configGeneral.qml:197
+msgid "Distance unit:"
+msgstr "Mesafe birimi:"
+
+#: package/contents/ui/configGeneral.qml:199
+msgid "Kilometers (km)"
+msgstr "Kilometre (km)"
+
+#: package/contents/ui/configGeneral.qml:200
+msgid "Miles (mi)"
+msgstr "Mil (mi)"
+
+#: package/contents/ui/configGeneral.qml:211
 msgid "Step goal:"
 msgstr "Adım hedefi:"
 
-#: package/contents/ui/configGeneral.qml:207
+#: package/contents/ui/configGeneral.qml:217
 msgid "None"
 msgstr "Yok"
 
-#: package/contents/ui/configGeneral.qml:216
-msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
-msgstr "Google Health API bir hedef bildirmez, bu yüzden burada ayarlanır. 0 bunun yerine “Adım hedefi belirlenmedi” gösterir"
+#: package/contents/ui/configGeneral.qml:226
+msgid ""
+"The Google Health API doesn't report a goal, so this is set here. 0 shows "
+"“No step goal set” instead"
+msgstr ""
+"Google Health API bir hedef bildirmez, bu yüzden burada ayarlanır. 0 bunun "
+"yerine “Adım hedefi belirlenmedi” gösterir"
 
-#: package/contents/ui/configGeneral.qml:292
+#: package/contents/ui/configGeneral.qml:234
+msgid "Visible Metrics"
+msgstr "Görünür ölçümler"
+
+#: package/contents/ui/configGeneral.qml:268
+msgid "Resting heart rate"
+msgstr "Dinlenik kalp atış hızı"
+
+#: package/contents/ui/configGeneral.qml:282
+msgid "Blood oxygen (SpO2)"
+msgstr "Kan oksijeni (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:289
+msgid "Heart rate variability"
+msgstr "Kalp atış hızı değişkenliği"
+
+#: package/contents/ui/configGeneral.qml:296
+msgid "Breathing rate"
+msgstr "Solunum hızı"
+
+#: package/contents/ui/configGeneral.qml:302
 msgid "Google Health Account"
 msgstr "Google Health Hesabı"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:306
+msgid "Status:"
+msgstr "Durum:"
+
+#: package/contents/ui/configGeneral.qml:314
+msgid "Last request:"
+msgstr "Son istek:"
+
+#: package/contents/ui/configGeneral.qml:316
+msgid "No requests yet"
+msgstr "Henüz istek yok"
+
+#: package/contents/ui/configGeneral.qml:326
+msgid "Authorization:"
+msgstr "Yetkilendirme:"
+
+#: package/contents/ui/configGeneral.qml:328
+msgid "Cancel"
+msgstr "İptal"
+
+#: package/contents/ui/configGeneral.qml:329
 msgid "Re-authorize with Google"
 msgstr "Google ile yeniden yetkilendir"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:329
 msgid "Authorize with Google"
 msgstr "Google ile yetkilendir"
+
+#: package/contents/ui/configGeneral.qml:345
+msgid "Authorize manually (copy & paste)"
+msgstr "Elle yetkilendir (kopyala ve yapıştır)"
+
+#: package/contents/ui/configGeneral.qml:350
+msgid ""
+"Use this if the browser can't reach localhost (sandboxed browser, remote "
+"session, or no Python)"
+msgstr ""
+"Tarayıcı localhost'a erişemiyorsa bunu kullanın (korumalı alan tarayıcısı, "
+"uzak oturum veya Python yok)"
+
+#: package/contents/ui/configGeneral.qml:366
+msgid "Step 1:"
+msgstr "Adım 1:"
+
+#: package/contents/ui/configGeneral.qml:367
+msgid "Open this URL in a browser and approve access:"
+msgstr "Bu URL'yi bir tarayıcıda açın ve erişimi onaylayın:"
+
+#: package/contents/ui/configGeneral.qml:374
+msgid "Authorization URL:"
+msgstr "Yetkilendirme URL'si:"
+
+#: package/contents/ui/configGeneral.qml:401
+msgid "Open in browser"
+msgstr "Tarayıcıda aç"
+
+#: package/contents/ui/configGeneral.qml:410
+msgid "Step 2:"
+msgstr "Adım 2:"
+
+#: package/contents/ui/configGeneral.qml:411
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr ""
+"Onayladıktan sonra adres çubuğu URL'sini kopyalayıp aşağıya yapıştırın:"
+
+#: package/contents/ui/configGeneral.qml:418
+msgid "Redirect URL or code:"
+msgstr "Yönlendirme URL'si veya kodu:"
+
+#: package/contents/ui/configGeneral.qml:422
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/callback?code=…"
+
+#: package/contents/ui/configGeneral.qml:429
+msgid "Complete"
+msgstr "Tamamla"
+
+#: package/contents/ui/configGeneral.qml:439
+msgid "Cancel manual authorization"
+msgstr "Elle yetkilendirmeyi iptal et"
+
+#: package/contents/ui/configGeneral.qml:476
+msgid "The dropped file does not contain a client ID and client secret."
+msgstr ""
+"Bırakılan dosya bir istemci kimliği ve istemci gizli anahtarı içermiyor."
+
+#: package/contents/ui/configGeneral.qml:480
+msgid "The client ID in the dropped file is not valid."
+msgstr "Bırakılan dosyadaki istemci kimliği geçerli değil."
+
+#: package/contents/ui/configGeneral.qml:486
+msgid "Client ID and secret imported from file."
+msgstr "İstemci kimliği ve gizli anahtar dosyadan içe aktarıldı."
+
+#: package/contents/ui/configGeneral.qml:488
+#: package/contents/ui/configGeneral.qml:496
+#: package/contents/ui/configGeneral.qml:510
+msgid "Could not read the dropped file as a Google client secret JSON."
+msgstr ""
+"Bırakılan dosya, Google istemci gizli anahtarı JSON dosyası olarak okunamadı."
+
+#: package/contents/ui/configGeneral.qml:546 scripts/fitdash-auth.py:128
+msgid "Authorization successful!"
+msgstr "Yetkilendirme başarılı!"
+
+#: package/contents/ui/main.qml:87
+msgid "Not connected"
+msgstr "Bağlı değil"
+
+#: package/contents/ui/main.qml:92
+msgid ""
+"Steps: %1 | Cal: %2 | Dist: %3\n"
+"Updated: %4"
+msgstr ""
+"Adım: %1 | Kal: %2 | Mesafe: %3\n"
+"Güncellendi: %4"
+
+#: package/contents/ui/main.qml:114
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "Yetkilendirmenin süresi doldu (saat %1) — lütfen yeniden yetkilendirin"
+
+#: package/contents/ui/main.qml:127
+msgid "Token refresh failed at %1 — %2"
+msgstr "Belirteç yenileme başarısız oldu (saat %1) — %2"
+
+#: package/contents/ui/main.qml:152
+msgid "No refresh token available — please re-authorize"
+msgstr "Yenileme belirteci yok — lütfen yeniden yetkilendirin"
+
+#: package/contents/ui/main.qml:184
+msgid "Token refreshed at %1"
+msgstr "Belirteç yenilendi (saat %1)"
+
+#: scripts/fitdash-auth.py:101
+msgid "Missing client secret"
+msgstr ""
+
+#: scripts/fitdash-auth.py:128
+msgid "You can close this tab."
+msgstr ""
+
+#: scripts/fitdash-auth.py:145
+msgid "Could not start authorization server on port %1"
+msgstr ""
+
+#: scripts/fitdash-auth.py:192
+msgid "Authorization timed out — please try again"
+msgstr ""
+
+#~ msgid "From dev.fitbit.com/apps"
+#~ msgstr "dev.fitbit.com/apps adresinden"
+
+#~ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+#~ msgstr "Fitbit uygulama kaydınızdaki OAuth 2.0 İstemci Kimliği"
+
+#~ msgid ""
+#~ "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+#~ msgstr ""
+#~ "Geri çağırma URL'sini dev.fitbit.com adresindeki Fitbit uygulama "
+#~ "ayarlarınıza yapıştırın"
+
+#~ msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+#~ msgstr "Önerilen: Fitbit istek sınırlarını aşmamak için 15–30 dakika"
+
+#~ msgid "Fitbit Account"
+#~ msgstr "Fitbit Hesabı"
+
+#~ msgid "Re-authorize with Fitbit"
+#~ msgstr "Fitbit ile yeniden yetkilendir"
+
+#~ msgid "Authorize with Fitbit"
+#~ msgstr "Fitbit ile yetkilendir"
+
+#~ msgid "Fitbit server error (HTTP %1)"
+#~ msgstr "Fitbit sunucu hatası (HTTP %1)"
+
+#~ msgid "Activity fetch"
+#~ msgstr "Etkinlik verisi alma"
+
+#~ msgid "Failed to parse activity data"
+#~ msgstr "Etkinlik verileri ayrıştırılamadı"
+
+#~ msgid "Connect Fitbit"
+#~ msgstr "Fitbit'e bağlan"
+
+#~ msgid "Loading Fitbit data"
+#~ msgstr "Fitbit verileri yükleniyor"

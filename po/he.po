@@ -1,8 +1,9 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: FitDash 1.0.8\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
-"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
 "Last-Translator: FitDash contributors\n"
 "Language-Team: Hebrew\n"
@@ -11,475 +12,625 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
-msgid "General"
-msgstr "כללי"
-#: package/contents/ui/configGeneral.qml:52
-msgid "Not authorized"
-msgstr "לא מורשה"
-#: package/contents/ui/configGeneral.qml:55
-msgid "Authorization problem — re-authorize"
-msgstr "בעיית הרשאה — יש לאשר מחדש"
-#: package/contents/ui/configGeneral.qml:58
-msgid "Token expired — refresh needed"
-msgstr "פג תוקף האסימון - נדרש רענון"
-#: package/contents/ui/configGeneral.qml:60
-msgid "unknown"
-msgstr "לא ידוע"
-#: package/contents/ui/configGeneral.qml:60
-msgid "Authorized (User: %1)"
-msgstr "מורשה (משתמש: %1)"
-#: package/contents/ui/configGeneral.qml:89
-msgid "Client ID:"
-msgstr "מזהה לקוח:"
-#: package/contents/ui/configGeneral.qml:90
-msgid "From dev.fitbit.com/apps"
-msgstr "מתוך dev.fitbit.com/apps"
-#: package/contents/ui/configGeneral.qml:97
-msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "מזהה לקוח OAuth 2.0 מהרישום של אפליקציית Fitbit"
-#: package/contents/ui/configGeneral.qml:104
-msgid "Callback URL:"
-msgstr "כתובת Callback:"
-#: package/contents/ui/configGeneral.qml:117
-#: package/contents/ui/configGeneral.qml:306
-msgid "Copy to clipboard"
-msgstr "העתק ללוח"
-#: package/contents/ui/configGeneral.qml:130
-msgid "Callback port:"
-msgstr "פורט Callback:"
-#: package/contents/ui/configGeneral.qml:138
-msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "הדבק את כתובת ה-Callback בהגדרות אפליקציית Fitbit שלך ב-dev.fitbit.com"
-#: package/contents/ui/configGeneral.qml:146
-msgid "Refresh interval (minutes):"
-msgstr "מרווח רענון (דקות):"
-#: package/contents/ui/configGeneral.qml:154
-msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "מומלץ: 15–30 דקות כדי לא לחרוג ממגבלות הבקשות של Fitbit"
-#: package/contents/ui/configGeneral.qml:162
-msgid "Display"
-msgstr "תצוגה"
-#: package/contents/ui/configGeneral.qml:167
-msgid "Distance unit:"
-msgstr "יחידת מרחק:"
-#: package/contents/ui/configGeneral.qml:169
-msgid "Kilometers (km)"
-msgstr "קילומטרים (ק\"מ)"
-#: package/contents/ui/configGeneral.qml:170
-msgid "Miles (mi)"
-msgstr "מיילים (mi)"
-#: package/contents/ui/configGeneral.qml:181
-msgid "Visible Metrics"
-msgstr "מדדים גלויים"
-#: package/contents/ui/configGeneral.qml:187
-#: package/contents/ui/FullRepresentation.qml:213
-msgid "Steps"
-msgstr "צעדים"
-#: package/contents/ui/configGeneral.qml:194
-#: package/contents/ui/FullRepresentation.qml:263
-msgid "Calories"
-msgstr "קלוריות"
-#: package/contents/ui/configGeneral.qml:201
-#: package/contents/ui/FullRepresentation.qml:271
-msgid "Distance"
-msgstr "מרחק"
-#: package/contents/ui/configGeneral.qml:208
-msgid "Active minutes"
-msgstr "דקות פעילות"
-#: package/contents/ui/configGeneral.qml:215
-msgid "Resting heart rate"
-msgstr "דופק במנוחה"
-#: package/contents/ui/configGeneral.qml:221
-msgid "Fitbit Account"
-msgstr "חשבון Fitbit"
-#: package/contents/ui/configGeneral.qml:225
-msgid "Status:"
-msgstr "מצב:"
-#: package/contents/ui/configGeneral.qml:233
-msgid "Last request:"
-msgstr "בקשה אחרונה:"
-#: package/contents/ui/configGeneral.qml:235
-msgid "No requests yet"
-msgstr "עדיין אין בקשות"
-#: package/contents/ui/configGeneral.qml:245
-msgid "Authorization:"
-msgstr "הרשאה:"
-#: package/contents/ui/configGeneral.qml:247
-msgid "Cancel"
-msgstr "ביטול"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Re-authorize with Fitbit"
-msgstr "הרשאה מחדש באמצעות Fitbit"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Authorize with Fitbit"
-msgstr "אישור באמצעות Fitbit"
-#: package/contents/ui/configGeneral.qml:264
-msgid "Authorize manually (copy & paste)"
-msgstr "הרשאה ידנית (העתק והדבק)"
-#: package/contents/ui/configGeneral.qml:269
-msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "השתמש בזה אם הדפדפן לא יכול להגיע ל-localhost (דפדפן בארגז חול, הפעלה מרחוק או ללא Python)"
-#: package/contents/ui/configGeneral.qml:285
-msgid "Step 1:"
-msgstr "שלב 1:"
-#: package/contents/ui/configGeneral.qml:286
-msgid "Open this URL in a browser and approve access:"
-msgstr "פתח את כתובת ה-URL הזו בדפדפן ואשר גישה:"
-#: package/contents/ui/configGeneral.qml:293
-msgid "Authorization URL:"
-msgstr "כתובת URL להרשאה:"
-#: package/contents/ui/configGeneral.qml:320
-msgid "Open in browser"
-msgstr "פתח בדפדפן"
-#: package/contents/ui/configGeneral.qml:329
-msgid "Step 2:"
-msgstr "שלב 2:"
-#: package/contents/ui/configGeneral.qml:330
-msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "לאחר האישור, העתק את הכתובת משורת הכתובת והדבק אותה למטה:"
-#: package/contents/ui/configGeneral.qml:337
-msgid "Redirect URL or code:"
-msgstr "כתובת URL להפניה או קוד:"
-#: package/contents/ui/configGeneral.qml:341
-msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:…/callback?code=…"
-#: package/contents/ui/configGeneral.qml:348
-msgid "Complete"
-msgstr "סיום"
-#: package/contents/ui/configGeneral.qml:358
-msgid "Cancel manual authorization"
-msgstr "בטל הרשאה ידנית"
-#: package/contents/ui/configGeneral.qml:397
-msgid "Authorization successful!"
-msgstr "ההרשאה הצליחה!"
-#: package/contents/ui/FitbitApi.qml:33
-msgid "No access token"
-msgstr "אין אסימון גישה"
-#: package/contents/ui/FitbitApi.qml:52
-msgid "Network error — check your connection"
-msgstr "שגיאת רשת - בדוק את החיבור שלך"
-#: package/contents/ui/FitbitApi.qml:53
-msgid "Network error at %1"
-msgstr "שגיאת רשת ב-%1"
-#: package/contents/ui/FitbitApi.qml:59
-msgid "Token expired at %1 — refreshing"
-msgstr "תוקף האסימון פג ב-%1 — מרענן"
-#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
-msgid "Rate limited — try again later"
-msgstr "חריגה ממגבלת הבקשות — נסה שוב מאוחר יותר"
-#: package/contents/ui/FitbitApi.qml:66
-msgid "Rate limited at %1 — showing cached data"
-msgstr "חריגה ממגבלת הבקשות ב-%1 — מוצגים נתונים מהמטמון"
-#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
-msgid "Fitbit server error (HTTP %1)"
-msgstr "שגיאת שרת Fitbit (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:73
-msgid "Server error (HTTP %1) at %2"
-msgstr "שגיאת שרת (HTTP %1) ב-%2"
-#: package/contents/ui/FitbitApi.qml:79
-msgid "%1 failed (HTTP %2)"
-msgstr "%1 נכשל (HTTP %2)"
-#: package/contents/ui/FitbitApi.qml:80
-msgid "Error (HTTP %1) at %2"
-msgstr "שגיאה (HTTP %1) ב-%2"
-#: package/contents/ui/FitbitApi.qml:107
-msgid "Request timed out — check your connection"
-msgstr "תם הזמן הקצוב לבקשה - בדוק את החיבור שלך"
-#: package/contents/ui/FitbitApi.qml:108
-msgid "Timed out at %1"
-msgstr "תם הזמן הקצוב ב-%1"
-#: package/contents/ui/FitbitApi.qml:116
-msgid "Activity fetch"
-msgstr "אחזור פעילות"
-#: package/contents/ui/FitbitApi.qml:141
-msgid "OK — updated at %1"
-msgstr "OK — עודכן ב-%1"
-#: package/contents/ui/FitbitApi.qml:146
-msgid "Failed to parse activity data"
-msgstr "ניתוח נתוני הפעילות נכשל"
-#: package/contents/ui/FitbitApi.qml:147
-msgid "Parse error at %1"
-msgstr "שגיאת ניתוח ב-%1"
-#: package/contents/ui/FitbitOAuth.qml:90
-msgid "Unknown error"
-msgstr "שגיאה לא ידועה"
-#: package/contents/ui/FitbitOAuth.qml:97
-msgid "Failed to parse auth response"
-msgstr "ניתוח תגובת האישור נכשל"
-#: package/contents/ui/FitbitOAuth.qml:136
-#: package/contents/ui/FitbitOAuth.qml:327
-msgid "Invalid client ID format"
-msgstr "פורמט מזהה לקוח לא חוקי"
-#: package/contents/ui/FitbitOAuth.qml:150
-msgid "Authorization canceled"
-msgstr "ההרשאה בוטלה"
-#: package/contents/ui/FitbitOAuth.qml:191
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-#: package/contents/ui/FitbitOAuth.qml:213
-msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2)"
-#: package/contents/ui/FitbitOAuth.qml:280
-msgid "Network error during token refresh"
-msgstr "שגיאת רשת במהלך רענון אסימון"
-#: package/contents/ui/FitbitOAuth.qml:281
-msgid "Refresh token invalid — please re-authorize"
-msgstr "אסימון רענון אינו חוקי - אנא אשר מחדש"
-#: package/contents/ui/FitbitOAuth.qml:282
-msgid "Token refresh failed"
-msgstr "רענון האסימון נכשל"
-#: package/contents/ui/FitbitOAuth.qml:283
-msgid "Refresh failed — missing tokens"
-msgstr "הרענון נכשל - חסרים אסימונים"
-#: package/contents/ui/FitbitOAuth.qml:284
-msgid "Token refresh failed — invalid response"
-msgstr "רענון האסימון נכשל - תגובה לא חוקית"
-#: package/contents/ui/FitbitOAuth.qml:341
-msgid "Paste the redirect URL or authorization code first"
-msgstr "הדבק תחילה את כתובת ההפניה או את קוד ההרשאה"
-#: package/contents/ui/FitbitOAuth.qml:345
-msgid "Start the manual authorization first"
-msgstr "התחל תחילה את ההרשאה הידנית"
-#: package/contents/ui/FitbitOAuth.qml:365
-msgid "Authorization was denied"
-msgstr "ההרשאה נדחתה"
-#: package/contents/ui/FitbitOAuth.qml:372
-msgid "Authorization failed (state mismatch) — please try again"
-msgstr "ההרשאה נכשלה (חוסר התאמה של מצב) - אנא נסה שוב"
-#: package/contents/ui/FitbitOAuth.qml:376
-msgid "No authorization code found in the pasted text"
-msgstr "לא נמצא קוד הרשאה בטקסט שהודבק"
-#: package/contents/ui/FitbitOAuth.qml:386
-msgid "Network error during token exchange"
-msgstr "שגיאת רשת במהלך החלפת אסימונים"
-#: package/contents/ui/FitbitOAuth.qml:387
-msgid "Authorization code invalid or expired — please try again"
-msgstr "קוד ההרשאה לא חוקי או שפג תוקפו - אנא נסה שוב"
-#: package/contents/ui/FitbitOAuth.qml:388
-msgid "Token exchange failed"
-msgstr "החלפת אסימונים נכשלה"
-#: package/contents/ui/FitbitOAuth.qml:389
-msgid "Token exchange failed — missing tokens"
-msgstr "החלפת אסימונים נכשלה - חסרים אסימונים"
-#: package/contents/ui/FitbitOAuth.qml:390
-msgid "Token exchange failed — invalid response"
-msgstr "החלפת אסימונים נכשלה - תגובה לא חוקית"
-#: package/contents/ui/FullRepresentation.qml:40
+#: package/contents/ui/FullRepresentation.qml:66
+#: package/contents/ui/main.qml:90
 msgctxt "distance in miles"
 msgid "%1 mi"
 msgstr "%1 mi"
-#: package/contents/ui/FullRepresentation.qml:42
+
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:91
 msgctxt "distance in kilometers"
 msgid "%1 km"
 msgstr "%1 ק\"מ"
-#: package/contents/ui/FullRepresentation.qml:68
-#: package/contents/ui/main.qml:77
-msgid "FitDash"
-msgstr "FitDash"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Stale"
-msgstr "לא עדכני"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Today"
-msgstr "היום"
-#: package/contents/ui/FullRepresentation.qml:115
-msgid "Connect Fitbit"
-msgstr "חבר את Fitbit"
-#: package/contents/ui/FullRepresentation.qml:121
-msgid "Authorize your account in settings to show today's activity."
-msgstr "אשר את החשבון שלך בהגדרות כדי להציג את הפעילות של היום."
-#: package/contents/ui/FullRepresentation.qml:130
-msgid "Open Settings"
-msgstr "פתח את ההגדרות"
-#: package/contents/ui/FullRepresentation.qml:160
-msgid "Loading Fitbit data"
-msgstr "טוען נתוני Fitbit"
-#: package/contents/ui/FullRepresentation.qml:220
-#, javascript-format
-msgctxt "step goal progress"
-msgid "%1%"
-msgstr "%1%"
-#: package/contents/ui/FullRepresentation.qml:245
-msgid "%1 remaining of %2"
-msgstr "נותרו %1 מתוך %2"
-#: package/contents/ui/FullRepresentation.qml:246
-msgid "No step goal set"
-msgstr "לא הוגדר יעד צעדים"
-#: package/contents/ui/FullRepresentation.qml:279
-msgid "Active"
-msgstr "פעילות"
-#: package/contents/ui/FullRepresentation.qml:280
-msgctxt "active minutes"
-msgid "%1 min"
-msgstr "%1 דקות"
-#: package/contents/ui/FullRepresentation.qml:287
-msgid "Resting HR"
-msgstr "דופק במנוחה"
-#: package/contents/ui/FullRepresentation.qml:289
-msgctxt "heart rate in beats per minute"
-msgid "%1 bpm"
-msgstr "%1 bpm"
-#: package/contents/ui/FullRepresentation.qml:310
-msgid "Updated %1"
-msgstr "עודכן ב-%1"
-#: package/contents/ui/main.qml:79
-msgid "Not connected"
-msgstr "לא מחובר"
-#: package/contents/ui/main.qml:83
-msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "צעדים: %1 | קלוריות: %2 | מרחק: %3\nעודכן: %4"
-#: package/contents/ui/main.qml:105
-msgid "Authorization expired at %1 — please re-authorize"
-msgstr "תוקף ההרשאה פג ב-%1 — יש לאשר מחדש"
-#: package/contents/ui/main.qml:118
-msgid "Token refresh failed at %1 — %2"
-msgstr "רענון האסימון נכשל ב-%1 — %2"
-#: package/contents/ui/main.qml:142
-msgid "No refresh token available — please re-authorize"
-msgstr "אין אסימון רענון זמין - אנא אשר מחדש"
-#: package/contents/ui/main.qml:169
-msgid "Token refreshed at %1"
-msgstr "האסימון רוענן ב-%1"
-
-#: scripts/fitdash-auth.py
-msgid "You can close this tab."
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Could not start authorization server on port %1"
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Authorization timed out — please try again"
-msgstr ""
-
-#: package/contents/ui/FullRepresentation.qml:318
-msgid "Vitals"
-msgstr "מדדים חיוניים"
-
-#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
-msgid "Sleep"
-msgstr "שינה"
-
-#: package/contents/ui/FullRepresentation.qml:352
-msgid "SpO2"
-msgstr "SpO2"
-
-#: package/contents/ui/FullRepresentation.qml:362
-msgid "HRV"
-msgstr "HRV"
-
-#: package/contents/ui/FullRepresentation.qml:372
-msgid "Breathing"
-msgstr "נשימה"
 
 #: package/contents/ui/FullRepresentation.qml:73
 msgctxt "sleep duration in hours and minutes"
 msgid "%1h %2m"
 msgstr "%1ש %2ד"
 
+#: package/contents/ui/FullRepresentation.qml:98
+#: package/contents/ui/main.qml:85
+msgid "FitDash"
+msgstr "FitDash"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Stale"
+msgstr "לא עדכני"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Today"
+msgstr "היום"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "חבר את Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:151
+msgid "Authorize your account in settings to show today's activity."
+msgstr "אשר את החשבון שלך בהגדרות כדי להציג את הפעילות של היום."
+
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Open Settings"
+msgstr "פתח את ההגדרות"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "טוען נתוני Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:243
+#: package/contents/ui/GoogleHealthApi.qml:227
+#: package/contents/ui/configGeneral.qml:240
+msgid "Steps"
+msgstr "צעדים"
+
+#: package/contents/ui/FullRepresentation.qml:250
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "אין נתונים עדיין"
+
+#: package/contents/ui/FullRepresentation.qml:275
+msgid "%1 remaining of %2"
+msgstr "נותרו %1 מתוך %2"
+
+#: package/contents/ui/FullRepresentation.qml:276
+msgid "No step goal set"
+msgstr "לא הוגדר יעד צעדים"
+
+#: package/contents/ui/FullRepresentation.qml:293
+#: package/contents/ui/GoogleHealthApi.qml:233
+#: package/contents/ui/configGeneral.qml:247
+msgid "Calories"
+msgstr "קלוריות"
+
+#: package/contents/ui/FullRepresentation.qml:301
+#: package/contents/ui/GoogleHealthApi.qml:239
+#: package/contents/ui/configGeneral.qml:254
+msgid "Distance"
+msgstr "מרחק"
+
+#: package/contents/ui/FullRepresentation.qml:309
+msgid "Active"
+msgstr "פעילות"
+
+#: package/contents/ui/FullRepresentation.qml:310
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 דקות"
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "מדדים חיוניים"
+
+#: package/contents/ui/FullRepresentation.qml:334
+#: package/contents/ui/configGeneral.qml:275
+msgid "Sleep"
+msgstr "שינה"
+
+#: package/contents/ui/FullRepresentation.qml:342
+msgid "Resting HR"
+msgstr "דופק במנוחה"
+
+#: package/contents/ui/FullRepresentation.qml:344
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:354
+#, javascript-format
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "HRV"
+
 #: package/contents/ui/FullRepresentation.qml:364
 msgctxt "heart rate variability in milliseconds"
 msgid "%1 ms"
 msgstr "%1 מ״ש"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "נשימה"
 
 #: package/contents/ui/FullRepresentation.qml:374
 msgctxt "respiratory rate in breaths per minute"
 msgid "%1 br/min"
 msgstr "%1 נשימות/דקה"
 
-#: package/contents/ui/configGeneral.qml:272
-msgid "Blood oxygen (SpO2)"
-msgstr "חמצן בדם (SpO2)"
+#: package/contents/ui/FullRepresentation.qml:395
+msgid "Updated %1"
+msgstr "עודכן ב-%1"
 
-#: package/contents/ui/configGeneral.qml:279
-msgid "Heart rate variability"
-msgstr "השתנות קצב הלב"
+#: package/contents/ui/GoogleHealthApi.qml:45
+msgid "No access token"
+msgstr "אין אסימון גישה"
 
-#: package/contents/ui/configGeneral.qml:286
-msgid "Breathing rate"
-msgstr "קצב נשימה"
+#: package/contents/ui/GoogleHealthApi.qml:118
+msgid "Network error — check your connection"
+msgstr "שגיאת רשת - בדוק את החיבור שלך"
 
-#: package/contents/ui/FullRepresentation.qml:145
-msgid "Connect Google Health"
-msgstr "חבר את Google Health"
+#: package/contents/ui/GoogleHealthApi.qml:119
+msgid "Network error at %1"
+msgstr "שגיאת רשת ב-%1"
 
-#: package/contents/ui/FullRepresentation.qml:190
-msgid "Loading Google Health data"
-msgstr "טוען נתוני Google Health"
+#: package/contents/ui/GoogleHealthApi.qml:125
+msgid "Token expired at %1 — refreshing"
+msgstr "תוקף האסימון פג ב-%1 — מרענן"
 
-#: package/contents/ui/FullRepresentation.qml:273
-msgid "No data yet"
-msgstr "אין נתונים עדיין"
+#: package/contents/ui/GoogleHealthApi.qml:136
+#: package/contents/ui/GoogleHealthOAuth.qml:212
+msgid "Rate limited — try again later"
+msgstr "חריגה ממגבלת הבקשות — נסה שוב מאוחר יותר"
 
-#: package/contents/ui/FullRepresentation.qml:354
-msgctxt "blood oxygen saturation percentage"
-msgid "%1%"
-msgstr "%1%"
+#: package/contents/ui/GoogleHealthApi.qml:137
+msgid "Rate limited at %1 — showing cached data"
+msgstr "חריגה ממגבלת הבקשות ב-%1 — מוצגים נתונים מהמטמון"
 
 #: package/contents/ui/GoogleHealthApi.qml:143
 msgid "Google Health server error (HTTP %1)"
 msgstr "שגיאת שרת Google Health (HTTP %1)"
 
-#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:144
+msgid "Server error (HTTP %1) at %2"
+msgstr "שגיאת שרת (HTTP %1) ב-%2"
+
+#: package/contents/ui/GoogleHealthApi.qml:150
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 נכשל (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthApi.qml:151
+msgid "Error (HTTP %1) at %2"
+msgstr "שגיאה (HTTP %1) ב-%2"
+
+#: package/contents/ui/GoogleHealthApi.qml:178
+msgid "OK — updated at %1"
+msgstr "OK — עודכן ב-%1"
+
+#: package/contents/ui/GoogleHealthApi.qml:192
+msgid "Request timed out — check your connection"
+msgstr "תם הזמן הקצוב לבקשה - בדוק את החיבור שלך"
+
+#: package/contents/ui/GoogleHealthApi.qml:193
+msgid "Timed out at %1"
+msgstr "תם הזמן הקצוב ב-%1"
+
 #: package/contents/ui/GoogleHealthApi.qml:200
 msgid "%1 fetch"
 msgstr "אחזור %1"
 
-#. TRANSLATORS: %1 is a metric name such as Steps
 #: package/contents/ui/GoogleHealthApi.qml:211
 msgid "Failed to parse %1 data"
 msgstr "ניתוח נתוני %1 נכשל"
+
+#: package/contents/ui/GoogleHealthApi.qml:212
+msgid "Parse error at %1"
+msgstr "שגיאת ניתוח ב-%1"
+
+#: package/contents/ui/GoogleHealthApi.qml:246
+#: package/contents/ui/configGeneral.qml:261
+msgid "Active minutes"
+msgstr "דקות פעילות"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:91
+msgid "Unknown error"
+msgstr "שגיאה לא ידועה"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:98
+msgid "Failed to parse auth response"
+msgstr "ניתוח תגובת האישור נכשל"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:137
+#: package/contents/ui/GoogleHealthOAuth.qml:341
+msgid "Invalid client ID format"
+msgstr "פורמט מזהה לקוח לא חוקי"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:156
+msgid "Authorization canceled"
+msgstr "ההרשאה בוטלה"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:198
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
 
 #: package/contents/ui/GoogleHealthOAuth.qml:216
 msgid "Google server error (HTTP %1)"
 msgstr "שגיאת שרת Google (HTTP %1)"
 
-#: package/contents/ui/configGeneral.qml:102
+#: package/contents/ui/GoogleHealthOAuth.qml:220 scripts/fitdash-auth.py:68
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:292
+msgid "Network error during token refresh"
+msgstr "שגיאת רשת במהלך רענון אסימון"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:293
+msgid "Refresh token invalid — please re-authorize"
+msgstr "אסימון רענון אינו חוקי - אנא אשר מחדש"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:294
+msgid "Token refresh failed"
+msgstr "רענון האסימון נכשל"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:295
+msgid "Refresh failed — missing tokens"
+msgstr "הרענון נכשל - חסרים אסימונים"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:296
+msgid "Token refresh failed — invalid response"
+msgstr "רענון האסימון נכשל - תגובה לא חוקית"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:357
+msgid "Paste the redirect URL or authorization code first"
+msgstr "הדבק תחילה את כתובת ההפניה או את קוד ההרשאה"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:361
+msgid "Start the manual authorization first"
+msgstr "התחל תחילה את ההרשאה הידנית"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:381 scripts/fitdash-auth.py:130
+msgid "Authorization was denied"
+msgstr "ההרשאה נדחתה"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:388 scripts/fitdash-auth.py:116
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "ההרשאה נכשלה (חוסר התאמה של מצב) - אנא נסה שוב"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:392
+msgid "No authorization code found in the pasted text"
+msgstr "לא נמצא קוד הרשאה בטקסט שהודבק"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:403 scripts/fitdash-auth.py:70
+msgid "Network error during token exchange"
+msgstr "שגיאת רשת במהלך החלפת אסימונים"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:404
+msgid "Authorization code invalid or expired — please try again"
+msgstr "קוד ההרשאה לא חוקי או שפג תוקפו - אנא נסה שוב"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:405 scripts/fitdash-auth.py:68
+msgid "Token exchange failed"
+msgstr "החלפת אסימונים נכשלה"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:406 scripts/fitdash-auth.py:74
+msgid "Token exchange failed — missing tokens"
+msgstr "החלפת אסימונים נכשלה - חסרים אסימונים"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:407 scripts/fitdash-auth.py:204
+msgid "Token exchange failed — invalid response"
+msgstr "החלפת אסימונים נכשלה - תגובה לא חוקית"
+
+#: package/contents/ui/configGeneral.qml:9 package/contents/config/config.qml:6
+msgid "General"
+msgstr "כללי"
+
+#: package/contents/ui/configGeneral.qml:65
+msgid "Not authorized"
+msgstr "לא מורשה"
+
+#: package/contents/ui/configGeneral.qml:68
+msgid "Authorization problem — re-authorize"
+msgstr "בעיית הרשאה — יש לאשר מחדש"
+
+#: package/contents/ui/configGeneral.qml:71
+msgid "Token expired — refresh needed"
+msgstr "פג תוקף האסימון - נדרש רענון"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "unknown"
+msgstr "לא ידוע"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "Authorized (User: %1)"
+msgstr "מורשה (משתמש: %1)"
+
+#: package/contents/ui/configGeneral.qml:103
+msgid "Client ID:"
+msgstr "מזהה לקוח:"
+
+#: package/contents/ui/configGeneral.qml:104
 msgid "From Google Cloud Console"
 msgstr "מ־Google Cloud Console"
 
-#: package/contents/ui/configGeneral.qml:109
+#: package/contents/ui/configGeneral.qml:111
 msgid "Client Secret:"
 msgstr "סוד לקוח:"
 
-#: package/contents/ui/configGeneral.qml:110
+#: package/contents/ui/configGeneral.qml:112
 msgid "From the same OAuth client"
 msgstr "מאותו לקוח OAuth"
 
-#: package/contents/ui/configGeneral.qml:117
-msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
-msgstr "פרטי גישה של OAuth 2.0 מפרויקט Google Cloud שבו Google Health API מופעל"
+#: package/contents/ui/configGeneral.qml:119
+msgid ""
+"OAuth 2.0 credentials from a Google Cloud project with the Google Health API "
+"enabled"
+msgstr ""
+"פרטי גישה של OAuth 2.0 מפרויקט Google Cloud שבו Google Health API מופעל"
 
-#: package/contents/ui/configGeneral.qml:158
-msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
-msgstr "Google מתירה אוטומטית כל פורט localhost ללקוחות OAuth של אפליקציית שולחן עבודה — אין צורך לרשום את הכתובת הזו"
+#: package/contents/ui/configGeneral.qml:127
+msgid ""
+"You can also drop the downloaded client_secret.json file onto this window to "
+"fill them in."
+msgstr ""
+"אפשר גם לגרור את קובץ client_secret.json שהורדת אל החלון הזה כדי למלא אותם."
 
-#: package/contents/ui/configGeneral.qml:174
+#: package/contents/ui/configGeneral.qml:134
+msgid "Callback URL:"
+msgstr "כתובת Callback:"
+
+#: package/contents/ui/configGeneral.qml:147
+#: package/contents/ui/configGeneral.qml:387
+msgid "Copy to clipboard"
+msgstr "העתק ללוח"
+
+#: package/contents/ui/configGeneral.qml:160
+msgid "Callback port:"
+msgstr "פורט Callback:"
+
+#: package/contents/ui/configGeneral.qml:168
+msgid ""
+"Google allows any localhost port for Desktop app OAuth clients automatically "
+"— no need to register this URL"
+msgstr ""
+"Google מתירה אוטומטית כל פורט localhost ללקוחות OAuth של אפליקציית שולחן "
+"עבודה — אין צורך לרשום את הכתובת הזו"
+
+#: package/contents/ui/configGeneral.qml:176
+msgid "Refresh interval (minutes):"
+msgstr "מרווח רענון (דקות):"
+
+#: package/contents/ui/configGeneral.qml:184
 msgid "Recommended: 15–30 minutes to stay within API rate limits"
 msgstr "מומלץ: 15–30 דקות כדי לא לחרוג ממגבלות הבקשות של API"
 
-#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/configGeneral.qml:192
+msgid "Display"
+msgstr "תצוגה"
+
+#: package/contents/ui/configGeneral.qml:197
+msgid "Distance unit:"
+msgstr "יחידת מרחק:"
+
+#: package/contents/ui/configGeneral.qml:199
+msgid "Kilometers (km)"
+msgstr "קילומטרים (ק\"מ)"
+
+#: package/contents/ui/configGeneral.qml:200
+msgid "Miles (mi)"
+msgstr "מיילים (mi)"
+
+#: package/contents/ui/configGeneral.qml:211
 msgid "Step goal:"
 msgstr "יעד צעדים:"
 
-#: package/contents/ui/configGeneral.qml:207
+#: package/contents/ui/configGeneral.qml:217
 msgid "None"
 msgstr "ללא"
 
-#: package/contents/ui/configGeneral.qml:216
-msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
-msgstr "Google Health API אינו מדווח על יעד, ולכן הוא מוגדר כאן. 0 מציג במקום זאת ״לא הוגדר יעד צעדים״"
+#: package/contents/ui/configGeneral.qml:226
+msgid ""
+"The Google Health API doesn't report a goal, so this is set here. 0 shows "
+"“No step goal set” instead"
+msgstr ""
+"Google Health API אינו מדווח על יעד, ולכן הוא מוגדר כאן. 0 מציג במקום זאת "
+"״לא הוגדר יעד צעדים״"
 
-#: package/contents/ui/configGeneral.qml:292
+#: package/contents/ui/configGeneral.qml:234
+msgid "Visible Metrics"
+msgstr "מדדים גלויים"
+
+#: package/contents/ui/configGeneral.qml:268
+msgid "Resting heart rate"
+msgstr "דופק במנוחה"
+
+#: package/contents/ui/configGeneral.qml:282
+msgid "Blood oxygen (SpO2)"
+msgstr "חמצן בדם (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:289
+msgid "Heart rate variability"
+msgstr "השתנות קצב הלב"
+
+#: package/contents/ui/configGeneral.qml:296
+msgid "Breathing rate"
+msgstr "קצב נשימה"
+
+#: package/contents/ui/configGeneral.qml:302
 msgid "Google Health Account"
 msgstr "חשבון Google Health"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:306
+msgid "Status:"
+msgstr "מצב:"
+
+#: package/contents/ui/configGeneral.qml:314
+msgid "Last request:"
+msgstr "בקשה אחרונה:"
+
+#: package/contents/ui/configGeneral.qml:316
+msgid "No requests yet"
+msgstr "עדיין אין בקשות"
+
+#: package/contents/ui/configGeneral.qml:326
+msgid "Authorization:"
+msgstr "הרשאה:"
+
+#: package/contents/ui/configGeneral.qml:328
+msgid "Cancel"
+msgstr "ביטול"
+
+#: package/contents/ui/configGeneral.qml:329
 msgid "Re-authorize with Google"
 msgstr "הרשאה מחדש באמצעות Google"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:329
 msgid "Authorize with Google"
 msgstr "אישור באמצעות Google"
+
+#: package/contents/ui/configGeneral.qml:345
+msgid "Authorize manually (copy & paste)"
+msgstr "הרשאה ידנית (העתק והדבק)"
+
+#: package/contents/ui/configGeneral.qml:350
+msgid ""
+"Use this if the browser can't reach localhost (sandboxed browser, remote "
+"session, or no Python)"
+msgstr ""
+"השתמש בזה אם הדפדפן לא יכול להגיע ל-localhost (דפדפן בארגז חול, הפעלה מרחוק "
+"או ללא Python)"
+
+#: package/contents/ui/configGeneral.qml:366
+msgid "Step 1:"
+msgstr "שלב 1:"
+
+#: package/contents/ui/configGeneral.qml:367
+msgid "Open this URL in a browser and approve access:"
+msgstr "פתח את כתובת ה-URL הזו בדפדפן ואשר גישה:"
+
+#: package/contents/ui/configGeneral.qml:374
+msgid "Authorization URL:"
+msgstr "כתובת URL להרשאה:"
+
+#: package/contents/ui/configGeneral.qml:401
+msgid "Open in browser"
+msgstr "פתח בדפדפן"
+
+#: package/contents/ui/configGeneral.qml:410
+msgid "Step 2:"
+msgstr "שלב 2:"
+
+#: package/contents/ui/configGeneral.qml:411
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr "לאחר האישור, העתק את הכתובת משורת הכתובת והדבק אותה למטה:"
+
+#: package/contents/ui/configGeneral.qml:418
+msgid "Redirect URL or code:"
+msgstr "כתובת URL להפניה או קוד:"
+
+#: package/contents/ui/configGeneral.qml:422
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/callback?code=…"
+
+#: package/contents/ui/configGeneral.qml:429
+msgid "Complete"
+msgstr "סיום"
+
+#: package/contents/ui/configGeneral.qml:439
+msgid "Cancel manual authorization"
+msgstr "בטל הרשאה ידנית"
+
+#: package/contents/ui/configGeneral.qml:476
+msgid "The dropped file does not contain a client ID and client secret."
+msgstr "הקובץ שנגרר אינו מכיל מזהה לקוח וסוד לקוח."
+
+#: package/contents/ui/configGeneral.qml:480
+msgid "The client ID in the dropped file is not valid."
+msgstr "מזהה הלקוח בקובץ שנגרר אינו תקין."
+
+#: package/contents/ui/configGeneral.qml:486
+msgid "Client ID and secret imported from file."
+msgstr "מזהה הלקוח והסוד יובאו מהקובץ."
+
+#: package/contents/ui/configGeneral.qml:488
+#: package/contents/ui/configGeneral.qml:496
+#: package/contents/ui/configGeneral.qml:510
+msgid "Could not read the dropped file as a Google client secret JSON."
+msgstr "לא ניתן לקרוא את הקובץ שנגרר כקובץ JSON של סוד לקוח של Google."
+
+#: package/contents/ui/configGeneral.qml:546 scripts/fitdash-auth.py:128
+msgid "Authorization successful!"
+msgstr "ההרשאה הצליחה!"
+
+#: package/contents/ui/main.qml:87
+msgid "Not connected"
+msgstr "לא מחובר"
+
+#: package/contents/ui/main.qml:92
+msgid ""
+"Steps: %1 | Cal: %2 | Dist: %3\n"
+"Updated: %4"
+msgstr ""
+"צעדים: %1 | קלוריות: %2 | מרחק: %3\n"
+"עודכן: %4"
+
+#: package/contents/ui/main.qml:114
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "תוקף ההרשאה פג ב-%1 — יש לאשר מחדש"
+
+#: package/contents/ui/main.qml:127
+msgid "Token refresh failed at %1 — %2"
+msgstr "רענון האסימון נכשל ב-%1 — %2"
+
+#: package/contents/ui/main.qml:152
+msgid "No refresh token available — please re-authorize"
+msgstr "אין אסימון רענון זמין - אנא אשר מחדש"
+
+#: package/contents/ui/main.qml:184
+msgid "Token refreshed at %1"
+msgstr "האסימון רוענן ב-%1"
+
+#: scripts/fitdash-auth.py:101
+msgid "Missing client secret"
+msgstr ""
+
+#: scripts/fitdash-auth.py:128
+msgid "You can close this tab."
+msgstr ""
+
+#: scripts/fitdash-auth.py:145
+msgid "Could not start authorization server on port %1"
+msgstr ""
+
+#: scripts/fitdash-auth.py:192
+msgid "Authorization timed out — please try again"
+msgstr ""
+
+#~ msgid "From dev.fitbit.com/apps"
+#~ msgstr "מתוך dev.fitbit.com/apps"
+
+#~ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+#~ msgstr "מזהה לקוח OAuth 2.0 מהרישום של אפליקציית Fitbit"
+
+#~ msgid ""
+#~ "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+#~ msgstr ""
+#~ "הדבק את כתובת ה-Callback בהגדרות אפליקציית Fitbit שלך ב-dev.fitbit.com"
+
+#~ msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+#~ msgstr "מומלץ: 15–30 דקות כדי לא לחרוג ממגבלות הבקשות של Fitbit"
+
+#~ msgid "Fitbit Account"
+#~ msgstr "חשבון Fitbit"
+
+#~ msgid "Re-authorize with Fitbit"
+#~ msgstr "הרשאה מחדש באמצעות Fitbit"
+
+#~ msgid "Authorize with Fitbit"
+#~ msgstr "אישור באמצעות Fitbit"
+
+#~ msgid "Fitbit server error (HTTP %1)"
+#~ msgstr "שגיאת שרת Fitbit (HTTP %1)"
+
+#~ msgid "Activity fetch"
+#~ msgstr "אחזור פעילות"
+
+#~ msgid "Failed to parse activity data"
+#~ msgstr "ניתוח נתוני הפעילות נכשל"
+
+#~ msgid "Connect Fitbit"
+#~ msgstr "חבר את Fitbit"
+
+#~ msgid "Loading Fitbit data"
+#~ msgstr "טוען נתוני Fitbit"

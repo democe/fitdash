@@ -1,8 +1,9 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: FitDash 1.0.8\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
-"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
 "Last-Translator: FitDash contributors\n"
 "Language-Team: Catalan\n"
@@ -11,475 +12,640 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
-msgid "General"
-msgstr "General"
-#: package/contents/ui/configGeneral.qml:52
-msgid "Not authorized"
-msgstr "No autoritzat"
-#: package/contents/ui/configGeneral.qml:55
-msgid "Authorization problem — re-authorize"
-msgstr "Problema d'autorització — torneu a autoritzar"
-#: package/contents/ui/configGeneral.qml:58
-msgid "Token expired — refresh needed"
-msgstr "El testimoni ha caducat — cal actualitzar-lo"
-#: package/contents/ui/configGeneral.qml:60
-msgid "unknown"
-msgstr "desconegut"
-#: package/contents/ui/configGeneral.qml:60
-msgid "Authorized (User: %1)"
-msgstr "Autoritzat (usuari: %1)"
-#: package/contents/ui/configGeneral.qml:89
-msgid "Client ID:"
-msgstr "ID de client:"
-#: package/contents/ui/configGeneral.qml:90
-msgid "From dev.fitbit.com/apps"
-msgstr "Des de dev.fitbit.com/apps"
-#: package/contents/ui/configGeneral.qml:97
-msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "Identificador de client OAuth 2.0 del registre de l'aplicació Fitbit"
-#: package/contents/ui/configGeneral.qml:104
-msgid "Callback URL:"
-msgstr "URL de retorn:"
-#: package/contents/ui/configGeneral.qml:117
-#: package/contents/ui/configGeneral.qml:306
-msgid "Copy to clipboard"
-msgstr "Copia al porta-retalls"
-#: package/contents/ui/configGeneral.qml:130
-msgid "Callback port:"
-msgstr "Port de retorn:"
-#: package/contents/ui/configGeneral.qml:138
-msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "Enganxeu l'URL de retorn a la configuració de l'aplicació de Fitbit a dev.fitbit.com"
-#: package/contents/ui/configGeneral.qml:146
-msgid "Refresh interval (minutes):"
-msgstr "Interval d'actualització (minuts):"
-#: package/contents/ui/configGeneral.qml:154
-msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Recomanat: 15–30 minuts per no superar els límits de sol·licituds de Fitbit"
-#: package/contents/ui/configGeneral.qml:162
-msgid "Display"
-msgstr "Visualització"
-#: package/contents/ui/configGeneral.qml:167
-msgid "Distance unit:"
-msgstr "Unitat de distància:"
-#: package/contents/ui/configGeneral.qml:169
-msgid "Kilometers (km)"
-msgstr "Quilòmetres (km)"
-#: package/contents/ui/configGeneral.qml:170
-msgid "Miles (mi)"
-msgstr "Milles (mi)"
-#: package/contents/ui/configGeneral.qml:181
-msgid "Visible Metrics"
-msgstr "Mètriques visibles"
-#: package/contents/ui/configGeneral.qml:187
-#: package/contents/ui/FullRepresentation.qml:213
-msgid "Steps"
-msgstr "Passos"
-#: package/contents/ui/configGeneral.qml:194
-#: package/contents/ui/FullRepresentation.qml:263
-msgid "Calories"
-msgstr "Calories"
-#: package/contents/ui/configGeneral.qml:201
-#: package/contents/ui/FullRepresentation.qml:271
-msgid "Distance"
-msgstr "Distància"
-#: package/contents/ui/configGeneral.qml:208
-msgid "Active minutes"
-msgstr "Minuts actius"
-#: package/contents/ui/configGeneral.qml:215
-msgid "Resting heart rate"
-msgstr "Freqüència cardíaca en repòs"
-#: package/contents/ui/configGeneral.qml:221
-msgid "Fitbit Account"
-msgstr "Compte de Fitbit"
-#: package/contents/ui/configGeneral.qml:225
-msgid "Status:"
-msgstr "Estat:"
-#: package/contents/ui/configGeneral.qml:233
-msgid "Last request:"
-msgstr "Última sol·licitud:"
-#: package/contents/ui/configGeneral.qml:235
-msgid "No requests yet"
-msgstr "Encara no hi ha sol·licituds"
-#: package/contents/ui/configGeneral.qml:245
-msgid "Authorization:"
-msgstr "Autorització:"
-#: package/contents/ui/configGeneral.qml:247
-msgid "Cancel"
-msgstr "Cancel·la"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Re-authorize with Fitbit"
-msgstr "Torneu a autoritzar amb Fitbit"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Authorize with Fitbit"
-msgstr "Autoritza amb Fitbit"
-#: package/contents/ui/configGeneral.qml:264
-msgid "Authorize manually (copy & paste)"
-msgstr "Autoritza manualment (copia i enganxa)"
-#: package/contents/ui/configGeneral.qml:269
-msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Utilitzeu-ho si el navegador no pot accedir a localhost (navegador aïllat, sessió remota o sense Python)"
-#: package/contents/ui/configGeneral.qml:285
-msgid "Step 1:"
-msgstr "Pas 1:"
-#: package/contents/ui/configGeneral.qml:286
-msgid "Open this URL in a browser and approve access:"
-msgstr "Obriu aquest URL en un navegador i aproveu l'accés:"
-#: package/contents/ui/configGeneral.qml:293
-msgid "Authorization URL:"
-msgstr "URL d'autorització:"
-#: package/contents/ui/configGeneral.qml:320
-msgid "Open in browser"
-msgstr "Obre al navegador"
-#: package/contents/ui/configGeneral.qml:329
-msgid "Step 2:"
-msgstr "Pas 2:"
-#: package/contents/ui/configGeneral.qml:330
-msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "Després d'aprovar, copieu l'URL de la barra d'adreces i enganxeu-lo a continuació:"
-#: package/contents/ui/configGeneral.qml:337
-msgid "Redirect URL or code:"
-msgstr "URL o codi de redirecció:"
-#: package/contents/ui/configGeneral.qml:341
-msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:…/callback?code=…"
-#: package/contents/ui/configGeneral.qml:348
-msgid "Complete"
-msgstr "Completa"
-#: package/contents/ui/configGeneral.qml:358
-msgid "Cancel manual authorization"
-msgstr "Cancel·la l'autorització manual"
-#: package/contents/ui/configGeneral.qml:397
-msgid "Authorization successful!"
-msgstr "Autorització correcta!"
-#: package/contents/ui/FitbitApi.qml:33
-msgid "No access token"
-msgstr "Sense testimoni d'accés"
-#: package/contents/ui/FitbitApi.qml:52
-msgid "Network error — check your connection"
-msgstr "Error de xarxa — comproveu la connexió"
-#: package/contents/ui/FitbitApi.qml:53
-msgid "Network error at %1"
-msgstr "Error de xarxa a les %1"
-#: package/contents/ui/FitbitApi.qml:59
-msgid "Token expired at %1 — refreshing"
-msgstr "El testimoni ha caducat a les %1 — s'està actualitzant"
-#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
-msgid "Rate limited — try again later"
-msgstr "S'ha arribat al límit de sol·licituds — torneu-ho a provar més tard"
-#: package/contents/ui/FitbitApi.qml:66
-msgid "Rate limited at %1 — showing cached data"
-msgstr "S'ha arribat al límit de sol·licituds a les %1 — es mostren les dades de la memòria cau"
-#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
-msgid "Fitbit server error (HTTP %1)"
-msgstr "Error del servidor de Fitbit (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:73
-msgid "Server error (HTTP %1) at %2"
-msgstr "Error del servidor (HTTP %1) a les %2"
-#: package/contents/ui/FitbitApi.qml:79
-msgid "%1 failed (HTTP %2)"
-msgstr "%1 ha fallat (HTTP %2)"
-#: package/contents/ui/FitbitApi.qml:80
-msgid "Error (HTTP %1) at %2"
-msgstr "Error (HTTP %1) a les %2"
-#: package/contents/ui/FitbitApi.qml:107
-msgid "Request timed out — check your connection"
-msgstr "S'ha esgotat el temps de la sol·licitud — comproveu la connexió"
-#: package/contents/ui/FitbitApi.qml:108
-msgid "Timed out at %1"
-msgstr "S'ha esgotat el temps a les %1"
-#: package/contents/ui/FitbitApi.qml:116
-msgid "Activity fetch"
-msgstr "Obtenció de l'activitat"
-#: package/contents/ui/FitbitApi.qml:141
-msgid "OK — updated at %1"
-msgstr "D'acord — actualitzat a les %1"
-#: package/contents/ui/FitbitApi.qml:146
-msgid "Failed to parse activity data"
-msgstr "No s'han pogut analitzar les dades d'activitat"
-#: package/contents/ui/FitbitApi.qml:147
-msgid "Parse error at %1"
-msgstr "Error d'anàlisi a les %1"
-#: package/contents/ui/FitbitOAuth.qml:90
-msgid "Unknown error"
-msgstr "Error desconegut"
-#: package/contents/ui/FitbitOAuth.qml:97
-msgid "Failed to parse auth response"
-msgstr "No s'ha pogut analitzar la resposta d'autorització"
-#: package/contents/ui/FitbitOAuth.qml:136
-#: package/contents/ui/FitbitOAuth.qml:327
-msgid "Invalid client ID format"
-msgstr "Format d'identificador de client no vàlid"
-#: package/contents/ui/FitbitOAuth.qml:150
-msgid "Authorization canceled"
-msgstr "S'ha cancel·lat l'autorització"
-#: package/contents/ui/FitbitOAuth.qml:191
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-#: package/contents/ui/FitbitOAuth.qml:213
-msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2)"
-#: package/contents/ui/FitbitOAuth.qml:280
-msgid "Network error during token refresh"
-msgstr "Error de xarxa durant l'actualització del testimoni"
-#: package/contents/ui/FitbitOAuth.qml:281
-msgid "Refresh token invalid — please re-authorize"
-msgstr "El testimoni d'actualització no és vàlid — torneu a autoritzar"
-#: package/contents/ui/FitbitOAuth.qml:282
-msgid "Token refresh failed"
-msgstr "L'actualització del testimoni ha fallat"
-#: package/contents/ui/FitbitOAuth.qml:283
-msgid "Refresh failed — missing tokens"
-msgstr "Ha fallat l'actualització — falten testimonis"
-#: package/contents/ui/FitbitOAuth.qml:284
-msgid "Token refresh failed — invalid response"
-msgstr "L'actualització del testimoni ha fallat: resposta no vàlida"
-#: package/contents/ui/FitbitOAuth.qml:341
-msgid "Paste the redirect URL or authorization code first"
-msgstr "Enganxeu primer l'URL de redirecció o el codi d'autorització"
-#: package/contents/ui/FitbitOAuth.qml:345
-msgid "Start the manual authorization first"
-msgstr "Inicieu primer l'autorització manual"
-#: package/contents/ui/FitbitOAuth.qml:365
-msgid "Authorization was denied"
-msgstr "S'ha denegat l'autorització"
-#: package/contents/ui/FitbitOAuth.qml:372
-msgid "Authorization failed (state mismatch) — please try again"
-msgstr "Ha fallat l'autorització (l'estat no coincideix) — torneu-ho a provar"
-#: package/contents/ui/FitbitOAuth.qml:376
-msgid "No authorization code found in the pasted text"
-msgstr "No s'ha trobat cap codi d'autorització al text enganxat"
-#: package/contents/ui/FitbitOAuth.qml:386
-msgid "Network error during token exchange"
-msgstr "Error de xarxa durant l'intercanvi de testimonis"
-#: package/contents/ui/FitbitOAuth.qml:387
-msgid "Authorization code invalid or expired — please try again"
-msgstr "El codi d'autorització no és vàlid o ha caducat — torneu-ho a provar"
-#: package/contents/ui/FitbitOAuth.qml:388
-msgid "Token exchange failed"
-msgstr "Ha fallat l'intercanvi de testimonis"
-#: package/contents/ui/FitbitOAuth.qml:389
-msgid "Token exchange failed — missing tokens"
-msgstr "Ha fallat l'intercanvi de testimonis — falten testimonis"
-#: package/contents/ui/FitbitOAuth.qml:390
-msgid "Token exchange failed — invalid response"
-msgstr "Ha fallat l'intercanvi de testimonis: resposta no vàlida"
-#: package/contents/ui/FullRepresentation.qml:40
+#: package/contents/ui/FullRepresentation.qml:66
+#: package/contents/ui/main.qml:90
 msgctxt "distance in miles"
 msgid "%1 mi"
 msgstr "%1 mi"
-#: package/contents/ui/FullRepresentation.qml:42
+
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:91
 msgctxt "distance in kilometers"
 msgid "%1 km"
 msgstr "%1 km"
-#: package/contents/ui/FullRepresentation.qml:68
-#: package/contents/ui/main.qml:77
-msgid "FitDash"
-msgstr "FitDash"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Stale"
-msgstr "Desactualitzat"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Today"
-msgstr "Avui"
-#: package/contents/ui/FullRepresentation.qml:115
-msgid "Connect Fitbit"
-msgstr "Connecta amb Fitbit"
-#: package/contents/ui/FullRepresentation.qml:121
-msgid "Authorize your account in settings to show today's activity."
-msgstr "Autoritzeu el vostre compte a la configuració per mostrar l'activitat d'avui."
-#: package/contents/ui/FullRepresentation.qml:130
-msgid "Open Settings"
-msgstr "Obre la configuració"
-#: package/contents/ui/FullRepresentation.qml:160
-msgid "Loading Fitbit data"
-msgstr "S'estan carregant dades de Fitbit"
-#: package/contents/ui/FullRepresentation.qml:220
-#, javascript-format
-msgctxt "step goal progress"
-msgid "%1%"
-msgstr "%1%"
-#: package/contents/ui/FullRepresentation.qml:245
-msgid "%1 remaining of %2"
-msgstr "%1 restants de %2"
-#: package/contents/ui/FullRepresentation.qml:246
-msgid "No step goal set"
-msgstr "No s'ha definit cap objectiu de passos"
-#: package/contents/ui/FullRepresentation.qml:279
-msgid "Active"
-msgstr "Actiu"
-#: package/contents/ui/FullRepresentation.qml:280
-msgctxt "active minutes"
-msgid "%1 min"
-msgstr "%1 min"
-#: package/contents/ui/FullRepresentation.qml:287
-msgid "Resting HR"
-msgstr "FC en repòs"
-#: package/contents/ui/FullRepresentation.qml:289
-msgctxt "heart rate in beats per minute"
-msgid "%1 bpm"
-msgstr "%1 bpm"
-#: package/contents/ui/FullRepresentation.qml:310
-msgid "Updated %1"
-msgstr "Actualitzat a les %1"
-#: package/contents/ui/main.qml:79
-msgid "Not connected"
-msgstr "No connectat"
-#: package/contents/ui/main.qml:83
-msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Passos: %1 | Cal: %2 | Dist: %3\nActualitzat: %4"
-#: package/contents/ui/main.qml:105
-msgid "Authorization expired at %1 — please re-authorize"
-msgstr "L'autorització ha caducat a les %1 — torneu a autoritzar"
-#: package/contents/ui/main.qml:118
-msgid "Token refresh failed at %1 — %2"
-msgstr "L'actualització del testimoni ha fallat a les %1 — %2"
-#: package/contents/ui/main.qml:142
-msgid "No refresh token available — please re-authorize"
-msgstr "No hi ha cap testimoni d'actualització disponible — torneu a autoritzar"
-#: package/contents/ui/main.qml:169
-msgid "Token refreshed at %1"
-msgstr "Testimoni actualitzat a les %1"
-
-#: scripts/fitdash-auth.py
-msgid "You can close this tab."
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Could not start authorization server on port %1"
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Authorization timed out — please try again"
-msgstr ""
-
-#: package/contents/ui/FullRepresentation.qml:318
-msgid "Vitals"
-msgstr "Constants vitals"
-
-#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
-msgid "Sleep"
-msgstr "Son"
-
-#: package/contents/ui/FullRepresentation.qml:352
-msgid "SpO2"
-msgstr "SpO2"
-
-#: package/contents/ui/FullRepresentation.qml:362
-msgid "HRV"
-msgstr "VFC"
-
-#: package/contents/ui/FullRepresentation.qml:372
-msgid "Breathing"
-msgstr "Respiració"
 
 #: package/contents/ui/FullRepresentation.qml:73
 msgctxt "sleep duration in hours and minutes"
 msgid "%1h %2m"
 msgstr "%1h %2m"
 
+#: package/contents/ui/FullRepresentation.qml:98
+#: package/contents/ui/main.qml:85
+msgid "FitDash"
+msgstr "FitDash"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Stale"
+msgstr "Desactualitzat"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Today"
+msgstr "Avui"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Connecta amb Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:151
+msgid "Authorize your account in settings to show today's activity."
+msgstr ""
+"Autoritzeu el vostre compte a la configuració per mostrar l'activitat d'avui."
+
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Open Settings"
+msgstr "Obre la configuració"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "S'estan carregant dades de Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:243
+#: package/contents/ui/GoogleHealthApi.qml:227
+#: package/contents/ui/configGeneral.qml:240
+msgid "Steps"
+msgstr "Passos"
+
+#: package/contents/ui/FullRepresentation.qml:250
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "Encara no hi ha dades"
+
+#: package/contents/ui/FullRepresentation.qml:275
+msgid "%1 remaining of %2"
+msgstr "%1 restants de %2"
+
+#: package/contents/ui/FullRepresentation.qml:276
+msgid "No step goal set"
+msgstr "No s'ha definit cap objectiu de passos"
+
+#: package/contents/ui/FullRepresentation.qml:293
+#: package/contents/ui/GoogleHealthApi.qml:233
+#: package/contents/ui/configGeneral.qml:247
+msgid "Calories"
+msgstr "Calories"
+
+#: package/contents/ui/FullRepresentation.qml:301
+#: package/contents/ui/GoogleHealthApi.qml:239
+#: package/contents/ui/configGeneral.qml:254
+msgid "Distance"
+msgstr "Distància"
+
+#: package/contents/ui/FullRepresentation.qml:309
+msgid "Active"
+msgstr "Actiu"
+
+#: package/contents/ui/FullRepresentation.qml:310
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 min"
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "Constants vitals"
+
+#: package/contents/ui/FullRepresentation.qml:334
+#: package/contents/ui/configGeneral.qml:275
+msgid "Sleep"
+msgstr "Son"
+
+#: package/contents/ui/FullRepresentation.qml:342
+msgid "Resting HR"
+msgstr "FC en repòs"
+
+#: package/contents/ui/FullRepresentation.qml:344
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:354
+#, javascript-format
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "VFC"
+
 #: package/contents/ui/FullRepresentation.qml:364
 msgctxt "heart rate variability in milliseconds"
 msgid "%1 ms"
 msgstr "%1 ms"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "Respiració"
 
 #: package/contents/ui/FullRepresentation.qml:374
 msgctxt "respiratory rate in breaths per minute"
 msgid "%1 br/min"
 msgstr "%1 resp/min"
 
-#: package/contents/ui/configGeneral.qml:272
-msgid "Blood oxygen (SpO2)"
-msgstr "Oxigen en sang (SpO2)"
+#: package/contents/ui/FullRepresentation.qml:395
+msgid "Updated %1"
+msgstr "Actualitzat a les %1"
 
-#: package/contents/ui/configGeneral.qml:279
-msgid "Heart rate variability"
-msgstr "Variabilitat de la freqüència cardíaca"
+#: package/contents/ui/GoogleHealthApi.qml:45
+msgid "No access token"
+msgstr "Sense testimoni d'accés"
 
-#: package/contents/ui/configGeneral.qml:286
-msgid "Breathing rate"
-msgstr "Freqüència respiratòria"
+#: package/contents/ui/GoogleHealthApi.qml:118
+msgid "Network error — check your connection"
+msgstr "Error de xarxa — comproveu la connexió"
 
-#: package/contents/ui/FullRepresentation.qml:145
-msgid "Connect Google Health"
-msgstr "Connecta amb Google Health"
+#: package/contents/ui/GoogleHealthApi.qml:119
+msgid "Network error at %1"
+msgstr "Error de xarxa a les %1"
 
-#: package/contents/ui/FullRepresentation.qml:190
-msgid "Loading Google Health data"
-msgstr "S'estan carregant dades de Google Health"
+#: package/contents/ui/GoogleHealthApi.qml:125
+msgid "Token expired at %1 — refreshing"
+msgstr "El testimoni ha caducat a les %1 — s'està actualitzant"
 
-#: package/contents/ui/FullRepresentation.qml:273
-msgid "No data yet"
-msgstr "Encara no hi ha dades"
+#: package/contents/ui/GoogleHealthApi.qml:136
+#: package/contents/ui/GoogleHealthOAuth.qml:212
+msgid "Rate limited — try again later"
+msgstr "S'ha arribat al límit de sol·licituds — torneu-ho a provar més tard"
 
-#: package/contents/ui/FullRepresentation.qml:354
-msgctxt "blood oxygen saturation percentage"
-msgid "%1%"
-msgstr "%1%"
+#: package/contents/ui/GoogleHealthApi.qml:137
+msgid "Rate limited at %1 — showing cached data"
+msgstr ""
+"S'ha arribat al límit de sol·licituds a les %1 — es mostren les dades de la "
+"memòria cau"
 
 #: package/contents/ui/GoogleHealthApi.qml:143
 msgid "Google Health server error (HTTP %1)"
 msgstr "Error del servidor de Google Health (HTTP %1)"
 
-#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:144
+msgid "Server error (HTTP %1) at %2"
+msgstr "Error del servidor (HTTP %1) a les %2"
+
+#: package/contents/ui/GoogleHealthApi.qml:150
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 ha fallat (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthApi.qml:151
+msgid "Error (HTTP %1) at %2"
+msgstr "Error (HTTP %1) a les %2"
+
+#: package/contents/ui/GoogleHealthApi.qml:178
+msgid "OK — updated at %1"
+msgstr "D'acord — actualitzat a les %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:192
+msgid "Request timed out — check your connection"
+msgstr "S'ha esgotat el temps de la sol·licitud — comproveu la connexió"
+
+#: package/contents/ui/GoogleHealthApi.qml:193
+msgid "Timed out at %1"
+msgstr "S'ha esgotat el temps a les %1"
+
 #: package/contents/ui/GoogleHealthApi.qml:200
 msgid "%1 fetch"
 msgstr "Obtenció de %1"
 
-#. TRANSLATORS: %1 is a metric name such as Steps
 #: package/contents/ui/GoogleHealthApi.qml:211
 msgid "Failed to parse %1 data"
 msgstr "No s'han pogut processar les dades de %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:212
+msgid "Parse error at %1"
+msgstr "Error d'anàlisi a les %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:246
+#: package/contents/ui/configGeneral.qml:261
+msgid "Active minutes"
+msgstr "Minuts actius"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:91
+msgid "Unknown error"
+msgstr "Error desconegut"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:98
+msgid "Failed to parse auth response"
+msgstr "No s'ha pogut analitzar la resposta d'autorització"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:137
+#: package/contents/ui/GoogleHealthOAuth.qml:341
+msgid "Invalid client ID format"
+msgstr "Format d'identificador de client no vàlid"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:156
+msgid "Authorization canceled"
+msgstr "S'ha cancel·lat l'autorització"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:198
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
 
 #: package/contents/ui/GoogleHealthOAuth.qml:216
 msgid "Google server error (HTTP %1)"
 msgstr "Error del servidor de Google (HTTP %1)"
 
-#: package/contents/ui/configGeneral.qml:102
+#: package/contents/ui/GoogleHealthOAuth.qml:220 scripts/fitdash-auth.py:68
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:292
+msgid "Network error during token refresh"
+msgstr "Error de xarxa durant l'actualització del testimoni"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:293
+msgid "Refresh token invalid — please re-authorize"
+msgstr "El testimoni d'actualització no és vàlid — torneu a autoritzar"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:294
+msgid "Token refresh failed"
+msgstr "L'actualització del testimoni ha fallat"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:295
+msgid "Refresh failed — missing tokens"
+msgstr "Ha fallat l'actualització — falten testimonis"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:296
+msgid "Token refresh failed — invalid response"
+msgstr "L'actualització del testimoni ha fallat: resposta no vàlida"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:357
+msgid "Paste the redirect URL or authorization code first"
+msgstr "Enganxeu primer l'URL de redirecció o el codi d'autorització"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:361
+msgid "Start the manual authorization first"
+msgstr "Inicieu primer l'autorització manual"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:381 scripts/fitdash-auth.py:130
+msgid "Authorization was denied"
+msgstr "S'ha denegat l'autorització"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:388 scripts/fitdash-auth.py:116
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "Ha fallat l'autorització (l'estat no coincideix) — torneu-ho a provar"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:392
+msgid "No authorization code found in the pasted text"
+msgstr "No s'ha trobat cap codi d'autorització al text enganxat"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:403 scripts/fitdash-auth.py:70
+msgid "Network error during token exchange"
+msgstr "Error de xarxa durant l'intercanvi de testimonis"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:404
+msgid "Authorization code invalid or expired — please try again"
+msgstr "El codi d'autorització no és vàlid o ha caducat — torneu-ho a provar"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:405 scripts/fitdash-auth.py:68
+msgid "Token exchange failed"
+msgstr "Ha fallat l'intercanvi de testimonis"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:406 scripts/fitdash-auth.py:74
+msgid "Token exchange failed — missing tokens"
+msgstr "Ha fallat l'intercanvi de testimonis — falten testimonis"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:407 scripts/fitdash-auth.py:204
+msgid "Token exchange failed — invalid response"
+msgstr "Ha fallat l'intercanvi de testimonis: resposta no vàlida"
+
+#: package/contents/ui/configGeneral.qml:9 package/contents/config/config.qml:6
+msgid "General"
+msgstr "General"
+
+#: package/contents/ui/configGeneral.qml:65
+msgid "Not authorized"
+msgstr "No autoritzat"
+
+#: package/contents/ui/configGeneral.qml:68
+msgid "Authorization problem — re-authorize"
+msgstr "Problema d'autorització — torneu a autoritzar"
+
+#: package/contents/ui/configGeneral.qml:71
+msgid "Token expired — refresh needed"
+msgstr "El testimoni ha caducat — cal actualitzar-lo"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "unknown"
+msgstr "desconegut"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "Authorized (User: %1)"
+msgstr "Autoritzat (usuari: %1)"
+
+#: package/contents/ui/configGeneral.qml:103
+msgid "Client ID:"
+msgstr "ID de client:"
+
+#: package/contents/ui/configGeneral.qml:104
 msgid "From Google Cloud Console"
 msgstr "De Google Cloud Console"
 
-#: package/contents/ui/configGeneral.qml:109
+#: package/contents/ui/configGeneral.qml:111
 msgid "Client Secret:"
 msgstr "Secret del client:"
 
-#: package/contents/ui/configGeneral.qml:110
+#: package/contents/ui/configGeneral.qml:112
 msgid "From the same OAuth client"
 msgstr "Del mateix client OAuth"
 
-#: package/contents/ui/configGeneral.qml:117
-msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
-msgstr "Credencials OAuth 2.0 d'un projecte de Google Cloud amb la Google Health API activada"
+#: package/contents/ui/configGeneral.qml:119
+msgid ""
+"OAuth 2.0 credentials from a Google Cloud project with the Google Health API "
+"enabled"
+msgstr ""
+"Credencials OAuth 2.0 d'un projecte de Google Cloud amb la Google Health API "
+"activada"
 
-#: package/contents/ui/configGeneral.qml:158
-msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
-msgstr "Google permet automàticament qualsevol port localhost per als clients OAuth d'aplicació d'escriptori — no cal registrar aquest URL"
+#: package/contents/ui/configGeneral.qml:127
+msgid ""
+"You can also drop the downloaded client_secret.json file onto this window to "
+"fill them in."
+msgstr ""
+"També podeu deixar anar el fitxer client_secret.json baixat sobre aquesta "
+"finestra per omplir-los."
 
-#: package/contents/ui/configGeneral.qml:174
+#: package/contents/ui/configGeneral.qml:134
+msgid "Callback URL:"
+msgstr "URL de retorn:"
+
+#: package/contents/ui/configGeneral.qml:147
+#: package/contents/ui/configGeneral.qml:387
+msgid "Copy to clipboard"
+msgstr "Copia al porta-retalls"
+
+#: package/contents/ui/configGeneral.qml:160
+msgid "Callback port:"
+msgstr "Port de retorn:"
+
+#: package/contents/ui/configGeneral.qml:168
+msgid ""
+"Google allows any localhost port for Desktop app OAuth clients automatically "
+"— no need to register this URL"
+msgstr ""
+"Google permet automàticament qualsevol port localhost per als clients OAuth "
+"d'aplicació d'escriptori — no cal registrar aquest URL"
+
+#: package/contents/ui/configGeneral.qml:176
+msgid "Refresh interval (minutes):"
+msgstr "Interval d'actualització (minuts):"
+
+#: package/contents/ui/configGeneral.qml:184
 msgid "Recommended: 15–30 minutes to stay within API rate limits"
-msgstr "Recomanat: 15–30 minuts per no superar els límits de sol·licituds de API"
+msgstr ""
+"Recomanat: 15–30 minuts per no superar els límits de sol·licituds de API"
 
-#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/configGeneral.qml:192
+msgid "Display"
+msgstr "Visualització"
+
+#: package/contents/ui/configGeneral.qml:197
+msgid "Distance unit:"
+msgstr "Unitat de distància:"
+
+#: package/contents/ui/configGeneral.qml:199
+msgid "Kilometers (km)"
+msgstr "Quilòmetres (km)"
+
+#: package/contents/ui/configGeneral.qml:200
+msgid "Miles (mi)"
+msgstr "Milles (mi)"
+
+#: package/contents/ui/configGeneral.qml:211
 msgid "Step goal:"
 msgstr "Objectiu de passos:"
 
-#: package/contents/ui/configGeneral.qml:207
+#: package/contents/ui/configGeneral.qml:217
 msgid "None"
 msgstr "Cap"
 
-#: package/contents/ui/configGeneral.qml:216
-msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
-msgstr "La Google Health API no informa d'un objectiu, així que es defineix aquí. 0 mostra «No s'ha definit cap objectiu de passos»"
+#: package/contents/ui/configGeneral.qml:226
+msgid ""
+"The Google Health API doesn't report a goal, so this is set here. 0 shows "
+"“No step goal set” instead"
+msgstr ""
+"La Google Health API no informa d'un objectiu, així que es defineix aquí. 0 "
+"mostra «No s'ha definit cap objectiu de passos»"
 
-#: package/contents/ui/configGeneral.qml:292
+#: package/contents/ui/configGeneral.qml:234
+msgid "Visible Metrics"
+msgstr "Mètriques visibles"
+
+#: package/contents/ui/configGeneral.qml:268
+msgid "Resting heart rate"
+msgstr "Freqüència cardíaca en repòs"
+
+#: package/contents/ui/configGeneral.qml:282
+msgid "Blood oxygen (SpO2)"
+msgstr "Oxigen en sang (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:289
+msgid "Heart rate variability"
+msgstr "Variabilitat de la freqüència cardíaca"
+
+#: package/contents/ui/configGeneral.qml:296
+msgid "Breathing rate"
+msgstr "Freqüència respiratòria"
+
+#: package/contents/ui/configGeneral.qml:302
 msgid "Google Health Account"
 msgstr "Compte de Google Health"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:306
+msgid "Status:"
+msgstr "Estat:"
+
+#: package/contents/ui/configGeneral.qml:314
+msgid "Last request:"
+msgstr "Última sol·licitud:"
+
+#: package/contents/ui/configGeneral.qml:316
+msgid "No requests yet"
+msgstr "Encara no hi ha sol·licituds"
+
+#: package/contents/ui/configGeneral.qml:326
+msgid "Authorization:"
+msgstr "Autorització:"
+
+#: package/contents/ui/configGeneral.qml:328
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: package/contents/ui/configGeneral.qml:329
 msgid "Re-authorize with Google"
 msgstr "Torneu a autoritzar amb Google"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:329
 msgid "Authorize with Google"
 msgstr "Autoritza amb Google"
+
+#: package/contents/ui/configGeneral.qml:345
+msgid "Authorize manually (copy & paste)"
+msgstr "Autoritza manualment (copia i enganxa)"
+
+#: package/contents/ui/configGeneral.qml:350
+msgid ""
+"Use this if the browser can't reach localhost (sandboxed browser, remote "
+"session, or no Python)"
+msgstr ""
+"Utilitzeu-ho si el navegador no pot accedir a localhost (navegador aïllat, "
+"sessió remota o sense Python)"
+
+#: package/contents/ui/configGeneral.qml:366
+msgid "Step 1:"
+msgstr "Pas 1:"
+
+#: package/contents/ui/configGeneral.qml:367
+msgid "Open this URL in a browser and approve access:"
+msgstr "Obriu aquest URL en un navegador i aproveu l'accés:"
+
+#: package/contents/ui/configGeneral.qml:374
+msgid "Authorization URL:"
+msgstr "URL d'autorització:"
+
+#: package/contents/ui/configGeneral.qml:401
+msgid "Open in browser"
+msgstr "Obre al navegador"
+
+#: package/contents/ui/configGeneral.qml:410
+msgid "Step 2:"
+msgstr "Pas 2:"
+
+#: package/contents/ui/configGeneral.qml:411
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr ""
+"Després d'aprovar, copieu l'URL de la barra d'adreces i enganxeu-lo a "
+"continuació:"
+
+#: package/contents/ui/configGeneral.qml:418
+msgid "Redirect URL or code:"
+msgstr "URL o codi de redirecció:"
+
+#: package/contents/ui/configGeneral.qml:422
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/callback?code=…"
+
+#: package/contents/ui/configGeneral.qml:429
+msgid "Complete"
+msgstr "Completa"
+
+#: package/contents/ui/configGeneral.qml:439
+msgid "Cancel manual authorization"
+msgstr "Cancel·la l'autorització manual"
+
+#: package/contents/ui/configGeneral.qml:476
+msgid "The dropped file does not contain a client ID and client secret."
+msgstr "El fitxer deixat anar no conté cap ID de client ni secret del client."
+
+#: package/contents/ui/configGeneral.qml:480
+msgid "The client ID in the dropped file is not valid."
+msgstr "L'ID de client del fitxer deixat anar no és vàlid."
+
+#: package/contents/ui/configGeneral.qml:486
+msgid "Client ID and secret imported from file."
+msgstr "S'han importat l'ID i el secret del client des del fitxer."
+
+#: package/contents/ui/configGeneral.qml:488
+#: package/contents/ui/configGeneral.qml:496
+#: package/contents/ui/configGeneral.qml:510
+msgid "Could not read the dropped file as a Google client secret JSON."
+msgstr ""
+"No s'ha pogut llegir el fitxer deixat anar com a JSON de secret de client de "
+"Google."
+
+#: package/contents/ui/configGeneral.qml:546 scripts/fitdash-auth.py:128
+msgid "Authorization successful!"
+msgstr "Autorització correcta!"
+
+#: package/contents/ui/main.qml:87
+msgid "Not connected"
+msgstr "No connectat"
+
+#: package/contents/ui/main.qml:92
+msgid ""
+"Steps: %1 | Cal: %2 | Dist: %3\n"
+"Updated: %4"
+msgstr ""
+"Passos: %1 | Cal: %2 | Dist: %3\n"
+"Actualitzat: %4"
+
+#: package/contents/ui/main.qml:114
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "L'autorització ha caducat a les %1 — torneu a autoritzar"
+
+#: package/contents/ui/main.qml:127
+msgid "Token refresh failed at %1 — %2"
+msgstr "L'actualització del testimoni ha fallat a les %1 — %2"
+
+#: package/contents/ui/main.qml:152
+msgid "No refresh token available — please re-authorize"
+msgstr ""
+"No hi ha cap testimoni d'actualització disponible — torneu a autoritzar"
+
+#: package/contents/ui/main.qml:184
+msgid "Token refreshed at %1"
+msgstr "Testimoni actualitzat a les %1"
+
+#: scripts/fitdash-auth.py:101
+msgid "Missing client secret"
+msgstr ""
+
+#: scripts/fitdash-auth.py:128
+msgid "You can close this tab."
+msgstr ""
+
+#: scripts/fitdash-auth.py:145
+msgid "Could not start authorization server on port %1"
+msgstr ""
+
+#: scripts/fitdash-auth.py:192
+msgid "Authorization timed out — please try again"
+msgstr ""
+
+#~ msgid "From dev.fitbit.com/apps"
+#~ msgstr "Des de dev.fitbit.com/apps"
+
+#~ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+#~ msgstr ""
+#~ "Identificador de client OAuth 2.0 del registre de l'aplicació Fitbit"
+
+#~ msgid ""
+#~ "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+#~ msgstr ""
+#~ "Enganxeu l'URL de retorn a la configuració de l'aplicació de Fitbit a "
+#~ "dev.fitbit.com"
+
+#~ msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+#~ msgstr ""
+#~ "Recomanat: 15–30 minuts per no superar els límits de sol·licituds de "
+#~ "Fitbit"
+
+#~ msgid "Fitbit Account"
+#~ msgstr "Compte de Fitbit"
+
+#~ msgid "Re-authorize with Fitbit"
+#~ msgstr "Torneu a autoritzar amb Fitbit"
+
+#~ msgid "Authorize with Fitbit"
+#~ msgstr "Autoritza amb Fitbit"
+
+#~ msgid "Fitbit server error (HTTP %1)"
+#~ msgstr "Error del servidor de Fitbit (HTTP %1)"
+
+#~ msgid "Activity fetch"
+#~ msgstr "Obtenció de l'activitat"
+
+#~ msgid "Failed to parse activity data"
+#~ msgstr "No s'han pogut analitzar les dades d'activitat"
+
+#~ msgid "Connect Fitbit"
+#~ msgstr "Connecta amb Fitbit"
+
+#~ msgid "Loading Fitbit data"
+#~ msgstr "S'estan carregant dades de Fitbit"

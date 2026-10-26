@@ -1,8 +1,9 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: FitDash 1.0.8\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
-"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
 "Last-Translator: FitDash contributors\n"
 "Language-Team: Estonian\n"
@@ -11,475 +12,629 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
-msgid "General"
-msgstr "Üldine"
-#: package/contents/ui/configGeneral.qml:52
-msgid "Not authorized"
-msgstr "Pole autoriseeritud"
-#: package/contents/ui/configGeneral.qml:55
-msgid "Authorization problem — re-authorize"
-msgstr "Autoriseerimisprobleem – autoriseerige uuesti"
-#: package/contents/ui/configGeneral.qml:58
-msgid "Token expired — refresh needed"
-msgstr "Tõend on aegunud – vaja on värskendada"
-#: package/contents/ui/configGeneral.qml:60
-msgid "unknown"
-msgstr "teadmata"
-#: package/contents/ui/configGeneral.qml:60
-msgid "Authorized (User: %1)"
-msgstr "Autoriseeritud (kasutaja: %1)"
-#: package/contents/ui/configGeneral.qml:89
-msgid "Client ID:"
-msgstr "Kliendi ID:"
-#: package/contents/ui/configGeneral.qml:90
-msgid "From dev.fitbit.com/apps"
-msgstr "Saidilt dev.fitbit.com/apps"
-#: package/contents/ui/configGeneral.qml:97
-msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "OAuth 2.0 kliendi ID teie Fitbiti rakenduse registreeringust"
-#: package/contents/ui/configGeneral.qml:104
-msgid "Callback URL:"
-msgstr "Tagasikutse URL:"
-#: package/contents/ui/configGeneral.qml:117
-#: package/contents/ui/configGeneral.qml:306
-msgid "Copy to clipboard"
-msgstr "Kopeeri lõikelauale"
-#: package/contents/ui/configGeneral.qml:130
-msgid "Callback port:"
-msgstr "Tagasikutse port:"
-#: package/contents/ui/configGeneral.qml:138
-msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "Kleepige tagasikutse URL oma Fitbiti rakenduse seadetesse aadressil dev.fitbit.com"
-#: package/contents/ui/configGeneral.qml:146
-msgid "Refresh interval (minutes):"
-msgstr "Värskendusintervall (minutid):"
-#: package/contents/ui/configGeneral.qml:154
-msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Soovitatav: 15–30 minutit, et Fitbiti päringupiiranguid mitte ületada"
-#: package/contents/ui/configGeneral.qml:162
-msgid "Display"
-msgstr "Kuva"
-#: package/contents/ui/configGeneral.qml:167
-msgid "Distance unit:"
-msgstr "Vahemaa ühik:"
-#: package/contents/ui/configGeneral.qml:169
-msgid "Kilometers (km)"
-msgstr "Kilomeetrid (km)"
-#: package/contents/ui/configGeneral.qml:170
-msgid "Miles (mi)"
-msgstr "Miilid (mi)"
-#: package/contents/ui/configGeneral.qml:181
-msgid "Visible Metrics"
-msgstr "Nähtavad mõõdikud"
-#: package/contents/ui/configGeneral.qml:187
-#: package/contents/ui/FullRepresentation.qml:213
-msgid "Steps"
-msgstr "Sammud"
-#: package/contents/ui/configGeneral.qml:194
-#: package/contents/ui/FullRepresentation.qml:263
-msgid "Calories"
-msgstr "Kalorid"
-#: package/contents/ui/configGeneral.qml:201
-#: package/contents/ui/FullRepresentation.qml:271
-msgid "Distance"
-msgstr "Vahemaa"
-#: package/contents/ui/configGeneral.qml:208
-msgid "Active minutes"
-msgstr "Aktiivsed minutid"
-#: package/contents/ui/configGeneral.qml:215
-msgid "Resting heart rate"
-msgstr "Puhkepulss"
-#: package/contents/ui/configGeneral.qml:221
-msgid "Fitbit Account"
-msgstr "Fitbiti konto"
-#: package/contents/ui/configGeneral.qml:225
-msgid "Status:"
-msgstr "Olek:"
-#: package/contents/ui/configGeneral.qml:233
-msgid "Last request:"
-msgstr "Viimane päring:"
-#: package/contents/ui/configGeneral.qml:235
-msgid "No requests yet"
-msgstr "Päringuid veel pole"
-#: package/contents/ui/configGeneral.qml:245
-msgid "Authorization:"
-msgstr "Autoriseerimine:"
-#: package/contents/ui/configGeneral.qml:247
-msgid "Cancel"
-msgstr "Tühista"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Re-authorize with Fitbit"
-msgstr "Autoriseeri uuesti Fitbitiga"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Authorize with Fitbit"
-msgstr "Autoriseeri Fitbitiga"
-#: package/contents/ui/configGeneral.qml:264
-msgid "Authorize manually (copy & paste)"
-msgstr "Autoriseeri käsitsi (kopeeri ja kleebi)"
-#: package/contents/ui/configGeneral.qml:269
-msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Kasutage seda, kui brauser ei pääse ligi aadressile localhost (liivakastis brauser, kaugseanss või Python puudub)"
-#: package/contents/ui/configGeneral.qml:285
-msgid "Step 1:"
-msgstr "1. samm:"
-#: package/contents/ui/configGeneral.qml:286
-msgid "Open this URL in a browser and approve access:"
-msgstr "Avage see URL brauseris ja kinnitage juurdepääs:"
-#: package/contents/ui/configGeneral.qml:293
-msgid "Authorization URL:"
-msgstr "Autoriseerimise URL:"
-#: package/contents/ui/configGeneral.qml:320
-msgid "Open in browser"
-msgstr "Ava brauseris"
-#: package/contents/ui/configGeneral.qml:329
-msgid "Step 2:"
-msgstr "2. samm:"
-#: package/contents/ui/configGeneral.qml:330
-msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "Pärast kinnitamist kopeerige aadressiriba URL ja kleepige see alla:"
-#: package/contents/ui/configGeneral.qml:337
-msgid "Redirect URL or code:"
-msgstr "Ümbersuunamise URL või kood:"
-#: package/contents/ui/configGeneral.qml:341
-msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:…/callback?code=…"
-#: package/contents/ui/configGeneral.qml:348
-msgid "Complete"
-msgstr "Lõpeta"
-#: package/contents/ui/configGeneral.qml:358
-msgid "Cancel manual authorization"
-msgstr "Tühista käsitsi autoriseerimine"
-#: package/contents/ui/configGeneral.qml:397
-msgid "Authorization successful!"
-msgstr "Autoriseerimine õnnestus!"
-#: package/contents/ui/FitbitApi.qml:33
-msgid "No access token"
-msgstr "Juurdepääsutõend puudub"
-#: package/contents/ui/FitbitApi.qml:52
-msgid "Network error — check your connection"
-msgstr "Võrguviga – kontrollige ühendust"
-#: package/contents/ui/FitbitApi.qml:53
-msgid "Network error at %1"
-msgstr "Võrguviga kell %1"
-#: package/contents/ui/FitbitApi.qml:59
-msgid "Token expired at %1 — refreshing"
-msgstr "Tõend aegus kell %1 – värskendamine"
-#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
-msgid "Rate limited — try again later"
-msgstr "Päringupiirang ületatud – proovige hiljem uuesti"
-#: package/contents/ui/FitbitApi.qml:66
-msgid "Rate limited at %1 — showing cached data"
-msgstr "Päringupiirang ületatud kell %1 – kuvatakse vahemälus olevaid andmeid"
-#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
-msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbiti serveri viga (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:73
-msgid "Server error (HTTP %1) at %2"
-msgstr "Serveri viga (HTTP %1) kell %2"
-#: package/contents/ui/FitbitApi.qml:79
-msgid "%1 failed (HTTP %2)"
-msgstr "%1 ebaõnnestus (HTTP %2)"
-#: package/contents/ui/FitbitApi.qml:80
-msgid "Error (HTTP %1) at %2"
-msgstr "Viga (HTTP %1) kell %2"
-#: package/contents/ui/FitbitApi.qml:107
-msgid "Request timed out — check your connection"
-msgstr "Taotlus aegus – kontrollige ühendust"
-#: package/contents/ui/FitbitApi.qml:108
-msgid "Timed out at %1"
-msgstr "Ajalõpp kell %1"
-#: package/contents/ui/FitbitApi.qml:116
-msgid "Activity fetch"
-msgstr "Aktiivsusandmete toomine"
-#: package/contents/ui/FitbitApi.qml:141
-msgid "OK — updated at %1"
-msgstr "OK – värskendatud kell %1"
-#: package/contents/ui/FitbitApi.qml:146
-msgid "Failed to parse activity data"
-msgstr "Aktiivsusandmete parsimine ebaõnnestus"
-#: package/contents/ui/FitbitApi.qml:147
-msgid "Parse error at %1"
-msgstr "Parsimisviga kell %1"
-#: package/contents/ui/FitbitOAuth.qml:90
-msgid "Unknown error"
-msgstr "Tundmatu viga"
-#: package/contents/ui/FitbitOAuth.qml:97
-msgid "Failed to parse auth response"
-msgstr "Autoriseerimisvastuse parsimine ebaõnnestus"
-#: package/contents/ui/FitbitOAuth.qml:136
-#: package/contents/ui/FitbitOAuth.qml:327
-msgid "Invalid client ID format"
-msgstr "Vale kliendi ID vorming"
-#: package/contents/ui/FitbitOAuth.qml:150
-msgid "Authorization canceled"
-msgstr "Autoriseerimine tühistati"
-#: package/contents/ui/FitbitOAuth.qml:191
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-#: package/contents/ui/FitbitOAuth.qml:213
-msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2)"
-#: package/contents/ui/FitbitOAuth.qml:280
-msgid "Network error during token refresh"
-msgstr "Võrguviga tõendi värskendamisel"
-#: package/contents/ui/FitbitOAuth.qml:281
-msgid "Refresh token invalid — please re-authorize"
-msgstr "Värskendustõend on kehtetu – autoriseerige uuesti"
-#: package/contents/ui/FitbitOAuth.qml:282
-msgid "Token refresh failed"
-msgstr "Tõendi värskendamine ebaõnnestus"
-#: package/contents/ui/FitbitOAuth.qml:283
-msgid "Refresh failed — missing tokens"
-msgstr "Värskendamine ebaõnnestus – tõendid puuduvad"
-#: package/contents/ui/FitbitOAuth.qml:284
-msgid "Token refresh failed — invalid response"
-msgstr "Tõendi värskendamine ebaõnnestus – vigane vastus"
-#: package/contents/ui/FitbitOAuth.qml:341
-msgid "Paste the redirect URL or authorization code first"
-msgstr "Esmalt kleepige ümbersuunamise URL või autoriseerimiskood"
-#: package/contents/ui/FitbitOAuth.qml:345
-msgid "Start the manual authorization first"
-msgstr "Käivitage esmalt käsitsi autoriseerimine"
-#: package/contents/ui/FitbitOAuth.qml:365
-msgid "Authorization was denied"
-msgstr "Autoriseerimine lükati tagasi"
-#: package/contents/ui/FitbitOAuth.qml:372
-msgid "Authorization failed (state mismatch) — please try again"
-msgstr "Autoriseerimine ebaõnnestus (oleku mittevastavus) – proovige uuesti"
-#: package/contents/ui/FitbitOAuth.qml:376
-msgid "No authorization code found in the pasted text"
-msgstr "Kleebitud tekstist autoriseerimiskoodi ei leitud"
-#: package/contents/ui/FitbitOAuth.qml:386
-msgid "Network error during token exchange"
-msgstr "Võrguviga tõendi vahetamisel"
-#: package/contents/ui/FitbitOAuth.qml:387
-msgid "Authorization code invalid or expired — please try again"
-msgstr "Autoriseerimiskood on kehtetu või aegunud – proovige uuesti"
-#: package/contents/ui/FitbitOAuth.qml:388
-msgid "Token exchange failed"
-msgstr "Tõendi vahetamine ebaõnnestus"
-#: package/contents/ui/FitbitOAuth.qml:389
-msgid "Token exchange failed — missing tokens"
-msgstr "Tõendi vahetamine ebaõnnestus – tõendid puuduvad"
-#: package/contents/ui/FitbitOAuth.qml:390
-msgid "Token exchange failed — invalid response"
-msgstr "Tõendi vahetamine ebaõnnestus – vigane vastus"
-#: package/contents/ui/FullRepresentation.qml:40
+#: package/contents/ui/FullRepresentation.qml:66
+#: package/contents/ui/main.qml:90
 msgctxt "distance in miles"
 msgid "%1 mi"
 msgstr "%1 mi"
-#: package/contents/ui/FullRepresentation.qml:42
+
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:91
 msgctxt "distance in kilometers"
 msgid "%1 km"
 msgstr "%1 km"
-#: package/contents/ui/FullRepresentation.qml:68
-#: package/contents/ui/main.qml:77
-msgid "FitDash"
-msgstr "FitDash"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Stale"
-msgstr "Aegunud"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Today"
-msgstr "Täna"
-#: package/contents/ui/FullRepresentation.qml:115
-msgid "Connect Fitbit"
-msgstr "Ühenda Fitbit"
-#: package/contents/ui/FullRepresentation.qml:121
-msgid "Authorize your account in settings to show today's activity."
-msgstr "Tänase aktiivsuse kuvamiseks autoriseerige oma konto seadetes."
-#: package/contents/ui/FullRepresentation.qml:130
-msgid "Open Settings"
-msgstr "Ava seaded"
-#: package/contents/ui/FullRepresentation.qml:160
-msgid "Loading Fitbit data"
-msgstr "Fitbiti andmete laadimine"
-#: package/contents/ui/FullRepresentation.qml:220
-#, javascript-format
-msgctxt "step goal progress"
-msgid "%1%"
-msgstr "%1%"
-#: package/contents/ui/FullRepresentation.qml:245
-msgid "%1 remaining of %2"
-msgstr "%1 jäänud (eesmärk %2)"
-#: package/contents/ui/FullRepresentation.qml:246
-msgid "No step goal set"
-msgstr "Sammude eesmärki pole määratud"
-#: package/contents/ui/FullRepresentation.qml:279
-msgid "Active"
-msgstr "Aktiivsus"
-#: package/contents/ui/FullRepresentation.qml:280
-msgctxt "active minutes"
-msgid "%1 min"
-msgstr "%1 min"
-#: package/contents/ui/FullRepresentation.qml:287
-msgid "Resting HR"
-msgstr "Puhkepulss"
-#: package/contents/ui/FullRepresentation.qml:289
-msgctxt "heart rate in beats per minute"
-msgid "%1 bpm"
-msgstr "%1 bpm"
-#: package/contents/ui/FullRepresentation.qml:310
-msgid "Updated %1"
-msgstr "Värskendatud kell %1"
-#: package/contents/ui/main.qml:79
-msgid "Not connected"
-msgstr "Pole ühendatud"
-#: package/contents/ui/main.qml:83
-msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Sammud: %1 | Kal: %2 | Vahem.: %3\nVärskendatud: %4"
-#: package/contents/ui/main.qml:105
-msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Autoriseerimine aegus kell %1 – autoriseerige uuesti"
-#: package/contents/ui/main.qml:118
-msgid "Token refresh failed at %1 — %2"
-msgstr "Tõendi värskendamine ebaõnnestus kell %1 – %2"
-#: package/contents/ui/main.qml:142
-msgid "No refresh token available — please re-authorize"
-msgstr "Värskendustõend pole saadaval – autoriseerige uuesti"
-#: package/contents/ui/main.qml:169
-msgid "Token refreshed at %1"
-msgstr "Tõend värskendati kell %1"
-
-#: scripts/fitdash-auth.py
-msgid "You can close this tab."
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Could not start authorization server on port %1"
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Authorization timed out — please try again"
-msgstr ""
-
-#: package/contents/ui/FullRepresentation.qml:318
-msgid "Vitals"
-msgstr "Elutähtsad näitajad"
-
-#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
-msgid "Sleep"
-msgstr "Uni"
-
-#: package/contents/ui/FullRepresentation.qml:352
-msgid "SpO2"
-msgstr "SpO2"
-
-#: package/contents/ui/FullRepresentation.qml:362
-msgid "HRV"
-msgstr "SLV"
-
-#: package/contents/ui/FullRepresentation.qml:372
-msgid "Breathing"
-msgstr "Hingamine"
 
 #: package/contents/ui/FullRepresentation.qml:73
 msgctxt "sleep duration in hours and minutes"
 msgid "%1h %2m"
 msgstr "%1 h %2 min"
 
+#: package/contents/ui/FullRepresentation.qml:98
+#: package/contents/ui/main.qml:85
+msgid "FitDash"
+msgstr "FitDash"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Stale"
+msgstr "Aegunud"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Today"
+msgstr "Täna"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Ühenda Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:151
+msgid "Authorize your account in settings to show today's activity."
+msgstr "Tänase aktiivsuse kuvamiseks autoriseerige oma konto seadetes."
+
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Open Settings"
+msgstr "Ava seaded"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "Google Healthi andmete laadimine"
+
+#: package/contents/ui/FullRepresentation.qml:243
+#: package/contents/ui/GoogleHealthApi.qml:227
+#: package/contents/ui/configGeneral.qml:240
+msgid "Steps"
+msgstr "Sammud"
+
+#: package/contents/ui/FullRepresentation.qml:250
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "Andmeid veel pole"
+
+#: package/contents/ui/FullRepresentation.qml:275
+msgid "%1 remaining of %2"
+msgstr "%1 jäänud (eesmärk %2)"
+
+#: package/contents/ui/FullRepresentation.qml:276
+msgid "No step goal set"
+msgstr "Sammude eesmärki pole määratud"
+
+#: package/contents/ui/FullRepresentation.qml:293
+#: package/contents/ui/GoogleHealthApi.qml:233
+#: package/contents/ui/configGeneral.qml:247
+msgid "Calories"
+msgstr "Kalorid"
+
+#: package/contents/ui/FullRepresentation.qml:301
+#: package/contents/ui/GoogleHealthApi.qml:239
+#: package/contents/ui/configGeneral.qml:254
+msgid "Distance"
+msgstr "Vahemaa"
+
+#: package/contents/ui/FullRepresentation.qml:309
+msgid "Active"
+msgstr "Aktiivsus"
+
+#: package/contents/ui/FullRepresentation.qml:310
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 min"
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "Elutähtsad näitajad"
+
+#: package/contents/ui/FullRepresentation.qml:334
+#: package/contents/ui/configGeneral.qml:275
+msgid "Sleep"
+msgstr "Uni"
+
+#: package/contents/ui/FullRepresentation.qml:342
+msgid "Resting HR"
+msgstr "Puhkepulss"
+
+#: package/contents/ui/FullRepresentation.qml:344
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:354
+#, javascript-format
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "SLV"
+
 #: package/contents/ui/FullRepresentation.qml:364
 msgctxt "heart rate variability in milliseconds"
 msgid "%1 ms"
 msgstr "%1 ms"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "Hingamine"
 
 #: package/contents/ui/FullRepresentation.qml:374
 msgctxt "respiratory rate in breaths per minute"
 msgid "%1 br/min"
 msgstr "%1 hingetõmmet/min"
 
-#: package/contents/ui/configGeneral.qml:272
-msgid "Blood oxygen (SpO2)"
-msgstr "Vere hapnikusisaldus (SpO2)"
+#: package/contents/ui/FullRepresentation.qml:395
+msgid "Updated %1"
+msgstr "Värskendatud kell %1"
 
-#: package/contents/ui/configGeneral.qml:279
-msgid "Heart rate variability"
-msgstr "Südame löögisageduse varieeruvus"
+#: package/contents/ui/GoogleHealthApi.qml:45
+msgid "No access token"
+msgstr "Juurdepääsutõend puudub"
 
-#: package/contents/ui/configGeneral.qml:286
-msgid "Breathing rate"
-msgstr "Hingamissagedus"
+#: package/contents/ui/GoogleHealthApi.qml:118
+msgid "Network error — check your connection"
+msgstr "Võrguviga – kontrollige ühendust"
 
-#: package/contents/ui/FullRepresentation.qml:145
-msgid "Connect Google Health"
-msgstr "Ühenda Google Health"
+#: package/contents/ui/GoogleHealthApi.qml:119
+msgid "Network error at %1"
+msgstr "Võrguviga kell %1"
 
-#: package/contents/ui/FullRepresentation.qml:190
-msgid "Loading Google Health data"
-msgstr "Google Healthi andmete laadimine"
+#: package/contents/ui/GoogleHealthApi.qml:125
+msgid "Token expired at %1 — refreshing"
+msgstr "Tõend aegus kell %1 – värskendamine"
 
-#: package/contents/ui/FullRepresentation.qml:273
-msgid "No data yet"
-msgstr "Andmeid veel pole"
+#: package/contents/ui/GoogleHealthApi.qml:136
+#: package/contents/ui/GoogleHealthOAuth.qml:212
+msgid "Rate limited — try again later"
+msgstr "Päringupiirang ületatud – proovige hiljem uuesti"
 
-#: package/contents/ui/FullRepresentation.qml:354
-msgctxt "blood oxygen saturation percentage"
-msgid "%1%"
-msgstr "%1%"
+#: package/contents/ui/GoogleHealthApi.qml:137
+msgid "Rate limited at %1 — showing cached data"
+msgstr "Päringupiirang ületatud kell %1 – kuvatakse vahemälus olevaid andmeid"
 
 #: package/contents/ui/GoogleHealthApi.qml:143
 msgid "Google Health server error (HTTP %1)"
 msgstr "Google Healthi serveri viga (HTTP %1)"
 
-#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:144
+msgid "Server error (HTTP %1) at %2"
+msgstr "Serveri viga (HTTP %1) kell %2"
+
+#: package/contents/ui/GoogleHealthApi.qml:150
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 ebaõnnestus (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthApi.qml:151
+msgid "Error (HTTP %1) at %2"
+msgstr "Viga (HTTP %1) kell %2"
+
+#: package/contents/ui/GoogleHealthApi.qml:178
+msgid "OK — updated at %1"
+msgstr "OK – värskendatud kell %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:192
+msgid "Request timed out — check your connection"
+msgstr "Taotlus aegus – kontrollige ühendust"
+
+#: package/contents/ui/GoogleHealthApi.qml:193
+msgid "Timed out at %1"
+msgstr "Ajalõpp kell %1"
+
 #: package/contents/ui/GoogleHealthApi.qml:200
 msgid "%1 fetch"
 msgstr "%1 – laadimine"
 
-#. TRANSLATORS: %1 is a metric name such as Steps
 #: package/contents/ui/GoogleHealthApi.qml:211
 msgid "Failed to parse %1 data"
 msgstr "%1 andmete töötlemine ebaõnnestus"
+
+#: package/contents/ui/GoogleHealthApi.qml:212
+msgid "Parse error at %1"
+msgstr "Parsimisviga kell %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:246
+#: package/contents/ui/configGeneral.qml:261
+msgid "Active minutes"
+msgstr "Aktiivsed minutid"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:91
+msgid "Unknown error"
+msgstr "Tundmatu viga"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:98
+msgid "Failed to parse auth response"
+msgstr "Autoriseerimisvastuse parsimine ebaõnnestus"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:137
+#: package/contents/ui/GoogleHealthOAuth.qml:341
+msgid "Invalid client ID format"
+msgstr "Vale kliendi ID vorming"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:156
+msgid "Authorization canceled"
+msgstr "Autoriseerimine tühistati"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:198
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
 
 #: package/contents/ui/GoogleHealthOAuth.qml:216
 msgid "Google server error (HTTP %1)"
 msgstr "Googlei serveri viga (HTTP %1)"
 
-#: package/contents/ui/configGeneral.qml:102
+#: package/contents/ui/GoogleHealthOAuth.qml:220 scripts/fitdash-auth.py:68
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:292
+msgid "Network error during token refresh"
+msgstr "Võrguviga tõendi värskendamisel"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:293
+msgid "Refresh token invalid — please re-authorize"
+msgstr "Värskendustõend on kehtetu – autoriseerige uuesti"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:294
+msgid "Token refresh failed"
+msgstr "Tõendi värskendamine ebaõnnestus"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:295
+msgid "Refresh failed — missing tokens"
+msgstr "Värskendamine ebaõnnestus – tõendid puuduvad"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:296
+msgid "Token refresh failed — invalid response"
+msgstr "Tõendi värskendamine ebaõnnestus – vigane vastus"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:357
+msgid "Paste the redirect URL or authorization code first"
+msgstr "Esmalt kleepige ümbersuunamise URL või autoriseerimiskood"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:361
+msgid "Start the manual authorization first"
+msgstr "Käivitage esmalt käsitsi autoriseerimine"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:381 scripts/fitdash-auth.py:130
+msgid "Authorization was denied"
+msgstr "Autoriseerimine lükati tagasi"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:388 scripts/fitdash-auth.py:116
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "Autoriseerimine ebaõnnestus (oleku mittevastavus) – proovige uuesti"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:392
+msgid "No authorization code found in the pasted text"
+msgstr "Kleebitud tekstist autoriseerimiskoodi ei leitud"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:403 scripts/fitdash-auth.py:70
+msgid "Network error during token exchange"
+msgstr "Võrguviga tõendi vahetamisel"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:404
+msgid "Authorization code invalid or expired — please try again"
+msgstr "Autoriseerimiskood on kehtetu või aegunud – proovige uuesti"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:405 scripts/fitdash-auth.py:68
+msgid "Token exchange failed"
+msgstr "Tõendi vahetamine ebaõnnestus"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:406 scripts/fitdash-auth.py:74
+msgid "Token exchange failed — missing tokens"
+msgstr "Tõendi vahetamine ebaõnnestus – tõendid puuduvad"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:407 scripts/fitdash-auth.py:204
+msgid "Token exchange failed — invalid response"
+msgstr "Tõendi vahetamine ebaõnnestus – vigane vastus"
+
+#: package/contents/ui/configGeneral.qml:9 package/contents/config/config.qml:6
+msgid "General"
+msgstr "Üldine"
+
+#: package/contents/ui/configGeneral.qml:65
+msgid "Not authorized"
+msgstr "Pole autoriseeritud"
+
+#: package/contents/ui/configGeneral.qml:68
+msgid "Authorization problem — re-authorize"
+msgstr "Autoriseerimisprobleem – autoriseerige uuesti"
+
+#: package/contents/ui/configGeneral.qml:71
+msgid "Token expired — refresh needed"
+msgstr "Tõend on aegunud – vaja on värskendada"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "unknown"
+msgstr "teadmata"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "Authorized (User: %1)"
+msgstr "Autoriseeritud (kasutaja: %1)"
+
+#: package/contents/ui/configGeneral.qml:103
+msgid "Client ID:"
+msgstr "Kliendi ID:"
+
+#: package/contents/ui/configGeneral.qml:104
 msgid "From Google Cloud Console"
 msgstr "Google Cloud Console'ist"
 
-#: package/contents/ui/configGeneral.qml:109
+#: package/contents/ui/configGeneral.qml:111
 msgid "Client Secret:"
 msgstr "Kliendi saladus:"
 
-#: package/contents/ui/configGeneral.qml:110
+#: package/contents/ui/configGeneral.qml:112
 msgid "From the same OAuth client"
 msgstr "Samast OAuth-kliendist"
 
-#: package/contents/ui/configGeneral.qml:117
-msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
-msgstr "Google Cloudi projekti OAuth 2.0 mandaadid, kus Google Health API on lubatud"
+#: package/contents/ui/configGeneral.qml:119
+msgid ""
+"OAuth 2.0 credentials from a Google Cloud project with the Google Health API "
+"enabled"
+msgstr ""
+"Google Cloudi projekti OAuth 2.0 mandaadid, kus Google Health API on lubatud"
 
-#: package/contents/ui/configGeneral.qml:158
-msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
-msgstr "Google lubab töölauarakenduse OAuth-klientidele automaatselt mis tahes localhosti pordi — seda URL-i pole vaja registreerida"
+#: package/contents/ui/configGeneral.qml:127
+msgid ""
+"You can also drop the downloaded client_secret.json file onto this window to "
+"fill them in."
+msgstr ""
+"Võid ka allalaaditud faili client_secret.json sellele aknale lohistada, et "
+"need täita."
 
-#: package/contents/ui/configGeneral.qml:174
+#: package/contents/ui/configGeneral.qml:134
+msgid "Callback URL:"
+msgstr "Tagasikutse URL:"
+
+#: package/contents/ui/configGeneral.qml:147
+#: package/contents/ui/configGeneral.qml:387
+msgid "Copy to clipboard"
+msgstr "Kopeeri lõikelauale"
+
+#: package/contents/ui/configGeneral.qml:160
+msgid "Callback port:"
+msgstr "Tagasikutse port:"
+
+#: package/contents/ui/configGeneral.qml:168
+msgid ""
+"Google allows any localhost port for Desktop app OAuth clients automatically "
+"— no need to register this URL"
+msgstr ""
+"Google lubab töölauarakenduse OAuth-klientidele automaatselt mis tahes "
+"localhosti pordi — seda URL-i pole vaja registreerida"
+
+#: package/contents/ui/configGeneral.qml:176
+msgid "Refresh interval (minutes):"
+msgstr "Värskendusintervall (minutid):"
+
+#: package/contents/ui/configGeneral.qml:184
 msgid "Recommended: 15–30 minutes to stay within API rate limits"
 msgstr "Soovitatav: 15–30 minutit, et APIi päringupiiranguid mitte ületada"
 
-#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/configGeneral.qml:192
+msgid "Display"
+msgstr "Kuva"
+
+#: package/contents/ui/configGeneral.qml:197
+msgid "Distance unit:"
+msgstr "Vahemaa ühik:"
+
+#: package/contents/ui/configGeneral.qml:199
+msgid "Kilometers (km)"
+msgstr "Kilomeetrid (km)"
+
+#: package/contents/ui/configGeneral.qml:200
+msgid "Miles (mi)"
+msgstr "Miilid (mi)"
+
+#: package/contents/ui/configGeneral.qml:211
 msgid "Step goal:"
 msgstr "Sammude eesmärk:"
 
-#: package/contents/ui/configGeneral.qml:207
+#: package/contents/ui/configGeneral.qml:217
 msgid "None"
 msgstr "Puudub"
 
-#: package/contents/ui/configGeneral.qml:216
-msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
-msgstr "Google Health API ei teata eesmärki, seega määratakse see siin. 0 kuvab selle asemel „Sammude eesmärki pole määratud“"
+#: package/contents/ui/configGeneral.qml:226
+msgid ""
+"The Google Health API doesn't report a goal, so this is set here. 0 shows "
+"“No step goal set” instead"
+msgstr ""
+"Google Health API ei teata eesmärki, seega määratakse see siin. 0 kuvab "
+"selle asemel „Sammude eesmärki pole määratud“"
 
-#: package/contents/ui/configGeneral.qml:292
+#: package/contents/ui/configGeneral.qml:234
+msgid "Visible Metrics"
+msgstr "Nähtavad mõõdikud"
+
+#: package/contents/ui/configGeneral.qml:268
+msgid "Resting heart rate"
+msgstr "Puhkepulss"
+
+#: package/contents/ui/configGeneral.qml:282
+msgid "Blood oxygen (SpO2)"
+msgstr "Vere hapnikusisaldus (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:289
+msgid "Heart rate variability"
+msgstr "Südame löögisageduse varieeruvus"
+
+#: package/contents/ui/configGeneral.qml:296
+msgid "Breathing rate"
+msgstr "Hingamissagedus"
+
+#: package/contents/ui/configGeneral.qml:302
 msgid "Google Health Account"
 msgstr "Google Healthi konto"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:306
+msgid "Status:"
+msgstr "Olek:"
+
+#: package/contents/ui/configGeneral.qml:314
+msgid "Last request:"
+msgstr "Viimane päring:"
+
+#: package/contents/ui/configGeneral.qml:316
+msgid "No requests yet"
+msgstr "Päringuid veel pole"
+
+#: package/contents/ui/configGeneral.qml:326
+msgid "Authorization:"
+msgstr "Autoriseerimine:"
+
+#: package/contents/ui/configGeneral.qml:328
+msgid "Cancel"
+msgstr "Tühista"
+
+#: package/contents/ui/configGeneral.qml:329
 msgid "Re-authorize with Google"
 msgstr "Autoriseeri uuesti Googleiga"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:329
 msgid "Authorize with Google"
 msgstr "Autoriseeri Googleiga"
+
+#: package/contents/ui/configGeneral.qml:345
+msgid "Authorize manually (copy & paste)"
+msgstr "Autoriseeri käsitsi (kopeeri ja kleebi)"
+
+#: package/contents/ui/configGeneral.qml:350
+msgid ""
+"Use this if the browser can't reach localhost (sandboxed browser, remote "
+"session, or no Python)"
+msgstr ""
+"Kasutage seda, kui brauser ei pääse ligi aadressile localhost (liivakastis "
+"brauser, kaugseanss või Python puudub)"
+
+#: package/contents/ui/configGeneral.qml:366
+msgid "Step 1:"
+msgstr "1. samm:"
+
+#: package/contents/ui/configGeneral.qml:367
+msgid "Open this URL in a browser and approve access:"
+msgstr "Avage see URL brauseris ja kinnitage juurdepääs:"
+
+#: package/contents/ui/configGeneral.qml:374
+msgid "Authorization URL:"
+msgstr "Autoriseerimise URL:"
+
+#: package/contents/ui/configGeneral.qml:401
+msgid "Open in browser"
+msgstr "Ava brauseris"
+
+#: package/contents/ui/configGeneral.qml:410
+msgid "Step 2:"
+msgstr "2. samm:"
+
+#: package/contents/ui/configGeneral.qml:411
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr "Pärast kinnitamist kopeerige aadressiriba URL ja kleepige see alla:"
+
+#: package/contents/ui/configGeneral.qml:418
+msgid "Redirect URL or code:"
+msgstr "Ümbersuunamise URL või kood:"
+
+#: package/contents/ui/configGeneral.qml:422
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/callback?code=…"
+
+#: package/contents/ui/configGeneral.qml:429
+msgid "Complete"
+msgstr "Lõpeta"
+
+#: package/contents/ui/configGeneral.qml:439
+msgid "Cancel manual authorization"
+msgstr "Tühista käsitsi autoriseerimine"
+
+#: package/contents/ui/configGeneral.qml:476
+msgid "The dropped file does not contain a client ID and client secret."
+msgstr "Lohistatud fail ei sisalda kliendi ID-d ega kliendi saladust."
+
+#: package/contents/ui/configGeneral.qml:480
+msgid "The client ID in the dropped file is not valid."
+msgstr "Lohistatud faili kliendi ID ei ole kehtiv."
+
+#: package/contents/ui/configGeneral.qml:486
+msgid "Client ID and secret imported from file."
+msgstr "Kliendi ID ja saladus imporditi failist."
+
+#: package/contents/ui/configGeneral.qml:488
+#: package/contents/ui/configGeneral.qml:496
+#: package/contents/ui/configGeneral.qml:510
+msgid "Could not read the dropped file as a Google client secret JSON."
+msgstr ""
+"Lohistatud faili ei õnnestunud lugeda Google'i kliendi saladuse JSON-failina."
+
+#: package/contents/ui/configGeneral.qml:546 scripts/fitdash-auth.py:128
+msgid "Authorization successful!"
+msgstr "Autoriseerimine õnnestus!"
+
+#: package/contents/ui/main.qml:87
+msgid "Not connected"
+msgstr "Pole ühendatud"
+
+#: package/contents/ui/main.qml:92
+msgid ""
+"Steps: %1 | Cal: %2 | Dist: %3\n"
+"Updated: %4"
+msgstr ""
+"Sammud: %1 | Kal: %2 | Vahem.: %3\n"
+"Värskendatud: %4"
+
+#: package/contents/ui/main.qml:114
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "Autoriseerimine aegus kell %1 – autoriseerige uuesti"
+
+#: package/contents/ui/main.qml:127
+msgid "Token refresh failed at %1 — %2"
+msgstr "Tõendi värskendamine ebaõnnestus kell %1 – %2"
+
+#: package/contents/ui/main.qml:152
+msgid "No refresh token available — please re-authorize"
+msgstr "Värskendustõend pole saadaval – autoriseerige uuesti"
+
+#: package/contents/ui/main.qml:184
+msgid "Token refreshed at %1"
+msgstr "Tõend värskendati kell %1"
+
+#: scripts/fitdash-auth.py:101
+msgid "Missing client secret"
+msgstr ""
+
+#: scripts/fitdash-auth.py:128
+msgid "You can close this tab."
+msgstr ""
+
+#: scripts/fitdash-auth.py:145
+msgid "Could not start authorization server on port %1"
+msgstr ""
+
+#: scripts/fitdash-auth.py:192
+msgid "Authorization timed out — please try again"
+msgstr ""
+
+#~ msgid "From dev.fitbit.com/apps"
+#~ msgstr "Saidilt dev.fitbit.com/apps"
+
+#~ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+#~ msgstr "OAuth 2.0 kliendi ID teie Fitbiti rakenduse registreeringust"
+
+#~ msgid ""
+#~ "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+#~ msgstr ""
+#~ "Kleepige tagasikutse URL oma Fitbiti rakenduse seadetesse aadressil "
+#~ "dev.fitbit.com"
+
+#~ msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+#~ msgstr ""
+#~ "Soovitatav: 15–30 minutit, et Fitbiti päringupiiranguid mitte ületada"
+
+#~ msgid "Fitbit Account"
+#~ msgstr "Fitbiti konto"
+
+#~ msgid "Re-authorize with Fitbit"
+#~ msgstr "Autoriseeri uuesti Fitbitiga"
+
+#~ msgid "Authorize with Fitbit"
+#~ msgstr "Autoriseeri Fitbitiga"
+
+#~ msgid "Fitbit server error (HTTP %1)"
+#~ msgstr "Fitbiti serveri viga (HTTP %1)"
+
+#~ msgid "Activity fetch"
+#~ msgstr "Aktiivsusandmete toomine"
+
+#~ msgid "Failed to parse activity data"
+#~ msgstr "Aktiivsusandmete parsimine ebaõnnestus"
+
+#~ msgid "Connect Fitbit"
+#~ msgstr "Ühenda Fitbit"
+
+#~ msgid "Loading Fitbit data"
+#~ msgstr "Fitbiti andmete laadimine"

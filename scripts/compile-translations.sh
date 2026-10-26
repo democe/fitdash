@@ -7,8 +7,8 @@ if [[ $# -ne 1 ]]; then
 fi
 
 if ! command -v msgfmt >/dev/null 2>&1; then
-    echo "Warning: msgfmt not found; skipping translations" >&2
-    exit 0
+    echo "Error: msgfmt not found; install gettext to compile translations" >&2
+    exit 1
 fi
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"

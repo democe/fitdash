@@ -1,8 +1,9 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: FitDash 1.0.8\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
-"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
 "Last-Translator: FitDash contributors\n"
 "Language-Team: Thai\n"
@@ -11,475 +12,623 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
-msgid "General"
-msgstr "ทั่วไป"
-#: package/contents/ui/configGeneral.qml:52
-msgid "Not authorized"
-msgstr "ไม่ได้รับอนุญาต"
-#: package/contents/ui/configGeneral.qml:55
-msgid "Authorization problem — re-authorize"
-msgstr "ปัญหาการอนุญาต — อนุญาตอีกครั้ง"
-#: package/contents/ui/configGeneral.qml:58
-msgid "Token expired — refresh needed"
-msgstr "โทเค็นหมดอายุ - จำเป็นต้องรีเฟรช"
-#: package/contents/ui/configGeneral.qml:60
-msgid "unknown"
-msgstr "ไม่ทราบ"
-#: package/contents/ui/configGeneral.qml:60
-msgid "Authorized (User: %1)"
-msgstr "ได้รับอนุญาตแล้ว (ผู้ใช้: %1)"
-#: package/contents/ui/configGeneral.qml:89
-msgid "Client ID:"
-msgstr "รหัสไคลเอ็นต์:"
-#: package/contents/ui/configGeneral.qml:90
-msgid "From dev.fitbit.com/apps"
-msgstr "จาก dev.fitbit.com/apps"
-#: package/contents/ui/configGeneral.qml:97
-msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "รหัสไคลเอ็นต์ OAuth 2.0 จากการลงทะเบียนแอป Fitbit ของคุณ"
-#: package/contents/ui/configGeneral.qml:104
-msgid "Callback URL:"
-msgstr "URL สำหรับ Callback:"
-#: package/contents/ui/configGeneral.qml:117
-#: package/contents/ui/configGeneral.qml:306
-msgid "Copy to clipboard"
-msgstr "คัดลอกไปยังคลิปบอร์ด"
-#: package/contents/ui/configGeneral.qml:130
-msgid "Callback port:"
-msgstr "พอร์ต Callback:"
-#: package/contents/ui/configGeneral.qml:138
-msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "วาง URL สำหรับ Callback ลงในการตั้งค่าแอป Fitbit ของคุณที่ dev.fitbit.com"
-#: package/contents/ui/configGeneral.qml:146
-msgid "Refresh interval (minutes):"
-msgstr "ช่วงเวลารีเฟรช (นาที):"
-#: package/contents/ui/configGeneral.qml:154
-msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "แนะนำ: 15–30 นาที เพื่อไม่ให้เกินขีดจำกัดจำนวนคำขอของ Fitbit"
-#: package/contents/ui/configGeneral.qml:162
-msgid "Display"
-msgstr "การแสดงผล"
-#: package/contents/ui/configGeneral.qml:167
-msgid "Distance unit:"
-msgstr "หน่วยระยะทาง:"
-#: package/contents/ui/configGeneral.qml:169
-msgid "Kilometers (km)"
-msgstr "กิโลเมตร (กม.)"
-#: package/contents/ui/configGeneral.qml:170
-msgid "Miles (mi)"
-msgstr "ไมล์ (mi)"
-#: package/contents/ui/configGeneral.qml:181
-msgid "Visible Metrics"
-msgstr "ตัวชี้วัดที่มองเห็นได้"
-#: package/contents/ui/configGeneral.qml:187
-#: package/contents/ui/FullRepresentation.qml:213
-msgid "Steps"
-msgstr "ก้าว"
-#: package/contents/ui/configGeneral.qml:194
-#: package/contents/ui/FullRepresentation.qml:263
-msgid "Calories"
-msgstr "แคลอรี่"
-#: package/contents/ui/configGeneral.qml:201
-#: package/contents/ui/FullRepresentation.qml:271
-msgid "Distance"
-msgstr "ระยะทาง"
-#: package/contents/ui/configGeneral.qml:208
-msgid "Active minutes"
-msgstr "นาทีที่แอคทีฟ"
-#: package/contents/ui/configGeneral.qml:215
-msgid "Resting heart rate"
-msgstr "อัตราการเต้นของหัวใจขณะพัก"
-#: package/contents/ui/configGeneral.qml:221
-msgid "Fitbit Account"
-msgstr "บัญชี Fitbit"
-#: package/contents/ui/configGeneral.qml:225
-msgid "Status:"
-msgstr "สถานะ:"
-#: package/contents/ui/configGeneral.qml:233
-msgid "Last request:"
-msgstr "คำขอครั้งสุดท้าย:"
-#: package/contents/ui/configGeneral.qml:235
-msgid "No requests yet"
-msgstr "ยังไม่มีการร้องขอ"
-#: package/contents/ui/configGeneral.qml:245
-msgid "Authorization:"
-msgstr "การอนุญาต:"
-#: package/contents/ui/configGeneral.qml:247
-msgid "Cancel"
-msgstr "ยกเลิก"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Re-authorize with Fitbit"
-msgstr "อนุญาตอีกครั้งกับ Fitbit"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Authorize with Fitbit"
-msgstr "อนุญาตกับ Fitbit"
-#: package/contents/ui/configGeneral.qml:264
-msgid "Authorize manually (copy & paste)"
-msgstr "อนุญาตด้วยตนเอง (คัดลอกและวาง)"
-#: package/contents/ui/configGeneral.qml:269
-msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "ใช้สิ่งนี้หากเบราว์เซอร์ไม่สามารถเข้าถึง localhost (เบราว์เซอร์แบบแซนด์บ็อกซ์ เซสชันระยะไกล หรือไม่มี Python)"
-#: package/contents/ui/configGeneral.qml:285
-msgid "Step 1:"
-msgstr "ขั้นตอนที่ 1:"
-#: package/contents/ui/configGeneral.qml:286
-msgid "Open this URL in a browser and approve access:"
-msgstr "เปิด URL นี้ในเบราว์เซอร์และอนุมัติการเข้าถึง:"
-#: package/contents/ui/configGeneral.qml:293
-msgid "Authorization URL:"
-msgstr "URL การอนุญาต:"
-#: package/contents/ui/configGeneral.qml:320
-msgid "Open in browser"
-msgstr "เปิดในเบราว์เซอร์"
-#: package/contents/ui/configGeneral.qml:329
-msgid "Step 2:"
-msgstr "ขั้นตอนที่ 2:"
-#: package/contents/ui/configGeneral.qml:330
-msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "หลังจากอนุมัติ ให้คัดลอก URL ของแถบที่อยู่และวางไว้ด้านล่าง:"
-#: package/contents/ui/configGeneral.qml:337
-msgid "Redirect URL or code:"
-msgstr "URL หรือรหัสเปลี่ยนเส้นทาง:"
-#: package/contents/ui/configGeneral.qml:341
-msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:…/callback?code=…"
-#: package/contents/ui/configGeneral.qml:348
-msgid "Complete"
-msgstr "เสร็จสิ้น"
-#: package/contents/ui/configGeneral.qml:358
-msgid "Cancel manual authorization"
-msgstr "ยกเลิกการให้สิทธิ์ด้วยตนเอง"
-#: package/contents/ui/configGeneral.qml:397
-msgid "Authorization successful!"
-msgstr "การอนุญาตสำเร็จ!"
-#: package/contents/ui/FitbitApi.qml:33
-msgid "No access token"
-msgstr "ไม่มีโทเค็นการเข้าถึง"
-#: package/contents/ui/FitbitApi.qml:52
-msgid "Network error — check your connection"
-msgstr "ข้อผิดพลาดของเครือข่าย — ตรวจสอบการเชื่อมต่อของคุณ"
-#: package/contents/ui/FitbitApi.qml:53
-msgid "Network error at %1"
-msgstr "ข้อผิดพลาดเครือข่ายเมื่อ %1"
-#: package/contents/ui/FitbitApi.qml:59
-msgid "Token expired at %1 — refreshing"
-msgstr "โทเค็นหมดอายุเมื่อ %1 — กำลังรีเฟรช"
-#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
-msgid "Rate limited — try again later"
-msgstr "คำขอเกินขีดจำกัด — โปรดลองอีกครั้งในภายหลัง"
-#: package/contents/ui/FitbitApi.qml:66
-msgid "Rate limited at %1 — showing cached data"
-msgstr "คำขอเกินขีดจำกัดเมื่อ %1 — แสดงข้อมูลที่แคชไว้"
-#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
-msgid "Fitbit server error (HTTP %1)"
-msgstr "ข้อผิดพลาดเซิร์ฟเวอร์ Fitbit (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:73
-msgid "Server error (HTTP %1) at %2"
-msgstr "ข้อผิดพลาดของเซิร์ฟเวอร์ (HTTP %1) เมื่อ %2"
-#: package/contents/ui/FitbitApi.qml:79
-msgid "%1 failed (HTTP %2)"
-msgstr "%1 ล้มเหลว (HTTP %2)"
-#: package/contents/ui/FitbitApi.qml:80
-msgid "Error (HTTP %1) at %2"
-msgstr "ข้อผิดพลาด (HTTP %1) เมื่อ %2"
-#: package/contents/ui/FitbitApi.qml:107
-msgid "Request timed out — check your connection"
-msgstr "คำขอหมดเวลา — ตรวจสอบการเชื่อมต่อของคุณ"
-#: package/contents/ui/FitbitApi.qml:108
-msgid "Timed out at %1"
-msgstr "หมดเวลาเมื่อ %1"
-#: package/contents/ui/FitbitApi.qml:116
-msgid "Activity fetch"
-msgstr "ดึงข้อมูลกิจกรรม"
-#: package/contents/ui/FitbitApi.qml:141
-msgid "OK — updated at %1"
-msgstr "ตกลง — อัปเดตเมื่อ %1"
-#: package/contents/ui/FitbitApi.qml:146
-msgid "Failed to parse activity data"
-msgstr "ไม่สามารถแยกวิเคราะห์ข้อมูลกิจกรรม"
-#: package/contents/ui/FitbitApi.qml:147
-msgid "Parse error at %1"
-msgstr "ข้อผิดพลาดในการแยกวิเคราะห์เมื่อ %1"
-#: package/contents/ui/FitbitOAuth.qml:90
-msgid "Unknown error"
-msgstr "ข้อผิดพลาดที่ไม่รู้จัก"
-#: package/contents/ui/FitbitOAuth.qml:97
-msgid "Failed to parse auth response"
-msgstr "ไม่สามารถแยกวิเคราะห์การตอบกลับการตรวจสอบสิทธิ์"
-#: package/contents/ui/FitbitOAuth.qml:136
-#: package/contents/ui/FitbitOAuth.qml:327
-msgid "Invalid client ID format"
-msgstr "รูปแบบรหัสไคลเอ็นต์ไม่ถูกต้อง"
-#: package/contents/ui/FitbitOAuth.qml:150
-msgid "Authorization canceled"
-msgstr "ยกเลิกการอนุญาตแล้ว"
-#: package/contents/ui/FitbitOAuth.qml:191
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-#: package/contents/ui/FitbitOAuth.qml:213
-msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2)"
-#: package/contents/ui/FitbitOAuth.qml:280
-msgid "Network error during token refresh"
-msgstr "เครือข่ายเกิดข้อผิดพลาดระหว่างการรีเฟรชโทเค็น"
-#: package/contents/ui/FitbitOAuth.qml:281
-msgid "Refresh token invalid — please re-authorize"
-msgstr "โทเค็นการรีเฟรชไม่ถูกต้อง — โปรดให้สิทธิ์อีกครั้ง"
-#: package/contents/ui/FitbitOAuth.qml:282
-msgid "Token refresh failed"
-msgstr "การรีเฟรชโทเค็นล้มเหลว"
-#: package/contents/ui/FitbitOAuth.qml:283
-msgid "Refresh failed — missing tokens"
-msgstr "การรีเฟรชล้มเหลว — โทเค็นหายไป"
-#: package/contents/ui/FitbitOAuth.qml:284
-msgid "Token refresh failed — invalid response"
-msgstr "การรีเฟรชโทเค็นล้มเหลว — การตอบสนองไม่ถูกต้อง"
-#: package/contents/ui/FitbitOAuth.qml:341
-msgid "Paste the redirect URL or authorization code first"
-msgstr "วาง URL การเปลี่ยนเส้นทางหรือรหัสการให้สิทธิ์ก่อน"
-#: package/contents/ui/FitbitOAuth.qml:345
-msgid "Start the manual authorization first"
-msgstr "เริ่มการให้สิทธิ์ด้วยตนเองก่อน"
-#: package/contents/ui/FitbitOAuth.qml:365
-msgid "Authorization was denied"
-msgstr "การอนุญาตถูกปฏิเสธ"
-#: package/contents/ui/FitbitOAuth.qml:372
-msgid "Authorization failed (state mismatch) — please try again"
-msgstr "การอนุญาตล้มเหลว (สถานะไม่ตรงกัน) — โปรดลองอีกครั้ง"
-#: package/contents/ui/FitbitOAuth.qml:376
-msgid "No authorization code found in the pasted text"
-msgstr "ไม่พบรหัสอนุญาตในข้อความที่วาง"
-#: package/contents/ui/FitbitOAuth.qml:386
-msgid "Network error during token exchange"
-msgstr "เครือข่ายเกิดข้อผิดพลาดระหว่างการแลกเปลี่ยนโทเค็น"
-#: package/contents/ui/FitbitOAuth.qml:387
-msgid "Authorization code invalid or expired — please try again"
-msgstr "รหัสการอนุญาตไม่ถูกต้องหรือหมดอายุ — โปรดลองอีกครั้ง"
-#: package/contents/ui/FitbitOAuth.qml:388
-msgid "Token exchange failed"
-msgstr "การแลกเปลี่ยนโทเค็นล้มเหลว"
-#: package/contents/ui/FitbitOAuth.qml:389
-msgid "Token exchange failed — missing tokens"
-msgstr "การแลกเปลี่ยนโทเค็นล้มเหลว — โทเค็นหายไป"
-#: package/contents/ui/FitbitOAuth.qml:390
-msgid "Token exchange failed — invalid response"
-msgstr "การแลกเปลี่ยนโทเค็นล้มเหลว — การตอบกลับไม่ถูกต้อง"
-#: package/contents/ui/FullRepresentation.qml:40
+#: package/contents/ui/FullRepresentation.qml:66
+#: package/contents/ui/main.qml:90
 msgctxt "distance in miles"
 msgid "%1 mi"
 msgstr "%1 ไมล์"
-#: package/contents/ui/FullRepresentation.qml:42
+
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:91
 msgctxt "distance in kilometers"
 msgid "%1 km"
 msgstr "%1 กม."
-#: package/contents/ui/FullRepresentation.qml:68
-#: package/contents/ui/main.qml:77
-msgid "FitDash"
-msgstr "FitDash"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Stale"
-msgstr "ข้อมูลไม่เป็นปัจจุบัน"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Today"
-msgstr "วันนี้"
-#: package/contents/ui/FullRepresentation.qml:115
-msgid "Connect Fitbit"
-msgstr "เชื่อมต่อ Fitbit"
-#: package/contents/ui/FullRepresentation.qml:121
-msgid "Authorize your account in settings to show today's activity."
-msgstr "อนุญาตบัญชีของคุณในการตั้งค่าเพื่อแสดงกิจกรรมของวันนี้"
-#: package/contents/ui/FullRepresentation.qml:130
-msgid "Open Settings"
-msgstr "เปิดการตั้งค่า"
-#: package/contents/ui/FullRepresentation.qml:160
-msgid "Loading Fitbit data"
-msgstr "กำลังโหลดข้อมูล Fitbit"
-#: package/contents/ui/FullRepresentation.qml:220
-#, javascript-format
-msgctxt "step goal progress"
-msgid "%1%"
-msgstr "%1%"
-#: package/contents/ui/FullRepresentation.qml:245
-msgid "%1 remaining of %2"
-msgstr "เหลืออีก %1 จาก %2"
-#: package/contents/ui/FullRepresentation.qml:246
-msgid "No step goal set"
-msgstr "ไม่ได้ตั้งเป้าหมายจำนวนก้าว"
-#: package/contents/ui/FullRepresentation.qml:279
-msgid "Active"
-msgstr "แอคทีฟ"
-#: package/contents/ui/FullRepresentation.qml:280
-msgctxt "active minutes"
-msgid "%1 min"
-msgstr "%1 นาที"
-#: package/contents/ui/FullRepresentation.qml:287
-msgid "Resting HR"
-msgstr "ชีพจรขณะพัก"
-#: package/contents/ui/FullRepresentation.qml:289
-msgctxt "heart rate in beats per minute"
-msgid "%1 bpm"
-msgstr "%1 ครั้งต่อนาที"
-#: package/contents/ui/FullRepresentation.qml:310
-msgid "Updated %1"
-msgstr "อัปเดตเมื่อ %1"
-#: package/contents/ui/main.qml:79
-msgid "Not connected"
-msgstr "ไม่ได้เชื่อมต่อ"
-#: package/contents/ui/main.qml:83
-msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "ก้าว: %1 | แคลอรี่: %2 | ระยะทาง: %3\nอัปเดต: %4"
-#: package/contents/ui/main.qml:105
-msgid "Authorization expired at %1 — please re-authorize"
-msgstr "การอนุญาตหมดอายุเมื่อ %1 — โปรดให้สิทธิ์อีกครั้ง"
-#: package/contents/ui/main.qml:118
-msgid "Token refresh failed at %1 — %2"
-msgstr "การรีเฟรชโทเค็นล้มเหลวเมื่อ %1 — %2"
-#: package/contents/ui/main.qml:142
-msgid "No refresh token available — please re-authorize"
-msgstr "ไม่มีโทเค็นการรีเฟรช — โปรดให้สิทธิ์อีกครั้ง"
-#: package/contents/ui/main.qml:169
-msgid "Token refreshed at %1"
-msgstr "รีเฟรชโทเค็นแล้วเมื่อ %1"
-
-#: scripts/fitdash-auth.py
-msgid "You can close this tab."
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Could not start authorization server on port %1"
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Authorization timed out — please try again"
-msgstr ""
-
-#: package/contents/ui/FullRepresentation.qml:318
-msgid "Vitals"
-msgstr "สัญญาณชีพ"
-
-#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
-msgid "Sleep"
-msgstr "การนอนหลับ"
-
-#: package/contents/ui/FullRepresentation.qml:352
-msgid "SpO2"
-msgstr "SpO2"
-
-#: package/contents/ui/FullRepresentation.qml:362
-msgid "HRV"
-msgstr "HRV"
-
-#: package/contents/ui/FullRepresentation.qml:372
-msgid "Breathing"
-msgstr "การหายใจ"
 
 #: package/contents/ui/FullRepresentation.qml:73
 msgctxt "sleep duration in hours and minutes"
 msgid "%1h %2m"
 msgstr "%1 ชม. %2 นาที"
 
+#: package/contents/ui/FullRepresentation.qml:98
+#: package/contents/ui/main.qml:85
+msgid "FitDash"
+msgstr "FitDash"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Stale"
+msgstr "ข้อมูลไม่เป็นปัจจุบัน"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Today"
+msgstr "วันนี้"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "เชื่อมต่อ Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:151
+msgid "Authorize your account in settings to show today's activity."
+msgstr "อนุญาตบัญชีของคุณในการตั้งค่าเพื่อแสดงกิจกรรมของวันนี้"
+
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Open Settings"
+msgstr "เปิดการตั้งค่า"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "กำลังโหลดข้อมูล Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:243
+#: package/contents/ui/GoogleHealthApi.qml:227
+#: package/contents/ui/configGeneral.qml:240
+msgid "Steps"
+msgstr "ก้าว"
+
+#: package/contents/ui/FullRepresentation.qml:250
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "ยังไม่มีข้อมูล"
+
+#: package/contents/ui/FullRepresentation.qml:275
+msgid "%1 remaining of %2"
+msgstr "เหลืออีก %1 จาก %2"
+
+#: package/contents/ui/FullRepresentation.qml:276
+msgid "No step goal set"
+msgstr "ไม่ได้ตั้งเป้าหมายจำนวนก้าว"
+
+#: package/contents/ui/FullRepresentation.qml:293
+#: package/contents/ui/GoogleHealthApi.qml:233
+#: package/contents/ui/configGeneral.qml:247
+msgid "Calories"
+msgstr "แคลอรี่"
+
+#: package/contents/ui/FullRepresentation.qml:301
+#: package/contents/ui/GoogleHealthApi.qml:239
+#: package/contents/ui/configGeneral.qml:254
+msgid "Distance"
+msgstr "ระยะทาง"
+
+#: package/contents/ui/FullRepresentation.qml:309
+msgid "Active"
+msgstr "แอคทีฟ"
+
+#: package/contents/ui/FullRepresentation.qml:310
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 นาที"
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "สัญญาณชีพ"
+
+#: package/contents/ui/FullRepresentation.qml:334
+#: package/contents/ui/configGeneral.qml:275
+msgid "Sleep"
+msgstr "การนอนหลับ"
+
+#: package/contents/ui/FullRepresentation.qml:342
+msgid "Resting HR"
+msgstr "ชีพจรขณะพัก"
+
+#: package/contents/ui/FullRepresentation.qml:344
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 ครั้งต่อนาที"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:354
+#, javascript-format
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "HRV"
+
 #: package/contents/ui/FullRepresentation.qml:364
 msgctxt "heart rate variability in milliseconds"
 msgid "%1 ms"
 msgstr "%1 มิลลิวินาที"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "การหายใจ"
 
 #: package/contents/ui/FullRepresentation.qml:374
 msgctxt "respiratory rate in breaths per minute"
 msgid "%1 br/min"
 msgstr "%1 ครั้ง/นาที"
 
-#: package/contents/ui/configGeneral.qml:272
-msgid "Blood oxygen (SpO2)"
-msgstr "ออกซิเจนในเลือด (SpO2)"
+#: package/contents/ui/FullRepresentation.qml:395
+msgid "Updated %1"
+msgstr "อัปเดตเมื่อ %1"
 
-#: package/contents/ui/configGeneral.qml:279
-msgid "Heart rate variability"
-msgstr "ความแปรปรวนของอัตราการเต้นของหัวใจ"
+#: package/contents/ui/GoogleHealthApi.qml:45
+msgid "No access token"
+msgstr "ไม่มีโทเค็นการเข้าถึง"
 
-#: package/contents/ui/configGeneral.qml:286
-msgid "Breathing rate"
-msgstr "อัตราการหายใจ"
+#: package/contents/ui/GoogleHealthApi.qml:118
+msgid "Network error — check your connection"
+msgstr "ข้อผิดพลาดของเครือข่าย — ตรวจสอบการเชื่อมต่อของคุณ"
 
-#: package/contents/ui/FullRepresentation.qml:145
-msgid "Connect Google Health"
-msgstr "เชื่อมต่อ Google Health"
+#: package/contents/ui/GoogleHealthApi.qml:119
+msgid "Network error at %1"
+msgstr "ข้อผิดพลาดเครือข่ายเมื่อ %1"
 
-#: package/contents/ui/FullRepresentation.qml:190
-msgid "Loading Google Health data"
-msgstr "กำลังโหลดข้อมูล Google Health"
+#: package/contents/ui/GoogleHealthApi.qml:125
+msgid "Token expired at %1 — refreshing"
+msgstr "โทเค็นหมดอายุเมื่อ %1 — กำลังรีเฟรช"
 
-#: package/contents/ui/FullRepresentation.qml:273
-msgid "No data yet"
-msgstr "ยังไม่มีข้อมูล"
+#: package/contents/ui/GoogleHealthApi.qml:136
+#: package/contents/ui/GoogleHealthOAuth.qml:212
+msgid "Rate limited — try again later"
+msgstr "คำขอเกินขีดจำกัด — โปรดลองอีกครั้งในภายหลัง"
 
-#: package/contents/ui/FullRepresentation.qml:354
-msgctxt "blood oxygen saturation percentage"
-msgid "%1%"
-msgstr "%1%"
+#: package/contents/ui/GoogleHealthApi.qml:137
+msgid "Rate limited at %1 — showing cached data"
+msgstr "คำขอเกินขีดจำกัดเมื่อ %1 — แสดงข้อมูลที่แคชไว้"
 
 #: package/contents/ui/GoogleHealthApi.qml:143
 msgid "Google Health server error (HTTP %1)"
 msgstr "ข้อผิดพลาดเซิร์ฟเวอร์ Google Health (HTTP %1)"
 
-#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:144
+msgid "Server error (HTTP %1) at %2"
+msgstr "ข้อผิดพลาดของเซิร์ฟเวอร์ (HTTP %1) เมื่อ %2"
+
+#: package/contents/ui/GoogleHealthApi.qml:150
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 ล้มเหลว (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthApi.qml:151
+msgid "Error (HTTP %1) at %2"
+msgstr "ข้อผิดพลาด (HTTP %1) เมื่อ %2"
+
+#: package/contents/ui/GoogleHealthApi.qml:178
+msgid "OK — updated at %1"
+msgstr "ตกลง — อัปเดตเมื่อ %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:192
+msgid "Request timed out — check your connection"
+msgstr "คำขอหมดเวลา — ตรวจสอบการเชื่อมต่อของคุณ"
+
+#: package/contents/ui/GoogleHealthApi.qml:193
+msgid "Timed out at %1"
+msgstr "หมดเวลาเมื่อ %1"
+
 #: package/contents/ui/GoogleHealthApi.qml:200
 msgid "%1 fetch"
 msgstr "การดึงข้อมูล%1"
 
-#. TRANSLATORS: %1 is a metric name such as Steps
 #: package/contents/ui/GoogleHealthApi.qml:211
 msgid "Failed to parse %1 data"
 msgstr "ไม่สามารถแยกวิเคราะห์ข้อมูล%1"
+
+#: package/contents/ui/GoogleHealthApi.qml:212
+msgid "Parse error at %1"
+msgstr "ข้อผิดพลาดในการแยกวิเคราะห์เมื่อ %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:246
+#: package/contents/ui/configGeneral.qml:261
+msgid "Active minutes"
+msgstr "นาทีที่แอคทีฟ"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:91
+msgid "Unknown error"
+msgstr "ข้อผิดพลาดที่ไม่รู้จัก"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:98
+msgid "Failed to parse auth response"
+msgstr "ไม่สามารถแยกวิเคราะห์การตอบกลับการตรวจสอบสิทธิ์"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:137
+#: package/contents/ui/GoogleHealthOAuth.qml:341
+msgid "Invalid client ID format"
+msgstr "รูปแบบรหัสไคลเอ็นต์ไม่ถูกต้อง"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:156
+msgid "Authorization canceled"
+msgstr "ยกเลิกการอนุญาตแล้ว"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:198
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
 
 #: package/contents/ui/GoogleHealthOAuth.qml:216
 msgid "Google server error (HTTP %1)"
 msgstr "ข้อผิดพลาดเซิร์ฟเวอร์ Google (HTTP %1)"
 
-#: package/contents/ui/configGeneral.qml:102
+#: package/contents/ui/GoogleHealthOAuth.qml:220 scripts/fitdash-auth.py:68
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:292
+msgid "Network error during token refresh"
+msgstr "เครือข่ายเกิดข้อผิดพลาดระหว่างการรีเฟรชโทเค็น"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:293
+msgid "Refresh token invalid — please re-authorize"
+msgstr "โทเค็นการรีเฟรชไม่ถูกต้อง — โปรดให้สิทธิ์อีกครั้ง"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:294
+msgid "Token refresh failed"
+msgstr "การรีเฟรชโทเค็นล้มเหลว"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:295
+msgid "Refresh failed — missing tokens"
+msgstr "การรีเฟรชล้มเหลว — โทเค็นหายไป"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:296
+msgid "Token refresh failed — invalid response"
+msgstr "การรีเฟรชโทเค็นล้มเหลว — การตอบสนองไม่ถูกต้อง"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:357
+msgid "Paste the redirect URL or authorization code first"
+msgstr "วาง URL การเปลี่ยนเส้นทางหรือรหัสการให้สิทธิ์ก่อน"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:361
+msgid "Start the manual authorization first"
+msgstr "เริ่มการให้สิทธิ์ด้วยตนเองก่อน"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:381 scripts/fitdash-auth.py:130
+msgid "Authorization was denied"
+msgstr "การอนุญาตถูกปฏิเสธ"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:388 scripts/fitdash-auth.py:116
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "การอนุญาตล้มเหลว (สถานะไม่ตรงกัน) — โปรดลองอีกครั้ง"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:392
+msgid "No authorization code found in the pasted text"
+msgstr "ไม่พบรหัสอนุญาตในข้อความที่วาง"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:403 scripts/fitdash-auth.py:70
+msgid "Network error during token exchange"
+msgstr "เครือข่ายเกิดข้อผิดพลาดระหว่างการแลกเปลี่ยนโทเค็น"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:404
+msgid "Authorization code invalid or expired — please try again"
+msgstr "รหัสการอนุญาตไม่ถูกต้องหรือหมดอายุ — โปรดลองอีกครั้ง"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:405 scripts/fitdash-auth.py:68
+msgid "Token exchange failed"
+msgstr "การแลกเปลี่ยนโทเค็นล้มเหลว"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:406 scripts/fitdash-auth.py:74
+msgid "Token exchange failed — missing tokens"
+msgstr "การแลกเปลี่ยนโทเค็นล้มเหลว — โทเค็นหายไป"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:407 scripts/fitdash-auth.py:204
+msgid "Token exchange failed — invalid response"
+msgstr "การแลกเปลี่ยนโทเค็นล้มเหลว — การตอบกลับไม่ถูกต้อง"
+
+#: package/contents/ui/configGeneral.qml:9 package/contents/config/config.qml:6
+msgid "General"
+msgstr "ทั่วไป"
+
+#: package/contents/ui/configGeneral.qml:65
+msgid "Not authorized"
+msgstr "ไม่ได้รับอนุญาต"
+
+#: package/contents/ui/configGeneral.qml:68
+msgid "Authorization problem — re-authorize"
+msgstr "ปัญหาการอนุญาต — อนุญาตอีกครั้ง"
+
+#: package/contents/ui/configGeneral.qml:71
+msgid "Token expired — refresh needed"
+msgstr "โทเค็นหมดอายุ - จำเป็นต้องรีเฟรช"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "unknown"
+msgstr "ไม่ทราบ"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "Authorized (User: %1)"
+msgstr "ได้รับอนุญาตแล้ว (ผู้ใช้: %1)"
+
+#: package/contents/ui/configGeneral.qml:103
+msgid "Client ID:"
+msgstr "รหัสไคลเอ็นต์:"
+
+#: package/contents/ui/configGeneral.qml:104
 msgid "From Google Cloud Console"
 msgstr "จาก Google Cloud Console"
 
-#: package/contents/ui/configGeneral.qml:109
+#: package/contents/ui/configGeneral.qml:111
 msgid "Client Secret:"
 msgstr "รหัสลับไคลเอ็นต์:"
 
-#: package/contents/ui/configGeneral.qml:110
+#: package/contents/ui/configGeneral.qml:112
 msgid "From the same OAuth client"
 msgstr "จากไคลเอ็นต์ OAuth เดียวกัน"
 
-#: package/contents/ui/configGeneral.qml:117
-msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
+#: package/contents/ui/configGeneral.qml:119
+msgid ""
+"OAuth 2.0 credentials from a Google Cloud project with the Google Health API "
+"enabled"
 msgstr "ข้อมูลรับรอง OAuth 2.0 จากโปรเจ็กต์ Google Cloud ที่เปิดใช้ Google Health API"
 
-#: package/contents/ui/configGeneral.qml:158
-msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
-msgstr "Google อนุญาตพอร์ต localhost ใดก็ได้โดยอัตโนมัติสำหรับไคลเอ็นต์ OAuth ของแอปเดสก์ท็อป — ไม่ต้องลงทะเบียน URL นี้"
+#: package/contents/ui/configGeneral.qml:127
+msgid ""
+"You can also drop the downloaded client_secret.json file onto this window to "
+"fill them in."
+msgstr ""
+"คุณยังสามารถลากไฟล์ client_secret.json ที่ดาวน์โหลดมาวางบนหน้าต่างนี้เพื่อกรอกข้อมูลได้"
 
-#: package/contents/ui/configGeneral.qml:174
+#: package/contents/ui/configGeneral.qml:134
+msgid "Callback URL:"
+msgstr "URL สำหรับ Callback:"
+
+#: package/contents/ui/configGeneral.qml:147
+#: package/contents/ui/configGeneral.qml:387
+msgid "Copy to clipboard"
+msgstr "คัดลอกไปยังคลิปบอร์ด"
+
+#: package/contents/ui/configGeneral.qml:160
+msgid "Callback port:"
+msgstr "พอร์ต Callback:"
+
+#: package/contents/ui/configGeneral.qml:168
+msgid ""
+"Google allows any localhost port for Desktop app OAuth clients automatically "
+"— no need to register this URL"
+msgstr ""
+"Google อนุญาตพอร์ต localhost ใดก็ได้โดยอัตโนมัติสำหรับไคลเอ็นต์ OAuth ของแอปเดสก์ท็อป — "
+"ไม่ต้องลงทะเบียน URL นี้"
+
+#: package/contents/ui/configGeneral.qml:176
+msgid "Refresh interval (minutes):"
+msgstr "ช่วงเวลารีเฟรช (นาที):"
+
+#: package/contents/ui/configGeneral.qml:184
 msgid "Recommended: 15–30 minutes to stay within API rate limits"
 msgstr "แนะนำ: 15–30 นาที เพื่อไม่ให้เกินขีดจำกัดจำนวนคำขอของ API"
 
-#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/configGeneral.qml:192
+msgid "Display"
+msgstr "การแสดงผล"
+
+#: package/contents/ui/configGeneral.qml:197
+msgid "Distance unit:"
+msgstr "หน่วยระยะทาง:"
+
+#: package/contents/ui/configGeneral.qml:199
+msgid "Kilometers (km)"
+msgstr "กิโลเมตร (กม.)"
+
+#: package/contents/ui/configGeneral.qml:200
+msgid "Miles (mi)"
+msgstr "ไมล์ (mi)"
+
+#: package/contents/ui/configGeneral.qml:211
 msgid "Step goal:"
 msgstr "เป้าหมายก้าว:"
 
-#: package/contents/ui/configGeneral.qml:207
+#: package/contents/ui/configGeneral.qml:217
 msgid "None"
 msgstr "ไม่มี"
 
-#: package/contents/ui/configGeneral.qml:216
-msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
-msgstr "Google Health API ไม่รายงานเป้าหมาย จึงต้องตั้งค่าที่นี่ ค่า 0 จะแสดง “ไม่ได้ตั้งเป้าหมายจำนวนก้าว” แทน"
+#: package/contents/ui/configGeneral.qml:226
+msgid ""
+"The Google Health API doesn't report a goal, so this is set here. 0 shows "
+"“No step goal set” instead"
+msgstr ""
+"Google Health API ไม่รายงานเป้าหมาย จึงต้องตั้งค่าที่นี่ ค่า 0 จะแสดง "
+"“ไม่ได้ตั้งเป้าหมายจำนวนก้าว” แทน"
 
-#: package/contents/ui/configGeneral.qml:292
+#: package/contents/ui/configGeneral.qml:234
+msgid "Visible Metrics"
+msgstr "ตัวชี้วัดที่มองเห็นได้"
+
+#: package/contents/ui/configGeneral.qml:268
+msgid "Resting heart rate"
+msgstr "อัตราการเต้นของหัวใจขณะพัก"
+
+#: package/contents/ui/configGeneral.qml:282
+msgid "Blood oxygen (SpO2)"
+msgstr "ออกซิเจนในเลือด (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:289
+msgid "Heart rate variability"
+msgstr "ความแปรปรวนของอัตราการเต้นของหัวใจ"
+
+#: package/contents/ui/configGeneral.qml:296
+msgid "Breathing rate"
+msgstr "อัตราการหายใจ"
+
+#: package/contents/ui/configGeneral.qml:302
 msgid "Google Health Account"
 msgstr "บัญชี Google Health"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:306
+msgid "Status:"
+msgstr "สถานะ:"
+
+#: package/contents/ui/configGeneral.qml:314
+msgid "Last request:"
+msgstr "คำขอครั้งสุดท้าย:"
+
+#: package/contents/ui/configGeneral.qml:316
+msgid "No requests yet"
+msgstr "ยังไม่มีการร้องขอ"
+
+#: package/contents/ui/configGeneral.qml:326
+msgid "Authorization:"
+msgstr "การอนุญาต:"
+
+#: package/contents/ui/configGeneral.qml:328
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: package/contents/ui/configGeneral.qml:329
 msgid "Re-authorize with Google"
 msgstr "อนุญาตอีกครั้งกับ Google"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:329
 msgid "Authorize with Google"
 msgstr "อนุญาตกับ Google"
+
+#: package/contents/ui/configGeneral.qml:345
+msgid "Authorize manually (copy & paste)"
+msgstr "อนุญาตด้วยตนเอง (คัดลอกและวาง)"
+
+#: package/contents/ui/configGeneral.qml:350
+msgid ""
+"Use this if the browser can't reach localhost (sandboxed browser, remote "
+"session, or no Python)"
+msgstr ""
+"ใช้สิ่งนี้หากเบราว์เซอร์ไม่สามารถเข้าถึง localhost (เบราว์เซอร์แบบแซนด์บ็อกซ์ เซสชันระยะไกล "
+"หรือไม่มี Python)"
+
+#: package/contents/ui/configGeneral.qml:366
+msgid "Step 1:"
+msgstr "ขั้นตอนที่ 1:"
+
+#: package/contents/ui/configGeneral.qml:367
+msgid "Open this URL in a browser and approve access:"
+msgstr "เปิด URL นี้ในเบราว์เซอร์และอนุมัติการเข้าถึง:"
+
+#: package/contents/ui/configGeneral.qml:374
+msgid "Authorization URL:"
+msgstr "URL การอนุญาต:"
+
+#: package/contents/ui/configGeneral.qml:401
+msgid "Open in browser"
+msgstr "เปิดในเบราว์เซอร์"
+
+#: package/contents/ui/configGeneral.qml:410
+msgid "Step 2:"
+msgstr "ขั้นตอนที่ 2:"
+
+#: package/contents/ui/configGeneral.qml:411
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr "หลังจากอนุมัติ ให้คัดลอก URL ของแถบที่อยู่และวางไว้ด้านล่าง:"
+
+#: package/contents/ui/configGeneral.qml:418
+msgid "Redirect URL or code:"
+msgstr "URL หรือรหัสเปลี่ยนเส้นทาง:"
+
+#: package/contents/ui/configGeneral.qml:422
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/callback?code=…"
+
+#: package/contents/ui/configGeneral.qml:429
+msgid "Complete"
+msgstr "เสร็จสิ้น"
+
+#: package/contents/ui/configGeneral.qml:439
+msgid "Cancel manual authorization"
+msgstr "ยกเลิกการให้สิทธิ์ด้วยตนเอง"
+
+#: package/contents/ui/configGeneral.qml:476
+msgid "The dropped file does not contain a client ID and client secret."
+msgstr "ไฟล์ที่วางไม่มีรหัสไคลเอ็นต์และรหัสลับไคลเอ็นต์"
+
+#: package/contents/ui/configGeneral.qml:480
+msgid "The client ID in the dropped file is not valid."
+msgstr "รหัสไคลเอ็นต์ในไฟล์ที่วางไม่ถูกต้อง"
+
+#: package/contents/ui/configGeneral.qml:486
+msgid "Client ID and secret imported from file."
+msgstr "นำเข้ารหัสไคลเอ็นต์และรหัสลับจากไฟล์แล้ว"
+
+#: package/contents/ui/configGeneral.qml:488
+#: package/contents/ui/configGeneral.qml:496
+#: package/contents/ui/configGeneral.qml:510
+msgid "Could not read the dropped file as a Google client secret JSON."
+msgstr "ไม่สามารถอ่านไฟล์ที่วางเป็น JSON รหัสลับไคลเอ็นต์ของ Google ได้"
+
+#: package/contents/ui/configGeneral.qml:546 scripts/fitdash-auth.py:128
+msgid "Authorization successful!"
+msgstr "การอนุญาตสำเร็จ!"
+
+#: package/contents/ui/main.qml:87
+msgid "Not connected"
+msgstr "ไม่ได้เชื่อมต่อ"
+
+#: package/contents/ui/main.qml:92
+msgid ""
+"Steps: %1 | Cal: %2 | Dist: %3\n"
+"Updated: %4"
+msgstr ""
+"ก้าว: %1 | แคลอรี่: %2 | ระยะทาง: %3\n"
+"อัปเดต: %4"
+
+#: package/contents/ui/main.qml:114
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "การอนุญาตหมดอายุเมื่อ %1 — โปรดให้สิทธิ์อีกครั้ง"
+
+#: package/contents/ui/main.qml:127
+msgid "Token refresh failed at %1 — %2"
+msgstr "การรีเฟรชโทเค็นล้มเหลวเมื่อ %1 — %2"
+
+#: package/contents/ui/main.qml:152
+msgid "No refresh token available — please re-authorize"
+msgstr "ไม่มีโทเค็นการรีเฟรช — โปรดให้สิทธิ์อีกครั้ง"
+
+#: package/contents/ui/main.qml:184
+msgid "Token refreshed at %1"
+msgstr "รีเฟรชโทเค็นแล้วเมื่อ %1"
+
+#: scripts/fitdash-auth.py:101
+msgid "Missing client secret"
+msgstr ""
+
+#: scripts/fitdash-auth.py:128
+msgid "You can close this tab."
+msgstr ""
+
+#: scripts/fitdash-auth.py:145
+msgid "Could not start authorization server on port %1"
+msgstr ""
+
+#: scripts/fitdash-auth.py:192
+msgid "Authorization timed out — please try again"
+msgstr ""
+
+#~ msgid "From dev.fitbit.com/apps"
+#~ msgstr "จาก dev.fitbit.com/apps"
+
+#~ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+#~ msgstr "รหัสไคลเอ็นต์ OAuth 2.0 จากการลงทะเบียนแอป Fitbit ของคุณ"
+
+#~ msgid ""
+#~ "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+#~ msgstr "วาง URL สำหรับ Callback ลงในการตั้งค่าแอป Fitbit ของคุณที่ dev.fitbit.com"
+
+#~ msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+#~ msgstr "แนะนำ: 15–30 นาที เพื่อไม่ให้เกินขีดจำกัดจำนวนคำขอของ Fitbit"
+
+#~ msgid "Fitbit Account"
+#~ msgstr "บัญชี Fitbit"
+
+#~ msgid "Re-authorize with Fitbit"
+#~ msgstr "อนุญาตอีกครั้งกับ Fitbit"
+
+#~ msgid "Authorize with Fitbit"
+#~ msgstr "อนุญาตกับ Fitbit"
+
+#~ msgid "Fitbit server error (HTTP %1)"
+#~ msgstr "ข้อผิดพลาดเซิร์ฟเวอร์ Fitbit (HTTP %1)"
+
+#~ msgid "Activity fetch"
+#~ msgstr "ดึงข้อมูลกิจกรรม"
+
+#~ msgid "Failed to parse activity data"
+#~ msgstr "ไม่สามารถแยกวิเคราะห์ข้อมูลกิจกรรม"
+
+#~ msgid "Connect Fitbit"
+#~ msgstr "เชื่อมต่อ Fitbit"
+
+#~ msgid "Loading Fitbit data"
+#~ msgstr "กำลังโหลดข้อมูล Fitbit"

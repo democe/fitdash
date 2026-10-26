@@ -1,8 +1,9 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: FitDash 1.0.8\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
-"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
 "Last-Translator: FitDash contributors\n"
 "Language-Team: Malayalam\n"
@@ -11,475 +12,627 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
-msgid "General"
-msgstr "പൊതുവായവ"
-#: package/contents/ui/configGeneral.qml:52
-msgid "Not authorized"
-msgstr "അധികാരപ്പെടുത്തിയിട്ടില്ല"
-#: package/contents/ui/configGeneral.qml:55
-msgid "Authorization problem — re-authorize"
-msgstr "അംഗീകാര പ്രശ്നം — വീണ്ടും അംഗീകരിക്കുക"
-#: package/contents/ui/configGeneral.qml:58
-msgid "Token expired — refresh needed"
-msgstr "ടോക്കൺ കാലഹരണപ്പെട്ടു - പുതുക്കേണ്ടതുണ്ട്"
-#: package/contents/ui/configGeneral.qml:60
-msgid "unknown"
-msgstr "അജ്ഞാതം"
-#: package/contents/ui/configGeneral.qml:60
-msgid "Authorized (User: %1)"
-msgstr "അംഗീകരിച്ചു (ഉപയോക്താവ്: %1)"
-#: package/contents/ui/configGeneral.qml:89
-msgid "Client ID:"
-msgstr "ക്ലയൻ്റ് ഐഡി:"
-#: package/contents/ui/configGeneral.qml:90
-msgid "From dev.fitbit.com/apps"
-msgstr "dev.fitbit.com/apps-ൽ നിന്ന്"
-#: package/contents/ui/configGeneral.qml:97
-msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "നിങ്ങളുടെ Fitbit ആപ്പ് രജിസ്ട്രേഷനിൽ നിന്നുള്ള OAuth 2.0 ക്ലയൻ്റ് ഐഡി"
-#: package/contents/ui/configGeneral.qml:104
-msgid "Callback URL:"
-msgstr "കോൾബാക്ക് URL:"
-#: package/contents/ui/configGeneral.qml:117
-#: package/contents/ui/configGeneral.qml:306
-msgid "Copy to clipboard"
-msgstr "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുക"
-#: package/contents/ui/configGeneral.qml:130
-msgid "Callback port:"
-msgstr "കോൾബാക്ക് പോർട്ട്:"
-#: package/contents/ui/configGeneral.qml:138
-msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "dev.fitbit.com-ൽ നിങ്ങളുടെ Fitbit ആപ്പ് ക്രമീകരണത്തിലേക്ക് കോൾബാക്ക് URL ഒട്ടിക്കുക"
-#: package/contents/ui/configGeneral.qml:146
-msgid "Refresh interval (minutes):"
-msgstr "പുതുക്കൽ ഇടവേള (മിനിറ്റ്):"
-#: package/contents/ui/configGeneral.qml:154
-msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "ശുപാർശ: 15–30 മിനിറ്റ്, Fitbit അഭ്യർത്ഥന പരിധി കവിയാതിരിക്കാൻ"
-#: package/contents/ui/configGeneral.qml:162
-msgid "Display"
-msgstr "പ്രദർശനം"
-#: package/contents/ui/configGeneral.qml:167
-msgid "Distance unit:"
-msgstr "ദൂര യൂണിറ്റ്:"
-#: package/contents/ui/configGeneral.qml:169
-msgid "Kilometers (km)"
-msgstr "കിലോമീറ്റർ (കി.മീ.)"
-#: package/contents/ui/configGeneral.qml:170
-msgid "Miles (mi)"
-msgstr "മൈൽ (mi)"
-#: package/contents/ui/configGeneral.qml:181
-msgid "Visible Metrics"
-msgstr "ദൃശ്യമായ അളവുകൾ"
-#: package/contents/ui/configGeneral.qml:187
-#: package/contents/ui/FullRepresentation.qml:213
-msgid "Steps"
-msgstr "ചുവടുകൾ"
-#: package/contents/ui/configGeneral.qml:194
-#: package/contents/ui/FullRepresentation.qml:263
-msgid "Calories"
-msgstr "കലോറികൾ"
-#: package/contents/ui/configGeneral.qml:201
-#: package/contents/ui/FullRepresentation.qml:271
-msgid "Distance"
-msgstr "ദൂരം"
-#: package/contents/ui/configGeneral.qml:208
-msgid "Active minutes"
-msgstr "സജീവ മിനിറ്റ്"
-#: package/contents/ui/configGeneral.qml:215
-msgid "Resting heart rate"
-msgstr "വിശ്രമവേളയിലെ ഹൃദയമിടിപ്പ്"
-#: package/contents/ui/configGeneral.qml:221
-msgid "Fitbit Account"
-msgstr "Fitbit അക്കൗണ്ട്"
-#: package/contents/ui/configGeneral.qml:225
-msgid "Status:"
-msgstr "നില:"
-#: package/contents/ui/configGeneral.qml:233
-msgid "Last request:"
-msgstr "അവസാന അഭ്യർത്ഥന:"
-#: package/contents/ui/configGeneral.qml:235
-msgid "No requests yet"
-msgstr "ഇതുവരെ അഭ്യർത്ഥനകളൊന്നുമില്ല"
-#: package/contents/ui/configGeneral.qml:245
-msgid "Authorization:"
-msgstr "അംഗീകാരം:"
-#: package/contents/ui/configGeneral.qml:247
-msgid "Cancel"
-msgstr "റദ്ദാക്കുക"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Re-authorize with Fitbit"
-msgstr "Fitbit ഉപയോഗിച്ച് വീണ്ടും അംഗീകരിക്കുക"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Authorize with Fitbit"
-msgstr "Fitbit ഉപയോഗിച്ച് അംഗീകരിക്കുക"
-#: package/contents/ui/configGeneral.qml:264
-msgid "Authorize manually (copy & paste)"
-msgstr "സ്വമേധയാ അംഗീകരിക്കുക (പകർത്തി ഒട്ടിക്കുക)"
-#: package/contents/ui/configGeneral.qml:269
-msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "ബ്രൗസറിന് localhost-ൽ എത്താൻ കഴിയുന്നില്ലെങ്കിൽ ഇത് ഉപയോഗിക്കുക (സാൻഡ്‌ബോക്സ് ചെയ്ത ബ്രൗസർ, റിമോട്ട് സെഷൻ അല്ലെങ്കിൽ Python ഇല്ല)"
-#: package/contents/ui/configGeneral.qml:285
-msgid "Step 1:"
-msgstr "ഘട്ടം 1:"
-#: package/contents/ui/configGeneral.qml:286
-msgid "Open this URL in a browser and approve access:"
-msgstr "ഒരു ബ്രൗസറിൽ ഈ URL തുറന്ന് ആക്സസ് അംഗീകരിക്കുക:"
-#: package/contents/ui/configGeneral.qml:293
-msgid "Authorization URL:"
-msgstr "അംഗീകാര URL:"
-#: package/contents/ui/configGeneral.qml:320
-msgid "Open in browser"
-msgstr "ബ്രൗസറിൽ തുറക്കുക"
-#: package/contents/ui/configGeneral.qml:329
-msgid "Step 2:"
-msgstr "ഘട്ടം 2:"
-#: package/contents/ui/configGeneral.qml:330
-msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "അംഗീകരിച്ച ശേഷം, വിലാസ ബാർ URL പകർത്തി താഴെ ഒട്ടിക്കുക:"
-#: package/contents/ui/configGeneral.qml:337
-msgid "Redirect URL or code:"
-msgstr "റീഡയറക്‌ട് URL അല്ലെങ്കിൽ കോഡ്:"
-#: package/contents/ui/configGeneral.qml:341
-msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:…/callback?code=…"
-#: package/contents/ui/configGeneral.qml:348
-msgid "Complete"
-msgstr "പൂർത്തിയാക്കുക"
-#: package/contents/ui/configGeneral.qml:358
-msgid "Cancel manual authorization"
-msgstr "സ്വമേധയാലുള്ള അംഗീകാരം റദ്ദാക്കുക"
-#: package/contents/ui/configGeneral.qml:397
-msgid "Authorization successful!"
-msgstr "അംഗീകാരം വിജയിച്ചു!"
-#: package/contents/ui/FitbitApi.qml:33
-msgid "No access token"
-msgstr "പ്രവേശന ടോക്കൺ ഇല്ല"
-#: package/contents/ui/FitbitApi.qml:52
-msgid "Network error — check your connection"
-msgstr "നെറ്റ്‌വർക്ക് പിശക് — നിങ്ങളുടെ കണക്ഷൻ പരിശോധിക്കുക"
-#: package/contents/ui/FitbitApi.qml:53
-msgid "Network error at %1"
-msgstr "%1-ന് നെറ്റ്‌വർക്ക് പിശക്"
-#: package/contents/ui/FitbitApi.qml:59
-msgid "Token expired at %1 — refreshing"
-msgstr "%1-ന് ടോക്കൺ കാലഹരണപ്പെട്ടു — പുതുക്കുന്നു"
-#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
-msgid "Rate limited — try again later"
-msgstr "അഭ്യർത്ഥന പരിധി കവിഞ്ഞു — പിന്നീട് വീണ്ടും ശ്രമിക്കുക"
-#: package/contents/ui/FitbitApi.qml:66
-msgid "Rate limited at %1 — showing cached data"
-msgstr "%1-ന് അഭ്യർത്ഥന പരിധി കവിഞ്ഞു — കാഷെ ചെയ്ത ഡാറ്റ കാണിക്കുന്നു"
-#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
-msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit സെർവർ പിശക് (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:73
-msgid "Server error (HTTP %1) at %2"
-msgstr "%2-ന് സെർവർ പിശക് (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:79
-msgid "%1 failed (HTTP %2)"
-msgstr "%1 പരാജയപ്പെട്ടു (HTTP %2)"
-#: package/contents/ui/FitbitApi.qml:80
-msgid "Error (HTTP %1) at %2"
-msgstr "%2-ന് പിശക് (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:107
-msgid "Request timed out — check your connection"
-msgstr "അഭ്യർത്ഥന സമയം കഴിഞ്ഞു - നിങ്ങളുടെ കണക്ഷൻ പരിശോധിക്കുക"
-#: package/contents/ui/FitbitApi.qml:108
-msgid "Timed out at %1"
-msgstr "%1-ന് സമയം കഴിഞ്ഞു"
-#: package/contents/ui/FitbitApi.qml:116
-msgid "Activity fetch"
-msgstr "പ്രവർത്തനം ലഭ്യമാക്കുന്നു"
-#: package/contents/ui/FitbitApi.qml:141
-msgid "OK — updated at %1"
-msgstr "ശരി — %1-ന് അപ്ഡേറ്റ് ചെയ്തു"
-#: package/contents/ui/FitbitApi.qml:146
-msgid "Failed to parse activity data"
-msgstr "പ്രവർത്തന ഡാറ്റ പാഴ്‌സ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു"
-#: package/contents/ui/FitbitApi.qml:147
-msgid "Parse error at %1"
-msgstr "%1-ന് പാഴ്‌സ് പിശക്"
-#: package/contents/ui/FitbitOAuth.qml:90
-msgid "Unknown error"
-msgstr "അജ്ഞാത പിശക്"
-#: package/contents/ui/FitbitOAuth.qml:97
-msgid "Failed to parse auth response"
-msgstr "അംഗീകാര പ്രതികരണം പാഴ്‌സ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു"
-#: package/contents/ui/FitbitOAuth.qml:136
-#: package/contents/ui/FitbitOAuth.qml:327
-msgid "Invalid client ID format"
-msgstr "അസാധുവായ ക്ലയൻ്റ് ഐഡി ഫോർമാറ്റ്"
-#: package/contents/ui/FitbitOAuth.qml:150
-msgid "Authorization canceled"
-msgstr "അംഗീകാരം റദ്ദാക്കി"
-#: package/contents/ui/FitbitOAuth.qml:191
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-#: package/contents/ui/FitbitOAuth.qml:213
-msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2)"
-#: package/contents/ui/FitbitOAuth.qml:280
-msgid "Network error during token refresh"
-msgstr "ടോക്കൺ പുതുക്കുന്നതിനിടയിൽ നെറ്റ്‌വർക്ക് പിശക്"
-#: package/contents/ui/FitbitOAuth.qml:281
-msgid "Refresh token invalid — please re-authorize"
-msgstr "പുതുക്കൽ ടോക്കൺ അസാധുവാണ് — ദയവായി വീണ്ടും അംഗീകരിക്കുക"
-#: package/contents/ui/FitbitOAuth.qml:282
-msgid "Token refresh failed"
-msgstr "ടോക്കൺ പുതുക്കൽ പരാജയപ്പെട്ടു"
-#: package/contents/ui/FitbitOAuth.qml:283
-msgid "Refresh failed — missing tokens"
-msgstr "പുതുക്കൽ പരാജയപ്പെട്ടു - ടോക്കണുകൾ വിട്ടുപോയിരിക്കുന്നു"
-#: package/contents/ui/FitbitOAuth.qml:284
-msgid "Token refresh failed — invalid response"
-msgstr "ടോക്കൺ പുതുക്കൽ പരാജയപ്പെട്ടു - അസാധുവായ പ്രതികരണം"
-#: package/contents/ui/FitbitOAuth.qml:341
-msgid "Paste the redirect URL or authorization code first"
-msgstr "ആദ്യം റീഡയറക്‌ട് URL അല്ലെങ്കിൽ അംഗീകാര കോഡ് ഒട്ടിക്കുക"
-#: package/contents/ui/FitbitOAuth.qml:345
-msgid "Start the manual authorization first"
-msgstr "മാനുവൽ അംഗീകാരം ആദ്യം ആരംഭിക്കുക"
-#: package/contents/ui/FitbitOAuth.qml:365
-msgid "Authorization was denied"
-msgstr "അംഗീകാരം നിഷേധിക്കപ്പെട്ടു"
-#: package/contents/ui/FitbitOAuth.qml:372
-msgid "Authorization failed (state mismatch) — please try again"
-msgstr "അംഗീകാരം പരാജയപ്പെട്ടു (state പൊരുത്തപ്പെടുന്നില്ല) — വീണ്ടും ശ്രമിക്കുക"
-#: package/contents/ui/FitbitOAuth.qml:376
-msgid "No authorization code found in the pasted text"
-msgstr "ഒട്ടിച്ച വാചകത്തിൽ അംഗീകാര കോഡുകളൊന്നും കണ്ടെത്തിയില്ല"
-#: package/contents/ui/FitbitOAuth.qml:386
-msgid "Network error during token exchange"
-msgstr "ടോക്കൺ എക്സ്ചേഞ്ച് സമയത്ത് നെറ്റ്‌വർക്ക് പിശക്"
-#: package/contents/ui/FitbitOAuth.qml:387
-msgid "Authorization code invalid or expired — please try again"
-msgstr "അംഗീകാര കോഡ് അസാധുവാണ് അല്ലെങ്കിൽ കാലഹരണപ്പെട്ടു - ദയവായി വീണ്ടും ശ്രമിക്കുക"
-#: package/contents/ui/FitbitOAuth.qml:388
-msgid "Token exchange failed"
-msgstr "ടോക്കൺ കൈമാറ്റം പരാജയപ്പെട്ടു"
-#: package/contents/ui/FitbitOAuth.qml:389
-msgid "Token exchange failed — missing tokens"
-msgstr "ടോക്കൺ കൈമാറ്റം പരാജയപ്പെട്ടു - ടോക്കണുകൾ കാണുന്നില്ല"
-#: package/contents/ui/FitbitOAuth.qml:390
-msgid "Token exchange failed — invalid response"
-msgstr "ടോക്കൺ കൈമാറ്റം പരാജയപ്പെട്ടു - അസാധുവായ പ്രതികരണം"
-#: package/contents/ui/FullRepresentation.qml:40
+#: package/contents/ui/FullRepresentation.qml:66
+#: package/contents/ui/main.qml:90
 msgctxt "distance in miles"
 msgid "%1 mi"
 msgstr "%1 മൈൽ"
-#: package/contents/ui/FullRepresentation.qml:42
+
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:91
 msgctxt "distance in kilometers"
 msgid "%1 km"
 msgstr "%1 കി.മീ"
-#: package/contents/ui/FullRepresentation.qml:68
-#: package/contents/ui/main.qml:77
-msgid "FitDash"
-msgstr "FitDash"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Stale"
-msgstr "പഴയ ഡാറ്റ"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Today"
-msgstr "ഇന്ന്"
-#: package/contents/ui/FullRepresentation.qml:115
-msgid "Connect Fitbit"
-msgstr "Fitbit കണക്റ്റ് ചെയ്യുക"
-#: package/contents/ui/FullRepresentation.qml:121
-msgid "Authorize your account in settings to show today's activity."
-msgstr "ഇന്നത്തെ പ്രവർത്തനം കാണിക്കാൻ ക്രമീകരണത്തിൽ നിങ്ങളുടെ അക്കൗണ്ടിന് അംഗീകാരം നൽകുക."
-#: package/contents/ui/FullRepresentation.qml:130
-msgid "Open Settings"
-msgstr "ക്രമീകരണങ്ങൾ തുറക്കുക"
-#: package/contents/ui/FullRepresentation.qml:160
-msgid "Loading Fitbit data"
-msgstr "Fitbit ഡാറ്റ ലോഡുചെയ്യുന്നു"
-#: package/contents/ui/FullRepresentation.qml:220
-#, javascript-format
-msgctxt "step goal progress"
-msgid "%1%"
-msgstr "%1%"
-#: package/contents/ui/FullRepresentation.qml:245
-msgid "%1 remaining of %2"
-msgstr "%2-ൽ %1 ശേഷിക്കുന്നു"
-#: package/contents/ui/FullRepresentation.qml:246
-msgid "No step goal set"
-msgstr "ചുവടുകളുടെ ലക്ഷ്യം സജ്ജീകരിച്ചിട്ടില്ല"
-#: package/contents/ui/FullRepresentation.qml:279
-msgid "Active"
-msgstr "സജീവത"
-#: package/contents/ui/FullRepresentation.qml:280
-msgctxt "active minutes"
-msgid "%1 min"
-msgstr "%1 മിനിറ്റ്"
-#: package/contents/ui/FullRepresentation.qml:287
-msgid "Resting HR"
-msgstr "വിശ്രമ ഹൃദയമിടിപ്പ്"
-#: package/contents/ui/FullRepresentation.qml:289
-msgctxt "heart rate in beats per minute"
-msgid "%1 bpm"
-msgstr "%1 bpm"
-#: package/contents/ui/FullRepresentation.qml:310
-msgid "Updated %1"
-msgstr "%1-ന് അപ്‌ഡേറ്റ് ചെയ്‌തു"
-#: package/contents/ui/main.qml:79
-msgid "Not connected"
-msgstr "ബന്ധിപ്പിച്ചിട്ടില്ല"
-#: package/contents/ui/main.qml:83
-msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "ചുവടുകൾ: %1 | കലോറി: %2 | ദൂരം: %3\nഅപ്ഡേറ്റ്: %4"
-#: package/contents/ui/main.qml:105
-msgid "Authorization expired at %1 — please re-authorize"
-msgstr "%1-ന് അംഗീകാരം കാലഹരണപ്പെട്ടു — ദയവായി വീണ്ടും അംഗീകരിക്കുക"
-#: package/contents/ui/main.qml:118
-msgid "Token refresh failed at %1 — %2"
-msgstr "%1-ന് ടോക്കൺ പുതുക്കൽ പരാജയപ്പെട്ടു — %2"
-#: package/contents/ui/main.qml:142
-msgid "No refresh token available — please re-authorize"
-msgstr "പുതുക്കൽ ടോക്കൺ ലഭ്യമല്ല — ദയവായി വീണ്ടും അംഗീകരിക്കുക"
-#: package/contents/ui/main.qml:169
-msgid "Token refreshed at %1"
-msgstr "%1-ന് ടോക്കൺ പുതുക്കി"
-
-#: scripts/fitdash-auth.py
-msgid "You can close this tab."
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Could not start authorization server on port %1"
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Authorization timed out — please try again"
-msgstr ""
-
-#: package/contents/ui/FullRepresentation.qml:318
-msgid "Vitals"
-msgstr "ജീവസൂചകങ്ങൾ"
-
-#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
-msgid "Sleep"
-msgstr "ഉറക്കം"
-
-#: package/contents/ui/FullRepresentation.qml:352
-msgid "SpO2"
-msgstr "SpO2"
-
-#: package/contents/ui/FullRepresentation.qml:362
-msgid "HRV"
-msgstr "HRV"
-
-#: package/contents/ui/FullRepresentation.qml:372
-msgid "Breathing"
-msgstr "ശ്വസനം"
 
 #: package/contents/ui/FullRepresentation.qml:73
 msgctxt "sleep duration in hours and minutes"
 msgid "%1h %2m"
 msgstr "%1മ %2മി"
 
+#: package/contents/ui/FullRepresentation.qml:98
+#: package/contents/ui/main.qml:85
+msgid "FitDash"
+msgstr "FitDash"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Stale"
+msgstr "പഴയ ഡാറ്റ"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Today"
+msgstr "ഇന്ന്"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Google Health കണക്റ്റ് ചെയ്യുക"
+
+#: package/contents/ui/FullRepresentation.qml:151
+msgid "Authorize your account in settings to show today's activity."
+msgstr "ഇന്നത്തെ പ്രവർത്തനം കാണിക്കാൻ ക്രമീകരണത്തിൽ നിങ്ങളുടെ അക്കൗണ്ടിന് അംഗീകാരം നൽകുക."
+
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Open Settings"
+msgstr "ക്രമീകരണങ്ങൾ തുറക്കുക"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "Google Health ഡാറ്റ ലോഡുചെയ്യുന്നു"
+
+#: package/contents/ui/FullRepresentation.qml:243
+#: package/contents/ui/GoogleHealthApi.qml:227
+#: package/contents/ui/configGeneral.qml:240
+msgid "Steps"
+msgstr "ചുവടുകൾ"
+
+#: package/contents/ui/FullRepresentation.qml:250
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "ഇതുവരെ ഡാറ്റയില്ല"
+
+#: package/contents/ui/FullRepresentation.qml:275
+msgid "%1 remaining of %2"
+msgstr "%2-ൽ %1 ശേഷിക്കുന്നു"
+
+#: package/contents/ui/FullRepresentation.qml:276
+msgid "No step goal set"
+msgstr "ചുവടുകളുടെ ലക്ഷ്യം സജ്ജീകരിച്ചിട്ടില്ല"
+
+#: package/contents/ui/FullRepresentation.qml:293
+#: package/contents/ui/GoogleHealthApi.qml:233
+#: package/contents/ui/configGeneral.qml:247
+msgid "Calories"
+msgstr "കലോറികൾ"
+
+#: package/contents/ui/FullRepresentation.qml:301
+#: package/contents/ui/GoogleHealthApi.qml:239
+#: package/contents/ui/configGeneral.qml:254
+msgid "Distance"
+msgstr "ദൂരം"
+
+#: package/contents/ui/FullRepresentation.qml:309
+msgid "Active"
+msgstr "സജീവത"
+
+#: package/contents/ui/FullRepresentation.qml:310
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 മിനിറ്റ്"
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "ജീവസൂചകങ്ങൾ"
+
+#: package/contents/ui/FullRepresentation.qml:334
+#: package/contents/ui/configGeneral.qml:275
+msgid "Sleep"
+msgstr "ഉറക്കം"
+
+#: package/contents/ui/FullRepresentation.qml:342
+msgid "Resting HR"
+msgstr "വിശ്രമ ഹൃദയമിടിപ്പ്"
+
+#: package/contents/ui/FullRepresentation.qml:344
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:354
+#, javascript-format
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "HRV"
+
 #: package/contents/ui/FullRepresentation.qml:364
 msgctxt "heart rate variability in milliseconds"
 msgid "%1 ms"
 msgstr "%1 മി.സെ"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "ശ്വസനം"
 
 #: package/contents/ui/FullRepresentation.qml:374
 msgctxt "respiratory rate in breaths per minute"
 msgid "%1 br/min"
 msgstr "%1 ശ്വാസം/മിനിറ്റ്"
 
-#: package/contents/ui/configGeneral.qml:272
-msgid "Blood oxygen (SpO2)"
-msgstr "രക്തത്തിലെ ഓക്സിജൻ (SpO2)"
+#: package/contents/ui/FullRepresentation.qml:395
+msgid "Updated %1"
+msgstr "%1-ന് അപ്‌ഡേറ്റ് ചെയ്‌തു"
 
-#: package/contents/ui/configGeneral.qml:279
-msgid "Heart rate variability"
-msgstr "ഹൃദയമിടിപ്പ് വ്യതിയാനം"
+#: package/contents/ui/GoogleHealthApi.qml:45
+msgid "No access token"
+msgstr "പ്രവേശന ടോക്കൺ ഇല്ല"
 
-#: package/contents/ui/configGeneral.qml:286
-msgid "Breathing rate"
-msgstr "ശ്വസന നിരക്ക്"
+#: package/contents/ui/GoogleHealthApi.qml:118
+msgid "Network error — check your connection"
+msgstr "നെറ്റ്‌വർക്ക് പിശക് — നിങ്ങളുടെ കണക്ഷൻ പരിശോധിക്കുക"
 
-#: package/contents/ui/FullRepresentation.qml:145
-msgid "Connect Google Health"
-msgstr "Google Health കണക്റ്റ് ചെയ്യുക"
+#: package/contents/ui/GoogleHealthApi.qml:119
+msgid "Network error at %1"
+msgstr "%1-ന് നെറ്റ്‌വർക്ക് പിശക്"
 
-#: package/contents/ui/FullRepresentation.qml:190
-msgid "Loading Google Health data"
-msgstr "Google Health ഡാറ്റ ലോഡുചെയ്യുന്നു"
+#: package/contents/ui/GoogleHealthApi.qml:125
+msgid "Token expired at %1 — refreshing"
+msgstr "%1-ന് ടോക്കൺ കാലഹരണപ്പെട്ടു — പുതുക്കുന്നു"
 
-#: package/contents/ui/FullRepresentation.qml:273
-msgid "No data yet"
-msgstr "ഇതുവരെ ഡാറ്റയില്ല"
+#: package/contents/ui/GoogleHealthApi.qml:136
+#: package/contents/ui/GoogleHealthOAuth.qml:212
+msgid "Rate limited — try again later"
+msgstr "അഭ്യർത്ഥന പരിധി കവിഞ്ഞു — പിന്നീട് വീണ്ടും ശ്രമിക്കുക"
 
-#: package/contents/ui/FullRepresentation.qml:354
-msgctxt "blood oxygen saturation percentage"
-msgid "%1%"
-msgstr "%1%"
+#: package/contents/ui/GoogleHealthApi.qml:137
+msgid "Rate limited at %1 — showing cached data"
+msgstr "%1-ന് അഭ്യർത്ഥന പരിധി കവിഞ്ഞു — കാഷെ ചെയ്ത ഡാറ്റ കാണിക്കുന്നു"
 
 #: package/contents/ui/GoogleHealthApi.qml:143
 msgid "Google Health server error (HTTP %1)"
 msgstr "Google Health സെർവർ പിശക് (HTTP %1)"
 
-#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:144
+msgid "Server error (HTTP %1) at %2"
+msgstr "%2-ന് സെർവർ പിശക് (HTTP %1)"
+
+#: package/contents/ui/GoogleHealthApi.qml:150
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 പരാജയപ്പെട്ടു (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthApi.qml:151
+msgid "Error (HTTP %1) at %2"
+msgstr "%2-ന് പിശക് (HTTP %1)"
+
+#: package/contents/ui/GoogleHealthApi.qml:178
+msgid "OK — updated at %1"
+msgstr "ശരി — %1-ന് അപ്ഡേറ്റ് ചെയ്തു"
+
+#: package/contents/ui/GoogleHealthApi.qml:192
+msgid "Request timed out — check your connection"
+msgstr "അഭ്യർത്ഥന സമയം കഴിഞ്ഞു - നിങ്ങളുടെ കണക്ഷൻ പരിശോധിക്കുക"
+
+#: package/contents/ui/GoogleHealthApi.qml:193
+msgid "Timed out at %1"
+msgstr "%1-ന് സമയം കഴിഞ്ഞു"
+
 #: package/contents/ui/GoogleHealthApi.qml:200
 msgid "%1 fetch"
 msgstr "%1 നേടൽ"
 
-#. TRANSLATORS: %1 is a metric name such as Steps
 #: package/contents/ui/GoogleHealthApi.qml:211
 msgid "Failed to parse %1 data"
 msgstr "%1 ഡാറ്റ പാഴ്സ് ചെയ്യാനായില്ല"
+
+#: package/contents/ui/GoogleHealthApi.qml:212
+msgid "Parse error at %1"
+msgstr "%1-ന് പാഴ്‌സ് പിശക്"
+
+#: package/contents/ui/GoogleHealthApi.qml:246
+#: package/contents/ui/configGeneral.qml:261
+msgid "Active minutes"
+msgstr "സജീവ മിനിറ്റ്"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:91
+msgid "Unknown error"
+msgstr "അജ്ഞാത പിശക്"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:98
+msgid "Failed to parse auth response"
+msgstr "അംഗീകാര പ്രതികരണം പാഴ്‌സ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:137
+#: package/contents/ui/GoogleHealthOAuth.qml:341
+msgid "Invalid client ID format"
+msgstr "അസാധുവായ ക്ലയൻ്റ് ഐഡി ഫോർമാറ്റ്"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:156
+msgid "Authorization canceled"
+msgstr "അംഗീകാരം റദ്ദാക്കി"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:198
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
 
 #: package/contents/ui/GoogleHealthOAuth.qml:216
 msgid "Google server error (HTTP %1)"
 msgstr "Google സെർവർ പിശക് (HTTP %1)"
 
-#: package/contents/ui/configGeneral.qml:102
+#: package/contents/ui/GoogleHealthOAuth.qml:220 scripts/fitdash-auth.py:68
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:292
+msgid "Network error during token refresh"
+msgstr "ടോക്കൺ പുതുക്കുന്നതിനിടയിൽ നെറ്റ്‌വർക്ക് പിശക്"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:293
+msgid "Refresh token invalid — please re-authorize"
+msgstr "പുതുക്കൽ ടോക്കൺ അസാധുവാണ് — ദയവായി വീണ്ടും അംഗീകരിക്കുക"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:294
+msgid "Token refresh failed"
+msgstr "ടോക്കൺ പുതുക്കൽ പരാജയപ്പെട്ടു"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:295
+msgid "Refresh failed — missing tokens"
+msgstr "പുതുക്കൽ പരാജയപ്പെട്ടു - ടോക്കണുകൾ വിട്ടുപോയിരിക്കുന്നു"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:296
+msgid "Token refresh failed — invalid response"
+msgstr "ടോക്കൺ പുതുക്കൽ പരാജയപ്പെട്ടു - അസാധുവായ പ്രതികരണം"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:357
+msgid "Paste the redirect URL or authorization code first"
+msgstr "ആദ്യം റീഡയറക്‌ട് URL അല്ലെങ്കിൽ അംഗീകാര കോഡ് ഒട്ടിക്കുക"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:361
+msgid "Start the manual authorization first"
+msgstr "മാനുവൽ അംഗീകാരം ആദ്യം ആരംഭിക്കുക"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:381 scripts/fitdash-auth.py:130
+msgid "Authorization was denied"
+msgstr "അംഗീകാരം നിഷേധിക്കപ്പെട്ടു"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:388 scripts/fitdash-auth.py:116
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "അംഗീകാരം പരാജയപ്പെട്ടു (state പൊരുത്തപ്പെടുന്നില്ല) — വീണ്ടും ശ്രമിക്കുക"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:392
+msgid "No authorization code found in the pasted text"
+msgstr "ഒട്ടിച്ച വാചകത്തിൽ അംഗീകാര കോഡുകളൊന്നും കണ്ടെത്തിയില്ല"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:403 scripts/fitdash-auth.py:70
+msgid "Network error during token exchange"
+msgstr "ടോക്കൺ എക്സ്ചേഞ്ച് സമയത്ത് നെറ്റ്‌വർക്ക് പിശക്"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:404
+msgid "Authorization code invalid or expired — please try again"
+msgstr "അംഗീകാര കോഡ് അസാധുവാണ് അല്ലെങ്കിൽ കാലഹരണപ്പെട്ടു - ദയവായി വീണ്ടും ശ്രമിക്കുക"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:405 scripts/fitdash-auth.py:68
+msgid "Token exchange failed"
+msgstr "ടോക്കൺ കൈമാറ്റം പരാജയപ്പെട്ടു"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:406 scripts/fitdash-auth.py:74
+msgid "Token exchange failed — missing tokens"
+msgstr "ടോക്കൺ കൈമാറ്റം പരാജയപ്പെട്ടു - ടോക്കണുകൾ കാണുന്നില്ല"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:407 scripts/fitdash-auth.py:204
+msgid "Token exchange failed — invalid response"
+msgstr "ടോക്കൺ കൈമാറ്റം പരാജയപ്പെട്ടു - അസാധുവായ പ്രതികരണം"
+
+#: package/contents/ui/configGeneral.qml:9 package/contents/config/config.qml:6
+msgid "General"
+msgstr "പൊതുവായവ"
+
+#: package/contents/ui/configGeneral.qml:65
+msgid "Not authorized"
+msgstr "അധികാരപ്പെടുത്തിയിട്ടില്ല"
+
+#: package/contents/ui/configGeneral.qml:68
+msgid "Authorization problem — re-authorize"
+msgstr "അംഗീകാര പ്രശ്നം — വീണ്ടും അംഗീകരിക്കുക"
+
+#: package/contents/ui/configGeneral.qml:71
+msgid "Token expired — refresh needed"
+msgstr "ടോക്കൺ കാലഹരണപ്പെട്ടു - പുതുക്കേണ്ടതുണ്ട്"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "unknown"
+msgstr "അജ്ഞാതം"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "Authorized (User: %1)"
+msgstr "അംഗീകരിച്ചു (ഉപയോക്താവ്: %1)"
+
+#: package/contents/ui/configGeneral.qml:103
+msgid "Client ID:"
+msgstr "ക്ലയൻ്റ് ഐഡി:"
+
+#: package/contents/ui/configGeneral.qml:104
 msgid "From Google Cloud Console"
 msgstr "Google Cloud Console-ൽ നിന്ന്"
 
-#: package/contents/ui/configGeneral.qml:109
+#: package/contents/ui/configGeneral.qml:111
 msgid "Client Secret:"
 msgstr "ക്ലയന്റ് സീക്രട്ട്:"
 
-#: package/contents/ui/configGeneral.qml:110
+#: package/contents/ui/configGeneral.qml:112
 msgid "From the same OAuth client"
 msgstr "അതേ OAuth ക്ലയന്റിൽ നിന്ന്"
 
-#: package/contents/ui/configGeneral.qml:117
-msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
-msgstr "Google Health API പ്രവർത്തനക്ഷമമാക്കിയ Google Cloud പ്രോജക്റ്റിൽ നിന്നുള്ള OAuth 2.0 ക്രെഡൻഷ്യലുകൾ"
+#: package/contents/ui/configGeneral.qml:119
+msgid ""
+"OAuth 2.0 credentials from a Google Cloud project with the Google Health API "
+"enabled"
+msgstr ""
+"Google Health API പ്രവർത്തനക്ഷമമാക്കിയ Google Cloud പ്രോജക്റ്റിൽ നിന്നുള്ള OAuth 2.0 "
+"ക്രെഡൻഷ്യലുകൾ"
 
-#: package/contents/ui/configGeneral.qml:158
-msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
-msgstr "ഡെസ്ക്ടോപ്പ് ആപ്പ് OAuth ക്ലയന്റുകൾക്ക് ഏത് localhost പോർട്ടും Google സ്വയമേവ അനുവദിക്കുന്നു — ഈ URL രജിസ്റ്റർ ചെയ്യേണ്ടതില്ല"
+#: package/contents/ui/configGeneral.qml:127
+msgid ""
+"You can also drop the downloaded client_secret.json file onto this window to "
+"fill them in."
+msgstr ""
+"ഇവ പൂരിപ്പിക്കാൻ ഡൗൺലോഡ് ചെയ്ത client_secret.json ഫയൽ ഈ വിൻഡോയിലേക്ക് ഡ്രോപ്പ് ചെയ്യാനും "
+"കഴിയും."
 
-#: package/contents/ui/configGeneral.qml:174
+#: package/contents/ui/configGeneral.qml:134
+msgid "Callback URL:"
+msgstr "കോൾബാക്ക് URL:"
+
+#: package/contents/ui/configGeneral.qml:147
+#: package/contents/ui/configGeneral.qml:387
+msgid "Copy to clipboard"
+msgstr "ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തുക"
+
+#: package/contents/ui/configGeneral.qml:160
+msgid "Callback port:"
+msgstr "കോൾബാക്ക് പോർട്ട്:"
+
+#: package/contents/ui/configGeneral.qml:168
+msgid ""
+"Google allows any localhost port for Desktop app OAuth clients automatically "
+"— no need to register this URL"
+msgstr ""
+"ഡെസ്ക്ടോപ്പ് ആപ്പ് OAuth ക്ലയന്റുകൾക്ക് ഏത് localhost പോർട്ടും Google സ്വയമേവ അനുവദിക്കുന്നു — ഈ "
+"URL രജിസ്റ്റർ ചെയ്യേണ്ടതില്ല"
+
+#: package/contents/ui/configGeneral.qml:176
+msgid "Refresh interval (minutes):"
+msgstr "പുതുക്കൽ ഇടവേള (മിനിറ്റ്):"
+
+#: package/contents/ui/configGeneral.qml:184
 msgid "Recommended: 15–30 minutes to stay within API rate limits"
 msgstr "ശുപാർശ: 15–30 മിനിറ്റ്, API അഭ്യർത്ഥന പരിധി കവിയാതിരിക്കാൻ"
 
-#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/configGeneral.qml:192
+msgid "Display"
+msgstr "പ്രദർശനം"
+
+#: package/contents/ui/configGeneral.qml:197
+msgid "Distance unit:"
+msgstr "ദൂര യൂണിറ്റ്:"
+
+#: package/contents/ui/configGeneral.qml:199
+msgid "Kilometers (km)"
+msgstr "കിലോമീറ്റർ (കി.മീ.)"
+
+#: package/contents/ui/configGeneral.qml:200
+msgid "Miles (mi)"
+msgstr "മൈൽ (mi)"
+
+#: package/contents/ui/configGeneral.qml:211
 msgid "Step goal:"
 msgstr "ചുവട് ലക്ഷ്യം:"
 
-#: package/contents/ui/configGeneral.qml:207
+#: package/contents/ui/configGeneral.qml:217
 msgid "None"
 msgstr "ഒന്നുമില്ല"
 
-#: package/contents/ui/configGeneral.qml:216
-msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
-msgstr "Google Health API ലക്ഷ്യം റിപ്പോർട്ട് ചെയ്യുന്നില്ല, അതിനാൽ ഇത് ഇവിടെ സജ്ജീകരിക്കുന്നു. 0 പകരം “ചുവടുകളുടെ ലക്ഷ്യം സജ്ജീകരിച്ചിട്ടില്ല” കാണിക്കുന്നു"
+#: package/contents/ui/configGeneral.qml:226
+msgid ""
+"The Google Health API doesn't report a goal, so this is set here. 0 shows "
+"“No step goal set” instead"
+msgstr ""
+"Google Health API ലക്ഷ്യം റിപ്പോർട്ട് ചെയ്യുന്നില്ല, അതിനാൽ ഇത് ഇവിടെ സജ്ജീകരിക്കുന്നു. 0 "
+"പകരം “ചുവടുകളുടെ ലക്ഷ്യം സജ്ജീകരിച്ചിട്ടില്ല” കാണിക്കുന്നു"
 
-#: package/contents/ui/configGeneral.qml:292
+#: package/contents/ui/configGeneral.qml:234
+msgid "Visible Metrics"
+msgstr "ദൃശ്യമായ അളവുകൾ"
+
+#: package/contents/ui/configGeneral.qml:268
+msgid "Resting heart rate"
+msgstr "വിശ്രമവേളയിലെ ഹൃദയമിടിപ്പ്"
+
+#: package/contents/ui/configGeneral.qml:282
+msgid "Blood oxygen (SpO2)"
+msgstr "രക്തത്തിലെ ഓക്സിജൻ (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:289
+msgid "Heart rate variability"
+msgstr "ഹൃദയമിടിപ്പ് വ്യതിയാനം"
+
+#: package/contents/ui/configGeneral.qml:296
+msgid "Breathing rate"
+msgstr "ശ്വസന നിരക്ക്"
+
+#: package/contents/ui/configGeneral.qml:302
 msgid "Google Health Account"
 msgstr "Google Health അക്കൗണ്ട്"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:306
+msgid "Status:"
+msgstr "നില:"
+
+#: package/contents/ui/configGeneral.qml:314
+msgid "Last request:"
+msgstr "അവസാന അഭ്യർത്ഥന:"
+
+#: package/contents/ui/configGeneral.qml:316
+msgid "No requests yet"
+msgstr "ഇതുവരെ അഭ്യർത്ഥനകളൊന്നുമില്ല"
+
+#: package/contents/ui/configGeneral.qml:326
+msgid "Authorization:"
+msgstr "അംഗീകാരം:"
+
+#: package/contents/ui/configGeneral.qml:328
+msgid "Cancel"
+msgstr "റദ്ദാക്കുക"
+
+#: package/contents/ui/configGeneral.qml:329
 msgid "Re-authorize with Google"
 msgstr "Google ഉപയോഗിച്ച് വീണ്ടും അംഗീകരിക്കുക"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:329
 msgid "Authorize with Google"
 msgstr "Google ഉപയോഗിച്ച് അംഗീകരിക്കുക"
+
+#: package/contents/ui/configGeneral.qml:345
+msgid "Authorize manually (copy & paste)"
+msgstr "സ്വമേധയാ അംഗീകരിക്കുക (പകർത്തി ഒട്ടിക്കുക)"
+
+#: package/contents/ui/configGeneral.qml:350
+msgid ""
+"Use this if the browser can't reach localhost (sandboxed browser, remote "
+"session, or no Python)"
+msgstr ""
+"ബ്രൗസറിന് localhost-ൽ എത്താൻ കഴിയുന്നില്ലെങ്കിൽ ഇത് ഉപയോഗിക്കുക (സാൻഡ്‌ബോക്സ് ചെയ്ത ബ്രൗസർ, "
+"റിമോട്ട് സെഷൻ അല്ലെങ്കിൽ Python ഇല്ല)"
+
+#: package/contents/ui/configGeneral.qml:366
+msgid "Step 1:"
+msgstr "ഘട്ടം 1:"
+
+#: package/contents/ui/configGeneral.qml:367
+msgid "Open this URL in a browser and approve access:"
+msgstr "ഒരു ബ്രൗസറിൽ ഈ URL തുറന്ന് ആക്സസ് അംഗീകരിക്കുക:"
+
+#: package/contents/ui/configGeneral.qml:374
+msgid "Authorization URL:"
+msgstr "അംഗീകാര URL:"
+
+#: package/contents/ui/configGeneral.qml:401
+msgid "Open in browser"
+msgstr "ബ്രൗസറിൽ തുറക്കുക"
+
+#: package/contents/ui/configGeneral.qml:410
+msgid "Step 2:"
+msgstr "ഘട്ടം 2:"
+
+#: package/contents/ui/configGeneral.qml:411
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr "അംഗീകരിച്ച ശേഷം, വിലാസ ബാർ URL പകർത്തി താഴെ ഒട്ടിക്കുക:"
+
+#: package/contents/ui/configGeneral.qml:418
+msgid "Redirect URL or code:"
+msgstr "റീഡയറക്‌ട് URL അല്ലെങ്കിൽ കോഡ്:"
+
+#: package/contents/ui/configGeneral.qml:422
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/callback?code=…"
+
+#: package/contents/ui/configGeneral.qml:429
+msgid "Complete"
+msgstr "പൂർത്തിയാക്കുക"
+
+#: package/contents/ui/configGeneral.qml:439
+msgid "Cancel manual authorization"
+msgstr "സ്വമേധയാലുള്ള അംഗീകാരം റദ്ദാക്കുക"
+
+#: package/contents/ui/configGeneral.qml:476
+msgid "The dropped file does not contain a client ID and client secret."
+msgstr "ഡ്രോപ്പ് ചെയ്ത ഫയലിൽ ക്ലയന്റ് ഐഡിയും ക്ലയന്റ് സീക്രട്ടും ഇല്ല."
+
+#: package/contents/ui/configGeneral.qml:480
+msgid "The client ID in the dropped file is not valid."
+msgstr "ഡ്രോപ്പ് ചെയ്ത ഫയലിലെ ക്ലയന്റ് ഐഡി സാധുവല്ല."
+
+#: package/contents/ui/configGeneral.qml:486
+msgid "Client ID and secret imported from file."
+msgstr "ഫയലിൽ നിന്ന് ക്ലയന്റ് ഐഡിയും സീക്രട്ടും ഇമ്പോർട്ട് ചെയ്തു."
+
+#: package/contents/ui/configGeneral.qml:488
+#: package/contents/ui/configGeneral.qml:496
+#: package/contents/ui/configGeneral.qml:510
+msgid "Could not read the dropped file as a Google client secret JSON."
+msgstr "ഡ്രോപ്പ് ചെയ്ത ഫയൽ Google ക്ലയന്റ് സീക്രട്ട് JSON ആയി വായിക്കാൻ കഴിഞ്ഞില്ല."
+
+#: package/contents/ui/configGeneral.qml:546 scripts/fitdash-auth.py:128
+msgid "Authorization successful!"
+msgstr "അംഗീകാരം വിജയിച്ചു!"
+
+#: package/contents/ui/main.qml:87
+msgid "Not connected"
+msgstr "ബന്ധിപ്പിച്ചിട്ടില്ല"
+
+#: package/contents/ui/main.qml:92
+msgid ""
+"Steps: %1 | Cal: %2 | Dist: %3\n"
+"Updated: %4"
+msgstr ""
+"ചുവടുകൾ: %1 | കലോറി: %2 | ദൂരം: %3\n"
+"അപ്ഡേറ്റ്: %4"
+
+#: package/contents/ui/main.qml:114
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "%1-ന് അംഗീകാരം കാലഹരണപ്പെട്ടു — ദയവായി വീണ്ടും അംഗീകരിക്കുക"
+
+#: package/contents/ui/main.qml:127
+msgid "Token refresh failed at %1 — %2"
+msgstr "%1-ന് ടോക്കൺ പുതുക്കൽ പരാജയപ്പെട്ടു — %2"
+
+#: package/contents/ui/main.qml:152
+msgid "No refresh token available — please re-authorize"
+msgstr "പുതുക്കൽ ടോക്കൺ ലഭ്യമല്ല — ദയവായി വീണ്ടും അംഗീകരിക്കുക"
+
+#: package/contents/ui/main.qml:184
+msgid "Token refreshed at %1"
+msgstr "%1-ന് ടോക്കൺ പുതുക്കി"
+
+#: scripts/fitdash-auth.py:101
+msgid "Missing client secret"
+msgstr ""
+
+#: scripts/fitdash-auth.py:128
+msgid "You can close this tab."
+msgstr ""
+
+#: scripts/fitdash-auth.py:145
+msgid "Could not start authorization server on port %1"
+msgstr ""
+
+#: scripts/fitdash-auth.py:192
+msgid "Authorization timed out — please try again"
+msgstr ""
+
+#~ msgid "From dev.fitbit.com/apps"
+#~ msgstr "dev.fitbit.com/apps-ൽ നിന്ന്"
+
+#~ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+#~ msgstr "നിങ്ങളുടെ Fitbit ആപ്പ് രജിസ്ട്രേഷനിൽ നിന്നുള്ള OAuth 2.0 ക്ലയൻ്റ് ഐഡി"
+
+#~ msgid ""
+#~ "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+#~ msgstr ""
+#~ "dev.fitbit.com-ൽ നിങ്ങളുടെ Fitbit ആപ്പ് ക്രമീകരണത്തിലേക്ക് കോൾബാക്ക് URL ഒട്ടിക്കുക"
+
+#~ msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+#~ msgstr "ശുപാർശ: 15–30 മിനിറ്റ്, Fitbit അഭ്യർത്ഥന പരിധി കവിയാതിരിക്കാൻ"
+
+#~ msgid "Fitbit Account"
+#~ msgstr "Fitbit അക്കൗണ്ട്"
+
+#~ msgid "Re-authorize with Fitbit"
+#~ msgstr "Fitbit ഉപയോഗിച്ച് വീണ്ടും അംഗീകരിക്കുക"
+
+#~ msgid "Authorize with Fitbit"
+#~ msgstr "Fitbit ഉപയോഗിച്ച് അംഗീകരിക്കുക"
+
+#~ msgid "Fitbit server error (HTTP %1)"
+#~ msgstr "Fitbit സെർവർ പിശക് (HTTP %1)"
+
+#~ msgid "Activity fetch"
+#~ msgstr "പ്രവർത്തനം ലഭ്യമാക്കുന്നു"
+
+#~ msgid "Failed to parse activity data"
+#~ msgstr "പ്രവർത്തന ഡാറ്റ പാഴ്‌സ് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു"
+
+#~ msgid "Connect Fitbit"
+#~ msgstr "Fitbit കണക്റ്റ് ചെയ്യുക"
+
+#~ msgid "Loading Fitbit data"
+#~ msgstr "Fitbit ഡാറ്റ ലോഡുചെയ്യുന്നു"

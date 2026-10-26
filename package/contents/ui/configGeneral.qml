@@ -116,7 +116,15 @@ Kirigami.ScrollablePage {
 
             QQC2.Label {
                 Layout.fillWidth: true
-                text: i18n("OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled. You can drop the downloaded client_secret.json file onto this window to fill them in.")
+                text: i18n("OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled")
+                font.pointSize: Kirigami.Theme.smallFont.pointSize
+                opacity: 0.7
+                wrapMode: Text.WordWrap
+            }
+
+            QQC2.Label {
+                Layout.fillWidth: true
+                text: i18n("You can also drop the downloaded client_secret.json file onto this window to fill them in.")
                 font.pointSize: Kirigami.Theme.smallFont.pointSize
                 opacity: 0.7
                 wrapMode: Text.WordWrap
@@ -468,6 +476,10 @@ Kirigami.ScrollablePage {
                 showImportError(i18n("The dropped file does not contain a client ID and client secret."));
                 return;
             }
+            if (!clientIdField.validator.regularExpression.test(creds.client_id)) {
+                showImportError(i18n("The client ID in the dropped file is not valid."));
+                return;
+            }
             clientIdField.text = creds.client_id;
             clientSecretField.text = creds.client_secret;
             configRoot.authStatusIsError = false;
@@ -479,7 +491,12 @@ Kirigami.ScrollablePage {
 
     // Qt blocks XMLHttpRequest reads of file:// URLs by default, so read the file with cat.
     function importClientSecretFile(url) {
-        var path = decodeURIComponent(url.replace(/^file:\/\//, ""));
+        var match = /^file:\/\/(?:localhost)?(\/.*)$/.exec(url);
+        if (!match) {
+            showImportError(i18n("Could not read the dropped file as a Google client secret JSON."));
+            return;
+        }
+        var path = decodeURIComponent(match[1]);
         fileReader.connectSource("cat -- '" + path.replace(/'/g, "'\\''") + "'");
     }
 
@@ -501,12 +518,16 @@ Kirigami.ScrollablePage {
         x: 0
         y: 0
         width: mainLayout.width
-        height: mainLayout.height
+        height: Math.max(mainLayout.height, configRoot.height)
         keys: ["text/uri-list"]
         onDropped: function(drop) {
-            if (drop.hasUrls && drop.urls.length > 0) {
-                configRoot.importClientSecretFile(drop.urls[0].toString());
+            if (!drop.hasUrls || drop.urls.length === 0) {
+                return;
             }
+            // Prefer a .json file when several files are dropped at once.
+            var urls = drop.urls.map(function(u) { return u.toString(); });
+            var jsonUrls = urls.filter(function(u) { return /\.json$/i.test(u); });
+            configRoot.importClientSecretFile(jsonUrls.length > 0 ? jsonUrls[0] : urls[0]);
         }
     }
 

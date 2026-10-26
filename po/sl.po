@@ -1,8 +1,9 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: FitDash 1.0.8\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
-"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
 "Last-Translator: FitDash contributors\n"
 "Language-Team: Slovenian\n"
@@ -11,475 +12,630 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
-msgid "General"
-msgstr "Splošno"
-#: package/contents/ui/configGeneral.qml:52
-msgid "Not authorized"
-msgstr "Ni avtorizirano"
-#: package/contents/ui/configGeneral.qml:55
-msgid "Authorization problem — re-authorize"
-msgstr "Težava z avtorizacijo — ponovno avtorizirajte"
-#: package/contents/ui/configGeneral.qml:58
-msgid "Token expired — refresh needed"
-msgstr "Žeton je potekel — potrebna je osvežitev"
-#: package/contents/ui/configGeneral.qml:60
-msgid "unknown"
-msgstr "neznano"
-#: package/contents/ui/configGeneral.qml:60
-msgid "Authorized (User: %1)"
-msgstr "Avtorizirano (uporabnik: %1)"
-#: package/contents/ui/configGeneral.qml:89
-msgid "Client ID:"
-msgstr "ID odjemalca:"
-#: package/contents/ui/configGeneral.qml:90
-msgid "From dev.fitbit.com/apps"
-msgstr "Od dev.fitbit.com/apps"
-#: package/contents/ui/configGeneral.qml:97
-msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "ID odjemalca OAuth 2.0 iz vaše registracije aplikacije Fitbit"
-#: package/contents/ui/configGeneral.qml:104
-msgid "Callback URL:"
-msgstr "URL povratnega klica:"
-#: package/contents/ui/configGeneral.qml:117
-#: package/contents/ui/configGeneral.qml:306
-msgid "Copy to clipboard"
-msgstr "Kopiraj v odložišče"
-#: package/contents/ui/configGeneral.qml:130
-msgid "Callback port:"
-msgstr "Vrata povratnega klica:"
-#: package/contents/ui/configGeneral.qml:138
-msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "Prilepite URL povratnega klica v nastavitve aplikacije Fitbit na dev.fitbit.com"
-#: package/contents/ui/configGeneral.qml:146
-msgid "Refresh interval (minutes):"
-msgstr "Interval osveževanja (minute):"
-#: package/contents/ui/configGeneral.qml:154
-msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "Priporočeno: 15–30 minut, da ne presežete Fitbitovih omejitev zahtev"
-#: package/contents/ui/configGeneral.qml:162
-msgid "Display"
-msgstr "Prikaz"
-#: package/contents/ui/configGeneral.qml:167
-msgid "Distance unit:"
-msgstr "Enota razdalje:"
-#: package/contents/ui/configGeneral.qml:169
-msgid "Kilometers (km)"
-msgstr "Kilometri (km)"
-#: package/contents/ui/configGeneral.qml:170
-msgid "Miles (mi)"
-msgstr "Milje (mi)"
-#: package/contents/ui/configGeneral.qml:181
-msgid "Visible Metrics"
-msgstr "Vidne meritve"
-#: package/contents/ui/configGeneral.qml:187
-#: package/contents/ui/FullRepresentation.qml:213
-msgid "Steps"
-msgstr "Koraki"
-#: package/contents/ui/configGeneral.qml:194
-#: package/contents/ui/FullRepresentation.qml:263
-msgid "Calories"
-msgstr "Kalorije"
-#: package/contents/ui/configGeneral.qml:201
-#: package/contents/ui/FullRepresentation.qml:271
-msgid "Distance"
-msgstr "Razdalja"
-#: package/contents/ui/configGeneral.qml:208
-msgid "Active minutes"
-msgstr "Aktivne minute"
-#: package/contents/ui/configGeneral.qml:215
-msgid "Resting heart rate"
-msgstr "Srčni utrip v mirovanju"
-#: package/contents/ui/configGeneral.qml:221
-msgid "Fitbit Account"
-msgstr "Račun Fitbit"
-#: package/contents/ui/configGeneral.qml:225
-msgid "Status:"
-msgstr "Stanje:"
-#: package/contents/ui/configGeneral.qml:233
-msgid "Last request:"
-msgstr "Zadnja zahteva:"
-#: package/contents/ui/configGeneral.qml:235
-msgid "No requests yet"
-msgstr "Še ni zahtev"
-#: package/contents/ui/configGeneral.qml:245
-msgid "Authorization:"
-msgstr "Avtorizacija:"
-#: package/contents/ui/configGeneral.qml:247
-msgid "Cancel"
-msgstr "Prekliči"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Re-authorize with Fitbit"
-msgstr "Ponovno avtoriziraj s Fitbitom"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Authorize with Fitbit"
-msgstr "Avtoriziraj s Fitbitom"
-#: package/contents/ui/configGeneral.qml:264
-msgid "Authorize manually (copy & paste)"
-msgstr "Ročno avtoriziraj (kopiraj in prilepi)"
-#: package/contents/ui/configGeneral.qml:269
-msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "Uporabite to, če brskalnik ne more dostopati do localhost (brskalnik v peskovniku, oddaljena seja ali brez Pythona)"
-#: package/contents/ui/configGeneral.qml:285
-msgid "Step 1:"
-msgstr "1. korak:"
-#: package/contents/ui/configGeneral.qml:286
-msgid "Open this URL in a browser and approve access:"
-msgstr "Odprite ta URL v brskalniku in odobrite dostop:"
-#: package/contents/ui/configGeneral.qml:293
-msgid "Authorization URL:"
-msgstr "URL avtorizacije:"
-#: package/contents/ui/configGeneral.qml:320
-msgid "Open in browser"
-msgstr "Odpri v brskalniku"
-#: package/contents/ui/configGeneral.qml:329
-msgid "Step 2:"
-msgstr "2. korak:"
-#: package/contents/ui/configGeneral.qml:330
-msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "Po odobritvi kopirajte URL naslovne vrstice in ga prilepite spodaj:"
-#: package/contents/ui/configGeneral.qml:337
-msgid "Redirect URL or code:"
-msgstr "Preusmeritveni URL ali koda:"
-#: package/contents/ui/configGeneral.qml:341
-msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:…/callback?code=…"
-#: package/contents/ui/configGeneral.qml:348
-msgid "Complete"
-msgstr "Dokončaj"
-#: package/contents/ui/configGeneral.qml:358
-msgid "Cancel manual authorization"
-msgstr "Prekliči ročno avtorizacijo"
-#: package/contents/ui/configGeneral.qml:397
-msgid "Authorization successful!"
-msgstr "Avtorizacija uspešna!"
-#: package/contents/ui/FitbitApi.qml:33
-msgid "No access token"
-msgstr "Ni dostopnega žetona"
-#: package/contents/ui/FitbitApi.qml:52
-msgid "Network error — check your connection"
-msgstr "Omrežna napaka — preverite povezavo"
-#: package/contents/ui/FitbitApi.qml:53
-msgid "Network error at %1"
-msgstr "Omrežna napaka ob %1"
-#: package/contents/ui/FitbitApi.qml:59
-msgid "Token expired at %1 — refreshing"
-msgstr "Žeton je potekel ob %1 — osveževanje"
-#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
-msgid "Rate limited — try again later"
-msgstr "Presežena omejitev zahtev — poskusite znova pozneje"
-#: package/contents/ui/FitbitApi.qml:66
-msgid "Rate limited at %1 — showing cached data"
-msgstr "Presežena omejitev zahtev ob %1 — prikazani so predpomnjeni podatki"
-#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
-msgid "Fitbit server error (HTTP %1)"
-msgstr "Napaka strežnika Fitbit (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:73
-msgid "Server error (HTTP %1) at %2"
-msgstr "Napaka strežnika (HTTP %1) ob %2"
-#: package/contents/ui/FitbitApi.qml:79
-msgid "%1 failed (HTTP %2)"
-msgstr "%1 ni uspelo (HTTP %2)"
-#: package/contents/ui/FitbitApi.qml:80
-msgid "Error (HTTP %1) at %2"
-msgstr "Napaka (HTTP %1) ob %2"
-#: package/contents/ui/FitbitApi.qml:107
-msgid "Request timed out — check your connection"
-msgstr "Časovna omejitev zahteve je potekla — preverite povezavo"
-#: package/contents/ui/FitbitApi.qml:108
-msgid "Timed out at %1"
-msgstr "Časovna omejitev ob %1"
-#: package/contents/ui/FitbitApi.qml:116
-msgid "Activity fetch"
-msgstr "Pridobivanje dejavnosti"
-#: package/contents/ui/FitbitApi.qml:141
-msgid "OK — updated at %1"
-msgstr "OK — posodobljeno ob %1"
-#: package/contents/ui/FitbitApi.qml:146
-msgid "Failed to parse activity data"
-msgstr "Podatkov o dejavnosti ni bilo mogoče razčleniti"
-#: package/contents/ui/FitbitApi.qml:147
-msgid "Parse error at %1"
-msgstr "Napaka pri razčlenjevanju ob %1"
-#: package/contents/ui/FitbitOAuth.qml:90
-msgid "Unknown error"
-msgstr "Neznana napaka"
-#: package/contents/ui/FitbitOAuth.qml:97
-msgid "Failed to parse auth response"
-msgstr "Odgovora avtorizacije ni bilo mogoče razčleniti"
-#: package/contents/ui/FitbitOAuth.qml:136
-#: package/contents/ui/FitbitOAuth.qml:327
-msgid "Invalid client ID format"
-msgstr "Neveljavna oblika ID-ja odjemalca"
-#: package/contents/ui/FitbitOAuth.qml:150
-msgid "Authorization canceled"
-msgstr "Avtorizacija preklicana"
-#: package/contents/ui/FitbitOAuth.qml:191
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-#: package/contents/ui/FitbitOAuth.qml:213
-msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2)"
-#: package/contents/ui/FitbitOAuth.qml:280
-msgid "Network error during token refresh"
-msgstr "Omrežna napaka med osveževanjem žetona"
-#: package/contents/ui/FitbitOAuth.qml:281
-msgid "Refresh token invalid — please re-authorize"
-msgstr "Žeton za osvežitev je neveljaven — ponovno avtorizirajte"
-#: package/contents/ui/FitbitOAuth.qml:282
-msgid "Token refresh failed"
-msgstr "Osvežitev žetona ni uspela"
-#: package/contents/ui/FitbitOAuth.qml:283
-msgid "Refresh failed — missing tokens"
-msgstr "Osvežitev ni uspela — manjkajo žetoni"
-#: package/contents/ui/FitbitOAuth.qml:284
-msgid "Token refresh failed — invalid response"
-msgstr "Osvežitev žetona ni uspela — neveljaven odgovor"
-#: package/contents/ui/FitbitOAuth.qml:341
-msgid "Paste the redirect URL or authorization code first"
-msgstr "Najprej prilepite preusmeritveni URL ali avtorizacijsko kodo"
-#: package/contents/ui/FitbitOAuth.qml:345
-msgid "Start the manual authorization first"
-msgstr "Najprej zaženite ročno avtorizacijo"
-#: package/contents/ui/FitbitOAuth.qml:365
-msgid "Authorization was denied"
-msgstr "Avtorizacija je bila zavrnjena"
-#: package/contents/ui/FitbitOAuth.qml:372
-msgid "Authorization failed (state mismatch) — please try again"
-msgstr "Avtorizacija ni uspela (neujemanje stanja) — poskusite znova"
-#: package/contents/ui/FitbitOAuth.qml:376
-msgid "No authorization code found in the pasted text"
-msgstr "V prilepljenem besedilu ni avtorizacijske kode"
-#: package/contents/ui/FitbitOAuth.qml:386
-msgid "Network error during token exchange"
-msgstr "Omrežna napaka med izmenjavo žetonov"
-#: package/contents/ui/FitbitOAuth.qml:387
-msgid "Authorization code invalid or expired — please try again"
-msgstr "Avtorizacijska koda je neveljavna ali je potekla — poskusite znova"
-#: package/contents/ui/FitbitOAuth.qml:388
-msgid "Token exchange failed"
-msgstr "Izmenjava žetonov ni uspela"
-#: package/contents/ui/FitbitOAuth.qml:389
-msgid "Token exchange failed — missing tokens"
-msgstr "Izmenjava žetonov ni uspela — manjkajo žetoni"
-#: package/contents/ui/FitbitOAuth.qml:390
-msgid "Token exchange failed — invalid response"
-msgstr "Izmenjava žetonov ni uspela — neveljaven odgovor"
-#: package/contents/ui/FullRepresentation.qml:40
+#: package/contents/ui/FullRepresentation.qml:66
+#: package/contents/ui/main.qml:90
 msgctxt "distance in miles"
 msgid "%1 mi"
 msgstr "%1 mi"
-#: package/contents/ui/FullRepresentation.qml:42
+
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:91
 msgctxt "distance in kilometers"
 msgid "%1 km"
 msgstr "%1 km"
-#: package/contents/ui/FullRepresentation.qml:68
-#: package/contents/ui/main.qml:77
-msgid "FitDash"
-msgstr "FitDash"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Stale"
-msgstr "Zastarelo"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Today"
-msgstr "Danes"
-#: package/contents/ui/FullRepresentation.qml:115
-msgid "Connect Fitbit"
-msgstr "Poveži Fitbit"
-#: package/contents/ui/FullRepresentation.qml:121
-msgid "Authorize your account in settings to show today's activity."
-msgstr "Avtorizirajte svoj račun v nastavitvah za prikaz današnje dejavnosti."
-#: package/contents/ui/FullRepresentation.qml:130
-msgid "Open Settings"
-msgstr "Odpri nastavitve"
-#: package/contents/ui/FullRepresentation.qml:160
-msgid "Loading Fitbit data"
-msgstr "Nalaganje podatkov Fitbit"
-#: package/contents/ui/FullRepresentation.qml:220
-#, javascript-format
-msgctxt "step goal progress"
-msgid "%1%"
-msgstr "%1%"
-#: package/contents/ui/FullRepresentation.qml:245
-msgid "%1 remaining of %2"
-msgstr "Še %1 od %2"
-#: package/contents/ui/FullRepresentation.qml:246
-msgid "No step goal set"
-msgstr "Cilj korakov ni nastavljen"
-#: package/contents/ui/FullRepresentation.qml:279
-msgid "Active"
-msgstr "Aktivnost"
-#: package/contents/ui/FullRepresentation.qml:280
-msgctxt "active minutes"
-msgid "%1 min"
-msgstr "%1 min"
-#: package/contents/ui/FullRepresentation.qml:287
-msgid "Resting HR"
-msgstr "Utrip v mirovanju"
-#: package/contents/ui/FullRepresentation.qml:289
-msgctxt "heart rate in beats per minute"
-msgid "%1 bpm"
-msgstr "%1 bpm"
-#: package/contents/ui/FullRepresentation.qml:310
-msgid "Updated %1"
-msgstr "Posodobljeno ob %1"
-#: package/contents/ui/main.qml:79
-msgid "Not connected"
-msgstr "Ni povezano"
-#: package/contents/ui/main.qml:83
-msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "Koraki: %1 | Kal: %2 | Razd.: %3\nPosodobljeno: %4"
-#: package/contents/ui/main.qml:105
-msgid "Authorization expired at %1 — please re-authorize"
-msgstr "Avtorizacija je potekla ob %1 — ponovno avtorizirajte"
-#: package/contents/ui/main.qml:118
-msgid "Token refresh failed at %1 — %2"
-msgstr "Osvežitev žetona ni uspela ob %1 — %2"
-#: package/contents/ui/main.qml:142
-msgid "No refresh token available — please re-authorize"
-msgstr "Žeton za osvežitev ni na voljo — ponovno avtorizirajte"
-#: package/contents/ui/main.qml:169
-msgid "Token refreshed at %1"
-msgstr "Žeton osvežen ob %1"
-
-#: scripts/fitdash-auth.py
-msgid "You can close this tab."
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Could not start authorization server on port %1"
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Authorization timed out — please try again"
-msgstr ""
-
-#: package/contents/ui/FullRepresentation.qml:318
-msgid "Vitals"
-msgstr "Vitalni znaki"
-
-#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
-msgid "Sleep"
-msgstr "Spanje"
-
-#: package/contents/ui/FullRepresentation.qml:352
-msgid "SpO2"
-msgstr "SpO2"
-
-#: package/contents/ui/FullRepresentation.qml:362
-msgid "HRV"
-msgstr "HRV"
-
-#: package/contents/ui/FullRepresentation.qml:372
-msgid "Breathing"
-msgstr "Dihanje"
 
 #: package/contents/ui/FullRepresentation.qml:73
 msgctxt "sleep duration in hours and minutes"
 msgid "%1h %2m"
 msgstr "%1 h %2 min"
 
+#: package/contents/ui/FullRepresentation.qml:98
+#: package/contents/ui/main.qml:85
+msgid "FitDash"
+msgstr "FitDash"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Stale"
+msgstr "Zastarelo"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Today"
+msgstr "Danes"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Poveži Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:151
+msgid "Authorize your account in settings to show today's activity."
+msgstr "Avtorizirajte svoj račun v nastavitvah za prikaz današnje dejavnosti."
+
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Open Settings"
+msgstr "Odpri nastavitve"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "Nalaganje podatkov Google Health"
+
+#: package/contents/ui/FullRepresentation.qml:243
+#: package/contents/ui/GoogleHealthApi.qml:227
+#: package/contents/ui/configGeneral.qml:240
+msgid "Steps"
+msgstr "Koraki"
+
+#: package/contents/ui/FullRepresentation.qml:250
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "Še ni podatkov"
+
+#: package/contents/ui/FullRepresentation.qml:275
+msgid "%1 remaining of %2"
+msgstr "Še %1 od %2"
+
+#: package/contents/ui/FullRepresentation.qml:276
+msgid "No step goal set"
+msgstr "Cilj korakov ni nastavljen"
+
+#: package/contents/ui/FullRepresentation.qml:293
+#: package/contents/ui/GoogleHealthApi.qml:233
+#: package/contents/ui/configGeneral.qml:247
+msgid "Calories"
+msgstr "Kalorije"
+
+#: package/contents/ui/FullRepresentation.qml:301
+#: package/contents/ui/GoogleHealthApi.qml:239
+#: package/contents/ui/configGeneral.qml:254
+msgid "Distance"
+msgstr "Razdalja"
+
+#: package/contents/ui/FullRepresentation.qml:309
+msgid "Active"
+msgstr "Aktivnost"
+
+#: package/contents/ui/FullRepresentation.qml:310
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 min"
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "Vitalni znaki"
+
+#: package/contents/ui/FullRepresentation.qml:334
+#: package/contents/ui/configGeneral.qml:275
+msgid "Sleep"
+msgstr "Spanje"
+
+#: package/contents/ui/FullRepresentation.qml:342
+msgid "Resting HR"
+msgstr "Utrip v mirovanju"
+
+#: package/contents/ui/FullRepresentation.qml:344
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:354
+#, javascript-format
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "HRV"
+
 #: package/contents/ui/FullRepresentation.qml:364
 msgctxt "heart rate variability in milliseconds"
 msgid "%1 ms"
 msgstr "%1 ms"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "Dihanje"
 
 #: package/contents/ui/FullRepresentation.qml:374
 msgctxt "respiratory rate in breaths per minute"
 msgid "%1 br/min"
 msgstr "%1 vdihov/min"
 
-#: package/contents/ui/configGeneral.qml:272
-msgid "Blood oxygen (SpO2)"
-msgstr "Kisik v krvi (SpO2)"
+#: package/contents/ui/FullRepresentation.qml:395
+msgid "Updated %1"
+msgstr "Posodobljeno ob %1"
 
-#: package/contents/ui/configGeneral.qml:279
-msgid "Heart rate variability"
-msgstr "Variabilnost srčnega utripa"
+#: package/contents/ui/GoogleHealthApi.qml:45
+msgid "No access token"
+msgstr "Ni dostopnega žetona"
 
-#: package/contents/ui/configGeneral.qml:286
-msgid "Breathing rate"
-msgstr "Frekvenca dihanja"
+#: package/contents/ui/GoogleHealthApi.qml:118
+msgid "Network error — check your connection"
+msgstr "Omrežna napaka — preverite povezavo"
 
-#: package/contents/ui/FullRepresentation.qml:145
-msgid "Connect Google Health"
-msgstr "Poveži Google Health"
+#: package/contents/ui/GoogleHealthApi.qml:119
+msgid "Network error at %1"
+msgstr "Omrežna napaka ob %1"
 
-#: package/contents/ui/FullRepresentation.qml:190
-msgid "Loading Google Health data"
-msgstr "Nalaganje podatkov Google Health"
+#: package/contents/ui/GoogleHealthApi.qml:125
+msgid "Token expired at %1 — refreshing"
+msgstr "Žeton je potekel ob %1 — osveževanje"
 
-#: package/contents/ui/FullRepresentation.qml:273
-msgid "No data yet"
-msgstr "Še ni podatkov"
+#: package/contents/ui/GoogleHealthApi.qml:136
+#: package/contents/ui/GoogleHealthOAuth.qml:212
+msgid "Rate limited — try again later"
+msgstr "Presežena omejitev zahtev — poskusite znova pozneje"
 
-#: package/contents/ui/FullRepresentation.qml:354
-msgctxt "blood oxygen saturation percentage"
-msgid "%1%"
-msgstr "%1%"
+#: package/contents/ui/GoogleHealthApi.qml:137
+msgid "Rate limited at %1 — showing cached data"
+msgstr "Presežena omejitev zahtev ob %1 — prikazani so predpomnjeni podatki"
 
 #: package/contents/ui/GoogleHealthApi.qml:143
 msgid "Google Health server error (HTTP %1)"
 msgstr "Napaka strežnika Google Health (HTTP %1)"
 
-#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:144
+msgid "Server error (HTTP %1) at %2"
+msgstr "Napaka strežnika (HTTP %1) ob %2"
+
+#: package/contents/ui/GoogleHealthApi.qml:150
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 ni uspelo (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthApi.qml:151
+msgid "Error (HTTP %1) at %2"
+msgstr "Napaka (HTTP %1) ob %2"
+
+#: package/contents/ui/GoogleHealthApi.qml:178
+msgid "OK — updated at %1"
+msgstr "OK — posodobljeno ob %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:192
+msgid "Request timed out — check your connection"
+msgstr "Časovna omejitev zahteve je potekla — preverite povezavo"
+
+#: package/contents/ui/GoogleHealthApi.qml:193
+msgid "Timed out at %1"
+msgstr "Časovna omejitev ob %1"
+
 #: package/contents/ui/GoogleHealthApi.qml:200
 msgid "%1 fetch"
 msgstr "Pridobivanje: %1"
 
-#. TRANSLATORS: %1 is a metric name such as Steps
 #: package/contents/ui/GoogleHealthApi.qml:211
 msgid "Failed to parse %1 data"
 msgstr "Podatkov ni bilo mogoče razčleniti: %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:212
+msgid "Parse error at %1"
+msgstr "Napaka pri razčlenjevanju ob %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:246
+#: package/contents/ui/configGeneral.qml:261
+msgid "Active minutes"
+msgstr "Aktivne minute"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:91
+msgid "Unknown error"
+msgstr "Neznana napaka"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:98
+msgid "Failed to parse auth response"
+msgstr "Odgovora avtorizacije ni bilo mogoče razčleniti"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:137
+#: package/contents/ui/GoogleHealthOAuth.qml:341
+msgid "Invalid client ID format"
+msgstr "Neveljavna oblika ID-ja odjemalca"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:156
+msgid "Authorization canceled"
+msgstr "Avtorizacija preklicana"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:198
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
 
 #: package/contents/ui/GoogleHealthOAuth.qml:216
 msgid "Google server error (HTTP %1)"
 msgstr "Napaka strežnika Google (HTTP %1)"
 
-#: package/contents/ui/configGeneral.qml:102
+#: package/contents/ui/GoogleHealthOAuth.qml:220 scripts/fitdash-auth.py:68
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:292
+msgid "Network error during token refresh"
+msgstr "Omrežna napaka med osveževanjem žetona"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:293
+msgid "Refresh token invalid — please re-authorize"
+msgstr "Žeton za osvežitev je neveljaven — ponovno avtorizirajte"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:294
+msgid "Token refresh failed"
+msgstr "Osvežitev žetona ni uspela"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:295
+msgid "Refresh failed — missing tokens"
+msgstr "Osvežitev ni uspela — manjkajo žetoni"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:296
+msgid "Token refresh failed — invalid response"
+msgstr "Osvežitev žetona ni uspela — neveljaven odgovor"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:357
+msgid "Paste the redirect URL or authorization code first"
+msgstr "Najprej prilepite preusmeritveni URL ali avtorizacijsko kodo"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:361
+msgid "Start the manual authorization first"
+msgstr "Najprej zaženite ročno avtorizacijo"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:381 scripts/fitdash-auth.py:130
+msgid "Authorization was denied"
+msgstr "Avtorizacija je bila zavrnjena"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:388 scripts/fitdash-auth.py:116
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "Avtorizacija ni uspela (neujemanje stanja) — poskusite znova"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:392
+msgid "No authorization code found in the pasted text"
+msgstr "V prilepljenem besedilu ni avtorizacijske kode"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:403 scripts/fitdash-auth.py:70
+msgid "Network error during token exchange"
+msgstr "Omrežna napaka med izmenjavo žetonov"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:404
+msgid "Authorization code invalid or expired — please try again"
+msgstr "Avtorizacijska koda je neveljavna ali je potekla — poskusite znova"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:405 scripts/fitdash-auth.py:68
+msgid "Token exchange failed"
+msgstr "Izmenjava žetonov ni uspela"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:406 scripts/fitdash-auth.py:74
+msgid "Token exchange failed — missing tokens"
+msgstr "Izmenjava žetonov ni uspela — manjkajo žetoni"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:407 scripts/fitdash-auth.py:204
+msgid "Token exchange failed — invalid response"
+msgstr "Izmenjava žetonov ni uspela — neveljaven odgovor"
+
+#: package/contents/ui/configGeneral.qml:9 package/contents/config/config.qml:6
+msgid "General"
+msgstr "Splošno"
+
+#: package/contents/ui/configGeneral.qml:65
+msgid "Not authorized"
+msgstr "Ni avtorizirano"
+
+#: package/contents/ui/configGeneral.qml:68
+msgid "Authorization problem — re-authorize"
+msgstr "Težava z avtorizacijo — ponovno avtorizirajte"
+
+#: package/contents/ui/configGeneral.qml:71
+msgid "Token expired — refresh needed"
+msgstr "Žeton je potekel — potrebna je osvežitev"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "unknown"
+msgstr "neznano"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "Authorized (User: %1)"
+msgstr "Avtorizirano (uporabnik: %1)"
+
+#: package/contents/ui/configGeneral.qml:103
+msgid "Client ID:"
+msgstr "ID odjemalca:"
+
+#: package/contents/ui/configGeneral.qml:104
 msgid "From Google Cloud Console"
 msgstr "Iz Google Cloud Console"
 
-#: package/contents/ui/configGeneral.qml:109
+#: package/contents/ui/configGeneral.qml:111
 msgid "Client Secret:"
 msgstr "Skrivnost odjemalca:"
 
-#: package/contents/ui/configGeneral.qml:110
+#: package/contents/ui/configGeneral.qml:112
 msgid "From the same OAuth client"
 msgstr "Iz istega odjemalca OAuth"
 
-#: package/contents/ui/configGeneral.qml:117
-msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
-msgstr "Poverilnice OAuth 2.0 iz projekta Google Cloud z omogočenim Google Health API"
+#: package/contents/ui/configGeneral.qml:119
+msgid ""
+"OAuth 2.0 credentials from a Google Cloud project with the Google Health API "
+"enabled"
+msgstr ""
+"Poverilnice OAuth 2.0 iz projekta Google Cloud z omogočenim Google Health API"
 
-#: package/contents/ui/configGeneral.qml:158
-msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
-msgstr "Google samodejno dovoli katera koli vrata localhost za odjemalce OAuth namiznih aplikacij — tega URL-ja ni treba registrirati"
+#: package/contents/ui/configGeneral.qml:127
+msgid ""
+"You can also drop the downloaded client_secret.json file onto this window to "
+"fill them in."
+msgstr ""
+"Preneseno datoteko client_secret.json lahko spustite tudi na to okno, da ju "
+"izpolnite."
 
-#: package/contents/ui/configGeneral.qml:174
+#: package/contents/ui/configGeneral.qml:134
+msgid "Callback URL:"
+msgstr "URL povratnega klica:"
+
+#: package/contents/ui/configGeneral.qml:147
+#: package/contents/ui/configGeneral.qml:387
+msgid "Copy to clipboard"
+msgstr "Kopiraj v odložišče"
+
+#: package/contents/ui/configGeneral.qml:160
+msgid "Callback port:"
+msgstr "Vrata povratnega klica:"
+
+#: package/contents/ui/configGeneral.qml:168
+msgid ""
+"Google allows any localhost port for Desktop app OAuth clients automatically "
+"— no need to register this URL"
+msgstr ""
+"Google samodejno dovoli katera koli vrata localhost za odjemalce OAuth "
+"namiznih aplikacij — tega URL-ja ni treba registrirati"
+
+#: package/contents/ui/configGeneral.qml:176
+msgid "Refresh interval (minutes):"
+msgstr "Interval osveževanja (minute):"
+
+#: package/contents/ui/configGeneral.qml:184
 msgid "Recommended: 15–30 minutes to stay within API rate limits"
 msgstr "Priporočeno: 15–30 minut, da ne presežete APIovih omejitev zahtev"
 
-#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/configGeneral.qml:192
+msgid "Display"
+msgstr "Prikaz"
+
+#: package/contents/ui/configGeneral.qml:197
+msgid "Distance unit:"
+msgstr "Enota razdalje:"
+
+#: package/contents/ui/configGeneral.qml:199
+msgid "Kilometers (km)"
+msgstr "Kilometri (km)"
+
+#: package/contents/ui/configGeneral.qml:200
+msgid "Miles (mi)"
+msgstr "Milje (mi)"
+
+#: package/contents/ui/configGeneral.qml:211
 msgid "Step goal:"
 msgstr "Cilj korakov:"
 
-#: package/contents/ui/configGeneral.qml:207
+#: package/contents/ui/configGeneral.qml:217
 msgid "None"
 msgstr "Brez"
 
-#: package/contents/ui/configGeneral.qml:216
-msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
-msgstr "Google Health API ne poroča cilja, zato se nastavi tukaj. 0 namesto tega prikaže »Cilj korakov ni nastavljen«"
+#: package/contents/ui/configGeneral.qml:226
+msgid ""
+"The Google Health API doesn't report a goal, so this is set here. 0 shows "
+"“No step goal set” instead"
+msgstr ""
+"Google Health API ne poroča cilja, zato se nastavi tukaj. 0 namesto tega "
+"prikaže »Cilj korakov ni nastavljen«"
 
-#: package/contents/ui/configGeneral.qml:292
+#: package/contents/ui/configGeneral.qml:234
+msgid "Visible Metrics"
+msgstr "Vidne meritve"
+
+#: package/contents/ui/configGeneral.qml:268
+msgid "Resting heart rate"
+msgstr "Srčni utrip v mirovanju"
+
+#: package/contents/ui/configGeneral.qml:282
+msgid "Blood oxygen (SpO2)"
+msgstr "Kisik v krvi (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:289
+msgid "Heart rate variability"
+msgstr "Variabilnost srčnega utripa"
+
+#: package/contents/ui/configGeneral.qml:296
+msgid "Breathing rate"
+msgstr "Frekvenca dihanja"
+
+#: package/contents/ui/configGeneral.qml:302
 msgid "Google Health Account"
 msgstr "Račun Google Health"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:306
+msgid "Status:"
+msgstr "Stanje:"
+
+#: package/contents/ui/configGeneral.qml:314
+msgid "Last request:"
+msgstr "Zadnja zahteva:"
+
+#: package/contents/ui/configGeneral.qml:316
+msgid "No requests yet"
+msgstr "Še ni zahtev"
+
+#: package/contents/ui/configGeneral.qml:326
+msgid "Authorization:"
+msgstr "Avtorizacija:"
+
+#: package/contents/ui/configGeneral.qml:328
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: package/contents/ui/configGeneral.qml:329
 msgid "Re-authorize with Google"
 msgstr "Ponovno avtoriziraj s Googleom"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:329
 msgid "Authorize with Google"
 msgstr "Avtoriziraj s Googleom"
+
+#: package/contents/ui/configGeneral.qml:345
+msgid "Authorize manually (copy & paste)"
+msgstr "Ročno avtoriziraj (kopiraj in prilepi)"
+
+#: package/contents/ui/configGeneral.qml:350
+msgid ""
+"Use this if the browser can't reach localhost (sandboxed browser, remote "
+"session, or no Python)"
+msgstr ""
+"Uporabite to, če brskalnik ne more dostopati do localhost (brskalnik v "
+"peskovniku, oddaljena seja ali brez Pythona)"
+
+#: package/contents/ui/configGeneral.qml:366
+msgid "Step 1:"
+msgstr "1. korak:"
+
+#: package/contents/ui/configGeneral.qml:367
+msgid "Open this URL in a browser and approve access:"
+msgstr "Odprite ta URL v brskalniku in odobrite dostop:"
+
+#: package/contents/ui/configGeneral.qml:374
+msgid "Authorization URL:"
+msgstr "URL avtorizacije:"
+
+#: package/contents/ui/configGeneral.qml:401
+msgid "Open in browser"
+msgstr "Odpri v brskalniku"
+
+#: package/contents/ui/configGeneral.qml:410
+msgid "Step 2:"
+msgstr "2. korak:"
+
+#: package/contents/ui/configGeneral.qml:411
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr "Po odobritvi kopirajte URL naslovne vrstice in ga prilepite spodaj:"
+
+#: package/contents/ui/configGeneral.qml:418
+msgid "Redirect URL or code:"
+msgstr "Preusmeritveni URL ali koda:"
+
+#: package/contents/ui/configGeneral.qml:422
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/callback?code=…"
+
+#: package/contents/ui/configGeneral.qml:429
+msgid "Complete"
+msgstr "Dokončaj"
+
+#: package/contents/ui/configGeneral.qml:439
+msgid "Cancel manual authorization"
+msgstr "Prekliči ročno avtorizacijo"
+
+#: package/contents/ui/configGeneral.qml:476
+msgid "The dropped file does not contain a client ID and client secret."
+msgstr "Spuščena datoteka ne vsebuje ID-ja odjemalca in skrivnosti odjemalca."
+
+#: package/contents/ui/configGeneral.qml:480
+msgid "The client ID in the dropped file is not valid."
+msgstr "ID odjemalca v spuščeni datoteki ni veljaven."
+
+#: package/contents/ui/configGeneral.qml:486
+msgid "Client ID and secret imported from file."
+msgstr "ID in skrivnost odjemalca sta bila uvožena iz datoteke."
+
+#: package/contents/ui/configGeneral.qml:488
+#: package/contents/ui/configGeneral.qml:496
+#: package/contents/ui/configGeneral.qml:510
+msgid "Could not read the dropped file as a Google client secret JSON."
+msgstr ""
+"Spuščene datoteke ni bilo mogoče prebrati kot Googlov JSON s skrivnostjo "
+"odjemalca."
+
+#: package/contents/ui/configGeneral.qml:546 scripts/fitdash-auth.py:128
+msgid "Authorization successful!"
+msgstr "Avtorizacija uspešna!"
+
+#: package/contents/ui/main.qml:87
+msgid "Not connected"
+msgstr "Ni povezano"
+
+#: package/contents/ui/main.qml:92
+msgid ""
+"Steps: %1 | Cal: %2 | Dist: %3\n"
+"Updated: %4"
+msgstr ""
+"Koraki: %1 | Kal: %2 | Razd.: %3\n"
+"Posodobljeno: %4"
+
+#: package/contents/ui/main.qml:114
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "Avtorizacija je potekla ob %1 — ponovno avtorizirajte"
+
+#: package/contents/ui/main.qml:127
+msgid "Token refresh failed at %1 — %2"
+msgstr "Osvežitev žetona ni uspela ob %1 — %2"
+
+#: package/contents/ui/main.qml:152
+msgid "No refresh token available — please re-authorize"
+msgstr "Žeton za osvežitev ni na voljo — ponovno avtorizirajte"
+
+#: package/contents/ui/main.qml:184
+msgid "Token refreshed at %1"
+msgstr "Žeton osvežen ob %1"
+
+#: scripts/fitdash-auth.py:101
+msgid "Missing client secret"
+msgstr ""
+
+#: scripts/fitdash-auth.py:128
+msgid "You can close this tab."
+msgstr ""
+
+#: scripts/fitdash-auth.py:145
+msgid "Could not start authorization server on port %1"
+msgstr ""
+
+#: scripts/fitdash-auth.py:192
+msgid "Authorization timed out — please try again"
+msgstr ""
+
+#~ msgid "From dev.fitbit.com/apps"
+#~ msgstr "Od dev.fitbit.com/apps"
+
+#~ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+#~ msgstr "ID odjemalca OAuth 2.0 iz vaše registracije aplikacije Fitbit"
+
+#~ msgid ""
+#~ "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+#~ msgstr ""
+#~ "Prilepite URL povratnega klica v nastavitve aplikacije Fitbit na "
+#~ "dev.fitbit.com"
+
+#~ msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+#~ msgstr ""
+#~ "Priporočeno: 15–30 minut, da ne presežete Fitbitovih omejitev zahtev"
+
+#~ msgid "Fitbit Account"
+#~ msgstr "Račun Fitbit"
+
+#~ msgid "Re-authorize with Fitbit"
+#~ msgstr "Ponovno avtoriziraj s Fitbitom"
+
+#~ msgid "Authorize with Fitbit"
+#~ msgstr "Avtoriziraj s Fitbitom"
+
+#~ msgid "Fitbit server error (HTTP %1)"
+#~ msgstr "Napaka strežnika Fitbit (HTTP %1)"
+
+#~ msgid "Activity fetch"
+#~ msgstr "Pridobivanje dejavnosti"
+
+#~ msgid "Failed to parse activity data"
+#~ msgstr "Podatkov o dejavnosti ni bilo mogoče razčleniti"
+
+#~ msgid "Connect Fitbit"
+#~ msgstr "Poveži Fitbit"
+
+#~ msgid "Loading Fitbit data"
+#~ msgstr "Nalaganje podatkov Fitbit"

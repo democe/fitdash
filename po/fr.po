@@ -1,8 +1,9 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: FitDash 1.0.8\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
-"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-28 00:00+0000\n"
 "Last-Translator: FitDash contributors\n"
 "Language-Team: French\n"
@@ -11,150 +12,482 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
-msgid "General"
-msgstr "Général"
+#: package/contents/ui/FullRepresentation.qml:66
+#: package/contents/ui/main.qml:90
+msgctxt "distance in miles"
+msgid "%1 mi"
+msgstr "%1 mi"
 
-#: package/contents/ui/configGeneral.qml:52
-msgid "Not authorized"
-msgstr "Non autorisé"
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:91
+msgctxt "distance in kilometers"
+msgid "%1 km"
+msgstr "%1 km"
 
-#: package/contents/ui/configGeneral.qml:55
-msgid "Authorization problem — re-authorize"
-msgstr "Problème d'autorisation — autorisez à nouveau"
+#: package/contents/ui/FullRepresentation.qml:73
+msgctxt "sleep duration in hours and minutes"
+msgid "%1h %2m"
+msgstr "%1 h %2 min"
 
-#: package/contents/ui/configGeneral.qml:58
-msgid "Token expired — refresh needed"
-msgstr "Jeton expiré — actualisation requise"
+#: package/contents/ui/FullRepresentation.qml:98
+#: package/contents/ui/main.qml:85
+msgid "FitDash"
+msgstr "FitDash"
 
-#: package/contents/ui/configGeneral.qml:60
-msgid "unknown"
-msgstr "inconnu"
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Stale"
+msgstr "Obsolète"
 
-#: package/contents/ui/configGeneral.qml:60
-msgid "Authorized (User: %1)"
-msgstr "Autorisé (utilisateur : %1)"
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Today"
+msgstr "Aujourd'hui"
 
-#: package/contents/ui/configGeneral.qml:89
-msgid "Client ID:"
-msgstr "ID client :"
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Connecter Google Health"
 
-#: package/contents/ui/configGeneral.qml:90
-msgid "From dev.fitbit.com/apps"
-msgstr "Depuis dev.fitbit.com/apps"
-
-#: package/contents/ui/configGeneral.qml:97
-msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "ID client OAuth 2.0 de l'enregistrement de votre application Fitbit"
-
-#: package/contents/ui/configGeneral.qml:104
-msgid "Callback URL:"
-msgstr "URL de rappel :"
-
-#: package/contents/ui/configGeneral.qml:117
-#: package/contents/ui/configGeneral.qml:306
-msgid "Copy to clipboard"
-msgstr "Copier dans le presse-papiers"
-
-#: package/contents/ui/configGeneral.qml:130
-msgid "Callback port:"
-msgstr "Port de rappel :"
-
-#: package/contents/ui/configGeneral.qml:138
-msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+#: package/contents/ui/FullRepresentation.qml:151
+msgid "Authorize your account in settings to show today's activity."
 msgstr ""
-"Collez l'URL de rappel dans les paramètres de votre application Fitbit sur "
-"dev.fitbit.com"
+"Autorisez votre compte dans les paramètres pour afficher l'activité du jour."
 
-#: package/contents/ui/configGeneral.qml:146
-msgid "Refresh interval (minutes):"
-msgstr "Intervalle d'actualisation (minutes) :"
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Open Settings"
+msgstr "Ouvrir les paramètres"
 
-#: package/contents/ui/configGeneral.qml:154
-msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr ""
-"Recommandé : 15 à 30 minutes pour rester dans les limites de débit de Fitbit"
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "Chargement des données Google Health"
 
-#: package/contents/ui/configGeneral.qml:162
-msgid "Display"
-msgstr "Affichage"
-
-#: package/contents/ui/configGeneral.qml:167
-msgid "Distance unit:"
-msgstr "Unité de distance :"
-
-#: package/contents/ui/configGeneral.qml:169
-msgid "Kilometers (km)"
-msgstr "Kilomètres (km)"
-
-#: package/contents/ui/configGeneral.qml:170
-msgid "Miles (mi)"
-msgstr "Miles (mi)"
-
-#: package/contents/ui/configGeneral.qml:181
-msgid "Visible Metrics"
-msgstr "Métriques visibles"
-
-#: package/contents/ui/configGeneral.qml:187
-#: package/contents/ui/FullRepresentation.qml:213
+#: package/contents/ui/FullRepresentation.qml:243
+#: package/contents/ui/GoogleHealthApi.qml:227
+#: package/contents/ui/configGeneral.qml:240
 msgid "Steps"
 msgstr "Pas"
 
-#: package/contents/ui/configGeneral.qml:194
-#: package/contents/ui/FullRepresentation.qml:263
+#: package/contents/ui/FullRepresentation.qml:250
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "Pas encore de données"
+
+#: package/contents/ui/FullRepresentation.qml:275
+msgid "%1 remaining of %2"
+msgstr "%1 restants sur %2"
+
+#: package/contents/ui/FullRepresentation.qml:276
+msgid "No step goal set"
+msgstr "Aucun objectif de pas défini"
+
+#: package/contents/ui/FullRepresentation.qml:293
+#: package/contents/ui/GoogleHealthApi.qml:233
+#: package/contents/ui/configGeneral.qml:247
 msgid "Calories"
 msgstr "Calories"
 
-#: package/contents/ui/configGeneral.qml:201
-#: package/contents/ui/FullRepresentation.qml:271
+#: package/contents/ui/FullRepresentation.qml:301
+#: package/contents/ui/GoogleHealthApi.qml:239
+#: package/contents/ui/configGeneral.qml:254
 msgid "Distance"
 msgstr "Distance"
 
-#: package/contents/ui/configGeneral.qml:208
+#: package/contents/ui/FullRepresentation.qml:309
+msgid "Active"
+msgstr "Actif"
+
+#: package/contents/ui/FullRepresentation.qml:310
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 min"
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "Signes vitaux"
+
+#: package/contents/ui/FullRepresentation.qml:334
+#: package/contents/ui/configGeneral.qml:275
+msgid "Sleep"
+msgstr "Sommeil"
+
+#: package/contents/ui/FullRepresentation.qml:342
+msgid "Resting HR"
+msgstr "FC au repos"
+
+#: package/contents/ui/FullRepresentation.qml:344
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:354
+#, javascript-format
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "VFC"
+
+#: package/contents/ui/FullRepresentation.qml:364
+msgctxt "heart rate variability in milliseconds"
+msgid "%1 ms"
+msgstr "%1 ms"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "Respiration"
+
+#: package/contents/ui/FullRepresentation.qml:374
+msgctxt "respiratory rate in breaths per minute"
+msgid "%1 br/min"
+msgstr "%1 resp/min"
+
+#: package/contents/ui/FullRepresentation.qml:395
+msgid "Updated %1"
+msgstr "Mis à jour %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:45
+msgid "No access token"
+msgstr "Aucun jeton d'accès"
+
+#: package/contents/ui/GoogleHealthApi.qml:118
+msgid "Network error — check your connection"
+msgstr "Erreur réseau — vérifiez votre connexion"
+
+#: package/contents/ui/GoogleHealthApi.qml:119
+msgid "Network error at %1"
+msgstr "Erreur réseau à %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:125
+msgid "Token expired at %1 — refreshing"
+msgstr "Jeton expiré à %1 — actualisation"
+
+#: package/contents/ui/GoogleHealthApi.qml:136
+#: package/contents/ui/GoogleHealthOAuth.qml:212
+msgid "Rate limited — try again later"
+msgstr "Limite de débit atteinte — réessayez plus tard"
+
+#: package/contents/ui/GoogleHealthApi.qml:137
+msgid "Rate limited at %1 — showing cached data"
+msgstr "Limite de débit atteinte à %1 — affichage des données en cache"
+
+#: package/contents/ui/GoogleHealthApi.qml:143
+msgid "Google Health server error (HTTP %1)"
+msgstr "Erreur du serveur Google Health (HTTP %1)"
+
+#: package/contents/ui/GoogleHealthApi.qml:144
+msgid "Server error (HTTP %1) at %2"
+msgstr "Erreur serveur (HTTP %1) à %2"
+
+#: package/contents/ui/GoogleHealthApi.qml:150
+msgid "%1 failed (HTTP %2)"
+msgstr "Échec de %1 (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthApi.qml:151
+msgid "Error (HTTP %1) at %2"
+msgstr "Erreur (HTTP %1) à %2"
+
+#: package/contents/ui/GoogleHealthApi.qml:178
+msgid "OK — updated at %1"
+msgstr "OK — mis à jour à %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:192
+msgid "Request timed out — check your connection"
+msgstr "La requête a expiré — vérifiez votre connexion"
+
+#: package/contents/ui/GoogleHealthApi.qml:193
+msgid "Timed out at %1"
+msgstr "Délai dépassé à %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:200
+msgid "%1 fetch"
+msgstr "Récupération : %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:211
+msgid "Failed to parse %1 data"
+msgstr "Impossible d'analyser les données : %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:212
+msgid "Parse error at %1"
+msgstr "Erreur d'analyse à %1"
+
+#: package/contents/ui/GoogleHealthApi.qml:246
+#: package/contents/ui/configGeneral.qml:261
 msgid "Active minutes"
 msgstr "Minutes actives"
 
-#: package/contents/ui/configGeneral.qml:215
+#: package/contents/ui/GoogleHealthOAuth.qml:91
+msgid "Unknown error"
+msgstr "Erreur inconnue"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:98
+msgid "Failed to parse auth response"
+msgstr "Impossible d'analyser la réponse d'autorisation"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:137
+#: package/contents/ui/GoogleHealthOAuth.qml:341
+msgid "Invalid client ID format"
+msgstr "Format d'ID client invalide"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:156
+msgid "Authorization canceled"
+msgstr "Autorisation annulée"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:198
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:216
+msgid "Google server error (HTTP %1)"
+msgstr "Erreur du serveur Google (HTTP %1)"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:220 scripts/fitdash-auth.py:68
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:292
+msgid "Network error during token refresh"
+msgstr "Erreur réseau pendant l'actualisation du jeton"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:293
+msgid "Refresh token invalid — please re-authorize"
+msgstr "Jeton d'actualisation invalide — veuillez autoriser à nouveau"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:294
+msgid "Token refresh failed"
+msgstr "Échec de l'actualisation du jeton"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:295
+msgid "Refresh failed — missing tokens"
+msgstr "Échec de l'actualisation — jetons manquants"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:296
+msgid "Token refresh failed — invalid response"
+msgstr "Échec de l'actualisation du jeton — réponse invalide"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:357
+msgid "Paste the redirect URL or authorization code first"
+msgstr "Collez d'abord l'URL de redirection ou le code d'autorisation"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:361
+msgid "Start the manual authorization first"
+msgstr "Démarrez d'abord l'autorisation manuelle"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:381 scripts/fitdash-auth.py:130
+msgid "Authorization was denied"
+msgstr "L'autorisation a été refusée"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:388 scripts/fitdash-auth.py:116
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "Échec de l'autorisation (état différent) — veuillez réessayer"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:392
+msgid "No authorization code found in the pasted text"
+msgstr "Aucun code d'autorisation trouvé dans le texte collé"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:403 scripts/fitdash-auth.py:70
+msgid "Network error during token exchange"
+msgstr "Erreur réseau pendant l'échange du jeton"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:404
+msgid "Authorization code invalid or expired — please try again"
+msgstr "Code d'autorisation invalide ou expiré — veuillez réessayer"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:405 scripts/fitdash-auth.py:68
+msgid "Token exchange failed"
+msgstr "Échec de l'échange du jeton"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:406 scripts/fitdash-auth.py:74
+msgid "Token exchange failed — missing tokens"
+msgstr "Échec de l'échange du jeton — jetons manquants"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:407 scripts/fitdash-auth.py:204
+msgid "Token exchange failed — invalid response"
+msgstr "Échec de l'échange du jeton — réponse invalide"
+
+#: package/contents/ui/configGeneral.qml:9 package/contents/config/config.qml:6
+msgid "General"
+msgstr "Général"
+
+#: package/contents/ui/configGeneral.qml:65
+msgid "Not authorized"
+msgstr "Non autorisé"
+
+#: package/contents/ui/configGeneral.qml:68
+msgid "Authorization problem — re-authorize"
+msgstr "Problème d'autorisation — autorisez à nouveau"
+
+#: package/contents/ui/configGeneral.qml:71
+msgid "Token expired — refresh needed"
+msgstr "Jeton expiré — actualisation requise"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "unknown"
+msgstr "inconnu"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "Authorized (User: %1)"
+msgstr "Autorisé (utilisateur : %1)"
+
+#: package/contents/ui/configGeneral.qml:103
+msgid "Client ID:"
+msgstr "ID client :"
+
+#: package/contents/ui/configGeneral.qml:104
+msgid "From Google Cloud Console"
+msgstr "Depuis Google Cloud Console"
+
+#: package/contents/ui/configGeneral.qml:111
+msgid "Client Secret:"
+msgstr "Secret client :"
+
+#: package/contents/ui/configGeneral.qml:112
+msgid "From the same OAuth client"
+msgstr "Du même client OAuth"
+
+#: package/contents/ui/configGeneral.qml:119
+msgid ""
+"OAuth 2.0 credentials from a Google Cloud project with the Google Health API "
+"enabled"
+msgstr ""
+"Identifiants OAuth 2.0 d'un projet Google Cloud avec l'API Google Health "
+"activée"
+
+#: package/contents/ui/configGeneral.qml:127
+msgid ""
+"You can also drop the downloaded client_secret.json file onto this window to "
+"fill them in."
+msgstr ""
+"Vous pouvez aussi déposer le fichier client_secret.json téléchargé sur cette "
+"fenêtre pour les remplir."
+
+#: package/contents/ui/configGeneral.qml:134
+msgid "Callback URL:"
+msgstr "URL de rappel :"
+
+#: package/contents/ui/configGeneral.qml:147
+#: package/contents/ui/configGeneral.qml:387
+msgid "Copy to clipboard"
+msgstr "Copier dans le presse-papiers"
+
+#: package/contents/ui/configGeneral.qml:160
+msgid "Callback port:"
+msgstr "Port de rappel :"
+
+#: package/contents/ui/configGeneral.qml:168
+msgid ""
+"Google allows any localhost port for Desktop app OAuth clients automatically "
+"— no need to register this URL"
+msgstr ""
+"Google autorise automatiquement n'importe quel port localhost pour les "
+"clients OAuth d'application de bureau — inutile d'enregistrer cette URL"
+
+#: package/contents/ui/configGeneral.qml:176
+msgid "Refresh interval (minutes):"
+msgstr "Intervalle d'actualisation (minutes) :"
+
+#: package/contents/ui/configGeneral.qml:184
+msgid "Recommended: 15–30 minutes to stay within API rate limits"
+msgstr ""
+"Recommandé : 15 à 30 minutes pour rester dans les limites de débit de l’API"
+
+#: package/contents/ui/configGeneral.qml:192
+msgid "Display"
+msgstr "Affichage"
+
+#: package/contents/ui/configGeneral.qml:197
+msgid "Distance unit:"
+msgstr "Unité de distance :"
+
+#: package/contents/ui/configGeneral.qml:199
+msgid "Kilometers (km)"
+msgstr "Kilomètres (km)"
+
+#: package/contents/ui/configGeneral.qml:200
+msgid "Miles (mi)"
+msgstr "Miles (mi)"
+
+#: package/contents/ui/configGeneral.qml:211
+msgid "Step goal:"
+msgstr "Objectif de pas :"
+
+#: package/contents/ui/configGeneral.qml:217
+msgid "None"
+msgstr "Aucun"
+
+#: package/contents/ui/configGeneral.qml:226
+msgid ""
+"The Google Health API doesn't report a goal, so this is set here. 0 shows "
+"“No step goal set” instead"
+msgstr ""
+"L'API Google Health ne fournit pas d'objectif, il est donc défini ici. 0 "
+"affiche « Aucun objectif de pas défini » à la place"
+
+#: package/contents/ui/configGeneral.qml:234
+msgid "Visible Metrics"
+msgstr "Métriques visibles"
+
+#: package/contents/ui/configGeneral.qml:268
 msgid "Resting heart rate"
 msgstr "Fréquence cardiaque au repos"
 
-#: package/contents/ui/configGeneral.qml:221
-msgid "Fitbit Account"
-msgstr "Compte Fitbit"
+#: package/contents/ui/configGeneral.qml:282
+msgid "Blood oxygen (SpO2)"
+msgstr "Oxygène sanguin (SpO2)"
 
-#: package/contents/ui/configGeneral.qml:225
+#: package/contents/ui/configGeneral.qml:289
+msgid "Heart rate variability"
+msgstr "Variabilité de la fréquence cardiaque"
+
+#: package/contents/ui/configGeneral.qml:296
+msgid "Breathing rate"
+msgstr "Fréquence respiratoire"
+
+#: package/contents/ui/configGeneral.qml:302
+msgid "Google Health Account"
+msgstr "Compte Google Health"
+
+#: package/contents/ui/configGeneral.qml:306
 msgid "Status:"
 msgstr "État :"
 
-#: package/contents/ui/configGeneral.qml:233
+#: package/contents/ui/configGeneral.qml:314
 msgid "Last request:"
 msgstr "Dernière requête :"
 
-#: package/contents/ui/configGeneral.qml:235
+#: package/contents/ui/configGeneral.qml:316
 msgid "No requests yet"
 msgstr "Aucune requête pour l'instant"
 
-#: package/contents/ui/configGeneral.qml:245
+#: package/contents/ui/configGeneral.qml:326
 msgid "Authorization:"
 msgstr "Autorisation :"
 
-#: package/contents/ui/configGeneral.qml:247
+#: package/contents/ui/configGeneral.qml:328
 msgid "Cancel"
 msgstr "Annuler"
 
-#: package/contents/ui/configGeneral.qml:248
-msgid "Re-authorize with Fitbit"
-msgstr "Autoriser à nouveau avec Fitbit"
+#: package/contents/ui/configGeneral.qml:329
+msgid "Re-authorize with Google"
+msgstr "Autoriser à nouveau avec Google"
 
-#: package/contents/ui/configGeneral.qml:248
-msgid "Authorize with Fitbit"
-msgstr "Autoriser avec Fitbit"
+#: package/contents/ui/configGeneral.qml:329
+msgid "Authorize with Google"
+msgstr "Autoriser avec Google"
 
-#: package/contents/ui/configGeneral.qml:264
+#: package/contents/ui/configGeneral.qml:345
 msgid "Authorize manually (copy & paste)"
 msgstr "Autoriser manuellement (copier-coller)"
 
-#: package/contents/ui/configGeneral.qml:269
+#: package/contents/ui/configGeneral.qml:350
 msgid ""
 "Use this if the browser can't reach localhost (sandboxed browser, remote "
 "session, or no Python)"
@@ -162,282 +495,77 @@ msgstr ""
 "Utilisez ceci si le navigateur ne peut pas atteindre localhost (navigateur "
 "en bac à sable, session distante ou absence de Python)"
 
-#: package/contents/ui/configGeneral.qml:285
+#: package/contents/ui/configGeneral.qml:366
 msgid "Step 1:"
 msgstr "Étape 1 :"
 
-#: package/contents/ui/configGeneral.qml:286
+#: package/contents/ui/configGeneral.qml:367
 msgid "Open this URL in a browser and approve access:"
 msgstr "Ouvrez cette URL dans un navigateur et approuvez l'accès :"
 
-#: package/contents/ui/configGeneral.qml:293
+#: package/contents/ui/configGeneral.qml:374
 msgid "Authorization URL:"
 msgstr "URL d'autorisation :"
 
-#: package/contents/ui/configGeneral.qml:320
+#: package/contents/ui/configGeneral.qml:401
 msgid "Open in browser"
 msgstr "Ouvrir dans le navigateur"
 
-#: package/contents/ui/configGeneral.qml:329
+#: package/contents/ui/configGeneral.qml:410
 msgid "Step 2:"
 msgstr "Étape 2 :"
 
-#: package/contents/ui/configGeneral.qml:330
+#: package/contents/ui/configGeneral.qml:411
 msgid "After approving, copy the address bar URL and paste it below:"
 msgstr ""
 "Après approbation, copiez l'URL de la barre d'adresse et collez-la ci-"
 "dessous :"
 
-#: package/contents/ui/configGeneral.qml:337
+#: package/contents/ui/configGeneral.qml:418
 msgid "Redirect URL or code:"
 msgstr "URL de redirection ou code :"
 
-#: package/contents/ui/configGeneral.qml:341
+#: package/contents/ui/configGeneral.qml:422
 msgid "http://localhost:…/callback?code=…"
 msgstr "http://localhost:…/callback?code=…"
 
-#: package/contents/ui/configGeneral.qml:348
+#: package/contents/ui/configGeneral.qml:429
 msgid "Complete"
 msgstr "Terminer"
 
-#: package/contents/ui/configGeneral.qml:358
+#: package/contents/ui/configGeneral.qml:439
 msgid "Cancel manual authorization"
 msgstr "Annuler l'autorisation manuelle"
 
-#: package/contents/ui/configGeneral.qml:397
+#: package/contents/ui/configGeneral.qml:476
+msgid "The dropped file does not contain a client ID and client secret."
+msgstr "Le fichier déposé ne contient pas d'ID client ni de secret client."
+
+#: package/contents/ui/configGeneral.qml:480
+msgid "The client ID in the dropped file is not valid."
+msgstr "L'ID client du fichier déposé n'est pas valide."
+
+#: package/contents/ui/configGeneral.qml:486
+msgid "Client ID and secret imported from file."
+msgstr "ID client et secret importés depuis le fichier."
+
+#: package/contents/ui/configGeneral.qml:488
+#: package/contents/ui/configGeneral.qml:496
+#: package/contents/ui/configGeneral.qml:510
+msgid "Could not read the dropped file as a Google client secret JSON."
+msgstr ""
+"Impossible de lire le fichier déposé comme fichier JSON de secret client "
+"Google."
+
+#: package/contents/ui/configGeneral.qml:546 scripts/fitdash-auth.py:128
 msgid "Authorization successful!"
 msgstr "Autorisation réussie !"
 
-#: package/contents/ui/FitbitApi.qml:33
-msgid "No access token"
-msgstr "Aucun jeton d'accès"
-
-#: package/contents/ui/FitbitApi.qml:52
-msgid "Network error — check your connection"
-msgstr "Erreur réseau — vérifiez votre connexion"
-
-#: package/contents/ui/FitbitApi.qml:53
-msgid "Network error at %1"
-msgstr "Erreur réseau à %1"
-
-#: package/contents/ui/FitbitApi.qml:59
-msgid "Token expired at %1 — refreshing"
-msgstr "Jeton expiré à %1 — actualisation"
-
-#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
-msgid "Rate limited — try again later"
-msgstr "Limite de débit atteinte — réessayez plus tard"
-
-#: package/contents/ui/FitbitApi.qml:66
-msgid "Rate limited at %1 — showing cached data"
-msgstr "Limite de débit atteinte à %1 — affichage des données en cache"
-
-#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
-msgid "Fitbit server error (HTTP %1)"
-msgstr "Erreur du serveur Fitbit (HTTP %1)"
-
-#: package/contents/ui/FitbitApi.qml:73
-msgid "Server error (HTTP %1) at %2"
-msgstr "Erreur serveur (HTTP %1) à %2"
-
-#: package/contents/ui/FitbitApi.qml:79
-msgid "%1 failed (HTTP %2)"
-msgstr "Échec de %1 (HTTP %2)"
-
-#: package/contents/ui/FitbitApi.qml:80
-msgid "Error (HTTP %1) at %2"
-msgstr "Erreur (HTTP %1) à %2"
-
-#: package/contents/ui/FitbitApi.qml:107
-msgid "Request timed out — check your connection"
-msgstr "La requête a expiré — vérifiez votre connexion"
-
-#: package/contents/ui/FitbitApi.qml:108
-msgid "Timed out at %1"
-msgstr "Délai dépassé à %1"
-
-#: package/contents/ui/FitbitApi.qml:116
-msgid "Activity fetch"
-msgstr "Récupération de l'activité"
-
-#: package/contents/ui/FitbitApi.qml:141
-msgid "OK — updated at %1"
-msgstr "OK — mis à jour à %1"
-
-#: package/contents/ui/FitbitApi.qml:146
-msgid "Failed to parse activity data"
-msgstr "Impossible d'analyser les données d'activité"
-
-#: package/contents/ui/FitbitApi.qml:147
-msgid "Parse error at %1"
-msgstr "Erreur d'analyse à %1"
-
-#: package/contents/ui/FitbitOAuth.qml:90
-msgid "Unknown error"
-msgstr "Erreur inconnue"
-
-#: package/contents/ui/FitbitOAuth.qml:97
-msgid "Failed to parse auth response"
-msgstr "Impossible d'analyser la réponse d'autorisation"
-
-#: package/contents/ui/FitbitOAuth.qml:136
-#: package/contents/ui/FitbitOAuth.qml:327
-msgid "Invalid client ID format"
-msgstr "Format d'ID client invalide"
-
-#: package/contents/ui/FitbitOAuth.qml:150
-msgid "Authorization canceled"
-msgstr "Autorisation annulée"
-
-#: package/contents/ui/FitbitOAuth.qml:191
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: package/contents/ui/FitbitOAuth.qml:213
-msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2)"
-
-#: package/contents/ui/FitbitOAuth.qml:280
-msgid "Network error during token refresh"
-msgstr "Erreur réseau pendant l'actualisation du jeton"
-
-#: package/contents/ui/FitbitOAuth.qml:281
-msgid "Refresh token invalid — please re-authorize"
-msgstr "Jeton d'actualisation invalide — veuillez autoriser à nouveau"
-
-#: package/contents/ui/FitbitOAuth.qml:282
-msgid "Token refresh failed"
-msgstr "Échec de l'actualisation du jeton"
-
-#: package/contents/ui/FitbitOAuth.qml:283
-msgid "Refresh failed — missing tokens"
-msgstr "Échec de l'actualisation — jetons manquants"
-
-#: package/contents/ui/FitbitOAuth.qml:284
-msgid "Token refresh failed — invalid response"
-msgstr "Échec de l'actualisation du jeton — réponse invalide"
-
-#: package/contents/ui/FitbitOAuth.qml:341
-msgid "Paste the redirect URL or authorization code first"
-msgstr "Collez d'abord l'URL de redirection ou le code d'autorisation"
-
-#: package/contents/ui/FitbitOAuth.qml:345
-msgid "Start the manual authorization first"
-msgstr "Démarrez d'abord l'autorisation manuelle"
-
-#: package/contents/ui/FitbitOAuth.qml:365
-msgid "Authorization was denied"
-msgstr "L'autorisation a été refusée"
-
-#: package/contents/ui/FitbitOAuth.qml:372
-msgid "Authorization failed (state mismatch) — please try again"
-msgstr "Échec de l'autorisation (état différent) — veuillez réessayer"
-
-#: package/contents/ui/FitbitOAuth.qml:376
-msgid "No authorization code found in the pasted text"
-msgstr "Aucun code d'autorisation trouvé dans le texte collé"
-
-#: package/contents/ui/FitbitOAuth.qml:386
-msgid "Network error during token exchange"
-msgstr "Erreur réseau pendant l'échange du jeton"
-
-#: package/contents/ui/FitbitOAuth.qml:387
-msgid "Authorization code invalid or expired — please try again"
-msgstr "Code d'autorisation invalide ou expiré — veuillez réessayer"
-
-#: package/contents/ui/FitbitOAuth.qml:388
-msgid "Token exchange failed"
-msgstr "Échec de l'échange du jeton"
-
-#: package/contents/ui/FitbitOAuth.qml:389
-msgid "Token exchange failed — missing tokens"
-msgstr "Échec de l'échange du jeton — jetons manquants"
-
-#: package/contents/ui/FitbitOAuth.qml:390
-msgid "Token exchange failed — invalid response"
-msgstr "Échec de l'échange du jeton — réponse invalide"
-
-#: package/contents/ui/FullRepresentation.qml:40
-msgctxt "distance in miles"
-msgid "%1 mi"
-msgstr "%1 mi"
-
-#: package/contents/ui/FullRepresentation.qml:42
-msgctxt "distance in kilometers"
-msgid "%1 km"
-msgstr "%1 km"
-
-#: package/contents/ui/FullRepresentation.qml:68
-#: package/contents/ui/main.qml:77
-msgid "FitDash"
-msgstr "FitDash"
-
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Stale"
-msgstr "Obsolète"
-
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Today"
-msgstr "Aujourd'hui"
-
-#: package/contents/ui/FullRepresentation.qml:115
-msgid "Connect Fitbit"
-msgstr "Connecter Fitbit"
-
-#: package/contents/ui/FullRepresentation.qml:121
-msgid "Authorize your account in settings to show today's activity."
-msgstr ""
-"Autorisez votre compte dans les paramètres pour afficher l'activité du jour."
-
-#: package/contents/ui/FullRepresentation.qml:130
-msgid "Open Settings"
-msgstr "Ouvrir les paramètres"
-
-#: package/contents/ui/FullRepresentation.qml:160
-msgid "Loading Fitbit data"
-msgstr "Chargement des données Fitbit"
-
-#: package/contents/ui/FullRepresentation.qml:220
-#, javascript-format
-msgctxt "step goal progress"
-msgid "%1%"
-msgstr "%1%"
-
-#: package/contents/ui/FullRepresentation.qml:245
-msgid "%1 remaining of %2"
-msgstr "%1 restants sur %2"
-
-#: package/contents/ui/FullRepresentation.qml:246
-msgid "No step goal set"
-msgstr "Aucun objectif de pas défini"
-
-#: package/contents/ui/FullRepresentation.qml:279
-msgid "Active"
-msgstr "Actif"
-
-#: package/contents/ui/FullRepresentation.qml:280
-msgctxt "active minutes"
-msgid "%1 min"
-msgstr "%1 min"
-
-#: package/contents/ui/FullRepresentation.qml:287
-msgid "Resting HR"
-msgstr "FC au repos"
-
-#: package/contents/ui/FullRepresentation.qml:289
-msgctxt "heart rate in beats per minute"
-msgid "%1 bpm"
-msgstr "%1 bpm"
-
-#: package/contents/ui/FullRepresentation.qml:310
-msgid "Updated %1"
-msgstr "Mis à jour %1"
-
-#: package/contents/ui/main.qml:79
+#: package/contents/ui/main.qml:87
 msgid "Not connected"
 msgstr "Non connecté"
 
-#: package/contents/ui/main.qml:83
+#: package/contents/ui/main.qml:92
 msgid ""
 "Steps: %1 | Cal: %2 | Dist: %3\n"
 "Updated: %4"
@@ -445,160 +573,75 @@ msgstr ""
 "Pas : %1 | Cal : %2 | Dist : %3\n"
 "Mis à jour : %4"
 
-#: package/contents/ui/main.qml:105
+#: package/contents/ui/main.qml:114
 msgid "Authorization expired at %1 — please re-authorize"
 msgstr "Autorisation expirée à %1 — veuillez autoriser à nouveau"
 
-#: package/contents/ui/main.qml:118
+#: package/contents/ui/main.qml:127
 msgid "Token refresh failed at %1 — %2"
 msgstr "Échec de l'actualisation du jeton à %1 — %2"
 
-#: package/contents/ui/main.qml:142
+#: package/contents/ui/main.qml:152
 msgid "No refresh token available — please re-authorize"
 msgstr "Aucun jeton d'actualisation disponible — veuillez autoriser à nouveau"
 
-#: package/contents/ui/main.qml:169
+#: package/contents/ui/main.qml:184
 msgid "Token refreshed at %1"
 msgstr "Jeton actualisé à %1"
 
-#: scripts/fitdash-auth.py
+#: scripts/fitdash-auth.py:101
+msgid "Missing client secret"
+msgstr ""
+
+#: scripts/fitdash-auth.py:128
 msgid "You can close this tab."
 msgstr ""
 
-#: scripts/fitdash-auth.py
+#: scripts/fitdash-auth.py:145
 msgid "Could not start authorization server on port %1"
 msgstr ""
 
-#: scripts/fitdash-auth.py
+#: scripts/fitdash-auth.py:192
 msgid "Authorization timed out — please try again"
 msgstr ""
 
-#: package/contents/ui/FullRepresentation.qml:318
-msgid "Vitals"
-msgstr "Signes vitaux"
+#~ msgid "From dev.fitbit.com/apps"
+#~ msgstr "Depuis dev.fitbit.com/apps"
 
-#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
-msgid "Sleep"
-msgstr "Sommeil"
+#~ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+#~ msgstr "ID client OAuth 2.0 de l'enregistrement de votre application Fitbit"
 
-#: package/contents/ui/FullRepresentation.qml:352
-msgid "SpO2"
-msgstr "SpO2"
+#~ msgid ""
+#~ "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+#~ msgstr ""
+#~ "Collez l'URL de rappel dans les paramètres de votre application Fitbit "
+#~ "sur dev.fitbit.com"
 
-#: package/contents/ui/FullRepresentation.qml:362
-msgid "HRV"
-msgstr "VFC"
+#~ msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+#~ msgstr ""
+#~ "Recommandé : 15 à 30 minutes pour rester dans les limites de débit de "
+#~ "Fitbit"
 
-#: package/contents/ui/FullRepresentation.qml:372
-msgid "Breathing"
-msgstr "Respiration"
+#~ msgid "Fitbit Account"
+#~ msgstr "Compte Fitbit"
 
-#: package/contents/ui/FullRepresentation.qml:73
-msgctxt "sleep duration in hours and minutes"
-msgid "%1h %2m"
-msgstr "%1 h %2 min"
+#~ msgid "Re-authorize with Fitbit"
+#~ msgstr "Autoriser à nouveau avec Fitbit"
 
-#: package/contents/ui/FullRepresentation.qml:364
-msgctxt "heart rate variability in milliseconds"
-msgid "%1 ms"
-msgstr "%1 ms"
+#~ msgid "Authorize with Fitbit"
+#~ msgstr "Autoriser avec Fitbit"
 
-#: package/contents/ui/FullRepresentation.qml:374
-msgctxt "respiratory rate in breaths per minute"
-msgid "%1 br/min"
-msgstr "%1 resp/min"
+#~ msgid "Fitbit server error (HTTP %1)"
+#~ msgstr "Erreur du serveur Fitbit (HTTP %1)"
 
-#: package/contents/ui/configGeneral.qml:272
-msgid "Blood oxygen (SpO2)"
-msgstr "Oxygène sanguin (SpO2)"
+#~ msgid "Activity fetch"
+#~ msgstr "Récupération de l'activité"
 
-#: package/contents/ui/configGeneral.qml:279
-msgid "Heart rate variability"
-msgstr "Variabilité de la fréquence cardiaque"
+#~ msgid "Failed to parse activity data"
+#~ msgstr "Impossible d'analyser les données d'activité"
 
-#: package/contents/ui/configGeneral.qml:286
-msgid "Breathing rate"
-msgstr "Fréquence respiratoire"
+#~ msgid "Connect Fitbit"
+#~ msgstr "Connecter Fitbit"
 
-#: package/contents/ui/FullRepresentation.qml:145
-msgid "Connect Google Health"
-msgstr "Connecter Google Health"
-
-#: package/contents/ui/FullRepresentation.qml:190
-msgid "Loading Google Health data"
-msgstr "Chargement des données Google Health"
-
-#: package/contents/ui/FullRepresentation.qml:273
-msgid "No data yet"
-msgstr "Pas encore de données"
-
-#: package/contents/ui/FullRepresentation.qml:354
-msgctxt "blood oxygen saturation percentage"
-msgid "%1%"
-msgstr "%1%"
-
-#: package/contents/ui/GoogleHealthApi.qml:143
-msgid "Google Health server error (HTTP %1)"
-msgstr "Erreur du serveur Google Health (HTTP %1)"
-
-#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
-#: package/contents/ui/GoogleHealthApi.qml:200
-msgid "%1 fetch"
-msgstr "Récupération : %1"
-
-#. TRANSLATORS: %1 is a metric name such as Steps
-#: package/contents/ui/GoogleHealthApi.qml:211
-msgid "Failed to parse %1 data"
-msgstr "Impossible d'analyser les données : %1"
-
-#: package/contents/ui/GoogleHealthOAuth.qml:216
-msgid "Google server error (HTTP %1)"
-msgstr "Erreur du serveur Google (HTTP %1)"
-
-#: package/contents/ui/configGeneral.qml:102
-msgid "From Google Cloud Console"
-msgstr "Depuis Google Cloud Console"
-
-#: package/contents/ui/configGeneral.qml:109
-msgid "Client Secret:"
-msgstr "Secret client :"
-
-#: package/contents/ui/configGeneral.qml:110
-msgid "From the same OAuth client"
-msgstr "Du même client OAuth"
-
-#: package/contents/ui/configGeneral.qml:117
-msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
-msgstr "Identifiants OAuth 2.0 d'un projet Google Cloud avec l'API Google Health activée"
-
-#: package/contents/ui/configGeneral.qml:158
-msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
-msgstr "Google autorise automatiquement n'importe quel port localhost pour les clients OAuth d'application de bureau — inutile d'enregistrer cette URL"
-
-#: package/contents/ui/configGeneral.qml:174
-msgid "Recommended: 15–30 minutes to stay within API rate limits"
-msgstr "Recommandé : 15 à 30 minutes pour rester dans les limites de débit de l’API"
-
-#: package/contents/ui/configGeneral.qml:201
-msgid "Step goal:"
-msgstr "Objectif de pas :"
-
-#: package/contents/ui/configGeneral.qml:207
-msgid "None"
-msgstr "Aucun"
-
-#: package/contents/ui/configGeneral.qml:216
-msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
-msgstr "L'API Google Health ne fournit pas d'objectif, il est donc défini ici. 0 affiche « Aucun objectif de pas défini » à la place"
-
-#: package/contents/ui/configGeneral.qml:292
-msgid "Google Health Account"
-msgstr "Compte Google Health"
-
-#: package/contents/ui/configGeneral.qml:319
-msgid "Re-authorize with Google"
-msgstr "Autoriser à nouveau avec Google"
-
-#: package/contents/ui/configGeneral.qml:319
-msgid "Authorize with Google"
-msgstr "Autoriser avec Google"
+#~ msgid "Loading Fitbit data"
+#~ msgstr "Chargement des données Fitbit"

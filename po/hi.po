@@ -1,8 +1,9 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: FitDash 1.0.8\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
-"POT-Creation-Date: 2026-06-28 18:35-0600\n"
+"POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
 "Last-Translator: FitDash contributors\n"
 "Language-Team: Hindi\n"
@@ -11,475 +12,624 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: package/contents/ui/configGeneral.qml:8 package/contents/config/config.qml:6
-msgid "General"
-msgstr "सामान्य"
-#: package/contents/ui/configGeneral.qml:52
-msgid "Not authorized"
-msgstr "अधिकृत नहीं"
-#: package/contents/ui/configGeneral.qml:55
-msgid "Authorization problem — re-authorize"
-msgstr "प्राधिकरण समस्या — पुनः अधिकृत करें"
-#: package/contents/ui/configGeneral.qml:58
-msgid "Token expired — refresh needed"
-msgstr "टोकन समाप्त हो गया — रीफ़्रेश आवश्यक है"
-#: package/contents/ui/configGeneral.qml:60
-msgid "unknown"
-msgstr "अज्ञात"
-#: package/contents/ui/configGeneral.qml:60
-msgid "Authorized (User: %1)"
-msgstr "अधिकृत (उपयोगकर्ता: %1)"
-#: package/contents/ui/configGeneral.qml:89
-msgid "Client ID:"
-msgstr "क्लाइंट आईडी:"
-#: package/contents/ui/configGeneral.qml:90
-msgid "From dev.fitbit.com/apps"
-msgstr "dev.fitbit.com/apps से"
-#: package/contents/ui/configGeneral.qml:97
-msgid "OAuth 2.0 Client ID from your Fitbit app registration"
-msgstr "आपके Fitbit ऐप पंजीकरण से OAuth 2.0 क्लाइंट आईडी"
-#: package/contents/ui/configGeneral.qml:104
-msgid "Callback URL:"
-msgstr "कॉलबैक यूआरएल:"
-#: package/contents/ui/configGeneral.qml:117
-#: package/contents/ui/configGeneral.qml:306
-msgid "Copy to clipboard"
-msgstr "क्लिपबोर्ड पर कॉपी करें"
-#: package/contents/ui/configGeneral.qml:130
-msgid "Callback port:"
-msgstr "कॉलबैक पोर्ट:"
-#: package/contents/ui/configGeneral.qml:138
-msgid "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
-msgstr "कॉलबैक यूआरएल को dev.fitbit.com पर अपनी Fitbit ऐप सेटिंग में पेस्ट करें"
-#: package/contents/ui/configGeneral.qml:146
-msgid "Refresh interval (minutes):"
-msgstr "रीफ़्रेश अंतराल (मिनट):"
-#: package/contents/ui/configGeneral.qml:154
-msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
-msgstr "अनुशंसित: 15–30 मिनट, ताकि Fitbit की अनुरोध सीमा पार न हो"
-#: package/contents/ui/configGeneral.qml:162
-msgid "Display"
-msgstr "डिस्प्ले"
-#: package/contents/ui/configGeneral.qml:167
-msgid "Distance unit:"
-msgstr "दूरी इकाई:"
-#: package/contents/ui/configGeneral.qml:169
-msgid "Kilometers (km)"
-msgstr "किलोमीटर (किमी)"
-#: package/contents/ui/configGeneral.qml:170
-msgid "Miles (mi)"
-msgstr "मील (mi)"
-#: package/contents/ui/configGeneral.qml:181
-msgid "Visible Metrics"
-msgstr "दिखाए जाने वाले मीट्रिक"
-#: package/contents/ui/configGeneral.qml:187
-#: package/contents/ui/FullRepresentation.qml:213
-msgid "Steps"
-msgstr "कदम"
-#: package/contents/ui/configGeneral.qml:194
-#: package/contents/ui/FullRepresentation.qml:263
-msgid "Calories"
-msgstr "कैलोरी"
-#: package/contents/ui/configGeneral.qml:201
-#: package/contents/ui/FullRepresentation.qml:271
-msgid "Distance"
-msgstr "दूरी"
-#: package/contents/ui/configGeneral.qml:208
-msgid "Active minutes"
-msgstr "सक्रिय मिनट"
-#: package/contents/ui/configGeneral.qml:215
-msgid "Resting heart rate"
-msgstr "विश्राम हृदय गति"
-#: package/contents/ui/configGeneral.qml:221
-msgid "Fitbit Account"
-msgstr "Fitbit खाता"
-#: package/contents/ui/configGeneral.qml:225
-msgid "Status:"
-msgstr "स्थिति:"
-#: package/contents/ui/configGeneral.qml:233
-msgid "Last request:"
-msgstr "अंतिम अनुरोध:"
-#: package/contents/ui/configGeneral.qml:235
-msgid "No requests yet"
-msgstr "अभी तक कोई अनुरोध नहीं"
-#: package/contents/ui/configGeneral.qml:245
-msgid "Authorization:"
-msgstr "प्राधिकरण:"
-#: package/contents/ui/configGeneral.qml:247
-msgid "Cancel"
-msgstr "रद्द करें"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Re-authorize with Fitbit"
-msgstr "Fitbit के साथ फिर से अधिकृत करें"
-#: package/contents/ui/configGeneral.qml:248
-msgid "Authorize with Fitbit"
-msgstr "Fitbit के साथ अधिकृत करें"
-#: package/contents/ui/configGeneral.qml:264
-msgid "Authorize manually (copy & paste)"
-msgstr "मैन्युअल रूप से अधिकृत करें (कॉपी और पेस्ट करें)"
-#: package/contents/ui/configGeneral.qml:269
-msgid "" "Use this if the browser can't reach localhost (sandboxed browser, remote " "session, or no Python)"
-msgstr "यदि ब्राउज़र localhost तक नहीं पहुँच पा रहा हो (सैंडबॉक्स ब्राउज़र, रिमोट सत्र, या Python नहीं) तो इसका उपयोग करें"
-#: package/contents/ui/configGeneral.qml:285
-msgid "Step 1:"
-msgstr "चरण 1:"
-#: package/contents/ui/configGeneral.qml:286
-msgid "Open this URL in a browser and approve access:"
-msgstr "इस URL को ब्राउज़र में खोलें और पहुंच स्वीकृत करें:"
-#: package/contents/ui/configGeneral.qml:293
-msgid "Authorization URL:"
-msgstr "प्राधिकरण यूआरएल:"
-#: package/contents/ui/configGeneral.qml:320
-msgid "Open in browser"
-msgstr "ब्राउज़र में खोलें"
-#: package/contents/ui/configGeneral.qml:329
-msgid "Step 2:"
-msgstr "चरण 2:"
-#: package/contents/ui/configGeneral.qml:330
-msgid "After approving, copy the address bar URL and paste it below:"
-msgstr "अनुमोदन के बाद, एड्रेस बार यूआरएल को कॉपी करें और नीचे पेस्ट करें:"
-#: package/contents/ui/configGeneral.qml:337
-msgid "Redirect URL or code:"
-msgstr "रीडायरेक्ट यूआरएल या कोड:"
-#: package/contents/ui/configGeneral.qml:341
-msgid "http://localhost:…/callback?code=…"
-msgstr "http://localhost:…/callback?code=…"
-#: package/contents/ui/configGeneral.qml:348
-msgid "Complete"
-msgstr "पूरा करें"
-#: package/contents/ui/configGeneral.qml:358
-msgid "Cancel manual authorization"
-msgstr "मैन्युअल प्राधिकरण रद्द करें"
-#: package/contents/ui/configGeneral.qml:397
-msgid "Authorization successful!"
-msgstr "प्राधिकरण सफल!"
-#: package/contents/ui/FitbitApi.qml:33
-msgid "No access token"
-msgstr "कोई एक्सेस टोकन नहीं"
-#: package/contents/ui/FitbitApi.qml:52
-msgid "Network error — check your connection"
-msgstr "नेटवर्क त्रुटि — अपना कनेक्शन जांचें"
-#: package/contents/ui/FitbitApi.qml:53
-msgid "Network error at %1"
-msgstr "%1 बजे नेटवर्क त्रुटि"
-#: package/contents/ui/FitbitApi.qml:59
-msgid "Token expired at %1 — refreshing"
-msgstr "टोकन %1 बजे समाप्त हो गया — रीफ़्रेश हो रहा है"
-#: package/contents/ui/FitbitApi.qml:65 package/contents/ui/FitbitOAuth.qml:205
-msgid "Rate limited — try again later"
-msgstr "अनुरोध सीमा पार हो गई — बाद में पुनः प्रयास करें"
-#: package/contents/ui/FitbitApi.qml:66
-msgid "Rate limited at %1 — showing cached data"
-msgstr "%1 बजे अनुरोध सीमा पार हो गई — कैश किया गया डेटा दिखाया जा रहा है"
-#: package/contents/ui/FitbitApi.qml:72 package/contents/ui/FitbitOAuth.qml:209
-msgid "Fitbit server error (HTTP %1)"
-msgstr "Fitbit सर्वर त्रुटि (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:73
-msgid "Server error (HTTP %1) at %2"
-msgstr "%2 बजे सर्वर त्रुटि (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:79
-msgid "%1 failed (HTTP %2)"
-msgstr "%1 विफल (HTTP %2)"
-#: package/contents/ui/FitbitApi.qml:80
-msgid "Error (HTTP %1) at %2"
-msgstr "%2 बजे त्रुटि (HTTP %1)"
-#: package/contents/ui/FitbitApi.qml:107
-msgid "Request timed out — check your connection"
-msgstr "अनुरोध का समय समाप्त हो गया — अपना कनेक्शन जांचें"
-#: package/contents/ui/FitbitApi.qml:108
-msgid "Timed out at %1"
-msgstr "%1 बजे समय समाप्त"
-#: package/contents/ui/FitbitApi.qml:116
-msgid "Activity fetch"
-msgstr "गतिविधि डेटा प्राप्त करना"
-#: package/contents/ui/FitbitApi.qml:141
-msgid "OK — updated at %1"
-msgstr "ठीक है — %1 बजे अपडेट किया गया"
-#: package/contents/ui/FitbitApi.qml:146
-msgid "Failed to parse activity data"
-msgstr "गतिविधि डेटा पार्स करने में विफल"
-#: package/contents/ui/FitbitApi.qml:147
-msgid "Parse error at %1"
-msgstr "%1 बजे पार्स त्रुटि"
-#: package/contents/ui/FitbitOAuth.qml:90
-msgid "Unknown error"
-msgstr "अज्ञात त्रुटि"
-#: package/contents/ui/FitbitOAuth.qml:97
-msgid "Failed to parse auth response"
-msgstr "प्राधिकरण प्रतिक्रिया पार्स करने में विफल"
-#: package/contents/ui/FitbitOAuth.qml:136
-#: package/contents/ui/FitbitOAuth.qml:327
-msgid "Invalid client ID format"
-msgstr "अमान्य क्लाइंट आईडी प्रारूप"
-#: package/contents/ui/FitbitOAuth.qml:150
-msgid "Authorization canceled"
-msgstr "प्राधिकरण रद्द कर दिया गया"
-#: package/contents/ui/FitbitOAuth.qml:191
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-#: package/contents/ui/FitbitOAuth.qml:213
-msgid "%1 (HTTP %2)"
-msgstr "%1 (HTTP %2)"
-#: package/contents/ui/FitbitOAuth.qml:280
-msgid "Network error during token refresh"
-msgstr "टोकन रीफ़्रेश के दौरान नेटवर्क त्रुटि"
-#: package/contents/ui/FitbitOAuth.qml:281
-msgid "Refresh token invalid — please re-authorize"
-msgstr "रीफ़्रेश टोकन अमान्य — कृपया पुनः अधिकृत करें"
-#: package/contents/ui/FitbitOAuth.qml:282
-msgid "Token refresh failed"
-msgstr "टोकन रीफ़्रेश विफल रहा"
-#: package/contents/ui/FitbitOAuth.qml:283
-msgid "Refresh failed — missing tokens"
-msgstr "रीफ़्रेश विफल — टोकन मौजूद नहीं"
-#: package/contents/ui/FitbitOAuth.qml:284
-msgid "Token refresh failed — invalid response"
-msgstr "टोकन रीफ़्रेश विफल — अमान्य प्रतिक्रिया"
-#: package/contents/ui/FitbitOAuth.qml:341
-msgid "Paste the redirect URL or authorization code first"
-msgstr "पहले रीडायरेक्ट यूआरएल या प्राधिकरण कोड चिपकाएँ"
-#: package/contents/ui/FitbitOAuth.qml:345
-msgid "Start the manual authorization first"
-msgstr "पहले मैन्युअल प्राधिकरण प्रारंभ करें"
-#: package/contents/ui/FitbitOAuth.qml:365
-msgid "Authorization was denied"
-msgstr "प्राधिकरण को अस्वीकार कर दिया गया"
-#: package/contents/ui/FitbitOAuth.qml:372
-msgid "Authorization failed (state mismatch) — please try again"
-msgstr "प्राधिकरण विफल (state मेल नहीं खाता) — कृपया पुनः प्रयास करें"
-#: package/contents/ui/FitbitOAuth.qml:376
-msgid "No authorization code found in the pasted text"
-msgstr "चिपकाए गए पाठ में कोई प्राधिकरण कोड नहीं मिला"
-#: package/contents/ui/FitbitOAuth.qml:386
-msgid "Network error during token exchange"
-msgstr "टोकन एक्सचेंज के दौरान नेटवर्क त्रुटि"
-#: package/contents/ui/FitbitOAuth.qml:387
-msgid "Authorization code invalid or expired — please try again"
-msgstr "प्राधिकरण कोड अमान्य है या समाप्त हो गया है — कृपया पुनः प्रयास करें"
-#: package/contents/ui/FitbitOAuth.qml:388
-msgid "Token exchange failed"
-msgstr "टोकन एक्सचेंज विफल रहा"
-#: package/contents/ui/FitbitOAuth.qml:389
-msgid "Token exchange failed — missing tokens"
-msgstr "टोकन एक्सचेंज विफल — टोकन मौजूद नहीं"
-#: package/contents/ui/FitbitOAuth.qml:390
-msgid "Token exchange failed — invalid response"
-msgstr "टोकन एक्सचेंज विफल - अमान्य प्रतिक्रिया"
-#: package/contents/ui/FullRepresentation.qml:40
+#: package/contents/ui/FullRepresentation.qml:66
+#: package/contents/ui/main.qml:90
 msgctxt "distance in miles"
 msgid "%1 mi"
 msgstr "%1 मील"
-#: package/contents/ui/FullRepresentation.qml:42
+
+#: package/contents/ui/FullRepresentation.qml:68
+#: package/contents/ui/main.qml:91
 msgctxt "distance in kilometers"
 msgid "%1 km"
 msgstr "%1 किमी"
-#: package/contents/ui/FullRepresentation.qml:68
-#: package/contents/ui/main.qml:77
-msgid "FitDash"
-msgstr "FitDash"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Stale"
-msgstr "पुराना डेटा"
-#: package/contents/ui/FullRepresentation.qml:73
-msgid "Today"
-msgstr "आज"
-#: package/contents/ui/FullRepresentation.qml:115
-msgid "Connect Fitbit"
-msgstr "Fitbit कनेक्ट करें"
-#: package/contents/ui/FullRepresentation.qml:121
-msgid "Authorize your account in settings to show today's activity."
-msgstr "आज की गतिविधि दिखाने के लिए सेटिंग्स में अपने खाते को अधिकृत करें।"
-#: package/contents/ui/FullRepresentation.qml:130
-msgid "Open Settings"
-msgstr "सेटिंग्स खोलें"
-#: package/contents/ui/FullRepresentation.qml:160
-msgid "Loading Fitbit data"
-msgstr "Fitbit डेटा लोड हो रहा है"
-#: package/contents/ui/FullRepresentation.qml:220
-#, javascript-format
-msgctxt "step goal progress"
-msgid "%1%"
-msgstr "%1%"
-#: package/contents/ui/FullRepresentation.qml:245
-msgid "%1 remaining of %2"
-msgstr "%2 में से %1 शेष"
-#: package/contents/ui/FullRepresentation.qml:246
-msgid "No step goal set"
-msgstr "कोई कदम लक्ष्य निर्धारित नहीं"
-#: package/contents/ui/FullRepresentation.qml:279
-msgid "Active"
-msgstr "सक्रिय"
-#: package/contents/ui/FullRepresentation.qml:280
-msgctxt "active minutes"
-msgid "%1 min"
-msgstr "%1 मि"
-#: package/contents/ui/FullRepresentation.qml:287
-msgid "Resting HR"
-msgstr "विश्राम हृदय गति"
-#: package/contents/ui/FullRepresentation.qml:289
-msgctxt "heart rate in beats per minute"
-msgid "%1 bpm"
-msgstr "%1 bpm"
-#: package/contents/ui/FullRepresentation.qml:310
-msgid "Updated %1"
-msgstr "%1 बजे अपडेट किया गया"
-#: package/contents/ui/main.qml:79
-msgid "Not connected"
-msgstr "कनेक्ट नहीं है"
-#: package/contents/ui/main.qml:83
-msgid "" "Steps: %1 | Cal: %2 | Dist: %3\n" "Updated: %4"
-msgstr "कदम: %1 | कैलोरी: %2 | दूरी: %3\nअपडेट: %4"
-#: package/contents/ui/main.qml:105
-msgid "Authorization expired at %1 — please re-authorize"
-msgstr "प्राधिकरण %1 बजे समाप्त हो गया — कृपया पुनः अधिकृत करें"
-#: package/contents/ui/main.qml:118
-msgid "Token refresh failed at %1 — %2"
-msgstr "टोकन रीफ़्रेश %1 बजे विफल रहा — %2"
-#: package/contents/ui/main.qml:142
-msgid "No refresh token available — please re-authorize"
-msgstr "कोई रीफ़्रेश टोकन उपलब्ध नहीं — कृपया पुनः अधिकृत करें"
-#: package/contents/ui/main.qml:169
-msgid "Token refreshed at %1"
-msgstr "टोकन %1 बजे रीफ़्रेश किया गया"
-
-#: scripts/fitdash-auth.py
-msgid "You can close this tab."
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Could not start authorization server on port %1"
-msgstr ""
-
-#: scripts/fitdash-auth.py
-msgid "Authorization timed out — please try again"
-msgstr ""
-
-#: package/contents/ui/FullRepresentation.qml:318
-msgid "Vitals"
-msgstr "महत्वपूर्ण संकेत"
-
-#: package/contents/ui/FullRepresentation.qml:334 package/contents/ui/configGeneral.qml:265
-msgid "Sleep"
-msgstr "नींद"
-
-#: package/contents/ui/FullRepresentation.qml:352
-msgid "SpO2"
-msgstr "SpO2"
-
-#: package/contents/ui/FullRepresentation.qml:362
-msgid "HRV"
-msgstr "HRV"
-
-#: package/contents/ui/FullRepresentation.qml:372
-msgid "Breathing"
-msgstr "सांस"
 
 #: package/contents/ui/FullRepresentation.qml:73
 msgctxt "sleep duration in hours and minutes"
 msgid "%1h %2m"
 msgstr "%1घं %2मि"
 
+#: package/contents/ui/FullRepresentation.qml:98
+#: package/contents/ui/main.qml:85
+msgid "FitDash"
+msgstr "FitDash"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Stale"
+msgstr "पुराना डेटा"
+
+#: package/contents/ui/FullRepresentation.qml:103
+msgid "Today"
+msgstr "आज"
+
+#: package/contents/ui/FullRepresentation.qml:145
+msgid "Connect Google Health"
+msgstr "Google Health कनेक्ट करें"
+
+#: package/contents/ui/FullRepresentation.qml:151
+msgid "Authorize your account in settings to show today's activity."
+msgstr "आज की गतिविधि दिखाने के लिए सेटिंग्स में अपने खाते को अधिकृत करें।"
+
+#: package/contents/ui/FullRepresentation.qml:160
+msgid "Open Settings"
+msgstr "सेटिंग्स खोलें"
+
+#: package/contents/ui/FullRepresentation.qml:190
+msgid "Loading Google Health data"
+msgstr "Google Health डेटा लोड हो रहा है"
+
+#: package/contents/ui/FullRepresentation.qml:243
+#: package/contents/ui/GoogleHealthApi.qml:227
+#: package/contents/ui/configGeneral.qml:240
+msgid "Steps"
+msgstr "कदम"
+
+#: package/contents/ui/FullRepresentation.qml:250
+#, javascript-format
+msgctxt "step goal progress"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:273
+msgid "No data yet"
+msgstr "अभी तक कोई डेटा नहीं"
+
+#: package/contents/ui/FullRepresentation.qml:275
+msgid "%1 remaining of %2"
+msgstr "%2 में से %1 शेष"
+
+#: package/contents/ui/FullRepresentation.qml:276
+msgid "No step goal set"
+msgstr "कोई कदम लक्ष्य निर्धारित नहीं"
+
+#: package/contents/ui/FullRepresentation.qml:293
+#: package/contents/ui/GoogleHealthApi.qml:233
+#: package/contents/ui/configGeneral.qml:247
+msgid "Calories"
+msgstr "कैलोरी"
+
+#: package/contents/ui/FullRepresentation.qml:301
+#: package/contents/ui/GoogleHealthApi.qml:239
+#: package/contents/ui/configGeneral.qml:254
+msgid "Distance"
+msgstr "दूरी"
+
+#: package/contents/ui/FullRepresentation.qml:309
+msgid "Active"
+msgstr "सक्रिय"
+
+#: package/contents/ui/FullRepresentation.qml:310
+msgctxt "active minutes"
+msgid "%1 min"
+msgstr "%1 मि"
+
+#: package/contents/ui/FullRepresentation.qml:318
+msgid "Vitals"
+msgstr "महत्वपूर्ण संकेत"
+
+#: package/contents/ui/FullRepresentation.qml:334
+#: package/contents/ui/configGeneral.qml:275
+msgid "Sleep"
+msgstr "नींद"
+
+#: package/contents/ui/FullRepresentation.qml:342
+msgid "Resting HR"
+msgstr "विश्राम हृदय गति"
+
+#: package/contents/ui/FullRepresentation.qml:344
+msgctxt "heart rate in beats per minute"
+msgid "%1 bpm"
+msgstr "%1 bpm"
+
+#: package/contents/ui/FullRepresentation.qml:352
+msgid "SpO2"
+msgstr "SpO2"
+
+#: package/contents/ui/FullRepresentation.qml:354
+#, javascript-format
+msgctxt "blood oxygen saturation percentage"
+msgid "%1%"
+msgstr "%1%"
+
+#: package/contents/ui/FullRepresentation.qml:362
+msgid "HRV"
+msgstr "HRV"
+
 #: package/contents/ui/FullRepresentation.qml:364
 msgctxt "heart rate variability in milliseconds"
 msgid "%1 ms"
 msgstr "%1 मिसे"
+
+#: package/contents/ui/FullRepresentation.qml:372
+msgid "Breathing"
+msgstr "सांस"
 
 #: package/contents/ui/FullRepresentation.qml:374
 msgctxt "respiratory rate in breaths per minute"
 msgid "%1 br/min"
 msgstr "%1 सांस/मिनट"
 
-#: package/contents/ui/configGeneral.qml:272
-msgid "Blood oxygen (SpO2)"
-msgstr "रक्त ऑक्सीजन (SpO2)"
+#: package/contents/ui/FullRepresentation.qml:395
+msgid "Updated %1"
+msgstr "%1 बजे अपडेट किया गया"
 
-#: package/contents/ui/configGeneral.qml:279
-msgid "Heart rate variability"
-msgstr "हृदय गति परिवर्तनशीलता"
+#: package/contents/ui/GoogleHealthApi.qml:45
+msgid "No access token"
+msgstr "कोई एक्सेस टोकन नहीं"
 
-#: package/contents/ui/configGeneral.qml:286
-msgid "Breathing rate"
-msgstr "सांस लेने की दर"
+#: package/contents/ui/GoogleHealthApi.qml:118
+msgid "Network error — check your connection"
+msgstr "नेटवर्क त्रुटि — अपना कनेक्शन जांचें"
 
-#: package/contents/ui/FullRepresentation.qml:145
-msgid "Connect Google Health"
-msgstr "Google Health कनेक्ट करें"
+#: package/contents/ui/GoogleHealthApi.qml:119
+msgid "Network error at %1"
+msgstr "%1 बजे नेटवर्क त्रुटि"
 
-#: package/contents/ui/FullRepresentation.qml:190
-msgid "Loading Google Health data"
-msgstr "Google Health डेटा लोड हो रहा है"
+#: package/contents/ui/GoogleHealthApi.qml:125
+msgid "Token expired at %1 — refreshing"
+msgstr "टोकन %1 बजे समाप्त हो गया — रीफ़्रेश हो रहा है"
 
-#: package/contents/ui/FullRepresentation.qml:273
-msgid "No data yet"
-msgstr "अभी तक कोई डेटा नहीं"
+#: package/contents/ui/GoogleHealthApi.qml:136
+#: package/contents/ui/GoogleHealthOAuth.qml:212
+msgid "Rate limited — try again later"
+msgstr "अनुरोध सीमा पार हो गई — बाद में पुनः प्रयास करें"
 
-#: package/contents/ui/FullRepresentation.qml:354
-msgctxt "blood oxygen saturation percentage"
-msgid "%1%"
-msgstr "%1%"
+#: package/contents/ui/GoogleHealthApi.qml:137
+msgid "Rate limited at %1 — showing cached data"
+msgstr "%1 बजे अनुरोध सीमा पार हो गई — कैश किया गया डेटा दिखाया जा रहा है"
 
 #: package/contents/ui/GoogleHealthApi.qml:143
 msgid "Google Health server error (HTTP %1)"
 msgstr "Google Health सर्वर त्रुटि (HTTP %1)"
 
-#. TRANSLATORS: %1 is a metric name such as Steps; used inside "%1 failed (HTTP %2)"
+#: package/contents/ui/GoogleHealthApi.qml:144
+msgid "Server error (HTTP %1) at %2"
+msgstr "%2 बजे सर्वर त्रुटि (HTTP %1)"
+
+#: package/contents/ui/GoogleHealthApi.qml:150
+msgid "%1 failed (HTTP %2)"
+msgstr "%1 विफल (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthApi.qml:151
+msgid "Error (HTTP %1) at %2"
+msgstr "%2 बजे त्रुटि (HTTP %1)"
+
+#: package/contents/ui/GoogleHealthApi.qml:178
+msgid "OK — updated at %1"
+msgstr "ठीक है — %1 बजे अपडेट किया गया"
+
+#: package/contents/ui/GoogleHealthApi.qml:192
+msgid "Request timed out — check your connection"
+msgstr "अनुरोध का समय समाप्त हो गया — अपना कनेक्शन जांचें"
+
+#: package/contents/ui/GoogleHealthApi.qml:193
+msgid "Timed out at %1"
+msgstr "%1 बजे समय समाप्त"
+
 #: package/contents/ui/GoogleHealthApi.qml:200
 msgid "%1 fetch"
 msgstr "%1 प्राप्त करना"
 
-#. TRANSLATORS: %1 is a metric name such as Steps
 #: package/contents/ui/GoogleHealthApi.qml:211
 msgid "Failed to parse %1 data"
 msgstr "%1 डेटा पार्स नहीं हो सका"
+
+#: package/contents/ui/GoogleHealthApi.qml:212
+msgid "Parse error at %1"
+msgstr "%1 बजे पार्स त्रुटि"
+
+#: package/contents/ui/GoogleHealthApi.qml:246
+#: package/contents/ui/configGeneral.qml:261
+msgid "Active minutes"
+msgstr "सक्रिय मिनट"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:91
+msgid "Unknown error"
+msgstr "अज्ञात त्रुटि"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:98
+msgid "Failed to parse auth response"
+msgstr "प्राधिकरण प्रतिक्रिया पार्स करने में विफल"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:137
+#: package/contents/ui/GoogleHealthOAuth.qml:341
+msgid "Invalid client ID format"
+msgstr "अमान्य क्लाइंट आईडी प्रारूप"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:156
+msgid "Authorization canceled"
+msgstr "प्राधिकरण रद्द कर दिया गया"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:198
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
 
 #: package/contents/ui/GoogleHealthOAuth.qml:216
 msgid "Google server error (HTTP %1)"
 msgstr "Google सर्वर त्रुटि (HTTP %1)"
 
-#: package/contents/ui/configGeneral.qml:102
+#: package/contents/ui/GoogleHealthOAuth.qml:220 scripts/fitdash-auth.py:68
+msgid "%1 (HTTP %2)"
+msgstr "%1 (HTTP %2)"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:292
+msgid "Network error during token refresh"
+msgstr "टोकन रीफ़्रेश के दौरान नेटवर्क त्रुटि"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:293
+msgid "Refresh token invalid — please re-authorize"
+msgstr "रीफ़्रेश टोकन अमान्य — कृपया पुनः अधिकृत करें"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:294
+msgid "Token refresh failed"
+msgstr "टोकन रीफ़्रेश विफल रहा"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:295
+msgid "Refresh failed — missing tokens"
+msgstr "रीफ़्रेश विफल — टोकन मौजूद नहीं"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:296
+msgid "Token refresh failed — invalid response"
+msgstr "टोकन रीफ़्रेश विफल — अमान्य प्रतिक्रिया"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:357
+msgid "Paste the redirect URL or authorization code first"
+msgstr "पहले रीडायरेक्ट यूआरएल या प्राधिकरण कोड चिपकाएँ"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:361
+msgid "Start the manual authorization first"
+msgstr "पहले मैन्युअल प्राधिकरण प्रारंभ करें"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:381 scripts/fitdash-auth.py:130
+msgid "Authorization was denied"
+msgstr "प्राधिकरण को अस्वीकार कर दिया गया"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:388 scripts/fitdash-auth.py:116
+msgid "Authorization failed (state mismatch) — please try again"
+msgstr "प्राधिकरण विफल (state मेल नहीं खाता) — कृपया पुनः प्रयास करें"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:392
+msgid "No authorization code found in the pasted text"
+msgstr "चिपकाए गए पाठ में कोई प्राधिकरण कोड नहीं मिला"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:403 scripts/fitdash-auth.py:70
+msgid "Network error during token exchange"
+msgstr "टोकन एक्सचेंज के दौरान नेटवर्क त्रुटि"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:404
+msgid "Authorization code invalid or expired — please try again"
+msgstr "प्राधिकरण कोड अमान्य है या समाप्त हो गया है — कृपया पुनः प्रयास करें"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:405 scripts/fitdash-auth.py:68
+msgid "Token exchange failed"
+msgstr "टोकन एक्सचेंज विफल रहा"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:406 scripts/fitdash-auth.py:74
+msgid "Token exchange failed — missing tokens"
+msgstr "टोकन एक्सचेंज विफल — टोकन मौजूद नहीं"
+
+#: package/contents/ui/GoogleHealthOAuth.qml:407 scripts/fitdash-auth.py:204
+msgid "Token exchange failed — invalid response"
+msgstr "टोकन एक्सचेंज विफल - अमान्य प्रतिक्रिया"
+
+#: package/contents/ui/configGeneral.qml:9 package/contents/config/config.qml:6
+msgid "General"
+msgstr "सामान्य"
+
+#: package/contents/ui/configGeneral.qml:65
+msgid "Not authorized"
+msgstr "अधिकृत नहीं"
+
+#: package/contents/ui/configGeneral.qml:68
+msgid "Authorization problem — re-authorize"
+msgstr "प्राधिकरण समस्या — पुनः अधिकृत करें"
+
+#: package/contents/ui/configGeneral.qml:71
+msgid "Token expired — refresh needed"
+msgstr "टोकन समाप्त हो गया — रीफ़्रेश आवश्यक है"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "unknown"
+msgstr "अज्ञात"
+
+#: package/contents/ui/configGeneral.qml:73
+msgid "Authorized (User: %1)"
+msgstr "अधिकृत (उपयोगकर्ता: %1)"
+
+#: package/contents/ui/configGeneral.qml:103
+msgid "Client ID:"
+msgstr "क्लाइंट आईडी:"
+
+#: package/contents/ui/configGeneral.qml:104
 msgid "From Google Cloud Console"
 msgstr "Google Cloud Console से"
 
-#: package/contents/ui/configGeneral.qml:109
+#: package/contents/ui/configGeneral.qml:111
 msgid "Client Secret:"
 msgstr "क्लाइंट सीक्रेट:"
 
-#: package/contents/ui/configGeneral.qml:110
+#: package/contents/ui/configGeneral.qml:112
 msgid "From the same OAuth client"
 msgstr "उसी OAuth क्लाइंट से"
 
-#: package/contents/ui/configGeneral.qml:117
-msgid "OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled"
+#: package/contents/ui/configGeneral.qml:119
+msgid ""
+"OAuth 2.0 credentials from a Google Cloud project with the Google Health API "
+"enabled"
 msgstr "Google Health API सक्षम Google Cloud प्रोजेक्ट के OAuth 2.0 क्रेडेंशियल"
 
-#: package/contents/ui/configGeneral.qml:158
-msgid "Google allows any localhost port for Desktop app OAuth clients automatically — no need to register this URL"
-msgstr "Google डेस्कटॉप ऐप OAuth क्लाइंट के लिए कोई भी localhost पोर्ट स्वचालित रूप से अनुमति देता है — इस URL को पंजीकृत करने की आवश्यकता नहीं है"
+#: package/contents/ui/configGeneral.qml:127
+msgid ""
+"You can also drop the downloaded client_secret.json file onto this window to "
+"fill them in."
+msgstr ""
+"इन्हें भरने के लिए आप डाउनलोड की गई client_secret.json फ़ाइल को इस विंडो पर ड्रॉप भी "
+"कर सकते हैं।"
 
-#: package/contents/ui/configGeneral.qml:174
+#: package/contents/ui/configGeneral.qml:134
+msgid "Callback URL:"
+msgstr "कॉलबैक यूआरएल:"
+
+#: package/contents/ui/configGeneral.qml:147
+#: package/contents/ui/configGeneral.qml:387
+msgid "Copy to clipboard"
+msgstr "क्लिपबोर्ड पर कॉपी करें"
+
+#: package/contents/ui/configGeneral.qml:160
+msgid "Callback port:"
+msgstr "कॉलबैक पोर्ट:"
+
+#: package/contents/ui/configGeneral.qml:168
+msgid ""
+"Google allows any localhost port for Desktop app OAuth clients automatically "
+"— no need to register this URL"
+msgstr ""
+"Google डेस्कटॉप ऐप OAuth क्लाइंट के लिए कोई भी localhost पोर्ट स्वचालित रूप से अनुमति "
+"देता है — इस URL को पंजीकृत करने की आवश्यकता नहीं है"
+
+#: package/contents/ui/configGeneral.qml:176
+msgid "Refresh interval (minutes):"
+msgstr "रीफ़्रेश अंतराल (मिनट):"
+
+#: package/contents/ui/configGeneral.qml:184
 msgid "Recommended: 15–30 minutes to stay within API rate limits"
 msgstr "अनुशंसित: 15–30 मिनट, ताकि API की अनुरोध सीमा पार न हो"
 
-#: package/contents/ui/configGeneral.qml:201
+#: package/contents/ui/configGeneral.qml:192
+msgid "Display"
+msgstr "डिस्प्ले"
+
+#: package/contents/ui/configGeneral.qml:197
+msgid "Distance unit:"
+msgstr "दूरी इकाई:"
+
+#: package/contents/ui/configGeneral.qml:199
+msgid "Kilometers (km)"
+msgstr "किलोमीटर (किमी)"
+
+#: package/contents/ui/configGeneral.qml:200
+msgid "Miles (mi)"
+msgstr "मील (mi)"
+
+#: package/contents/ui/configGeneral.qml:211
 msgid "Step goal:"
 msgstr "कदम लक्ष्य:"
 
-#: package/contents/ui/configGeneral.qml:207
+#: package/contents/ui/configGeneral.qml:217
 msgid "None"
 msgstr "कोई नहीं"
 
-#: package/contents/ui/configGeneral.qml:216
-msgid "The Google Health API doesn't report a goal, so this is set here. 0 shows “No step goal set” instead"
-msgstr "Google Health API कोई लक्ष्य नहीं बताता, इसलिए इसे यहाँ सेट किया जाता है। 0 पर इसके बजाय “कोई कदम लक्ष्य निर्धारित नहीं” दिखता है"
+#: package/contents/ui/configGeneral.qml:226
+msgid ""
+"The Google Health API doesn't report a goal, so this is set here. 0 shows "
+"“No step goal set” instead"
+msgstr ""
+"Google Health API कोई लक्ष्य नहीं बताता, इसलिए इसे यहाँ सेट किया जाता है। 0 पर इसके "
+"बजाय “कोई कदम लक्ष्य निर्धारित नहीं” दिखता है"
 
-#: package/contents/ui/configGeneral.qml:292
+#: package/contents/ui/configGeneral.qml:234
+msgid "Visible Metrics"
+msgstr "दिखाए जाने वाले मीट्रिक"
+
+#: package/contents/ui/configGeneral.qml:268
+msgid "Resting heart rate"
+msgstr "विश्राम हृदय गति"
+
+#: package/contents/ui/configGeneral.qml:282
+msgid "Blood oxygen (SpO2)"
+msgstr "रक्त ऑक्सीजन (SpO2)"
+
+#: package/contents/ui/configGeneral.qml:289
+msgid "Heart rate variability"
+msgstr "हृदय गति परिवर्तनशीलता"
+
+#: package/contents/ui/configGeneral.qml:296
+msgid "Breathing rate"
+msgstr "सांस लेने की दर"
+
+#: package/contents/ui/configGeneral.qml:302
 msgid "Google Health Account"
 msgstr "Google Health खाता"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:306
+msgid "Status:"
+msgstr "स्थिति:"
+
+#: package/contents/ui/configGeneral.qml:314
+msgid "Last request:"
+msgstr "अंतिम अनुरोध:"
+
+#: package/contents/ui/configGeneral.qml:316
+msgid "No requests yet"
+msgstr "अभी तक कोई अनुरोध नहीं"
+
+#: package/contents/ui/configGeneral.qml:326
+msgid "Authorization:"
+msgstr "प्राधिकरण:"
+
+#: package/contents/ui/configGeneral.qml:328
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: package/contents/ui/configGeneral.qml:329
 msgid "Re-authorize with Google"
 msgstr "Google के साथ फिर से अधिकृत करें"
 
-#: package/contents/ui/configGeneral.qml:319
+#: package/contents/ui/configGeneral.qml:329
 msgid "Authorize with Google"
 msgstr "Google के साथ अधिकृत करें"
+
+#: package/contents/ui/configGeneral.qml:345
+msgid "Authorize manually (copy & paste)"
+msgstr "मैन्युअल रूप से अधिकृत करें (कॉपी और पेस्ट करें)"
+
+#: package/contents/ui/configGeneral.qml:350
+msgid ""
+"Use this if the browser can't reach localhost (sandboxed browser, remote "
+"session, or no Python)"
+msgstr ""
+"यदि ब्राउज़र localhost तक नहीं पहुँच पा रहा हो (सैंडबॉक्स ब्राउज़र, रिमोट सत्र, या "
+"Python नहीं) तो इसका उपयोग करें"
+
+#: package/contents/ui/configGeneral.qml:366
+msgid "Step 1:"
+msgstr "चरण 1:"
+
+#: package/contents/ui/configGeneral.qml:367
+msgid "Open this URL in a browser and approve access:"
+msgstr "इस URL को ब्राउज़र में खोलें और पहुंच स्वीकृत करें:"
+
+#: package/contents/ui/configGeneral.qml:374
+msgid "Authorization URL:"
+msgstr "प्राधिकरण यूआरएल:"
+
+#: package/contents/ui/configGeneral.qml:401
+msgid "Open in browser"
+msgstr "ब्राउज़र में खोलें"
+
+#: package/contents/ui/configGeneral.qml:410
+msgid "Step 2:"
+msgstr "चरण 2:"
+
+#: package/contents/ui/configGeneral.qml:411
+msgid "After approving, copy the address bar URL and paste it below:"
+msgstr "अनुमोदन के बाद, एड्रेस बार यूआरएल को कॉपी करें और नीचे पेस्ट करें:"
+
+#: package/contents/ui/configGeneral.qml:418
+msgid "Redirect URL or code:"
+msgstr "रीडायरेक्ट यूआरएल या कोड:"
+
+#: package/contents/ui/configGeneral.qml:422
+msgid "http://localhost:…/callback?code=…"
+msgstr "http://localhost:…/callback?code=…"
+
+#: package/contents/ui/configGeneral.qml:429
+msgid "Complete"
+msgstr "पूरा करें"
+
+#: package/contents/ui/configGeneral.qml:439
+msgid "Cancel manual authorization"
+msgstr "मैन्युअल प्राधिकरण रद्द करें"
+
+#: package/contents/ui/configGeneral.qml:476
+msgid "The dropped file does not contain a client ID and client secret."
+msgstr "ड्रॉप की गई फ़ाइल में क्लाइंट आईडी और क्लाइंट सीक्रेट नहीं है।"
+
+#: package/contents/ui/configGeneral.qml:480
+msgid "The client ID in the dropped file is not valid."
+msgstr "ड्रॉप की गई फ़ाइल में क्लाइंट आईडी मान्य नहीं है।"
+
+#: package/contents/ui/configGeneral.qml:486
+msgid "Client ID and secret imported from file."
+msgstr "फ़ाइल से क्लाइंट आईडी और सीक्रेट इंपोर्ट किए गए।"
+
+#: package/contents/ui/configGeneral.qml:488
+#: package/contents/ui/configGeneral.qml:496
+#: package/contents/ui/configGeneral.qml:510
+msgid "Could not read the dropped file as a Google client secret JSON."
+msgstr "ड्रॉप की गई फ़ाइल को Google क्लाइंट सीक्रेट JSON के रूप में नहीं पढ़ा जा सका।"
+
+#: package/contents/ui/configGeneral.qml:546 scripts/fitdash-auth.py:128
+msgid "Authorization successful!"
+msgstr "प्राधिकरण सफल!"
+
+#: package/contents/ui/main.qml:87
+msgid "Not connected"
+msgstr "कनेक्ट नहीं है"
+
+#: package/contents/ui/main.qml:92
+msgid ""
+"Steps: %1 | Cal: %2 | Dist: %3\n"
+"Updated: %4"
+msgstr ""
+"कदम: %1 | कैलोरी: %2 | दूरी: %3\n"
+"अपडेट: %4"
+
+#: package/contents/ui/main.qml:114
+msgid "Authorization expired at %1 — please re-authorize"
+msgstr "प्राधिकरण %1 बजे समाप्त हो गया — कृपया पुनः अधिकृत करें"
+
+#: package/contents/ui/main.qml:127
+msgid "Token refresh failed at %1 — %2"
+msgstr "टोकन रीफ़्रेश %1 बजे विफल रहा — %2"
+
+#: package/contents/ui/main.qml:152
+msgid "No refresh token available — please re-authorize"
+msgstr "कोई रीफ़्रेश टोकन उपलब्ध नहीं — कृपया पुनः अधिकृत करें"
+
+#: package/contents/ui/main.qml:184
+msgid "Token refreshed at %1"
+msgstr "टोकन %1 बजे रीफ़्रेश किया गया"
+
+#: scripts/fitdash-auth.py:101
+msgid "Missing client secret"
+msgstr ""
+
+#: scripts/fitdash-auth.py:128
+msgid "You can close this tab."
+msgstr ""
+
+#: scripts/fitdash-auth.py:145
+msgid "Could not start authorization server on port %1"
+msgstr ""
+
+#: scripts/fitdash-auth.py:192
+msgid "Authorization timed out — please try again"
+msgstr ""
+
+#~ msgid "From dev.fitbit.com/apps"
+#~ msgstr "dev.fitbit.com/apps से"
+
+#~ msgid "OAuth 2.0 Client ID from your Fitbit app registration"
+#~ msgstr "आपके Fitbit ऐप पंजीकरण से OAuth 2.0 क्लाइंट आईडी"
+
+#~ msgid ""
+#~ "Paste the callback URL into your Fitbit app settings at dev.fitbit.com"
+#~ msgstr "कॉलबैक यूआरएल को dev.fitbit.com पर अपनी Fitbit ऐप सेटिंग में पेस्ट करें"
+
+#~ msgid "Recommended: 15–30 minutes to stay within Fitbit rate limits"
+#~ msgstr "अनुशंसित: 15–30 मिनट, ताकि Fitbit की अनुरोध सीमा पार न हो"
+
+#~ msgid "Fitbit Account"
+#~ msgstr "Fitbit खाता"
+
+#~ msgid "Re-authorize with Fitbit"
+#~ msgstr "Fitbit के साथ फिर से अधिकृत करें"
+
+#~ msgid "Authorize with Fitbit"
+#~ msgstr "Fitbit के साथ अधिकृत करें"
+
+#~ msgid "Fitbit server error (HTTP %1)"
+#~ msgstr "Fitbit सर्वर त्रुटि (HTTP %1)"
+
+#~ msgid "Activity fetch"
+#~ msgstr "गतिविधि डेटा प्राप्त करना"
+
+#~ msgid "Failed to parse activity data"
+#~ msgstr "गतिविधि डेटा पार्स करने में विफल"
+
+#~ msgid "Connect Fitbit"
+#~ msgstr "Fitbit कनेक्ट करें"
+
+#~ msgid "Loading Fitbit data"
+#~ msgstr "Fitbit डेटा लोड हो रहा है"
