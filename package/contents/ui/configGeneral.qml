@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
+import org.kde.plasma.plasma5support as Plasma5Support
 
 Kirigami.ScrollablePage {
     id: configRoot
@@ -86,6 +87,7 @@ Kirigami.ScrollablePage {
     }
 
     ColumnLayout {
+        id: mainLayout
         width: parent.width
         spacing: Kirigami.Units.largeSpacing
 
@@ -114,7 +116,7 @@ Kirigami.ScrollablePage {
 
             QQC2.Label {
                 Layout.fillWidth: true
-                text: i18n("OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled")
+                text: i18n("OAuth 2.0 credentials from a Google Cloud project with the Google Health API enabled. You can drop the downloaded client_secret.json file onto this window to fill them in.")
                 font.pointSize: Kirigami.Theme.smallFont.pointSize
                 opacity: 0.7
                 wrapMode: Text.WordWrap
@@ -449,6 +451,61 @@ Kirigami.ScrollablePage {
             showCloseButton: true
             onVisibleChanged: {
                 if (!visible) configRoot.authStatusMessage = "";
+            }
+        }
+    }
+
+    function showImportError(msg) {
+        configRoot.authStatusIsError = true;
+        configRoot.authStatusMessage = msg;
+    }
+
+    function applyClientSecretJson(text) {
+        try {
+            var data = JSON.parse(text);
+            var creds = data && (data.installed || data.web);
+            if (!creds || !creds.client_id || !creds.client_secret) {
+                showImportError(i18n("The dropped file does not contain a client ID and client secret."));
+                return;
+            }
+            clientIdField.text = creds.client_id;
+            clientSecretField.text = creds.client_secret;
+            configRoot.authStatusIsError = false;
+            configRoot.authStatusMessage = i18n("Client ID and secret imported from file.");
+        } catch (e) {
+            showImportError(i18n("Could not read the dropped file as a Google client secret JSON."));
+        }
+    }
+
+    // Qt blocks XMLHttpRequest reads of file:// URLs by default, so read the file with cat.
+    function importClientSecretFile(url) {
+        var path = decodeURIComponent(url.replace(/^file:\/\//, ""));
+        fileReader.connectSource("cat -- '" + path.replace(/'/g, "'\\''") + "'");
+    }
+
+    Plasma5Support.DataSource {
+        id: fileReader
+        engine: "executable"
+        connectedSources: []
+        onNewData: function(source, data) {
+            disconnectSource(source);
+            if (data["exit code"] !== 0 || !data["stdout"]) {
+                configRoot.showImportError(i18n("Could not read the dropped file as a Google client secret JSON."));
+                return;
+            }
+            configRoot.applyClientSecretJson(data["stdout"]);
+        }
+    }
+
+    DropArea {
+        x: 0
+        y: 0
+        width: mainLayout.width
+        height: mainLayout.height
+        keys: ["text/uri-list"]
+        onDropped: function(drop) {
+            if (drop.hasUrls && drop.urls.length > 0) {
+                configRoot.importClientSecretFile(drop.urls[0].toString());
             }
         }
     }
