@@ -599,7 +599,7 @@ msgstr "Serverul de autorizare nu a putut fi pornit pe portul %1"
 
 #: scripts/fitdash-auth.py:192
 msgid "Authorization timed out — please try again"
-msgstr "Autorizarea a expirat — încercați din nou"
+msgstr "Timpul de așteptare pentru autorizare a expirat — încercați din nou"
 
 #~ msgid "From dev.fitbit.com/apps"
 #~ msgstr "De pe dev.fitbit.com/apps"

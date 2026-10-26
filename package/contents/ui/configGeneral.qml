@@ -472,7 +472,8 @@ Kirigami.ScrollablePage {
         try {
             var data = JSON.parse(text);
             var creds = data && (data.installed || data.web);
-            if (!creds || !creds.client_id || !creds.client_secret) {
+            if (!creds || typeof creds.client_id !== "string" || creds.client_id === ""
+                    || typeof creds.client_secret !== "string" || creds.client_secret.trim() === "") {
                 showImportError(i18n("The dropped file does not contain a client ID and client secret."));
                 return;
             }
@@ -528,6 +529,7 @@ Kirigami.ScrollablePage {
             var urls = drop.urls.map(function(u) { return u.toString(); });
             var jsonUrls = urls.filter(function(u) { return /\.json$/i.test(u); });
             configRoot.importClientSecretFile(jsonUrls.length > 0 ? jsonUrls[0] : urls[0]);
+            drop.acceptProposedAction();
         }
     }
 

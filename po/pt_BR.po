@@ -601,7 +601,7 @@ msgstr "Não foi possível iniciar o servidor de autorização na porta %1"
 
 #: scripts/fitdash-auth.py:192
 msgid "Authorization timed out — please try again"
-msgstr "A autorização expirou — tente novamente"
+msgstr "O tempo limite para autorização foi excedido — tente novamente"
 
 #~ msgid "From dev.fitbit.com/apps"
 #~ msgstr "De dev.fitbit.com/apps"

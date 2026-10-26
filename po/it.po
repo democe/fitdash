@@ -603,7 +603,7 @@ msgstr "Impossibile avviare il server di autorizzazione sulla porta %1"
 
 #: scripts/fitdash-auth.py:192
 msgid "Authorization timed out — please try again"
-msgstr "Autorizzazione scaduta: riprova"
+msgstr "Tempo di attesa per l'autorizzazione scaduto — riprova"
 
 #~ msgid "From dev.fitbit.com/apps"
 #~ msgstr "Da dev.fitbit.com/apps"

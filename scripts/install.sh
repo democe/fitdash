@@ -9,6 +9,7 @@ AUTH_SCRIPT_SRC="$SCRIPT_DIR/fitdash-auth.py"
 AUTH_SCRIPT_DST="$INSTALL_DIR/contents/scripts/fitdash-auth.py"
 
 rm -rf "$INSTALL_DIR"
+mkdir -p "$DATA_HOME/plasma/plasmoids"
 cp -r "$SCRIPT_DIR/../package" "$INSTALL_DIR"
 mkdir -p "$INSTALL_DIR/contents/scripts"
 
