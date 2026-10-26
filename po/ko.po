@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: FitDash 1.0.8\n"
+"Project-Id-Version: FitDash 1.0.9\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
 "POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
@@ -584,19 +584,19 @@ msgstr "토큰 새로 고침됨(%1)"
 
 #: scripts/fitdash-auth.py:101
 msgid "Missing client secret"
-msgstr ""
+msgstr "클라이언트 보안 비밀번호가 없습니다"
 
 #: scripts/fitdash-auth.py:128
 msgid "You can close this tab."
-msgstr ""
+msgstr "이 탭을 닫아도 됩니다."
 
 #: scripts/fitdash-auth.py:145
 msgid "Could not start authorization server on port %1"
-msgstr ""
+msgstr "포트 %1에서 승인 서버를 시작할 수 없습니다"
 
 #: scripts/fitdash-auth.py:192
 msgid "Authorization timed out — please try again"
-msgstr ""
+msgstr "승인 시간이 초과되었습니다 - 다시 시도해 주세요."
 
 #~ msgid "From dev.fitbit.com/apps"
 #~ msgstr "dev.fitbit.com/apps에서"

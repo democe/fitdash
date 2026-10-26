@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: FitDash 1.0.8\n"
+"Project-Id-Version: FitDash 1.0.9\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
 "POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
@@ -589,19 +589,19 @@ msgstr "Đã làm mới mã thông báo lúc %1"
 
 #: scripts/fitdash-auth.py:101
 msgid "Missing client secret"
-msgstr ""
+msgstr "Thiếu mã bí mật ứng dụng khách"
 
 #: scripts/fitdash-auth.py:128
 msgid "You can close this tab."
-msgstr ""
+msgstr "Bạn có thể đóng thẻ này."
 
 #: scripts/fitdash-auth.py:145
 msgid "Could not start authorization server on port %1"
-msgstr ""
+msgstr "Không thể khởi động máy chủ ủy quyền trên cổng %1"
 
 #: scripts/fitdash-auth.py:192
 msgid "Authorization timed out — please try again"
-msgstr ""
+msgstr "Ủy quyền đã hết thời gian chờ - vui lòng thử lại"
 
 #~ msgid "From dev.fitbit.com/apps"
 #~ msgstr "Từ dev.fitbit.com/apps"

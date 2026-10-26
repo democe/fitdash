@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: FitDash 1.0.8\n"
+"Project-Id-Version: FitDash 1.0.9\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
 "POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
@@ -579,19 +579,19 @@ msgstr "令牌已于 %1 刷新"
 
 #: scripts/fitdash-auth.py:101
 msgid "Missing client secret"
-msgstr ""
+msgstr "缺少客户端密钥"
 
 #: scripts/fitdash-auth.py:128
 msgid "You can close this tab."
-msgstr ""
+msgstr "现在可以关闭此标签页。"
 
 #: scripts/fitdash-auth.py:145
 msgid "Could not start authorization server on port %1"
-msgstr ""
+msgstr "无法在端口 %1 上启动授权服务器"
 
 #: scripts/fitdash-auth.py:192
 msgid "Authorization timed out — please try again"
-msgstr ""
+msgstr "授权超时 — 请重试"
 
 #~ msgid "From dev.fitbit.com/apps"
 #~ msgstr "来自 dev.fitbit.com/apps"

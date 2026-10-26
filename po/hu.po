@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: FitDash 1.0.8\n"
+"Project-Id-Version: FitDash 1.0.9\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
 "POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
@@ -586,19 +586,19 @@ msgstr "Token frissítve ekkor: %1"
 
 #: scripts/fitdash-auth.py:101
 msgid "Missing client secret"
-msgstr ""
+msgstr "Hiányzik az ügyféltitok"
 
 #: scripts/fitdash-auth.py:128
 msgid "You can close this tab."
-msgstr ""
+msgstr "Bezárhatja ezt a lapot."
 
 #: scripts/fitdash-auth.py:145
 msgid "Could not start authorization server on port %1"
-msgstr ""
+msgstr "Nem sikerült elindítani az engedélyezési kiszolgálót a(z) %1 porton"
 
 #: scripts/fitdash-auth.py:192
 msgid "Authorization timed out — please try again"
-msgstr ""
+msgstr "Az engedélyezés túllépte az időkorlátot – próbálja újra"
 
 #~ msgid "From dev.fitbit.com/apps"
 #~ msgstr "A dev.fitbit.com/apps webhelyről"

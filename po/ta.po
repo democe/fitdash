@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: FitDash 1.0.8\n"
+"Project-Id-Version: FitDash 1.0.9\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
 "POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
@@ -583,19 +583,19 @@ msgstr "%1 மணிக்கு டோக்கன் புதுப்பி�
 
 #: scripts/fitdash-auth.py:101
 msgid "Missing client secret"
-msgstr ""
+msgstr "கிளையன்ட் ரகசியம் இல்லை"
 
 #: scripts/fitdash-auth.py:128
 msgid "You can close this tab."
-msgstr ""
+msgstr "இந்தத் தாவலை மூடலாம்."
 
 #: scripts/fitdash-auth.py:145
 msgid "Could not start authorization server on port %1"
-msgstr ""
+msgstr "போர்ட் %1 இல் அங்கீகார சேவையகத்தைத் தொடங்க முடியவில்லை"
 
 #: scripts/fitdash-auth.py:192
 msgid "Authorization timed out — please try again"
-msgstr ""
+msgstr "அங்கீகார நேரம் முடிந்தது — மீண்டும் முயற்சிக்கவும்"
 
 #~ msgid "From dev.fitbit.com/apps"
 #~ msgstr "dev.fitbit.com/apps இலிருந்து"

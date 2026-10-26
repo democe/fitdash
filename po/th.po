@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: FitDash 1.0.8\n"
+"Project-Id-Version: FitDash 1.0.9\n"
 "Report-Msgid-Bugs-To: democe@democe.com\n"
 "POT-Creation-Date: 2026-10-26 02:14-0600\n"
 "PO-Revision-Date: 2026-06-29 00:00+0000\n"
@@ -582,19 +582,19 @@ msgstr "รีเฟรชโทเค็นแล้วเมื่อ %1"
 
 #: scripts/fitdash-auth.py:101
 msgid "Missing client secret"
-msgstr ""
+msgstr "ไม่มีรหัสลับไคลเอ็นต์"
 
 #: scripts/fitdash-auth.py:128
 msgid "You can close this tab."
-msgstr ""
+msgstr "คุณสามารถปิดแท็บนี้ได้"
 
 #: scripts/fitdash-auth.py:145
 msgid "Could not start authorization server on port %1"
-msgstr ""
+msgstr "ไม่สามารถเริ่มเซิร์ฟเวอร์การอนุญาตบนพอร์ต %1"
 
 #: scripts/fitdash-auth.py:192
 msgid "Authorization timed out — please try again"
-msgstr ""
+msgstr "การอนุญาตหมดเวลา — โปรดลองอีกครั้ง"
 
 #~ msgid "From dev.fitbit.com/apps"
 #~ msgstr "จาก dev.fitbit.com/apps"
